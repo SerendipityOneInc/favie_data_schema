@@ -1,0 +1,288 @@
+{
+  "request_info": {
+    "success": true,
+    "credits_used": 60,
+    "credits_used_this_request": 1,
+    "credits_remaining": 0,
+    "credits_create_time": "2024-05-17"
+  },
+  "request_parameters": {
+    "amazon_domain": "amazon.com",
+    "asin": "B0CKBNH9KG",
+    "type": "product"
+  },
+  "request_metadata": {
+    "created_at": "",
+    "processed_at": "",
+    "total_time_taken": 0,
+    "amazon_url": "https://www.amazon.com/dp/B0CKBNH9KG?th=1&psc=1"
+  },
+  "_id": "B0CKBNH9KG_2024_05_17",
+  "asin": "B0CKBNH9KG",
+  "link": "https://www.amazon.com/dp/B0CKBNH9KG?th=1&psc=1",
+  "type": "month",
+  "countryCode": "us",
+  "var_reviews": 0,
+  "var_ratings": 0,
+  "date": "2024-05-17",
+  "title": "Spare Parts for Printer 1-5PCS Compatible Fuser Drive Gear for Pamtum P10M001 P1000 2000 2050 M5000 6000 2040 2060 2090 M5000 Drive Gear - (Color: 5PCS)",
+  "price": 70.99,
+  "brand": "Generic",
+  "sub_title": {
+    "link": "/s/ref=bl_dp_s_web_0?ie=UTF8&search-alias=aps&field-keywords=Generic",
+    "text": "Brand: Generic"
+  },
+  "main_image": {
+    "link": "https://m.media-amazon.com/images/I/31DU7tGlgcL._AC_US40_.jpg"
+  },
+  "images": [
+    {
+      "link": "https://m.media-amazon.com/images/I/31DU7tGlgcL._AC_US40_.jpg",
+      "variant": "MAIN"
+    },
+    {
+      "link": "https://m.media-amazon.com/images/I/51R1AXvq2uL._AC_US40_.jpg",
+      "variant": "MAIN"
+    }
+  ],
+  "images_count": 2,
+  "images_flat": "https://m.media-amazon.com/images/I/31DU7tGlgcL._AC_US40_.jpg,https://m.media-amazon.com/images/I/51R1AXvq2uL._AC_US40_.jpg",
+  "categories": [
+    {
+      "name": "Office Electronics",
+      "link": "https://www.amazon.com/b?node=172574",
+      "category_id": "172574"
+    },
+    {
+      "name": "Printers & Accessories",
+      "link": "https://www.amazon.com/b?node=9424016011",
+      "category_id": "9424016011"
+    },
+    {
+      "name": "Printer Parts & Accessories",
+      "link": "https://www.amazon.com/b?node=172636",
+      "category_id": "172636"
+    },
+    {
+      "name": "Printer Transfer Belts, Rollers & Units",
+      "link": "https://www.amazon.com/b?node=3011394011",
+      "category_id": "3011394011"
+    },
+    {
+      "name": "Printer Transfer Rollers",
+      "link": "https://www.amazon.com/b?node=15400241",
+      "category_id": "15400241"
+    }
+  ],
+  "categories_flat": "Office Electronics > Printers & Accessories > Printer Parts & Accessories > Printer Transfer Belts, Rollers & Units > Printer Transfer Rollers",
+  "search_alias": {
+    "title": "Electronics",
+    "value": "search-alias=electronics"
+  },
+  "protection_plans": [
+    {
+      "asin": "B07Q38S8HD",
+      "title": "3-Year Protection",
+      "price": {
+        "symbol": "$",
+        "value": 9.99,
+        "currency": "USD",
+        "raw": "$9.99"
+      }
+    },
+    {
+      "asin": "B07Q38SJQX",
+      "title": "4-Year Protection",
+      "price": {
+        "symbol": "$",
+        "value": 13.99,
+        "currency": "USD",
+        "raw": "$13.99"
+      }
+    },
+    {
+      "asin": "B07RZ3LSHM",
+      "title": "Asurion Complete Protect: One plan covers all eligible past and future purchases (Renews Monthly Until Cancelled)",
+      "price": {
+        "symbol": "$",
+        "value": 16.99,
+        "currency": "USD",
+        "raw": "$16.99/month"
+      }
+    }
+  ],
+  "buybox_winner": {
+    "maximum_order_quantity": {
+      "value": 30,
+      "hard_maximum": false
+    },
+    "secondary_buybox": {
+      "offer_id": "",
+      "caption": "",
+      "availability": {
+        "raw": ""
+      }
+    },
+    "offer_id": "7LWrmTMW5kag3AhgfgVsa%2FIP8DK7TjaNIVvdZCPiDd%2BjyTYg4mOeNPzLvD7eDjsvoieMsS66J9TTWyxHBXA0agdUk3eMXCpWOcsHHe9soX7%2Fk1U7ZPyWhwDcOko3NFLkA6HTaydaDjQ%2FtuQTEbjxr2jRcKLclWg4nRXJECn%2BCOplhGQIizivOPvdKs7gVdnD",
+    "mixed_offers_count": 0,
+    "mixed_offers_from": {},
+    "is_prime": false,
+    "is_prime_exclusive_deal": false,
+    "is_amazon_fresh": false,
+    "condition": {
+      "is_new": true
+    },
+    "availability": {
+      "type": "in_stock_________________usually_ships_within_4_to_5_days.",
+      "raw": "In stock                 Usually ships within 4 to 5 days.",
+      "dispatch_days": 0
+    },
+    "fulfillment": {
+      "type": "3p",
+      "standard_delivery": {
+        "date": [
+          "June 4 - 14"
+        ],
+        "text": "FREE delivery June 4 - 14. Details",
+        "name": "FREE"
+      },
+      "fastest_delivery": {},
+      "is_sold_by_amazon": false,
+      "is_fulfilled_by_amazon": false,
+      "is_fulfilled_by_third_party": true,
+      "is_sold_by_third_party": true,
+      "third_party_seller": {
+        "name": "Xprinters Parts",
+        "link": "https://www.amazon.com/sp?seller=A3T3YUS26LK8PD",
+        "id": "A3T3YUS26LK8PD"
+      }
+    },
+    "price": {
+      "symbol": "$",
+      "value": 70.99,
+      "currency": "USD",
+      "raw": "$70.99"
+    },
+    "shipping": "FREE"
+  },
+  "marketplace_id": "A3T3YUS26LK8PD",
+  "videos": [],
+  "videos_count": 0,
+  "videos_flat": "",
+  "feature_bullets": [
+    "IMPORTANT - There's 2 conditions available \"0rjgnjal Refurbished\" or \"COMPATIBLE NEW\" and send randomly. Please do not order if you mind about this.",
+    "Model number just for reference, check clearly item appearance to make sure it work with your unit",
+    "Due to the difference between different monitors, the picture may not reflect the actual color of the item",
+    "Package include: 1Pcs/Set or Depend on your selection",
+    "Feature: Printer parts"
+  ],
+  "feature_bullets_count": 5,
+  "feature_bullets_flat": "IMPORTANT - There's 2 conditions available \"0rjgnjal Refurbished\" or \"COMPATIBLE NEW\" and send randomly. Please do not order if you mind about this.,Model number just for reference, check clearly item appearance to make sure it work with your unit,Due to the difference between different monitors, the picture may not reflect the actual color of the item,Package include: 1Pcs/Set or Depend on your selection,Feature: Printer parts",
+  "attributes": [],
+  "specifications": [],
+  "specifications_flat": "",
+  "top_reviews": [],
+  "brand_store": {
+    "id": "Generic",
+    "link": "https://www.amazon.com/s/ref=bl_dp_s_web_0?ie=UTF8&search-alias=aps&field-keywords=Generic"
+  },
+  "newer_model": {},
+  "similar_to_consider": {},
+  "compare": [],
+  "frequently_bought_together": [],
+  "save_on_quality": {
+    "title": "Save on Quality Laptop and Tablet Bags by AmazonBasics",
+    "list": [
+      {
+        "link": "https://www.amazon.com/gp/product/B00JM5VOLI?rw_useCurrentProtocol=1&ref_=amb_link_H1kwqNtpT6GZX40DBIPTJQ_3",
+        "asin": "B00JM5VOLI",
+        "title": "AmazonBasics 15.6-Inch Laptop and Tablet Bag, 10-Pack"
+      },
+      {
+        "link": "https://www.amazon.com/gp/product/B0749WPZCT?rw_useCurrentProtocol=1&ref_=amb_link_H1kwqNtpT6GZX40DBIPTJQ_6",
+        "asin": "B0749WPZCT",
+        "title": "AmazonBasics 17.3-Inch Laptop Bag, 10-Pack"
+      },
+      {
+        "link": "https://www.amazon.com/gp/product/B00JM5VN9G?rw_useCurrentProtocol=1&ref_=amb_link_H1kwqNtpT6GZX40DBIPTJQ_9",
+        "asin": "B00JM5VN9G",
+        "title": "AmazonBasics 11.6-Inch Laptop and Tablet Bag, 10-Pack"
+      }
+    ]
+  },
+  "similar_list": [],
+  "rating": 0,
+  "rating_breakdown": {
+    "five_star": {
+      "percentage": 0,
+      "count": 0
+    },
+    "four_star": {
+      "percentage": 0,
+      "count": 0
+    },
+    "three_star": {
+      "percentage": 0,
+      "count": 0
+    },
+    "two_star": {
+      "percentage": 0,
+      "count": 0
+    },
+    "one_star": {
+      "percentage": 0,
+      "count": 0
+    }
+  },
+  "ratings_total": 0,
+  "energy_efficiency": {},
+  "keywords": "",
+  "keywords_list": [],
+  "is_bundle": false,
+  "more_buying_choices": [],
+  "Q_A_num": -1,
+  "list_price": 0,
+  "save_price": 0,
+  "prime_price": 0,
+  "request_asin": "B0CKBNH9KG",
+  "extra_saving": "",
+  "ranks": [],
+  "deal": 0,
+  "first_list_date": 1696291200,
+  "productDescription": "Spare Parts for Printer 1-5PCS Compatible Fuser Drive Gear for Pamtum P10M001 P1000 2000 2050 M5000 6000 2040 2060 2090 M5000 Drive Gear - (Color: 5PCS)\nItem Description:\nYou can find thousand replacement parts for your printer.\nItem Type: Printer spare parts\nPacking: NEUTRAL PACKING\nNOTE - Condition: Compatible new or Original Refurbished (Send by random)\nPackage Content: 1 Piece or depend on your selection\nAttention:\nModel number just for reference, Please do not order if item does not look like your original part or partnumber is not the same.\nDue to the difference between different monitors, the picture may not reflect the actual color of the item.\nCarefuly check item appearance, size, color and compare with your original item before place your order to make sure it fit your machine.\n",
+  "aplus_content": "",
+  "aplus_table": [],
+  "also_viewed_asins": [],
+  "also_bought_asins": [],
+  "delivery": "FREE delivery June 4 - 14 . Details",
+  "title_tip_layer": "",
+  "amazons_choice": {
+    "keywords": ""
+  },
+  "flag": {
+    "stock": 1,
+    "add_to_cart": 1,
+    "amazonfit": 0,
+    "coupon": 0,
+    "coupon_text": 0,
+    "aplus": 0,
+    "video": 0
+  },
+  "quantity": -1,
+  "parentAsin": "B0CKB9JD9Z",
+  "varient_num": 3,
+  "spec": {
+    "color_name": "5PCS"
+  },
+  "variant_info": {
+    "B0CKBT11DY": {
+      "color_name": "2PCS"
+    },
+    "B0CKBXTNN8": {
+      "color_name": "1PC"
+    },
+    "B0CKBNH9KG": {
+      "color_name": "5PCS"
+    }
+  }
+}

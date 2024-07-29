@@ -1,0 +1,41 @@
+name: Generate Pydantic Models from AVSC
+
+on:
+  push:
+    paths:
+      - '**/*.avsc'  # Run this workflow when .avsc files are changed
+
+jobs:
+  generate-pydantic-models:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      
+      - name: Install pydantic-avro
+        run: pip install pydantic-avro
+      
+      #指定一个目录，将目录下的arvo文件合并成一个avsc文件，并输出到目录下面的combine_output目录下，输出的文件名许指定
+      #python3 favie_data_schema/tools/combine_schemas.py --source-directory=/Users/pangbaohui/workspace/shoppal_pcs_schema/favie_data_schema/avsc --output-file=favie_product.avsc --main-schema=favie.data.FavieProduct
+      - name: Generate Pydantic models
+        run: |
+          for file in $(find . -name '*.avsc'); do
+            model_name=$(basename "$file" .avsc)
+            namespace_dir=$(jq -r '.namespace' "$file" | tr '.' '/')
+            mkdir -p "favie_data_schema/schemas/$namespace_dir"
+            pydantic-avro avro_to_pydantic --asvc "$file" --output "favie_data_schema/schemas/${namespace_dir}/${model_name}.py"
+          done
+      
+      - name: Commit and Push Generated Models
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Auto-generate Pydantic models from AVSC"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}

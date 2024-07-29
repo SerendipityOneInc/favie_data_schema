@@ -1,0 +1,310 @@
+{
+    "f_sku_id": "example_f_sku_id",
+    "f_spu_id": "example_f_spu_id",
+    "site": "example_site",
+    "sku_id": "example_sku_id",
+    "spu_id": "example_spu_id",
+    "title": "example_title",
+    "link": "http://example.com",
+    "sub_title": "example_sub_title",
+    "sub_title_link": "http://example.com/sub_title",
+    "description": "example_description",
+    "description_external_link": "http://example.com/description",
+    "rich_product_description": "example_rich_product_description",
+    "price": {
+        "lower_value": 100000,
+        "upper_value": 200000,
+        "value": 150000,
+        "currency": "USD",
+        "updates_at": "2023-10-03T12:34:56Z"
+    },
+    "f_status": "example_f_status",
+    "images": {
+        "main_image": "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61A5yvLX7FL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61qghmaHKXL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61TALLEpDlL._AC_SL1200_.jpg"
+        ]
+    },
+    "f_images": {
+        "main_image": "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61A5yvLX7FL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61qghmaHKXL._AC_SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61TALLEpDlL._AC_SL1200_.jpg"
+        ]
+    },
+    "f_categories": [
+        {
+            "name": "Electronics", 
+            "id": "172282"
+        },
+        {
+            "name": "Computers & Accessories",
+            "id": "541966"
+        },
+        {
+            "name": "Computer Accessories & Peripherals",
+            "id": "172456"
+        },
+        {
+            "name": "Memory Cards",
+            "id": "516866"
+        },
+        {
+            "name": "Micro SD Cards",
+            "id": "3015433011"
+        }
+    ],
+    "categories": [
+        {
+            "name": "Electronics", 
+            "id": "172282"
+        },
+        {
+            "name": "Computers & Accessories",
+            "id": "541966"
+        },
+        {
+            "name": "Computer Accessories & Peripherals",
+            "id": "172456"
+        },
+        {
+            "name": "Memory Cards",
+            "id": "516866"
+        },
+        {
+            "name": "Micro SD Cards",
+            "id": "3015433011"
+        }
+    ],
+    "videos": [
+        {
+            "duration_seconds": 34,
+            "width": 854,
+            "height": 480,
+            "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/5c1181fe-7c83-4436-a466-0021e84ef18e/default.jobtemplate.mp4.480.mp4",
+            "thumbnail": "https://m.media-amazon.com/images/I/51hoTKyxlxL.SX522_.jpg",
+            "is_hero_video": false,
+            "title": "SanDisk Ultra microSD Memory Card"
+        }
+    ],
+    "f_brand": {
+        "name": "Electronics",
+        "link": "https://www.target.com/b/lg-electronics/-/N-4y41g"
+    },
+    "brand": {
+        "name": "Electronics",
+        "link": "https://www.target.com/b/lg-electronics/-/N-4y41g"
+    },
+    "feature_bullets": [
+        "Balance Beams: Get creative and active with a modular set of balancing beams that connect any which way!",
+        "Easy Assembly: Match up the pieces to form beams and connect to the foot pads with a click.",
+        "Endless Combinations: Build it your way with 8 beam sections and 5 sensory step-stones.",
+        "Active Play: Playing with this balance beam set helps improve coordination and turns playtime into full-body fun!",
+        "Age: This balancing beam set is recommended for kids 3 years +"
+    ],
+    "attributes":[
+        {
+            "name": "Condition",
+            "value": "new"
+        },
+        {
+            "name": "Color",
+            "value": "Red"
+        },
+        {
+            "name":"Size",
+            "value":"XXL"
+        }
+    ],
+    "specifications":[
+        {
+            "name": "Condition",
+            "value": "new"
+        },
+        {
+            "name": "Color",
+            "value": "Red"
+        },
+        {
+            "name":"Size",
+            "value":"XXL"
+        }
+    ],
+    "standard_attributes":{
+        "is_used": true,
+        "is_bundle": false,
+        "is_auction": true,
+        "has_coupon": false,
+        "is_preorder": false,
+        "is_best_seller": true,
+        "is_best_offer": true,
+        "is_marketplace_item": false,
+        "is_private_brand": false,
+        "recent_sales": 150,
+        "bestsellers_rank": 1,
+        "product_model_number": "xxxd",
+        "is_platform_choice": true
+    },
+    "offers": [
+        {
+            "price": {
+                "value": 1435,
+                "currency": "USD"
+            },
+            "minimum_order_quantity":  1,
+            "maximum_order_quantity": 30,
+            "standard_attributes": {
+                "is_new": true
+            },
+            "delivery": {
+                "fulfilled_by_platform": true,
+                "countdown": "8 hrs 23 mins",
+                "comments": "Saturday, July 20",
+                "price": {
+                    "raw": "FREE delivery Saturday. July 20 on orders shipped by Amazon over $35 Or fastest delivery Tomorrow. July 16. Order within 8 hrs 23 mins",
+                    "currency": "USD",
+                    "value": 0,
+                    "is_free": true
+                }
+            },
+            "seller": {
+                "name": "First Choice Online",
+                "link": "https://www.amazon.com/gp/aag/main?ie=UTF8&seller=A35BKAA6VXTYCT&isAmazonFulfilled=1&asin=B073JYC4XM&ref_=olp_merch_name_0",
+                "id": "A35BKAA6VXTYCT",
+                "rating": 4.5,
+                "ratings_total": 65169,
+                "postive_feedback_percent": 92
+            },
+            "offer_id": "z3fGEXWUQG1aZGog0sNJh2%2FkCZss2sKMyxfqzvGkNO3oEgGl0bI3a9PwvCKOujucxYAvboEcPS1OIVHpESVaJ9afHG6gToLwLIJprQ81d%2BFkTL%2Be6cN2Q%2FPmHi0p7SFpg4j1Oi3gg6p6ZsPNgz6DJiHxqR0VLqZd8yXNojZRuyTtRBAax6ayJXtjE3QAKYSI",
+            "is_member": true,
+            "position": 1,
+            "buybox_winner": true,
+            "offer_sku_id": "B073JYC4XM"
+        }
+    ],
+    "seller": {
+        "name": "East Coast Photo",
+        "link": "https://www.amazon.com/s?k=memory+cards&rh=n%3A172282%2Cp_6%3AA1Z74S8KTUFMH9&dc&qid=1721038250&rnid=303116011&ref=sr_nr_p_6_1&ds=v1%3Ao0tvyo85JFRw7Amhg%2F9QYS%2Fda06%2FhFbj1QlpNpMS8fo",
+        "rating": 4.6,
+        "id":"A35BKAA6VXTYCT",
+        "ratings_total":65169,
+        "postive_feedback_percent": 0.8
+    },
+    "inventory": {
+        "status": "in_stock",
+        "quantity_available": 4,
+        "quantity_sold": 9
+    },
+    "keywords": "[Older,Version],SanDisk,128GB,Ultra,MicroSDXC,UHS-I,Memory,Card,with,Adapter,100MB/s,C10,U1,Full,HD,A1,Micro,SD,Card,SDSQUAR-128G-GN6MA",
+    "search_alias": {
+        "title": "Electronics",
+        "value": "electronics"
+    },
+    "deal": {
+        "deal_id": "fbecde81",
+        "title": "Silonn Countertop Ice Makers",
+        "image": "https://m.media-amazon.com/images/I/41oHlJFaHrL.jpg",
+        "link": "https://www.amazon.com/deal/fbecde81?showVariations=true",
+        "deal_type": "BEST_DEAL",
+        "starts_at": "2024-07-08T07:00:01.640Z",
+        "ends_at": "2024-07-22T07:00:00.640Z",
+        "deal_price": {
+            "lower_value": 10000,
+            "upper_value": 20000,
+            "value": 10000,
+            "currency": "USD"
+        },
+        "was_price": {
+            "lower_value": 10000,
+            "upper_value": 20000,
+            "value": 10000,
+            "currency": "USD"
+        },
+        "list_price": {
+            "lower_value": 10000,
+            "upper_value": 20000,
+            "value": 10000,
+            "currency": "USD"
+        },
+        "is_lightning_deal": false,
+        "is_member_exclusive": true,
+        "is_member": true,
+        "free_shipping": false,
+        "is_map": false,
+        "description": "While supplies last. Valid only when shipped and sold by Amazon.com"
+    },
+    "shipping": {
+        "price": {
+            "raw": "Free shipping",
+            "currency": "USD",
+            "value": 0,
+            "is_free": true
+        },
+        "currency": "USD",
+        "service": "Authorities may apply import charges upon delivery",
+        "ships_to": "Afghanistan, Albania, Algeria, Andorra, Angola, Anguilla, Antigua and Barbuda, Argentina, Armenia, Aruba, Australia, Austria, Azerbaijan Republic, Bahamas, Bahrain, Bangladesh, Belgium, Belize, Benin, Bermuda, Bhutan, Bolivia, Bosnia and Herzegovina, Botswana, Brunei Darussalam, Bulgaria, Burkina Faso, Burundi, Cambodia, Cameroon, Canada, Cape Verde Islands, Cayman Islands, Central African Republic, Chad, Chile, China, Colombia, Costa Rica, Cyprus, Czech Republic, Côte d'Ivoire (Ivory Coast), Democratic Republic of the Congo, Denmark, Djibouti, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Ethiopia, Fiji, Finland, France, Gabon Republic, Gambia, Georgia, Ghana, Gibraltar, Greece, Greenland, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hong Kong, Hungary, Iceland, India, Indonesia, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Laos, Latvia, Lebanon, Lesotho, Liberia, Liechtenstein, Lithuania, Luxembourg, Macau, Macedonia, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Mauritania, Mauritius, Mexico, Moldova, Monaco, Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Namibia, Nauru, Nepal, Netherlands, New Zealand, Nicaragua, Niger, Nigeria, Norway, Oman, Pakistan, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Republic of Croatia, Republic of the Congo, Romania, Rwanda, Saint Kitts-Nevis, Saint Lucia, Saint Vincent and the Grenadines, San Marino, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, South Korea, Spain, Sri Lanka, Suriname, Swaziland, Sweden, Switzerland, Taiwan, Tajikistan, Tanzania, Thailand, Togo, Tonga, Trinidad and Tobago, Tunisia, Turkey, Turkmenistan, Turks and Caicos Islands, Uganda, United Arab Emirates, United States, Uruguay, Uzbekistan, Vanuatu, Vatican City State, Vietnam, Wallis and Futuna, Western Samoa, Yemen, Zambia, Zimbabwe",
+        "location": "AR, United States",
+        "state": "AR",
+        "city": "Bentonville",
+        "zipcode": "72712",
+        "store_id": "3164",
+        "delivery_estimate": "Estimated between Mon, Aug 5 and Wed, Aug 14 to 20017"
+    },
+    "fulfillment": {
+        "pickup": false,
+        "delivery_from_store": false,
+        "shipping": false
+    },
+    "returns_policy": {
+        "returns_accepted": true,
+        "free_returns": false,
+        "returns_raw": "30 days returns. Buyer pays for return shipping."
+    },
+    "variants": [
+        {
+            "f_item_id": "amazon.com-B073JYC4XM",
+            "source":"amazon.com",
+            "item_id": "B073JYC4XM",
+            "title": "[Older Version] SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-128G-GN6MA",
+            "link": "https://www.amazon.com/dp/B073JYC4XM",
+            "price": 14.24,
+            "currency": "USD",
+            "image": [
+                {
+                    "main_image": "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg",
+                    "images": [
+                        "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg",
+                        "https://m.media-amazon.com/images/I/61A5yvLX7FL._AC_SL1200_.jpg",
+                        "https://m.media-amazon.com/images/I/61qghmaHKXL._AC_SL1200_.jpg",
+                        "https://m.media-amazon.com/images/I/61TALLEpDlL._AC_SL1200_.jpg"
+                    ]
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "Verified purchase",
+                    "value": "Yes"
+                },
+                {
+                    "name": "Condition",
+                    "value": "new"
+                },
+                {
+                    "name": "Sold by",
+                    "value": "premium247"
+                }
+            ]
+        }
+    ],
+    "promotion": {
+        "why_buy": [
+            "Returns accepted."
+        ]
+    },
+    "f_updates_at": "2023-01-01T00:00:00Z"
+}

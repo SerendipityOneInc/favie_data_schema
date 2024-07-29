@@ -1,0 +1,305 @@
+{
+    "original_status": 200,
+    "pc_status": 200,
+    "url": "https://www.amazon.com/dp/B07J4TNYV8",
+    "body": {
+        "name": "AKASO V50 Elite 4K60fps Touch Screen WiFi Action Camera Voice Control EIS 131 feet Waterproof Camera 8X Zoom Remote Control",
+        "price": "$139.99",
+        "originalPrice": "",
+        "rawPrice": 139.99,
+        "currency": "$",
+        "canonicalUrl": "https://www.amazon.com/AKASO-Control-Waterproof-Adjustable-Accessories/dp/B07J4TNYV8",
+        "soldBy": {
+            "sellerID": "A2SITDWYE2UYD",
+            "name": "AKASO OUTDOOR",
+            "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A2SITDWYE2UYD&asin=B07J4TNYV8&ref_=dp_merchant_link&isAmazonFulfilled=1"
+        },
+        "deliveredBy": "",
+        "parentAsin": [
+            "B0CNTJJL9Y"
+        ],
+        "asinVariationValues": [
+            {
+                "asin": "B0CJRRY17L",
+                "variationName": "Style",
+                "variationValue": "With 64GB MicroSD Card",
+                "price": "$149.99",
+                "variationImageURL": ""
+            },
+            {
+                "asin": "B07J4TNYV8",
+                "variationName": "Style",
+                "variationValue": "Without 64GB MicroSD Card",
+                "price": "$139.99",
+                "variationImageURL": ""
+            }
+        ],
+        "isPrime": false,
+        "inStock": true,
+        "maximumQuantity": "30",
+        "stockDetail": "In Stock",
+        "couponInfo": "Apply $30 coupon",
+        "dealBadge": "",
+        "mainImage": "https://images-na.ssl-images-amazon.com/images/I/51UtbLwRUyL.jpg",
+        "images": [
+            "https://images-na.ssl-images-amazon.com/images/I/41TpfWPqUdL.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/51FLCvKyAnL.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/51ovKGh7SBL.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/51Cp1s3onhL.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/41rvVhxcIZL.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/61TxEi4vd1L.jpg"
+        ],
+        "imagesCount": 7,
+        "highResolutionImages": [],
+        "videos": [
+            "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/c007e893-78c8-5882-abb6-bbd6bced7f4b/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4",
+            "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/816b4895-f5e1-4006-a0ed-e0891bf379f9/default.jobtemplate.hls.m3u8",
+            "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a109672c-d219-441e-b9a3-1585ad305f26/default.jobtemplate.hls.m3u8",
+            "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/b10efeb5-fadf-43be-8ff4-8e6250287f3f/default.jobtemplate.hls.m3u8",
+            "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a5ee3d2f-543e-4c58-a84f-c5cb5aba13f7/default.jobtemplate.hls.m3u8",
+            "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/736773f0-ffb6-4231-bcb5-e889ec34b20a/default.vertical.jobtemplate.hls.m3u8"
+        ],
+        "videosCount": 6,
+        "productGuidesAndDocuments": {
+            "productDocumentationLink": "",
+            "userManualLink": ""
+        },
+        "byLineInfo": {
+            "name": "Visit the AKASO Store",
+            "link": "https://www.amazon.com/stores/AKASO/page/C02CDBD5-8614-4BEA-8F75-E2599200E36E?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto"
+        },
+        "brand": "AKASO",
+        "merchantInfo": "AKASO OUTDOOR",
+        "customerReview": "4.4 out of 5 stars",
+        "customerReviewCount": 4949,
+        "boughtInfo": "100+ bought in past month",
+        "answeredQuestionsCount": 0,
+        "editorialReviews": [],
+        "warrantyMessage": "",
+        "shippingMessage": "",
+        "deliveryMessages": [
+            "FREE delivery Wednesday, May 29",
+            "Or fastest delivery Tomorrow, May 24. Order within 7 hrs 32 mins"
+        ],
+        "climatePledgeFriendly": {
+            "present": true,
+            "details": ""
+        },
+        "features": [
+            "UPGRADED SERIES OF AKASO V50: Records 4K/60fps, 4K/30fps, 2.7K/60fps, 2.7K/30fps, 1080P/120fps, 720P/240fps video and 20MP image, you can capture high-quality full HD footages.",
+            "VOICE CONTROL: You can control your AKASO V50 Elite action camera hands free with voice commands Like “Action Start Video” and “Action Photo”.",
+            "SUPERB IMAGE STABLIZATION: Built-in Advanced Electronic Image Stabilization (EIS), your V50 Elite action camera predicts your movements and corrects for camera shake to deliver insanely smooth footage.",
+            "OPTIONAL VIEW ANGLE: You can adjust the view angle of this action camera according to your needs between Wide, Medium and Narrow. This sports camera also has the distortion calibration feature, which offers image distortion improvements.",
+            "WATERPROOF CAMERA UP TO 131FT: Equipped the improved waterproof case, this underwater camera can deep dive up to 131 feet, ready to capture all details of your adventures. Ideal for water sports such as swimming, surfing, diving, snorkeling, etc."
+        ],
+        "classifiedFacts": [],
+        "description": "",
+        "breadCrumbs": [
+            {
+                "name": "Electronics",
+                "link": "https://www.amazon.com/electronics-store/b/ref=dp_bc_aui_C_1?ie=UTF8&node=172282"
+            },
+            {
+                "name": "Camera & Photo",
+                "link": "https://www.amazon.com/Camera-Photo-Film-Canon-Sony/b/ref=dp_bc_aui_C_2?ie=UTF8&node=502394"
+            },
+            {
+                "name": "Video",
+                "link": "https://www.amazon.com/Video-Equipment/b/ref=dp_bc_aui_C_3?ie=UTF8&node=7161073011"
+            },
+            {
+                "name": "Sports & Action Video Cameras",
+                "link": "https://www.amazon.com/Sports-Action-Video-Cameras/b/ref=dp_bc_aui_C_4?ie=UTF8&node=7161074011"
+            }
+        ],
+        "productInformation": [
+            {
+                "name": "Brand Name",
+                "value": "‎AKASO"
+            },
+            {
+                "name": "Item Weight",
+                "value": "‎1.19 pounds"
+            },
+            {
+                "name": "Product Dimensions",
+                "value": "‎2.36 x 1.57 x 1.18 inches"
+            },
+            {
+                "name": "Item model number",
+                "value": "‎V50-Elite"
+            },
+            {
+                "name": "Batteries",
+                "value": "‎2 Lithium Polymer batteries required. (included)"
+            },
+            {
+                "name": "Is Discontinued By Manufacturer",
+                "value": "‎No"
+            },
+            {
+                "name": "Color Name",
+                "value": "‎Black"
+            },
+            {
+                "name": "Special Features",
+                "value": "‎Touchscreen, Remote Control, Anti-Shake, Slow Motion, Time Lapse"
+            },
+            {
+                "name": "ASIN",
+                "value": "B07J4TNYV8"
+            },
+            {
+                "name": "Customer Reviews",
+                "value": "4.4 4.4 out of 5 stars 4,949 ratings 4.4 out of 5 stars"
+            },
+            {
+                "name": "Best Sellers Rank",
+                "value": "#25,040 in Electronics (See Top 100 in Electronics) #122 in Sports & Action Video Cameras"
+            },
+            {
+                "name": "Date First Available",
+                "value": "October 17, 2018"
+            },
+            {
+                "name": "Brand",
+                "value": "AKASO"
+            },
+            {
+                "name": "Connectivity Technology",
+                "value": "Wi-Fi, USB, HDMI"
+            },
+            {
+                "name": "Flash Memory Type",
+                "value": "Micro SD"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Special Feature",
+                "value": "Touchscreen, Remote Control, Anti-Shake, Slow Motion, Time Lapse"
+            },
+            {
+                "name": "Screen Size",
+                "value": "2 Inches"
+            },
+            {
+                "name": "Photo Sensor Technology",
+                "value": "CMOS"
+            },
+            {
+                "name": "Camcorder type",
+                "value": "Action Camera"
+            },
+            {
+                "name": "Included Components",
+                "value": "Camera body, Battery Pack, Mounts, Waterproof Case"
+            },
+            {
+                "name": "Video Capture Resolution",
+                "value": "4K"
+            }
+        ],
+        "manufacturerProductDescription": [
+            {
+                "media_text": "Previous page Shoot stunning video with up to 4K60 resolution, perfect for maintaining detail even when zooming in With the waterproof case, you can dive up to 40m/131ft to discover the amazing underwater world. You can control this action camera hands free with voice commands like “Action Photo”. Capture a wider variety of shots with greater flexibility. With AKASO external mic (Not inclued), the camera captures sound with crisp details. Next page 1 4K60 Ultral HD Video 2 131ft Waterproof Camera 3 Voice Control 4 8x Zoom 5 Support External Mic",
+                "media_link": []
+            },
+            {
+                "media_text": "Previous page Remote control can truly leave your hands free. It allows you to control the camera from a distance. Setting, previewing and shooting is easier than before with intuitive touch screen. Capture up to 30 photos per second, freezing time and preserving every precious moment. You can adjust the view angle of this action camera according to your needs. You can connect the camera to your phone. AKASO GO App helps to edit and offload your contents. Next page 1 Wireless Remote Control 2 Intuitive Touch Screen 3 Burst Photo 4 Adjustable View Angle 5 APP Control",
+                "media_link": []
+            },
+            {
+                "media_text": "8x Slow Motion Video With ultra high frame rate 720P240 video, you can slow things down by up to 8x to relive funny, interesting or epic moments in all their glory. Superb Image Stabilization Built-in Advanced Electronic Image Stabilization (EIS) enables your V50 Elite action camera to deliver steady and smooth videos in shooting fast-moving objects. Image Stabilization is disabled when you select 4K 60FPS, 2.7K 60FPS, 1080P 120FPS or all 720P video resolution. Time Lapse Video Create captivating time-lapse videos. Condense hours or even days into mesmerizing moments, revealing a unique perspective on the passing of time.",
+                "media_link": []
+            },
+            {
+                "media_text": "Go beyond the limits of the outdoors and make memories",
+                "media_link": [
+                    "https://m.media-amazon.com/images/S/aplus-media-library-service-media/8b7711dd-965d-4cb1-94be-03d6e30edd81.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+                ]
+            },
+            {
+                "media_text": "Specifications Voice Control/ Advanced Electronic Image Stabilization/ Remote Control/ Adjustable View Angle/ Slow Motion Video/ Fast Motion Video/ Distortion Calibration/ H.264 Video Encoder/ Burst Photo/ Time Lapse Photo/ Time Lapse Video/ Wind Noise Reduction/ Auto Low Light/ Long Exposure/ White Balance/ Loop Recording/ Drive Mode/ Sound Record/ Micro HDMI/ Micro USB Warm Tip 64GB 100MB/s (U3) MicroSDXC Micro SD Card is Highly Recommended for V50 Elite Native 4K Action Camera (Micro SD card is not included). Please format the card in the camera before using this action camera. What's in the Box 1x AKASO V50 Elite Action Camera/ 1x Remote Control/ 2x 1050mAh Battery/ 1x Waterproof Case/ 1x Battery Charger/ 1x Bicycle Stand/ 6x Mount/ 2x 2-sided tape/ 2x Helmet Mount/ 1x Bandages/ 5x Tethers/ 1 x Protective Backdoor/ 1x USB Cable/ 1x Lens Cloth/ 1x Quick Start Guide (External Mic is not included) Note: The accessories kit are compatible with most of cameras even Gopro.",
+                "media_link": []
+            }
+        ],
+        "manufacturerProductImages": [
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/10777a5a-144a-41e5-a355-9802c2c0c45c.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/20cdc1b4-eb8a-4438-a86c-81f33ee606e6.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/334c41d5-dc06-4fb4-a706-e07f2d4b4eed.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/cbb5f02a-164b-4302-9df3-b38a1d8d7a8f.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/fcea0c12-e740-404c-bfe9-cab20315630c.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/f67ebbb1-6049-400c-89b0-c16e6279b2c6.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/1fdd0723-1e9e-4fa0-aa8b-4544cf388ec7.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/6e8bb2bf-d0ca-4f9f-a169-4106b2fcdee1.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/4be6c992-fdc2-4780-9196-5eee7917bcd1.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/f59c750e-d35b-43df-8031-ce62ff03bfca.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+            "https://m.media-amazon.com/images/S/aplus-media-library-service-media/8b7711dd-965d-4cb1-94be-03d6e30edd81.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+        ],
+        "sponsoredAds": [],
+        "productReviewBottom": [],
+        "reviews": [
+            {
+                "reviewerName": "Tim TowellTim Towell",
+                "reviewerLink": "https://www.amazon.com/gp/profile/amzn1.account.AGST4TGLU6QWY7LQEEXVC3EZ57DA",
+                "reviewLink": "https://www.amazon.com/gp/customer-reviews/R15AEBUXCOVBL0?ASIN=B07J4TNYV8",
+                "reviewRating": "5.0 out of 5 stars",
+                "reviewDate": "Reviewed in the United States on December 1, 2022",
+                "reviewTitle": "5.0 out of 5 stars AKASO V50 Elite delivers an outstanding feature set and image quality for the Price",
+                "reviewText": "The best GoPro cameras cost plenty, and there's a lot of competition from less expensive brands like Akaso. This camera has everything that you can get on the Highest End GoPro camera, and in my opinion is the best action camera you can get right now for the money.Excellent JPG and RAW photos. This camera captures great 4K video, and it supports quite a number of video resolutions; 4K/60fps, 4K/30fps, 2.7K/60fps, 2.7K/30fps, 1080p/120fps and 720p/240fps video. It captures 20MP still images, both in JPEG and RAW, and the results are excellent in good light with great detail captured. This camera is able to capture the highest resolution combined with the highest frame rate that I have ever seen in an action camera, 4K at 60 frames per second is able to record fast-moving action in very clear and crisp quality.Great Wireless Remote Control where you can place the remote control on your wrist and acquire ultra-convenient control for hiking, biking, skiing, bungee jumping and more. Be cautious though and remember that Remote is not waterproof. The camera also supports Voice Control to start and stop recording, or to take a still image.The Built-in Advanced Electronic Image Stabilization (EIS) enables your V50 Elite action camera to deliver steady and smooth videos in shooting fast-moving objects. It's not available in the higher end of the display resolutions, but produces superb stabilization at the supported resolutions.There seem to be an endless number of mounts provided with the camera and then for $30.00 more, I purchased the NEEWER 50 in 1 Action Camera Accessory Kit, but probably didn't need it, as the camera itself came with most of the necessary mounts.The camera comes with two 1,050mAh batteries and a dual USB charger. That’s something so few action camera-makers think of, and most users need, as I didn't read the \"Whats in the Box\" and automatically ordered the accessory dual battery pack with another USB Charger, so now I have four 1050mAh batteries.",
+                "reviewVotes": "13 people found this helpful",
+                "reviewVerifiedPurchase": true,
+                "reviewCommentCount": 0,
+                "media": {
+                    "images": [
+                        "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif.jpg",
+                        "https://m.media-amazon.com/images/I/51SylqwJT5L.jpg",
+                        "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif.jpg",
+                        "https://m.media-amazon.com/images/I/51vCmcWqhhL.jpg",
+                        "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif.jpg",
+                        "https://m.media-amazon.com/images/I/61DGiLoeJZL.jpg",
+                        "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif.jpg",
+                        "https://m.media-amazon.com/images/I/61PciOWmeyL.jpg"
+                    ],
+                    "video": ""
+                }
+            },
+            {
+                "reviewerName": "Michael G",
+                "reviewerLink": "https://www.amazon.com/gp/profile/amzn1.account.AEH2MR5BLYXBLJPRJ7D2J5TM5Y6Q",
+                "reviewLink": "https://www.amazon.com/gp/customer-reviews/R20MXTGVM9PC8B?ASIN=B07J4TNYV8",
+                "reviewRating": "5.0 out of 5 stars",
+                "reviewDate": "Reviewed in the United States on August 6, 2023",
+                "reviewTitle": "5.0 out of 5 stars Great value for the price.",
+                "reviewText": "This is my first camera of this type. I bike, kayak and off-road, so this camera will definitely come in handy. There was no way I was paying GoPro prices as I will only use the camera for personal use on a limited basis.My first impression of the camera is very positive. It has plenty of features and the image quality is very good, in bright light. The kit comes with a lot of good accessories. I already have a mini tri-pod for my webcam that I can use, but it would be nice if it came with a mini tripod. With the money saved buying this camera, there are plenty of options for accessories, including extra batteries.I purchased a 128 GB mini-SD card even though the manual lists 32 & 64 GB cards are compatible. The camera recognized it and formatted it without issue. The 128 GB card allows for about 4 hours of video at 4k30fps.The not so great - the camera is only so so in low light situations. I don't plan to use it often in those situations and I knew this before purchasing. So not a deal breaker.One issue that is a pain, on one kayaking trip where temps were in the upper 90s, the camera shutdown because it got too hot. Understandable, but the only way to get it to come back on after it cooled down was to remove the battery and miniSD card and hook up a USB cable with 5 Watts and 2 Amps power source. The camera came right on and I was able to reinstall the battery and miniSD card. Although also not a deal breaker, I need to remember to bring a portable charge that can charge at those specs in case the camera overheats again.All in all, it is a great buy. It was priced at $140, but has a $25 off coupon when I bought it. It's a really nice camera that really captures the great moments when our in nature.",
+                "reviewVotes": "15 people found this helpful",
+                "reviewVerifiedPurchase": true,
+                "reviewCommentCount": 0,
+                "media": {
+                    "images": [],
+                    "video": ""
+                }
+            },
+            {
+                "reviewerName": "Joseph R",
+                "reviewerLink": "https://www.amazon.com/gp/profile/amzn1.account.AHFZSR4OWTVOQCU6HOI63IGIHMLQ",
+                "reviewLink": "https://www.amazon.com/gp/customer-reviews/R3UHOHWNSQFMHV?ASIN=B07J4TNYV8",
+                "reviewRating": "4.0 out of 5 stars",
+                "reviewDate": "Reviewed in the United States on November 30, 2018",
+                "reviewTitle": "4.0 out of 5 stars Very Good Camera at a very good price point.",
+                "reviewText": "This is a review for the new AKASO V50 Elite 2018 model. For those looking for a good action camera you can hardly go wrong with this as it has most of the functions you need and want in a budget friendly camera. Let me be clear, GoPro makes a fantastic camera. Compared to the V50 Elite I think the GoPro 6/7 has better video and better audio and it’s waterproof without any external cases. With that being said, is the video and audio from the GoPro three times better than V50 elite? If you can live with a camera that needs an external case to be waterproof and has very good but not mind blowing video quality, then this is probably the camera for you. So for this review, I will not compare it to the GoPro Black 7, because that camera is in a different market for different buyers. Instead I will compare it to the 2017 V50 Pro.Maybe if I were a pro athlete needing the absolute best video and video quality for social media, then I would spend the $400 or so for a GoPro 7 but for a fraction of the price you can get away with the slightly lower quality video and audio and not notice. Set the camera to 4K and 60 fps and you will get very good video quality with smooth recording and playback. Image stabilization was a feature introduced in last year’s V50 Pro 2017 model (which I also own) and it makes a return in this year’s model with good results. It helps stop some of the jittery video if you make a lot of tiny fast or twitchy movements during recording. However the feature is no match for a good gimbal, but pair it with one and you will have super smooth video.For testing, I recorded the same objects/subjects using the 2018 V50 Elite mounted side by side with my 2017 V50 Pro. Both used the same memory cards with the factory camera case, and both set to their max 4k video settings. Camera setup is easy but unfortunately It doesn’t use a touch screen and you have to use the buttons to change settings. It comes with pretty much the same remote as last year, and you get a charger and two batteries that are interchangeable with last year’s. It also comes with an impressive amount of mounting clips and parts to help you mount the camera. The 2018 Elite was set to its max 4k 60 FPS and the 2017 V50 Pro was set to its max 4k 30 FPS setting. They were mounted to the same block when recording so that I could accurately compare video and I couldn’t say that camera angles or different video could cloud my judgement. I watched all videos on the same 4k TV.What I saw was that the video quality of the 2018 Elite is slightly better than that of the 2017 Pro. It is smoother than the Pro, and the colors were much more vibrant and popped on my screen more so than the 2017 Pro. However there were some videos that didn’t seem that different and I was hard pressed to tell a majorly discernible difference between the two. To me, the biggest difference between the two cameras is the color reproduction. Like I mentioned earlier, the colors are simply better on the 2018 Elite, and even watching the same video recording from two different cameras, I could tell which camera shot which footage by the difference in colors. They just seem to be more vibrant. I would never have noticed the difference if I didn’t see the footage from the 2018 Elite. So bottom line, the video recording is better with the 4k and 60 FPS Elite V50, the colors are better. If you have the choice between the Elite and last year’s Pro, its an easy decision. I liked the 2017 Pro, but the slightly better video and the better color reproduction of the 2018 Elite makes it a better choice if you need an action camera and do not yet have one. If you already own the 2017 Pro and are thinking about upgrading to the 2018 model, then I would say hold off on that. While the video and color are better, I don’t know if it’s worth the cost for a slight upgrade. I would wait until the 2019 version to see what upgrades they have in store. I was hoping for a waterproof camera like the GoPro that didn’t need the clear plastic case, but sadly the V50 still requires an external case. Also, the 2018 V50 Elite requires a memory card that can keep up with 4k video. I used a generic class 10 MicroSD card rated for 4k, but the AKASO would shut off after 5-10 seconds of recording. I thought that the camera was defective so when I contacted AKASO, they let me know that they recommended cards like the Samsung that was truly rated for 4k UHD recording. Once I replaced my generic with a genuine class 10 Samsung EVO with 90mb/s write speed the camera stopped shutting off. Unfortunately both cameras have almost completely muted audio when mounted in their cases. Underwater or shooting on dry land the cases protect the cameras from the elements but also effectively mute the mic so you can barely hear any audio of any kind. Maybe AKASO can fix the audio for 2019. In order to hear anything you need to record outside of the case.So to recap: the video and colors are better on the 2018 V50 Elite compared to the 2017 V50 Pro. Its smoother and the colors are noticeably better. Its not quite the same quality as the GoPro 7 Black, but its close. You need a MicroSD card capable of 4k UHD recording at 90mb/s or the camera will shut off. The 2017 V50 didn’t have that problem, but then again the video is slightly less impressive. When used in the waterproof case, both cameras will barely be able to pick up audio. If you can live with these small issues and you don’t already own a 2017 V50 Pro and you don’t want or need to spend $400 on an action camera then you would do yourself a favor and buy this camera. Based on value and bang for the buck its easily a 4 star item. If then can make this camera with a touch screen, and make it waterproof without a case like the GoPro then this becomes an immediate 5 star buy, especially at its price point.",
+                "reviewVotes": "332 people found this helpful",
+                "reviewVerifiedPurchase": true,
+                "reviewCommentCount": 0,
+                "media": {
+                    "images": [],
+                    "video": ""
+                }
+            }
+        ],
+        "otherSellers": []
+    }
+}

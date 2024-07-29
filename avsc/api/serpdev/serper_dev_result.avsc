@@ -1,0 +1,224 @@
+{
+    "namespace": "favie.data",
+    "type": "record",
+    "name": "SerperDevResult",
+    "doc": "Schema for serper.dev result",
+    "fields": [
+        {
+            "name": "searchParameters",
+            "type": {
+                "type": "record",
+                "namespace": "SerperDevResult",
+                "name": "SearchParameters",
+                "fields": [
+                    {
+                        "name": "q",
+                        "type": "string"
+                    },
+                    {
+                        "name": "gl",
+                        "type": "string"
+                    },
+                    {
+                        "name": "hl",
+                        "type": "string"
+                    },
+                    {
+                        "name": "autocorrect",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "page",
+                        "type": "long"
+                    },
+                    {
+                        "name": "type",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "knowledgeGraph",
+            "type": {
+                "type": "record",
+                "namespace": "SerperDevResult",
+                "name": "KnowledgeGraph",
+                "fields": [
+                    {
+                        "name": "title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "type": "string"
+                    },
+                    {
+                        "name": "website",
+                        "type": "string"
+                    },
+                    {
+                        "name": "imageUrl",
+                        "type": "string"
+                    },
+                    {
+                        "name": "description",
+                        "type": "string"
+                    },
+                    {
+                        "name": "descriptionSource",
+                        "type": "string"
+                    },
+                    {
+                        "name": "descriptionLink",
+                        "type": "string"
+                    },
+                    {
+                        "name": "attributes",
+                        "type": {
+                            "type": "record",
+                            "namespace": "SerperDevResult.knowledgeGraph",
+                            "name": "Attributes",
+                            "fields": [
+                                {
+                                    "name": "Headquarters",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "CEO",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Founded",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Sales",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Products",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Founders",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Subsidiaries",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "organic",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "namespace": "SerperDevResult",
+                    "name": "Organic",
+                    "fields": [
+                        {
+                            "name": "title",
+                            "type": "string"
+                        },
+                        {
+                            "name": "link",
+                            "type": "string"
+                        },
+                        {
+                            "name": "snippet",
+                            "type": "string"
+                        },
+                        {
+                            "name": "sitelinks",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "SerperDevResult.organic",
+                                        "name": "Sitelinks",
+                                        "fields": [
+                                            {
+                                                "name": "title",
+                                                "type": "string"
+                                            },
+                                            {
+                                                "name": "link",
+                                                "type": "string"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "position",
+                            "type": "long"
+                        },
+                        {
+                            "name": "date",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "peopleAlsoAsk",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "namespace": "SerperDevResult",
+                    "name": "PeopleAlsoAsk",
+                    "fields": [
+                        {
+                            "name": "question",
+                            "type": "string"
+                        },
+                        {
+                            "name": "snippet",
+                            "type": "string"
+                        },
+                        {
+                            "name": "title",
+                            "type": "string"
+                        },
+                        {
+                            "name": "link",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "relatedSearches",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "namespace": "SerperDevResult",
+                    "name": "RelatedSearches",
+                    "fields": [
+                        {
+                            "name": "query",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,2661 @@
+{
+    "namespace": "favie.data",
+    "type": "record",
+    "name": "RainforestProductDetail",
+    "doc": "Schema for Rainforest product detail api result",
+    "fields": [
+        {
+            "name": "request_info",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "namespace": "RainforestProductDetail",
+                    "name": "RequestInfo",
+                    "fields": [
+                        {
+                            "name": "success",
+                            "type": [
+                                "null",
+                                "boolean"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "credits_used",
+                            "type": [
+                                "null",
+                                "long"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "credits_remaining",
+                            "type": [
+                                "null",
+                                "long"
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "request_metadata",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "namespace": "RainforestProductDetail",
+                    "name": "RequestMetadata",
+                    "fields": [
+                        {
+                            "name": "id",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "created_at",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "processed_at",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "total_time_taken",
+                            "type": [
+                                "null",
+                                "double"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "amazon_url",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "request_parameters",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "namespace": "RainforestProductDetail",
+                    "name": "RequestParameters",
+                    "fields": [
+                        {
+                            "name": "type",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "url",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "product",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "namespace": "RainforestProductDetail",
+                    "name": "Product",
+                    "fields": [
+                        {
+                            "name": "title",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "title_excluding_variant_name",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "variants",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "Variants",
+                                        "fields": [
+                                            {
+                                                "name": "asin",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "text",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "dimensions",
+                                                "type": [
+                                                    "null",
+                                                    "string",
+                                                    {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "record",
+                                                            "namespace": "RainforestProductDetail.product.variants",
+                                                            "name": "Specifications",
+                                                            "fields": [
+                                                                {
+                                                                    "name": "name",
+                                                                    "type": [
+                                                                        "null",
+                                                                        "string"
+                                                                    ],
+                                                                    "default": null
+                                                                },
+                                                                {
+                                                                    "name": "value",
+                                                                    "type": [
+                                                                        "null",
+                                                                        "string"
+                                                                    ],
+                                                                    "default": null
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "link",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "price",
+                                                "type": [
+                                                    "null",
+                                                    {
+                                                        "type": "record",
+                                                        "namespace": "RainforestProductDetail.product.variants",
+                                                        "name": "Price",
+                                                        "fields": [
+                                                            {
+                                                                "name": "symbol",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "type": [
+                                                                    "null",
+                                                                    "double"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "currency",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "raw",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "keywords",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "keywords_list",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": "string"
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "link",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "asin",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "parent_asin",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "description",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "categories",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "Categories",
+                                        "fields": [
+                                            {
+                                                "name": "name",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "link",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "category_id",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "bestsellers_rank",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "BestsellersRank",
+                                        "fields": [
+                                            {
+                                                "name": "category",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "rank",
+                                                "type": [
+                                                    "null",
+                                                    "long"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "link",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "summarization_attributes",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "SummarizationAttributes",
+                                        "fields": [
+                                            {
+                                                "name": "name",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": [
+                                                    "null",
+                                                    "double"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "id",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "amazons_choice",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.product",
+                                    "name": "AmazonsChoice",
+                                    "fields": [
+                                        {
+                                            "name": "keywords",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "link",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "climate_pledge_friendly",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.product",
+                                    "name": "ClimatePledgeFriendly",
+                                    "fields": [
+                                        {
+                                            "name": "text",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "image",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "link",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "kindle_unlimited",
+                            "type": [
+                                "null",
+                                "boolean"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "has_coupon",
+                            "type": [
+                                "null",
+                                "boolean"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "coupon_text",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "promotions",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "Promotions",
+                                        "fields": [
+                                            {
+                                                "name": "name",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "brand",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "weight",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "shipping_weight",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "first_available",
+                            "type": [
+                                "null",
+                                "string",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.product",
+                                    "name": "FirstAvailable",
+                                    "fields": [
+                                        {
+                                            "name": "raw",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "utc",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "delivery_message",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "dimensions",
+                            "type": [
+                                "null",
+                                "string",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product.variants",
+                                        "name": "Specifications",
+                                        "fields": [
+                                            {
+                                                "name": "name",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "sub_title",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.product",
+                                    "name": "SubTitle",
+                                    "fields": [
+                                        {
+                                            "name": "text",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "link",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "rating",
+                            "type": [
+                                "null",
+                                "double"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "ratings_total",
+                            "type": [
+                                "null",
+                                "long"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "reviews_total",
+                            "type": [
+                                "null",
+                                "long"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "top_reviews",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "TopReviews",
+                                        "fields": [
+                                            {
+                                                "name": "id",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "title",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "body",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "body_html",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "link",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "rating",
+                                                "type": [
+                                                    "null",
+                                                    "long"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "date",
+                                                "type": [
+                                                    "null",
+                                                    {
+                                                        "type": "record",
+                                                        "namespace": "RainforestProductDetail.product.top_reviews",
+                                                        "name": "Date",
+                                                        "fields": [
+                                                            {
+                                                                "name": "raw",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "utc",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "profile",
+                                                "type": [
+                                                    "null",
+                                                    {
+                                                        "type": "record",
+                                                        "namespace": "RainforestProductDetail.product.top_reviews",
+                                                        "name": "Profile",
+                                                        "fields": [
+                                                            {
+                                                                "name": "name",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "link",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "id",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "vine_program",
+                                                "type": [
+                                                    "null",
+                                                    "boolean"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "verified_purchase",
+                                                "type": [
+                                                    "null",
+                                                    "boolean"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "helpful_votes",
+                                                "type": [
+                                                    "null",
+                                                    "long"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "review_country",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "is_global_review",
+                                                "type": [
+                                                    "null",
+                                                    "boolean"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "main_image",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.product",
+                                    "name": "MainImage",
+                                    "fields": [
+                                        {
+                                            "name": "link",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "images",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "Images",
+                                        "fields": [
+                                            {
+                                                "name": "link",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "videos",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "Videos",
+                                        "fields": [
+                                            {
+                                                "name": "duration_seconds",
+                                                "type": [
+                                                    "null",
+                                                    "long"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "width",
+                                                "type": [
+                                                    "null",
+                                                    "long"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "height",
+                                                "type": [
+                                                    "null",
+                                                    "long"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "url",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "thumbnail",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "is_hero_video",
+                                                "type": [
+                                                    "null",
+                                                    "boolean"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "variant",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "title",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "group_id",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "group_type",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "is_bundle",
+                            "type": [
+                                "null",
+                                "boolean"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "feature_bullets",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": "string"
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "important_information",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.product",
+                                    "name": "ImportantInformation",
+                                    "fields": [
+                                        {
+                                            "name": "sections",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "record",
+                                                        "namespace": "RainforestProductDetail.product.important_information",
+                                                        "name": "Sections",
+                                                        "fields": [
+                                                            {
+                                                                "name": "title",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "body",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "buybox_winner",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.product",
+                                    "name": "BuyboxWinner",
+                                    "fields": [
+                                        {
+                                            "name": "minimum_order_quantity",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "record",
+                                                    "namespace": "RainforestProductDetail.product.buybox_winner",
+                                                    "name": "MinimumOrderQuantity",
+                                                    "fields": [
+                                                        {
+                                                            "name": "value",
+                                                            "type": [
+                                                                "null",
+                                                                "long"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "message",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "offer_id",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "is_prime",
+                                            "type": [
+                                                "null",
+                                                "boolean"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "is_prime_exclusive_deal",
+                                            "type": [
+                                                "null",
+                                                "boolean"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "availability",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "record",
+                                                    "namespace": "RainforestProductDetail.product.buybox_winner",
+                                                    "name": "Availability",
+                                                    "fields": [
+                                                        {
+                                                            "name": "type",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "raw",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "dispatch_days",
+                                                            "type": [
+                                                                "null",
+                                                                "long"
+                                                            ],
+                                                            "default": null
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "fulfillment",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "record",
+                                                    "namespace": "RainforestProductDetail.product.buybox_winner",
+                                                    "name": "Fulfillment",
+                                                    "fields": [
+                                                        {
+                                                            "name": "type",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "is_sold_by_amazon",
+                                                            "type": [
+                                                                "null",
+                                                                "boolean"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "is_fulfilled_by_amazon",
+                                                            "type": [
+                                                                "null",
+                                                                "boolean"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "is_fulfilled_by_third_party",
+                                                            "type": [
+                                                                "null",
+                                                                "boolean"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "is_sold_by_third_party",
+                                                            "type": [
+                                                                "null",
+                                                                "boolean"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "third_party_seller",
+                                                            "type": [
+                                                                "null",
+                                                                {
+                                                                    "type": "record",
+                                                                    "namespace": "RainforestProductDetail.product.buybox_winner.fulfillment",
+                                                                    "name": "ThirdPartySeller",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "name",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "string"
+                                                                            ],
+                                                                            "default": null
+                                                                        },
+                                                                        {
+                                                                            "name": "link",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "string"
+                                                                            ],
+                                                                            "default": null
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "default": null
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "deal",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "record",
+                                                    "namespace": "RainforestProductDetail.product.buybox_winner",
+                                                    "name": "Deal",
+                                                    "fields": [
+                                                        {
+                                                            "name": "claimed",
+                                                            "type": [
+                                                                "null",
+                                                                {
+                                                                    "type": "record",
+                                                                    "namespace": "RainforestProductDetail.product.buybox_winner.deal",
+                                                                    "name": "Claimed",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "percentage",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "long"
+                                                                            ],
+                                                                            "default": null
+                                                                        },
+                                                                        {
+                                                                            "name": "raw",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "string"
+                                                                            ],
+                                                                            "default": null
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "timing",
+                                                            "type": [
+                                                                "null",
+                                                                {
+                                                                    "type": "record",
+                                                                    "namespace": "RainforestProductDetail.product.buybox_winner.deal",
+                                                                    "name": "Timing",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "raw",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "string"
+                                                                            ],
+                                                                            "default": null
+                                                                        },
+                                                                        {
+                                                                            "name": "ends_at",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "string"
+                                                                            ],
+                                                                            "default": null
+                                                                        },
+                                                                        {
+                                                                            "name": "remaining_hours",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "long"
+                                                                            ],
+                                                                            "default": null
+                                                                        },
+                                                                        {
+                                                                            "name": "remaining_minutes",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "long"
+                                                                            ],
+                                                                            "default": null
+                                                                        },
+                                                                        {
+                                                                            "name": "remaining_seconds",
+                                                                            "type": [
+                                                                                "null",
+                                                                                "long"
+                                                                            ],
+                                                                            "default": null
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "default": null
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "price",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "record",
+                                                    "namespace": "RainforestProductDetail.product.buybox_winner",
+                                                    "name": "Price",
+                                                    "fields": [
+                                                        {
+                                                            "name": "symbol",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "type": [
+                                                                "null",
+                                                                "double"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "currency",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "raw",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "rrp",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "record",
+                                                    "namespace": "RainforestProductDetail.product.buybox_winner",
+                                                    "name": "Price",
+                                                    "fields": [
+                                                        {
+                                                            "name": "symbol",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "type": [
+                                                                "null",
+                                                                "double"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "currency",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "raw",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "new_offers_count",
+                                            "type": [
+                                                "null",
+                                                "long"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "new_offers_from",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "record",
+                                                    "namespace": "RainforestProductDetail.product.buybox_winner",
+                                                    "name": "NewOffersFrom",
+                                                    "fields": [
+                                                        {
+                                                            "name": "symbol",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "type": [
+                                                                "null",
+                                                                "double"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "currency",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "raw",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "used_offers_count",
+                                            "type": [
+                                                "null",
+                                                "long"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "used_offers_from",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "record",
+                                                    "namespace": "RainforestProductDetail.product.buybox_winner",
+                                                    "name": "UsedOffersFrom",
+                                                    "fields": [
+                                                        {
+                                                            "name": "symbol",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "type": [
+                                                                "null",
+                                                                "double"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "currency",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "raw",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "mixed_offers_count",
+                                            "type": [
+                                                "null",
+                                                "long"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "mixed_offers_from",
+                                            "type": [
+                                                "null",
+                                                {
+                                                    "type": "record",
+                                                    "namespace": "RainforestProductDetail.product.buybox_winner",
+                                                    "name": "MixedOffersFrom",
+                                                    "fields": [
+                                                        {
+                                                            "name": "symbol",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "type": [
+                                                                "null",
+                                                                "double"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "currency",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        },
+                                                        {
+                                                            "name": "raw",
+                                                            "type": [
+                                                                "null",
+                                                                "string"
+                                                            ],
+                                                            "default": null
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "more_buying_choices",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "MoreBuyingChoices",
+                                        "fields": [
+                                            {
+                                                "name": "price",
+                                                "type": [
+                                                    "null",
+                                                    {
+                                                        "type": "record",
+                                                        "namespace": "RainforestProductDetail.product.more_buying_choices",
+                                                        "name": "Price",
+                                                        "fields": [
+                                                            {
+                                                                "name": "symbol",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "type": [
+                                                                    "null",
+                                                                    "double"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "currency",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "raw",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "seller_name",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "seller_link",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "free_shipping",
+                                                "type": [
+                                                    "null",
+                                                    "boolean"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "position",
+                                                "type": [
+                                                    "null",
+                                                    "long"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "specifications",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "Specifications",
+                                        "fields": [
+                                            {
+                                                "name": "name",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "services",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "Services",
+                                        "fields": [
+                                            {
+                                                "name": "title",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "price",
+                                                "type": [
+                                                    "null",
+                                                    {
+                                                        "type": "record",
+                                                        "namespace": "RainforestProductDetail.product.services",
+                                                        "name": "Price",
+                                                        "fields": [
+                                                            {
+                                                                "name": "symbol",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "type": [
+                                                                    "null",
+                                                                    "double"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "currency",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "raw",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "whats_included",
+                                                "type": [
+                                                    "null",
+                                                    {
+                                                        "type": "array",
+                                                        "items": "string"
+                                                    }
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "attributes",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.product",
+                                        "name": "Attributes",
+                                        "fields": [
+                                            {
+                                                "name": "name",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "frequently_bought_together",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "namespace": "RainforestProductDetail",
+                    "name": "FrequentlyBoughtTogether",
+                    "fields": [
+                        {
+                            "name": "total_price",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.frequently_bought_together",
+                                    "name": "TotalPrice",
+                                    "fields": [
+                                        {
+                                            "name": "symbol",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "value",
+                                            "type": [
+                                                "null",
+                                                "double"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "currency",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "raw",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "products",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.frequently_bought_together",
+                                        "name": "Products",
+                                        "fields": [
+                                            {
+                                                "name": "asin",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "title",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "link",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "price",
+                                                "type": [
+                                                    "null",
+                                                    {
+                                                        "type": "record",
+                                                        "namespace": "RainforestProductDetail.frequently_bought_together.products",
+                                                        "name": "Price",
+                                                        "fields": [
+                                                            {
+                                                                "name": "symbol",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "type": [
+                                                                    "null",
+                                                                    "double"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "currency",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "raw",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "also_viewed",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "record",
+                        "namespace": "RainforestProductDetail",
+                        "name": "AlsoViewed",
+                        "fields": [
+                            {
+                                "name": "title",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "link",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "image",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "rating",
+                                "type": [
+                                    "null",
+                                    "double"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "ratings_total",
+                                "type": [
+                                    "null",
+                                    "long"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "is_prime",
+                                "type": [
+                                    "null",
+                                    "boolean"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "price",
+                                "type": [
+                                    "null",
+                                    {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.also_viewed",
+                                        "name": "Price",
+                                        "fields": [
+                                            {
+                                                "name": "symbol",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": [
+                                                    "null",
+                                                    "double"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "currency",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "raw",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "default": null
+                            }
+                        ]
+                    }
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "bundles",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "record",
+                        "namespace": "RainforestProductDetail",
+                        "name": "Bundles",
+                        "fields": [
+                            {
+                                "name": "asin",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "title",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "link",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "image",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "rating",
+                                "type": [
+                                    "null",
+                                    "double"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "ratings_total",
+                                "type": [
+                                    "null",
+                                    "long"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "item_count",
+                                "type": [
+                                    "null",
+                                    "long"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "price",
+                                "type": [
+                                    "null",
+                                    {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.bundles",
+                                        "name": "Price",
+                                        "fields": [
+                                            {
+                                                "name": "value",
+                                                "type": [
+                                                    "null",
+                                                    "double"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "currency",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "raw",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "rrp",
+                                "type": [
+                                    "null",
+                                    {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.bundles",
+                                        "name": "Price",
+                                        "fields": [
+                                            {
+                                                "name": "value",
+                                                "type": [
+                                                    "null",
+                                                    "double"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "currency",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "raw",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "default": null
+                            }
+                        ]
+                    }
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "bundle_contents",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "record",
+                        "namespace": "RainforestProductDetail",
+                        "name": "BundleContents",
+                        "fields": [
+                            {
+                                "name": "asin",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "title",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "link",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "image",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "rating",
+                                "type": [
+                                    "null",
+                                    "double"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "ratings_total",
+                                "type": [
+                                    "null",
+                                    "long"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "item_count",
+                                "type": [
+                                    "null",
+                                    "long"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "price",
+                                "type": [
+                                    "null",
+                                    {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.bundle_contents",
+                                        "name": "Price",
+                                        "fields": [
+                                            {
+                                                "name": "symbol",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": [
+                                                    "null",
+                                                    "double"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "currency",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "raw",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "default": null
+                            }
+                        ]
+                    }
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "sponsored_products",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "record",
+                        "namespace": "RainforestProductDetail",
+                        "name": "SponsoredProducts",
+                        "fields": [
+                            {
+                                "name": "title",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "link",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "image",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "rating",
+                                "type": [
+                                    "null",
+                                    "double"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "ratings_total",
+                                "type": [
+                                    "null",
+                                    "long"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "is_prime",
+                                "type": [
+                                    "null",
+                                    "boolean"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "price",
+                                "type": [
+                                    "null",
+                                    {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.sponsored_products",
+                                        "name": "Price",
+                                        "fields": [
+                                            {
+                                                "name": "symbol",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": [
+                                                    "null",
+                                                    "double"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "currency",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "raw",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "default": null
+                            }
+                        ]
+                    }
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "shop_by_look",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "namespace": "RainforestProductDetail",
+                    "name": "ShopByLook",
+                    "fields": [
+                        {
+                            "name": "title",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "items",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "RainforestProductDetail.shop_by_look",
+                                        "name": "Items",
+                                        "fields": [
+                                            {
+                                                "name": "asin",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "link",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "title",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "image",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "is_prime",
+                                                "type": [
+                                                    "null",
+                                                    "boolean"
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "price",
+                                                "type": [
+                                                    "null",
+                                                    {
+                                                        "type": "record",
+                                                        "namespace": "RainforestProductDetail.shop_by_look.items",
+                                                        "name": "Price",
+                                                        "fields": [
+                                                            {
+                                                                "name": "symbol",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "currency",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "type": [
+                                                                    "null",
+                                                                    "double"
+                                                                ],
+                                                                "default": null
+                                                            },
+                                                            {
+                                                                "name": "raw",
+                                                                "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                ],
+                                                                "default": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "default": null
+                                            },
+                                            {
+                                                "name": "ratings_total",
+                                                "type": [
+                                                    "null",
+                                                    "long"
+                                                ],
+                                                "default": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        }
+    ]
+}

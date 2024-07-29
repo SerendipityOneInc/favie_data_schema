@@ -1,0 +1,87 @@
+{
+  "type": "record",
+  "name": "FavieProduct",
+  "namespace": "favie.data.log.dw.product",
+  "doc": "Favie product schema",
+  "fields": [
+    { "name": "f_parser_name", "type": ["null", "string"], "default": null },
+    { "name": "f_sku_id", "type": ["null", "string"], "default": null },
+    { "name": "f_spu_id", "type": ["null", "string"], "default": null },
+    { "name": "site", "type": ["null", "string"], "default": null },
+    { "name": "sku_id", "type": ["null", "string"], "default": null },
+    { "name": "spu_id", "type": ["null", "string"], "default": null },
+    { "name": "title", "type": ["null", "string"], "default": null },
+    { "name": "link", "type": ["null", "string"], "default": null },
+    { "name": "sub_title", "type": ["null", "string"], "default": null },
+    { "name": "sub_title_link", "type": ["null", "string"], "default": null },
+    { "name": "description", "type": ["null", "string"], "default": null },
+    { "name": "description_external_link", "type": ["null", "string"], "default": null },
+    { "name": "rich_product_description", "type": ["null", "string"], "default": null },
+    { "name": "price","type": ["null", "favie.data.log.dw.product.common.Price"],"default": null},
+    { "name": "f_status", "type": ["null", "string"], "default": null },
+    { "name": "images","type": ["null","favie.data.log.dw.product.common.Images"],"default": null},
+    { "name": "f_images","type": ["null","favie.data.log.dw.product.common.Images"],"default": null},
+    {
+      "name": "f_categories",
+      "type": {"type": "array","items": "favie.data.log.dw.product.common.CategoryItem"},
+      "default": []
+    },
+    {
+      "name": "categories",
+      "type": {"type": "array","items": "favie.data.log.dw.product.common.CategoryItem"},
+      "default": []
+      
+    },
+    {
+      "name": "videos",
+      "type": {"type": "array","items": "favie.data.log.dw.product.common.Video"},
+      "default": []
+    },
+    {
+      "name": "f_brand",
+      "type": ["null","favie.data.log.dw.product.common.Brand"],
+      "default": null
+    },
+    {
+      "name": "brand",
+      "type": ["null","favie.data.log.dw.product.common.Brand"],
+      "default": null
+    },
+    {
+      "name": "feature_bullets",
+      "type": {"type": "array","items": "string"},
+      "default": []
+    },
+    {
+      "name": "attributes",
+      "type": {"type": "array","items": "favie.data.log.dw.product.common.AttributeItem"},
+      "default": []
+    },
+    {
+      "name": "specifications",
+      "type": {"type": "array","items": "favie.data.log.dw.product.common.AttributeItem"},
+      "default": []
+    },
+    {"name": "standard_attributes","type": ["null","favie.data.log.dw.product.common.StandardAttributes"],"default": null},
+    {
+      "name": "offers",
+      "type": {"type": "array","items": "favie.data.log.dw.product.common.Offer"},
+      "default": []
+    },
+    { "name": "seller", "type": ["null", "favie.data.log.dw.product.common.Seller"],"default": null},
+    { "name": "inventory","type": ["null","favie.data.log.dw.product.common.Inventory"],"default": null},
+    { "name": "keywords", "type": ["null", "string"], "default": null },
+    { "name": "search_alias","type": ["null","favie.data.log.dw.product.common.SearchAliasItem"],"default": null},
+    { "name": "deal","type": ["null","favie.data.log.dw.product.common.Deal"],"default": null},
+    { "name": "shipping","type": ["null","favie.data.log.dw.product.common.Shipping"],"default": null},
+    {"name": "fulfillment","type": ["null", "favie.data.log.dw.product.common.Fulfillment"],"default": null},
+    {"name": "returns_policy","type": ["null", "favie.data.log.dw.product.common.ReturnPolicy"],"default": null},
+    {
+      "name": "variants",
+      "type": {"type": "array","items": "favie.data.log.dw.product.common.SimpleProduct"},
+      "default": []
+    },
+    { "name": "promotion","type": ["null","favie.data.log.dw.product.common.Promotion"],"default": null },
+    { "name": "f_updates_at", "type": ["null", "string"], "default": null }
+  ]
+}

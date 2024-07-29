@@ -1,0 +1,48 @@
+{
+    "namespace": "favie.data.log.reddit",
+    "type": "record",
+    "name": "RedditPost",
+    "doc": "Schema for reddit post data from crawler",
+    "fields": [
+        {
+            "name": "id",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "type_name",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "oid",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "uid",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "url",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "upvotes_count",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "comments_count",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "creation_time",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "json_data",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "crawl_time",
+            "type": ["null", "string"]
+        }
+    ]
+}

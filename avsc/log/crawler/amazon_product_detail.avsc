@@ -1,0 +1,987 @@
+{
+    "namespace": "favie.data.log.crawler",
+    "type": "record",
+    "name": "AmazonProductDetail",
+    "doc": "Schema for amazon product detail record of our spider",
+    "fields": [
+        {
+            "name": "request_info",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "request_info",
+                "fields": [
+                    {
+                        "name": "success",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "credits_used",
+                        "type": "long"
+                    },
+                    {
+                        "name": "credits_used_this_request",
+                        "type": "long"
+                    },
+                    {
+                        "name": "credits_remaining",
+                        "type": "long"
+                    },
+                    {
+                        "name": "credits_create_time",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "request_parameters",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "request_parameters",
+                "fields": [
+                    {
+                        "name": "amazon_domain",
+                        "type": "string"
+                    },
+                    {
+                        "name": "asin",
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "request_metadata",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "request_metadata",
+                "fields": [
+                    {
+                        "name": "created_at",
+                        "type": "string"
+                    },
+                    {
+                        "name": "processed_at",
+                        "type": "string"
+                    },
+                    {
+                        "name": "total_time_taken",
+                        "type": "long"
+                    },
+                    {
+                        "name": "amazon_url",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "_id",
+            "type": "string"
+        },
+        {
+            "name": "asin",
+            "type": "string"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "countryCode",
+            "type": "string"
+        },
+        {
+            "name": "var_reviews",
+            "type": "long"
+        },
+        {
+            "name": "var_ratings",
+            "type": "long"
+        },
+        {
+            "name": "date",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "double"
+        },
+        {
+            "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "sub_title",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "sub_title",
+                "fields": [
+                    {
+                        "name": "link",
+                        "type": "string"
+                    },
+                    {
+                        "name": "text",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "main_image",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "main_image",
+                "fields": [
+                    {
+                        "name": "link",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "images",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "namespace": "AmazonProductDetail",
+                    "name": "images",
+                    "fields": [
+                        {
+                            "name": "link",
+                            "type": "string"
+                        },
+                        {
+                            "name": "variant",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "images_count",
+            "type": "long"
+        },
+        {
+            "name": "images_flat",
+            "type": "string"
+        },
+        {
+            "name": "categories",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "namespace": "AmazonProductDetail",
+                    "name": "categories",
+                    "fields": [
+                        {
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "link",
+                            "type": "string"
+                        },
+                        {
+                            "name": "category_id",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "categories_flat",
+            "type": "string"
+        },
+        {
+            "name": "search_alias",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "search_alias",
+                "fields": [
+                    {
+                        "name": "title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "value",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "protection_plans",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "namespace": "AmazonProductDetail",
+                    "name": "protection_plans",
+                    "fields": [
+                        {
+                            "name": "asin",
+                            "type": "string"
+                        },
+                        {
+                            "name": "title",
+                            "type": "string"
+                        },
+                        {
+                            "name": "price",
+                            "type": {
+                                "type": "record",
+                                "namespace": "AmazonProductDetail.protection_plans",
+                                "name": "price",
+                                "fields": [
+                                    {
+                                        "name": "symbol",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "value",
+                                        "type": "double"
+                                    },
+                                    {
+                                        "name": "currency",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "raw",
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "buybox_winner",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "buybox_winner",
+                "fields": [
+                    {
+                        "name": "maximum_order_quantity",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.buybox_winner",
+                            "name": "maximum_order_quantity",
+                            "fields": [
+                                {
+                                    "name": "value",
+                                    "type": "long"
+                                },
+                                {
+                                    "name": "hard_maximum",
+                                    "type": "boolean"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "secondary_buybox",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.buybox_winner",
+                            "name": "secondary_buybox",
+                            "fields": [
+                                {
+                                    "name": "offer_id",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "caption",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "availability",
+                                    "type": {
+                                        "type": "record",
+                                        "namespace": "AmazonProductDetail.buybox_winner.secondary_buybox",
+                                        "name": "availability",
+                                        "fields": [
+                                            {
+                                                "name": "raw",
+                                                "type": "string"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "offer_id",
+                        "type": "string"
+                    },
+                    {
+                        "name": "mixed_offers_count",
+                        "type": "long"
+                    },
+                    {
+                        "name": "mixed_offers_from",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.buybox_winner",
+                            "name": "mixed_offers_from",
+                            "fields": []
+                        }
+                    },
+                    {
+                        "name": "is_prime",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "is_prime_exclusive_deal",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "is_amazon_fresh",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "condition",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.buybox_winner",
+                            "name": "condition",
+                            "fields": [
+                                {
+                                    "name": "is_new",
+                                    "type": "boolean"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "availability",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.buybox_winner",
+                            "name": "availability",
+                            "fields": [
+                                {
+                                    "name": "type",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "raw",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "dispatch_days",
+                                    "type": "long"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fulfillment",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.buybox_winner",
+                            "name": "fulfillment",
+                            "fields": [
+                                {
+                                    "name": "type",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "standard_delivery",
+                                    "type": {
+                                        "type": "record",
+                                        "namespace": "AmazonProductDetail.buybox_winner.fulfillment",
+                                        "name": "standard_delivery",
+                                        "fields": [
+                                            {
+                                                "name": "date",
+                                                "type": {
+                                                    "type": "array",
+                                                    "items": "string"
+                                                }
+                                            },
+                                            {
+                                                "name": "text",
+                                                "type": "string"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "type": "string"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "fastest_delivery",
+                                    "type": {
+                                        "type": "record",
+                                        "namespace": "AmazonProductDetail.buybox_winner.fulfillment",
+                                        "name": "fastest_delivery",
+                                        "fields": []
+                                    }
+                                },
+                                {
+                                    "name": "is_sold_by_amazon",
+                                    "type": "boolean"
+                                },
+                                {
+                                    "name": "is_fulfilled_by_amazon",
+                                    "type": "boolean"
+                                },
+                                {
+                                    "name": "is_fulfilled_by_third_party",
+                                    "type": "boolean"
+                                },
+                                {
+                                    "name": "is_sold_by_third_party",
+                                    "type": "boolean"
+                                },
+                                {
+                                    "name": "third_party_seller",
+                                    "type": {
+                                        "type": "record",
+                                        "namespace": "AmazonProductDetail.buybox_winner.fulfillment",
+                                        "name": "third_party_seller",
+                                        "fields": [
+                                            {
+                                                "name": "name",
+                                                "type": "string"
+                                            },
+                                            {
+                                                "name": "link",
+                                                "type": "string"
+                                            },
+                                            {
+                                                "name": "id",
+                                                "type": "string"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "price",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.buybox_winner",
+                            "name": "price",
+                            "fields": [
+                                {
+                                    "name": "symbol",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "value",
+                                    "type": "double"
+                                },
+                                {
+                                    "name": "currency",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "raw",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "shipping",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "marketplace_id",
+            "type": "string"
+        },
+        {
+            "name": "videos",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "videos_count",
+            "type": "long"
+        },
+        {
+            "name": "videos_flat",
+            "type": "string"
+        },
+        {
+            "name": "feature_bullets",
+            "type": {
+                "type": "array",
+                "items": "string"
+            }
+        },
+        {
+            "name": "feature_bullets_count",
+            "type": "long"
+        },
+        {
+            "name": "feature_bullets_flat",
+            "type": "string"
+        },
+        {
+            "name": "attributes",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "specifications",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "specifications_flat",
+            "type": "string"
+        },
+        {
+            "name": "top_reviews",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "brand_store",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "brand_store",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "name": "link",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "newer_model",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "newer_model",
+                "fields": []
+            }
+        },
+        {
+            "name": "similar_to_consider",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "similar_to_consider",
+                "fields": []
+            }
+        },
+        {
+            "name": "compare",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "frequently_bought_together",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "save_on_quality",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "save_on_quality",
+                "fields": [
+                    {
+                        "name": "title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "list",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "namespace": "AmazonProductDetail.save_on_quality",
+                                "name": "list",
+                                "fields": [
+                                    {
+                                        "name": "link",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "asin",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "name": "title",
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "similar_list",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "rating",
+            "type": "long"
+        },
+        {
+            "name": "rating_breakdown",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "rating_breakdown",
+                "fields": [
+                    {
+                        "name": "five_star",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.rating_breakdown",
+                            "name": "five_star",
+                            "fields": [
+                                {
+                                    "name": "percentage",
+                                    "type": "long"
+                                },
+                                {
+                                    "name": "count",
+                                    "type": "long"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "four_star",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.rating_breakdown",
+                            "name": "four_star",
+                            "fields": [
+                                {
+                                    "name": "percentage",
+                                    "type": "long"
+                                },
+                                {
+                                    "name": "count",
+                                    "type": "long"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "three_star",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.rating_breakdown",
+                            "name": "three_star",
+                            "fields": [
+                                {
+                                    "name": "percentage",
+                                    "type": "long"
+                                },
+                                {
+                                    "name": "count",
+                                    "type": "long"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "two_star",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.rating_breakdown",
+                            "name": "two_star",
+                            "fields": [
+                                {
+                                    "name": "percentage",
+                                    "type": "long"
+                                },
+                                {
+                                    "name": "count",
+                                    "type": "long"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "one_star",
+                        "type": {
+                            "type": "record",
+                            "namespace": "AmazonProductDetail.rating_breakdown",
+                            "name": "one_star",
+                            "fields": [
+                                {
+                                    "name": "percentage",
+                                    "type": "long"
+                                },
+                                {
+                                    "name": "count",
+                                    "type": "long"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "ratings_total",
+            "type": "long"
+        },
+        {
+            "name": "energy_efficiency",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "energy_efficiency",
+                "fields": []
+            }
+        },
+        {
+            "name": "keywords",
+            "type": "string"
+        },
+        {
+            "name": "keywords_list",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "is_bundle",
+            "type": "boolean"
+        },
+        {
+            "name": "more_buying_choices",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "Q_A_num",
+            "type": "long"
+        },
+        {
+            "name": "list_price",
+            "type": "long"
+        },
+        {
+            "name": "save_price",
+            "type": "long"
+        },
+        {
+            "name": "prime_price",
+            "type": "long"
+        },
+        {
+            "name": "request_asin",
+            "type": "string"
+        },
+        {
+            "name": "extra_saving",
+            "type": "string"
+        },
+        {
+            "name": "ranks",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "deal",
+            "type": "long"
+        },
+        {
+            "name": "first_list_date",
+            "type": "long"
+        },
+        {
+            "name": "productDescription",
+            "type": "string"
+        },
+        {
+            "name": "aplus_content",
+            "type": "string"
+        },
+        {
+            "name": "aplus_table",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "also_viewed_asins",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "also_bought_asins",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        },
+        {
+            "name": "delivery",
+            "type": "string"
+        },
+        {
+            "name": "title_tip_layer",
+            "type": "string"
+        },
+        {
+            "name": "amazons_choice",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "amazons_choice",
+                "fields": [
+                    {
+                        "name": "keywords",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "flag",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "flag",
+                "fields": [
+                    {
+                        "name": "stock",
+                        "type": "long"
+                    },
+                    {
+                        "name": "add_to_cart",
+                        "type": "long"
+                    },
+                    {
+                        "name": "amazonfit",
+                        "type": "long"
+                    },
+                    {
+                        "name": "coupon",
+                        "type": "long"
+                    },
+                    {
+                        "name": "coupon_text",
+                        "type": "long"
+                    },
+                    {
+                        "name": "aplus",
+                        "type": "long"
+                    },
+                    {
+                        "name": "video",
+                        "type": "long"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "quantity",
+            "type": "long"
+        },
+        {
+            "name": "parentAsin",
+            "type": "string"
+        },
+        {
+            "name": "varient_num",
+            "type": "long"
+        },
+        {
+            "name": "spec",
+            "type": {
+                "type": "record",
+                "namespace": "AmazonProductDetail",
+                "name": "spec",
+                "fields": [
+                    {
+                        "name": "color_name",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}
