@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - '*'
-    paths:
-      - '**/*.avsc'  # Run this workflow when .avsc files are changed
+    # paths:
+      # - '**/*.avsc'  # Run this workflow when .avsc files are changed
 
 jobs:
   generate-pydantic-models:
