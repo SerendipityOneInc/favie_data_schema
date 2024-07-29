@@ -30,7 +30,7 @@ jobs:
             model_name=$(basename "$file" .avsc)
             namespace_dir=$(jq -r '.namespace' "$file" | tr '.' '/')
             mkdir -p "$namespace_dir"
-            pydantic-avro avro_to_pydantic --asvc "$file" --output "${namespace_dir}/${model_name}.py"
+            pydantic-avro avro_to_pydantic --asvc "$file" --output "favie_data_schema/${namespace_dir}/${model_name}.py"
           done
       
       - name: Generate Product models
