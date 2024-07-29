@@ -26,7 +26,7 @@ jobs:
       
       - name: Generate Pydantic models
         run: |
-          for file in $(find avsc/log -name '*.avsc'); do
+          for file in $(find avsc/crawl_data -name '*.avsc'); do
             model_name=$(basename "$file" .avsc)
             namespace_dir=$(jq -r '.namespace' "$file" | tr '.' '/')
             mkdir -p "$namespace_dir"
