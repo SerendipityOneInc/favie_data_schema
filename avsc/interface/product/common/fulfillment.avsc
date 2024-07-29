@@ -1,0 +1,11 @@
+{
+  "namespace": "favie.data.interface.product.common",
+  "type": "record",
+  "name": "Fulfillment",
+  "doc": "Schema for Fulfillment",
+  "fields": [
+    { "name": "pickup", "type": ["null", "boolean"], "default": null },
+    { "name": "delivery_from_store", "type": ["null", "boolean"], "default": null },
+    { "name": "shipping", "type": ["null", "boolean"], "default": null }
+  ]
+}

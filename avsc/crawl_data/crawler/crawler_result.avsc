@@ -1,0 +1,311 @@
+{
+    "namespace": "favie.data.crawl_data.crawler",
+    "type": "record",
+    "name": "CrawlerResult",
+    "doc": "Schema for our crawler result",
+    "fields": [
+        {
+            "name": "crawler_request_info",
+            "type": {
+                "type": "record",
+                "name": "CrawlerRequestInfo",
+                "namespace": "CrawlerResult",
+                "fields": [
+                    {
+                        "name": "use_api",
+                        "type": "boolean",
+                        "default": true
+                    },
+                    {
+                        "name": "api_base",
+                        "type": "string",
+                        "default": "https://api.crawlbase.com/"
+                    },
+                    {
+                        "name": "api_params",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        },
+        {
+            "name": "original_status",
+            "type": "int",
+            "default": 200
+        },
+        {
+            "name": "pc_status",
+            "type": "int",
+            "default": 200
+        },
+        {
+            "name": "original_url",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "webpage",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "name": "WebPageContent",
+                    "namespace": "CrawlerResult",
+                    "fields": [
+                        {
+                            "name": "raw_html",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "parsed_webpage_content",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "name": "ParsedWebPageContent",
+                                    "namespace": "CrawlerResult",
+                                    "fields": [
+                                        {
+                                            "name": "title",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "author",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "hostname",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "date",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "fingerprint",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "id",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "license",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "comments",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "raw_text",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "text",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "language",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "image",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "pagetype",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "filedate",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "source",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "source_hostname",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "excerpt",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "categories",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "tags",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "subtitle",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "name": "SubtitleContent",
+                    "namespace": "CrawlerResult",
+                    "fields": [
+                        {
+                            "name": "concatenated_string",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null,
+                            "comment": "concatenated string of all the subtitles"
+                        },
+                        {
+                            "name": "subtitle_trunks",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "record",
+                                        "namespace": "CrawlerResult",
+                                        "name": "SubTitleTrunk",
+                                        "fields": [
+                                            {
+                                                "name": "trunck_content_str",
+                                                "type": [
+                                                    "null",
+                                                    "string"
+                                                ],
+                                                "default": null,
+                                                "comment": "content of each trunk in the original video or audio"
+                                            },
+                                            {
+                                                "name": "trunck_content_position",
+                                                "type": [
+                                                    "null",
+                                                    "long"
+                                                ],
+                                                "default": null,
+                                                "comment": "position of the trunk in the original video or audio"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "doc_filter_result",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": "string"
+                }
+            ],
+            "default": null
+        }
+    ]
+}

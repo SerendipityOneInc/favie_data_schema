@@ -1,0 +1,11 @@
+{
+  "namespace": "favie.data.interface.product.common",
+  "type": "record",
+  "name": "Inventory",
+  "doc": "Schema for Inventory",
+  "fields": [
+    { "name": "status", "type": ["null", "string"], "default": null },
+    { "name": "quantity_available", "type": ["null", "long"], "default": null },
+    { "name": "quantity_sold", "type": ["null", "long"], "default": null }
+  ]
+}

@@ -1,9 +1,0 @@
-{
-  "type": "record",
-  "name": "SearchAliasItem",
-  "namespace": "favie.data.product.common",
-  "fields": [
-    { "name": "title", "type": ["null", "string"], "default": null },
-    { "name": "value", "type": ["null", "string"], "default": null }
-  ]
-}
