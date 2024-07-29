@@ -1,7 +1,7 @@
 import base64
 import unittest
 
-from favie_data_schema.utils.log_util import (compress_and_encode_html,
+from favie.utils.log_util import (compress_and_encode_html,
                                               decode_and_decompress_html,
                                               is_encoded_html)
 
