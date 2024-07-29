@@ -27,7 +27,7 @@ jobs:
           for file in $(find . -name '*.avsc'); do
             model_name=$(basename "$file" .avsc)
             namespace_dir=$(jq -r '.namespace' "$file" | tr '.' '/')
-            mkdir -p "favie_data_schema/schemas/$namespace_dir"
+            mkdir -p "$namespace_dir"
             pydantic-avro avro_to_pydantic --asvc "$file" --output "${namespace_dir}/${model_name}.py"
           done
       
