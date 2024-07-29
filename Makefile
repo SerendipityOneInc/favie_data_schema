@@ -1,5 +1,8 @@
 # Makefile
 
+# Define PYTHONPATH
+export PYTHONPATH := $(PYTHONPATH):$(shell pwd)
+
 # Find all .avsc files in the current directory and its subdirectories
 AVRO_FILES := \
 	$(shell find avsc/api -name '*.avsc') \
