@@ -22,7 +22,11 @@ def resolve_references(schema, combined_schemas, resolved_names):
             if isinstance(schema["type"], list):
                 # Handle union types
                 schema["type"] = [
-                    resolve_references(t, combined_schemas, resolved_names) if isinstance(t, str) and t in combined_schemas else t
+                    (
+                        resolve_references(t, combined_schemas, resolved_names)
+                        if isinstance(t, str) and t in combined_schemas
+                        else t
+                    )
                     for t in schema["type"]
                 ]
             elif isinstance(schema["type"], str) and schema["type"] in combined_schemas:

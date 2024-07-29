@@ -1,9 +1,11 @@
 import argparse
 import json
 import os
-from typing import List, Optional
-from pydantic import BaseModel, Field
 import re
+from typing import List, Optional
+
+from pydantic import BaseModel, Field
+
 
 def parse_avro_type(avro_type, known_types):
     if isinstance(avro_type, list):
@@ -30,6 +32,7 @@ def parse_avro_type(avro_type, known_types):
         return known_types[avro_type]
     return avro_type
 
+
 def build_dependency_graph(schema, dependencies, known_types):
     if isinstance(schema, dict) and schema.get("type") == "record":
         full_name = f"{schema.get('namespace', '')}.{schema['name']}".strip(".")
@@ -54,6 +57,7 @@ def build_dependency_graph(schema, dependencies, known_types):
                     dependencies[full_name].add(dep_full_name)
                     build_dependency_graph(item_type, dependencies, known_types)
 
+
 def topological_sort(dependencies):
     sorted_list = []
     while dependencies:
@@ -70,6 +74,7 @@ def topological_sort(dependencies):
             raise RuntimeError("A cyclic dependency occurred")
     return sorted_list
 
+
 def avro_to_pydantic(avro_schema):
     models = {}
     known_types = {}
@@ -83,7 +88,7 @@ def avro_to_pydantic(avro_schema):
             field_default = field.get("default", ...)
             annotations[field_name] = field_type
             class_attrs[field_name] = Field(default=field_default, alias=field_name)
-        class_attrs['__annotations__'] = annotations
+        class_attrs["__annotations__"] = annotations
         model = type(name, (BaseModel,), class_attrs)
         full_name = f"{namespace}.{name}".strip(".")
         models[full_name] = model
@@ -108,42 +113,43 @@ def avro_to_pydantic(avro_schema):
 
     return models
 
+
 def extract_type_name(type_str):
     # 使用正则表达式提取类型名称
     match = re.search(r"Optional\[ForwardRef\('(.+?)'\)\]", type_str)
     if match:
         return f"Optional[{match.group(1).split('.')[-1]}]"
-    
+
     match: re.Match[str] | None = re.search(r"List\[ForwardRef\('(.+?)'\)\]", type_str)
     if match:
         return f"List[{match.group(1).split('.')[-1]}]"
-    
+
     match = re.search(r"ForwardRef\('(.+?)'\)", type_str)
     if match:
-        return match.group(1).split('.')[-1]
+        return match.group(1).split(".")[-1]
     return type_str
+
 
 def remove_namespace(field_type_str):
     field_type_str = extract_type_name(field_type_str)
-    if '.' in field_type_str:
-        field_type_str = field_type_str.split('.')[-1]  # Keep only the type name without namespace
-    if 'Optional[' in field_type_str:
+    if "." in field_type_str:
+        field_type_str = field_type_str.split(".")[-1]  # Keep only the type name without namespace
+    if "Optional[" in field_type_str:
         inner_type = field_type_str[9:-1]
-        if '.' in inner_type:
-            inner_type = inner_type.split('.')[-1]  # Keep only the type name without namespace
+        if "." in inner_type:
+            inner_type = inner_type.split(".")[-1]  # Keep only the type name without namespace
         field_type_str = f"Optional[{inner_type}]"
-    if 'List[' in field_type_str:
+    if "List[" in field_type_str:
         inner_type = field_type_str[5:-1]
-        if '.' in inner_type:
-            inner_type = inner_type.split('.')[-1]  # Keep only the type name without namespace
+        if "." in inner_type:
+            inner_type = inner_type.split(".")[-1]  # Keep only the type name without namespace
         field_type_str = f"List[{inner_type}]"
     return field_type_str
 
+
 def main():
     parser = argparse.ArgumentParser(description="Avro to pydantic with references.")
-    parser.add_argument(
-        "--avsc", type=str, required=True, help="avro schema file."
-    )
+    parser.add_argument("--avsc", type=str, required=True, help="avro schema file.")
     parser.add_argument(
         "--output-file",
         type=str,
@@ -153,7 +159,7 @@ def main():
 
     args = parser.parse_args()
 
-    with open(f'{args.avsc}', 'r') as f:
+    with open(f"{args.avsc}", "r") as f:
         avro_schema = json.load(f)
 
     # Step 1: Build dependency graph
@@ -168,7 +174,7 @@ def main():
     models = avro_to_pydantic(avro_schema)
 
     os.makedirs(os.path.dirname(args.output_file), exist_ok=True)
-    with open(f'{args.output_file}', 'w') as f:
+    with open(f"{args.output_file}", "w") as f:
         f.write("from typing import List, Optional\n")
         f.write("from pydantic import BaseModel, Field\n\n")
 
@@ -178,7 +184,7 @@ def main():
             f.write(f"class {class_name.split('.')[-1]}(BaseModel):\n")
             annotations = model.__annotations__
             for field_name, field_type in annotations.items():
-                field_type_str = str(field_type).replace('typing.', '')
+                field_type_str = str(field_type).replace("typing.", "")
                 field_type_str = remove_namespace(field_type_str)
                 default_value = model.model_fields[field_name].default
                 if default_value is ...:
@@ -186,6 +192,7 @@ def main():
                 else:
                     f.write(f"    {field_name}: {field_type_str} = {default_value}\n")
             f.write("\n")
+
 
 if __name__ == "__main__":
     main()
