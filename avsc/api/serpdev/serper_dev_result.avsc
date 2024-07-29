@@ -1,5 +1,5 @@
 {
-    "namespace": "favie.data",
+    "namespace": "favie.data.api.serpdev",
     "type": "record",
     "name": "SerperDevResult",
     "doc": "Schema for serper.dev result",

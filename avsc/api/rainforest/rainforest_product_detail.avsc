@@ -1,5 +1,5 @@
 {
-    "namespace": "favie.data",
+    "namespace": "favie.data.api.rainforest",
     "type": "record",
     "name": "RainforestProductDetail",
     "doc": "Schema for Rainforest product detail api result",
