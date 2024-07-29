@@ -20,16 +20,10 @@ jobs:
           python-version: '3.10'
       
       - name: Install pydantic-avro
-        run: pip install pydantic-avro
+        run: pip install pydantic-avro jq
       
       - name: Generate Pydantic models
-        run: |
-          for file in $(find . -name '*.avsc'); do
-            model_name=$(basename "$file" .avsc)
-            namespace_dir=$(jq -r '.namespace' "$file" | tr '.' '/')
-            mkdir -p "$namespace_dir"
-            pydantic-avro avro_to_pydantic --asvc "$file" --output "${namespace_dir}/${model_name}.py"
-          done
+        run: make
       
       - name: Commit and Push Generated Models
         uses: stefanzweifel/git-auto-commit-action@v4
