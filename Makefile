@@ -11,7 +11,7 @@ all: $(PYTHON_FILES)
 # Rule to generate .py files from .avsc files
 %.py: %.avsc
 	@echo "Processing $<" # Add debug information
-	@model_name=$(basename $< .avsc) && \
+	@model_name=$$(basename $$(basename $<) .avsc) && \
 	namespace_dir=$$(jq -r '.namespace' $< | tr '.' '/') && \
 	echo "model_name: $$model_name" && \
 	echo "namespace_dir: $$namespace_dir" && \
