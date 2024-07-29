@@ -1,0 +1,15 @@
+{
+  "namespace": "favie.data.interface.product.common",
+  "type": "record",
+  "name": "Video",
+  "doc": "Schema for Video",
+  "fields": [
+    { "name": "duration_seconds", "type": ["null", "long"], "default": null },
+    { "name": "width", "type": ["null", "long"], "default": null },
+    { "name": "height", "type": ["null", "long"], "default": null },
+    { "name": "link", "type": ["null", "string"], "default": null },
+    { "name": "thumbnail", "type": ["null", "string"], "default": null },
+    { "name": "is_hero_video", "type": ["null", "boolean"], "default": null },
+    { "name": "title", "type": ["null", "string"], "default": null }
+  ]
+}

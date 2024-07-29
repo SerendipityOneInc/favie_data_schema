@@ -1,0 +1,14 @@
+{
+  "namespace": "favie.data.interface.product.common",
+  "type": "record",
+  "name": "Seller",
+  "doc": "Schema for Seller",
+  "fields": [
+    { "name": "name", "type": ["null", "string"], "default": null },
+    { "name": "link", "type": ["null", "string"], "default": null },
+    { "name": "id", "type": ["null", "string"], "default": null },
+    { "name": "rating", "type": ["null", "double"], "default": null },
+    { "name": "ratings_total", "type": ["null", "long"], "default": null },
+    { "name": "postive_feedback_percent", "type": ["null", "double"], "default": null }
+  ]
+}
