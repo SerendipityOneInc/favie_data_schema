@@ -2,8 +2,7 @@ import base64
 import unittest
 
 from favie.utils.log_util import (compress_and_encode_html,
-                                              decode_and_decompress_html,
-                                              is_encoded_html)
+                                  decode_and_decompress_html, is_encoded_html)
 
 
 class TestHtmlEncoding(unittest.TestCase):
