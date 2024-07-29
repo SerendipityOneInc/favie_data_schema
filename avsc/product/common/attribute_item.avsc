@@ -1,7 +1,7 @@
 {
   "type": "record",
   "name": "AttributeItem",
-  "namespace": "favie.data.log.dw.product.common",
+  "namespace": "favie.data.product.common",
   "doc": "商品属性项",
   "fields": [
     { "name": "name", "type": ["null", "string"], "default": null },

@@ -1,0 +1,1275 @@
+{
+  "type": "record",
+  "name": "FavieProduct",
+  "namespace": "favie.data.product",
+  "doc": "Favie product schema",
+  "fields": [
+    {
+      "name": "f_parser_name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "f_sku_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "f_spu_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "site",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sku_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "spu_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "title",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "link",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sub_title",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sub_title_link",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "description_external_link",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "rich_product_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "price",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Price",
+          "doc": "Schema for Price",
+          "fields": [
+            {
+              "name": "lower_value",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "upper_value",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "value",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "currency",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "f_status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "images",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Images",
+          "doc": "Schema for Images",
+          "fields": [
+            {
+              "name": "main_image",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "images",
+              "type": {
+                "type": "array",
+                "items": "string"
+              },
+              "default": []
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "f_images",
+      "type": [
+        "null",
+        "favie.data.product.common.Images"
+      ],
+      "default": null
+    },
+    {
+      "name": "f_categories",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "CategoryItem",
+          "namespace": "favie.data.product.common",
+          "fields": [
+            {
+              "name": "name",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "id",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      },
+      "default": []
+    },
+    {
+      "name": "categories",
+      "type": {
+        "type": "array",
+        "items": "favie.data.product.common.CategoryItem"
+      },
+      "default": []
+    },
+    {
+      "name": "videos",
+      "type": {
+        "type": "array",
+        "items": {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Video",
+          "doc": "Schema for Video",
+          "fields": [
+            {
+              "name": "duration_seconds",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "width",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "height",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "link",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "thumbnail",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_hero_video",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "title",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      },
+      "default": []
+    },
+    {
+      "name": "f_brand",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Brand",
+          "doc": "Schema for Brand",
+          "fields": [
+            {
+              "name": "name",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "link",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "brand",
+      "type": [
+        "null",
+        "favie.data.product.common.Brand"
+      ],
+      "default": null
+    },
+    {
+      "name": "feature_bullets",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": []
+    },
+    {
+      "name": "attributes",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "AttributeItem",
+          "namespace": "favie.data.product.common",
+          "doc": "\u5546\u54c1\u5c5e\u6027\u9879",
+          "fields": [
+            {
+              "name": "name",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "value",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      },
+      "default": []
+    },
+    {
+      "name": "specifications",
+      "type": {
+        "type": "array",
+        "items": "favie.data.product.common.AttributeItem"
+      },
+      "default": []
+    },
+    {
+      "name": "standard_attributes",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "StandardAttributes",
+          "doc": "Schema for StandardAttributes",
+          "fields": [
+            {
+              "name": "is_used",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_bundle",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_auction",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "has_coupon",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_preorder",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_best_seller",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_best_offer",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_marketplace_item",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_private_brand",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "recent_sales",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "bestsellers_rank",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "product_model_number",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_platform_choice",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "offers",
+      "type": {
+        "type": "array",
+        "items": {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Offer",
+          "doc": "Schema for Offer",
+          "fields": [
+            {
+              "name": "price",
+              "type": [
+                "null",
+                "favie.data.product.common.Price"
+              ],
+              "default": null
+            },
+            {
+              "name": "minimum_order_quantity",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "maximum_order_quantity",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "standard_attributes",
+              "type": [
+                "null",
+                "favie.data.product.common.StandardAttributes"
+              ],
+              "default": null
+            },
+            {
+              "name": "delivery",
+              "type": [
+                "null",
+                {
+                  "namespace": "favie.data.product.common",
+                  "type": "record",
+                  "name": "Delivery",
+                  "doc": "Schema for Pr Delivery",
+                  "fields": [
+                    {
+                      "name": "fulfilled_by_platform",
+                      "type": [
+                        "null",
+                        "boolean"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "countdown",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "comments",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "price",
+                      "type": [
+                        "null",
+                        {
+                          "namespace": "favie.data.product.common",
+                          "type": "record",
+                          "name": "DeliveryPrice",
+                          "doc": "Schema for DeliveryPrice",
+                          "fields": [
+                            {
+                              "name": "raw",
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "currency",
+                              "type": [
+                                "null",
+                                "string"
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "value",
+                              "type": [
+                                "null",
+                                "long"
+                              ],
+                              "default": null
+                            },
+                            {
+                              "name": "is_free",
+                              "type": [
+                                "null",
+                                "boolean"
+                              ],
+                              "default": null
+                            }
+                          ]
+                        }
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "default": null
+            },
+            {
+              "name": "seller",
+              "type": [
+                "null",
+                {
+                  "namespace": "favie.data.product.common",
+                  "type": "record",
+                  "name": "Seller",
+                  "doc": "Schema for Seller",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "link",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "id",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "rating",
+                      "type": [
+                        "null",
+                        "double"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "ratings_total",
+                      "type": [
+                        "null",
+                        "long"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "postive_feedback_percent",
+                      "type": [
+                        "null",
+                        "double"
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "default": null
+            },
+            {
+              "name": "offer_id",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_member",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "position",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "buybox_winner",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "offer_sku_id",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      },
+      "default": []
+    },
+    {
+      "name": "seller",
+      "type": [
+        "null",
+        "favie.data.product.common.Seller"
+      ],
+      "default": null
+    },
+    {
+      "name": "inventory",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Inventory",
+          "doc": "Schema for Inventory",
+          "fields": [
+            {
+              "name": "status",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "quantity_available",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "quantity_sold",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "keywords",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "search_alias",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "SearchAliasItem",
+          "namespace": "favie.data.product.common",
+          "fields": [
+            {
+              "name": "title",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "value",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "deal",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Deal",
+          "doc": "Schema for Deal",
+          "fields": [
+            {
+              "name": "deal_id",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "title",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "image",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "link",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "deal_type",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "starts_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "ends_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "deal_price",
+              "type": [
+                "null",
+                "favie.data.product.common.Price"
+              ],
+              "default": null
+            },
+            {
+              "name": "was_price",
+              "type": [
+                "null",
+                "favie.data.product.common.Price"
+              ],
+              "default": null
+            },
+            {
+              "name": "list_price",
+              "type": [
+                "null",
+                "favie.data.product.common.Price"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_lightning_deal",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_member_exclusive",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_member",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "free_shipping",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_map",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "description",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "shipping",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Shipping",
+          "doc": "Schema for Shipping",
+          "fields": [
+            {
+              "name": "price",
+              "type": [
+                "null",
+                "favie.data.product.common.DeliveryPrice"
+              ],
+              "default": null
+            },
+            {
+              "name": "service",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "ships_to",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "location",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "state",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "city",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "zipcode",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "store_id",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "delivery_estimate",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "fulfillment",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Fulfillment",
+          "doc": "Schema for Fulfillment",
+          "fields": [
+            {
+              "name": "pickup",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "delivery_from_store",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "shipping",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "returns_policy",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "ReturnPolicy",
+          "doc": "Schema for ReturnPolicy",
+          "fields": [
+            {
+              "name": "returns_accepted",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "free_returns",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "returns_raw",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "variants",
+      "type": {
+        "type": "array",
+        "items": {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "SimpleProduct",
+          "doc": "Schema for SimpleProduct",
+          "fields": [
+            {
+              "name": "f_item_id",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "item_id",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "title",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "link",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "price",
+              "type": [
+                "null",
+                "double"
+              ],
+              "default": null
+            },
+            {
+              "name": "currency",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "images",
+              "type": {
+                "type": "array",
+                "items": "favie.data.product.common.Images"
+              },
+              "default": []
+            },
+            {
+              "name": "attributes",
+              "type": {
+                "type": "array",
+                "items": "favie.data.product.common.AttributeItem"
+              },
+              "default": []
+            }
+          ]
+        }
+      },
+      "default": []
+    },
+    {
+      "name": "promotion",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.product.common",
+          "type": "record",
+          "name": "Promotion",
+          "doc": "Schema for Promotion",
+          "fields": [
+            {
+              "name": "why_buy",
+              "type": {
+                "type": "array",
+                "items": "string"
+              },
+              "default": []
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "f_updates_at",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

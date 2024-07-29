@@ -1,5 +1,5 @@
 {
-  "namespace": "favie.data.log.dw.product.common",
+  "namespace": "favie.data.product.common",
   "type": "record",
   "name": "Delivery",
   "doc": "Schema for Pr Delivery",
@@ -7,6 +7,6 @@
     { "name": "fulfilled_by_platform", "type": ["null", "boolean"], "default": null },
     { "name": "countdown", "type": ["null", "string"], "default": null },
     { "name": "comments", "type": ["null", "string"], "default": null },
-    { "name": "price", "type": ["null", "favie.data.log.dw.product.common.DeliveryPrice"], "default": null }
+    { "name": "price", "type": ["null", "favie.data.product.common.DeliveryPrice"], "default": null }
   ]
 }

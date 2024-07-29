@@ -1,5 +1,5 @@
 {
-  "namespace": "favie.data.log.dw.product.common",
+  "namespace": "favie.data.product.common",
   "type": "record",
   "name": "SimpleProduct",
   "doc": "Schema for SimpleProduct",
@@ -13,12 +13,12 @@
     { "name": "currency", "type": ["null", "string"], "default": null },
     {
       "name": "images",
-      "type": { "type": "array","items": "favie.data.log.dw.product.common.Images"},
+      "type": { "type": "array","items": "favie.data.product.common.Images"},
       "default": []
     },
     {
       "name": "attributes",
-      "type": { "type": "array","items": "favie.data.log.dw.product.common.AttributeItem"},
+      "type": { "type": "array","items": "favie.data.product.common.AttributeItem"},
       "default": []
     }
   ]
