@@ -2,8 +2,10 @@ name: Generate Pydantic Models from AVSC
 
 on:
   push:
-    paths:
-      - '**/*.avsc'  # Run this workflow when .avsc files are changed
+    branches:
+      - '*'
+    # paths:
+    #   - '**/*.avsc'  # Run this workflow when .avsc files are changed
 
 jobs:
   generate-pydantic-models:

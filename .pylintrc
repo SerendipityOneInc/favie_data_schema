@@ -1,0 +1,9 @@
+[MASTER]
+load-plugins=pylint_pydantic
+extension-pkg-allow-list=pydantic
+
+[FORMAT]
+max-line-length=120
+
+[TYPECHECK]
+ignored-modules=alembic.op,alembic.context
