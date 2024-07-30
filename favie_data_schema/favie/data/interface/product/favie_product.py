@@ -10,11 +10,28 @@ class Price(BaseModel):
 
 class Images(BaseModel):
     main_image: Optional[str] = None
-    images: List[nal[List[str]] = None
+    images: List[str] = None
+
+class CategoryItem(BaseModel):
+    name: Optional[str] = None
+    id: Optional[str] = None
+
+class Video(BaseModel):
+    duration_seconds: Optional[int] = None
+    width: Optional[int] = None
+    height: Optional[int] = None
+    link: Optional[str] = None
+    thumbnail: Optional[str] = None
+    is_hero_video: Optional[bool] = None
+    title: Optional[str] = None
 
 class Brand(BaseModel):
     name: Optional[str] = None
     link: Optional[str] = None
+
+class AttributeItem(BaseModel):
+    name: Optional[str] = None
+    value: Optional[str] = None
 
 class StandardAttributes(BaseModel):
     is_used: Optional[bool] = None
@@ -30,6 +47,20 @@ class StandardAttributes(BaseModel):
     bestsellers_rank: Optional[int] = None
     product_model_number: Optional[str] = None
     is_platform_choice: Optional[bool] = None
+
+class DeliveryPrice(BaseModel):
+    raw: Optional[str] = None
+    currency: Optional[str] = None
+    value: Optional[int] = None
+    is_free: Optional[bool] = None
+
+class Seller(BaseModel):
+    name: Optional[str] = None
+    link: Optional[str] = None
+    id: Optional[str] = None
+    rating: Optional[float] = None
+    ratings_total: Optional[int] = None
+    postive_feedback_percent: Optional[float] = None
 
 class Inventory(BaseModel):
     status: Optional[str] = None
@@ -79,8 +110,38 @@ class ReturnPolicy(BaseModel):
     free_returns: Optional[bool] = None
     returns_raw: Optional[str] = None
 
+class SimpleProduct(BaseModel):
+    f_item_id: Optional[str] = None
+    source: Optional[str] = None
+    item_id: Optional[str] = None
+    title: Optional[str] = None
+    link: Optional[str] = None
+    price: Optional[float] = None
+    currency: Optional[str] = None
+    images: Optional[Images] = None
+    attributes: List[AttributeItem] = None
+
 class Promotion(BaseModel):
-    why_buy: List[nal[List[str]] = None
+    why_buy: List[str] = None
+
+class Delivery(BaseModel):
+    fulfilled_by_platform: Optional[bool] = None
+    countdown: Optional[str] = None
+    comments: Optional[str] = None
+    price: Optional[DeliveryPrice] = None
+
+class Offer(BaseModel):
+    price: Optional[Price] = None
+    minimum_order_quantity: Optional[int] = None
+    maximum_order_quantity: Optional[int] = None
+    standard_attributes: Optional[StandardAttributes] = None
+    delivery: Optional[Delivery] = None
+    seller: Optional[Seller] = None
+    offer_id: Optional[str] = None
+    is_member: Optional[bool] = None
+    position: Optional[int] = None
+    buybox_winner: Optional[bool] = None
+    offer_sku_id: Optional[str] = None
 
 class FavieProduct(BaseModel):
     f_parser_name: Optional[str] = None
@@ -105,7 +166,7 @@ class FavieProduct(BaseModel):
     videos: List[Video] = None
     f_brand: Optional[Brand] = None
     brand: Optional[Brand] = None
-    feature_bullets: List[nal[List[str]] = None
+    feature_bullets: List[str] = None
     attributes: List[AttributeItem] = None
     specifications: List[AttributeItem] = None
     standard_attributes: Optional[StandardAttributes] = None
