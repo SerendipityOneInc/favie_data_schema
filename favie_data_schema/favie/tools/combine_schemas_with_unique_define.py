@@ -34,20 +34,30 @@ def resolve_references(schema, combined_schemas, resolved_names):
                 if schema["type"] in resolved_names:
                     return schema["type"]
                 # Resolve the referenced schema and recursively resolve its references
-                resolved_schema = resolve_references(combined_schemas[schema["type"]], combined_schemas, resolved_names)
+                resolved_schema = resolve_references(
+                    combined_schemas[schema["type"]], combined_schemas, resolved_names
+                )
                 # Ensure we keep the original type name for the resolved schema
                 resolved_schema["name"] = schema["type"].split(".")[-1]
                 resolved_names.add(schema["type"])
                 return resolved_schema
-        return {k: resolve_references(v, combined_schemas, resolved_names) for k, v in schema.items()}
+        return {
+            k: resolve_references(v, combined_schemas, resolved_names)
+            for k, v in schema.items()
+        }
     elif isinstance(schema, list):
-        return [resolve_references(item, combined_schemas, resolved_names) for item in schema]
+        return [
+            resolve_references(item, combined_schemas, resolved_names)
+            for item in schema
+        ]
     elif isinstance(schema, str) and schema in combined_schemas:
         # Check if the schema has already been resolved
         if schema in resolved_names:
             return schema
         # Resolve the referenced schema and recursively resolve its references
-        resolved_schema = resolve_references(combined_schemas[schema], combined_schemas, resolved_names)
+        resolved_schema = resolve_references(
+            combined_schemas[schema], combined_schemas, resolved_names
+        )
         # Ensure we keep the original type name for the resolved schema
         resolved_schema["name"] = schema.split(".")[-1]
         resolved_names.add(schema)
@@ -71,9 +81,14 @@ def get_files_in_directory(directory, extension="*.avsc"):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Combine Avro schemas with references.")
+    parser = argparse.ArgumentParser(
+        description="Combine Avro schemas with references."
+    )
     parser.add_argument(
-        "--source-directory", type=str, required=True, help="Path to the directory containing schema files."
+        "--source-directory",
+        type=str,
+        required=True,
+        help="Path to the directory containing schema files.",
     )
     parser.add_argument(
         "--output-file",
@@ -94,15 +109,19 @@ def main():
     combined_schemas = load_and_combine_schemas(schema_files)
 
     if args.main_schema not in combined_schemas:
-        print(f"Error: Main schema '{args.main_schema}' not found in the provided schemas.")
-        return
+        print(
+            f"Error: Main schema '{args.main_schema}' not found in the provided schemas."
+        )
+        exit(1)
 
     # Track already resolved schemas
     resolved_names = set()
 
     # Now resolve references in the main schema
     main_schema = combined_schemas[args.main_schema]
-    resolved_main_schema = resolve_references(main_schema, combined_schemas, resolved_names)
+    resolved_main_schema = resolve_references(
+        main_schema, combined_schemas, resolved_names
+    )
 
     # Ensure the output directory exists
     output_dir = os.path.dirname(args.output_file)
