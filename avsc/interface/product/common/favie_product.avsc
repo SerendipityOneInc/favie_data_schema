@@ -23,19 +23,19 @@
     { "name": "f_images","type": ["null","favie.data.interface.product.common.Images"],"default": null},
     {
       "name": "f_categories",
-      "type": {"type": "array","items": "favie.data.interface.product.common.CategoryItem"},
-      "default": []
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.common.CategoryItem"}],
+      "default": null
     },
     {
       "name": "categories",
-      "type": {"type": "array","items": "favie.data.interface.product.common.CategoryItem"},
-      "default": []
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.common.CategoryItem"}],
+      "default": null
       
     },
     {
       "name": "videos",
-      "type": {"type": "array","items": "favie.data.interface.product.common.Video"},
-      "default": []
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.common.Video"}],
+      "default": null
     },
     {
       "name": "f_brand",
@@ -49,24 +49,24 @@
     },
     {
       "name": "feature_bullets",
-      "type": {"type": "array","items": "string"},
-      "default": []
+      "type": ["null", {"type": "array","items": "string"}],
+      "default": null
     },
     {
       "name": "attributes",
-      "type": {"type": "array","items": "favie.data.interface.product.common.AttributeItem"},
-      "default": []
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.common.AttributeItem"}],
+      "default": null
     },
     {
       "name": "specifications",
-      "type": {"type": "array","items": "favie.data.interface.product.common.AttributeItem"},
-      "default": []
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.common.AttributeItem"}],
+      "default": null
     },
     {"name": "standard_attributes","type": ["null","favie.data.interface.product.common.StandardAttributes"],"default": null},
     {
       "name": "offers",
-      "type": {"type": "array","items": "favie.data.interface.product.common.Offer"},
-      "default": []
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.common.Offer"}],
+      "default": null
     },
     { "name": "seller", "type": ["null", "favie.data.interface.product.common.Seller"],"default": null},
     { "name": "inventory","type": ["null","favie.data.interface.product.common.Inventory"],"default": null},
@@ -78,8 +78,8 @@
     {"name": "returns_policy","type": ["null", "favie.data.interface.product.common.ReturnPolicy"],"default": null},
     {
       "name": "variants",
-      "type": {"type": "array","items": "favie.data.interface.product.common.SimpleProduct"},
-      "default": []
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.common.SimpleProduct"}],
+      "default": null
     },
     { "name": "promotion","type": ["null","favie.data.interface.product.common.Promotion"],"default": null },
     { "name": "f_updates_at", "type": ["null", "string"], "default": null }

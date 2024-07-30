@@ -1,17 +1,27 @@
 {
-  "namespace": "favie.data.interface.product.common",
-  "type": "record",
-  "name": "Images",
-  "doc": "Schema for Images",
-  "fields": [
-    { "name": "main_image", "type": ["null", "string"], "default": null },
-    {
-      "name": "images",
-      "type": {
-        "type": "array",
-        "items": "string"
-      },
-      "default": []
-    }
-  ]
+    "namespace": "favie.data.interface.product.common",
+    "type": "record",
+    "name": "Images",
+    "doc": "Schema for Images",
+    "fields": [
+        {
+            "name": "main_image",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "images",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": "string"
+                }
+            ],
+            "default": null
+        }
+    ]
 }

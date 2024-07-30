@@ -13,13 +13,13 @@
     { "name": "currency", "type": ["null", "string"], "default": null },
     {
       "name": "images",
-      "type": { "type": "array","items": "favie.data.interface.product.common.Images"},
-      "default": []
+      "type": ["null", "favie.data.interface.product.common.Images"],
+      "default": null
     },
     {
       "name": "attributes",
-      "type": { "type": "array","items": "favie.data.interface.product.common.AttributeItem"},
-      "default": []
+      "type": ["null", { "type": "array","items": "favie.data.interface.product.common.AttributeItem"}],
+      "default": null
     }
   ]
 }

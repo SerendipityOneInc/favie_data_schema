@@ -1,13 +1,19 @@
 {
-  "namespace": "favie.data.interface.product.common",
-  "type": "record",
-  "name": "Promotion",
-  "doc": "Schema for Promotion",
-  "fields": [
-    {
-      "name": "why_buy",
-      "type": { "type": "array","items": "string"},
-      "default": []
-    }
-  ]
+    "namespace": "favie.data.interface.product.common",
+    "type": "record",
+    "name": "Promotion",
+    "doc": "Schema for Promotion",
+    "fields": [
+        {
+            "name": "why_buy",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": "string"
+                }
+            ],
+            "default": null
+        }
+    ]
 }
