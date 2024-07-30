@@ -26,7 +26,9 @@ def parse_avro_type(avro_type, known_types):
         if avro_type["type"] == "array":
             return List[parse_avro_type(avro_type["items"], known_types)]
         elif avro_type["type"] == "record":
-            full_name = f"{avro_type.get('namespace', '')}.{avro_type['name']}".strip(".")
+            full_name = f"{avro_type.get('namespace', '')}.{avro_type['name']}".strip(
+                "."
+            )
             return known_types.get(full_name, full_name)
     elif isinstance(avro_type, str) and avro_type in known_types:
         return known_types[avro_type]
@@ -41,19 +43,38 @@ def build_dependency_graph(schema, dependencies, known_types):
         for field in schema["fields"]:
             field_type = field["type"]
             if isinstance(field_type, dict) and field_type.get("type") == "record":
-                dep_full_name = f"{field_type.get('namespace', '')}.{field_type['name']}".strip(".")
+                dep_full_name = (
+                    f"{field_type.get('namespace', '')}.{field_type['name']}".strip(".")
+                )
                 dependencies[full_name].add(dep_full_name)
                 build_dependency_graph(field_type, dependencies, known_types)
             elif isinstance(field_type, list):
                 for t in field_type:
                     if isinstance(t, dict) and t.get("type") == "record":
-                        dep_full_name = f"{t.get('namespace', '')}.{t['name']}".strip(".")
+                        dep_full_name = f"{t.get('namespace', '')}.{t['name']}".strip(
+                            "."
+                        )
                         dependencies[full_name].add(dep_full_name)
                         build_dependency_graph(t, dependencies, known_types)
+                    elif isinstance(t, dict) and t.get("type") == "array":
+                        item_type = t["items"]
+                        if (
+                            isinstance(item_type, dict)
+                            and item_type.get("type") == "record"
+                        ):
+                            dep_full_name = f"{item_type.get('namespace', '')}.{item_type['name']}".strip(
+                                "."
+                            )
+                            dependencies[full_name].add(dep_full_name)
+                            build_dependency_graph(item_type, dependencies, known_types)
             elif isinstance(field_type, dict) and field_type.get("type") == "array":
                 item_type = field_type["items"]
                 if isinstance(item_type, dict) and item_type.get("type") == "record":
-                    dep_full_name = f"{item_type.get('namespace', '')}.{item_type['name']}".strip(".")
+                    dep_full_name = (
+                        f"{item_type.get('namespace', '')}.{item_type['name']}".strip(
+                            "."
+                        )
+                    )
                     dependencies[full_name].add(dep_full_name)
                     build_dependency_graph(item_type, dependencies, known_types)
 
@@ -98,15 +119,31 @@ def avro_to_pydantic(avro_schema):
         if isinstance(schema, dict) and schema.get("type") == "record":
             parse_record(schema["name"], schema.get("namespace", ""), schema["fields"])
             for field in schema["fields"]:
-                if isinstance(field["type"], dict) and field["type"].get("type") == "record":
+                if (
+                    isinstance(field["type"], dict)
+                    and field["type"].get("type") == "record"
+                ):
                     parse_schema(field["type"])
                 elif isinstance(field["type"], list):
                     for t in field["type"]:
                         if isinstance(t, dict) and t.get("type") == "record":
                             parse_schema(t)
-                elif isinstance(field["type"], dict) and field["type"].get("type") == "array":
+                        elif isinstance(t, dict) and t.get("type") == "array":
+                            item_type = t["items"]
+                            if (
+                                isinstance(item_type, dict)
+                                and item_type.get("type") == "record"
+                            ):
+                                parse_schema(item_type)
+                elif (
+                    isinstance(field["type"], dict)
+                    and field["type"].get("type") == "array"
+                ):
                     item_type = field["type"]["items"]
-                    if isinstance(item_type, dict) and item_type.get("type") == "record":
+                    if (
+                        isinstance(item_type, dict)
+                        and item_type.get("type") == "record"
+                    ):
                         parse_schema(item_type)
 
     parse_schema(avro_schema)
@@ -115,35 +152,78 @@ def avro_to_pydantic(avro_schema):
 
 
 def extract_type_name(type_str):
-    # 使用正则表达式提取类型名称
+    # 匹配 Optional[List['...']]
+    match = re.search(r"Optional\[List\['(.+?)'\]\]", type_str)
+    if match:
+        return f"List[{match.group(1).split('.')[-1]}]"
+
+    # 匹配 Optional[ForwardRef('...')]
     match = re.search(r"Optional\[ForwardRef\('(.+?)'\)\]", type_str)
     if match:
         return f"Optional[{match.group(1).split('.')[-1]}]"
 
-    match: re.Match[str] | None = re.search(r"List\[ForwardRef\('(.+?)'\)\]", type_str)
+    # 匹配 List[ForwardRef('...')]
+    match = re.search(r"List\[ForwardRef\('(.+?)'\)\]", type_str)
     if match:
         return f"List[{match.group(1).split('.')[-1]}]"
 
+    # 匹配 ForwardRef('...')
     match = re.search(r"ForwardRef\('(.+?)'\)", type_str)
     if match:
         return match.group(1).split(".")[-1]
+
+    # 匹配 List['...']
+    match = re.search(r"List\['(.+?)'\]", type_str)
+    if match:
+        return f"List[{match.group(1).split('.')[-1]}]"
+
+    # 匹配 Optional[List[...]]
+    match = re.search(r"Optional\[List\[(.+?)\]\]", type_str)
+    if match:
+        return f"List[{match.group(1)}]"
+
+    # 匹配 Optional[...]
+    match = re.search(r"Optional\[(.+?)\]", type_str)
+    if match:
+        return f"Optional[{match.group(1)}]"
+
+    # 匹配 List[...]
+    match = re.search(r"List\[(.+?)\]", type_str)
+    if match:
+        return f"List[{match.group(1)}]"
+
+    # 匹配 '...'
+    match = re.search(r"'\s*(.+?)\s*'", type_str)
+    if match:
+        return match.group(1).split(".")[-1]
+
+    # 如果没有匹配，返回原始字符串
     return type_str
 
 
 def remove_namespace(field_type_str):
     field_type_str = extract_type_name(field_type_str)
-    if "." in field_type_str:
-        field_type_str = field_type_str.split(".")[-1]  # Keep only the type name without namespace
     if "Optional[" in field_type_str:
         inner_type = field_type_str[9:-1]
         if "." in inner_type:
-            inner_type = inner_type.split(".")[-1]  # Keep only the type name without namespace
+            inner_type = inner_type.split(".")[
+                -1
+            ]  # Keep only the type name without namespace
         field_type_str = f"Optional[{inner_type}]"
+
     if "List[" in field_type_str:
         inner_type = field_type_str[5:-1]
         if "." in inner_type:
-            inner_type = inner_type.split(".")[-1]  # Keep only the type name without namespace
+            inner_type = inner_type.split(".")[
+                -1
+            ]  # Keep only the type name without namespace
         field_type_str = f"List[{inner_type}]"
+
+    if "." in field_type_str:
+        field_type_str = field_type_str.split(".")[
+            -1
+        ]  # Keep only the type name without namespace
+
     return field_type_str
 
 
