@@ -4,7 +4,6 @@
   "namespace": "favie.data.interface.product",
   "doc": "Favie product schema",
   "fields": [
-    { "name": "f_parser_name", "type": ["null", "string"], "default": null },
     { "name": "f_sku_id", "type": ["null", "string"], "default": null },
     { "name": "f_spu_id", "type": ["null", "string"], "default": null },
     { "name": "site", "type": ["null", "string"], "default": null },
@@ -30,7 +29,6 @@
       "name": "categories",
       "type": ["null", {"type": "array","items": "favie.data.interface.product.common.CategoryItem"}],
       "default": null
-      
     },
     {
       "name": "videos",
@@ -82,6 +80,7 @@
       "default": null
     },
     { "name": "promotion","type": ["null","favie.data.interface.product.common.Promotion"],"default": null },
-    { "name": "f_updates_at", "type": ["null", "string"], "default": null }
+    { "name": "f_updates_at", "type": ["null", "string"], "default": null },
+    { "name": "f_meta", "type": ["null", "favie.data.interface.product.common.Meta"], "default": null }
   ]
 }
