@@ -1,7 +1,7 @@
 {
   "namespace": "favie.data.interface.product.common",
   "type": "record",
-  "name": "Meta",
+  "name": "MetaInfo",
   "doc": "Schema for DeliveryPrice",
   "fields": [
     { "name": "source_name", "type": ["null", "string"], "default": null },
