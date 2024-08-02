@@ -124,13 +124,6 @@ class SimpleProduct(BaseModel):
 class Promotion(BaseModel):
     why_buy: List[str] = None
 
-class Meta(BaseModel):
-    source_name: Optional[str] = None
-    source_time: Optional[str] = None
-    f_attributes_updates_at: Optional[str] = None
-    f_attributes_map_success: Optional[bool] = None
-    f_images_crawl_send_at: Optional[str] = None
-
 class Delivery(BaseModel):
     fulfilled_by_platform: Optional[bool] = None
     countdown: Optional[str] = None
