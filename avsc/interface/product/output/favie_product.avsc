@@ -5,14 +5,6 @@
   "doc": "Favie product schema",
   "fields": [
     {
-      "name": "f_parser_name",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
       "name": "f_sku_id",
       "type": [
         "null",
@@ -1301,6 +1293,61 @@
       "type": [
         "null",
         "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "f_meta",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.interface.product.common",
+          "type": "record",
+          "name": "Meta",
+          "doc": "Schema for DeliveryPrice",
+          "fields": [
+            {
+              "name": "source_name",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_time",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_attributes_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_attributes_map_success",
+              "type": [
+                "null",
+                "bool"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_images_crawl_send_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
       ],
       "default": null
     }
