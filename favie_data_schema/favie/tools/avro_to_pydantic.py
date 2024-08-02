@@ -1,8 +1,7 @@
 import argparse
 import json
 import os
-import re
-from typing import List, Optional
+from typing import ForwardRef, List, Optional, Union, get_args, get_origin
 
 from pydantic import BaseModel, Field
 
@@ -151,80 +150,39 @@ def avro_to_pydantic(avro_schema):
     return models
 
 
-def extract_type_name(type_str):
-    # 匹配 Optional[List['...']]
-    match = re.search(r"Optional\[List\['(.+?)'\]\]", type_str)
-    if match:
-        return f"List[{match.group(1).split('.')[-1]}]"
-
-    # 匹配 Optional[ForwardRef('...')]
-    match = re.search(r"Optional\[ForwardRef\('(.+?)'\)\]", type_str)
-    if match:
-        return f"Optional[{match.group(1).split('.')[-1]}]"
-
-    # 匹配 List[ForwardRef('...')]
-    match = re.search(r"List\[ForwardRef\('(.+?)'\)\]", type_str)
-    if match:
-        return f"List[{match.group(1).split('.')[-1]}]"
-
-    # 匹配 ForwardRef('...')
-    match = re.search(r"ForwardRef\('(.+?)'\)", type_str)
-    if match:
-        return match.group(1).split(".")[-1]
-
-    # 匹配 List['...']
-    match = re.search(r"List\['(.+?)'\]", type_str)
-    if match:
-        return f"List[{match.group(1).split('.')[-1]}]"
-
-    # 匹配 Optional[List[...]]
-    match = re.search(r"Optional\[List\[(.+?)\]\]", type_str)
-    if match:
-        return f"List[{match.group(1)}]"
-
-    # 匹配 Optional[...]
-    match = re.search(r"Optional\[(.+?)\]", type_str)
-    if match:
-        return f"Optional[{match.group(1)}]"
-
-    # 匹配 List[...]
-    match = re.search(r"List\[(.+?)\]", type_str)
-    if match:
-        return f"List[{match.group(1)}]"
-
-    # 匹配 '...'
-    match = re.search(r"'\s*(.+?)\s*'", type_str)
-    if match:
-        return match.group(1).split(".")[-1]
-
-    # 如果没有匹配，返回原始字符串
-    return type_str
+# 判断类型是否是List
+def is_type_of_list(data_type: type):
+    origin_type = get_origin(data_type)
+    return origin_type == list or origin_type == List
 
 
-def remove_namespace(field_type_str):
-    field_type_str = extract_type_name(field_type_str)
-    if "Optional[" in field_type_str:
-        inner_type = field_type_str[9:-1]
-        if "." in inner_type:
-            inner_type = inner_type.split(".")[
-                -1
-            ]  # Keep only the type name without namespace
-        field_type_str = f"Optional[{inner_type}]"
+# 获取pydantic类型字符串
+def get_pydantic_type_str(optional_type):
+    if hasattr(optional_type, "__origin__") and optional_type.__origin__ is Union:
+        args = optional_type.__args__
+        native_types = [arg for arg in args if arg is not type(None)]
+        if native_types:
+            native_type = native_types[0]
+            if is_type_of_list(native_type):
+                return get_pydantic_type_str(native_type)
+            else:
+                pydantic_type = get_native_type_str(native_types[0]).split(".")[-1]
+                return f"Optional[{pydantic_type}]"
 
-    if "List[" in field_type_str:
-        inner_type = field_type_str[5:-1]
-        if "." in inner_type:
-            inner_type = inner_type.split(".")[
-                -1
-            ]  # Keep only the type name without namespace
-        field_type_str = f"List[{inner_type}]"
+    if is_type_of_list(optional_type):
+        item_type = get_args(optional_type)[0]
+        pydantic_type = get_native_type_str(item_type).split(".")[-1]
+        return f"List[{pydantic_type}]"
+    return optional_type
 
-    if "." in field_type_str:
-        field_type_str = field_type_str.split(".")[
-            -1
-        ]  # Keep only the type name without namespace
 
-    return field_type_str
+# 获取原生类型字符串
+def get_native_type_str(native_type):
+    return (
+        native_type.__forward_arg__
+        if isinstance(native_type, ForwardRef)
+        else native_type.__name__
+    )
 
 
 def main():
@@ -264,8 +222,7 @@ def main():
             f.write(f"class {class_name.split('.')[-1]}(BaseModel):\n")
             annotations = model.__annotations__
             for field_name, field_type in annotations.items():
-                field_type_str = str(field_type).replace("typing.", "")
-                field_type_str = remove_namespace(field_type_str)
+                field_type_str = get_pydantic_type_str(field_type)
                 default_value = model.model_fields[field_name].default
                 if default_value is ...:
                     f.write(f"    {field_name}: {field_type_str}\n")
