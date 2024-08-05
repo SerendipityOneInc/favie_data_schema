@@ -10,7 +10,7 @@ class Price(BaseModel):
 
 class Images(BaseModel):
     main_image: Optional[str] = None
-    images: List[str] = None
+    images: Optional[List[str]] = None
 
 class CategoryItem(BaseModel):
     name: Optional[str] = None
@@ -119,10 +119,10 @@ class SimpleProduct(BaseModel):
     price: Optional[float] = None
     currency: Optional[str] = None
     images: Optional[Images] = None
-    attributes: List[AttributeItem] = None
+    attributes: Optional[List[AttributeItem]] = None
 
 class Promotion(BaseModel):
-    why_buy: List[str] = None
+    why_buy: Optional[List[str]] = None
 
 class MetaInfo(BaseModel):
     source_name: Optional[str] = None
@@ -167,16 +167,16 @@ class FavieProduct(BaseModel):
     f_status: Optional[str] = None
     images: Optional[Images] = None
     f_images: Optional[Images] = None
-    f_categories: List[CategoryItem] = None
-    categories: List[CategoryItem] = None
-    videos: List[Video] = None
+    f_categories: Optional[List[CategoryItem]] = None
+    categories: Optional[List[CategoryItem]] = None
+    videos: Optional[List[Video]] = None
     f_brand: Optional[Brand] = None
     brand: Optional[Brand] = None
-    feature_bullets: List[str] = None
-    attributes: List[AttributeItem] = None
-    specifications: List[AttributeItem] = None
+    feature_bullets: Optional[List[str]] = None
+    attributes: Optional[List[AttributeItem]] = None
+    specifications: Optional[List[AttributeItem]] = None
     standard_attributes: Optional[StandardAttributes] = None
-    offers: List[Offer] = None
+    offers: Optional[List[Offer]] = None
     seller: Optional[Seller] = None
     inventory: Optional[Inventory] = None
     keywords: Optional[str] = None
@@ -185,7 +185,7 @@ class FavieProduct(BaseModel):
     shipping: Optional[Shipping] = None
     fulfillment: Optional[Fulfillment] = None
     returns_policy: Optional[ReturnPolicy] = None
-    variants: List[SimpleProduct] = None
+    variants: Optional[List[SimpleProduct]] = None
     promotion: Optional[Promotion] = None
     f_updates_at: Optional[str] = None
     f_meta: Optional[MetaInfo] = None

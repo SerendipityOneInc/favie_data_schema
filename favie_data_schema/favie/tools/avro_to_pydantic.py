@@ -172,7 +172,7 @@ def get_pydantic_type_str(optional_type):
     if is_type_of_list(optional_type):
         item_type = get_args(optional_type)[0]
         pydantic_type = get_native_type_str(item_type).split(".")[-1]
-        return f"List[{pydantic_type}]"
+        return f"Optional[List[{pydantic_type}]]"
     return optional_type
 
 
