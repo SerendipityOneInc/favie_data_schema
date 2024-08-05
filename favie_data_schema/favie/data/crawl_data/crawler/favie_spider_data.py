@@ -18,7 +18,7 @@ class ContentType(str, Enum):
     IMAGE = "image"
 
 
-class GeneralSpiderData(BaseModel):
+class FavieSpiderData(BaseModel):
     id: str = uuid.uuid1().hex  # UUID1
     url: str  # URL
     content_type: Optional[ContentType] = ContentType.OTHER  # used for spider
