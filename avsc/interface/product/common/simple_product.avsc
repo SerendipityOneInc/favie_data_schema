@@ -9,8 +9,7 @@
     { "name": "sku_id", "type": ["null", "string"], "default": null },
     { "name": "title", "type": ["null", "string"], "default": null },
     { "name": "link", "type": ["null", "string"], "default": null },
-    { "name": "price", "type": ["null", "double"], "default": null },
-    { "name": "currency", "type": ["null", "string"], "default": null },
+    { "name": "price", "type": ["null", "favie.data.interface.product.common.Price"], "default": null },
     {
       "name": "images",
       "type": ["null", "favie.data.interface.product.common.Images"],

@@ -116,8 +116,7 @@ class SimpleProduct(BaseModel):
     sku_id: Optional[str] = None
     title: Optional[str] = None
     link: Optional[str] = None
-    price: Optional[float] = None
-    currency: Optional[str] = None
+    price: Optional[Price] = None
     images: Optional[Images] = None
     attributes: Optional[List[AttributeItem]] = None
 
