@@ -157,14 +157,14 @@ def is_type_of_list(data_type: type):
 
 
 # 获取pydantic类型字符串
-def get_pydantic_type_str(optional_type):
+def get_pydantic_type_str(optional_type,with_optional:bool=False):
     if hasattr(optional_type, "__origin__") and optional_type.__origin__ is Union:
         args = optional_type.__args__
         native_types = [arg for arg in args if arg is not type(None)]
         if native_types:
             native_type = native_types[0]
             if is_type_of_list(native_type):
-                return get_pydantic_type_str(native_type)
+                return get_pydantic_type_str(native_type,True)
             else:
                 pydantic_type = get_native_type_str(native_types[0]).split(".")[-1]
                 return f"Optional[{pydantic_type}]"
@@ -172,7 +172,8 @@ def get_pydantic_type_str(optional_type):
     if is_type_of_list(optional_type):
         item_type = get_args(optional_type)[0]
         pydantic_type = get_native_type_str(item_type).split(".")[-1]
-        return f"Optional[List[{pydantic_type}]]"
+        return f"Optional[List[{pydantic_type}]]" if with_optional else f"List[{pydantic_type}]"
+
     return optional_type
 
 
