@@ -1225,15 +1225,7 @@
                 "name": "price",
                 "type": [
                   "null",
-                  "double"
-                ],
-                "default": null
-              },
-              {
-                "name": "currency",
-                "type": [
-                  "null",
-                  "string"
+                  "favie.data.interface.product.common.Price"
                 ],
                 "default": null
               },
