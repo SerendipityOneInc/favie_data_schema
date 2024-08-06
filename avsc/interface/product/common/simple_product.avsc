@@ -4,9 +4,9 @@
   "name": "SimpleProduct",
   "doc": "Schema for SimpleProduct",
   "fields": [
-    { "name": "f_item_id", "type": ["null", "string"], "default": null },
+    { "name": "f_sku_id", "type": ["null", "string"], "default": null },
     { "name": "source", "type": ["null", "string"], "default": null },
-    { "name": "item_id", "type": ["null", "string"], "default": null },
+    { "name": "sku_id", "type": ["null", "string"], "default": null },
     { "name": "title", "type": ["null", "string"], "default": null },
     { "name": "link", "type": ["null", "string"], "default": null },
     { "name": "price", "type": ["null", "double"], "default": null },

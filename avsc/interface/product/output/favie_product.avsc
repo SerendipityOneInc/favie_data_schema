@@ -1182,7 +1182,7 @@
             "doc": "Schema for SimpleProduct",
             "fields": [
               {
-                "name": "f_item_id",
+                "name": "f_sku_id",
                 "type": [
                   "null",
                   "string"
@@ -1198,7 +1198,7 @@
                 "default": null
               },
               {
-                "name": "item_id",
+                "name": "sku_id",
                 "type": [
                   "null",
                   "string"

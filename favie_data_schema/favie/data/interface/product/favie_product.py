@@ -111,9 +111,9 @@ class ReturnPolicy(BaseModel):
     returns_raw: Optional[str] = None
 
 class SimpleProduct(BaseModel):
-    f_item_id: Optional[str] = None
+    f_sku_id: Optional[str] = None
     source: Optional[str] = None
-    item_id: Optional[str] = None
+    sku_id: Optional[str] = None
     title: Optional[str] = None
     link: Optional[str] = None
     price: Optional[float] = None
