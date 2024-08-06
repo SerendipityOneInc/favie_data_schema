@@ -1333,7 +1333,7 @@
           "doc": "Schema for DeliveryPrice",
           "fields": [
             {
-              "name": "source_name",
+              "name": "source_type",
               "type": [
                 "null",
                 "string"
@@ -1341,7 +1341,15 @@
               "default": null
             },
             {
-              "name": "source_time",
+              "name": "parser_name",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "parser_time",
               "type": [
                 "null",
                 "string"

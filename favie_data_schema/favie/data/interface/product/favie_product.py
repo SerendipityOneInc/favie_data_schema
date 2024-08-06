@@ -128,8 +128,9 @@ class Promotion(BaseModel):
     why_buy: Optional[List[str]] = None
 
 class MetaInfo(BaseModel):
-    source_name: Optional[str] = None
-    source_time: Optional[str] = None
+    source_type: Optional[str] = None
+    parser_name: Optional[str] = None
+    parser_time: Optional[str] = None
     f_attributes_updates_at: Optional[str] = None
     f_attributes_map_success: Optional[bool] = None
     f_images_crawl_send_at: Optional[str] = None
