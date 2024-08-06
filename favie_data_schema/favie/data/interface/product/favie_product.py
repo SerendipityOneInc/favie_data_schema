@@ -44,7 +44,6 @@ class StandardAttributes(BaseModel):
     is_marketplace_item: Optional[bool] = None
     is_private_brand: Optional[bool] = None
     recent_sales: Optional[int] = None
-    bestsellers_rank: Optional[int] = None
     product_model_number: Optional[str] = None
     is_platform_choice: Optional[bool] = None
 
@@ -61,6 +60,11 @@ class Seller(BaseModel):
     rating: Optional[float] = None
     ratings_total: Optional[int] = None
     postive_feedback_percent: Optional[float] = None
+
+class SellerRank(BaseModel):
+    category: Optional[str] = None
+    rank: Optional[int] = None
+    link: Optional[str] = None
 
 class Inventory(BaseModel):
     status: Optional[str] = None
@@ -176,6 +180,7 @@ class FavieProduct(BaseModel):
     specifications: Optional[List[AttributeItem]] = None
     standard_attributes: Optional[StandardAttributes] = None
     offers: Optional[List[Offer]] = None
+    best_seller_rank: Optional[List[SellerRank]] = None
     seller: Optional[Seller] = None
     inventory: Optional[Inventory] = None
     keywords: Optional[str] = None

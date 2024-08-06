@@ -14,7 +14,6 @@
     { "name": "is_marketplace_item", "type": ["null", "boolean"], "default": null },
     { "name": "is_private_brand", "type": ["null", "boolean"], "default": null },
     { "name": "recent_sales", "type": ["null", "long"], "default": null },
-    { "name": "bestsellers_rank", "type": ["null", "long"], "default": null },
     { "name": "product_model_number", "type": ["null", "string"], "default": null },
     { "name": "is_platform_choice", "type": ["null", "boolean"], "default": null }
   ]

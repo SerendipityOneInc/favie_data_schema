@@ -1,0 +1,11 @@
+{
+  "namespace": "favie.data.interface.product.common",
+  "type": "record",
+  "name": "SellerRank",
+  "doc": "Schema for SellerRank",
+  "fields": [
+    { "name": "category", "type": ["null", "string"], "default": null },
+    { "name": "rank", "type": ["null", "int"], "default": null },
+    { "name": "link", "type": ["null", "string"], "default": null }
+  ]
+}
