@@ -10,7 +10,7 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
 )
 
 
-class GeneralSpiderProductData(BaseModel):
+class FavieSpiderProductData(BaseModel):
     id: str = uuid.uuid1().hex  # UUID1
     url: str  # URL
     host: str  # 商品所在网站的域名，比如：www.amazon.com
