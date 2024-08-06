@@ -66,6 +66,8 @@
       "type": ["null", {"type": "array","items": "favie.data.interface.product.common.Offer"}],
       "default": null
     },
+    {"name":"best_seller_rank","type": ["null",{"type": "array","items": "favie.data.interface.product.common.SellerRank"}],"default": null},
+    {"name":"seller_rank","type": ["null","favie.data.interface.product.common.SellerRank"],"default": null},
     { "name": "seller", "type": ["null", "favie.data.interface.product.common.Seller"],"default": null},
     { "name": "inventory","type": ["null","favie.data.interface.product.common.Inventory"],"default": null},
     { "name": "keywords", "type": ["null", "string"], "default": null },

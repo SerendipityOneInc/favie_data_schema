@@ -509,14 +509,6 @@
               "default": null
             },
             {
-              "name": "bestsellers_rank",
-              "type": [
-                "null",
-                "long"
-              ],
-              "default": null
-            },
-            {
               "name": "product_model_number",
               "type": [
                 "null",
@@ -773,6 +765,56 @@
             ]
           }
         }
+      ],
+      "default": null
+    },
+    {
+      "name": "best_seller_rank",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "namespace": "favie.data.interface.product.common",
+            "type": "record",
+            "name": "SellerRank",
+            "doc": "Schema for SellerRank",
+            "fields": [
+              {
+                "name": "category",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              },
+              {
+                "name": "rank",
+                "type": [
+                  "null",
+                  "int"
+                ],
+                "default": null
+              },
+              {
+                "name": "link",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              }
+            ]
+          }
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "seller_rank",
+      "type": [
+        "null",
+        "favie.data.interface.product.common.SellerRank"
       ],
       "default": null
     },
