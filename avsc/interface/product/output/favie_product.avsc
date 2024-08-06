@@ -811,14 +811,6 @@
       "default": null
     },
     {
-      "name": "seller_rank",
-      "type": [
-        "null",
-        "favie.data.interface.product.common.SellerRank"
-      ],
-      "default": null
-    },
-    {
       "name": "seller",
       "type": [
         "null",

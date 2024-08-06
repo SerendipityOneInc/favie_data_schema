@@ -181,7 +181,6 @@ class FavieProduct(BaseModel):
     standard_attributes: Optional[StandardAttributes] = None
     offers: Optional[List[Offer]] = None
     best_seller_rank: Optional[List[SellerRank]] = None
-    seller_rank: Optional[SellerRank] = None
     seller: Optional[Seller] = None
     inventory: Optional[Inventory] = None
     keywords: Optional[str] = None
