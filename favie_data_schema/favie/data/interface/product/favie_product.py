@@ -130,10 +130,10 @@ class Promotion(BaseModel):
 class MetaInfo(BaseModel):
     source_type: Optional[str] = None
     parser_name: Optional[str] = None
-    parser_time: Optional[str] = None
-    f_attributes_updates_at: Optional[str] = None
-    f_attributes_map_success: Optional[bool] = None
+    parses_at: Optional[str] = None
+    f_attributes_update_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
+    f_attributes_map_success: Optional[bool] = None
 
 class Delivery(BaseModel):
     fulfilled_by_platform: Optional[bool] = None
@@ -168,6 +168,7 @@ class FavieProduct(BaseModel):
     description_external_link: Optional[str] = None
     rich_product_description: Optional[str] = None
     price: Optional[Price] = None
+    rrp: Optional[Price] = None
     f_status: Optional[str] = None
     images: Optional[Images] = None
     f_images: Optional[Images] = None
