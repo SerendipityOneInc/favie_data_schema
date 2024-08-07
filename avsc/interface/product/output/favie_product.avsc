@@ -156,6 +156,14 @@
       "default": null
     },
     {
+      "name": "rpp",
+      "type": [
+        "null",
+        "favie.data.interface.product.common.Price"
+      ],
+      "default": null
+    },
+    {
       "name": "f_status",
       "type": [
         "null",
@@ -1349,7 +1357,7 @@
               "default": null
             },
             {
-              "name": "parser_time",
+              "name": "parsers_at",
               "type": [
                 "null",
                 "string"
@@ -1357,7 +1365,15 @@
               "default": null
             },
             {
-              "name": "f_attributes_updates_at",
+              "name": "f_attributes_update_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_images_crawl_send_at",
               "type": [
                 "null",
                 "string"
@@ -1369,14 +1385,6 @@
               "type": [
                 "null",
                 "bool"
-              ],
-              "default": null
-            },
-            {
-              "name": "f_images_crawl_send_at",
-              "type": [
-                "null",
-                "string"
               ],
               "default": null
             }
