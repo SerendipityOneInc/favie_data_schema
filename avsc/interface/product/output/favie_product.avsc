@@ -1357,7 +1357,7 @@
               "default": null
             },
             {
-              "name": "parsers_at",
+              "name": "parses_at",
               "type": [
                 "null",
                 "string"

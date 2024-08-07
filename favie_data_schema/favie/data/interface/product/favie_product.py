@@ -130,7 +130,7 @@ class Promotion(BaseModel):
 class MetaInfo(BaseModel):
     source_type: Optional[str] = None
     parser_name: Optional[str] = None
-    parsers_at: Optional[str] = None
+    parses_at: Optional[str] = None
     f_attributes_update_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
     f_attributes_map_success: Optional[bool] = None
