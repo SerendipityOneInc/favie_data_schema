@@ -17,6 +17,7 @@
     { "name": "description_external_link", "type": ["null", "string"], "default": null },
     { "name": "rich_product_description", "type": ["null", "string"], "default": null },
     { "name": "price","type": ["null", "favie.data.interface.product.common.Price"],"default": null},
+    { "name": "rpp","type": ["null", "favie.data.interface.product.common.Price"],"default": null},
     { "name": "f_status", "type": ["null", "string"], "default": null },
     { "name": "images","type": ["null","favie.data.interface.product.common.Images"],"default": null},
     { "name": "f_images","type": ["null","favie.data.interface.product.common.Images"],"default": null},

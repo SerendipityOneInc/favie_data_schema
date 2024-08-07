@@ -6,9 +6,9 @@
   "fields": [
     { "name": "source_type", "type": ["null", "string"], "default": null },
     { "name": "parser_name", "type": ["null", "string"], "default": null },
-    { "name": "parser_time", "type": ["null", "string"], "default": null },
-    { "name": "f_attributes_updates_at", "type": ["null", "string"], "default": null },
-    { "name": "f_attributes_map_success", "type": ["null", "bool"], "default": null },
-    { "name": "f_images_crawl_send_at", "type": ["null", "string"], "default": null }
+    { "name": "parsers_at", "type": ["null", "string"], "default": null },
+    { "name": "f_attributes_update_at", "type": ["null", "string"], "default": null },
+    { "name": "f_images_crawl_send_at", "type": ["null", "string"], "default": null },
+    { "name": "f_attributes_map_success", "type": ["null", "bool"], "default": null }
   ]
 }
