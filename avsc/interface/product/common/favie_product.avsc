@@ -83,6 +83,7 @@
     },
     { "name": "promotion","type": ["null","favie.data.interface.product.common.Promotion"],"default": null },
     { "name": "f_updates_at", "type": ["null", "string"], "default": null },
+    { "name": "f_creates_at", "type": ["null", "string"], "default": null },
     { "name": "f_meta", "type": ["null", "favie.data.interface.product.common.MetaInfo"], "default": null }
   ]
 }
