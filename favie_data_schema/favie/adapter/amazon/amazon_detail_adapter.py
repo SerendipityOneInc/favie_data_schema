@@ -1,3 +1,4 @@
+from favie_data_schema.favie.adapter.common.favie_adapter import FavieAdapter
 from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
 from favie_data_schema.favie.adapter.common.currency import CurrencyConverter
@@ -8,7 +9,7 @@ from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_a
 from datetime import datetime
 import logging
 
-class AmazoneDetailAdapter:
+class AmazoneDetailAdapter(FavieAdapter):
     def __init__(self):
         pass
 
