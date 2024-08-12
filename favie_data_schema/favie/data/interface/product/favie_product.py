@@ -194,5 +194,6 @@ class FavieProduct(BaseModel):
     variants: Optional[List[SimpleProduct]] = None
     promotion: Optional[Promotion] = None
     f_updates_at: Optional[str] = None
+    f_creates_at: Optional[str] = None
     f_meta: Optional[MetaInfo] = None
 
