@@ -76,6 +76,7 @@
     { "name": "shipping","type": ["null","favie.data.interface.product.common.Shipping"],"default": null},
     {"name": "fulfillment","type": ["null", "favie.data.interface.product.common.Fulfillment"],"default": null},
     {"name": "returns_policy","type": ["null", "favie.data.interface.product.common.ReturnPolicy"],"default": null},
+    {"name": "review_summary","type": ["null", "favie.data.interface.product.common.ReviewSummary"],"default": null},
     {
       "name": "variants",
       "type": ["null", {"type": "array","items": "favie.data.interface.product.common.SimpleProduct"}],

@@ -1,0 +1,12 @@
+{
+  "namespace": "favie.data.interface.product.common",
+  "type": "record",
+  "name": "RatingBreakdown",
+  "fields": [
+    {"name": "five_star", "type": ["null", "int"], "default": null},
+    {"name": "four_star", "type": ["null", "int"], "default": null},
+    {"name": "three_star", "type": ["null", "int"], "default": null},
+    {"name": "two_star", "type": ["null", "int"], "default": null},
+    {"name": "one_star", "type": ["null", "int"], "default": null}
+  ]
+}

@@ -1212,6 +1212,157 @@
       "default": null
     },
     {
+      "name": "review_summary",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.interface.product.common",
+          "type": "record",
+          "name": "ReviewSummary",
+          "fields": [
+            {
+              "name": "rating",
+              "type": [
+                "null",
+                "float"
+              ],
+              "default": null
+            },
+            {
+              "name": "ratings_total",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "ratings_total_filtered",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "rating_breakdown",
+              "type": [
+                "null",
+                {
+                  "namespace": "favie.data.interface.product.common",
+                  "type": "record",
+                  "name": "RatingBreakdown",
+                  "fields": [
+                    {
+                      "name": "five_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "four_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "three_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "two_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "one_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "default": null
+            },
+            {
+              "name": "recommended_percentage",
+              "type": [
+                "null",
+                "float"
+              ],
+              "default": null
+            },
+            {
+              "name": "reviews_total",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "reviews_total_filtered",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "top_reviews",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ],
+              "default": null
+            },
+            {
+              "name": "top_favourable",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "top_critical",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
       "name": "variants",
       "type": [
         "null",

@@ -114,6 +114,13 @@ class ReturnPolicy(BaseModel):
     free_returns: Optional[bool] = None
     returns_raw: Optional[str] = None
 
+class RatingBreakdown(BaseModel):
+    five_star: Optional[int] = None
+    four_star: Optional[int] = None
+    three_star: Optional[int] = None
+    two_star: Optional[int] = None
+    one_star: Optional[int] = None
+
 class SimpleProduct(BaseModel):
     f_sku_id: Optional[str] = None
     source: Optional[str] = None
@@ -140,6 +147,19 @@ class Delivery(BaseModel):
     countdown: Optional[str] = None
     comments: Optional[str] = None
     price: Optional[DeliveryPrice] = None
+
+class ReviewSummary(BaseModel):
+    rating: Optional[float] = None
+    ratings_total: Optional[int] = None
+    ratings_total_filtered: Optional[int] = None
+    rating_breakdown: Optional[RatingBreakdown] = None
+    recommended_percentage: Optional[float] = None
+    reviews_total: Optional[int] = None
+    reviews_total_filtered: Optional[int] = None
+    top_reviews: Optional[List[str]] = None
+    top_favourable: Optional[str] = None
+    top_critical: Optional[str] = None
+    f_updates_at: Optional[str] = None
 
 class Offer(BaseModel):
     price: Optional[Price] = None
@@ -191,6 +211,7 @@ class FavieProduct(BaseModel):
     shipping: Optional[Shipping] = None
     fulfillment: Optional[Fulfillment] = None
     returns_policy: Optional[ReturnPolicy] = None
+    review_summary: Optional[ReviewSummary] = None
     variants: Optional[List[SimpleProduct]] = None
     promotion: Optional[Promotion] = None
     f_updates_at: Optional[str] = None
