@@ -1,5 +1,5 @@
 {
-  "namespace": "favie.data.interface.product.common",
+  "namespace": "favie.data.interface.product",
   "type": "record",
   "name": "SimpleProduct",
   "doc": "Schema for SimpleProduct",
@@ -9,15 +9,15 @@
     { "name": "sku_id", "type": ["null", "string"], "default": null },
     { "name": "title", "type": ["null", "string"], "default": null },
     { "name": "link", "type": ["null", "string"], "default": null },
-    { "name": "price", "type": ["null", "favie.data.interface.product.common.Price"], "default": null },
+    { "name": "price", "type": ["null", "favie.data.interface.product.Price"], "default": null },
     {
       "name": "images",
-      "type": ["null", "favie.data.interface.product.common.Images"],
+      "type": ["null", "favie.data.interface.product.Images"],
       "default": null
     },
     {
       "name": "attributes",
-      "type": ["null", { "type": "array","items": "favie.data.interface.product.common.AttributeItem"}],
+      "type": ["null", { "type": "array","items": "favie.data.interface.product.AttributeItem"}],
       "default": null
     }
   ]

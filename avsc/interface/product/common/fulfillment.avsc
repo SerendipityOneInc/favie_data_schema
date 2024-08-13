@@ -1,5 +1,5 @@
 {
-  "namespace": "favie.data.interface.product.common",
+  "namespace": "favie.data.interface.product",
   "type": "record",
   "name": "Fulfillment",
   "doc": "Schema for Fulfillment",

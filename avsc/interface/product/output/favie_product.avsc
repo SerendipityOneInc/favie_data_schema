@@ -105,7 +105,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "Price",
           "doc": "Schema for Price",
@@ -159,7 +159,7 @@
       "name": "rrp",
       "type": [
         "null",
-        "favie.data.interface.product.common.Price"
+        "favie.data.interface.product.Price"
       ],
       "default": null
     },
@@ -176,7 +176,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "Images",
           "doc": "Schema for Images",
@@ -209,7 +209,7 @@
       "name": "f_images",
       "type": [
         "null",
-        "favie.data.interface.product.common.Images"
+        "favie.data.interface.product.Images"
       ],
       "default": null
     },
@@ -222,7 +222,7 @@
           "items": {
             "type": "record",
             "name": "CategoryItem",
-            "namespace": "favie.data.interface.product.common",
+            "namespace": "favie.data.interface.product",
             "fields": [
               {
                 "name": "name",
@@ -252,7 +252,7 @@
         "null",
         {
           "type": "array",
-          "items": "favie.data.interface.product.common.CategoryItem"
+          "items": "favie.data.interface.product.CategoryItem"
         }
       ],
       "default": null
@@ -264,7 +264,7 @@
         {
           "type": "array",
           "items": {
-            "namespace": "favie.data.interface.product.common",
+            "namespace": "favie.data.interface.product",
             "type": "record",
             "name": "Video",
             "doc": "Schema for Video",
@@ -336,7 +336,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "Brand",
           "doc": "Schema for Brand",
@@ -366,7 +366,7 @@
       "name": "brand",
       "type": [
         "null",
-        "favie.data.interface.product.common.Brand"
+        "favie.data.interface.product.Brand"
       ],
       "default": null
     },
@@ -390,7 +390,7 @@
           "items": {
             "type": "record",
             "name": "AttributeItem",
-            "namespace": "favie.data.interface.product.common",
+            "namespace": "favie.data.interface.product",
             "doc": "\u5546\u54c1\u5c5e\u6027\u9879",
             "fields": [
               {
@@ -421,7 +421,7 @@
         "null",
         {
           "type": "array",
-          "items": "favie.data.interface.product.common.AttributeItem"
+          "items": "favie.data.interface.product.AttributeItem"
         }
       ],
       "default": null
@@ -431,7 +431,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "StandardAttributes",
           "doc": "Schema for StandardAttributes",
@@ -544,7 +544,7 @@
         {
           "type": "array",
           "items": {
-            "namespace": "favie.data.interface.product.common",
+            "namespace": "favie.data.interface.product",
             "type": "record",
             "name": "Offer",
             "doc": "Schema for Offer",
@@ -553,7 +553,7 @@
                 "name": "price",
                 "type": [
                   "null",
-                  "favie.data.interface.product.common.Price"
+                  "favie.data.interface.product.Price"
                 ],
                 "default": null
               },
@@ -577,7 +577,7 @@
                 "name": "standard_attributes",
                 "type": [
                   "null",
-                  "favie.data.interface.product.common.StandardAttributes"
+                  "favie.data.interface.product.StandardAttributes"
                 ],
                 "default": null
               },
@@ -586,7 +586,7 @@
                 "type": [
                   "null",
                   {
-                    "namespace": "favie.data.interface.product.common",
+                    "namespace": "favie.data.interface.product",
                     "type": "record",
                     "name": "Delivery",
                     "doc": "Schema for Pr Delivery",
@@ -620,7 +620,7 @@
                         "type": [
                           "null",
                           {
-                            "namespace": "favie.data.interface.product.common",
+                            "namespace": "favie.data.interface.product",
                             "type": "record",
                             "name": "DeliveryPrice",
                             "doc": "Schema for DeliveryPrice",
@@ -672,7 +672,7 @@
                 "type": [
                   "null",
                   {
-                    "namespace": "favie.data.interface.product.common",
+                    "namespace": "favie.data.interface.product",
                     "type": "record",
                     "name": "Seller",
                     "doc": "Schema for Seller",
@@ -783,7 +783,7 @@
         {
           "type": "array",
           "items": {
-            "namespace": "favie.data.interface.product.common",
+            "namespace": "favie.data.interface.product",
             "type": "record",
             "name": "SellerRank",
             "doc": "Schema for SellerRank",
@@ -822,7 +822,7 @@
       "name": "seller",
       "type": [
         "null",
-        "favie.data.interface.product.common.Seller"
+        "favie.data.interface.product.Seller"
       ],
       "default": null
     },
@@ -831,7 +831,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "Inventory",
           "doc": "Schema for Inventory",
@@ -880,7 +880,7 @@
         {
           "type": "record",
           "name": "SearchAliasItem",
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "fields": [
             {
               "name": "title",
@@ -908,7 +908,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "Deal",
           "doc": "Schema for Deal",
@@ -973,7 +973,7 @@
               "name": "deal_price",
               "type": [
                 "null",
-                "favie.data.interface.product.common.Price"
+                "favie.data.interface.product.Price"
               ],
               "default": null
             },
@@ -981,7 +981,7 @@
               "name": "was_price",
               "type": [
                 "null",
-                "favie.data.interface.product.common.Price"
+                "favie.data.interface.product.Price"
               ],
               "default": null
             },
@@ -989,7 +989,7 @@
               "name": "list_price",
               "type": [
                 "null",
-                "favie.data.interface.product.common.Price"
+                "favie.data.interface.product.Price"
               ],
               "default": null
             },
@@ -1051,7 +1051,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "Shipping",
           "doc": "Schema for Shipping",
@@ -1060,7 +1060,7 @@
               "name": "price",
               "type": [
                 "null",
-                "favie.data.interface.product.common.DeliveryPrice"
+                "favie.data.interface.product.DeliveryPrice"
               ],
               "default": null
             },
@@ -1138,7 +1138,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "Fulfillment",
           "doc": "Schema for Fulfillment",
@@ -1177,7 +1177,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "ReturnPolicy",
           "doc": "Schema for ReturnPolicy",
@@ -1216,7 +1216,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "ReviewSummary",
           "fields": [
@@ -1249,7 +1249,7 @@
               "type": [
                 "null",
                 {
-                  "namespace": "favie.data.interface.product.common",
+                  "namespace": "favie.data.interface.product",
                   "type": "record",
                   "name": "RatingBreakdown",
                   "fields": [
@@ -1369,7 +1369,7 @@
         {
           "type": "array",
           "items": {
-            "namespace": "favie.data.interface.product.common",
+            "namespace": "favie.data.interface.product",
             "type": "record",
             "name": "SimpleProduct",
             "doc": "Schema for SimpleProduct",
@@ -1418,7 +1418,7 @@
                 "name": "price",
                 "type": [
                   "null",
-                  "favie.data.interface.product.common.Price"
+                  "favie.data.interface.product.Price"
                 ],
                 "default": null
               },
@@ -1426,7 +1426,7 @@
                 "name": "images",
                 "type": [
                   "null",
-                  "favie.data.interface.product.common.Images"
+                  "favie.data.interface.product.Images"
                 ],
                 "default": null
               },
@@ -1436,7 +1436,7 @@
                   "null",
                   {
                     "type": "array",
-                    "items": "favie.data.interface.product.common.AttributeItem"
+                    "items": "favie.data.interface.product.AttributeItem"
                   }
                 ],
                 "default": null
@@ -1452,7 +1452,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "Promotion",
           "doc": "Schema for Promotion",
@@ -1494,7 +1494,7 @@
       "type": [
         "null",
         {
-          "namespace": "favie.data.interface.product.common",
+          "namespace": "favie.data.interface.product",
           "type": "record",
           "name": "MetaInfo",
           "doc": "Schema for DeliveryPrice",
