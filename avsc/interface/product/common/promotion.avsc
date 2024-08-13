@@ -1,5 +1,5 @@
 {
-    "namespace": "favie.data.interface.product.common",
+    "namespace": "favie.data.interface.product",
     "type": "record",
     "name": "Promotion",
     "doc": "Schema for Promotion",

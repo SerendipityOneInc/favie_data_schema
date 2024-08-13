@@ -1,10 +1,10 @@
 {
-  "namespace": "favie.data.interface.product.common",
+  "namespace": "favie.data.interface.product",
   "type": "record",
   "name": "Shipping",
   "doc": "Schema for Shipping",
   "fields": [
-    { "name": "price", "type": ["null", "favie.data.interface.product.common.DeliveryPrice"], "default": null },
+    { "name": "price", "type": ["null", "favie.data.interface.product.DeliveryPrice"], "default": null },
     { "name": "service", "type": ["null", "string"], "default": null },
     { "name": "ships_to", "type": ["null", "string"], "default": null },
     { "name": "location", "type": ["null", "string"], "default": null },

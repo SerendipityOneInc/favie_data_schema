@@ -1,12 +1,12 @@
 {
-  "namespace": "favie.data.interface.product.common",
+  "namespace": "favie.data.interface.product",
   "type": "record",
   "name": "ReviewSummary",
   "fields": [
     {"name": "rating", "type": ["null", "float"], "default": null},
     {"name": "ratings_total", "type": ["null","int"],"default":null},
     {"name": "ratings_total_filtered", "type": ["null","int"],"default":null},
-    {"name": "rating_breakdown", "type": ["null", "favie.data.interface.product.common.RatingBreakdown"], "default": null},
+    {"name": "rating_breakdown", "type": ["null", "favie.data.interface.product.RatingBreakdown"], "default": null},
     {"name": "recommended_percentage", "type": ["null", "float"], "default": null},
     {"name": "reviews_total", "type": ["null","int"], "default":null},
     {"name": "reviews_total_filtered", "type": ["null","int"], "default":null},

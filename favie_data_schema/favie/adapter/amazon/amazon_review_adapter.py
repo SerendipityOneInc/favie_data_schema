@@ -1,0 +1,39 @@
+from typing import List
+from favie_data_schema.favie.adapter.common.favie_adapter import FavieReviewAdapter
+from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail, TopReviews
+from favie_data_schema.favie.adapter.common.crawler_kakfa_message import CrawlerKafkaMessage
+from favie_data_schema.favie.adapter.common.favie_product_utils import FavieProductUtils
+from favie_data_schema.favie.adapter.amazon.amazon_detail_convert import AmazonDetailConvert
+from favie_data_schema.favie.adapter.amazon.amazon_review_convert import AmazoneReviewConvert
+from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_amazon_message
+import logging
+
+from favie_data_schema.favie.data.interface.product.favie_review import FavieReview
+
+class AmazoneReviewAdapter(FavieReviewAdapter):
+    @staticmethod
+    def convert_to_favie_review(crawler_kafka_message: CrawlerKafkaMessage) -> list[FavieReview]:
+        favie_reviews = AmazoneReviewConvert.convert_to_favie_review(crawler_kafka_message)
+        favie_product = AmazonDetailConvert.convert_to_favie_product(crawler_kafka_message)
+        f_spu_id = FavieProductUtils.gen_f_sku_id(favie_product)
+        if f_spu_id is None:    
+            return None
+        
+        for favie_review in favie_reviews:
+            favie_review.f_spu_id = f_spu_id
+            favie_review.spu_id = favie_product.spu_id
+            favie_review.site = favie_product.site
+            favie_review.f_review_id = FavieProductUtils.gen_review_id(f_spu_id,favie_review)
+            
+        return favie_reviews if len(favie_reviews) > 0 else None
+    
+    
+def main():
+    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json")
+    favie_reviews = AmazoneReviewAdapter.convert_to_favie_review(amazon_message)
+    for favie_review in favie_reviews:
+        print(favie_review.model_dump_json())
+
+if __name__ == "__main__":
+    main()
