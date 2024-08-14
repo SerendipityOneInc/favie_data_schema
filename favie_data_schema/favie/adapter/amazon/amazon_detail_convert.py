@@ -125,11 +125,12 @@ class AmazonDetailConvert():
                     value = int(was_price.value * percentage / 100),
                     updates_at=str(int(datetime.now().timestamp()))
             )
+            timing = rainforest_product_detail.product.buybox_winner.deal.timing
             return Deal(
                 was_price = was_price,
                 deal_price = deal_price ,
                 description = rainforest_product_detail.product.buybox_winner.deal.claimed.raw,
-                ends_at= rainforest_product_detail.product.buybox_winner.deal.timing.ends_at
+                ends_at= timing.ends_at if timing is not None else None
             )
         return None
     
