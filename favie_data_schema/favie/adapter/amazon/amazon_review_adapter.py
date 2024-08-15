@@ -7,6 +7,7 @@ from favie_data_schema.favie.adapter.common.favie_product_utils import FavieProd
 from favie_data_schema.favie.adapter.amazon.amazon_detail_convert import AmazonDetailConvert
 from favie_data_schema.favie.adapter.amazon.amazon_review_convert import AmazonReviewConvert
 from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_amazon_message
+from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
 import logging
 
 from favie_data_schema.favie.data.interface.product.favie_review import FavieReview
@@ -29,7 +30,7 @@ class AmazonReviewAdapter(FavieReviewAdapter):
             favie_review.site = favie_product.site
             favie_review.f_review_id = FavieProductUtils.gen_review_id(f_spu_id,favie_review)
             
-        return favie_reviews if len(favie_reviews) > 0 else None
+        return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
     
     
 def main():

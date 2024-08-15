@@ -1,368 +1,72 @@
 {
-    "url": "https://www.amazon.com/dp/B0CQVRK3YC",
+    "url": "https://www.amazon.com/dp/B08XYBCXZ4",
     "host": "www.amazon.com",
-    "product_id": "B0CQVRK3YC",
-    "product_title": "1 PCS Peltate（2.8x2.4inch）Aruba Flag Patches Iron On or Sew On Embroidered Tactical Military National Aruba Patch (Aruba)",
+    "product_id": "B08XYBCXZ4",
+    "product_title": "Sony M-470 Microcassette Voice Recorder (Renewed)",
     "source": 3,
     "parser_name": "AmazonProductDetailRFParser",
+    "raw_result": "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",
     "crawl_result": {
         "request_info": {
             "success": true,
-            "credits_used": 2578325,
-            "credits_remaining": 17421675
+            "credits_used": 4142196,
+            "credits_remaining": 15857804
         },
         "request_metadata": {
             "id": null,
-            "created_at": "2024-08-07T14:15:09.160Z",
-            "processed_at": "2024-08-07T14:15:16.623Z",
-            "total_time_taken": 7.46,
-            "amazon_url": "https://www.amazon.com/dp/B0CQVRK3YC?th=1&psc=1"
+            "created_at": "2024-08-15T10:05:57.806Z",
+            "processed_at": "2024-08-15T10:06:13.755Z",
+            "total_time_taken": 15.95,
+            "amazon_url": "https://www.amazon.com/dp/B08XYBCXZ4?th=1&psc=1"
         },
         "request_parameters": {
             "type": "product",
             "url": null
         },
         "product": {
-            "title": "1 PCS Peltate（2.8x2.4inch）Aruba Flag Patches Iron On or Sew On Embroidered Tactical Military National Aruba Patch (Aruba)",
+            "title": "Sony M-470 Microcassette Voice Recorder (Renewed)",
             "title_excluding_variant_name": null,
-            "variants": [
-                {
-                    "asin": "B0CPWFRWM9",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Senegal"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWFRWM9?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CQVQM1N7",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Kosovo"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CQVQM1N7?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWFF76Q",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Cyprus"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWFF76Q?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWD9SYN",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Liberia"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWD9SYN?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWFTB2Y",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Switzerland"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWFTB2Y?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWFJ7VP",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Lesotho"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWFJ7VP?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWDW73S",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Liechtenstein"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWDW73S?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWFSP8F",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Serbia"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWFSP8F?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWDVPJP",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Sierra Leone"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWDVPJP?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWFBZYV",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Cote d'Ivoire"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWFBZYV?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWFCQ99",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Comoros"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWFCQ99?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWG8WBJ",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Saint Lucia"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWG8WBJ?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWFLWGG",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Samoa"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWFLWGG?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CQVP9QD8",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Scotland"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CQVP9QD8?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWF87SL",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Kuwait"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWF87SL?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWDVZJQ",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Qatar"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWDVZJQ?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWFTBZQ",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Sweden"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWFTBZQ?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWDVMCY",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Croatia"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWDVMCY?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CYXND573",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Poland"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CYXND573?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CPWF6GV3",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "El Salvador"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CPWF6GV3?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CQVPYPY6",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Wales"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CQVPYPY6?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CQVRK3YC",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Aruba"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CQVRK3YC?th=1&psc=1",
-                    "price": null
-                },
-                {
-                    "asin": "B0CQVQ4ZL6",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Color",
-                            "value": "Puerto Rico"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0CQVQ4ZL6?th=1&psc=1",
-                    "price": null
-                }
-            ],
-            "keywords": "1,PCS,Peltate（2.8x2.4inch）Aruba,Flag,Patches,Iron,On,or,Sew,On,Embroidered,Tactical,Military,National,Aruba,Patch,(Aruba)",
+            "variants": null,
+            "keywords": "Sony,M-470,Microcassette,Voice,Recorder,(Renewed)",
             "keywords_list": [
-                "Peltate（2.8x2.4inch）Aruba",
-                "Flag",
-                "Patches",
-                "Iron",
-                "Embroidered",
-                "Tactical",
-                "Military",
-                "National",
-                "Aruba",
-                "Patch",
-                "(Aruba)"
+                "Sony",
+                "M-470",
+                "Microcassette",
+                "Voice",
+                "Recorder",
+                "(Renewed)"
             ],
-            "link": "https://www.amazon.com/Ysmzzmsy-Peltate%EF%BC%882-8x2-4inch%EF%BC%89Aruba-Embroidered-Tactical-Patch/dp/B0CQVRK3YC",
-            "asin": "B0CQVRK3YC",
-            "parent_asin": "B0CPWT1NSF",
-            "description": "Sized: 2.76x2.36 inch/(7x6cm), Positive and negative 3% error",
+            "link": "https://www.amazon.com/Sony-M-470-Microcassette-Recorder-Renewed/dp/B08XYBCXZ4",
+            "asin": "B08XYBCXZ4",
+            "parent_asin": null,
+            "description": "This pre-owned or refurbished product has been professionally inspected and tested to work and look like new. How a product becomes part of Amazon Renewed, your destination for pre-owned, refurbished products: A customer buys a new product and returns it or trades it in for a newer or different model. That product is inspected and tested to work and look like new by Amazon-qualified suppliers. Then, the product is sold as an Amazon Renewed product on Amazon. If not satisfied with the purchase, renewed products are eligible for replacement or refund under the Amazon Renewed Guarantee.",
             "categories": [
                 {
-                    "name": "Home & Kitchen",
-                    "link": null,
-                    "category_id": null
+                    "name": "Electronics",
+                    "link": "https://www.amazon.com/electronics-store/b/ref=dp_bc_aui_C_1?ie=UTF8&node=172282",
+                    "category_id": "172282"
                 },
                 {
-                    "name": "Arts, Crafts & Sewing",
-                    "link": "https://www.amazon.com/Arts-Crafts-Sewing/b/ref=dp_bc_aui_C_1?ie=UTF8&node=2617941011",
-                    "category_id": "2617941011"
+                    "name": "Portable Audio & Video",
+                    "link": "https://www.amazon.com/Portable-Audio-Video/b/ref=dp_bc_aui_C_2?ie=UTF8&node=172623",
+                    "category_id": "172623"
                 },
                 {
-                    "name": "Sewing",
-                    "link": "https://www.amazon.com/sewing/b/ref=dp_bc_aui_C_2?ie=UTF8&node=12899091",
-                    "category_id": "12899091"
-                },
-                {
-                    "name": "Trim & Embellishments",
-                    "link": "https://www.amazon.com/trim-embellishments/b/ref=dp_bc_aui_C_3?ie=UTF8&node=12899361",
-                    "category_id": "12899361"
-                },
-                {
-                    "name": "Appliques",
-                    "link": "https://www.amazon.com/appliques/b/ref=dp_bc_aui_C_4?ie=UTF8&node=12899371",
-                    "category_id": "12899371"
-                },
-                {
-                    "name": "Embroidered Appliqué",
-                    "link": "https://www.amazon.com/b/ref=dp_bc_aui_C_5?ie=UTF8&node=23703916011",
-                    "category_id": "23703916011"
+                    "name": "Digital Voice Recorders",
+                    "link": "https://www.amazon.com/Digital-Voice-Recorders-Audio-Video/b/ref=dp_bc_aui_C_3?ie=UTF8&node=227758",
+                    "category_id": "227758"
                 }
             ],
             "bestsellers_rank": [
                 {
-                    "category": "Arts Crafts & Sewing",
-                    "rank": 206572,
-                    "link": "https://www.amazon.com/gp/bestsellers/arts-crafts/ref=pd_zg_ts_arts-crafts"
+                    "category": "Electronics",
+                    "rank": 506388,
+                    "link": "https://www.amazon.com/gp/bestsellers/electronics/ref=pd_zg_ts_electronics"
                 },
                 {
-                    "category": "Embroidered Appliqué Patches",
-                    "rank": 7723,
-                    "link": "https://www.amazon.com/gp/bestsellers/arts-crafts/23703916011/ref=pd_zg_hrsr_arts-crafts"
+                    "category": "Digital Voice Recorders",
+                    "rank": 1609,
+                    "link": "https://www.amazon.com/gp/bestsellers/electronics/227758/ref=pd_zg_hrsr_electronics"
                 }
             ],
             "summarization_attributes": null,
@@ -372,89 +76,81 @@
             "has_coupon": null,
             "coupon_text": null,
             "promotions": null,
-            "brand": "Ysmzzmsy",
-            "weight": "0.176 ounces",
+            "brand": "Sony",
+            "weight": "8.1 ounces",
             "shipping_weight": null,
             "first_available": {
-                "raw": "December 23, 2023",
-                "utc": "2023-12-23T00:00:00.000Z"
+                "raw": "March 3, 2021",
+                "utc": "2021-03-03T00:00:00.000Z"
             },
             "delivery_message": null,
-            "dimensions": "2.76 x 0.08 x 2.36 inches",
+            "dimensions": "4.36 x 2 x 0.85 inches",
             "sub_title": {
-                "text": "Brand: Ysmzzmsy",
-                "link": "https://www.amazon.com/Ysmzzmsy/b/ref=bl_dp_s_web_120337214011?ie=UTF8&node=120337214011&field-lbr_brands_browse-bin=Ysmzzmsy"
+                "text": "Visit the Amazon Renewed Store",
+                "link": "https://www.amazon.com/Amazon-Renewed/b/ref=bl_dp_s_web_12653393011?ie=UTF8&node=12653393011&field-lbr_brands_browse-bin=Amazon+Renewed"
             },
-            "rating": null,
-            "ratings_total": null,
+            "rating": 5,
+            "ratings_total": 2,
             "reviews_total": null,
             "top_reviews": null,
             "main_image": {
-                "link": "https://m.media-amazon.com/images/I/51m2Utzd3PL.jpg"
+                "link": "https://m.media-amazon.com/images/I/41Um6y6tEzL.jpg"
             },
             "images": [
                 {
-                    "link": "https://m.media-amazon.com/images/I/51m2Utzd3PL._AC_SL1100_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/61ciXPqXPBL._AC_SL1002_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/51p58teCgsL._AC_SL1100_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/41cWGHFoXwL._AC_SL1100_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/61t3JQrHhLL._AC_SL1100_.jpg"
+                    "link": "https://m.media-amazon.com/images/I/41Um6y6tEzL._AC_.jpg"
                 }
             ],
             "videos": null,
             "is_bundle": false,
             "feature_bullets": [
-                "Sized: 2.76x2.36 inch/(7x6cm), Positive and negative 3% error",
-                "Material: Polyester",
-                "Durable,Fitable,Washable. Saving Time",
-                "Backing For Attaching To Tactical Backpacks, Bags, Pouch, Caps, Helmets, Jackets, Pants, Vest, Uniform, Dog Harness And Other Tactical Gear",
-                "Package: 1 pieces"
+                "Records at 1.2 or 2.4 centimeters per second",
+                "Built-in mic and speaker makes for easy recording and playback",
+                "Clear Voice function improves recording quality by enhancing voice sounds",
+                "Runs on two AAA batteries or AC adaptor"
             ],
             "important_information": null,
             "buybox_winner": {
                 "minimum_order_quantity": null,
                 "offer_id": null,
-                "is_prime": true,
+                "is_prime": false,
                 "is_prime_exclusive_deal": false,
                 "availability": {
                     "type": "in_stock",
-                    "raw": "In Stock",
+                    "raw": "In stock",
                     "dispatch_days": 1
                 },
                 "fulfillment": {
-                    "type": "2p",
+                    "type": "3p",
                     "is_sold_by_amazon": false,
-                    "is_fulfilled_by_amazon": true,
-                    "is_fulfilled_by_third_party": false,
+                    "is_fulfilled_by_amazon": false,
+                    "is_fulfilled_by_third_party": true,
                     "is_sold_by_third_party": true,
                     "third_party_seller": {
-                        "name": "Ysmzzmsy",
-                        "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A1MV5IBMXSJ371&asin=B0CQVRK3YC&ref_=dp_merchant_link&isAmazonFulfilled=1"
+                        "name": "Port Hole Renewed",
+                        "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=AMEI59ZPBIUSD&asin=B08XYBCXZ4&ref_=dp_merchant_link"
                     }
                 },
                 "deal": null,
                 "price": {
                     "symbol": "$",
                     "currency": "USD",
-                    "value": 3.94,
-                    "raw": "$3.94"
+                    "value": 189,
+                    "raw": "$189.00"
                 },
                 "rrp": {
                     "symbol": "$",
                     "currency": "USD",
-                    "value": 7.88,
-                    "raw": "$7.88"
+                    "value": 309.99,
+                    "raw": "$309.99"
                 },
-                "new_offers_count": null,
-                "new_offers_from": null,
+                "new_offers_count": 2,
+                "new_offers_from": {
+                    "symbol": "$",
+                    "value": 189,
+                    "currency": "USD",
+                    "raw": "$189.00"
+                },
                 "used_offers_count": null,
                 "used_offers_from": null,
                 "mixed_offers_count": null,
@@ -463,161 +159,153 @@
             "more_buying_choices": null,
             "specifications": [
                 {
-                    "name": "Color",
-                    "value": "Aruba"
-                },
-                {
-                    "name": "Size",
-                    "value": "2.76x2.36inch"
-                },
-                {
-                    "name": "Brand",
-                    "value": "Ysmzzmsy"
-                },
-                {
-                    "name": "Material",
-                    "value": "Polyester"
-                },
-                {
-                    "name": "Style",
-                    "value": "Art Decor"
-                },
-                {
-                    "name": "Theme",
-                    "value": "Flag, Military"
-                },
-                {
-                    "name": "Shape",
-                    "value": "Peltate"
-                },
-                {
-                    "name": "Number of Pieces",
-                    "value": "500"
-                },
-                {
-                    "name": "Mounting Type",
-                    "value": "Iron On or Sew On"
-                },
-                {
-                    "name": "Age Range (Description)",
-                    "value": "Adult"
-                },
-                {
-                    "name": "Manufacturer",
-                    "value": "Ysmzzmsy"
-                },
-                {
                     "name": "Product Dimensions",
-                    "value": "2.76 x 0.08 x 2.36 inches"
+                    "value": "4.36 x 2 x 0.85 inches"
                 },
                 {
                     "name": "Item Weight",
-                    "value": "0.176 ounces"
+                    "value": "8.1 ounces"
                 },
                 {
                     "name": "ASIN",
-                    "value": "B0CQVRK3YC"
+                    "value": "B08XYBCXZ4"
                 },
                 {
-                    "name": "Country of Origin",
-                    "value": "China"
+                    "name": "Batteries",
+                    "value": "2 AAA batteries required. (included)"
                 },
                 {
-                    "name": "Item model number",
-                    "value": "Patch Patch-ehduy209"
+                    "name": "Customer Reviews",
+                    "value": "5.0 5.0 out of 5 stars       2 ratings          5.0 out of 5 stars"
                 },
                 {
                     "name": "Best Sellers Rank",
-                    "value": "#206,572 in Arts, Crafts & Sewing (See Top 100 in Arts, Crafts & Sewing) #7,723 in Embroidered Appliqué Patches"
+                    "value": "#506,388 in Electronics (See Top 100 in Electronics) #1,609 in Digital Voice Recorders"
+                },
+                {
+                    "name": "Is Discontinued By Manufacturer",
+                    "value": "No"
                 },
                 {
                     "name": "Date First Available",
-                    "value": "December 23, 2023"
+                    "value": "March 3, 2021"
+                },
+                {
+                    "name": "Manufacturer",
+                    "value": "Sony"
+                },
+                {
+                    "name": "Brand",
+                    "value": "Sony"
+                },
+                {
+                    "name": "Microphone Form Factor",
+                    "value": "Built-In"
+                },
+                {
+                    "name": "Headphones Jack",
+                    "value": "3.5 millimeters"
+                },
+                {
+                    "name": "Number of Batteries",
+                    "value": "2 AAA batteries required. (included)"
+                },
+                {
+                    "name": "Memory Storage Capacity",
+                    "value": "4 GB"
+                },
+                {
+                    "name": "Digital Recording Time",
+                    "value": "06:29:43"
+                },
+                {
+                    "name": "Microphone Operation Mode",
+                    "value": "Speech recognition mode"
+                },
+                {
+                    "name": "UPC",
+                    "value": "649661795049"
                 }
             ],
             "services": null,
             "attributes": [
                 {
-                    "name": "Color",
-                    "value": "Aruba"
-                },
-                {
-                    "name": "Size",
-                    "value": "2.76x2.36inch"
-                },
-                {
                     "name": "Brand",
-                    "value": "Ysmzzmsy"
+                    "value": "Sony"
                 },
                 {
-                    "name": "Material",
-                    "value": "Polyester"
+                    "name": "Microphone Form Factor",
+                    "value": "Built-In"
                 },
                 {
-                    "name": "Style",
-                    "value": "Art Decor"
+                    "name": "Headphones Jack",
+                    "value": "3.5 millimeters"
                 },
                 {
-                    "name": "Theme",
-                    "value": "Flag, Military"
+                    "name": "Number of Batteries",
+                    "value": "2 AAA batteries required. (included)"
                 },
                 {
-                    "name": "Shape",
-                    "value": "Peltate"
+                    "name": "Memory Storage Capacity",
+                    "value": "4 GB"
                 },
                 {
-                    "name": "Number of Pieces",
-                    "value": "500"
+                    "name": "Digital Recording Time",
+                    "value": "06:29:43"
                 },
                 {
-                    "name": "Mounting Type",
-                    "value": "Iron On or Sew On"
+                    "name": "Microphone Operation Mode",
+                    "value": "Speech recognition mode"
                 },
                 {
-                    "name": "Age Range (Description)",
-                    "value": "Adult"
+                    "name": "Manufacturer",
+                    "value": "Sony"
+                },
+                {
+                    "name": "UPC",
+                    "value": "649661795049"
                 }
             ]
         },
         "frequently_bought_together": {
             "total_price": {
                 "symbol": "$",
-                "value": 20.92,
+                "value": 247.58,
                 "currency": "USD",
-                "raw": "$20.92"
+                "raw": "$247.58"
             },
             "products": [
                 {
-                    "asin": "B0CQVRK3YC",
-                    "title": "Ysmzzmsy 1 PCS Peltate（2.8x2.4inch）Aruba Flag Patches Iron On or Sew On Embroidered Tactical Military National Aruba Patch (Aruba)",
-                    "link": "https://www.amazon.com/dp/B0CQVRK3YC",
+                    "asin": "B08XYBCXZ4",
+                    "title": "Sony M-470 Microcassette Voice Recorder (Renewed)",
+                    "link": "https://www.amazon.com/dp/B08XYBCXZ4",
                     "price": {
                         "symbol": "$",
                         "currency": "USD",
-                        "value": 3.94,
-                        "raw": "$3.94"
+                        "value": 189,
+                        "raw": "$189.00"
                     }
                 },
                 {
-                    "asin": "B084GRHRNC",
-                    "title": "Dominican Republic Flag Patch Dominican Republic Country Flag Iron on Sign Badge Costume Uniform Emblem Patch Flag Military Stickers Embroidery Iron On Sewing (05)",
-                    "link": "https://www.amazon.com/dp/B084GRHRNC",
+                    "asin": "B07NM3RSRQ",
+                    "title": "Soundcore Anker Life Q20 Hybrid Active Noise Cancelling Headphones, Wireless Over Ear Bluetooth Headphones, 60H Playtime, Hi-Res Audio, Deep Bass, Memory Foam Ear Cups, for Travel, Home Office",
+                    "link": "https://www.amazon.com/dp/B07NM3RSRQ",
                     "price": {
                         "symbol": "$",
                         "currency": "USD",
-                        "value": 6.99,
-                        "raw": "$6.99"
+                        "value": 49.99,
+                        "raw": "$49.99"
                     }
                 },
                 {
-                    "asin": "B0CP2ZDPN8",
-                    "title": "Vagabond Heart Barbados Patch - Barbados Embroidered Souvenir Badge - Iron On Applique",
-                    "link": "https://www.amazon.com/dp/B0CP2ZDPN8",
+                    "asin": "B00NTCH52W",
+                    "title": "Amazon Basics 20-Pack AA Alkaline High-Performance Batteries, 1.5 Volt, 10-Year Shelf Life",
+                    "link": "https://www.amazon.com/dp/B00NTCH52W",
                     "price": {
                         "symbol": "$",
                         "currency": "USD",
-                        "value": 9.99,
-                        "raw": "$9.99"
+                        "value": 8.59,
+                        "raw": "$8.59"
                     }
                 }
             ]
@@ -627,5 +315,10 @@
         "bundle_contents": null,
         "sponsored_products": null,
         "shop_by_look": null
-    }
+    },
+    "mission": "refresh deal products",
+    "task_id": 28400,
+    "create_time": "2024-08-15T10:06:13.829289",
+    "update_time": "2024-08-15T10:06:13.829292",
+    "_id": "016be7445aee11ef916d3ad201ddaa25"
 }
