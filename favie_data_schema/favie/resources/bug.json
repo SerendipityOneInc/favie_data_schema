@@ -1,0 +1,631 @@
+{
+    "url": "https://www.amazon.com/dp/B0CQVRK3YC",
+    "host": "www.amazon.com",
+    "product_id": "B0CQVRK3YC",
+    "product_title": "1 PCS Peltate（2.8x2.4inch）Aruba Flag Patches Iron On or Sew On Embroidered Tactical Military National Aruba Patch (Aruba)",
+    "source": 3,
+    "parser_name": "AmazonProductDetailRFParser",
+    "crawl_result": {
+        "request_info": {
+            "success": true,
+            "credits_used": 2578325,
+            "credits_remaining": 17421675
+        },
+        "request_metadata": {
+            "id": null,
+            "created_at": "2024-08-07T14:15:09.160Z",
+            "processed_at": "2024-08-07T14:15:16.623Z",
+            "total_time_taken": 7.46,
+            "amazon_url": "https://www.amazon.com/dp/B0CQVRK3YC?th=1&psc=1"
+        },
+        "request_parameters": {
+            "type": "product",
+            "url": null
+        },
+        "product": {
+            "title": "1 PCS Peltate（2.8x2.4inch）Aruba Flag Patches Iron On or Sew On Embroidered Tactical Military National Aruba Patch (Aruba)",
+            "title_excluding_variant_name": null,
+            "variants": [
+                {
+                    "asin": "B0CPWFRWM9",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Senegal"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWFRWM9?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CQVQM1N7",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Kosovo"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CQVQM1N7?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWFF76Q",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Cyprus"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWFF76Q?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWD9SYN",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Liberia"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWD9SYN?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWFTB2Y",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Switzerland"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWFTB2Y?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWFJ7VP",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Lesotho"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWFJ7VP?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWDW73S",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Liechtenstein"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWDW73S?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWFSP8F",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Serbia"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWFSP8F?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWDVPJP",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Sierra Leone"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWDVPJP?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWFBZYV",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Cote d'Ivoire"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWFBZYV?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWFCQ99",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Comoros"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWFCQ99?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWG8WBJ",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Saint Lucia"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWG8WBJ?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWFLWGG",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Samoa"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWFLWGG?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CQVP9QD8",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Scotland"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CQVP9QD8?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWF87SL",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Kuwait"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWF87SL?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWDVZJQ",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Qatar"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWDVZJQ?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWFTBZQ",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Sweden"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWFTBZQ?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWDVMCY",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Croatia"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWDVMCY?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CYXND573",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Poland"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CYXND573?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CPWF6GV3",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "El Salvador"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CPWF6GV3?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CQVPYPY6",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Wales"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CQVPYPY6?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CQVRK3YC",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Aruba"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CQVRK3YC?th=1&psc=1",
+                    "price": null
+                },
+                {
+                    "asin": "B0CQVQ4ZL6",
+                    "text": null,
+                    "dimensions": [
+                        {
+                            "name": "Color",
+                            "value": "Puerto Rico"
+                        }
+                    ],
+                    "link": "https://www.amazon.com/dp/B0CQVQ4ZL6?th=1&psc=1",
+                    "price": null
+                }
+            ],
+            "keywords": "1,PCS,Peltate（2.8x2.4inch）Aruba,Flag,Patches,Iron,On,or,Sew,On,Embroidered,Tactical,Military,National,Aruba,Patch,(Aruba)",
+            "keywords_list": [
+                "Peltate（2.8x2.4inch）Aruba",
+                "Flag",
+                "Patches",
+                "Iron",
+                "Embroidered",
+                "Tactical",
+                "Military",
+                "National",
+                "Aruba",
+                "Patch",
+                "(Aruba)"
+            ],
+            "link": "https://www.amazon.com/Ysmzzmsy-Peltate%EF%BC%882-8x2-4inch%EF%BC%89Aruba-Embroidered-Tactical-Patch/dp/B0CQVRK3YC",
+            "asin": "B0CQVRK3YC",
+            "parent_asin": "B0CPWT1NSF",
+            "description": "Sized: 2.76x2.36 inch/(7x6cm), Positive and negative 3% error",
+            "categories": [
+                {
+                    "name": "Home & Kitchen",
+                    "link": null,
+                    "category_id": null
+                },
+                {
+                    "name": "Arts, Crafts & Sewing",
+                    "link": "https://www.amazon.com/Arts-Crafts-Sewing/b/ref=dp_bc_aui_C_1?ie=UTF8&node=2617941011",
+                    "category_id": "2617941011"
+                },
+                {
+                    "name": "Sewing",
+                    "link": "https://www.amazon.com/sewing/b/ref=dp_bc_aui_C_2?ie=UTF8&node=12899091",
+                    "category_id": "12899091"
+                },
+                {
+                    "name": "Trim & Embellishments",
+                    "link": "https://www.amazon.com/trim-embellishments/b/ref=dp_bc_aui_C_3?ie=UTF8&node=12899361",
+                    "category_id": "12899361"
+                },
+                {
+                    "name": "Appliques",
+                    "link": "https://www.amazon.com/appliques/b/ref=dp_bc_aui_C_4?ie=UTF8&node=12899371",
+                    "category_id": "12899371"
+                },
+                {
+                    "name": "Embroidered Appliqué",
+                    "link": "https://www.amazon.com/b/ref=dp_bc_aui_C_5?ie=UTF8&node=23703916011",
+                    "category_id": "23703916011"
+                }
+            ],
+            "bestsellers_rank": [
+                {
+                    "category": "Arts Crafts & Sewing",
+                    "rank": 206572,
+                    "link": "https://www.amazon.com/gp/bestsellers/arts-crafts/ref=pd_zg_ts_arts-crafts"
+                },
+                {
+                    "category": "Embroidered Appliqué Patches",
+                    "rank": 7723,
+                    "link": "https://www.amazon.com/gp/bestsellers/arts-crafts/23703916011/ref=pd_zg_hrsr_arts-crafts"
+                }
+            ],
+            "summarization_attributes": null,
+            "amazons_choice": null,
+            "climate_pledge_friendly": null,
+            "kindle_unlimited": null,
+            "has_coupon": null,
+            "coupon_text": null,
+            "promotions": null,
+            "brand": "Ysmzzmsy",
+            "weight": "0.176 ounces",
+            "shipping_weight": null,
+            "first_available": {
+                "raw": "December 23, 2023",
+                "utc": "2023-12-23T00:00:00.000Z"
+            },
+            "delivery_message": null,
+            "dimensions": "2.76 x 0.08 x 2.36 inches",
+            "sub_title": {
+                "text": "Brand: Ysmzzmsy",
+                "link": "https://www.amazon.com/Ysmzzmsy/b/ref=bl_dp_s_web_120337214011?ie=UTF8&node=120337214011&field-lbr_brands_browse-bin=Ysmzzmsy"
+            },
+            "rating": null,
+            "ratings_total": null,
+            "reviews_total": null,
+            "top_reviews": null,
+            "main_image": {
+                "link": "https://m.media-amazon.com/images/I/51m2Utzd3PL.jpg"
+            },
+            "images": [
+                {
+                    "link": "https://m.media-amazon.com/images/I/51m2Utzd3PL._AC_SL1100_.jpg"
+                },
+                {
+                    "link": "https://m.media-amazon.com/images/I/61ciXPqXPBL._AC_SL1002_.jpg"
+                },
+                {
+                    "link": "https://m.media-amazon.com/images/I/51p58teCgsL._AC_SL1100_.jpg"
+                },
+                {
+                    "link": "https://m.media-amazon.com/images/I/41cWGHFoXwL._AC_SL1100_.jpg"
+                },
+                {
+                    "link": "https://m.media-amazon.com/images/I/61t3JQrHhLL._AC_SL1100_.jpg"
+                }
+            ],
+            "videos": null,
+            "is_bundle": false,
+            "feature_bullets": [
+                "Sized: 2.76x2.36 inch/(7x6cm), Positive and negative 3% error",
+                "Material: Polyester",
+                "Durable,Fitable,Washable. Saving Time",
+                "Backing For Attaching To Tactical Backpacks, Bags, Pouch, Caps, Helmets, Jackets, Pants, Vest, Uniform, Dog Harness And Other Tactical Gear",
+                "Package: 1 pieces"
+            ],
+            "important_information": null,
+            "buybox_winner": {
+                "minimum_order_quantity": null,
+                "offer_id": null,
+                "is_prime": true,
+                "is_prime_exclusive_deal": false,
+                "availability": {
+                    "type": "in_stock",
+                    "raw": "In Stock",
+                    "dispatch_days": 1
+                },
+                "fulfillment": {
+                    "type": "2p",
+                    "is_sold_by_amazon": false,
+                    "is_fulfilled_by_amazon": true,
+                    "is_fulfilled_by_third_party": false,
+                    "is_sold_by_third_party": true,
+                    "third_party_seller": {
+                        "name": "Ysmzzmsy",
+                        "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A1MV5IBMXSJ371&asin=B0CQVRK3YC&ref_=dp_merchant_link&isAmazonFulfilled=1"
+                    }
+                },
+                "deal": null,
+                "price": {
+                    "symbol": "$",
+                    "currency": "USD",
+                    "value": 3.94,
+                    "raw": "$3.94"
+                },
+                "rrp": {
+                    "symbol": "$",
+                    "currency": "USD",
+                    "value": 7.88,
+                    "raw": "$7.88"
+                },
+                "new_offers_count": null,
+                "new_offers_from": null,
+                "used_offers_count": null,
+                "used_offers_from": null,
+                "mixed_offers_count": null,
+                "mixed_offers_from": null
+            },
+            "more_buying_choices": null,
+            "specifications": [
+                {
+                    "name": "Color",
+                    "value": "Aruba"
+                },
+                {
+                    "name": "Size",
+                    "value": "2.76x2.36inch"
+                },
+                {
+                    "name": "Brand",
+                    "value": "Ysmzzmsy"
+                },
+                {
+                    "name": "Material",
+                    "value": "Polyester"
+                },
+                {
+                    "name": "Style",
+                    "value": "Art Decor"
+                },
+                {
+                    "name": "Theme",
+                    "value": "Flag, Military"
+                },
+                {
+                    "name": "Shape",
+                    "value": "Peltate"
+                },
+                {
+                    "name": "Number of Pieces",
+                    "value": "500"
+                },
+                {
+                    "name": "Mounting Type",
+                    "value": "Iron On or Sew On"
+                },
+                {
+                    "name": "Age Range (Description)",
+                    "value": "Adult"
+                },
+                {
+                    "name": "Manufacturer",
+                    "value": "Ysmzzmsy"
+                },
+                {
+                    "name": "Product Dimensions",
+                    "value": "2.76 x 0.08 x 2.36 inches"
+                },
+                {
+                    "name": "Item Weight",
+                    "value": "0.176 ounces"
+                },
+                {
+                    "name": "ASIN",
+                    "value": "B0CQVRK3YC"
+                },
+                {
+                    "name": "Country of Origin",
+                    "value": "China"
+                },
+                {
+                    "name": "Item model number",
+                    "value": "Patch Patch-ehduy209"
+                },
+                {
+                    "name": "Best Sellers Rank",
+                    "value": "#206,572 in Arts, Crafts & Sewing (See Top 100 in Arts, Crafts & Sewing) #7,723 in Embroidered Appliqué Patches"
+                },
+                {
+                    "name": "Date First Available",
+                    "value": "December 23, 2023"
+                }
+            ],
+            "services": null,
+            "attributes": [
+                {
+                    "name": "Color",
+                    "value": "Aruba"
+                },
+                {
+                    "name": "Size",
+                    "value": "2.76x2.36inch"
+                },
+                {
+                    "name": "Brand",
+                    "value": "Ysmzzmsy"
+                },
+                {
+                    "name": "Material",
+                    "value": "Polyester"
+                },
+                {
+                    "name": "Style",
+                    "value": "Art Decor"
+                },
+                {
+                    "name": "Theme",
+                    "value": "Flag, Military"
+                },
+                {
+                    "name": "Shape",
+                    "value": "Peltate"
+                },
+                {
+                    "name": "Number of Pieces",
+                    "value": "500"
+                },
+                {
+                    "name": "Mounting Type",
+                    "value": "Iron On or Sew On"
+                },
+                {
+                    "name": "Age Range (Description)",
+                    "value": "Adult"
+                }
+            ]
+        },
+        "frequently_bought_together": {
+            "total_price": {
+                "symbol": "$",
+                "value": 20.92,
+                "currency": "USD",
+                "raw": "$20.92"
+            },
+            "products": [
+                {
+                    "asin": "B0CQVRK3YC",
+                    "title": "Ysmzzmsy 1 PCS Peltate（2.8x2.4inch）Aruba Flag Patches Iron On or Sew On Embroidered Tactical Military National Aruba Patch (Aruba)",
+                    "link": "https://www.amazon.com/dp/B0CQVRK3YC",
+                    "price": {
+                        "symbol": "$",
+                        "currency": "USD",
+                        "value": 3.94,
+                        "raw": "$3.94"
+                    }
+                },
+                {
+                    "asin": "B084GRHRNC",
+                    "title": "Dominican Republic Flag Patch Dominican Republic Country Flag Iron on Sign Badge Costume Uniform Emblem Patch Flag Military Stickers Embroidery Iron On Sewing (05)",
+                    "link": "https://www.amazon.com/dp/B084GRHRNC",
+                    "price": {
+                        "symbol": "$",
+                        "currency": "USD",
+                        "value": 6.99,
+                        "raw": "$6.99"
+                    }
+                },
+                {
+                    "asin": "B0CP2ZDPN8",
+                    "title": "Vagabond Heart Barbados Patch - Barbados Embroidered Souvenir Badge - Iron On Applique",
+                    "link": "https://www.amazon.com/dp/B0CP2ZDPN8",
+                    "price": {
+                        "symbol": "$",
+                        "currency": "USD",
+                        "value": 9.99,
+                        "raw": "$9.99"
+                    }
+                }
+            ]
+        },
+        "also_viewed": null,
+        "bundles": null,
+        "bundle_contents": null,
+        "sponsored_products": null,
+        "shop_by_look": null
+    }
+}

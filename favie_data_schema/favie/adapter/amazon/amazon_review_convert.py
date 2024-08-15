@@ -10,7 +10,6 @@ class AmazoneReviewConvert():
     @staticmethod
     def convert_to_favie_review(crawler_kafka_message: CrawlerKafkaMessage) -> list[FavieReview]:
         if not AmazoneReviewConvert.__check(crawler_kafka_message):
-            logging.error(f"Invalid crawler_kafka_message : {crawler_kafka_message}")
             return None
         reviews = crawler_kafka_message.crawl_result.product.top_reviews
         favie_reviews:List[FavieReview] = [AmazoneReviewConvert.__convert_to_favie_review(x) for x in reviews if x is not None] if reviews is not None else None
