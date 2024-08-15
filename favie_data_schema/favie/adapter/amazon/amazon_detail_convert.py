@@ -68,32 +68,32 @@ class AmazonDetailConvert():
 
     @staticmethod
     def get_best_seller_rank(rainforest_product_detail: RainforestProductDetail):
-        if rainforest_product_detail.product.bestsellers_rank is not None and len(rainforest_product_detail.product.bestsellers_rank) > 0:
+        if CommonUtils.list_len(rainforest_product_detail.product.bestsellers_rank) > 0:
             ranks = [SellerRank(
                 category = x.category,
                 rank = x.rank,
                 link = x.link
                 ) for x in rainforest_product_detail.product.bestsellers_rank if CommonUtils.all_not_none(x.category,x.rank)]
-            return ranks if len(ranks) > 0 else None
+            return ranks if CommonUtils.list_len(ranks) > 0 else None
         return None
 
     @staticmethod
     def get_promotion(rainforest_product_detail: RainforestProductDetail):
-        if rainforest_product_detail.product.promotions is not None and len(rainforest_product_detail.product.promotions) > 0:
+        if CommonUtils.list_len(rainforest_product_detail.product.promotions) > 0:
             promotion = Promotion(why_buy=[x.name for x in rainforest_product_detail.product.promotions if x.name is not None])
-            return promotion if len(promotion.why_buy) > 0 else None
+            return promotion if CommonUtils.list_len(promotion.why_buy) > 0 else None
         return None
 
     @staticmethod
     def get_variants(rainforest_product_detail: RainforestProductDetail):
-        if(rainforest_product_detail.product.variants is not None and len(rainforest_product_detail.product.variants) > 0): 
+        if(CommonUtils.list_len(rainforest_product_detail.product.variants) > 0): 
             variants = [SimpleProduct(
                     sku_id=x.asin,
                     title=None, #variants 的schema定义有误，缺少title字段，多了一个text字段
                     link=x.link,
                     price=AmazonDetailConvert.convert_price(x.price)
                 ) for x in rainforest_product_detail.product.variants if x.asin is not None]
-            return variants if len(variants) > 0 else None
+            return variants if CommonUtils.list_len(variants) > 0 else None
         return None
     
     @staticmethod
@@ -148,22 +148,22 @@ class AmazonDetailConvert():
     
     @staticmethod
     def get_specifications(rainforest_product_detail: RainforestProductDetail):
-        if rainforest_product_detail.product.specifications is not None and len(rainforest_product_detail.product.specifications) > 0:
+        if CommonUtils.list_len(rainforest_product_detail.product.specifications) > 0:
             specifications = [AttributeItem(
                 name = x.name,
                 value = x.value
             ) for x in rainforest_product_detail.product.specifications if CommonUtils.all_not_none(x.name,x.value)]
-            return specifications if len(specifications) > 0 else None
+            return specifications if CommonUtils.list_len(specifications) > 0 else None
         return None
     
     @staticmethod
     def get_attributes(rainforest_product_detail: RainforestProductDetail):
-        if rainforest_product_detail.product.attributes is not None and len(rainforest_product_detail.product.attributes) > 0:
+        if CommonUtils.list_len(rainforest_product_detail.product.attributes) > 0:
             attributes = [AttributeItem(
                 name = x.name,
                 value = x.value
             ) for x in rainforest_product_detail.product.attributes if CommonUtils.all_not_none(x.name,x.value)] 
-            return attributes if len(attributes) > 0 else None
+            return attributes if CommonUtils.list_len(attributes) > 0 else None
         return None
     
     @staticmethod
@@ -176,12 +176,12 @@ class AmazonDetailConvert():
     
     @staticmethod
     def get_categories(rainforest_product_detail: RainforestProductDetail):
-        if rainforest_product_detail.product.categories is not None and len(rainforest_product_detail.product.categories) > 0:
+        if CommonUtils.list_len(rainforest_product_detail.product.categories) > 0:
             categories = [ CategoryItem(
                 id = x.category_id,
                 name = x.name,
                 ) for x in rainforest_product_detail.product.categories if x.category_id is not None]
-            return categories if len(categories) > 0 else None
+            return categories if CommonUtils.list_len(categories) > 0 else None
         return None
 
     @staticmethod
@@ -203,12 +203,12 @@ class AmazonDetailConvert():
                 main_image = rainforest_product_detail.product.main_image.link if rainforest_product_detail.product.main_image is not None else None,
                 images = [x.link for x in rainforest_product_detail.product.images if x.link is not None]
             )
-            return images if images.main_image is not None or len(images.image_list) > 0 else None
+            return images if images.main_image is not None or CommonUtils.list_len(images.image_list) > 0 else None
         return None
     
     @staticmethod
     def get_videos(rainforest_product_detail: RainforestProductDetail):
-        if rainforest_product_detail.product.videos is not None and len(rainforest_product_detail.product.videos) > 0:
+        if CommonUtils.list_len(rainforest_product_detail.product.videos) > 0:
             videos = [
                 Video(
                     link = x.url,
@@ -222,7 +222,7 @@ class AmazonDetailConvert():
                 for x in rainforest_product_detail.product.videos
                 if x.url is not None    
             ]
-            return videos if len(videos) > 0 else None
+            return videos if CommonUtils.list_len(videos) > 0 else None
         return None
     
     @staticmethod

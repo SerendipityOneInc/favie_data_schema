@@ -25,7 +25,10 @@ class CommonUtils():
     @staticmethod
     def md5_hash(text:str):
         return hashlib.md5(text.encode()).hexdigest()
-
+    
+    @staticmethod
+    def list_len(list):
+        return len(list) if list is not None else 0
 
 if __name__ == "__main__":
     print(CommonUtils.all_not_none(1, 2, 3))

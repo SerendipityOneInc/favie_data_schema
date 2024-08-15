@@ -2,6 +2,7 @@ from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail, TopReviews
 from favie_data_schema.favie.adapter.common.crawler_kakfa_message import CrawlerKafkaMessage
 from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_amazon_message
+from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
 import logging
 
 from favie_data_schema.favie.data.interface.product.favie_review import FavieReview
@@ -13,7 +14,7 @@ class AmazonReviewConvert():
             return None
         reviews = crawler_kafka_message.crawl_result.product.top_reviews
         favie_reviews:List[FavieReview] = [AmazonReviewConvert.__convert_to_favie_review(x) for x in reviews if x is not None] if reviews is not None else None
-        return favie_reviews if len(favie_reviews) > 0 else None
+        return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
     
     def __convert_to_favie_review(review: TopReviews)->FavieReview:
         if(review is None): 
@@ -41,7 +42,7 @@ class AmazonReviewConvert():
             return False
         if(crawler_kafka_message.crawl_result.product is None):
             return False
-        if(crawler_kafka_message.crawl_result.product.top_reviews is None or len(crawler_kafka_message.crawl_result.product.top_reviews) == 0):
+        if(CommonUtils.list_len(crawler_kafka_message.crawl_result.product.top_reviews) == 0):
             return False
         return True
     
