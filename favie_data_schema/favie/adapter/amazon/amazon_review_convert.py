@@ -6,13 +6,13 @@ import logging
 
 from favie_data_schema.favie.data.interface.product.favie_review import FavieReview
 
-class AmazoneReviewConvert():
+class AmazonReviewConvert():
     @staticmethod
     def convert_to_favie_review(crawler_kafka_message: CrawlerKafkaMessage) -> list[FavieReview]:
-        if not AmazoneReviewConvert.__check(crawler_kafka_message):
+        if not AmazonReviewConvert.__check(crawler_kafka_message):
             return None
         reviews = crawler_kafka_message.crawl_result.product.top_reviews
-        favie_reviews:List[FavieReview] = [AmazoneReviewConvert.__convert_to_favie_review(x) for x in reviews if x is not None] if reviews is not None else None
+        favie_reviews:List[FavieReview] = [AmazonReviewConvert.__convert_to_favie_review(x) for x in reviews if x is not None] if reviews is not None else None
         return favie_reviews if len(favie_reviews) > 0 else None
     
     def __convert_to_favie_review(review: TopReviews)->FavieReview:
@@ -47,7 +47,7 @@ class AmazoneReviewConvert():
     
 def main():
     amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json")
-    favie_reviews: list[FavieReview] = AmazoneReviewConvert.convert_to_favie_review(amazon_message)
+    favie_reviews: list[FavieReview] = AmazonReviewConvert.convert_to_favie_review(amazon_message)
     if favie_reviews is not None:
         for favie_review in favie_reviews:
             if(favie_review is not None):
