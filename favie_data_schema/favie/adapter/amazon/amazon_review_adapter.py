@@ -15,6 +15,9 @@ class AmazoneReviewAdapter(FavieReviewAdapter):
     @staticmethod
     def convert_to_favie_review(crawler_kafka_message: CrawlerKafkaMessage) -> list[FavieReview]:
         favie_reviews = AmazoneReviewConvert.convert_to_favie_review(crawler_kafka_message)
+        if favie_reviews is None:
+            return None
+        
         favie_product = AmazonDetailConvert.convert_to_favie_product(crawler_kafka_message)
         f_spu_id = FavieProductUtils.gen_f_sku_id(favie_product)
         if f_spu_id is None:    
@@ -30,7 +33,7 @@ class AmazoneReviewAdapter(FavieReviewAdapter):
     
     
 def main():
-    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json")
+    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json")
     favie_reviews = AmazoneReviewAdapter.convert_to_favie_review(amazon_message)
     for favie_review in favie_reviews:
         print(favie_review.model_dump_json())
