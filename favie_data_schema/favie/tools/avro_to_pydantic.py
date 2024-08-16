@@ -2,7 +2,7 @@ import argparse
 import json
 import os
 from typing import ForwardRef, List, Optional, Union, get_args, get_origin
-
+from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
 from pydantic import BaseModel, Field
 
 
@@ -95,9 +95,7 @@ def topological_sort(dependencies):
     return sorted_list
 
 
-def avro_to_pydantic(avro_schema):
-    models = {}
-    known_types = {}
+def avro_to_pydantic(avro_schema,models,known_types):
 
     def parse_record(name, namespace, fields):
         class_attrs = {}
@@ -147,8 +145,6 @@ def avro_to_pydantic(avro_schema):
 
     parse_schema(avro_schema)
 
-    return models
-
 
 # 判断类型是否是List
 def is_type_of_list(data_type: type):
@@ -184,8 +180,12 @@ def get_native_type_str(native_type):
         if isinstance(native_type, ForwardRef)
         else native_type.__name__
     )
-
-
+    
+def read_schema(file_path):
+    """ 读取单个 Avro schema 文件 """
+    with open(file_path, "r") as f:
+        return json.load(f)
+    
 def main():
     parser = argparse.ArgumentParser(description="Avro to pydantic with references.")
     parser.add_argument("--avsc", type=str, required=True, help="avro schema file.")
@@ -198,19 +198,24 @@ def main():
 
     args = parser.parse_args()
 
-    with open(f"{args.avsc}", "r") as f:
-        avro_schema = json.load(f)
-
+    # with open(f"{args.avsc}", "r") as f:
+    #     avro_schema = json.load(f)
+    avsc_files = args.avsc.split(",")
+    
     # Step 1: Build dependency graph
     dependencies = {}
     known_types = {}
-    build_dependency_graph(avro_schema, dependencies, known_types)
+    models = {}
+    # known_types = {}
+    for avsc_file in avsc_files:
+        avro_schema = read_schema(avsc_file)
+        avro_to_pydantic(avro_schema,models,known_types)
+        build_dependency_graph(avro_schema, dependencies, known_types)
 
     # Step 2: Topological sort to determine the order of class definitions
     sorted_classes = topological_sort(dependencies)
 
     # Step 3: Parse schema and generate models
-    models = avro_to_pydantic(avro_schema)
 
     os.makedirs(os.path.dirname(args.output_file), exist_ok=True)
     with open(f"{args.output_file}", "w") as f:

@@ -11,3 +11,7 @@ class FavieImageCrawlResponse(BaseModel):
     source_id: Optional[str] = None
     images: Optional[List[ImageItem]] = None
 
+class FavieImageCrawlRequest(BaseModel):
+    source_type: Optional[int] = None
+    source_id: Optional[str] = None
+    images: Optional[List[ImageItem]] = None
