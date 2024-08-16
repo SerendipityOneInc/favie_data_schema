@@ -60,6 +60,14 @@
         }
       ],
       "default": null
+    },
+    {
+      "name": "force",
+      "type": [
+        "null",
+        "bool"
+      ],
+      "default": null
     }
   ]
 }
