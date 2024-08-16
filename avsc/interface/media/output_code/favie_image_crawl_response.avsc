@@ -1,0 +1,65 @@
+{
+  "namespace": "favie.data.interface.media",
+  "type": "record",
+  "name": "FavieImageCrawlResponse",
+  "doc": "FavieImageCrawlResponse",
+  "fields": [
+    {
+      "name": "source_type",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "source_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "images",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "namespace": "favie.data.interface.media",
+            "type": "record",
+            "name": "ImageItem",
+            "fields": [
+              {
+                "name": "outer_key",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              },
+              {
+                "name": "url",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              },
+              {
+                "name": "text",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              }
+            ]
+          }
+        }
+      ],
+      "default": null
+    }
+  ]
+}
