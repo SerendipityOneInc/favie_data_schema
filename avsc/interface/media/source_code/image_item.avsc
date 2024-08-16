@@ -4,6 +4,7 @@
   "name": "ImageItem",
   "fields": [
     {"name": "outer_key", "type": ["null", "string"], "default": null},
+    {"name": "site", "type": ["null", "string"], "default": null},
     {"name": "url", "type": ["null", "string"], "default": null},
     {"name": "text", "type": ["null", "string"], "default": null}
   ]
