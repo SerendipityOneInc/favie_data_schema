@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "favie-data-schema"
-version = "0.0.24"
+version = "0.0.25"
 
 description = "Favie Data Schema"
 authors = ["allenz-srp <allenz@srp.one>"]

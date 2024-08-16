@@ -28,6 +28,14 @@
       "default": null
     },
     {
+      "name": "format",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "text",
       "type": [
         "null",
@@ -56,6 +64,14 @@
       "type": [
         "null",
         "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "category",
+      "type": [
+        "null",
+        "string"
       ],
       "default": null
     },

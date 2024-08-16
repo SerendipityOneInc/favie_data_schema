@@ -2,7 +2,7 @@ from typing import List, Optional
 from pydantic import BaseModel, Field
 
 class ImageItem(BaseModel):
-    outer_key: Optional[str] = None
+    category: Optional[str] = None
     site: Optional[str] = None
     url: Optional[str] = None
     text: Optional[str] = None

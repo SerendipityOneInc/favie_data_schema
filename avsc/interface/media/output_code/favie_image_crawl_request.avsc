@@ -32,7 +32,7 @@
             "name": "ImageItem",
             "fields": [
               {
-                "name": "outer_key",
+                "name": "category",
                 "type": [
                   "null",
                   "string"
