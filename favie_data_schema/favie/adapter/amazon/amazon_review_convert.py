@@ -20,9 +20,9 @@ class AmazonReviewConvert():
         if(review is None): 
             return None
         favie_review = FavieReview()
-        favie_review.author_id = review.profile.id
-        favie_review.author_name = review.profile.name
-        favie_review.author_url = review.profile.link
+        favie_review.author_id = review.profile.id if review.profile is not None else None
+        favie_review.author_name = review.profile.name if review.profile is not None else None
+        favie_review.author_url = review.profile.link if review.profile is not None else None
         favie_review.review_id = review.id
         favie_review.link = review.link
         favie_review.body = review.body

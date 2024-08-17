@@ -2,7 +2,7 @@
     "namespace": "favie.data.interface.product",
     "type": "record",
     "name": "Images",
-    "doc": "Schema for Images",
+    "doc": "Schema for Image",
     "fields": [
         {
             "name": "main_image",
