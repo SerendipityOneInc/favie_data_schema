@@ -52,7 +52,7 @@
       "default": null
     },
     {
-      "name": "hight",
+      "name": "height",
       "type": [
         "null",
         "int"

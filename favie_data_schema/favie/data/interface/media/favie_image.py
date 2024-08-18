@@ -8,7 +8,7 @@ class FavieImage(BaseModel):
     format: Optional[str] = None
     text: Optional[str] = None
     width: Optional[int] = None
-    hight: Optional[int] = None
+    height: Optional[int] = None
     size: Optional[int] = None
     category: Optional[str] = None
     source_type: Optional[int] = None
