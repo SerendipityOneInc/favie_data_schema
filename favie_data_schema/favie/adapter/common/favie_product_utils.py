@@ -37,3 +37,13 @@ class FavieProductUtils():
     @staticmethod
     def get_product_url(product):
         return product.get('product_url')
+    
+    @staticmethod
+    def check_product(product: FavieProduct):
+        if product is None:
+            return False
+        
+        if product.f_sku_id is None and (product.sku_id is None or product.site is None):
+            return False
+        
+        return True
