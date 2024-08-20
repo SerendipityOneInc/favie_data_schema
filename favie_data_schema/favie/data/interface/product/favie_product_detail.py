@@ -174,7 +174,7 @@ class Offer(BaseModel):
     buybox_winner: Optional[bool] = None
     offer_sku_id: Optional[str] = None
 
-class FavieProduct(BaseModel):
+class FavieProductDetail(BaseModel):
     f_sku_id: Optional[str] = None
     f_spu_id: Optional[str] = None
     site: Optional[str] = None

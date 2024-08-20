@@ -1,7 +1,7 @@
 {
   "namespace": "favie.data.interface.product",
   "type": "record",
-  "name": "FavieReview",
+  "name": "FavieProductReview",
   "fields": [
     {
       "name": "f_review_id",

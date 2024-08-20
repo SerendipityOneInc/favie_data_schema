@@ -1,6 +1,6 @@
 {
   "type": "record",
-  "name": "FavieProduct",
+  "name": "FavieProductDetail",
   "namespace": "favie.data.interface.product",
   "doc": "Favie product schema",
   "fields": [

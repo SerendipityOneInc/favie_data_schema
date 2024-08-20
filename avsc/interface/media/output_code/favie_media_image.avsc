@@ -1,7 +1,7 @@
 {
   "namespace": "favie.data.interface.media",
   "type": "record",
-  "name": "FavieImage",
+  "name": "FavieMediaImage",
   "fields": [
     {
       "name": "f_url",

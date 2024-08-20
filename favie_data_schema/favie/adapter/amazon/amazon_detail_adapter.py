@@ -10,6 +10,7 @@ from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_a
 from datetime import datetime
 import logging
 
+from favie_data_schema.favie.data.interface.product.favie_product import FavieProduct
 from favie_data_schema.favie.data.interface.product.favie_review import FavieReview
 
 class AmazonDetailAdapter(FavieProductAdapter):
@@ -42,7 +43,7 @@ class AmazonDetailAdapter(FavieProductAdapter):
         
 def main():
     amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json")
-    favie_product = AmazonDetailAdapter.convert_to_favie_product(amazon_message)
+    favie_product: FavieProduct = AmazonDetailAdapter.convert_to_favie_product(amazon_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 
 if __name__ == "__main__":
