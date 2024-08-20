@@ -139,7 +139,7 @@ class AmazonDetailConvert():
         if(rainforest_product_detail.product.buybox_winner is not None):
             return Seller(
                 id=rainforest_product_detail.product.buybox_winner.offer_id
-            )
+            ) if rainforest_product_detail.product.buybox_winner.offer_id else None
         return None
     
     @staticmethod
