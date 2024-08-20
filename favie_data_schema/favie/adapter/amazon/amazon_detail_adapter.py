@@ -1,6 +1,6 @@
 from favie_data_schema.favie.adapter.common.favie_adapter import FavieProductAdapter
 from favie_data_schema.favie.adapter.common.favie_product_utils import FavieProductUtils
-from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
 from favie_data_schema.favie.adapter.common.crawler_kakfa_message import CrawlerKafkaMessage
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
@@ -10,12 +10,12 @@ from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_a
 from datetime import datetime
 import logging
 
-from favie_data_schema.favie.data.interface.product.favie_product import FavieProduct
-from favie_data_schema.favie.data.interface.product.favie_review import FavieReview
+from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
+from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
 class AmazonDetailAdapter(FavieProductAdapter):
     @staticmethod
-    def convert_to_favie_product(amazon_message: CrawlerKafkaMessage) -> FavieProduct:
+    def convert_to_favie_product(amazon_message: CrawlerKafkaMessage) -> FavieProductDetail:
         favie_product = AmazonDetailConvert.convert_to_favie_product(amazon_message)
         if(favie_product is None):
             return None
@@ -43,7 +43,7 @@ class AmazonDetailAdapter(FavieProductAdapter):
         
 def main():
     amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json")
-    favie_product: FavieProduct = AmazonDetailAdapter.convert_to_favie_product(amazon_message)
+    favie_product: FavieProductDetail = AmazonDetailAdapter.convert_to_favie_product(amazon_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 
 if __name__ == "__main__":

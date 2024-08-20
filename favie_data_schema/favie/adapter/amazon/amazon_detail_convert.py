@@ -1,5 +1,5 @@
 from favie_data_schema.favie.adapter.common.favie_adapter import FavieProductAdapter
-from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
 from favie_data_schema.favie.adapter.common.currency import CurrencyConverter
 from favie_data_schema.favie.adapter.common.favie_product_status import FavieProductStatus
@@ -10,16 +10,16 @@ from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_a
 from datetime import datetime
 import logging
 
-from favie_data_schema.favie.data.interface.product.favie_review import FavieReview
+from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
 class AmazonDetailConvert():
     @staticmethod
-    def convert_to_favie_product(amazon_message: CrawlerKafkaMessage) -> FavieProduct:
+    def convert_to_favie_product(amazon_message: CrawlerKafkaMessage) -> FavieProductDetail:
         rainforest_product_detail = amazon_message.crawl_result
         if not AmazonDetailConvert.rainforest_product_detail_check(rainforest_product_detail):
             logging.error("rainforest_product_detail is invalid: %s", rainforest_product_detail)
             return None
-        favie_product = FavieProduct()
+        favie_product = FavieProductDetail()
         favie_product.sku_id = rainforest_product_detail.product.asin
         favie_product.spu_id = rainforest_product_detail.product.parent_asin
         favie_product.site = CommonUtils.host_trip_www(amazon_message.host)
