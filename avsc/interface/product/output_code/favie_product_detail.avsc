@@ -61,6 +61,14 @@
       "default": null
     },
     {
+      "name": "spu_title",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "sub_title",
       "type": [
         "null",
@@ -469,6 +477,14 @@
               "default": null
             },
             {
+              "name": "coupon_text",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
               "name": "is_preorder",
               "type": [
                 "null",
@@ -520,15 +536,46 @@
               "name": "product_model_number",
               "type": [
                 "null",
-                "string"
+                {
+                  "namespace": "favie.data.interface.product",
+                  "type": "record",
+                  "name": "PlatformChoice",
+                  "doc": "Schema for PlatformChoice",
+                  "fields": [
+                    {
+                      "name": "keywords",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "link",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
               ],
               "default": null
             },
             {
-              "name": "is_platform_choice",
+              "name": "platform_choice",
               "type": [
                 "null",
                 "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "last_month_sell_amount",
+              "type": [
+                "null",
+                "long"
               ],
               "default": null
             }

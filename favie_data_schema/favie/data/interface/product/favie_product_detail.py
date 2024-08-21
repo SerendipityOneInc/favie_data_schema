@@ -33,19 +33,9 @@ class AttributeItem(BaseModel):
     name: Optional[str] = None
     value: Optional[str] = None
 
-class StandardAttributes(BaseModel):
-    is_used: Optional[bool] = None
-    is_bundle: Optional[bool] = None
-    is_auction: Optional[bool] = None
-    has_coupon: Optional[bool] = None
-    is_preorder: Optional[bool] = None
-    is_best_seller: Optional[bool] = None
-    is_best_offer: Optional[bool] = None
-    is_marketplace_item: Optional[bool] = None
-    is_private_brand: Optional[bool] = None
-    recent_sales: Optional[int] = None
-    product_model_number: Optional[str] = None
-    is_platform_choice: Optional[bool] = None
+class PlatformChoice(BaseModel):
+    keywords: Optional[str] = None
+    link: Optional[str] = None
 
 class DeliveryPrice(BaseModel):
     raw: Optional[str] = None
@@ -142,6 +132,22 @@ class MetaInfo(BaseModel):
     f_images_crawl_send_at: Optional[str] = None
     f_attributes_map_success: Optional[bool] = None
 
+class StandardAttributes(BaseModel):
+    is_used: Optional[bool] = None
+    is_bundle: Optional[bool] = None
+    is_auction: Optional[bool] = None
+    has_coupon: Optional[bool] = None
+    coupon_text: Optional[str] = None
+    is_preorder: Optional[bool] = None
+    is_best_seller: Optional[bool] = None
+    is_best_offer: Optional[bool] = None
+    is_marketplace_item: Optional[bool] = None
+    is_private_brand: Optional[bool] = None
+    recent_sales: Optional[int] = None
+    product_model_number: Optional[PlatformChoice] = None
+    platform_choice: Optional[bool] = None
+    last_month_sell_amount: Optional[int] = None
+
 class Delivery(BaseModel):
     fulfilled_by_platform: Optional[bool] = None
     countdown: Optional[str] = None
@@ -182,6 +188,7 @@ class FavieProductDetail(BaseModel):
     spu_id: Optional[str] = None
     title: Optional[str] = None
     link: Optional[str] = None
+    spu_title: Optional[str] = None
     sub_title: Optional[str] = None
     sub_title_link: Optional[str] = None
     description: Optional[str] = None

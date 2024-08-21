@@ -11,6 +11,7 @@
     { "name": "spu_id", "type": ["null", "string"], "default": null },
     { "name": "title", "type": ["null", "string"], "default": null },
     { "name": "link", "type": ["null", "string"], "default": null },
+    { "name": "spu_title", "type": ["null", "string"], "default": null },
     { "name": "sub_title", "type": ["null", "string"], "default": null },
     { "name": "sub_title_link", "type": ["null", "string"], "default": null },
     { "name": "description", "type": ["null", "string"], "default": null },

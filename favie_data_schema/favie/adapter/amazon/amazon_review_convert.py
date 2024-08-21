@@ -1,7 +1,7 @@
 from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail, TopReviews
 from favie_data_schema.favie.adapter.common.crawler_kakfa_message import CrawlerKafkaMessage
-from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_amazon_message
+from favie_data_schema.favie.adapter.data_mock.data_mock_read import read_amazon_message
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
 import logging
 

@@ -6,7 +6,7 @@ from favie_data_schema.favie.adapter.common.crawler_kakfa_message import Crawler
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.amazon.amazon_detail_convert import AmazonDetailConvert
 from favie_data_schema.favie.adapter.amazon.amazon_review_adapter import AmazonReviewAdapter
-from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_amazon_message
+from favie_data_schema.favie.adapter.data_mock.data_mock_read import read_amazon_message
 from datetime import datetime
 import logging
 

@@ -1,0 +1,10 @@
+{
+  "namespace": "favie.data.interface.product",
+  "type": "record",
+  "name": "PlatformChoice",
+  "doc": "Schema for PlatformChoice",
+  "fields": [
+    { "name": "keywords", "type": ["null", "string"], "default": null },
+    { "name": "link", "type": ["null", "string"], "default": null }
+  ]
+}

@@ -10,3 +10,4 @@ class CrawlerKafkaMessage(BaseModel):
     source: Optional[int] = None,
     parser_name : Optional[str] = None,
     crawl_result: Optional[RainforestProductDetail] = None
+    raw_result: Optional[str] = None
