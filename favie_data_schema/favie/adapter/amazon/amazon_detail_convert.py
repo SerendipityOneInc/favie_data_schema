@@ -158,8 +158,13 @@ class AmazonDetailConvert():
         standard_attributes.has_coupon = message.crawl_result.product.has_coupon
         standard_attributes.coupon_text = message.crawl_result.product.coupon_text
         standard_attributes.platform_choice = AmazonDetailConvert.get_platform_choice(message.crawl_result)
-        if message.crawl_result.product.buybox_winner is not None and message.crawl_result.product.buybox_winner.fulfillment is not None:
-            standard_attributes.is_marketplace_item = message.crawl_result.product.buybox_winner.fulfillment.is_sold_by_third_party
+        
+        if message.crawl_result.product.buybox_winner is not None: 
+            if message.crawl_result.product.buybox_winner.fulfillment is not None:
+                standard_attributes.is_marketplace_item = message.crawl_result.product.buybox_winner.fulfillment.is_sold_by_third_party
+            standard_attributes.is_member = message.crawl_result.product.buybox_winner.is_prime
+            standard_attributes.is_member_exclusive_deal = message.crawl_result.product.buybox_winner.is_prime_exclusive_deal
+        
         return standard_attributes
     
     @staticmethod

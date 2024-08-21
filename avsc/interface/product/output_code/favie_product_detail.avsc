@@ -469,6 +469,22 @@
               "default": null
             },
             {
+              "name": "is_member",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
+              "name": "is_member_exclusive_deal",
+              "type": [
+                "null",
+                "boolean"
+              ],
+              "default": null
+            },
+            {
               "name": "has_coupon",
               "type": [
                 "null",

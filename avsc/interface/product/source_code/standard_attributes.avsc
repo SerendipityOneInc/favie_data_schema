@@ -7,6 +7,8 @@
     { "name": "is_used", "type": ["null", "boolean"], "default": null },
     { "name": "is_bundle", "type": ["null", "boolean"], "default": null },
     { "name": "is_auction", "type": ["null", "boolean"], "default": null },
+    { "name": "is_member", "type": ["null", "boolean"], "default": null },
+    { "name": "is_member_exclusive_deal", "type": ["null", "boolean"], "default": null },
     { "name": "has_coupon", "type": ["null", "boolean"], "default": null },
     { "name": "coupon_text", "type": ["null", "string"], "default": null },
     { "name": "is_preorder", "type": ["null", "boolean"], "default": null },

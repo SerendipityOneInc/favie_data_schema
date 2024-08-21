@@ -136,6 +136,8 @@ class StandardAttributes(BaseModel):
     is_used: Optional[bool] = None
     is_bundle: Optional[bool] = None
     is_auction: Optional[bool] = None
+    is_member: Optional[bool] = None
+    is_member_exclusive_deal: Optional[bool] = None
     has_coupon: Optional[bool] = None
     coupon_text: Optional[str] = None
     is_preorder: Optional[bool] = None
