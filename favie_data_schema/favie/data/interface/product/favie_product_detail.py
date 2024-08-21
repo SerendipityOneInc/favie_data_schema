@@ -146,8 +146,8 @@ class StandardAttributes(BaseModel):
     is_marketplace_item: Optional[bool] = None
     is_private_brand: Optional[bool] = None
     recent_sales: Optional[int] = None
-    product_model_number: Optional[PlatformChoice] = None
-    platform_choice: Optional[bool] = None
+    product_model_number: Optional[str] = None
+    platform_choice: Optional[PlatformChoice] = None
     last_month_sell_amount: Optional[int] = None
 
 class Delivery(BaseModel):

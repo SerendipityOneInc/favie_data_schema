@@ -552,6 +552,14 @@
               "name": "product_model_number",
               "type": [
                 "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "platform_choice",
+              "type": [
+                "null",
                 {
                   "namespace": "favie.data.interface.product",
                   "type": "record",
@@ -576,14 +584,6 @@
                     }
                   ]
                 }
-              ],
-              "default": null
-            },
-            {
-              "name": "platform_choice",
-              "type": [
-                "null",
-                "boolean"
               ],
               "default": null
             },
