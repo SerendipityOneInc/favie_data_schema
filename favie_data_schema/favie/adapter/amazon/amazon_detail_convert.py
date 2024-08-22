@@ -261,7 +261,7 @@ class AmazonDetailConvert():
         if rainforest_product_detail.product.images is not None or rainforest_product_detail.product.main_image is not None:
             images = Images(
                 main_image = rainforest_product_detail.product.main_image.link if rainforest_product_detail.product.main_image is not None else None,
-                images = [x.link for x in rainforest_product_detail.product.images if x.link is not None]
+                images = [x.link for x in rainforest_product_detail.product.images if x.link is not None] if rainforest_product_detail.product.images is not None else None
             )
             return images if images.main_image is not None or CommonUtils.list_len(images.image_list) > 0 else None
         return None
