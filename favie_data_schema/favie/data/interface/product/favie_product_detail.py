@@ -128,9 +128,9 @@ class MetaInfo(BaseModel):
     source_type: Optional[str] = None
     parser_name: Optional[str] = None
     parses_at: Optional[str] = None
-    f_attributes_update_at: Optional[str] = None
+    f_categories_update_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
-    f_attributes_map_success: Optional[bool] = None
+    f_categories_map_success: Optional[bool] = None
 
 class StandardAttributes(BaseModel):
     is_used: Optional[bool] = None

@@ -1587,7 +1587,7 @@
               "default": null
             },
             {
-              "name": "f_attributes_update_at",
+              "name": "f_categories_update_at",
               "type": [
                 "null",
                 "string"
@@ -1603,7 +1603,7 @@
               "default": null
             },
             {
-              "name": "f_attributes_map_success",
+              "name": "f_categories_map_success",
               "type": [
                 "null",
                 "bool"
