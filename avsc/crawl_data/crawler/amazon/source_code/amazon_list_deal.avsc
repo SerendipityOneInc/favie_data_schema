@@ -1,0 +1,17 @@
+{
+  "namespace": "favie.data.crawl_data.crawler",
+  "type": "record",
+  "name": "Deal",
+  "fields": [
+    {
+      "name": "link",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "badge_text",
+      "type": ["null", "string"],
+      "default": null
+    }
+  ]
+}

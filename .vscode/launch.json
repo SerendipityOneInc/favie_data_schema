@@ -11,8 +11,8 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "args": [
-                "--avsc=avsc/interface/media/output_code/favie_image_crawl_request.avsc,avsc/interface/media/output_code/favie_image_crawl_response.avsc",
-                "--output-file=favie_data_schema/favie/data/interface/media/favie_image_crawl_request.py"
+                "--avsc=avsc/crawl_data/crawler/amazon_product_category_list.avsc",
+                "--output-file=favie_data_schema/favie/data/crawl_data/crawler/amazon_product_category_list_message.py"
             ]
         }
     ]

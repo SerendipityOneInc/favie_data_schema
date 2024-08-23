@@ -1,0 +1,17 @@
+{
+  "namespace": "favie.data.crawl_data.crawler",
+  "type": "record",
+  "name": "Bestseller",
+  "fields": [
+    {
+      "name": "link",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "category",
+      "type": ["null", "string"],
+      "default": null
+    }
+  ]
+}

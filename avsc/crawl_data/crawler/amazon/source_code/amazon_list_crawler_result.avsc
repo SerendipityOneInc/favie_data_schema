@@ -1,0 +1,77 @@
+{
+  "namespace": "favie.data.crawl_data.crawler",
+  "type": "record",
+  "name": "CrawlResult",
+  "fields": [
+    {
+      "name": "position",
+      "type": ["null", "int"],
+      "default": null
+    },
+    {
+      "name": "title",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "asin",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "link",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "recent_sales",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "categories",
+      "type": ["null", { "type":"array", "items":"favie.data.crawl_data.crawler.Category"}],
+      "default": null
+    },
+    {
+      "name": "image",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "bestseller",
+      "type": ["null", "favie.data.crawl_data.crawler.Bestseller"],
+      "default": null
+    },
+    {
+      "name": "deal",
+      "type": ["null", "favie.data.crawl_data.crawler.Deal"],
+      "default": null
+    },
+    {
+      "name": "is_prime",
+      "type": ["null", "boolean"],
+      "default": null
+    },
+    {
+      "name": "rating",
+      "type": ["null", "float"],
+      "default": null
+    },
+    {
+      "name": "ratings_total",
+      "type": ["null", "int"],
+      "default": null
+    },
+    {
+      "name": "prices",
+      "type": ["null", {"type":"array","items": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {
+      "name": "price",
+      "type": ["null", "favie.data.crawl_data.crawler.Price"],
+      "default": null
+    }
+  ]
+}

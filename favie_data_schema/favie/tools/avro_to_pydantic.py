@@ -1,5 +1,6 @@
 import argparse
 import json
+import logging
 import os
 from typing import ForwardRef, List, Optional, Union, get_args, get_origin
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
@@ -98,19 +99,23 @@ def topological_sort(dependencies):
 def avro_to_pydantic(avro_schema,models,known_types):
 
     def parse_record(name, namespace, fields):
-        class_attrs = {}
-        annotations = {}
-        for field in fields:
-            field_name = field["name"]
-            field_type = parse_avro_type(field["type"], known_types)
-            field_default = field.get("default", ...)
-            annotations[field_name] = field_type
-            class_attrs[field_name] = Field(default=field_default, alias=field_name)
-        class_attrs["__annotations__"] = annotations
-        model = type(name, (BaseModel,), class_attrs)
-        full_name = f"{namespace}.{name}".strip(".")
-        models[full_name] = model
-        known_types[full_name] = full_name
+        try:
+            class_attrs = {}
+            annotations = {}
+            for field in fields:
+                field_name = field["name"]
+                field_type = parse_avro_type(field["type"], known_types)
+                field_default = field.get("default", ...)
+                annotations[field_name] = field_type
+                class_attrs[field_name] = Field(default=field_default, alias=field_name)
+            class_attrs["__annotations__"] = annotations
+            model = type(name, (BaseModel,), class_attrs)
+            full_name = f"{namespace}.{name}".strip(".")
+            models[full_name] = model
+            known_types[full_name] = full_name
+        except Exception as e:
+            logging.error(f"Error parsing record name = {name}  class_attrs = {class_attrs}")
+            raise e
 
     def parse_schema(schema):
         if isinstance(schema, dict) and schema.get("type") == "record":

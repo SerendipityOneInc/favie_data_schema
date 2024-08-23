@@ -9,7 +9,6 @@ class FavieProductAdapter():
         # TODO: implement
         pass
 
-
 class FavieReviewAdapter():
     @staticmethod
     def convert_to_favie_review(crawler_kafka_message: CrawlerKafkaMessage) -> list[FavieProductDetail]:

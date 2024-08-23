@@ -1,0 +1,52 @@
+{
+  "namespace": "favie.data.crawl_data.crawler",
+  "type": "record",
+  "name": "AmazonListMessage",
+  "fields": [
+    {
+      "name": "product_id",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "parser_name",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "title",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "category_id",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "crawl_result",
+      "type": ["null", "favie.data.crawl_data.crawler.CrawlResult"],
+      "default": null
+    },
+    {
+      "name": "task_id",
+      "type": ["null", "int"],
+      "default": null
+    },
+    {
+      "name": "page",
+      "type": ["null", "int"],
+      "default": null
+    },
+    {
+      "name": "create_time",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "update_time",
+      "type": ["null", "string"],
+      "default": null
+    }
+  ]
+}
