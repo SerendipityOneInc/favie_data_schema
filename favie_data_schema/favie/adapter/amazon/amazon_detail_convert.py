@@ -31,6 +31,7 @@ class AmazonDetailConvert():
         favie_product.site = CommonUtils.host_trip_www(amazon_message.host)
         favie_product.title = crawl_result.product.title
         favie_product.link = crawl_result.product.link
+        favie_product.spu_title = crawl_result.product.title_excluding_variant_name
         favie_product.sub_title = crawl_result.product.sub_title.text if crawl_result.product.sub_title is not None else None
         favie_product.sub_title_link = crawl_result.product.sub_title.link if crawl_result.product.sub_title is not None else None
         favie_product.description = crawl_result.product.description
