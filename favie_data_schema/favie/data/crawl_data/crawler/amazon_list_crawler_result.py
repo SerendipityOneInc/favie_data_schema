@@ -22,7 +22,7 @@ class Price(BaseModel):
     is_primary: Optional[bool] = None
     is_rrp: Optional[bool] = None
 
-class CrawlResult(BaseModel):
+class AmazonListCrawlResult(BaseModel):
     position: Optional[int] = None
     title: Optional[str] = None
     asin: Optional[str] = None
@@ -37,15 +37,4 @@ class CrawlResult(BaseModel):
     ratings_total: Optional[int] = None
     prices: Optional[List[Price]] = None
     price: Optional[Price] = None
-
-class AmazonListMessage(BaseModel):
-    product_id: Optional[str] = None
-    parser_name: Optional[str] = None
-    title: Optional[str] = None
-    category_id: Optional[str] = None
-    crawl_result: Optional[CrawlResult] = None
-    task_id: Optional[int] = None
-    page: Optional[int] = None
-    create_time: Optional[str] = None
-    update_time: Optional[str] = None
 

@@ -18,6 +18,6 @@ echo "转化合并后的代码结束"
 
 
 echo "处理AmazonList..."
-python -m favie_data_schema.favie.tools.combine_schemas_with_unique_define --source-directory="avsc/crawl_data/crawler/amazon/source_code" --output-file="avsc/crawl_data/crawler/amazon/output_code/amazon_list_message.avsc" --main-schema="favie.data.crawl_data.crawler.AmazonListMessage"
-python -m favie_data_schema.favie.tools.avro_to_pydantic --avsc="avsc/crawl_data/crawler/amazon/output_code/amazon_list_message.avsc" --output-file="favie_data_schema/favie/data/crawl_data/crawler/amazon_list_message.py"
+python -m favie_data_schema.favie.tools.combine_schemas_with_unique_define --source-directory="avsc/crawl_data/crawler/amazon/source_code" --output-file="avsc/crawl_data/crawler/amazon/output_code/amazon_list_crawler_result.avsc" --main-schema="favie.data.crawl_data.crawler.AmazonListCrawlResult"
+python -m favie_data_schema.favie.tools.avro_to_pydantic --avsc="avsc/crawl_data/crawler/amazon/output_code/amazon_list_crawler_result.avsc" --output-file="favie_data_schema/favie/data/crawl_data/crawler/amazon_list_crawler_result.py"
 echo "处理AmazonList结束"

@@ -1,7 +1,7 @@
 {
   "namespace": "favie.data.crawl_data.crawler",
   "type": "record",
-  "name": "CrawlResult",
+  "name": "AmazonListCrawlResult",
   "fields": [
     {
       "name": "position",
