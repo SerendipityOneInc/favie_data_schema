@@ -29,6 +29,13 @@ class CommonUtils():
     @staticmethod
     def list_len(list):
         return len(list) if list is not None else 0
+    
+    @staticmethod
+    def divide_chunks(lst, n):
+        # 计算每个分片应有的长度
+        chunk_size = len(lst) // n + (1 if len(lst) % n > 0 else 0)
+        # 生成分片
+        return [lst[i:i + chunk_size] for i in range(0, len(lst), chunk_size)]
 
 if __name__ == "__main__":
     print(CommonUtils.all_not_none(1, 2, 3))
@@ -38,5 +45,6 @@ if __name__ == "__main__":
     print(CommonUtils.all_none(None, None, None))
     print(CommonUtils.all_none(None, None, 1))
     print(CommonUtils.md5_hash("hello"))
+    print(CommonUtils.divide_chunks([1,2,3,4,5,6],4))
 
 
