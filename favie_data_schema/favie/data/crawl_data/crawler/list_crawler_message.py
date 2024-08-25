@@ -14,7 +14,7 @@ class ListCrawlerMessage(BaseModel):
     update_time: Optional[str] = None
     
     @classmethod
-    def deseriallize(cls, message: str,crawl_result_model:Type[BaseModel]) -> 'ListCrawlerMessage':
+    def deserialize(cls, message: str,crawl_result_model:Type[BaseModel]) -> 'ListCrawlerMessage':
         # 如果存在crawl_result并且它是字典类型，将其转换为JSON字符串
         data = json.loads(message)
         if 'crawl_result' in data and isinstance(data['crawl_result'], dict):
