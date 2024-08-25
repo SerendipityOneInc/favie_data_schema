@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Type
 from pydantic import BaseModel, Field
 import json
 
@@ -7,16 +7,17 @@ class ListCrawlerMessage(BaseModel):
     parser_name: Optional[str] = None
     title: Optional[str] = None
     category_id: Optional[str] = None
-    crawl_result: Optional[str] = None
+    crawl_result: Optional[BaseModel] = None
     task_id: Optional[int] = None
     page: Optional[int] = None
     create_time: Optional[str] = None
     update_time: Optional[str] = None
     
     @classmethod
-    def from_dict(cls, data: dict):
+    def deseriallize(cls, message: str,crawl_result_model:Type[BaseModel]) -> 'ListCrawlerMessage':
         # 如果存在crawl_result并且它是字典类型，将其转换为JSON字符串
+        data = json.loads(message)
         if 'crawl_result' in data and isinstance(data['crawl_result'], dict):
-            data['crawl_result'] = json.dumps(data['crawl_result'], indent=4)
+            data['crawl_result'] = crawl_result_model(**data['crawl_result'])
         return cls(**data)
 

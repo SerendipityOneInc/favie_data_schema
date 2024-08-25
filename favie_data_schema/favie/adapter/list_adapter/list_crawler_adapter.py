@@ -4,6 +4,7 @@ from favie_data_schema.favie.data.crawl_data.crawler.list_crawler_message import
 from favie_data_schema.favie.adapter.data_mock.data_mock_read import read_file
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.adapter.list_adapter.amazon_list_result_adapter import AmazoneListResultAdapter
+from favie_data_schema.favie.data.crawl_data.crawler.amazon_list_crawler_result import AmazonListCrawlResult
 from datetime import datetime
 import logging,json
 
@@ -37,19 +38,10 @@ class ListCrawlerAdapter(FavieProductAdapter):
             parser_name = message.parser_name,
             parses_at = message.create_time 
         )
-        
-    @staticmethod
-    def deserialize(message :str):
-        try:
-            json_data = json.loads(message)
-            return ListCrawlerMessage.from_dict(json_data)
-        except Exception as e:
-            logging.error(f"ListCrawlerAdapter Deserialize message error {e}")
-            return None
             
 def main():
     messate = read_file("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_list_message.json")
-    list_message = ListCrawlerAdapter.deserialize(messate)
+    list_message = ListCrawlerMessage.deseriallize(messate,AmazonListCrawlResult)
     favie_product: FavieProductDetail = ListCrawlerAdapter.convert_to_favie_product(list_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 

@@ -12,13 +12,9 @@ from favie_data_schema.favie.data.interface.product.favie_product_detail import 
 
 class AmazoneListResultAdapter(FavieProductAdapter):
     @staticmethod
-    def convert_to_favie_product(message: str) -> FavieProductDetail:
-        if message is None:
-            return None        
-        crawl_result = AmazoneListResultAdapter.deserialize(message)
+    def convert_to_favie_product(crawl_result: AmazonListCrawlResult) -> FavieProductDetail:
         if crawl_result is None:
-            return None 
-        
+            return None                
         favie_product = FavieProductDetail()
         favie_product.sku_id = crawl_result.asin
         favie_product.site = "amazon.com"
