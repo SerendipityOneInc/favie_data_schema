@@ -11,7 +11,8 @@ import logging,json
 from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
 
 adapter_config = {
-    "RainforestStandardV2ProductListParser":AmazoneListResultAdapter
+    "RainforestStandardV2ProductListParser":AmazoneListResultAdapter,
+    "RainforestDealsProductListParser":AmazoneListResultAdapter
 }
 
 class ListCrawlerAdapter(FavieProductAdapter):

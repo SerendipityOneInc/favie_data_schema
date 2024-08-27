@@ -34,7 +34,7 @@ class AmazonReviewAdapter(FavieReviewAdapter):
     
     
 def main():
-    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json")
+    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/review_bug.json")
     favie_reviews = AmazonReviewAdapter.convert_to_favie_review(amazon_message)
     if favie_reviews is None:
         return None

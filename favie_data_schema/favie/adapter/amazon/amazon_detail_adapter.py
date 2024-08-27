@@ -23,8 +23,8 @@ class AmazonDetailAdapter(FavieProductAdapter):
         
         favie_product.f_sku_id = FavieProductUtils.gen_f_sku_id(favie_product)
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
-        if(CommonUtils.list_len(favie_reviews) > 0):
-            favie_product.review_summary = AmazonDetailAdapter.get_review_summary(amazon_message.crawl_result,[x.f_review_id for x in favie_reviews if x is not None])
+        top_review_ids = [x.f_review_id for x in favie_reviews if x is not None] if CommonUtils.list_len(favie_reviews) > 0 else None
+        favie_product.review_summary = AmazonDetailAdapter.get_review_summary(amazon_message.crawl_result,top_review_ids)
         
         return favie_product
     
@@ -42,7 +42,7 @@ class AmazonDetailAdapter(FavieProductAdapter):
         return review_summary if CommonUtils.any_not_none(review_summary.rating,review_summary.ratings_total,review_summary.reviews_total) else None
         
 def main():
-    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json")
+    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json")
     favie_product: FavieProductDetail = AmazonDetailAdapter.convert_to_favie_product(amazon_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 

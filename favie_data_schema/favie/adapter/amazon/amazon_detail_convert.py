@@ -241,7 +241,7 @@ class AmazonDetailConvert():
             categories = [ CategoryItem(
                 id = x.category_id,
                 name = x.name,
-                ) for x in rainforest_product_detail.product.categories if x.category_id is not None]
+                ) for x in rainforest_product_detail.product.categories if (x.name is not None and x.name.strip() != "All Departments") or x.name is None]
             return categories if CommonUtils.list_len(categories) > 0 else None
         return None
 

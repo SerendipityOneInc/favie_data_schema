@@ -38,7 +38,7 @@ class CurrencyConverter():
         if(self.value == None):
             return None
         subunit_value = self.currency_data[self.code]['subunit_value']
-        total_subunits = int(self.value * subunit_value)
+        total_subunits = int(round(self.value * subunit_value,0))
         return total_subunits
     
     def get_currency_code(self):
@@ -61,3 +61,4 @@ if __name__ == "__main__":
     total_subunits = currency.get_subunit_value()
     print(f"最小单位值: {total_subunits} {currency.get_subunit_name()}")
     print(f"货币中文名称: {currency.get_chinese_name()}")
+    print(int(round(0.91,0)))
