@@ -1,0 +1,30 @@
+{
+  "namespace": "favie.data.interface.product",
+  "type": "record",
+  "name": "FavieReview",
+  "fields": [
+    {"name": "f_review_id", "type": ["null", "string"], "default": null},
+    {"name": "f_spu_id", "type": ["null", "string"], "default": null},
+    {"name": "site", "type": ["null", "string"], "default": null},
+    {"name": "spu_id", "type": ["null", "string"], "default": null},
+    {"name": "review_id", "type": ["null", "string"], "default": null},
+    {"name": "title", "type": ["null", "string"], "default": null},
+    {"name": "body", "type": ["null", "string"], "default": null},
+    {"name": "link", "type": ["null", "string"], "default": null},
+    {"name": "images", "type": ["null", {"type": "array", "items": "string"}], "default": null},
+    {"name": "rating", "type": ["null", "float"], "default": null},
+    {"name": "date", "type": ["null", "string"], "default": null},
+    {"name": "author_name", "type": ["null", "string"], "default": null},
+    {"name": "author_id", "type": ["null", "string"], "default": null},
+    {"name": "author_url", "type": ["null", "string"], "default": null},
+    {"name": "vine_program", "type": ["null", "boolean"], "default": null},
+    {"name": "verified_purchase", "type": ["null", "boolean"], "default": null},
+    {"name": "review_country", "type": ["null", "string"], "default": null},
+    {"name": "is_global_review", "type": ["null", "boolean"], "default": null},
+    {"name": "position", "type": ["null", "int"], "default": null},
+    {"name": "helpful_votes", "type": ["null", "int"], "default": null},
+    {"name": "unhelpful_votes", "type": ["null", "int"], "default": null},
+    {"name": "f_updates_at", "type": ["null", "string"], "default": null},
+    {"name": "f_creates_at", "type": ["null", "string"], "default": null}
+  ]
+}
