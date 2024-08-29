@@ -496,6 +496,28 @@
                                 "default": null
                             },
                             {
+                                "name": "images",
+                                "type": [
+                                    "null",
+                                    {
+                                        "type":"array",
+                                        "items": "string"
+                                    }
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "videos",
+                                "type": [
+                                    "null",
+                                    {
+                                        "type":"array",
+                                        "items": "string"
+                                    }
+                                ],
+                                "default": null
+                            },
+                            {
                                 "name": "rating",
                                 "type": [
                                     "null",

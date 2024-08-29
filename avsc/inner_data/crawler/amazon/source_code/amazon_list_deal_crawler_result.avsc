@@ -1,0 +1,72 @@
+{
+  "namespace": "favie.data.crawl_data.crawler",
+  "type": "record",
+  "name": "AmazonListDealCrawlResult",
+  "fields": [
+    {"name": "position", "type": ["null", "int"], "default": null},
+    {"name": "link", "type": ["null", "string"], "default": null},
+    {"name": "asin", "type": ["null", "string"], "default": null},
+    {"name": "is_lightning_deal", "type": ["null", "boolean"], "default": null},
+    {"name": "deal_type", "type": ["null", "string"], "default": null},
+    {"name": "is_prime_exclusive", "type": ["null", "boolean"], "default": null},
+    {"name": "starts_at", "type": ["null", "string"], "default": null},
+    {"name": "ends_at", "type": ["null", "string"], "default": null},
+    {"name": "type", "type": ["null", "string"], "default": null},
+    {"name": "title", "type": ["null", "string"], "default": null},
+    {"name": "image", "type": ["null", "string"], "default": null},
+    {
+      "name": "deal_price_lower",
+      "type": ["null", {"type": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {
+      "name": "deal_price_upper",
+      "type": ["null", {"type": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {
+      "name": "deal_price",
+      "type": ["null", {"type": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {
+      "name": "list_price_lower",
+      "type": ["null", {"type": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {
+      "name": "list_price_upper",
+      "type": ["null", {"type": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {
+      "name": "list_price",
+      "type": ["null", {"type": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {
+      "name": "current_price_lower",
+      "type": ["null", {"type": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {
+      "name": "current_price_upper",
+      "type": ["null", {"type": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {
+      "name": "current_price",
+      "type": ["null", {"type": "favie.data.crawl_data.crawler.Price"}],
+      "default": null
+    },
+    {"name": "merchant_name", "type": ["null", "string"], "default": null},
+    {"name": "free_shipping", "type": ["null", "boolean"], "default": null},
+    {"name": "is_prime", "type": ["null", "boolean"], "default": null},
+    {"name": "is_map", "type": ["null", "boolean"], "default": null},
+    {"name": "deal_id", "type": ["null", "string"], "default": null},
+    {"name": "seller_id", "type": ["null", "string"], "default": null},
+    {"name": "description", "type": ["null", "string"], "default": null},
+    {"name": "rating", "type": ["null", "float"], "default": null},
+    {"name": "ratings_total", "type": ["null", "int"], "default": null}
+  ]
+}

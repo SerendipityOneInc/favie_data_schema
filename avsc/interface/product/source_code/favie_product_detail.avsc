@@ -1,0 +1,91 @@
+{
+  "type": "record",
+  "name": "FavieProductDetail",
+  "namespace": "favie.data.interface.product",
+  "doc": "Favie product schema",
+  "fields": [
+    { "name": "f_sku_id", "type": ["null", "string"], "default": null },
+    { "name": "f_spu_id", "type": ["null", "string"], "default": null },
+    { "name": "site", "type": ["null", "string"], "default": null },
+    { "name": "sku_id", "type": ["null", "string"], "default": null },
+    { "name": "spu_id", "type": ["null", "string"], "default": null },
+    { "name": "title", "type": ["null", "string"], "default": null },
+    { "name": "link", "type": ["null", "string"], "default": null },
+    { "name": "spu_title", "type": ["null", "string"], "default": null },
+    { "name": "sub_title", "type": ["null", "string"], "default": null },
+    { "name": "sub_title_link", "type": ["null", "string"], "default": null },
+    { "name": "description", "type": ["null", "string"], "default": null },
+    { "name": "description_external_link", "type": ["null", "string"], "default": null },
+    { "name": "rich_product_description", "type": ["null", "string"], "default": null },
+    { "name": "price","type": ["null", "favie.data.interface.product.Price"],"default": null},
+    { "name": "rrp","type": ["null", "favie.data.interface.product.Price"],"default": null},
+    { "name": "f_status", "type": ["null", "string"], "default": null },
+    { "name": "images","type": ["null","favie.data.interface.product.Images"],"default": null},
+    { "name": "f_images","type": ["null","favie.data.interface.product.Images"],"default": null},
+    {
+      "name": "f_categories",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.CategoryItem"}],
+      "default": null
+    },
+    {
+      "name": "categories",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.CategoryItem"}],
+      "default": null
+    },
+    {
+      "name": "videos",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.Video"}],
+      "default": null
+    },
+    {
+      "name": "f_brand",
+      "type": ["null","favie.data.interface.product.Brand"],
+      "default": null
+    },
+    {
+      "name": "brand",
+      "type": ["null","favie.data.interface.product.Brand"],
+      "default": null
+    },
+    {
+      "name": "feature_bullets",
+      "type": ["null", {"type": "array","items": "string"}],
+      "default": null
+    },
+    {
+      "name": "attributes",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.AttributeItem"}],
+      "default": null
+    },
+    {
+      "name": "specifications",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.AttributeItem"}],
+      "default": null
+    },
+    {"name": "standard_attributes","type": ["null","favie.data.interface.product.StandardAttributes"],"default": null},
+    {
+      "name": "offers",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.Offer"}],
+      "default": null
+    },
+    {"name":"best_seller_rank","type": ["null",{"type": "array","items": "favie.data.interface.product.SellerRank"}],"default": null},
+    { "name": "seller", "type": ["null", "favie.data.interface.product.Seller"],"default": null},
+    { "name": "inventory","type": ["null","favie.data.interface.product.Inventory"],"default": null},
+    { "name": "keywords", "type": ["null", "string"], "default": null },
+    { "name": "search_alias","type": ["null","favie.data.interface.product.SearchAliasItem"],"default": null},
+    { "name": "deal","type": ["null","favie.data.interface.product.Deal"],"default": null},
+    { "name": "shipping","type": ["null","favie.data.interface.product.Shipping"],"default": null},
+    {"name": "fulfillment","type": ["null", "favie.data.interface.product.Fulfillment"],"default": null},
+    {"name": "returns_policy","type": ["null", "favie.data.interface.product.ReturnPolicy"],"default": null},
+    {"name": "review_summary","type": ["null", "favie.data.interface.product.ReviewSummary"],"default": null},
+    {
+      "name": "variants",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.SimpleProduct"}],
+      "default": null
+    },
+    { "name": "promotion","type": ["null","favie.data.interface.product.Promotion"],"default": null },
+    { "name": "f_updates_at", "type": ["null", "string"], "default": null },
+    { "name": "f_creates_at", "type": ["null", "string"], "default": null },
+    { "name": "f_meta", "type": ["null", "favie.data.interface.product.MetaInfo"], "default": null }
+  ]
+}

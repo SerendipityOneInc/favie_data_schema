@@ -1,0 +1,17 @@
+{
+  "namespace": "favie.data.crawl_data.crawler",
+  "type": "record",
+  "name": "Category",
+  "fields": [
+    {
+      "name": "name",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "id",
+      "type": ["null", "string"],
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "namespace": "favie.data.crawl_data.crawler",
+  "type": "record",
+  "name": "AmazonListCrawlResult",
+  "fields": [
+    {
+      "name": "position",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "title",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "asin",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "link",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "recent_sales",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "categories",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "namespace": "favie.data.crawl_data.crawler",
+            "type": "record",
+            "name": "Category",
+            "fields": [
+              {
+                "name": "name",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              },
+              {
+                "name": "id",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              }
+            ]
+          }
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "image",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "bestseller",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.crawl_data.crawler",
+          "type": "record",
+          "name": "Bestseller",
+          "fields": [
+            {
+              "name": "link",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "category",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "deal",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.crawl_data.crawler",
+          "type": "record",
+          "name": "Deal",
+          "fields": [
+            {
+              "name": "link",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "badge_text",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "is_prime",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "rating",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    },
+    {
+      "name": "ratings_total",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "prices",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "namespace": "favie.data.crawl_data.crawler",
+            "type": "record",
+            "name": "Price",
+            "fields": [
+              {
+                "name": "symbol",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              },
+              {
+                "name": "value",
+                "type": [
+                  "null",
+                  "float"
+                ],
+                "default": null
+              },
+              {
+                "name": "currency",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              },
+              {
+                "name": "raw",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              },
+              {
+                "name": "name",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              },
+              {
+                "name": "is_primary",
+                "type": [
+                  "null",
+                  "boolean"
+                ],
+                "default": null
+              },
+              {
+                "name": "is_rrp",
+                "type": [
+                  "null",
+                  "boolean"
+                ],
+                "default": null
+              }
+            ]
+          }
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "price",
+      "type": [
+        "null",
+        "favie.data.crawl_data.crawler.Price"
+      ],
+      "default": null
+    }
+  ]
+}

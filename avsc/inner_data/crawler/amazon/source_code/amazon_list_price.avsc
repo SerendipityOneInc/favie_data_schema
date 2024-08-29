@@ -1,0 +1,42 @@
+{
+  "namespace": "favie.data.crawl_data.crawler",
+  "type": "record",
+  "name": "Price",
+  "fields": [
+    {
+      "name": "symbol",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "value",
+      "type": ["null", "float"],
+      "default": null
+    },
+    {
+      "name": "currency",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "raw",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "is_primary",
+      "type": ["null", "boolean"],
+      "default": null
+    },
+    {
+      "name": "is_rrp",
+      "type": ["null", "boolean"],
+      "default": null
+    }
+  ]
+}

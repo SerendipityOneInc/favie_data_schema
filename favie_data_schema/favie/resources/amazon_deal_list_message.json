@@ -1,0 +1,89 @@
+{
+    "product_id": "B07MVXHJKF",
+    "parser_name": "RainforestDealsProductListParser",
+    "title": "067 Toner Cartridge 4 Pack Set MF656Cdw Compatible for Canon 067 067H-0610-2",
+    "category_id": "",
+    "crawl_result": {
+        "position": 1,
+        "link": "https://www.amazon.com/067-Toner-Cartridge-MF656Cdw-Compatible/dp/B0CYSHJ968",
+        "asin": "B07MVXHJKF",
+        "is_lightning_deal": false,
+        "deal_type": "BEST_DEAL",
+        "is_prime_exclusive": false,
+        "starts_at": "2024-06-10T07:00:00.315Z",
+        "ends_at": "2024-06-17T06:45:00.315Z",
+        "type": "multi_item",
+        "title": "067 Toner Cartridge 4 Pack Set MF656Cdw Compatible for Canon 067 067H-0610-2",
+        "image": "https://m.media-amazon.com/images/I/51X3xXd-uZL._SY500_.jpg",
+        "deal_price_lower": {
+            "value": 21.54,
+            "currency": "USD",
+            "symbol": "$",
+            "raw": "21.54"
+        },
+        "deal_price_upper": {
+            "value": 287.56,
+            "currency": "USD",
+            "symbol": "$",
+            "raw": "287.56"
+        },
+        "deal_price": {
+            "value": 21.54,
+            "currency": "USD",
+            "symbol": "$",
+            "raw": "21.54 - 287.56",
+            "name": "Deal Price"
+        },
+        "list_price_lower": {
+            "value": 23.99,
+            "currency": "USD",
+            "symbol": "$",
+            "raw": "23.99"
+        },
+        "list_price_upper": {
+            "value": 319.59,
+            "currency": "USD",
+            "symbol": "$",
+            "raw": "319.59"
+        },
+        "list_price": {
+            "value": 23.99,
+            "currency": "USD",
+            "symbol": "$",
+            "raw": "23.99 - 319.59",
+            "name": "List Price"
+        },
+        "current_price_lower": {
+            "value": 21.54,
+            "currency": "USD",
+            "symbol": "$",
+            "raw": "21.54"
+        },
+        "current_price_upper": {
+            "value": 287.56,
+            "currency": "USD",
+            "symbol": "$",
+            "raw": "287.56"
+        },
+        "current_price": {
+            "value": 21.54,
+            "currency": "USD",
+            "symbol": "$",
+            "raw": "21.54 - 287.56",
+            "name": "Current Price"
+        },
+        "merchant_name": "Vision color",
+        "free_shipping": false,
+        "is_prime": true,
+        "is_map": false,
+        "deal_id": "96ad5e15",
+        "seller_id": "A1R2N6LO0SJPHW",
+        "description": "067 Toner Cartridge 4 Pack Set MF656Cdw Compatible for Canon 067 067H-0610-2",
+        "rating": 4.16,
+        "ratings_total": 1009
+    },
+    "task_id": 50,
+    "create_time": "2024-06-13T03:57:47.182329",
+    "update_time": "2024-06-13T03:57:47.182332",
+    "_id": "1937697a293911ef9ddb9e782e670629"
+}

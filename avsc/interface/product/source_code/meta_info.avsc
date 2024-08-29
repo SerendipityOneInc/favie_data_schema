@@ -7,8 +7,8 @@
     { "name": "source_type", "type": ["null", "string"], "default": null },
     { "name": "parser_name", "type": ["null", "string"], "default": null },
     { "name": "parses_at", "type": ["null", "string"], "default": null },
-    { "name": "f_attributes_update_at", "type": ["null", "string"], "default": null },
+    { "name": "f_categories_update_at", "type": ["null", "string"], "default": null },
     { "name": "f_images_crawl_send_at", "type": ["null", "string"], "default": null },
-    { "name": "f_attributes_map_success", "type": ["null", "bool"], "default": null }
+    { "name": "f_categories_map_success", "type": ["null", "bool"], "default": null }
   ]
 }

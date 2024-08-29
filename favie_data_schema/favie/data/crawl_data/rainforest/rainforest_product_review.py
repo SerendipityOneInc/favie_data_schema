@@ -103,6 +103,8 @@ class Reviews(BaseModel):
     asin: Optional[str] = None
     body_html: Optional[str] = None
     link: Optional[str] = None
+    images: Optional[List[str]] = None
+    videos: Optional[List[str]] = None
     rating: Optional[int] = None
     date: Optional[Date] = None
     profile: Optional[Profile] = None

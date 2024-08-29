@@ -32,7 +32,15 @@
             "name": "ImageItem",
             "fields": [
               {
-                "name": "outer_key",
+                "name": "category",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              },
+              {
+                "name": "site",
                 "type": [
                   "null",
                   "string"
@@ -58,6 +66,14 @@
             ]
           }
         }
+      ],
+      "default": null
+    },
+    {
+      "name": "force",
+      "type": [
+        "null",
+        "bool"
       ],
       "default": null
     }

@@ -93,6 +93,14 @@
             "description": "Nordic Ware genuine Bundt® pans are made of durable cast aluminum to achieve the most crisp, intricate cake detail possible. Cast aluminum’s superior heat conductivity ensures controlled, even browning of cakes and treats. Premium silicone nonstick is made without PFAS and PTFE for healthy baking and ensures effortless release and cleanup. Oven safe to 400 degrees Fahrenheit. A great pan for making full-sized scones, biscuits, and hearty cornbread. Pan exterior is 9.7 inch diameter, 1.2 inches in height and measures 10.6 inches handle to handle. The pan capacity holds 4.5 cups within 8 cavities. Each cavity measurements are shown in the dimensional drawing image. Mixes and recipes may vary. Fill the pan no more than 3/4 full to avoid overflow. Proudly American Made since 1946, our heirloom-quality pieces are made to withstand a lifetime of use in your home kitchen.",
             "categories": [
                 {
+                    "name":"All Departments",
+                    "category_id":"test002"
+
+                },
+                {
+                    "category_id":"test001"
+                },
+                {
                     "name": "Home & Kitchen",
                     "link": "https://www.amazon.com/home-garden-kitchen-furniture-bedding/b/ref=dp_bc_aui_C_1?ie=UTF8&node=1055398",
                     "category_id": "1055398"

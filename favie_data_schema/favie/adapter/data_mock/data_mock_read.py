@@ -1,5 +1,7 @@
 import json
-from typing import Any, Dict
+from typing import Any, Dict, Type
+
+from pydantic import BaseModel
 from favie_data_schema.favie.adapter.common.crawler_kakfa_message import CrawlerKafkaMessage
 
 
@@ -11,6 +13,18 @@ def read_amazon_message(file_path: str = '/workspace/jobs/resources/amazon_messa
         
         # 假设 JSON 数据包含以下字段：topic, partition, offset, key, value
         return CrawlerKafkaMessage(**data)
+    
+def read_mock_data(file_path: str , model :Type[BaseModel]) -> BaseModel:
+    with open(file_path, 'r') as file:
+        
+        data = json.load(file)
+        
+        # 假设 JSON 数据包含以下字段：topic, partition, offset, key, value
+        return model(**data)
+    
+def read_file(file_path: str) -> str:
+    with open(file_path, 'r') as file:
+        return file.read()
 
 # 示例使用
 if __name__ == "__main__":

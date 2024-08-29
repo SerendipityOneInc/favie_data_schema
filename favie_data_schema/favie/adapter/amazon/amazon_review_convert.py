@@ -1,28 +1,28 @@
-from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail, TopReviews
 from favie_data_schema.favie.adapter.common.crawler_kakfa_message import CrawlerKafkaMessage
-from favie_data_schema.favie.adapter.data_mock.amazon_message_read import read_amazon_message
+from favie_data_schema.favie.adapter.data_mock.data_mock_read import read_amazon_message
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
 import logging
 
-from favie_data_schema.favie.data.interface.product.favie_review import FavieReview
+from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
 class AmazonReviewConvert():
     @staticmethod
-    def convert_to_favie_review(crawler_kafka_message: CrawlerKafkaMessage) -> list[FavieReview]:
+    def convert_to_favie_review(crawler_kafka_message: CrawlerKafkaMessage) -> list[FavieProductReview]:
         if not AmazonReviewConvert.__check(crawler_kafka_message):
             return None
         reviews = crawler_kafka_message.crawl_result.product.top_reviews
-        favie_reviews:List[FavieReview] = [AmazonReviewConvert.__convert_to_favie_review(x) for x in reviews if x is not None] if reviews is not None else None
+        favie_reviews:List[FavieProductReview] = [AmazonReviewConvert.__convert_to_favie_review(x) for x in reviews if x is not None] if reviews is not None else None
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
     
-    def __convert_to_favie_review(review: TopReviews)->FavieReview:
+    def __convert_to_favie_review(review: TopReviews)->FavieProductReview:
         if(review is None): 
             return None
-        favie_review = FavieReview()
-        favie_review.author_id = review.profile.id
-        favie_review.author_name = review.profile.name
-        favie_review.author_url = review.profile.link
+        favie_review = FavieProductReview()
+        favie_review.author_id = review.profile.id if review.profile is not None else None
+        favie_review.author_name = review.profile.name if review.profile is not None else None
+        favie_review.author_url = review.profile.link if review.profile is not None else None
         favie_review.review_id = review.id
         favie_review.link = review.link
         favie_review.body = review.body
@@ -48,7 +48,7 @@ class AmazonReviewConvert():
     
 def main():
     amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json")
-    favie_reviews: list[FavieReview] = AmazonReviewConvert.convert_to_favie_review(amazon_message)
+    favie_reviews: list[FavieProductReview] = AmazonReviewConvert.convert_to_favie_review(amazon_message)
     if favie_reviews is not None:
         for favie_review in favie_reviews:
             if(favie_review is not None):

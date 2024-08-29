@@ -1,74 +1,84 @@
 {
-    "url": "https://www.amazon.com/dp/B08XYBCXZ4",
+    "url": "https://www.amazon.com/dp/B088ZMTF8N",
     "host": "www.amazon.com",
-    "product_id": "B08XYBCXZ4",
-    "product_title": "Sony M-470 Microcassette Voice Recorder (Renewed)",
+    "product_id": "B088ZMTF8N",
+    "product_title": "PK Power 5FT AC Power Cable Cord Lead for Microsoft Xbox One S Xbox360 XboxOne Slim Game Consoles",
     "source": 3,
     "parser_name": "AmazonProductDetailRFParser",
-    "raw_result": "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",
+    "raw_result": "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",
     "crawl_result": {
         "request_info": {
             "success": true,
-            "credits_used": 4142196,
-            "credits_remaining": 15857804
+            "credits_used": 15285611,
+            "credits_remaining": 4714389
         },
         "request_metadata": {
             "id": null,
-            "created_at": "2024-08-15T10:05:57.806Z",
-            "processed_at": "2024-08-15T10:06:13.755Z",
-            "total_time_taken": 15.95,
-            "amazon_url": "https://www.amazon.com/dp/B08XYBCXZ4?th=1&psc=1"
+            "created_at": "2024-08-24T22:56:46.162Z",
+            "processed_at": "2024-08-24T22:56:52.479Z",
+            "total_time_taken": 6.32,
+            "amazon_url": "https://www.amazon.com/dp/B088ZMTF8N?th=1&psc=1"
         },
         "request_parameters": {
             "type": "product",
             "url": null
         },
         "product": {
-            "title": "Sony M-470 Microcassette Voice Recorder (Renewed)",
+            "title": "PK Power 5FT AC Power Cable Cord Lead for Microsoft Xbox One S Xbox360 XboxOne Slim Game Consoles",
             "title_excluding_variant_name": null,
             "variants": null,
-            "keywords": "Sony,M-470,Microcassette,Voice,Recorder,(Renewed)",
+            "keywords": "PK,Power,5FT,AC,Power,Cable,Cord,Lead,for,Microsoft,Xbox,One,S,Xbox360,XboxOne,Slim,Game,Consoles",
             "keywords_list": [
-                "Sony",
-                "M-470",
-                "Microcassette",
-                "Voice",
-                "Recorder",
-                "(Renewed)"
+                "Power",
+                "Power",
+                "Cable",
+                "Cord",
+                "Lead",
+                "Microsoft",
+                "Xbox",
+                "Xbox360",
+                "XboxOne",
+                "Slim",
+                "Game",
+                "Consoles"
             ],
-            "link": "https://www.amazon.com/Sony-M-470-Microcassette-Recorder-Renewed/dp/B08XYBCXZ4",
-            "asin": "B08XYBCXZ4",
+            "link": "https://www.amazon.com/Power-Microsoft-Xbox360-XboxOne-Consoles/dp/B088ZMTF8N",
+            "asin": "B088ZMTF8N",
             "parent_asin": null,
-            "description": "This pre-owned or refurbished product has been professionally inspected and tested to work and look like new. How a product becomes part of Amazon Renewed, your destination for pre-owned, refurbished products: A customer buys a new product and returns it or trades it in for a newer or different model. That product is inspected and tested to work and look like new by Amazon-qualified suppliers. Then, the product is sold as an Amazon Renewed product on Amazon. If not satisfied with the purchase, renewed products are eligible for replacement or refund under the Amazon Renewed Guarantee.",
+            "description": "PK Power 5FT AC Power Cable Cord Lead for Microsoft Xbox One S Xbox360 XboxOne Slim Game Consoles",
             "categories": [
                 {
                     "name": "Electronics",
-                    "link": "https://www.amazon.com/electronics-store/b/ref=dp_bc_aui_C_1?ie=UTF8&node=172282",
-                    "category_id": "172282"
+                    "link": null,
+                    "category_id": null
                 },
                 {
-                    "name": "Portable Audio & Video",
-                    "link": "https://www.amazon.com/Portable-Audio-Video/b/ref=dp_bc_aui_C_2?ie=UTF8&node=172623",
-                    "category_id": "172623"
+                    "name": "Video Games",
+                    "link": "https://www.amazon.com/computer-video-games-hardware-accessories/b/ref=dp_bc_aui_C_1?ie=UTF8&node=468642",
+                    "category_id": "468642"
                 },
                 {
-                    "name": "Digital Voice Recorders",
-                    "link": "https://www.amazon.com/Digital-Voice-Recorders-Audio-Video/b/ref=dp_bc_aui_C_3?ie=UTF8&node=227758",
-                    "category_id": "227758"
+                    "name": "Xbox One",
+                    "link": "https://www.amazon.com/Xbox-One-Games-Consoles-Accessories-Hardware/b/ref=dp_bc_aui_C_2?ie=UTF8&node=6469269011",
+                    "category_id": "6469269011"
+                },
+                {
+                    "name": "Accessories",
+                    "link": "https://www.amazon.com/Xbox-One-Hardware-Accessories/b/ref=dp_bc_aui_C_3?ie=UTF8&node=6469270011",
+                    "category_id": "6469270011"
+                },
+                {
+                    "name": "Cables & Adapters",
+                    "link": "https://www.amazon.com/Xbox-One-Cables-Adapters/b/ref=dp_bc_aui_C_4?ie=UTF8&node=6469275011",
+                    "category_id": "6469275011"
+                },
+                {
+                    "name": "Cables",
+                    "link": "https://www.amazon.com/Xbox-One-Cables/b/ref=dp_bc_aui_C_5?ie=UTF8&node=6469277011",
+                    "category_id": "6469277011"
                 }
             ],
-            "bestsellers_rank": [
-                {
-                    "category": "Electronics",
-                    "rank": 506388,
-                    "link": "https://www.amazon.com/gp/bestsellers/electronics/ref=pd_zg_ts_electronics"
-                },
-                {
-                    "category": "Digital Voice Recorders",
-                    "rank": 1609,
-                    "link": "https://www.amazon.com/gp/bestsellers/electronics/227758/ref=pd_zg_hrsr_electronics"
-                }
-            ],
+            "bestsellers_rank": null,
             "summarization_attributes": null,
             "amazons_choice": null,
             "climate_pledge_friendly": null,
@@ -76,38 +86,45 @@
             "has_coupon": null,
             "coupon_text": null,
             "promotions": null,
-            "brand": "Sony",
-            "weight": "8.1 ounces",
+            "brand": "PKPOWER",
+            "weight": "4 ounces",
             "shipping_weight": null,
             "first_available": {
-                "raw": "March 3, 2021",
-                "utc": "2021-03-03T00:00:00.000Z"
+                "raw": "May 21, 2020",
+                "utc": "2020-05-21T00:00:00.000Z"
             },
             "delivery_message": null,
-            "dimensions": "4.36 x 2 x 0.85 inches",
+            "dimensions": null,
             "sub_title": {
-                "text": "Visit the Amazon Renewed Store",
-                "link": "https://www.amazon.com/Amazon-Renewed/b/ref=bl_dp_s_web_12653393011?ie=UTF8&node=12653393011&field-lbr_brands_browse-bin=Amazon+Renewed"
+                "text": "Visit the PKPOWER Store",
+                "link": "https://www.amazon.com/stores/PKPOWER/page/6079D84C-ED63-45FC-A721-C3FEC91D8E02?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto"
             },
             "rating": 5,
-            "ratings_total": 2,
+            "ratings_total": 1,
             "reviews_total": null,
             "top_reviews": null,
             "main_image": {
-                "link": "https://m.media-amazon.com/images/I/41Um6y6tEzL.jpg"
+                "link": "https://m.media-amazon.com/images/I/515bK6dkTqL.jpg"
             },
             "images": [
                 {
-                    "link": "https://m.media-amazon.com/images/I/41Um6y6tEzL._AC_.jpg"
+                    "link": "https://m.media-amazon.com/images/I/515bK6dkTqL._AC_SL1000_.jpg"
+                },
+                {
+                    "link": "https://m.media-amazon.com/images/I/511OM9gsaaL._AC_SL1000_.jpg"
+                },
+                {
+                    "link": "https://m.media-amazon.com/images/I/51vPCzDJfTL._AC_SL1000_.jpg"
                 }
             ],
             "videos": null,
             "is_bundle": false,
             "feature_bullets": [
-                "Records at 1.2 or 2.4 centimeters per second",
-                "Built-in mic and speaker makes for easy recording and playback",
-                "Clear Voice function improves recording quality by enhancing voice sounds",
-                "Runs on two AAA batteries or AC adaptor"
+                "Input: 100-240V 50-60Hz",
+                "PK-Power products are CE / FCC / RoHS certified, tested by the manufacturer to match and / or exceed the OEM specification",
+                "OVP, OCP, SCP Protection (OVP: Over Voltage output Protection. OCP: Over Current output Protection. SCP: Short Circuit output Protection)",
+                "COMPATIBILITY: Please see full list of compatible models in the Product Description",
+                "Our After Sale Service: Our friendly and reliable customer service will respond to you within 24 hours."
             ],
             "important_information": null,
             "buybox_winner": {
@@ -117,7 +134,7 @@
                 "is_prime_exclusive_deal": false,
                 "availability": {
                     "type": "in_stock",
-                    "raw": "In stock",
+                    "raw": "In Stock",
                     "dispatch_days": 1
                 },
                 "fulfillment": {
@@ -127,30 +144,20 @@
                     "is_fulfilled_by_third_party": true,
                     "is_sold_by_third_party": true,
                     "third_party_seller": {
-                        "name": "Port Hole Renewed",
-                        "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=AMEI59ZPBIUSD&asin=B08XYBCXZ4&ref_=dp_merchant_link"
+                        "name": "PK-Power",
+                        "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A151JLD5KSJ9YS&asin=B088ZMTF8N&ref_=dp_merchant_link"
                     }
                 },
                 "deal": null,
                 "price": {
                     "symbol": "$",
                     "currency": "USD",
-                    "value": 189,
-                    "raw": "$189.00"
+                    "value": 5.98,
+                    "raw": "$5.98"
                 },
-                "rrp": {
-                    "symbol": "$",
-                    "currency": "USD",
-                    "value": 309.99,
-                    "raw": "$309.99"
-                },
-                "new_offers_count": 2,
-                "new_offers_from": {
-                    "symbol": "$",
-                    "value": 189,
-                    "currency": "USD",
-                    "raw": "$189.00"
-                },
+                "rrp": null,
+                "new_offers_count": null,
+                "new_offers_from": null,
                 "used_offers_count": null,
                 "used_offers_from": null,
                 "mixed_offers_count": null,
@@ -159,153 +166,109 @@
             "more_buying_choices": null,
             "specifications": [
                 {
-                    "name": "Product Dimensions",
-                    "value": "4.36 x 2 x 0.85 inches"
-                },
-                {
                     "name": "Item Weight",
-                    "value": "8.1 ounces"
+                    "value": "4 ounces"
                 },
                 {
                     "name": "ASIN",
-                    "value": "B08XYBCXZ4"
-                },
-                {
-                    "name": "Batteries",
-                    "value": "2 AAA batteries required. (included)"
+                    "value": "B088ZMTF8N"
                 },
                 {
                     "name": "Customer Reviews",
-                    "value": "5.0 5.0 out of 5 stars       2 ratings          5.0 out of 5 stars"
-                },
-                {
-                    "name": "Best Sellers Rank",
-                    "value": "#506,388 in Electronics (See Top 100 in Electronics) #1,609 in Digital Voice Recorders"
-                },
-                {
-                    "name": "Is Discontinued By Manufacturer",
-                    "value": "No"
+                    "value": "5.0 5.0 out of 5 stars       1 rating          5.0 out of 5 stars"
                 },
                 {
                     "name": "Date First Available",
-                    "value": "March 3, 2021"
+                    "value": "May 21, 2020"
                 },
                 {
                     "name": "Manufacturer",
-                    "value": "Sony"
+                    "value": "PKPOWER"
                 },
                 {
                     "name": "Brand",
-                    "value": "Sony"
+                    "value": "PKPOWER"
                 },
                 {
-                    "name": "Microphone Form Factor",
-                    "value": "Built-In"
+                    "name": "Connector Gender",
+                    "value": "Male-to-Female"
                 },
                 {
-                    "name": "Headphones Jack",
-                    "value": "3.5 millimeters"
+                    "name": "Voltage",
+                    "value": "240 Volts"
                 },
                 {
-                    "name": "Number of Batteries",
-                    "value": "2 AAA batteries required. (included)"
+                    "name": "Total Power Outlets",
+                    "value": "1"
                 },
                 {
-                    "name": "Memory Storage Capacity",
-                    "value": "4 GB"
-                },
-                {
-                    "name": "Digital Recording Time",
-                    "value": "06:29:43"
-                },
-                {
-                    "name": "Microphone Operation Mode",
-                    "value": "Speech recognition mode"
-                },
-                {
-                    "name": "UPC",
-                    "value": "649661795049"
+                    "name": "Item Length",
+                    "value": "60 Inches"
                 }
             ],
             "services": null,
             "attributes": [
                 {
                     "name": "Brand",
-                    "value": "Sony"
+                    "value": "PKPOWER"
                 },
                 {
-                    "name": "Microphone Form Factor",
-                    "value": "Built-In"
+                    "name": "Connector Gender",
+                    "value": "Male-to-Female"
                 },
                 {
-                    "name": "Headphones Jack",
-                    "value": "3.5 millimeters"
+                    "name": "Voltage",
+                    "value": "240 Volts"
                 },
                 {
-                    "name": "Number of Batteries",
-                    "value": "2 AAA batteries required. (included)"
+                    "name": "Total Power Outlets",
+                    "value": "1"
                 },
                 {
-                    "name": "Memory Storage Capacity",
-                    "value": "4 GB"
-                },
-                {
-                    "name": "Digital Recording Time",
-                    "value": "06:29:43"
-                },
-                {
-                    "name": "Microphone Operation Mode",
-                    "value": "Speech recognition mode"
-                },
-                {
-                    "name": "Manufacturer",
-                    "value": "Sony"
-                },
-                {
-                    "name": "UPC",
-                    "value": "649661795049"
+                    "name": "Item Length",
+                    "value": "60 Inches"
                 }
             ]
         },
         "frequently_bought_together": {
             "total_price": {
                 "symbol": "$",
-                "value": 247.58,
+                "value": 30.96,
                 "currency": "USD",
-                "raw": "$247.58"
+                "raw": "$30.96"
             },
             "products": [
                 {
-                    "asin": "B08XYBCXZ4",
-                    "title": "Sony M-470 Microcassette Voice Recorder (Renewed)",
-                    "link": "https://www.amazon.com/dp/B08XYBCXZ4",
+                    "asin": "B088ZMTF8N",
+                    "title": "PK Power 5FT AC Power Cable Cord Lead for Microsoft Xbox One S Xbox360 XboxOne Slim Game Consoles",
+                    "link": "https://www.amazon.com/dp/B088ZMTF8N",
                     "price": {
                         "symbol": "$",
                         "currency": "USD",
-                        "value": 189,
-                        "raw": "$189.00"
+                        "value": 5.98,
+                        "raw": "$5.98"
                     }
                 },
                 {
-                    "asin": "B07NM3RSRQ",
-                    "title": "Soundcore Anker Life Q20 Hybrid Active Noise Cancelling Headphones, Wireless Over Ear Bluetooth Headphones, 60H Playtime, Hi-Res Audio, Deep Bass, Memory Foam Ear Cups, for Travel, Home Office",
-                    "link": "https://www.amazon.com/dp/B07NM3RSRQ",
+                    "asin": "B0BJQ93CS9",
+                    "title": "USB C to USB C Charging Cable for Apple 2Pack 10ft,Long Type C to C Fast Charger Cord,for iPhone 15/15 Pro/15 Plus/15 Pro Max, for MacBook Pro/2019/18/17/16, for IPad Air 4/5/Mini 6/Pro 12.9/11 60W",
+                    "link": "https://www.amazon.com/dp/B0BJQ93CS9",
                     "price": {
                         "symbol": "$",
                         "currency": "USD",
-                        "value": 49.99,
-                        "raw": "$49.99"
+                        "value": 9.99,
+                        "raw": "$9.99"
                     }
                 },
                 {
-                    "asin": "B00NTCH52W",
-                    "title": "Amazon Basics 20-Pack AA Alkaline High-Performance Batteries, 1.5 Volt, 10-Year Shelf Life",
-                    "link": "https://www.amazon.com/dp/B00NTCH52W",
+                    "asin": "B09N99CLB2",
+                    "title": "iPhone 15 Fast Charger Block, USB Type C Wall Charger 2Pack 20W PD Charging Brick Power Adapter Plug Box for Apple iPhone 15 Pro Max/15 Plus/iPhone 14 Pro Max/14 Plus/13 Pro/12 Pro/Mini/iPad",
+                    "link": "https://www.amazon.com/dp/B09N99CLB2",
                     "price": {
                         "symbol": "$",
                         "currency": "USD",
-                        "value": 8.59,
-                        "raw": "$8.59"
+                        "value": 14.99,
+                        "raw": "$14.99"
                     }
                 }
             ]
@@ -316,9 +279,9 @@
         "sponsored_products": null,
         "shop_by_look": null
     },
-    "mission": "refresh deal products",
-    "task_id": 28400,
-    "create_time": "2024-08-15T10:06:13.829289",
-    "update_time": "2024-08-15T10:06:13.829292",
-    "_id": "016be7445aee11ef916d3ad201ddaa25"
+    "mission": "task for traversing preferred categories",
+    "task_id": 12766186,
+    "create_time": "2024-08-24T22:56:52.544240",
+    "update_time": "2024-08-24T22:56:52.544243",
+    "_id": "27dcfd5c626c11ef8733b6661e30c41a"
 }

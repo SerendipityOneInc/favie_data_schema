@@ -6,6 +6,7 @@
   "fields": [
     {"name": "source_type", "type": ["null", "int"], "default": null},
     {"name": "source_id", "type": ["null", "string"], "default": null},
-    {"name": "images", "type": ["null", {"type":"array","items":{"type":"favie.data.interface.media.ImageItem"}}], "default": null}
+    {"name": "images", "type": ["null", {"type":"array","items":{"type":"favie.data.interface.media.ImageItem"}}], "default": null},
+    {"name": "force", "type": ["null", "bool"], "default": null}
   ]
 }

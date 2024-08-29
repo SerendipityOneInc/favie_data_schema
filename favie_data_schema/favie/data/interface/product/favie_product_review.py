@@ -1,7 +1,7 @@
 from typing import List, Optional
 from pydantic import BaseModel, Field
 
-class FavieReview(BaseModel):
+class FavieProductReview(BaseModel):
     f_review_id: Optional[str] = None
     f_spu_id: Optional[str] = None
     site: Optional[str] = None

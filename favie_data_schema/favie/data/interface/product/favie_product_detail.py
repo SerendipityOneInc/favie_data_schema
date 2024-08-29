@@ -33,19 +33,9 @@ class AttributeItem(BaseModel):
     name: Optional[str] = None
     value: Optional[str] = None
 
-class StandardAttributes(BaseModel):
-    is_used: Optional[bool] = None
-    is_bundle: Optional[bool] = None
-    is_auction: Optional[bool] = None
-    has_coupon: Optional[bool] = None
-    is_preorder: Optional[bool] = None
-    is_best_seller: Optional[bool] = None
-    is_best_offer: Optional[bool] = None
-    is_marketplace_item: Optional[bool] = None
-    is_private_brand: Optional[bool] = None
-    recent_sales: Optional[int] = None
-    product_model_number: Optional[str] = None
-    is_platform_choice: Optional[bool] = None
+class PlatformChoice(BaseModel):
+    keywords: Optional[str] = None
+    link: Optional[str] = None
 
 class DeliveryPrice(BaseModel):
     raw: Optional[str] = None
@@ -138,9 +128,27 @@ class MetaInfo(BaseModel):
     source_type: Optional[str] = None
     parser_name: Optional[str] = None
     parses_at: Optional[str] = None
-    f_attributes_update_at: Optional[str] = None
+    f_categories_update_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
-    f_attributes_map_success: Optional[bool] = None
+    f_categories_map_success: Optional[bool] = None
+
+class StandardAttributes(BaseModel):
+    is_used: Optional[bool] = None
+    is_bundle: Optional[bool] = None
+    is_auction: Optional[bool] = None
+    is_member: Optional[bool] = None
+    is_member_exclusive_deal: Optional[bool] = None
+    has_coupon: Optional[bool] = None
+    coupon_text: Optional[str] = None
+    is_preorder: Optional[bool] = None
+    is_best_seller: Optional[bool] = None
+    is_best_offer: Optional[bool] = None
+    is_marketplace_item: Optional[bool] = None
+    is_private_brand: Optional[bool] = None
+    recent_sales: Optional[int] = None
+    product_model_number: Optional[str] = None
+    platform_choice: Optional[PlatformChoice] = None
+    last_month_sell_amount: Optional[int] = None
 
 class Delivery(BaseModel):
     fulfilled_by_platform: Optional[bool] = None
@@ -174,7 +182,7 @@ class Offer(BaseModel):
     buybox_winner: Optional[bool] = None
     offer_sku_id: Optional[str] = None
 
-class FavieProduct(BaseModel):
+class FavieProductDetail(BaseModel):
     f_sku_id: Optional[str] = None
     f_spu_id: Optional[str] = None
     site: Optional[str] = None
@@ -182,6 +190,7 @@ class FavieProduct(BaseModel):
     spu_id: Optional[str] = None
     title: Optional[str] = None
     link: Optional[str] = None
+    spu_title: Optional[str] = None
     sub_title: Optional[str] = None
     sub_title_link: Optional[str] = None
     description: Optional[str] = None
