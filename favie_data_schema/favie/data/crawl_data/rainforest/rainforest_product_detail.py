@@ -267,7 +267,7 @@ class Product(BaseModel):
     bestsellers_rank: Optional[List[BestsellersRank]] = None
     summarization_attributes: Optional[List[SummarizationAttributes]] = None
     amazons_choice: Optional[AmazonsChoice] = None
-    recent_sales: Optional[RecentSales]
+    recent_sales: Optional[RecentSales] = None
     climate_pledge_friendly: Optional[ClimatePledgeFriendly] = None
     kindle_unlimited: Optional[bool] = None
     has_coupon: Optional[bool] = None
