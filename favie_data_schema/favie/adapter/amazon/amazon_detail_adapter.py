@@ -37,7 +37,8 @@ class AmazonDetailAdapter(FavieProductAdapter):
             rating = product.rating,
             ratings_total= product.ratings_total,
             reviews_total= product.reviews_total,
-            top_reviews= favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
+            top_reviews= favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None,
+            f_updates_at=str(int(datetime.now().timestamp()))
         )
         return review_summary if CommonUtils.any_not_none(review_summary.rating,review_summary.ratings_total,review_summary.reviews_total) else None
         
