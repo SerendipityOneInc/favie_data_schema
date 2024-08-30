@@ -4,6 +4,7 @@ from favie_data_schema.favie.adapter.common.crawler_kakfa_message import Crawler
 from favie_data_schema.favie.adapter.data_mock.data_mock_read import read_amazon_message
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
 import logging
+from datetime import datetime
 
 from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
@@ -32,6 +33,9 @@ class AmazonReviewConvert():
         favie_review.verified_purchase = review.verified_purchase
         favie_review.is_global_review = review.is_global_review
         favie_review.review_country = review.review_country
+        now = str(int(datetime.now().timestamp()))
+        favie_review.f_creates_at = now
+        favie_review.f_updates_at = now
         return favie_review
     
     @staticmethod
