@@ -503,7 +503,8 @@
                                         }
                                     ]
                                 }
-                            ]
+                            ],
+                            "default": null
                         },
                         {
                             "name": "climate_pledge_friendly",
