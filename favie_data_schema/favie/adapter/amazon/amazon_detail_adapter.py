@@ -43,7 +43,7 @@ class AmazonDetailAdapter(FavieProductAdapter):
         return review_summary if CommonUtils.any_not_none(review_summary.rating,review_summary.ratings_total,review_summary.reviews_total) else None
         
 def main():
-    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json")
+    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json")
     favie_product: FavieProductDetail = AmazonDetailAdapter.convert_to_favie_product(amazon_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 
