@@ -1609,6 +1609,46 @@
                 "bool"
               ],
               "default": null
+            },
+            {
+              "name": "source_1_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_2_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_3_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_4_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_5_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
             }
           ]
         }
