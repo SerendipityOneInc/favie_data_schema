@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "VideoData",
+  "namespace": "favie.data.interface.webpage",
+  "fields": [
+    {"name": "url", "type": ["null","string"],"default":null},
+    {"name": "desc", "type": ["null","string"],"default":null}
+  ]
+}
