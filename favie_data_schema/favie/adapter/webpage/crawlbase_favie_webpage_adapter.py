@@ -6,10 +6,10 @@ from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
 from urllib.parse import urlparse
 
 
-class DefaultFavieWebpageAdapter(FavieWebpageAdapter):
+class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
     @staticmethod
     def convert_to_favie_webpage(webpage_message: FavieSpiderData) -> FavieWebpage:
-        if not DefaultFavieWebpageAdapter._message_check(webpage_message):
+        if not CrawlbaseFavieWebpageAdapter._message_check(webpage_message):
             return None
         
         webpage = FavieWebpage()
@@ -48,6 +48,6 @@ class DefaultFavieWebpageAdapter(FavieWebpageAdapter):
 
 if __name__ == "__main__":
     webpage_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/webpage_message.json", FavieSpiderData)
-    webpage = DefaultFavieWebpageAdapter.convert_to_favie_webpage(webpage_message)
+    webpage = CrawlbaseFavieWebpageAdapter.convert_to_favie_webpage(webpage_message)
     if webpage:
         print(webpage.model_dump_json(exclude_none=True))
