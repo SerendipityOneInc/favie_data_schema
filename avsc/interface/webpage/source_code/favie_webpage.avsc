@@ -26,6 +26,7 @@
     {"name": "open_graphs", "type": ["null", {"type": "array", "items": "string"}], "default": null},
     {"name": "twitter_cards", "type": ["null", {"type": "array", "items": "string"}], "default": null},
     {"name": "page_type", "type": ["null", "string"], "default": null},
+    {"name": "f_meta", "type": ["null", "favie.data.interface.webpage.MetaInfo"], "default": null},
     {"name": "create_time", "type": ["null", "string"], "default": null},
     {"name": "update_time", "type": ["null", "string"], "default": null}
   ]

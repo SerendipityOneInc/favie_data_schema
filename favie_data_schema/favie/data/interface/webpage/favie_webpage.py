@@ -13,6 +13,16 @@ class ReferenceData(BaseModel):
     url: Optional[str] = None
     desc: Optional[str] = None
 
+class MetaInfo(BaseModel):
+    source_type: Optional[str] = None
+    parser_name: Optional[str] = None
+    parses_at: Optional[str] = None
+    source_1_updates_at: Optional[str] = None
+    source_2_updates_at: Optional[str] = None
+    source_3_updates_at: Optional[str] = None
+    source_4_updates_at: Optional[str] = None
+    source_5_updates_at: Optional[str] = None
+
 class FavieWebpage(BaseModel):
     md5_id: Optional[str] = None
     url: Optional[str] = None
@@ -37,6 +47,7 @@ class FavieWebpage(BaseModel):
     open_graphs: Optional[List[str]] = None
     twitter_cards: Optional[List[str]] = None
     page_type: Optional[str] = None
+    f_meta: Optional[MetaInfo] = None
     create_time: Optional[str] = None
     update_time: Optional[str] = None
 

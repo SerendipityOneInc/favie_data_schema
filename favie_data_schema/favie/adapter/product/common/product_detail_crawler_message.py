@@ -2,7 +2,7 @@ from typing import Optional
 from pydantic import BaseModel
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
 
-class CrawlerKafkaMessage(BaseModel):
+class ProductDetailCrawlerMessage(BaseModel):
     url : Optional[str] = None,
     host: Optional[str] = None,
     product_id: Optional[str] = None,

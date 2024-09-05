@@ -1,9 +1,9 @@
-from favie_data_schema.favie.adapter.common.favie_adapter import FavieProductAdapter
+from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductDetailAdapter
+from favie_data_schema.favie.adapter.product.list_adapter.amazon_list_result_adapter import AmazoneListResultAdapter
 from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.data.crawl_data.crawler.list_crawler_message import ListCrawlerMessage
-from favie_data_schema.favie.adapter.data_mock.data_mock_read import read_file
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
-from favie_data_schema.favie.adapter.list_adapter.amazon_list_result_adapter import AmazoneListResultAdapter
 from favie_data_schema.favie.data.crawl_data.crawler.amazon_list_crawler_result import AmazonListCrawlResult
 from datetime import datetime
 import logging,json
@@ -15,7 +15,7 @@ adapter_config = {
     "RainforestDealsProductListParser":AmazoneListResultAdapter
 }
 
-class ListCrawlerAdapter(FavieProductAdapter):
+class ListCrawlerAdapter(FavieProductDetailAdapter):
     @staticmethod
     def convert_to_favie_product(message: ListCrawlerMessage) -> FavieProductDetail:
         if message is None or message.crawl_result is None:

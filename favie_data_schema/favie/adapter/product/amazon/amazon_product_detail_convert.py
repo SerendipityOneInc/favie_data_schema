@@ -1,14 +1,13 @@
 from lxml import html
 import re
-from favie_data_schema.favie.adapter.common.favie_adapter import FavieProductAdapter
+from favie_data_schema.favie.adapter.product.common.currency import CurrencyConverter
+from favie_data_schema.favie.adapter.product.common.favie_product_detail_status import FavieProductDetailStatus
+from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
+from favie_data_schema.favie.adapter.product.common.product_detail_crawler_message import ProductDetailCrawlerMessage
 from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
-from favie_data_schema.favie.adapter.common.currency import CurrencyConverter
-from favie_data_schema.favie.adapter.common.favie_product_status import FavieProductStatus
-from favie_data_schema.favie.adapter.common.crawler_kakfa_message import CrawlerKafkaMessage
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
-from favie_data_schema.favie.adapter.common.favie_product_utils import FavieProductUtils
-from favie_data_schema.favie.adapter.data_mock.data_mock_read import read_amazon_message
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
 from favie_data_schema.favie.adapter.common.html_utils import HtmlUtils
 from datetime import datetime
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
@@ -16,13 +15,13 @@ import logging
 
 from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
-class AmazonDetailConvert():
+class AmazonProductDetailConvert():
     @staticmethod
-    def convert_to_favie_product(amazon_message: CrawlerKafkaMessage) -> FavieProductDetail:
+    def convert_to_favie_product(amazon_message: ProductDetailCrawlerMessage) -> FavieProductDetail:
         crawl_result = amazon_message.crawl_result
         raw_result = amazon_message.raw_result
         
-        if not AmazonDetailConvert.rainforest_product_detail_check(crawl_result):
+        if not AmazonProductDetailConvert.rainforest_product_detail_check(crawl_result):
             logging.error("rainforest_product_detail is invalid: %s", crawl_result)
             return None
         favie_product = FavieProductDetail()
@@ -37,40 +36,40 @@ class AmazonDetailConvert():
         favie_product.description = crawl_result.product.description
         favie_product.description_external_link = None
         favie_product.rich_product_description = None
-        favie_product.price = AmazonDetailConvert.get_price(crawl_result)
-        favie_product.rrp = AmazonDetailConvert.get_rrp(crawl_result)
-        favie_product.images = AmazonDetailConvert.get_images(crawl_result)
+        favie_product.price = AmazonProductDetailConvert.get_price(crawl_result)
+        favie_product.rrp = AmazonProductDetailConvert.get_rrp(crawl_result)
+        favie_product.images = AmazonProductDetailConvert.get_images(crawl_result)
         favie_product.f_images = None
-        favie_product.videos = AmazonDetailConvert.get_videos(crawl_result)
-        favie_product.categories = AmazonDetailConvert.get_categories(crawl_result)
+        favie_product.videos = AmazonProductDetailConvert.get_videos(crawl_result)
+        favie_product.categories = AmazonProductDetailConvert.get_categories(crawl_result)
         favie_product.f_categories = None
-        favie_product.brand = AmazonDetailConvert.get_brand(crawl_result)
+        favie_product.brand = AmazonProductDetailConvert.get_brand(crawl_result)
         favie_product.f_brand = None
         favie_product.feature_bullets = crawl_result.product.feature_bullets        
-        favie_product.attributes = AmazonDetailConvert.get_attributes(crawl_result)
-        favie_product.specifications = AmazonDetailConvert.get_specifications(crawl_result)
-        favie_product.standard_attributes = AmazonDetailConvert.get_standard_attributes(amazon_message)
+        favie_product.attributes = AmazonProductDetailConvert.get_attributes(crawl_result)
+        favie_product.specifications = AmazonProductDetailConvert.get_specifications(crawl_result)
+        favie_product.standard_attributes = AmazonProductDetailConvert.get_standard_attributes(amazon_message)
         favie_product.offers = None
-        favie_product.seller = AmazonDetailConvert.get_seller(crawl_result)
+        favie_product.seller = AmazonProductDetailConvert.get_seller(crawl_result)
         favie_product.inventory = None
         favie_product.keywords = crawl_result.product.keywords
         favie_product.search_alias = None
-        favie_product.deal = AmazonDetailConvert.get_deal(crawl_result)
+        favie_product.deal = AmazonProductDetailConvert.get_deal(crawl_result)
         favie_product.shipping = None
         favie_product.fulfillment = None
         favie_product.returns_policy = None
         favie_product.variants = None
         favie_product.f_sku_id = FavieProductUtils.gen_f_sku_id(favie_product)
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
-        favie_product.promotion = AmazonDetailConvert.get_promotion(crawl_result)
-        favie_product.best_seller_rank = AmazonDetailConvert.get_best_seller_rank(crawl_result)
-        favie_product.variants = AmazonDetailConvert.get_variants(crawl_result)
+        favie_product.promotion = AmazonProductDetailConvert.get_promotion(crawl_result)
+        favie_product.best_seller_rank = AmazonProductDetailConvert.get_best_seller_rank(crawl_result)
+        favie_product.variants = AmazonProductDetailConvert.get_variants(crawl_result)
         favie_product.f_meta = MetaInfo(
             source_type = str(amazon_message.source),
             parser_name = f"{amazon_message.parser_name}-adapter",
             parses_at = str(int(datetime.now().timestamp()))
         )
-        favie_product.f_status = FavieProductStatus.SKU_NORMAL.name
+        favie_product.f_status = FavieProductDetailStatus.SKU_NORMAL.name
         return favie_product
     
         
@@ -99,7 +98,7 @@ class AmazonDetailConvert():
                     sku_id=x.asin,
                     title=None, #variants 的schema定义有误，缺少title字段，多了一个text字段
                     link=x.link,
-                    price=AmazonDetailConvert.convert_price(x.price)
+                    price=AmazonProductDetailConvert.convert_price(x.price)
                 ) for x in rainforest_product_detail.product.variants if x.asin is not None]
             return variants if CommonUtils.list_len(variants) > 0 else None
         return None
@@ -119,7 +118,7 @@ class AmazonDetailConvert():
     @staticmethod
     def get_deal(rainforest_product_detail: RainforestProductDetail):
         if(rainforest_product_detail.product.buybox_winner is not None and rainforest_product_detail.product.buybox_winner.deal is not None):
-            was_price = AmazonDetailConvert.convert_price(rainforest_product_detail.product.buybox_winner.price)
+            was_price = AmazonProductDetailConvert.convert_price(rainforest_product_detail.product.buybox_winner.price)
             if(was_price is None):
                 return None
             
@@ -151,15 +150,15 @@ class AmazonDetailConvert():
         return None
     
     @staticmethod
-    def get_standard_attributes(message : CrawlerKafkaMessage):
+    def get_standard_attributes(message : ProductDetailCrawlerMessage):
         try:
             standard_attributes = StandardAttributes()
             if message.source == Source.SPIDER.value:
-                standard_attributes.last_month_sell_amount = AmazonDetailConvert.get_last_month_sell_amount(message.raw_result)
+                standard_attributes.last_month_sell_amount = AmazonProductDetailConvert.get_last_month_sell_amount(message.raw_result)
             standard_attributes.is_bundle = message.crawl_result.product.is_bundle
             standard_attributes.has_coupon = message.crawl_result.product.has_coupon
             standard_attributes.coupon_text = message.crawl_result.product.coupon_text
-            standard_attributes.platform_choice = AmazonDetailConvert.get_platform_choice(message.crawl_result)
+            standard_attributes.platform_choice = AmazonProductDetailConvert.get_platform_choice(message.crawl_result)
             
             if message.crawl_result.product.buybox_winner is not None: 
                 if message.crawl_result.product.buybox_winner.fulfillment is not None:
@@ -248,13 +247,13 @@ class AmazonDetailConvert():
     @staticmethod
     def get_price(rainforest_product_detail: RainforestProductDetail):
         if rainforest_product_detail.product.buybox_winner is not None:
-            return AmazonDetailConvert.convert_price(rainforest_product_detail.product.buybox_winner.price)
+            return AmazonProductDetailConvert.convert_price(rainforest_product_detail.product.buybox_winner.price)
         return None
     
     @staticmethod
     def get_rrp(rainforest_product_detail: RainforestProductDetail):
         if rainforest_product_detail.product.buybox_winner is not None:
-            return AmazonDetailConvert.convert_price(rainforest_product_detail.product.buybox_winner.rrp)
+            return AmazonProductDetailConvert.convert_price(rainforest_product_detail.product.buybox_winner.rrp)
         return None
     
     @staticmethod
@@ -295,8 +294,8 @@ class AmazonDetailConvert():
         return True
         
 def main():
-    amazon_message = read_amazon_message("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amozon_message_source_1.json")
-    favie_product = AmazonDetailConvert.convert_to_favie_product(amazon_message)
+    amazon_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amozon_message_source_1.json",ProductDetailCrawlerMessage)
+    favie_product = AmazonProductDetailConvert.convert_to_favie_product(amazon_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 
 if __name__ == "__main__":
