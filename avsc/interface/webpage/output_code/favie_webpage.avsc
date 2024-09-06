@@ -31,7 +31,7 @@
       "name": "f_fingerprint",
       "type": [
         "null",
-        "string"
+        "int"
       ],
       "default": null
     },
