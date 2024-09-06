@@ -1,7 +1,8 @@
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.webpage.common.favie_webpage_adapter import FavieWebpageAdapter
+from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import ParsedWebPageContent
 from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import FavieSpiderData
-from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage,MetaInfo
+from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage,MetaInfo,ImageData,VideoData,ReferenceData
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
 from urllib.parse import urlparse
 
@@ -20,7 +21,6 @@ class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
                         if webpage_message.crawl_result.webpage.parsed_webpage_content.hostname 
                         else urlparse(webpage_message.crawl_result.original_url).hostname
                     )
-        webpage.fingerprint_id = webpage_message.crawl_result.webpage.parsed_webpage_content.fingerprint
         webpage.favicon = None
         webpage.language = webpage_message.crawl_result.webpage.parsed_webpage_content.language
         webpage.title = webpage_message.crawl_result.webpage.parsed_webpage_content.title
@@ -33,7 +33,7 @@ class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
         webpage.excerpt = webpage_message.crawl_result.webpage.parsed_webpage_content.excerpt
         webpage.comments = None
         webpage.subtitles = None
-        webpage.images = None
+        webpage.images = CrawlbaseFavieWebpageAdapter.__get_images(webpage_message.crawl_result.webpage.parsed_webpage_content)
         webpage.videos = None
         webpage.references = None
         webpage.json_lds = None
@@ -45,6 +45,11 @@ class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
             parser_name=webpage_message.spider
         )
         return webpage
+    
+    @staticmethod
+    def __get_images(webpage_content: ParsedWebPageContent) -> FavieWebpage:
+        return [ImageData(url = image) for image in [webpage_content.image]] if webpage_content.image else None
+
 
 if __name__ == "__main__":
     webpage_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/webpage_message.json", FavieSpiderData)

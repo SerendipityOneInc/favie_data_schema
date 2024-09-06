@@ -28,7 +28,7 @@
       "default": null
     },
     {
-      "name": "fingerprint_id",
+      "name": "f_fingerprint",
       "type": [
         "null",
         "string"

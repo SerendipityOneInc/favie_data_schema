@@ -6,7 +6,7 @@
     {"name": "md5_id", "type": ["null", "string"], "default": null},
     {"name": "url", "type": ["null", "string"], "default": null},
     {"name": "host", "type": ["null", "string"], "default": null},
-    {"name": "fingerprint_id", "type": ["null", "string"], "default": null},
+    {"name": "f_fingerprint", "type": ["null", "string"], "default": null},
     {"name": "favicon", "type": ["null", "string"], "default": null},
     {"name": "language", "type": ["null", "string"], "default": null},
     {"name": "title", "type": ["null", "string"], "default": null},

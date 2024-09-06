@@ -27,8 +27,5 @@ class FavieWebpageAdapter():
         
         if webpage_message.crawl_result.webpage.parsed_webpage_content is None:
             return False
-        
-        if webpage_message.crawl_result.webpage.parsed_webpage_content.text is None:
-            return False
-        
+                
         return True
