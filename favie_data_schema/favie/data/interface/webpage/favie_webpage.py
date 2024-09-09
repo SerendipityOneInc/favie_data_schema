@@ -27,6 +27,7 @@ class FavieWebpage(BaseModel):
     md5_id: Optional[str] = None
     url: Optional[str] = None
     host: Optional[str] = None
+    domain: Optional[str] = None
     f_fingerprint: Optional[int] = None
     favicon: Optional[str] = None
     language: Optional[str] = None
