@@ -11,6 +11,6 @@ class FavieProductDetailAdapter():
 
 class FavieProductReviewAdapter():
     @staticmethod
-    def convert_to_favie_review(crawler_kafka_message: ProductDetailCrawlerMessage) -> list[FavieProductDetail]:
+    def convert_to_favie_review(crawler_kafka_message: ProductDetailCrawlerMessage) -> list[FavieProductReview]:
         # TODO: implement
         pass 

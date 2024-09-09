@@ -5,6 +5,7 @@ from lxml import html
 import re
 import hashlib
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
+import tldextract
 
 class HtmlUtils():
     @staticmethod
@@ -24,11 +25,7 @@ class HtmlUtils():
         except Exception:
             return encoded_html_string
     
-    @staticmethod
-    def get_hostname(url):
-        """获取URL的主机名"""
-        parsed_url = urlparse(url)
-        return  parsed_url.hostname
+
          
 
 if __name__ == "__main__":
