@@ -1,12 +1,9 @@
-from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.webpage.common.favie_webpage_adapter import FavieWebpageAdapter
 from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import ParsedWebPageContent
 from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import FavieSpiderData
 from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage,MetaInfo,ImageData,VideoData,ReferenceData
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
 from urllib.parse import urlparse
-
-
 class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
     @staticmethod
     def convert_to_favie_webpage(webpage_message: FavieSpiderData) -> FavieWebpage:
@@ -14,13 +11,7 @@ class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
             return None
         
         webpage = FavieWebpage()
-        webpage.md5_id = CommonUtils.md5_hash(webpage_message.crawl_result.original_url)
         webpage.url = webpage_message.crawl_result.original_url
-        webpage.host = (
-                        webpage_message.crawl_result.webpage.parsed_webpage_content.hostname 
-                        if webpage_message.crawl_result.webpage.parsed_webpage_content.hostname 
-                        else urlparse(webpage_message.crawl_result.original_url).hostname
-                    )
         webpage.favicon = None
         webpage.language = webpage_message.crawl_result.webpage.parsed_webpage_content.language
         webpage.title = webpage_message.crawl_result.webpage.parsed_webpage_content.title
