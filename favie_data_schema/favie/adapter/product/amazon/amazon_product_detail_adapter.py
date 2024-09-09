@@ -11,7 +11,6 @@ from datetime import datetime
 import logging
 
 from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
-from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
 class AmazonProductDetailAdapter(FavieProductDetailAdapter):
     @staticmethod
