@@ -27,7 +27,7 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
             favie_review.f_spu_id = f_spu_id
             favie_review.spu_id = favie_product.spu_id
             favie_review.site = favie_product.site
-            favie_review.f_review_id = FavieProductUtils.gen_review_id(f_spu_id,favie_review)
+            favie_review.f_review_id = FavieProductUtils.gen_review_id(favie_review)
             
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
     

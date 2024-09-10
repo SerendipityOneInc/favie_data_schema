@@ -20,11 +20,11 @@ class FavieProductUtils():
             return f"{spu_id}-{product.site}"
         
     @staticmethod
-    def gen_review_id(spu_id: str, review: FavieProductReview):
-        if(CommonUtils.any_none(spu_id,review.review_id)):
+    def gen_review_id(review: FavieProductReview):
+        if(CommonUtils.any_none(review.site,review.review_id)):
             return None
         review_id = review.review_id if review.review_id is not None else CommonUtils.md5_hash(f'{review.author_id}-{review.author_name}-{review.link}-{review.position}')
-        return f"{spu_id}-{review_id}"
+        return f"{review_id}-{review.site}"
     
     @staticmethod
     def get_product_price(product):
