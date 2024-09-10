@@ -22,7 +22,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install pydantic-avro
-        run: pip install pydantic-avro jq poetry
+        run: pip install pydantic-avro jq poetry tldextract
       
       - name: Install dependencies
         run: |
