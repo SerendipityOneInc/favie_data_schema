@@ -87,5 +87,7 @@ class ProductCard(BaseModel):
     sell_amount_last_month: Optional[int] = None
     brand: Optional[str] = None
     categories: Optional[List] = None
+    source: Optional[str] = None
+    source_icon = Optional[str] = None
 
     model_config = ConfigDict(populate_by_name=True)
