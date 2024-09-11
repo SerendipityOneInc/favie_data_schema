@@ -27,12 +27,17 @@ class AmazonProductReviewConvert():
         favie_review.review_id = review.id
         favie_review.link = review.link
         favie_review.body = review.body
+        favie_review.body_html = review.body_html
         favie_review.title = review.title
         favie_review.helpful_votes = review.helpful_votes
         favie_review.vine_program = review.vine_program
         favie_review.verified_purchase = review.verified_purchase
         favie_review.is_global_review = review.is_global_review
         favie_review.review_country = review.review_country
+        favie_review.rating = review.rating
+        favie_review.date = review.date
+        favie_review.images = None
+        favie_review.videos = None
         return favie_review
     
     @staticmethod
