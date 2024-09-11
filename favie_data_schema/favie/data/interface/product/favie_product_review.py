@@ -27,7 +27,8 @@ class FavieProductReview(BaseModel):
     images: Optional[List[str]] = None
     videos: Optional[List[str]] = None
     rating: Optional[float] = None
-    date: Optional[str] = None
+    date_raw: Optional[str] = None
+    date_utc: Optional[str] = None
     author_name: Optional[str] = None
     author_id: Optional[str] = None
     author_url: Optional[str] = None

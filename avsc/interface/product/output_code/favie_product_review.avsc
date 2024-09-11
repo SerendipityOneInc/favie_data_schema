@@ -106,7 +106,15 @@
       "default": null
     },
     {
-      "name": "date",
+      "name": "date_raw",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "date_utc",
       "type": [
         "null",
         "string"

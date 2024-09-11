@@ -35,10 +35,13 @@ class AmazonProductReviewConvert():
         favie_review.is_global_review = review.is_global_review
         favie_review.review_country = review.review_country
         favie_review.rating = review.rating
-        favie_review.date = review.date
+        favie_review.date_raw = review.date.raw if review.date is not None else None
+        favie_review.date_utc = review.date.utc if review.date is not None else None
         favie_review.images = None
         favie_review.videos = None
         return favie_review
+    
+    
     
     @staticmethod
     def __check(crawler_kafka_message: RainforestProductDetail):
