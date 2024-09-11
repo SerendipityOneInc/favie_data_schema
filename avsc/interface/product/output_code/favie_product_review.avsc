@@ -175,6 +175,109 @@
       "default": null
     },
     {
+      "name": "f_meta",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.interface.product",
+          "type": "record",
+          "name": "MetaInfo",
+          "doc": "Schema for DeliveryPrice",
+          "fields": [
+            {
+              "name": "source_type",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "parser_name",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "parses_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_categories_update_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_images_crawl_send_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_categories_map_success",
+              "type": [
+                "null",
+                "bool"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_1_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_2_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_3_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_4_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_5_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
       "name": "f_updates_at",
       "type": [
         "null",
