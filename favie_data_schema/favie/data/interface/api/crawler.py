@@ -88,6 +88,6 @@ class ProductCard(BaseModel):
     brand: Optional[str] = None
     categories: Optional[List] = None
     source: Optional[str] = None
-    source_icon = Optional[str] = None
+    source_icon: Optional[str] = None
 
     model_config = ConfigDict(populate_by_name=True)
