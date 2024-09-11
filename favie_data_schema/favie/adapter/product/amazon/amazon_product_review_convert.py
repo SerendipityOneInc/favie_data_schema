@@ -33,9 +33,6 @@ class AmazonProductReviewConvert():
         favie_review.verified_purchase = review.verified_purchase
         favie_review.is_global_review = review.is_global_review
         favie_review.review_country = review.review_country
-        now = str(int(datetime.now().timestamp()))
-        favie_review.f_creates_at = now
-        favie_review.f_updates_at = now
         return favie_review
     
     @staticmethod

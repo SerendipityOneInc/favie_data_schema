@@ -1,6 +1,7 @@
 import re
 import hashlib
 from urllib.parse import urlparse
+from datetime import datetime
 
 import tldextract
 
@@ -32,6 +33,14 @@ class CommonUtils():
     @staticmethod
     def list_len(list):
         return len(list) if list is not None else 0
+    
+    @staticmethod
+    def is_empty(list):
+        return len(list) == 0 if list is not None else True
+    
+    @staticmethod
+    def current_timestamp():
+        return datetime.now().timestamp()
     
     @staticmethod
     def divide_chunks(lst, n):
