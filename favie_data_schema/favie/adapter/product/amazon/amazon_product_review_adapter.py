@@ -38,7 +38,7 @@ def main():
     if favie_reviews is None:
         return None
     for favie_review in favie_reviews:
-        print(favie_review.model_dump_json())
+        print(favie_review.model_dump_json(exclude_none=True))
 
 if __name__ == "__main__":
     main()
