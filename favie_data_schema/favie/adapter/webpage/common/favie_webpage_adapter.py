@@ -1,6 +1,6 @@
 from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import FavieSpiderData
 from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage
-from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
+from favie_common.common.common_utils import CommonUtils
 
 class FavieWebpageAdapter():
     @staticmethod

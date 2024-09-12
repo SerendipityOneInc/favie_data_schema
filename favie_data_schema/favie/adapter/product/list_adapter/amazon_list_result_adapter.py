@@ -2,7 +2,7 @@ from favie_data_schema.favie.adapter.product.common.currency import CurrencyConv
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductDetailAdapter
 from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.data.crawl_data.crawler.amazon_list_crawler_result import AmazonListCrawlResult,Price as AmazonPrice
-from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
+from favie_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 
 from datetime import datetime

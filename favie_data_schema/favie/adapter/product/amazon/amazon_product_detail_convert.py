@@ -6,7 +6,7 @@ from favie_data_schema.favie.adapter.product.common.favie_product_utils import F
 from favie_data_schema.favie.adapter.product.common.product_detail_crawler_message import ProductDetailCrawlerMessage
 from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
-from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
+from favie_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
 from favie_data_schema.favie.adapter.common.html_utils import HtmlUtils
 from datetime import datetime

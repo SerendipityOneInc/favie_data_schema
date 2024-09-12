@@ -5,7 +5,7 @@ from favie_data_schema.favie.adapter.product.common.favie_product_adapter import
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
 from favie_data_schema.favie.adapter.product.common.product_detail_crawler_message import ProductDetailCrawlerMessage
 from favie_data_schema.favie.data.interface.product.favie_product_detail import *
-from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
+from favie_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
 import logging
 

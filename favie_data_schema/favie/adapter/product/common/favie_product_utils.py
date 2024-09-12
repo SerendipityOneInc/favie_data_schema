@@ -1,4 +1,4 @@
-from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
+from favie_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
 from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
