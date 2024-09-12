@@ -3,8 +3,8 @@ import re
 from favie_data_schema.favie.adapter.product.common.currency import CurrencyConverter
 from favie_data_schema.favie.adapter.product.common.favie_product_detail_status import FavieProductDetailStatus
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
-from favie_data_schema.favie.adapter.product.common.product_detail_crawler_message import ProductDetailCrawlerMessage
-from favie_data_schema.favie.data.interface.product.favie_product_detail import *
+from favie_data_schema.favie.adapter.product.common.product_crawler_message import ProductDetailCrawlerMessage
+from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
 from favie_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
@@ -13,7 +13,6 @@ from datetime import datetime
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 import logging
 
-from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
 class AmazonProductDetailConvert():
     @staticmethod

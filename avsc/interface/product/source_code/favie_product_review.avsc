@@ -7,6 +7,7 @@
     {"name": "f_spu_id", "type": ["null", "string"], "default": null},
     {"name": "site", "type": ["null", "string"], "default": null},
     {"name": "spu_id", "type": ["null", "string"], "default": null},
+    {"name": "sku_id", "type": ["null", "string"], "default": null},
     {"name": "review_id", "type": ["null", "string"], "default": null},
     {"name": "title", "type": ["null", "string"], "default": null},
     {"name": "body", "type": ["null", "string"], "default": null},

@@ -1,0 +1,309 @@
+{
+  "namespace": "favie.data.interface.product",
+  "type": "record",
+  "name": "FavieProductReviewSummary",
+  "fields": [
+    {
+      "name": "f_spu_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "site",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "spu_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sku_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "summary",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.interface.product",
+          "type": "record",
+          "name": "ReviewSummary",
+          "fields": [
+            {
+              "name": "rating",
+              "type": [
+                "null",
+                "float"
+              ],
+              "default": null
+            },
+            {
+              "name": "ratings_total",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "ratings_total_filtered",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "rating_breakdown",
+              "type": [
+                "null",
+                {
+                  "namespace": "favie.data.interface.product",
+                  "type": "record",
+                  "name": "RatingBreakdown",
+                  "fields": [
+                    {
+                      "name": "five_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "four_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "three_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "two_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "one_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    }
+                  ]
+                }
+              ],
+              "default": null
+            },
+            {
+              "name": "recommended_percentage",
+              "type": [
+                "null",
+                "float"
+              ],
+              "default": null
+            },
+            {
+              "name": "reviews_total",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "reviews_total_filtered",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "top_reviews",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ],
+              "default": null
+            },
+            {
+              "name": "top_favourable",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "top_critical",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "f_meta",
+      "type": [
+        "null",
+        {
+          "namespace": "favie.data.interface.product",
+          "type": "record",
+          "name": "MetaInfo",
+          "doc": "Schema for DeliveryPrice",
+          "fields": [
+            {
+              "name": "source_type",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "parser_name",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "parses_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_categories_update_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_images_crawl_send_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_categories_map_success",
+              "type": [
+                "null",
+                "bool"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_1_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_2_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_3_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_4_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "source_5_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "f_updates_at",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "f_creates_at",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

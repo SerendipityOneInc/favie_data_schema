@@ -36,6 +36,14 @@
       "default": null
     },
     {
+      "name": "sku_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "review_id",
       "type": [
         "null",
