@@ -167,7 +167,7 @@ dev = ["PyTest", "PyTest-Cov", "bump2version (<1)", "sphinx (<2)", "tox"]
 
 [[package]]
 name = "favie-common"
-version = "0.1.5-alpha.2"
+version = "0.1.5-alpha.3"
 description = ""
 optional = false
 python-versions = "^3.10"
@@ -186,8 +186,8 @@ tldextract = "5.1.2"
 [package.source]
 type = "git"
 url = "https://github.com/SerendipityOneInc/favie-common.git"
-reference = "0.1.5-alpha.2"
-resolved_reference = "84312bd9a399b985155e82b519709c5a99427a4a"
+reference = "0.1.5-alpha.3"
+resolved_reference = "1228b0360ba7aeb1e156a6557a77eb6ffa95d063"
 
 [[package]]
 name = "filelock"
@@ -948,4 +948,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "3a6086ff76983837fae0678b00981b28e5b0081b242a6e29d0b91e7f8fdd296d"
+content-hash = "5db4d313a3352b90ce459134680d905a3055f6bd45af07d07eaf2ef43fbf35c5"
