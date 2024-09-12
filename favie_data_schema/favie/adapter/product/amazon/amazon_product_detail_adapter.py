@@ -17,7 +17,7 @@ class AmazonProductDetailAdapter(FavieProductDetailAdapter):
         favie_product = AmazonProductDetailConvert.convert_to_favie_product(amazon_message)
         if(favie_product is None):
             return None
-        favie_reviews = AmazonProductReviewAdapter.convert_to_favie_review(amazon_message)
+        favie_reviews = AmazonProductReviewAdapter.crawl_detail_to_product_review(amazon_message)
         
         favie_product.f_sku_id = FavieProductUtils.gen_f_sku_id(favie_product)
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
@@ -42,7 +42,7 @@ class AmazonProductDetailAdapter(FavieProductDetailAdapter):
         
 def main():
     amazon_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json",ProductDetailCrawlerMessage)
-    favie_product: FavieProductDetail = AmazonProductDetailAdapter.convert_to_favie_product(amazon_message)
+    favie_product: FavieProductDetail = AmazonProductDetailAdapter.crawl_detail_to_product_detail(amazon_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 
 if __name__ == "__main__":
