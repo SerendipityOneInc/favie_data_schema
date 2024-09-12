@@ -1,15 +1,12 @@
 from favie_data_schema.favie.adapter.product.common.currency import CurrencyConverter
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductDetailAdapter
-from favie_data_schema.favie.data.interface.product.favie_product_detail import *
+from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.crawl_data.crawler.amazon_list_crawler_result import AmazonListCrawlResult,Price as AmazonPrice
 from favie_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 
 from datetime import datetime
 import logging
-
-from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
-
 class AmazoneListResultAdapter(FavieProductDetailAdapter):
     @staticmethod
     def convert_to_favie_product(crawl_result: AmazonListCrawlResult) -> FavieProductDetail:
