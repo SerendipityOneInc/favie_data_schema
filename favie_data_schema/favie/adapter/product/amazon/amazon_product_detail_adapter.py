@@ -6,7 +6,7 @@ from favie_data_schema.favie.adapter.product.common.product_crawler_message impo
 from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
 from favie_common.common.common_utils import CommonUtils
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from datetime import datetime
 import logging
 
@@ -41,7 +41,7 @@ class AmazonProductDetailAdapter(FavieProductDetailAdapter):
         return review_summary if CommonUtils.any_not_none(review_summary.rating,review_summary.ratings_total,review_summary.reviews_total) else None
         
 def main():
-    amazon_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json",ProductDetailCrawlerMessage)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json",ProductDetailCrawlerMessage)
     favie_product: FavieProductDetail = AmazonProductDetailAdapter.crawl_detail_to_product_detail(amazon_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 

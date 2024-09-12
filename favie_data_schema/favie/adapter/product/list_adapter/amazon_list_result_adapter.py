@@ -3,13 +3,13 @@ from favie_data_schema.favie.adapter.product.common.favie_product_adapter import
 from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.crawl_data.crawler.amazon_list_crawler_result import AmazonListCrawlResult,Price as AmazonPrice
 from favie_common.common.common_utils import CommonUtils
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 
 from datetime import datetime
 import logging
 class AmazoneListResultAdapter(FavieProductDetailAdapter):
     @staticmethod
-    def convert_to_favie_product(crawl_result: AmazonListCrawlResult) -> FavieProductDetail:
+    def crawl_detail_to_product_detail(crawl_result: AmazonListCrawlResult) -> FavieProductDetail:
         if crawl_result is None:
             return None                
         favie_product = FavieProductDetail()
@@ -76,8 +76,8 @@ class AmazoneListResultAdapter(FavieProductDetailAdapter):
         return price if CommonUtils.all_not_none(price.currency,price.value) else None
         
 def main():
-    amazon_message = read_file("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_list_result.json")
-    favie_product: FavieProductDetail = AmazoneListResultAdapter.convert_to_favie_product(amazon_message)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_list_result.json",AmazonListCrawlResult)
+    favie_product: FavieProductDetail = AmazoneListResultAdapter.crawl_detail_to_product_detail(amazon_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 
 if __name__ == "__main__":

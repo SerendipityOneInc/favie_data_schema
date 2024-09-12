@@ -7,7 +7,7 @@ from favie_data_schema.favie.adapter.product.common.product_crawler_message impo
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import RatingBreakdown as RFRatingBreakdown, Summary,Reviews
 from favie_data_schema.favie.data.interface.product.favie_product import FavieProductReview, FavieProductReviewSummary, MetaInfo,ReviewSummary,RatingBreakdown
 from favie_common.common.common_utils import CommonUtils
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 import logging
 
 
@@ -136,7 +136,7 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
         
         
 def test_crawl_detail_to_product_review():
-    amazon_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json",ProductDetailCrawlerMessage)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json",ProductDetailCrawlerMessage)
     favie_reviews = AmazonProductReviewAdapter.crawl_detail_to_product_review(amazon_message)
     if favie_reviews is None:
         return None
@@ -144,13 +144,13 @@ def test_crawl_detail_to_product_review():
         print(favie_review.model_dump_json(exclude_none=True))
 
 def test_crawl_review_to_product_review_summary():
-    amazon_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/crawl_product_review.json",ProductReviewCrawlerMessage)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/crawl_product_review.json",ProductReviewCrawlerMessage)
     favie_review_summary = AmazonProductReviewAdapter.crawl_review_to_product_review_summary(amazon_message)
     if favie_review_summary is not None:
         print(favie_review_summary.model_dump_json(exclude_none=True))
         
 def test_crawl_review_to_product_review():
-    amazon_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/crawl_product_review.json",ProductReviewCrawlerMessage)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/crawl_product_review.json",ProductReviewCrawlerMessage)
     favie_reviews = AmazonProductReviewAdapter.crawl_review_to_product_review(amazon_message)
     if favie_reviews is None:
         return None
