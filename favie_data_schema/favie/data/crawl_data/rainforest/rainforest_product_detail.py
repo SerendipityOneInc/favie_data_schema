@@ -70,11 +70,6 @@ class AmazonsChoice(BaseModel):
     link: Optional[str] = None
 
 
-class RecentSales(BaseModel):
-    count: Optional[int] = None
-    period: Optional[str] = None
-
-
 class ClimatePledgeFriendly(BaseModel):
     text: Optional[str] = None
     image: Optional[str] = None
@@ -267,7 +262,7 @@ class Product(BaseModel):
     bestsellers_rank: Optional[List[BestsellersRank]] = None
     summarization_attributes: Optional[List[SummarizationAttributes]] = None
     amazons_choice: Optional[AmazonsChoice] = None
-    recent_sales: Optional[RecentSales] = None
+    recent_sales: Optional[str] = None
     climate_pledge_friendly: Optional[ClimatePledgeFriendly] = None
     kindle_unlimited: Optional[bool] = None
     has_coupon: Optional[bool] = None
