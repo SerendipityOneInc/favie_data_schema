@@ -19,7 +19,7 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
             return None
         
         favie_product = AmazonProductDetailConvert.convert_to_favie_product(crawler_detail_message)
-        f_spu_id = FavieProductUtils.gen_f_sku_id(favie_product)
+        f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
         if f_spu_id is None:    
             return None
         
