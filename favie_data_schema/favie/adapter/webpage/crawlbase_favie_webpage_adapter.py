@@ -3,7 +3,7 @@ from favie_data_schema.favie.adapter.webpage.common.favie_webpage_adapter import
 from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import ParsedWebPageContent
 from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import FavieSpiderData
 from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage,MetaInfo,ImageData,VideoData,ReferenceData
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from urllib.parse import urlparse
 
 
@@ -47,7 +47,7 @@ class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
 
 
 if __name__ == "__main__":
-    webpage_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/webpage_message.json", FavieSpiderData)
+    webpage_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/webpage_message.json", FavieSpiderData)
     webpage = CrawlbaseFavieWebpageAdapter.convert_to_favie_webpage(webpage_message)
     if webpage:
         print(webpage.model_dump_json(exclude_none=True))

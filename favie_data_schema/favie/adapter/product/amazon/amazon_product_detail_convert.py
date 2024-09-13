@@ -7,7 +7,7 @@ from favie_data_schema.favie.adapter.product.common.product_detail_crawler_messa
 from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.adapter.common.html_utils import HtmlUtils
 from datetime import datetime
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
@@ -294,7 +294,7 @@ class AmazonProductDetailConvert():
         return True
         
 def main():
-    amazon_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amozon_message_source_1.json",ProductDetailCrawlerMessage)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amozon_message_source_1.json",ProductDetailCrawlerMessage)
     favie_product = AmazonProductDetailConvert.convert_to_favie_product(amazon_message)
     print(favie_product.model_dump_json(exclude_none = True) if favie_product else None)
 
