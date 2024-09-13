@@ -480,29 +480,7 @@
                             "name":"recent_sales",
                             "type": [
                                 "null",
-                                {
-                                    "type": "record",
-                                    "namespace": "RainforestProductDetail.product",
-                                    "name": "RecentSales",
-                                    "fields": [
-                                        {
-                                            "name": "count",
-                                            "type": [
-                                                "null",
-                                                "long"
-                                            ],
-                                            "default": null
-                                        },
-                                        {
-                                            "name": "period",
-                                            "type": [
-                                                "null",
-                                                "string"
-                                            ],
-                                            "default": null
-                                        }
-                                    ]
-                                }
+                                "string"
                             ],
                             "default": null
                         },
