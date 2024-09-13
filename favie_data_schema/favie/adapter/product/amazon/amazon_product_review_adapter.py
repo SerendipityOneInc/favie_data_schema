@@ -129,7 +129,7 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
         favie_review.date_raw = review.date.raw if review.date is not None else None
         favie_review.date_utc = review.date.utc if review.date is not None else None
         favie_review.images = review.images
-        favie_review.videos = review.videos
+        favie_review.videos = None
         favie_review.position = review.position
         favie_review.f_meta = meta
         return favie_review

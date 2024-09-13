@@ -1,0 +1,323 @@
+{
+    "request_info": null,
+    "request_parameters": {
+        "amazon_domain": "amazon.com",
+        "asin": "B00008AWL3",
+        "type": "reviews"
+    },
+    "request_metadata": null,
+    "product": {
+        "title": "TRENDnet 24-Port Cat5-5e RJ-45 UTP Unshielded Patch Panel, Wallmount or Rackmount, 100Mhz, Color-Coded Labeling, Cat5,Cat5e,Cat4,Cat3 Compatible, 1U Rackmount, Black, TC-P24C5E",
+        "link": "https://www.amazon.com/TRENDnet-Unshielded-Connectors-Color-Coded-TC-P24C5E/dp/B00008AWL3/ref=cm_cr_arp_d_product_top?ie=UTF8",
+        "sub_title": {
+            "text": "TRENDnet",
+            "link": "https://www.amazon.com/stores/TRENDnet/page/069518DD-FE17-4E75-93EF-E99B9EEF8C21?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto"
+        },
+        "image": "https://m.media-amazon.com/images/I/412B6S7r4nL._AC_US60_SCLZZZZZZZ__.jpg",
+        "asin": "B00008AWL3"
+    },
+    "summary": {
+        "rating": 4.7,
+        "ratings_total": 453,
+        "ratings_total_filtered": 453,
+        "reviews_total_filtered": 172,
+        "reviews_total": 172,
+        "rating_breakdown": {
+            "five_star": {
+                "percentage": 82,
+                "count": 371
+            },
+            "four_star": {
+                "percentage": 9,
+                "count": 40
+            },
+            "three_star": {
+                "percentage": 4,
+                "count": 18
+            },
+            "two_star": {
+                "percentage": 2,
+                "count": 9
+            },
+            "one_star": {
+                "percentage": 2,
+                "count": 9
+            }
+        }
+    },
+    "reviews": [
+        {
+            "id": "R3QDIBFHM7MESR",
+            "title": "Great Patch Panel - Check dimensions before ordering",
+            "body": "24 Port Cat5This is a great patch panel. Don't be put off by the Krone blocks, it works perfectly well with a 110 punch, and TrendNet verifies this.The Krone blocks are actually rated for much higher freq than 110, though the angled connectors look odd.The layout is also a bit different as two pair land on top and two pair land on the bottom, This is also superior as there is a lot less unbundled wire if done properly. If you do a lot of patch panels it will take you a few minutes to get used to this, but once you've adjusted you can zip right along.This is the first one I've used, but won't be the last. The 24 port Cat 5, DID come with wire mngt clips and tie wraps.Patch panels typically DO NOT come with brackets or mounts, Trendnet and or Amazon should change the listing and drop the wall mount part of the description.Make sure you check the dimensions, if you are ordering something smaller than a 24 or 48 port. Some of the other sizes come in a 10\" version, and a 10\" rack is almost unknown in the USA.",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>24 Port Cat5<br/>This is a great patch panel. Don't be put off by the Krone blocks, it works perfectly well with a 110 punch, and TrendNet verifies this.<br/>The Krone blocks are actually rated for much higher freq than 110, though the angled connectors look odd.<br/>The layout is also a bit different as two pair land on top and two pair land on the bottom, This is also superior as there is a lot less unbundled wire if done properly. If you do a lot of patch panels it will take you a few minutes to get used to this, but once you've adjusted you can zip right along.<br/><br/>This is the first one I've used, but won't be the last. The 24 port Cat 5, DID come with wire mngt clips and tie wraps.<br/><br/>Patch panels typically DO NOT come with brackets or mounts, Trendnet and or Amazon should change the listing and drop the wall mount part of the description.<br/><br/>Make sure you check the dimensions, if you are ordering something smaller than a 24 or 48 port. Some of the other sizes come in a 10\" version, and a 10\" rack is almost unknown in the USA.</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/R3QDIBFHM7MESR/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": ["https://images-na.ssl-images-amazon.com/images/I/71FrvPkp-FL._SY88.jpg","https://images-na.ssl-images-amazon.com/images/I/71FrvPkp-FL._SY89.jpg"],
+            "videos": null,
+            "rating": 5,
+            "date": {
+                "raw": "Reviewed in the United States on March 30, 2016",
+                "utc": "2016-03-30T00:00:00Z"
+            },
+            "profile": {
+                "name": "Mike in Atl",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": 1
+        },
+        {
+            "id": "R1HOJQTQ63DC2D",
+            "title": "Exceptional value",
+            "body": "As someone who has installed more patch panels than he can remember in his career, I have seen and used them all. This product is a decent patch panel, especially at the price. I've used much more expensive panels that didn't come close to the quality or ease of use of this one. If you need a 1U 24-port patch panel, you could do far worse than choosing this one.",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>As someone who has installed more patch panels than he can remember in his career, I have seen and used them all. This product is a decent patch panel, especially at the price. I've used much more expensive panels that didn't come close to the quality or ease of use of this one. If you need a 1U 24-port patch panel, you could do far worse than choosing this one.</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/R1HOJQTQ63DC2D/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": [{"link":"https://www.amazon.com/gp/customer-reviews/R1AWTN3H5QCD3D/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3"},{"link":"https://www.amazon.com/gp/customer-reviews/R1AWTN3H5QCD3D/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL4"}],
+            "videos": null,
+            "rating": 5,
+            "date": {
+                "raw": "Reviewed in the United States on May 22, 2024",
+                "utc": "2024-05-22T00:00:00Z"
+            },
+            "profile": {
+                "name": "Justin H Scott",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": null
+        },
+        {
+            "id": "R1K3KI1NO9I6D",
+            "title": "Works Great For A First Timer",
+            "body": "I've been studying networking and network security in school but had never actually punched down a patch panel.  My parents needed one for their house with tons of wires, so I got this one to practice on.  It works great.The only thing that I had trouble with was the coloring on the back - I simply didn't read the diagram closely when I should have.  There were two strips of colors (568A and 568B) one on the left and one on the right.  While I knew of 568A/B, I didn't make the connection that was what the two diagrams were for - I thought one was for the left jacks and the other was for the right jacks.  A dumb moment.  Half were punched down A and the other half B.Later after figuring out my problem, I just repatched the wrong ones.  It wasn't that bad.This unit is still worth 5 stars.  The diagrams actually say which is A and which is B if you read them.  It looks fine, has numbers / can be labeled as well, and all ports work without issues.",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>I've been studying networking and network security in school but had never actually punched down a patch panel.  My parents needed one for their house with tons of wires, so I got this one to practice on.  It works great.<br/><br/>The only thing that I had trouble with was the coloring on the back - I simply didn't read the diagram closely when I should have.  There were two strips of colors (568A and 568B) one on the left and one on the right.  While I knew of 568A/B, I didn't make the connection that was what the two diagrams were for - I thought one was for the left jacks and the other was for the right jacks.  A dumb moment.  Half were punched down A and the other half B.<br/><br/>Later after figuring out my problem, I just repatched the wrong ones.  It wasn't that bad.<br/><br/>This unit is still worth 5 stars.  The diagrams actually say which is A and which is B if you read them.  It looks fine, has numbers / can be labeled as well, and all ports work without issues.</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/R1K3KI1NO9I6D/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": null,
+            "videos": null,
+            "rating": 5,
+            "date": {
+                "raw": "Reviewed in the United States on December 20, 2010",
+                "utc": "2010-12-20T00:00:00Z"
+            },
+            "profile": {
+                "name": "Russell D. Holloway",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": 3
+        },
+        {
+            "id": "R3VX1XULWKELK8",
+            "title": "One of the best brand",
+            "body": "When I do networking I always choose this brand. Good quality, reliable, easy to use and warranty is perfect. Don’t get me wrong, there is also other good brands. But this one for the price just do an excellent work.",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>When I do networking I always choose this brand. Good quality, reliable, easy to use and warranty is perfect. Don’t get me wrong, there is also other good brands. But this one for the price just do an excellent work.</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/R3VX1XULWKELK8/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": null,
+            "videos": null,
+            "rating": 5,
+            "date": {
+                "raw": "Reviewed in the United States on December 5, 2023",
+                "utc": "2023-12-05T00:00:00Z"
+            },
+            "profile": {
+                "name": "VIK",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": null
+        },
+        {
+            "id": "R1O9IU4S287OXU",
+            "title": "great patch pannels will use again",
+            "body": "used you patch panels in passed and have alwas like good quility of patch panel",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>used you patch panels in passed and have alwas like good quility of patch panel</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/R1O9IU4S287OXU/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": null,
+            "videos": null,
+            "rating": 5,
+            "date": {
+                "raw": "Reviewed in the United States on May 15, 2024",
+                "utc": "2024-05-15T00:00:00Z"
+            },
+            "profile": {
+                "name": "JASON S.",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": null
+        },
+        {
+            "id": "RN3IVML1TQ603",
+            "title": "Good product",
+            "body": "It was nice quality. Gave us no issues. Seems like nice quality.",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>It was nice quality. Gave us no issues. Seems like nice quality.</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/RN3IVML1TQ603/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": null,
+            "videos": null,
+            "rating": 4,
+            "date": {
+                "raw": "Reviewed in the United States on July 21, 2023",
+                "utc": "2023-07-21T00:00:00Z"
+            },
+            "profile": {
+                "name": "Tony Gunk",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": null
+        },
+        {
+            "id": "R2VR8UU7O4I178",
+            "title": "Well built with plenty of cable securing points.",
+            "body": "I used the Krone point on a TrendNet punch down tool on this 24 port patch panel. The front is flat which facilitates a good punch from behind (insert joke here). I initially inserted the plastic cable holders but found out the zip-ties would hold much better. The plastic holders were a pain to remove, but a small sharp curved pick and some leverage did the trick. A few of the points required a second soft push with the tool, but overall I was very satisfied with how easy, consistent, and secure the connections were. The printed color codes could line up a bit better with the points but not hard at all to figure them out. I found 1.25-1.5 inch of stripped jacket (see picture) was the perfect amount to easily be able to set the wires with your fingers. Would recommend.",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>I used the Krone point on a TrendNet punch down tool on this 24 port patch panel. The front is flat which facilitates a good punch from behind (insert joke here). I initially inserted the plastic cable holders but found out the zip-ties would hold much better. The plastic holders were a pain to remove, but a small sharp curved pick and some leverage did the trick. A few of the points required a second soft push with the tool, but overall I was very satisfied with how easy, consistent, and secure the connections were. The printed color codes could line up a bit better with the points but not hard at all to figure them out. I found 1.25-1.5 inch of stripped jacket (see picture) was the perfect amount to easily be able to set the wires with your fingers. Would recommend.</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/R2VR8UU7O4I178/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": [
+                "https://images-na.ssl-images-amazon.com/images/I/71FrvPkp-FL._SY88.jpg"
+            ],
+            "videos": null,
+            "rating": 5,
+            "date": {
+                "raw": "Reviewed in the United States on January 14, 2019",
+                "utc": "2019-01-14T00:00:00Z"
+            },
+            "profile": {
+                "name": "Korben Dallas",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": 1
+        },
+        {
+            "id": "R8463EIDJ61YQ",
+            "title": "Great patch panel.",
+            "body": "I decided that I was tired of dealing with buffering video so decided to wire the house with network cables.  I ran them all down to a central location in the basement.  That's where I'm using this patch panel.  I went with this 24 port patch panel for future expansion.  I'm only using about half of the ports, but the patch panel has performed flawlessly.  I like that there is a legend on the back of the panel showing either 568A or 568B.  It makes it easy to wire it up as you need it.  I'm happy I went with this patch panel.",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>I decided that I was tired of dealing with buffering video so decided to wire the house with network cables.  I ran them all down to a central location in the basement.  That's where I'm using this patch panel.  I went with this 24 port patch panel for future expansion.  I'm only using about half of the ports, but the patch panel has performed flawlessly.  I like that there is a legend on the back of the panel showing either 568A or 568B.  It makes it easy to wire it up as you need it.  I'm happy I went with this patch panel.</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/R8463EIDJ61YQ/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": null,
+            "videos": null,
+            "rating": 5,
+            "date": {
+                "raw": "Reviewed in the United States on June 2, 2016",
+                "utc": "2016-06-02T00:00:00Z"
+            },
+            "profile": {
+                "name": "Greg S. in MD",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": null
+        },
+        {
+            "id": "R2PH70V83O43V9",
+            "title": "It works",
+            "body": "It works",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>It works</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/R2PH70V83O43V9/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": null,
+            "videos": null,
+            "rating": 5,
+            "date": {
+                "raw": "Reviewed in the United States on December 3, 2023",
+                "utc": "2023-12-03T00:00:00Z"
+            },
+            "profile": {
+                "name": "2Cents",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/06170901-7228-4be2-aa98-1e66cb7ccd13._CR3,0,494,494_SX48_.jpg"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": null
+        },
+        {
+            "id": "R1AWTN3H5QCD3D",
+            "title": "Different connection scheme",
+            "body": "Well made, secure wire connections. Be careful with the wire arrangements. Two pairs are wired up and two down. Most panels wire in a single row. Also the solid/stripe pair sequencing is different for one pair. Did not come with the screws for the rack mount.",
+            "asin": "B00008AWL3",
+            "body_html": "<span class=\"a-size-base review-text review-text-content\" data-hook=\"review-body\">\n<span>Well made, secure wire connections. Be careful with the wire arrangements. Two pairs are wired up and two down. Most panels wire in a single row. Also the solid/stripe pair sequencing is different for one pair. Did not come with the screws for the rack mount.</span>\n</span>",
+            "link": "https://www.amazon.com/gp/customer-reviews/R1AWTN3H5QCD3D/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B00008AWL3",
+            "images": null,
+            "videos": null,
+            "rating": 4,
+            "date": {
+                "raw": "Reviewed in the United States on April 27, 2022",
+                "utc": "2022-04-27T00:00:00Z"
+            },
+            "profile": {
+                "name": "jimbo",
+                "link": null,
+                "id": null,
+                "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png"
+            },
+            "vine_program": null,
+            "verified_purchase": true,
+            "review_country": "United States",
+            "is_global_review": false,
+            "position": null,
+            "helpful_votes": null
+        }
+    ],
+    "pagination": null
+}
