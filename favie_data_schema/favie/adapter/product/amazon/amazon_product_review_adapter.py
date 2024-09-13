@@ -49,8 +49,21 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
             parser_name=f'{crawler_review_message.parser_name}-adapter',
             parses_at=str(int(CommonUtils.current_timestamp()))
         )
+        summary:Summary = crawl_result.summary
+        rating_breakdown: RFRatingBreakdown | None = summary.rating_breakdown
         
-        favie_review_summary.summary = AmazonProductReviewAdapter.__get_summary(crawl_result.summary)
+        favie_review_summary.rating=summary.rating
+        favie_review_summary.ratings_total=summary.ratings_total
+        favie_review_summary.ratings_total_filtered=summary.ratings_total_filtered
+        if rating_breakdown:
+            favie_review_summary.five_star=rating_breakdown.five_star.count if rating_breakdown.five_star is not None else None
+            favie_review_summary.four_star=rating_breakdown.four_star.count if rating_breakdown.four_star is not None else None
+            favie_review_summary.three_star=rating_breakdown.three_star.count if rating_breakdown.three_star is not None else None
+            favie_review_summary.two_star=rating_breakdown.two_star.count if rating_breakdown.two_star is not None else None
+            favie_review_summary.one_star=rating_breakdown.one_star.count if rating_breakdown.one_star is not None else None
+        favie_review_summary.reviews_total=summary.reviews_total
+        favie_review_summary.reviews_total_filtered=summary.reviews_total_filtered
+
         return favie_review_summary
     
     @staticmethod
@@ -83,29 +96,8 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
         if CommonUtils.all_none(crawler_review_message.crawl_result.product.asin,crawler_review_message.crawl_result.product.parent_asin):
             return False
         return True
-    
-    @staticmethod
-    def __get_summary(summary:Summary)->ReviewSummary:
-        review_summary = ReviewSummary(
-            rating=summary.rating,
-            ratings_total=summary.ratings_total,
-            ratings_total_filtered=summary.ratings_total_filtered,
-            rating_breakdown=AmazonProductReviewAdapter.__convert_rating_breakdown(summary.rating_breakdown),
-            reviews_total=summary.reviews_total,
-            reviews_total_filtered=summary.reviews_total_filtered,
+
             
-        )
-        return review_summary
-    
-    def __convert_rating_breakdown(rating_breakdown:RFRatingBreakdown)->RatingBreakdown:
-        return RatingBreakdown(
-            five_star=rating_breakdown.five_star.count if rating_breakdown.five_star is not None else None,
-            four_star=rating_breakdown.four_star.count if rating_breakdown.four_star is not None else None,
-            three_star=rating_breakdown.three_star.count if rating_breakdown.three_star is not None else None,
-            two_star=rating_breakdown.two_star.count if rating_breakdown.two_star is not None else None,
-            one_star=rating_breakdown.one_star.count if rating_breakdown.one_star is not None else None
-        )
-        
     def __convert_review(*,review:Reviews,site,spu_id,sku_id,meta)->FavieProductReview:
         favie_review = FavieProductReview()
         favie_review.site = site
@@ -158,6 +150,6 @@ def test_crawl_review_to_product_review():
         print(favie_review.model_dump_json(exclude_none=True))
 
 if __name__ == "__main__":
-    test_crawl_review_to_product_review()
-    test_crawl_detail_to_product_review()
+    # test_crawl_review_to_product_review()
+    # test_crawl_detail_to_product_review()
     test_crawl_review_to_product_review_summary()

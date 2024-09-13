@@ -14,12 +14,28 @@ class MetaInfo(BaseModel):
     source_4_updates_at: Optional[str] = None
     source_5_updates_at: Optional[str] = None
 
-class RatingBreakdown(BaseModel):
+class FavieProductReviewSummary(BaseModel):
+    f_spu_id: Optional[str] = None
+    site: Optional[str] = None
+    spu_id: Optional[str] = None
+    sku_id: Optional[str] = None
+    rating: Optional[float] = None
+    ratings_total: Optional[int] = None
+    ratings_total_filtered: Optional[int] = None
     five_star: Optional[int] = None
     four_star: Optional[int] = None
     three_star: Optional[int] = None
     two_star: Optional[int] = None
     one_star: Optional[int] = None
+    recommended_percentage: Optional[float] = None
+    reviews_total: Optional[int] = None
+    reviews_total_filtered: Optional[int] = None
+    top_reviews: Optional[List[str]] = None
+    top_favourable: Optional[str] = None
+    top_critical: Optional[str] = None
+    f_updates_at: Optional[str] = None
+    f_meta: Optional[MetaInfo] = None
+    f_creates_at: Optional[str] = None
 
 class Price(BaseModel):
     lower_value: Optional[int] = None
@@ -124,6 +140,13 @@ class ReturnPolicy(BaseModel):
     free_returns: Optional[bool] = None
     returns_raw: Optional[str] = None
 
+class RatingBreakdown(BaseModel):
+    five_star: Optional[int] = None
+    four_star: Optional[int] = None
+    three_star: Optional[int] = None
+    two_star: Optional[int] = None
+    one_star: Optional[int] = None
+
 class SimpleProduct(BaseModel):
     f_sku_id: Optional[str] = None
     source: Optional[str] = None
@@ -167,19 +190,6 @@ class FavieProductReview(BaseModel):
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None
 
-class ReviewSummary(BaseModel):
-    rating: Optional[float] = None
-    ratings_total: Optional[int] = None
-    ratings_total_filtered: Optional[int] = None
-    rating_breakdown: Optional[RatingBreakdown] = None
-    recommended_percentage: Optional[float] = None
-    reviews_total: Optional[int] = None
-    reviews_total_filtered: Optional[int] = None
-    top_reviews: Optional[List[str]] = None
-    top_favourable: Optional[str] = None
-    top_critical: Optional[str] = None
-    f_updates_at: Optional[str] = None
-
 class StandardAttributes(BaseModel):
     is_used: Optional[bool] = None
     is_bundle: Optional[bool] = None
@@ -204,15 +214,18 @@ class Delivery(BaseModel):
     comments: Optional[str] = None
     price: Optional[DeliveryPrice] = None
 
-class FavieProductReviewSummary(BaseModel):
-    f_spu_id: Optional[str] = None
-    site: Optional[str] = None
-    spu_id: Optional[str] = None
-    sku_id: Optional[str] = None
-    summary: Optional[ReviewSummary] = None
-    f_meta: Optional[MetaInfo] = None
+class ReviewSummary(BaseModel):
+    rating: Optional[float] = None
+    ratings_total: Optional[int] = None
+    ratings_total_filtered: Optional[int] = None
+    rating_breakdown: Optional[RatingBreakdown] = None
+    recommended_percentage: Optional[float] = None
+    reviews_total: Optional[int] = None
+    reviews_total_filtered: Optional[int] = None
+    top_reviews: Optional[List[str]] = None
+    top_favourable: Optional[str] = None
+    top_critical: Optional[str] = None
     f_updates_at: Optional[str] = None
-    f_creates_at: Optional[str] = None
 
 class Offer(BaseModel):
     price: Optional[Price] = None
