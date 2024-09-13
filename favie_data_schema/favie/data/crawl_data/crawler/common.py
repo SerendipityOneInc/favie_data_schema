@@ -1,6 +1,4 @@
 from enum import IntEnum
-
-
 class Source(IntEnum):
     # 未知
     UNKNOWN = 0
@@ -14,4 +12,3 @@ class Source(IntEnum):
     EXTERNAL_PURCHASE_DATA = 4
     #内部处理数据，包含离线修复数据
     INTERNAL_PROCESS = 5
-    

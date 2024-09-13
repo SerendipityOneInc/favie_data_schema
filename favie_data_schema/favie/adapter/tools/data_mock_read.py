@@ -3,7 +3,7 @@ from typing import Any, Dict, Type
 
 from pydantic import BaseModel
     
-def read_mock_data(file_path: str , model :Type[BaseModel]) -> BaseModel:
+def read_object(file_path: str , model :Type[BaseModel]) -> BaseModel:
     with open(file_path, 'r') as file:
         
         data = json.load(file)

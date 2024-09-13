@@ -6,7 +6,7 @@ from favie_data_schema.favie.adapter.product.common.favie_product_utils import F
 from favie_data_schema.favie.adapter.product.common.product_detail_crawler_message import ProductDetailCrawlerMessage
 from favie_data_schema.favie.data.interface.product.favie_product_detail import *
 from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_mock_data
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 import logging
 
 from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
@@ -33,7 +33,7 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
     
     
 def main():
-    amazon_message = read_mock_data("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json",ProductDetailCrawlerMessage)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json",ProductDetailCrawlerMessage)
     favie_reviews = AmazonProductReviewAdapter.convert_to_favie_review(amazon_message)
     if favie_reviews is None:
         return None
