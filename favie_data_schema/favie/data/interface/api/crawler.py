@@ -54,7 +54,7 @@ class CrawlerProductReviewDataResponse(BaseModel):
     """Crawler product review data response model."""
 
     status: CrawlerStatus
-    data: Optional[FavieProductReview] = None
+    data: Optional[list[FavieProductReview]] = None
 
 
 class MainImage(BaseModel):
