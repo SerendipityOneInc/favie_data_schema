@@ -5,3 +5,5 @@ from favie_data_schema.favie.adapter.product.amazon.amazon_product_review_adapte
 from favie_data_schema.favie.adapter.webpage.crawlbase_favie_webpage_adapter import *
 from favie_data_schema.favie.adapter.common.deserialize_utils import *
 from favie_data_schema.favie.adapter.product.common.product_crawler_message import *
+from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.interface.webpage.favie_webpage import *
