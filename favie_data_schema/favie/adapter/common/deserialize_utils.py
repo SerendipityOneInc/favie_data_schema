@@ -1,11 +1,7 @@
 import json
 import logging
 
-<<<<<<< HEAD
 from favie_data_common.common.common_utils import CommonUtils
-=======
-from favie_common.common.common_utils import CommonUtils
->>>>>>> e263236dffc4faa6df70266ca65b2b9f230bb8a3
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import RainforestProductReview
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 
