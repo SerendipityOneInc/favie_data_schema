@@ -15,6 +15,8 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_revie
     RainforestProductReview,
 )
 
+from favie_data_schema.favie.data.interface.product.favie_product import FavieProductDetail, FavieProductReview
+from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage
 
 class CrawlerStatus(Enum):
     """每个资源的状态"""
@@ -36,28 +38,27 @@ class CrawlerDataResponse(BaseModel):
     """Crawler data response model."""
 
     status: CrawlerStatus
-    data: Optional[FavieSpiderData] = None
+    data: Optional[FavieWebpage] = None
 
 
 class CrawlerProductDataRequest(BaseModel):
     """Crawler product data request model."""
 
     product_id: Optional[str] = None
-    url: Optional[str] = None
 
 
 class CrawlerProductDataResponse(BaseModel):
     """Crawler product data response model."""
 
     status: CrawlerStatus
-    data: Optional[FavieSpiderProductData] = None
+    data: Optional[FavieProductDetail] = None
 
 
 class CrawlerProductReviewDataResponse(BaseModel):
     """Crawler product review data response model."""
 
     status: CrawlerStatus
-    data: Optional[RainforestProductReview] = None
+    data: Optional[list[FavieProductReview]] = None
 
 
 class MainImage(BaseModel):
