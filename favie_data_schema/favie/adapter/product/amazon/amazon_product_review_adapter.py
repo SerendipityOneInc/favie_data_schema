@@ -6,7 +6,7 @@ from favie_data_schema.favie.adapter.product.common.favie_product_utils import F
 from favie_data_schema.favie.adapter.product.common.product_crawler_message import ProductDetailCrawlerMessage, ProductReviewCrawlerMessage
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import RatingBreakdown as RFRatingBreakdown, Summary,Reviews
 from favie_data_schema.favie.data.interface.product.favie_product import FavieProductReview, FavieProductReviewSummary, MetaInfo,ReviewSummary,RatingBreakdown
-from favie_common.common.common_utils import CommonUtils
+from favie_data_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 import logging
 

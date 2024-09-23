@@ -3,7 +3,7 @@ import json
 import logging
 import os
 from typing import ForwardRef, List, Optional, Union, get_args, get_origin
-from favie_common.common.common_utils import CommonUtils
+from favie_data_common.common.common_utils import CommonUtils
 from pydantic import BaseModel, Field
 
 
