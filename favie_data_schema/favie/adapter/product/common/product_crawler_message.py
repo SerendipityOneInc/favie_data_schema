@@ -12,7 +12,8 @@ class ProductDetailCrawlerMessage(BaseModel):
     parser_name : Optional[str] = None,
     crawl_result: Optional[RainforestProductDetail] = None
     raw_result: Optional[str] = None
-    
+    create_time: Optional[str] = None
+    update_time: Optional[str] = None
 class ProductReviewCrawlerMessage(BaseModel):
     url : Optional[str] = None,
     host: Optional[str] = None,
@@ -22,3 +23,5 @@ class ProductReviewCrawlerMessage(BaseModel):
     parser_name : Optional[str] = None,
     crawl_result: Optional[RainforestProductReview] = None
     raw_result: Optional[str] = None
+    create_time: Optional[str] = None
+    update_time: Optional[str] = None
