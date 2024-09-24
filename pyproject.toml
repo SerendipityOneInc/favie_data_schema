@@ -12,7 +12,7 @@ readme = "README.md"
 python = "^3.10"
 pydantic = "2.6.4"
 pydantic-settings = "2.2.1"
-favie-data-common = {git = "https://github.com/SerendipityOneInc/favie-data-common.git", rev="0.0.1-alpha.2"}
+favie-data-common = {git = "https://github.com/SerendipityOneInc/favie-data-common.git", rev="0.0.1"}
 
 
 [build-system]

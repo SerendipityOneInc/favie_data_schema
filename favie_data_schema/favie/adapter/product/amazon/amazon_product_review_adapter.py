@@ -44,7 +44,7 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
         
         favie_review_summary.spu_id = crawl_result.product.parent_asin
         favie_review_summary.sku_id = crawl_result.product.asin
-        favie_review_summary.site = CommonUtils.get_domain(crawler_review_message.host)
+        favie_review_summary.site = CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(crawler_review_message.host))
         favie_review_summary.f_meta = MetaInfo(
             source_type = str(crawler_review_message.source),
             parser_name=f'{crawler_review_message.parser_name}-adapter',
@@ -81,7 +81,7 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
         )
         return [AmazonProductReviewAdapter.__convert_review(
                 review=review,
-                site=CommonUtils.get_domain(crawler_review_message.host),
+                site=CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(crawler_review_message.host)),
                 spu_id=crawl_result.product.parent_asin,
                 sku_id=crawl_result.product.asin,
                 meta=meta) for review in crawl_result.reviews if review is not None]
