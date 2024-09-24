@@ -257,6 +257,7 @@ class FavieProductDetail(BaseModel):
     rich_product_description: Optional[str] = None
     price: Optional[Price] = None
     rrp: Optional[Price] = None
+    historical_prices: Optional[List[Price]] = None
     f_status: Optional[str] = None
     images: Optional[Images] = None
     f_images: Optional[Images] = None
