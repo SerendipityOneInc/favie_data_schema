@@ -11,8 +11,8 @@ from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.adapter.common.html_utils import HtmlUtils
 from datetime import datetime
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
+from favie_data_schema.favie.data.interface.product.product_enum import DataType
 import logging
-
 
 class AmazonProductDetailConvert():
     @staticmethod
@@ -66,6 +66,7 @@ class AmazonProductDetailConvert():
         favie_product.f_meta = MetaInfo(
             source_type = str(amazon_message.source),
             parser_name = f"{amazon_message.parser_name}-adapter",
+            data_type= str(DataType.PRODUCT_DETAIL.value),
             parses_at = str(int(datetime.now().timestamp()))
         )
         favie_product.f_status = FavieProductDetailStatus.SKU_NORMAL.name

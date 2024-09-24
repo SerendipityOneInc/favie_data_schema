@@ -1587,6 +1587,14 @@
               "default": null
             },
             {
+              "name": "data_type",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
               "name": "f_categories_update_at",
               "type": [
                 "null",

@@ -5,8 +5,8 @@ from favie_data_schema.favie.data.crawl_data.crawler.list_crawler_message import
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.crawl_data.crawler.amazon_list_crawler_result import AmazonListCrawlResult
-from datetime import datetime
-import logging,json
+from favie_data_schema.favie.data.interface.product.product_enum import DataType
+import logging
 
 adapter_config = {
     "RainforestStandardV2ProductListParser":AmazoneListResultAdapter,
@@ -35,6 +35,7 @@ class ListCrawlerAdapter(FavieProductDetailAdapter):
         return MetaInfo(
             source_type = Source.SPIDER,
             parser_name = message.parser_name,
+            data_type = str(DataType.PRODUCT_LIST.value),
             parses_at = message.create_time 
         )
             
