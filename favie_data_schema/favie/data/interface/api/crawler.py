@@ -46,19 +46,17 @@ class CrawlerProductDataResponse(BaseModel):
     status: CrawlerStatus
     data: Optional[FavieProductDetail] = None
 
+class CrawlerProductReviewData(BaseModel):
+    """Crawler product review data model."""
+    review_summary: Optional[ReviewSummary] = None
+    reviews: Optional[list[FavieProductReview]] = None
 
 class CrawlerProductReviewDataResponse(BaseModel):
     """Crawler product review data response model."""
 
     status: CrawlerStatus
-    data: Optional[list[FavieProductReview]] = None
+    data: Optional[CrawlerProductReviewData] = None
 
-
-class CrawlerProductReviewData(BaseModel):
-    """Crawler product review data model."""
-    review_summary: Optional[ReviewSummary] = None
-    reviews: Optional[list[FavieProductReview]] = None
-    
 class MainImage(BaseModel):
     """
     Main image schema.
