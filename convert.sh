@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-
+pip install python-dateutil
 echo "合并Product avro代码..."
 python -m favie_data_schema.favie.tools.combine_schemas_with_unique_define --source-directory="avsc/interface/product/source_code" --output-file="avsc/interface/product/output_code/favie_product_detail.avsc" --main-schema="favie.data.interface.product.FavieProductDetail"
 python -m favie_data_schema.favie.tools.combine_schemas_with_unique_define --source-directory="avsc/interface/product/source_code" --output-file="avsc/interface/product/output_code/favie_product_review.avsc" --main-schema="favie.data.interface.product.FavieProductReview"
