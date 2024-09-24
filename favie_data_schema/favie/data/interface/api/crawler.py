@@ -6,16 +6,9 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import (
     ContentType,
-    FavieSpiderData,
-)
-from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_product_data import (
-    FavieSpiderProductData,
-)
-from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import (
-    RainforestProductReview,
 )
 
-from favie_data_schema.favie.data.interface.product.favie_product import FavieProductDetail, FavieProductReview
+from favie_data_schema.favie.data.interface.product.favie_product import FavieProductDetail, FavieProductReview, ReviewSummary
 from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage
 
 class CrawlerStatus(Enum):
@@ -61,6 +54,11 @@ class CrawlerProductReviewDataResponse(BaseModel):
     data: Optional[list[FavieProductReview]] = None
 
 
+class CrawlerProductReviewData(BaseModel):
+    """Crawler product review data model."""
+    review_summary: Optional[ReviewSummary] = None
+    reviews: Optional[list[FavieProductReview]] = None
+    
 class MainImage(BaseModel):
     """
     Main image schema.
