@@ -1,4 +1,4 @@
-from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
+from favie_data_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.webpage.common.favie_webpage_adapter import FavieWebpageAdapter
 from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import ParsedWebPageContent
 from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import FavieSpiderData

@@ -1,16 +1,8 @@
 {
   "namespace": "favie.data.interface.product",
   "type": "record",
-  "name": "FavieProductReview",
+  "name": "FavieProductReviewSummary",
   "fields": [
-    {
-      "name": "f_review_id",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
     {
       "name": "f_spu_id",
       "type": [
@@ -44,68 +36,6 @@
       "default": null
     },
     {
-      "name": "review_id",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "title",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "body",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "body_html",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "link",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "images",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "string"
-        }
-      ],
-      "default": null
-    },
-    {
-      "name": "videos",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "string"
-        }
-      ],
-      "default": null
-    },
-    {
       "name": "rating",
       "type": [
         "null",
@@ -114,79 +44,7 @@
       "default": null
     },
     {
-      "name": "date_raw",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "date_utc",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "author_name",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "author_id",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "author_url",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "vine_program",
-      "type": [
-        "null",
-        "boolean"
-      ],
-      "default": null
-    },
-    {
-      "name": "verified_purchase",
-      "type": [
-        "null",
-        "boolean"
-      ],
-      "default": null
-    },
-    {
-      "name": "review_country",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "is_global_review",
-      "type": [
-        "null",
-        "boolean"
-      ],
-      "default": null
-    },
-    {
-      "name": "position",
+      "name": "ratings_total",
       "type": [
         "null",
         "int"
@@ -194,7 +52,7 @@
       "default": null
     },
     {
-      "name": "helpful_votes",
+      "name": "ratings_total_filtered",
       "type": [
         "null",
         "int"
@@ -202,10 +60,101 @@
       "default": null
     },
     {
-      "name": "unhelpful_votes",
+      "name": "five_star",
       "type": [
         "null",
         "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "four_star",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "three_star",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "two_star",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "one_star",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "recommended_percentage",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    },
+    {
+      "name": "reviews_total",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "reviews_total_filtered",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "top_reviews",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "top_favourable",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "top_critical",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "f_updates_at",
+      "type": [
+        "null",
+        "string"
       ],
       "default": null
     },

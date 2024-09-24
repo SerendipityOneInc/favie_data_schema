@@ -2,10 +2,7 @@ import base64
 import gzip
 from urllib.parse import urlparse
 from lxml import html
-import re
-import hashlib
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
-import tldextract
 
 class HtmlUtils():
     @staticmethod

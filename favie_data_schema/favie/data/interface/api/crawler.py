@@ -6,15 +6,10 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import (
     ContentType,
-    FavieSpiderData,
-)
-from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_product_data import (
-    FavieSpiderProductData,
-)
-from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import (
-    RainforestProductReview,
 )
 
+from favie_data_schema.favie.data.interface.product.favie_product import FavieProductDetail, FavieProductReview, ReviewSummary
+from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage
 
 class CrawlerStatus(Enum):
     """每个资源的状态"""
@@ -36,29 +31,31 @@ class CrawlerDataResponse(BaseModel):
     """Crawler data response model."""
 
     status: CrawlerStatus
-    data: Optional[FavieSpiderData] = None
+    data: Optional[FavieWebpage] = None
 
 
 class CrawlerProductDataRequest(BaseModel):
     """Crawler product data request model."""
 
     product_id: Optional[str] = None
-    url: Optional[str] = None
 
 
 class CrawlerProductDataResponse(BaseModel):
     """Crawler product data response model."""
 
     status: CrawlerStatus
-    data: Optional[FavieSpiderProductData] = None
+    data: Optional[FavieProductDetail] = None
 
+class CrawlerProductReviewData(BaseModel):
+    """Crawler product review data model."""
+    review_summary: Optional[ReviewSummary] = None
+    reviews: Optional[list[FavieProductReview]] = None
 
 class CrawlerProductReviewDataResponse(BaseModel):
     """Crawler product review data response model."""
 
     status: CrawlerStatus
-    data: Optional[RainforestProductReview] = None
-
+    data: Optional[CrawlerProductReviewData] = None
 
 class MainImage(BaseModel):
     """

@@ -3,6 +3,7 @@ from pydantic import BaseModel, Field
 import json
 
 class ListCrawlerMessage(BaseModel):
+    host: Optional[str] = None,
     product_id: Optional[str] = None
     parser_name: Optional[str] = None
     title: Optional[str] = None

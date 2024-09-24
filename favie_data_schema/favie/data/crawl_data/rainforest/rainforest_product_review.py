@@ -39,6 +39,7 @@ class Product(BaseModel):
     link: Optional[str] = None
     sub_title: Optional[SubTitle] = None
     image: Optional[str] = None
+    parent_asin: Optional[str] = None
     asin: Optional[str] = None
 
 

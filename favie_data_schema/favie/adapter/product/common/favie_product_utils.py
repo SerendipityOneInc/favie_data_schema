@@ -1,30 +1,32 @@
-from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
-from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
-from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
+from favie_data_common.common.common_utils import CommonUtils
+from favie_data_schema.favie.data.interface.product.favie_product import FavieProductDetail,FavieProductReview
 
 class FavieProductUtils():    
     @staticmethod
     def gen_f_sku_id(product:FavieProductDetail):
         if(product is None):
             return None
-        if(CommonUtils.all_not_none(product.sku_id,product.site)):
-            return f"{product.sku_id}-{product.site}"
-        return None
+        return FavieProductUtils.gen_f_id(id=product.sku_id,site=product.site)
 
     @staticmethod
     def gen_f_spu_id(product: FavieProductDetail):
         if(product is None):
             return None
         spu_id = product.spu_id if product.spu_id is not None else product.sku_id
-        if(CommonUtils.all_not_none(spu_id,product.site)):
-            return f"{spu_id}-{product.site}"
+        return FavieProductUtils.gen_f_id(id=spu_id,site=product.site)
         
     @staticmethod
-    def gen_review_id(spu_id: str, review: FavieProductReview):
-        if(CommonUtils.any_none(spu_id,review.review_id)):
+    def gen_f_review_id(review: FavieProductReview):
+        if(review.site is None):
             return None
-        review_id = review.review_id if review.review_id is not None else CommonUtils.md5_hash(f'{review.author_id}-{review.author_name}-{review.link}-{review.position}')
-        return f"{spu_id}-{review_id}"
+        review_id = review.review_id if review.review_id else CommonUtils.md5_hash(f'{review.author_id}-{review.author_name}-{review.link}-{review.position}')
+        return FavieProductUtils.gen_f_id(id=review_id,site=review.site)
+    
+    @staticmethod
+    def gen_f_id(*,id:str,site:str):
+        if CommonUtils.any_none(id,site):
+            return None
+        return f"{id}-{site}"
     
     @staticmethod
     def get_product_price(product):

@@ -1,12 +1,10 @@
-from favie_data_schema.favie.adapter.product.common.product_detail_crawler_message import ProductDetailCrawlerMessage
-from favie_data_schema.favie.data.interface.product.favie_product_detail import *
+from favie_data_schema.favie.adapter.product.common.product_crawler_message import ProductDetailCrawlerMessage
+from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail, TopReviews
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
-from favie_data_schema.favie.adapter.common.common_utils import CommonUtils
-import logging
+from favie_data_common.common.common_utils import CommonUtils
 from datetime import datetime
-
-from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
+import logging
 
 class AmazonProductReviewConvert():
     @staticmethod
@@ -14,10 +12,10 @@ class AmazonProductReviewConvert():
         if not AmazonProductReviewConvert.__check(crawler_kafka_message):
             return None
         reviews = crawler_kafka_message.crawl_result.product.top_reviews
-        favie_reviews:List[FavieProductReview] = [AmazonProductReviewConvert.__convert_to_favie_review(x) for x in reviews if x is not None] if reviews is not None else None
+        favie_reviews:List[FavieProductReview] = [AmazonProductReviewConvert.__convert_to_favie_review(x,crawler_kafka_message.source,crawler_kafka_message.parser_name,crawler_kafka_message.update_time) for x in reviews if x is not None] if reviews is not None else None
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
     
-    def __convert_to_favie_review(review: TopReviews)->FavieProductReview:
+    def __convert_to_favie_review(review: TopReviews,source,parser_name:str,parse_time:str) -> FavieProductReview:
         if(review is None): 
             return None
         favie_review = FavieProductReview()
@@ -27,16 +25,32 @@ class AmazonProductReviewConvert():
         favie_review.review_id = review.id
         favie_review.link = review.link
         favie_review.body = review.body
+        favie_review.body_html = review.body_html
         favie_review.title = review.title
         favie_review.helpful_votes = review.helpful_votes
         favie_review.vine_program = review.vine_program
         favie_review.verified_purchase = review.verified_purchase
         favie_review.is_global_review = review.is_global_review
         favie_review.review_country = review.review_country
-        now = str(int(datetime.now().timestamp()))
-        favie_review.f_creates_at = now
-        favie_review.f_updates_at = now
+        favie_review.rating = review.rating
+        favie_review.date_raw = review.date.raw if review.date is not None else None
+        favie_review.date_utc = review.date.utc if review.date is not None else None
+        favie_review.images = None
+        favie_review.videos = None
+        favie_review.f_meta = MetaInfo(
+            source_type = str(source),
+            parser_name = f"{parser_name}-adapter",
+            parses_at = AmazonProductReviewConvert.get_parse_time(parse_time)
+        )
         return favie_review
+    
+    @staticmethod
+    def get_parse_time(parse_time: str):    
+        try:
+            return str(int(CommonUtils.datetime_string_to_timestamp(parse_time)))
+        except Exception as e:
+            logging.exception("get_parse_time error: %s", parse_time)
+            return str(int(datetime.now().timestamp()))    
     
     @staticmethod
     def __check(crawler_kafka_message: RainforestProductDetail):
