@@ -1,7 +1,7 @@
 from favie_data_schema.favie.adapter.product.common.currency import CurrencyConverter
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductDetailAdapter
 from favie_data_schema.favie.data.interface.product.favie_product import *
-from favie_data_schema.favie.data.crawl_data.crawler.amazon_list_crawler_result import AmazonListCrawlResult,Price as AmazonPrice
+from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import AmazonListCrawlResult,Price as AmazonPrice
 from favie_data_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 

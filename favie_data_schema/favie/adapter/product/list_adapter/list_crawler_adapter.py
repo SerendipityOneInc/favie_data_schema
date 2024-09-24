@@ -5,7 +5,7 @@ from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.adapter.product.common.list_crawler_message import ListCrawlerMessage
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
-from favie_data_schema.favie.data.crawl_data.crawler.amazon_list_crawler_result import AmazonListCrawlResult
+from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import AmazonListCrawlResult
 from favie_data_schema.favie.data.interface.product.product_enum import DataType
 from favie_data_common.common.common_utils import CommonUtils
 import logging
