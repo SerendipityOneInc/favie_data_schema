@@ -4,6 +4,7 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_common.common.common_utils import CommonUtils
 from datetime import datetime
+import logging
 
 class AmazonProductReviewConvert():
     @staticmethod
@@ -11,10 +12,10 @@ class AmazonProductReviewConvert():
         if not AmazonProductReviewConvert.__check(crawler_kafka_message):
             return None
         reviews = crawler_kafka_message.crawl_result.product.top_reviews
-        favie_reviews:List[FavieProductReview] = [AmazonProductReviewConvert.__convert_to_favie_review(x,crawler_kafka_message.source,crawler_kafka_message.parser_name) for x in reviews if x is not None] if reviews is not None else None
+        favie_reviews:List[FavieProductReview] = [AmazonProductReviewConvert.__convert_to_favie_review(x,crawler_kafka_message.source,crawler_kafka_message.parser_name,crawler_kafka_message.update_time) for x in reviews if x is not None] if reviews is not None else None
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
     
-    def __convert_to_favie_review(review: TopReviews,source,parser_name:str)->FavieProductReview:
+    def __convert_to_favie_review(review: TopReviews,source,parser_name:str,parse_time:str) -> FavieProductReview:
         if(review is None): 
             return None
         favie_review = FavieProductReview()
@@ -39,11 +40,17 @@ class AmazonProductReviewConvert():
         favie_review.f_meta = MetaInfo(
             source_type = str(source),
             parser_name = f"{parser_name}-adapter",
-            parses_at = str(int(datetime.now().timestamp()))
+            parses_at = AmazonProductReviewConvert.get_parse_time(parse_time)
         )
         return favie_review
     
-    
+    @staticmethod
+    def get_parse_time(parse_time: str):    
+        try:
+            return str(int(CommonUtils.datetime_string_to_timestamp(parse_time)))
+        except Exception as e:
+            logging.exception("get_parse_time error: %s", parse_time)
+            return str(int(datetime.now().timestamp()))    
     
     @staticmethod
     def __check(crawler_kafka_message: RainforestProductDetail):

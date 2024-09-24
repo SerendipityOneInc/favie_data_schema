@@ -10,6 +10,7 @@ from favie_data_common.common.common_utils import CommonUtils
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.adapter.common.html_utils import HtmlUtils
 from datetime import datetime
+import time
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.interface.product.product_enum import DataType
 import logging
@@ -26,7 +27,7 @@ class AmazonProductDetailConvert():
         favie_product = FavieProductDetail()
         favie_product.sku_id = crawl_result.product.asin
         favie_product.spu_id = crawl_result.product.parent_asin
-        favie_product.site = CommonUtils.host_trip_www(amazon_message.host)
+        favie_product.site = CommonUtils.get_domain(amazon_message.host)
         favie_product.title = crawl_result.product.title
         favie_product.link = crawl_result.product.link
         favie_product.spu_title = crawl_result.product.title_excluding_variant_name
@@ -67,12 +68,20 @@ class AmazonProductDetailConvert():
             source_type = str(amazon_message.source),
             parser_name = f"{amazon_message.parser_name}-adapter",
             data_type= str(DataType.PRODUCT_DETAIL.value),
-            parses_at = str(int(datetime.now().timestamp()))
+            parses_at = AmazonProductDetailConvert.get_parse_time(amazon_message)
         )
         favie_product.f_status = FavieProductDetailStatus.SKU_NORMAL.name
         return favie_product
     
-        
+
+    @staticmethod
+    def get_parse_time(message: ProductDetailCrawlerMessage):    
+        try:
+            return str(int(CommonUtils.datetime_string_to_timestamp(message.update_time)))
+        except Exception as e:
+            logging.exception("get_parse_time error: %s", message.model_dump_json(exclude_none=True))
+            return str(int(datetime.now().timestamp()))        
+
     @staticmethod
     def get_best_seller_rank(rainforest_product_detail: RainforestProductDetail):
         if CommonUtils.list_len(rainforest_product_detail.product.bestsellers_rank) > 0:
