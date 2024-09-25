@@ -1,5 +1,5 @@
 from .common.deserialize_utils import DeserializeUtils
-from .common.spark_message import (
+from .common.stark_message import (
     StarkProductDetailMessage,
     StarkProductListMessage,
     StarkProductReviewMessage,

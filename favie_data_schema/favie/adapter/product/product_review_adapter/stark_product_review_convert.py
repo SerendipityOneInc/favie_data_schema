@@ -1,22 +1,36 @@
-from favie_data_schema.favie.adapter.common.spark_message import StarkProductDetailMessage
-from favie_data_schema.favie.data.interface.product.favie_product import *
-from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail, TopReviews
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_common.common.common_utils import CommonUtils
-from datetime import datetime
-import logging
 
-class StarkProductReviewConvert():
+from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage
+from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
+from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import (
+    RainforestProductDetail,
+    TopReviews,
+)
+from favie_data_schema.favie.data.interface.product.favie_product import *
+
+
+class StarkProductReviewConvert:
     @staticmethod
-    def convert_to_favie_review(crawler_kafka_message: StarkProductDetailMessage) -> list[FavieProductReview]:
-        if not StarkProductReviewConvert.__check(crawler_kafka_message):
+    def convert_to_favie_review(stark_detail_message: StarkProductDetailMessage) -> list[FavieProductReview]:
+        if not StarkProductReviewConvert.__check(stark_detail_message):
             return None
-        reviews = crawler_kafka_message.crawl_result.product.top_reviews
-        favie_reviews:List[FavieProductReview] = [StarkProductReviewConvert.__convert_to_favie_review(x,crawler_kafka_message.source,crawler_kafka_message.parser_name,crawler_kafka_message.update_time) for x in reviews if x is not None] if reviews is not None else None
+        reviews = stark_detail_message.crawl_result.product.top_reviews
+        parse_time = StarkMessageUtils.get_parse_time(stark_detail_message)
+        favie_reviews: List[FavieProductReview] = (
+            [
+                StarkProductReviewConvert.__convert_to_favie_review(
+                    x, stark_detail_message.source, stark_detail_message.parser_name, parse_time
+                )
+                for x in reviews
+                if x is not None
+            ]
+            if reviews is not None
+            else None
+        )
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
-    
-    def __convert_to_favie_review(review: TopReviews,source,parser_name:str,parse_time:str) -> FavieProductReview:
-        if(review is None): 
+
+    def __convert_to_favie_review(review: TopReviews, source, parser_name: str, parse_time: str) -> FavieProductReview:
+        if review is None:
             return None
         favie_review = FavieProductReview()
         favie_review.author_id = review.profile.id if review.profile is not None else None
@@ -38,39 +52,18 @@ class StarkProductReviewConvert():
         favie_review.images = None
         favie_review.videos = None
         favie_review.f_meta = MetaInfo(
-            source_type = str(source),
-            parser_name = f"{parser_name}-adapter",
-            parses_at = StarkProductReviewConvert.get_parse_time(parse_time)
+            source_type=str(source), parser_name=f"{parser_name}-adapter", parses_at=parse_time
         )
         return favie_review
-    
+
     @staticmethod
-    def get_parse_time(parse_time: str):    
-        try:
-            return str(int(CommonUtils.datetime_string_to_timestamp(parse_time)))
-        except Exception as e:
-            logging.exception("get_parse_time error: %s", parse_time)
-            return str(int(datetime.now().timestamp()))    
-    
-    @staticmethod
-    def __check(crawler_kafka_message: RainforestProductDetail):
-        if(crawler_kafka_message is None):
+    def __check(stark_detail_message: RainforestProductDetail):
+        if stark_detail_message is None:
             return False
-        if(crawler_kafka_message.crawl_result is None):
+        if stark_detail_message.crawl_result is None:
             return False
-        if(crawler_kafka_message.crawl_result.product is None):
+        if stark_detail_message.crawl_result.product is None:
             return False
-        if(CommonUtils.list_len(crawler_kafka_message.crawl_result.product.top_reviews) == 0):
+        if CommonUtils.list_len(stark_detail_message.crawl_result.product.top_reviews) == 0:
             return False
         return True
-    
-def main():
-    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json",StarkProductDetailMessage)
-    favie_reviews: list[FavieProductReview] = StarkProductReviewConvert.convert_to_favie_review(amazon_message)
-    if favie_reviews is not None:
-        for favie_review in favie_reviews:
-            if(favie_review is not None):
-                print(favie_review.model_dump_json())
-
-if __name__ == "__main__":
-    main()
