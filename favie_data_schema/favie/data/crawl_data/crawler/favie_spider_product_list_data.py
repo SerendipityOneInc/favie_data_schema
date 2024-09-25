@@ -1,5 +1,5 @@
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 
 from pydantic import BaseModel, Field
@@ -24,5 +24,5 @@ class FavieSpiderProductListData(BaseModel):
     crawl_result: Optional[
         StarkProductList
     ] = None  # 类目解析结果，存储为JSON格式，遵循RainForest的数据模型
-    create_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(datetime.timezone.utc))  # 爬虫写入时间，使用UTC
-    update_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(datetime.timezone.utc))  # 数据更新时间，使用UTC
+    create_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(timezone.utc))  # 爬虫写入时间，使用UTC
+    update_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(timezone.utc))  # 数据更新时间，使用UTC
