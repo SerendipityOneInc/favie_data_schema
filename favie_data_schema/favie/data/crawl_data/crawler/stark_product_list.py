@@ -19,7 +19,6 @@ class Price(BaseModel):
     currency: Optional[str] = None
     raw: Optional[str] = None
     name: Optional[str] = None
-    asin: Optional[str] = None
     is_primary: Optional[bool] = None
     is_rrp: Optional[bool] = None
 
