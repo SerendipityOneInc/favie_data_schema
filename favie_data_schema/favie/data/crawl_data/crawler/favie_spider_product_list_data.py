@@ -12,6 +12,7 @@ from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import (
 
 class FavieSpiderProductListData(BaseModel):
     id: str = uuid.uuid1().hex  # UUID1
+    host: Optional[str] = None  # 域名
     parser_name: Optional[str] = None  # used for spider
     category_id: Optional[str] = None  # 类目id
     page: Optional[int] = None  # 页码
