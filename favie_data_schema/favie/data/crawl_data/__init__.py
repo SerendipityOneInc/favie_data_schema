@@ -6,4 +6,4 @@ from .crawler.crawler_result import (
     WebPageContent,
 )
 from .crawler.favie_spider_data import ContentType, FavieSpiderData
-from .rainforest.rainforest_product_detail import MainImage, RainforestProductDetail, SubtitleContent
+from .rainforest.rainforest_product_detail import MainImage, RainforestProductDetail
