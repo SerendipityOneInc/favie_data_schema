@@ -14,3 +14,10 @@ class StarkMessageUtils:
         except Exception:
             logging.exception("get_parse_time error: %s", message.model_dump_json(exclude_none=True))
             return str(int(datetime.now().timestamp()))
+
+    @staticmethod
+    def get_domain(message: StarkMessage):
+        if message.host:
+            return CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(message.host))
+        elif message.url:
+            return CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(message.url))

@@ -30,7 +30,7 @@ class StarkProductDetailConvert:
         favie_product = FavieProductDetail()
         favie_product.sku_id = crawl_result.product.asin
         favie_product.spu_id = crawl_result.product.parent_asin
-        favie_product.site = CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(stark_detail_message.host))
+        favie_product.site = StarkMessageUtils.get_domain(stark_detail_message)
         favie_product.title = crawl_result.product.title
         favie_product.link = crawl_result.product.link
         favie_product.spu_title = crawl_result.product.title_excluding_variant_name

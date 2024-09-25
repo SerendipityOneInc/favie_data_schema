@@ -3,6 +3,7 @@ from typing import List, Optional
 from favie_data_common.common.common_utils import CommonUtils
 
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage, StarkProductReviewMessage
+from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductReviewAdapter
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
 from favie_data_schema.favie.adapter.product.product_detail_adapter.stark_product_detail_convert import (
@@ -60,7 +61,7 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
 
         favie_review_summary.spu_id = crawl_result.product.parent_asin
         favie_review_summary.sku_id = crawl_result.product.asin
-        favie_review_summary.site = CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(stark_detail_message.host))
+        favie_review_summary.site = StarkMessageUtils.get_domain(stark_detail_message)
         favie_review_summary.f_meta = MetaInfo(
             source_type=str(stark_detail_message.source),
             parser_name=f"{stark_detail_message.parser_name}-adapter",
@@ -110,7 +111,7 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
         return [
             StarkProductReviewAdapter.__convert_review(
                 review=review,
-                site=CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(stark_detail_message.host)),
+                site=StarkMessageUtils.get_domain(stark_detail_message),
                 spu_id=crawl_result.product.parent_asin,
                 sku_id=crawl_result.product.asin,
                 meta=meta,

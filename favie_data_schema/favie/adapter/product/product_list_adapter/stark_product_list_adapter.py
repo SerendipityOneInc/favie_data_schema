@@ -27,7 +27,7 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
             favie_product = FavieProductDetail()
             parse_time = StarkMessageUtils.get_parse_time(message)
             favie_product.sku_id = stark_product.asin
-            favie_product.site = "amazon.com"
+            favie_product.site = StarkMessageUtils.get_domain(message)
             favie_product.title = stark_product.title
             favie_product.link = stark_product.link
             favie_product.price = StarkProductListAdapter.get_price(stark_product, parse_time)
