@@ -9,10 +9,10 @@ from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from urllib.parse import urlparse
 
 
-class FavieWebpageAdapter(FavieWebpageAdapter):
+class StarkWebpageAdapter(FavieWebpageAdapter):
     @staticmethod
     def stark_webpage_to_favie_webpage(webpage_message: StarkWebpageMessage) -> FavieWebpage:
-        if not FavieWebpageAdapter._message_check(webpage_message):
+        if not StarkWebpageAdapter._message_check(webpage_message):
             return None
         
         webpage = FavieWebpage()
@@ -30,7 +30,7 @@ class FavieWebpageAdapter(FavieWebpageAdapter):
         webpage.excerpt = webpage_message.crawl_result.webpage.parsed_webpage_content.excerpt
         webpage.comments = None
         webpage.subtitles = None
-        webpage.images = FavieWebpageAdapter.__get_images(webpage_message.crawl_result.webpage.parsed_webpage_content)
+        webpage.images = StarkWebpageAdapter.__get_images(webpage_message.crawl_result.webpage.parsed_webpage_content)
         webpage.videos = None
         webpage.references = None
         webpage.json_lds = None
@@ -40,7 +40,7 @@ class FavieWebpageAdapter(FavieWebpageAdapter):
         webpage.f_meta = MetaInfo(
             source_type = str(webpage_message.source),
             parser_name = webpage_message.spider,
-            parses_at = FavieWebpageAdapter.get_parse_time(webpage_message),
+            parses_at = StarkWebpageAdapter.get_parse_time(webpage_message),
         )
         return webpage
     
@@ -58,6 +58,6 @@ class FavieWebpageAdapter(FavieWebpageAdapter):
         
 if __name__ == "__main__":
     webpage_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_webpage_message.json", StarkWebpageMessage)
-    webpage = FavieWebpageAdapter.stark_webpage_to_favie_webpage(webpage_message)
+    webpage = StarkWebpageAdapter.stark_webpage_to_favie_webpage(webpage_message)
     if webpage:
         print(webpage.model_dump_json(exclude_none=True))

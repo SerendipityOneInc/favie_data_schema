@@ -21,5 +21,5 @@ class FavieProductReviewAdapter():
         pass
     
     @staticmethod
-    def stark_reviews_to_favie_reviews(crawler_review_message: RainforestProductReview) -> Optional[List[FavieProductReview]]:
+    def stark_review_to_favie_reviews(crawler_review_message: RainforestProductReview) -> Optional[List[FavieProductReview]]:
         pass
