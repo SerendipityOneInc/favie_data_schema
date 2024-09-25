@@ -1,5 +1,5 @@
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 
 from pydantic import BaseModel, Field
@@ -24,6 +24,6 @@ class FavieSpiderProductReviewData(BaseModel):
     crawl_result: Optional[RainforestProductReview] = (
         None  # 商品review解析结果，存储为JSON格式，遵循RainForest的数据模型
     )
-    create_time: Optional[datetime] = Field(default_factory=datetime.now)  # 爬虫写入时间
-    update_time: Optional[datetime] = Field(default_factory=datetime.now)  # 数据更新时间
     task_id: Optional[int] = None  # 爬虫任务ID
+    create_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(timezone.utc))  # 爬虫写入时间，使用UTC
+    update_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(timezone.utc))  # 数据更新时间，使用UTC

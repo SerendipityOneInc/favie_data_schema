@@ -21,6 +21,7 @@ class Price(BaseModel):
     name: Optional[str] = None
     is_primary: Optional[bool] = None
     is_rrp: Optional[bool] = None
+    asin: Optional[str] = None
 
 
 class DealListItem(BaseModel):
