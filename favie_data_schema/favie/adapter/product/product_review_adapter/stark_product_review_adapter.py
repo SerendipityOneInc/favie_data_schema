@@ -1,9 +1,9 @@
-from typing import List
-from favie_data_schema.favie.adapter.product.amazon.amazon_product_detail_convert import AmazonProductDetailConvert
-from favie_data_schema.favie.adapter.product.amazon.amazon_product_review_convert import AmazonProductReviewConvert
+from typing import List, Optional
+from favie_data_schema.favie.adapter.product.product_detail_adapter.stark_product_detail_convert import StarkProductDetailConvert
+from favie_data_schema.favie.adapter.product.product_review_adapter.stark_product_review_convert import StarkProductReviewConvert
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductReviewAdapter
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
-from favie_data_schema.favie.adapter.product.common.product_crawler_message import ProductDetailCrawlerMessage, ProductReviewCrawlerMessage
+from favie_data_schema.favie.adapter.common.spark_message import StarkProductDetailMessage, StarkProductReviewMessage
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import RatingBreakdown as RFRatingBreakdown, Summary,Reviews
 from favie_data_schema.favie.data.interface.product.favie_product import FavieProductReview, FavieProductReviewSummary, MetaInfo,ReviewSummary,RatingBreakdown
 from favie_data_common.common.common_utils import CommonUtils
@@ -11,14 +11,14 @@ from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 import logging
 
 
-class AmazonProductReviewAdapter(FavieProductReviewAdapter):
+class StarkProductReviewAdapter(FavieProductReviewAdapter):
     @staticmethod
-    def crawl_detail_to_product_review(crawler_detail_message: ProductDetailCrawlerMessage) -> list[FavieProductReview]:
-        favie_reviews = AmazonProductReviewConvert.convert_to_favie_review(crawler_detail_message)
+    def stark_detail_to_favie_review(crawler_detail_message: StarkProductDetailMessage) -> Optional[List[FavieProductReview]]:
+        favie_reviews = StarkProductReviewConvert.convert_to_favie_review(crawler_detail_message)
         if favie_reviews is None:
             return None
         
-        favie_product = AmazonProductDetailConvert.convert_to_favie_product(crawler_detail_message)
+        favie_product = StarkProductDetailConvert.convert_to_favie_product(crawler_detail_message)
         f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
         if f_spu_id is None:    
             return None
@@ -33,8 +33,8 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
     
     @staticmethod
-    def crawl_review_to_product_review_summary(crawler_review_message: ProductReviewCrawlerMessage) -> FavieProductReviewSummary:
-        if not AmazonProductReviewAdapter.__crawl_review_message_check(crawler_review_message):
+    def stark_review_to_favie_review_summary(crawler_review_message: StarkProductReviewMessage) -> Optional[FavieProductReviewSummary]:
+        if not StarkProductReviewAdapter.__crawl_review_message_check(crawler_review_message):
             return None
         crawl_result = crawler_review_message.crawl_result
         if crawl_result.summary is None:
@@ -68,8 +68,8 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
         return favie_review_summary
     
     @staticmethod
-    def crawl_review_to_product_review(crawler_review_message: ProductReviewCrawlerMessage) -> list[FavieProductReview]:
-        if not AmazonProductReviewAdapter.__crawl_review_message_check(crawler_review_message):
+    def stark_reviews_to_favie_reviews(crawler_review_message: StarkProductReviewMessage) -> Optional[List[FavieProductReview]]:
+        if not StarkProductReviewAdapter.__crawl_review_message_check(crawler_review_message):
             return None
         crawl_result = crawler_review_message.crawl_result
         if CommonUtils.is_empty(crawl_result.reviews):
@@ -79,7 +79,7 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
             parser_name=f'{crawler_review_message.parser_name}-adapter',
             parses_at=str(int(CommonUtils.current_timestamp()))
         )
-        return [AmazonProductReviewAdapter.__convert_review(
+        return [StarkProductReviewAdapter.__convert_review(
                 review=review,
                 site=CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(crawler_review_message.host)),
                 spu_id=crawl_result.product.parent_asin,
@@ -87,7 +87,7 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
                 meta=meta) for review in crawl_result.reviews if review is not None]
     
     @staticmethod
-    def __crawl_review_message_check(crawler_review_message: ProductReviewCrawlerMessage) -> bool:
+    def __crawl_review_message_check(crawler_review_message: StarkProductReviewMessage) -> bool:
         if crawler_review_message is None:
             return False
         if crawler_review_message.crawl_result is None:
@@ -129,22 +129,22 @@ class AmazonProductReviewAdapter(FavieProductReviewAdapter):
         
         
 def test_crawl_detail_to_product_review():
-    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json",ProductDetailCrawlerMessage)
-    favie_reviews = AmazonProductReviewAdapter.crawl_detail_to_product_review(amazon_message)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json",StarkProductDetailMessage)
+    favie_reviews = StarkProductReviewAdapter.stark_detail_to_favie_review(amazon_message)
     if favie_reviews is None:
         return None
     for favie_review in favie_reviews:
         print(favie_review.model_dump_json(exclude_none=True))
 
 def test_crawl_review_to_product_review_summary():
-    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/crawl_product_review.json",ProductReviewCrawlerMessage)
-    favie_review_summary = AmazonProductReviewAdapter.crawl_review_to_product_review_summary(amazon_message)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/crawl_product_review.json",StarkProductReviewMessage)
+    favie_review_summary = StarkProductReviewAdapter.stark_review_to_favie_review_summary(amazon_message)
     if favie_review_summary is not None:
         print(favie_review_summary.model_dump_json(exclude_none=True))
         
 def test_crawl_review_to_product_review():
-    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/crawl_product_review.json",ProductReviewCrawlerMessage)
-    favie_reviews = AmazonProductReviewAdapter.crawl_review_to_product_review(amazon_message)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/crawl_product_review.json",StarkProductReviewMessage)
+    favie_reviews = StarkProductReviewAdapter.stark_reviews_to_favie_reviews(amazon_message)
     if favie_reviews is None:
         return None
     for favie_review in favie_reviews:

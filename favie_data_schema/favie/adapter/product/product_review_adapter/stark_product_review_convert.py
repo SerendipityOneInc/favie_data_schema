@@ -1,4 +1,4 @@
-from favie_data_schema.favie.adapter.product.common.product_crawler_message import ProductDetailCrawlerMessage
+from favie_data_schema.favie.adapter.common.spark_message import StarkProductDetailMessage
 from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail, TopReviews
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
@@ -6,13 +6,13 @@ from favie_data_common.common.common_utils import CommonUtils
 from datetime import datetime
 import logging
 
-class AmazonProductReviewConvert():
+class StarkProductReviewConvert():
     @staticmethod
-    def convert_to_favie_review(crawler_kafka_message: ProductDetailCrawlerMessage) -> list[FavieProductReview]:
-        if not AmazonProductReviewConvert.__check(crawler_kafka_message):
+    def convert_to_favie_review(crawler_kafka_message: StarkProductDetailMessage) -> list[FavieProductReview]:
+        if not StarkProductReviewConvert.__check(crawler_kafka_message):
             return None
         reviews = crawler_kafka_message.crawl_result.product.top_reviews
-        favie_reviews:List[FavieProductReview] = [AmazonProductReviewConvert.__convert_to_favie_review(x,crawler_kafka_message.source,crawler_kafka_message.parser_name,crawler_kafka_message.update_time) for x in reviews if x is not None] if reviews is not None else None
+        favie_reviews:List[FavieProductReview] = [StarkProductReviewConvert.__convert_to_favie_review(x,crawler_kafka_message.source,crawler_kafka_message.parser_name,crawler_kafka_message.update_time) for x in reviews if x is not None] if reviews is not None else None
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
     
     def __convert_to_favie_review(review: TopReviews,source,parser_name:str,parse_time:str) -> FavieProductReview:
@@ -40,7 +40,7 @@ class AmazonProductReviewConvert():
         favie_review.f_meta = MetaInfo(
             source_type = str(source),
             parser_name = f"{parser_name}-adapter",
-            parses_at = AmazonProductReviewConvert.get_parse_time(parse_time)
+            parses_at = StarkProductReviewConvert.get_parse_time(parse_time)
         )
         return favie_review
     
@@ -65,8 +65,8 @@ class AmazonProductReviewConvert():
         return True
     
 def main():
-    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json",ProductDetailCrawlerMessage)
-    favie_reviews: list[FavieProductReview] = AmazonProductReviewConvert.convert_to_favie_review(amazon_message)
+    amazon_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/amazon_message.json",StarkProductDetailMessage)
+    favie_reviews: list[FavieProductReview] = StarkProductReviewConvert.convert_to_favie_review(amazon_message)
     if favie_reviews is not None:
         for favie_review in favie_reviews:
             if(favie_review is not None):
