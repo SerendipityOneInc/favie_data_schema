@@ -13,7 +13,7 @@ class FavieProductDetailAdapter():
 
 class FavieProductReviewAdapter():
     @staticmethod
-    def stark_detail_to_favie_review(crawler_detail_message: StarkProductDetailMessage) -> Optional[List[FavieProductReview]]:
+    def stark_detail_to_favie_reviews(crawler_detail_message: StarkProductDetailMessage) -> Optional[List[FavieProductReview]]:
         pass 
     
     @staticmethod

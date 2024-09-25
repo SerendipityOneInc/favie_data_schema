@@ -17,7 +17,7 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
         favie_product = StarkProductDetailConvert.convert_to_favie_product(amazon_message)
         if(favie_product is None):
             return None
-        favie_reviews = StarkProductReviewAdapter.stark_detail_to_favie_review(amazon_message)
+        favie_reviews = StarkProductReviewAdapter.stark_detail_to_favie_reviews(amazon_message)
         
         favie_product.f_sku_id = FavieProductUtils.gen_f_sku_id(favie_product)
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
