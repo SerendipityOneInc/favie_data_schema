@@ -14,7 +14,7 @@ repos:
             --remove-all-unused-imports,
             --remove-duplicate-keys,
             --remove-unused-variables,
-            --ignore-init-module-imports
+            # --ignore-init-module-imports
           ]
   - repo: https://github.com/pre-commit/mirrors-isort
     rev: v5.10.1
