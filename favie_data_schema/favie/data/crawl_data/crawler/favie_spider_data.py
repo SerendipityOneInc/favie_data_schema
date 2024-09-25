@@ -1,5 +1,5 @@
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
 from typing import Optional
 
@@ -26,5 +26,5 @@ class FavieSpiderData(BaseModel):
     spider: Optional[str] = None  # 爬虫名称, 由不同的content_type交给不同的爬虫处理解析
     crawl_result: Optional[CrawlerResult] = None  # 爬虫结果
     task_id: Optional[int] = None  # 爬虫任务ID
-    create_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(datetime.timezone.utc))  # 爬虫写入时间，使用UTC
-    update_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(datetime.timezone.utc))  # 数据更新时间，使用UTC
+    create_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(timezone.utc))  # 爬虫写入时间，使用UTC
+    update_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(timezone.utc))  # 数据更新时间，使用UTC
