@@ -90,6 +90,19 @@ class SubTitle(BaseModel):
     link: Optional[str] = None
 
 
+class StarRating(BaseModel):
+    percentage: Optional[int] = None
+    count: Optional[int] = None
+
+
+class RatingBreakdown(BaseModel):
+    five_star: Optional[StarRating] = None
+    four_star: Optional[StarRating] = None
+    three_star: Optional[StarRating] = None
+    two_star: Optional[StarRating] = None
+    one_star: Optional[StarRating] = None
+
+
 class Date(BaseModel):
     raw: Optional[str] = None
     utc: Optional[str] = None
@@ -276,6 +289,7 @@ class Product(BaseModel):
     dimensions: Optional[Union[str,List[Specifications]]] = None
     sub_title: Optional[SubTitle] = None
     rating: Optional[float] = None
+    rating_breakdown: Optional[RatingBreakdown] = None
     ratings_total: Optional[int] = None
     reviews_total: Optional[int] = None
     top_reviews: Optional[List[TopReviews]] = None

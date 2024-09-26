@@ -1,18 +1,19 @@
 from favie_data_common.common.common_utils import CommonUtils
+
+from favie_data_schema.favie.adapter.common.stark_message import StarkWebpageMessage
+from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.adapter.webpage.common.favie_webpage_adapter import FavieWebpageAdapter
 from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import ParsedWebPageContent
-from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import FavieSpiderData
-from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage,MetaInfo,ImageData,VideoData,ReferenceData
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
-from urllib.parse import urlparse
+from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage, ImageData, MetaInfo
 
 
-class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
+class StarkWebpageAdapter(FavieWebpageAdapter):
     @staticmethod
-    def convert_to_favie_webpage(webpage_message: FavieSpiderData) -> FavieWebpage:
-        if not CrawlbaseFavieWebpageAdapter._message_check(webpage_message):
+    def stark_webpage_to_favie_webpage(webpage_message: StarkWebpageMessage) -> FavieWebpage:
+        if not StarkWebpageAdapter._message_check(webpage_message):
             return None
-        
+
         webpage = FavieWebpage()
         webpage.md5_id = CommonUtils.md5_hash(webpage_message.crawl_result.original_url)
         webpage.url = webpage_message.crawl_result.original_url
@@ -28,7 +29,7 @@ class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
         webpage.excerpt = webpage_message.crawl_result.webpage.parsed_webpage_content.excerpt
         webpage.comments = None
         webpage.subtitles = None
-        webpage.images = CrawlbaseFavieWebpageAdapter.__get_images(webpage_message.crawl_result.webpage.parsed_webpage_content)
+        webpage.images = StarkWebpageAdapter.__get_images(webpage_message.crawl_result.webpage.parsed_webpage_content)
         webpage.videos = None
         webpage.references = None
         webpage.json_lds = None
@@ -36,18 +37,22 @@ class CrawlbaseFavieWebpageAdapter(FavieWebpageAdapter):
         webpage.twitter_cards = None
         webpage.page_type = webpage_message.crawl_result.webpage.parsed_webpage_content.pagetype
         webpage.f_meta = MetaInfo(
-            source_type=webpage_message.source,
-            parser_name=webpage_message.spider
+            source_type=str(webpage_message.source),
+            parser_name=webpage_message.spider,
+            parses_at=StarkMessageUtils.get_parse_time(webpage_message),
         )
         return webpage
-    
+
     @staticmethod
     def __get_images(webpage_content: ParsedWebPageContent) -> FavieWebpage:
-        return [ImageData(url = image) for image in [webpage_content.image]] if webpage_content.image else None
+        return [ImageData(url=image) for image in [webpage_content.image]] if webpage_content.image else None
 
 
 if __name__ == "__main__":
-    webpage_message = read_object("/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/webpage_message.json", FavieSpiderData)
-    webpage = CrawlbaseFavieWebpageAdapter.convert_to_favie_webpage(webpage_message)
+    webpage_message = read_object(
+        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_webpage_message.json",
+        StarkWebpageMessage,
+    )
+    webpage = StarkWebpageAdapter.stark_webpage_to_favie_webpage(webpage_message)
     if webpage:
         print(webpage.model_dump_json(exclude_none=True))

@@ -1295,6 +1295,14 @@
           "name": "ReviewSummary",
           "fields": [
             {
+              "name": "link",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
               "name": "rating",
               "type": [
                 "null",

@@ -85,6 +85,11 @@ class Summary(BaseModel):
     rating_breakdown: Optional[RatingBreakdown] = None
 
 
+class AttributeItem(BaseModel):
+    name: Optional[str] = None
+    value: Optional[str] = None
+
+
 class Date(BaseModel):
     raw: Optional[str] = None
     utc: Optional[str] = None
@@ -105,6 +110,7 @@ class Reviews(BaseModel):
     body_html: Optional[str] = None
     link: Optional[str] = None
     images: Optional[List[str]] = None
+    attributes: Optional[List[AttributeItem]] = None
     rating: Optional[int] = None
     date: Optional[Date] = None
     profile: Optional[Profile] = None

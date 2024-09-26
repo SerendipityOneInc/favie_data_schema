@@ -515,6 +515,39 @@
                                 "default": null
                             },
                             {
+                                "name":"attributes",
+                                "type":[
+                                    "null",
+                                    {
+                                        "type":"array",
+                                        "items":{
+                                            "type":"record",
+                                            "namespace":"RainforestProductReview",
+                                            "name":"AttributeItem",
+                                            "fields":[
+                                                {
+                                                    "name":"name",
+                                                    "type":[
+                                                        "null",
+                                                        "string"
+                                                    ],
+                                                    "default":null
+                                                },
+                                                {
+                                                    "name":"value",
+                                                    "type":[
+                                                        "null",
+                                                        "string"
+                                                    ],
+                                                    "default":null
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "default":null
+                            },
+                            {
                                 "name": "rating",
                                 "type": [
                                     "null",

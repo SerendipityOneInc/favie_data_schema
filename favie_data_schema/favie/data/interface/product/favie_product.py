@@ -17,6 +17,7 @@ class MetaInfo(BaseModel):
 
 class FavieProductReviewSummary(BaseModel):
     f_spu_id: Optional[str] = None
+    link: Optional[str] = None
     site: Optional[str] = None
     spu_id: Optional[str] = None
     sku_id: Optional[str] = None
@@ -216,6 +217,7 @@ class Delivery(BaseModel):
     price: Optional[DeliveryPrice] = None
 
 class ReviewSummary(BaseModel):
+    link: Optional[str] = None
     rating: Optional[float] = None
     ratings_total: Optional[int] = None
     ratings_total_filtered: Optional[int] = None

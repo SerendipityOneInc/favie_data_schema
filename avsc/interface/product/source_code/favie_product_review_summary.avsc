@@ -4,6 +4,7 @@
   "name": "FavieProductReviewSummary",
   "fields": [
     {"name": "f_spu_id", "type": ["null", "string"], "default": null},
+    {"name": "link", "type": ["null", "string"], "default": null},
     {"name": "site", "type": ["null", "string"], "default": null},
     {"name": "spu_id", "type": ["null", "string"], "default": null},
     {"name": "sku_id", "type": ["null", "string"], "default": null},
