@@ -6,6 +6,7 @@ from favie_data_schema.favie.adapter.common.stark_message import StarkProductDet
 from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductReviewAdapter
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
+from favie_data_schema.favie.adapter.product.common.review_summary_generator import ReviewSummaryGeneratorProxy
 from favie_data_schema.favie.adapter.product.product_detail_adapter.stark_product_detail_convert import (
     StarkProductDetailConvert,
 )
@@ -58,10 +59,14 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
             return None
 
         favie_review_summary = FavieProductReviewSummary()
-
         favie_review_summary.spu_id = crawl_result.product.parent_asin
         favie_review_summary.sku_id = crawl_result.product.asin
         favie_review_summary.site = StarkMessageUtils.get_domain(stark_detail_message)
+        favie_review_summary.link = (
+            crawl_result.request_metadata.amazon_url
+            if crawl_result.request_metadata and crawl_result.request_metadata.amazon_url
+            else ReviewSummaryGeneratorProxy.gen_url(favie_review_summary.site, favie_review_summary.sku_id)
+        )
         favie_review_summary.f_meta = MetaInfo(
             source_type=str(stark_detail_message.source),
             parser_name=f"{stark_detail_message.parser_name}-adapter",
@@ -198,6 +203,6 @@ def test_crawl_review_to_product_review():
 
 
 if __name__ == "__main__":
-    test_crawl_review_to_product_review()
+    # test_crawl_review_to_product_review()
     # test_crawl_detail_to_product_review()
-    # test_crawl_review_to_product_review_summary()
+    test_crawl_review_to_product_review_summary()

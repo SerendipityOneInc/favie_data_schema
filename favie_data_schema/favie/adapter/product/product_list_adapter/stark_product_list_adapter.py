@@ -5,6 +5,7 @@ from favie_data_schema.favie.adapter.common.stark_message import StarkProductLis
 from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
 from favie_data_schema.favie.adapter.product.common.currency import CurrencyConverter
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductDetailAdapter
+from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import Price as StarkPrice
@@ -53,34 +54,72 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
 
     @staticmethod
     def get_price(stark_product_item: ProductListItem, parse_time: str) -> Price:
-        stark_price = stark_product_item.price
         if CommonUtils.not_empty(stark_product_item.prices):
+            # 优先使用primary_price,且优先取value
             primary_price = next(filter(lambda price: price.is_primary, stark_product_item.prices), None)
+            favie_price = StarkProductListAdapter.convert_price(primary_price, parse_time)
+            if favie_price:
+                return favie_price
+
+            # 其次使用asin_price,且优先取raw
             asin_price = next(
                 filter(lambda price: price.asin == stark_product_item.asin, stark_product_item.prices), None
             )
-            if primary_price is not None:
-                stark_price = primary_price
-            elif asin_price:
-                stark_price = asin_price
-            else:
-                stark_price = stark_product_item.prices[0]
+            favie_price = StarkProductListAdapter.convert_price(asin_price, parse_time, raw_first=True)
+            if favie_price:
+                return favie_price
 
-        # if stark_price is None and CommonUtils.list_len(stark_product_item.prices) > 0:
-        #     stark_price = next(filter(lambda price: price.is_primary, stark_product_item.prices))
-        return StarkProductListAdapter.convert_price(stark_price, parse_time)
+            # 再次从list中选取第一个可用的price
+            for stark_price in stark_product_item.prices:
+                favie_price = StarkProductListAdapter.convert_price(stark_price, parse_time)
+                if favie_price:
+                    return favie_price
+
+        # 最后使用price字段
+        return StarkProductListAdapter.convert_price(stark_product_item.price, parse_time)
 
     @staticmethod
     def get_rrp(stark_product_item: ProductListItem, parse_time: str) -> Price:
-        if CommonUtils.list_len(stark_product_item.prices) > 0:
-            stark_price = next(filter(lambda price: price.is_rrp, stark_product_item.prices))
-            return StarkProductListAdapter.convert_price(stark_price, parse_time)
+        if CommonUtils.not_empty(stark_product_item.prices):
+            # 优先使用primary_price,且优先取value
+            rrp_price = next(filter(lambda price: price.is_rrp, stark_product_item.prices), None)
+            favie_price = StarkProductListAdapter.convert_price(rrp_price, parse_time)
+            if favie_price:
+                return favie_price
+
+            # 其次使用asin_price,且优先取raw
+            asin_price = next(
+                filter(lambda price: price.asin == stark_product_item.asin, stark_product_item.prices), None
+            )
+            favie_price = StarkProductListAdapter.convert_price(asin_price, parse_time, raw_first=True)
+            if favie_price:
+                return favie_price
+
+            # 再次从list中选取第一个可用的price
+            for stark_price in stark_product_item.prices:
+                favie_price = StarkProductListAdapter.convert_price(stark_price, parse_time)
+                if favie_price:
+                    return favie_price
+
+        # 最后使用price字段
+        return StarkProductListAdapter.convert_price(stark_product_item.rrp, parse_time)
 
     @staticmethod
-    def convert_price(stark_price: StarkPrice, parse_time: str) -> Price:
+    def convert_price(stark_price: StarkPrice, parse_time: str, raw_first: bool = False) -> Price:
         if stark_price is None:
             return None
-        currency_converter = CurrencyConverter(stark_price.currency, stark_price.value)
+
+        if stark_price.raw and (raw_first or CommonUtils.any_none(stark_price.currency, stark_price.value)):
+            currency_code, value = FavieProductUtils.extract_currency_and_amount(stark_price.raw)
+            price = StarkProductListAdapter.__convert_price(currency_code, value, parse_time)
+            if price:
+                return price
+
+        return StarkProductListAdapter.__convert_price(stark_price.currency, stark_price.value, parse_time)
+
+    @staticmethod
+    def __convert_price(currency_code: str, value: float, parse_time: str) -> Price:
+        currency_converter = CurrencyConverter(currency_code, value)
         price = Price(
             currency=currency_converter.get_currency_code(),
             value=currency_converter.get_subunit_value(),

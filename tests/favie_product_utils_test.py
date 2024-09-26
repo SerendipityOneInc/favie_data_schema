@@ -26,10 +26,10 @@ class TestExtractCurrencyAndAmount(unittest.TestCase):
         self.assertEqual(FavieProductUtils.extract_currency_and_amount("1,000,000.50 USD"), ("USD", 1000000.5))
 
     def test_amount_only(self):
-        self.assertEqual(FavieProductUtils.extract_currency_and_amount("100"), None)
+        self.assertEqual(FavieProductUtils.extract_currency_and_amount("100"), (None, None))
 
     def test_no_match(self):
-        self.assertEqual(FavieProductUtils.extract_currency_and_amount("No price here"), None)
+        self.assertEqual(FavieProductUtils.extract_currency_and_amount("No price here"), (None, None))
 
     def test_mixed_case_currency_code(self):
         self.assertEqual(FavieProductUtils.extract_currency_and_amount("gBp 75"), ("GBP", 75.0))

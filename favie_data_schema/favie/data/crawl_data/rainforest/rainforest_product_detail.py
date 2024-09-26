@@ -1,11 +1,6 @@
+from typing import List, Optional, Union
 
-from datetime import date, datetime, time
-from decimal import Decimal
-from enum import Enum
-from typing import List, Optional, Dict, Union
-from uuid import UUID
-
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 
 class RequestInfo(BaseModel):
@@ -42,7 +37,7 @@ class Price(BaseModel):
 class Variants(BaseModel):
     asin: Optional[str] = None
     text: Optional[str] = None
-    dimensions: Optional[Union[str,List[Specifications]]] = None
+    dimensions: Optional[Union[str, List[Specifications]]] = None
     link: Optional[str] = None
     price: Optional[Price] = None
 
@@ -88,6 +83,19 @@ class FirstAvailable(BaseModel):
 class SubTitle(BaseModel):
     text: Optional[str] = None
     link: Optional[str] = None
+
+
+class StarRating(BaseModel):
+    percentage: Optional[int] = None
+    count: Optional[int] = None
+
+
+class RatingBreakdown(BaseModel):
+    five_star: Optional[StarRating] = None
+    four_star: Optional[StarRating] = None
+    three_star: Optional[StarRating] = None
+    two_star: Optional[StarRating] = None
+    one_star: Optional[StarRating] = None
 
 
 class Date(BaseModel):
@@ -271,11 +279,12 @@ class Product(BaseModel):
     brand: Optional[str] = None
     weight: Optional[str] = None
     shipping_weight: Optional[str] = None
-    first_available: Optional[Union[str,FirstAvailable]] = None
+    first_available: Optional[Union[str, FirstAvailable]] = None
     delivery_message: Optional[str] = None
-    dimensions: Optional[Union[str,List[Specifications]]] = None
+    dimensions: Optional[Union[str, List[Specifications]]] = None
     sub_title: Optional[SubTitle] = None
     rating: Optional[float] = None
+    rating_breakdown: Optional[RatingBreakdown] = None
     ratings_total: Optional[int] = None
     reviews_total: Optional[int] = None
     top_reviews: Optional[List[TopReviews]] = None

@@ -111,4 +111,4 @@ class FavieProductUtils:
 
             return code.upper() if code else None, amount
         else:
-            return None
+            return None, None

@@ -1,11 +1,6 @@
+from typing import List, Optional
 
-from datetime import date, datetime, time
-from decimal import Decimal
-from enum import Enum
-from typing import List, Optional, Dict, Union
-from uuid import UUID
-
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 
 class RequestInfo(BaseModel):
@@ -85,6 +80,11 @@ class Summary(BaseModel):
     rating_breakdown: Optional[RatingBreakdown] = None
 
 
+class AttributeItem(BaseModel):
+    name: Optional[str] = None
+    value: Optional[str] = None
+
+
 class Date(BaseModel):
     raw: Optional[str] = None
     utc: Optional[str] = None
@@ -105,6 +105,7 @@ class Reviews(BaseModel):
     body_html: Optional[str] = None
     link: Optional[str] = None
     images: Optional[List[str]] = None
+    attributes: Optional[List[AttributeItem]] = None
     rating: Optional[int] = None
     date: Optional[Date] = None
     profile: Optional[Profile] = None

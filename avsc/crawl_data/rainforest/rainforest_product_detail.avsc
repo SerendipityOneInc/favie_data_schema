@@ -708,6 +708,100 @@
                             "default": null
                         },
                         {
+                            "name":"rating_breakdown",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.product",
+                                    "name": "RatingBreakdown",
+                                    "fields": [
+                                        {
+                                            "name": "five_star",
+                                            "type": [
+                                                "null",
+                                                {
+                                                "type": "record",
+                                                "namespace": "RainforestProductDetail.product",
+                                                "name": "StarRating",
+                                                "fields": [
+                                                    {"name": "percentage", "type": ["null", "int"], "default": null},
+                                                    {"name": "count", "type": ["null", "long"], "default": null}
+                                                ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "four_star",
+                                            "type": [
+                                                "null",
+                                                {
+                                                "type": "record",
+                                                "namespace": "RainforestProductDetail.product",
+                                                "name": "StarRating",
+                                                "fields": [
+                                                    {"name": "percentage", "type": ["null", "int"], "default": null},
+                                                    {"name": "count", "type": ["null", "long"], "default": null}
+                                                ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "three_star",
+                                            "type": [
+                                                "null",
+                                                {
+                                                "type": "record",
+                                                "namespace": "RainforestProductDetail.product",
+                                                "name": "StarRating",
+                                                "fields": [
+                                                    {"name": "percentage", "type": ["null", "int"], "default": null},
+                                                    {"name": "count", "type": ["null", "long"], "default": null}
+                                                ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "two_star",
+                                            "type": [
+                                                "null",
+                                                {
+                                                "type": "record",
+                                                "namespace": "RainforestProductDetail.product",
+                                                "name": "StarRating",
+                                                "fields": [
+                                                    {"name": "percentage", "type": ["null", "int"], "default": null},
+                                                    {"name": "count", "type": ["null", "long"], "default": null}
+                                                ]
+                                                }
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "one_star",
+                                            "type": [
+                                                "null",
+                                                {
+                                                "type": "record",
+                                                "namespace": "RainforestProductDetail.product",
+                                                "name": "StarRating",
+                                                "fields": [
+                                                    {"name": "percentage", "type": ["null", "int"], "default": null},
+                                                    {"name": "count", "type": ["null", "long"], "default": null}
+                                                ]
+                                                }
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default":null
+                        },
+                        {
                             "name": "ratings_total",
                             "type": [
                                 "null",

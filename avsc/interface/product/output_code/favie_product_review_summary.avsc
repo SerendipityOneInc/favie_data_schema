@@ -12,6 +12,14 @@
       "default": null
     },
     {
+      "name": "link",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "site",
       "type": [
         "null",
