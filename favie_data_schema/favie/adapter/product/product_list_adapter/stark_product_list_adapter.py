@@ -53,9 +53,21 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
 
     @staticmethod
     def get_price(stark_product_item: ProductListItem, parse_time: str) -> Price:
-        stark_price = stark_product_item.price if stark_product_item.price is not None else None
-        if stark_price is None and CommonUtils.list_len(stark_product_item.prices) > 0:
-            stark_price = next(filter(lambda price: price.is_primary, stark_product_item.prices))
+        stark_price = stark_product_item.price
+        if CommonUtils.not_empty(stark_product_item.prices):
+            primary_price = next(filter(lambda price: price.is_primary, stark_product_item.prices), None)
+            asin_price = next(
+                filter(lambda price: price.asin == stark_product_item.asin, stark_product_item.prices), None
+            )
+            if primary_price is not None:
+                stark_price = primary_price
+            elif asin_price:
+                stark_price = asin_price
+            else:
+                stark_price = stark_product_item.prices[0]
+
+        # if stark_price is None and CommonUtils.list_len(stark_product_item.prices) > 0:
+        #     stark_price = next(filter(lambda price: price.is_primary, stark_product_item.prices))
         return StarkProductListAdapter.convert_price(stark_price, parse_time)
 
     @staticmethod
