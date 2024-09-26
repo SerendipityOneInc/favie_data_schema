@@ -1,7 +1,5 @@
 from typing import List, Optional
-
-from pydantic import BaseModel
-
+from pydantic import BaseModel, Field
 
 class MetaInfo(BaseModel):
     source_type: Optional[str] = None
@@ -16,7 +14,6 @@ class MetaInfo(BaseModel):
     source_3_updates_at: Optional[str] = None
     source_4_updates_at: Optional[str] = None
     source_5_updates_at: Optional[str] = None
-
 
 class FavieProductReviewSummary(BaseModel):
     f_spu_id: Optional[str] = None
@@ -42,7 +39,6 @@ class FavieProductReviewSummary(BaseModel):
     f_meta: Optional[MetaInfo] = None
     f_creates_at: Optional[str] = None
 
-
 class Price(BaseModel):
     lower_value: Optional[int] = None
     upper_value: Optional[int] = None
@@ -50,16 +46,13 @@ class Price(BaseModel):
     currency: Optional[str] = None
     updates_at: Optional[str] = None
 
-
 class Images(BaseModel):
     main_image: Optional[str] = None
     images: Optional[List[str]] = None
 
-
 class CategoryItem(BaseModel):
     name: Optional[str] = None
     id: Optional[str] = None
-
 
 class Video(BaseModel):
     duration_seconds: Optional[int] = None
@@ -70,28 +63,23 @@ class Video(BaseModel):
     is_hero_video: Optional[bool] = None
     title: Optional[str] = None
 
-
 class Brand(BaseModel):
     name: Optional[str] = None
     link: Optional[str] = None
-
 
 class AttributeItem(BaseModel):
     name: Optional[str] = None
     value: Optional[str] = None
 
-
 class PlatformChoice(BaseModel):
     keywords: Optional[str] = None
     link: Optional[str] = None
-
 
 class DeliveryPrice(BaseModel):
     raw: Optional[str] = None
     currency: Optional[str] = None
     value: Optional[int] = None
     is_free: Optional[bool] = None
-
 
 class Seller(BaseModel):
     name: Optional[str] = None
@@ -101,23 +89,19 @@ class Seller(BaseModel):
     ratings_total: Optional[int] = None
     postive_feedback_percent: Optional[float] = None
 
-
 class SellerRank(BaseModel):
     category: Optional[str] = None
     rank: Optional[int] = None
     link: Optional[str] = None
-
 
 class Inventory(BaseModel):
     status: Optional[str] = None
     quantity_available: Optional[int] = None
     quantity_sold: Optional[int] = None
 
-
 class SearchAliasItem(BaseModel):
     title: Optional[str] = None
     value: Optional[str] = None
-
 
 class Deal(BaseModel):
     deal_id: Optional[str] = None
@@ -137,7 +121,6 @@ class Deal(BaseModel):
     is_map: Optional[bool] = None
     description: Optional[str] = None
 
-
 class Shipping(BaseModel):
     price: Optional[DeliveryPrice] = None
     service: Optional[str] = None
@@ -149,18 +132,15 @@ class Shipping(BaseModel):
     store_id: Optional[str] = None
     delivery_estimate: Optional[str] = None
 
-
 class Fulfillment(BaseModel):
     pickup: Optional[bool] = None
     delivery_from_store: Optional[bool] = None
     shipping: Optional[bool] = None
 
-
 class ReturnPolicy(BaseModel):
     returns_accepted: Optional[bool] = None
     free_returns: Optional[bool] = None
     returns_raw: Optional[str] = None
-
 
 class RatingBreakdown(BaseModel):
     five_star: Optional[int] = None
@@ -168,7 +148,6 @@ class RatingBreakdown(BaseModel):
     three_star: Optional[int] = None
     two_star: Optional[int] = None
     one_star: Optional[int] = None
-
 
 class SimpleProduct(BaseModel):
     f_sku_id: Optional[str] = None
@@ -180,10 +159,8 @@ class SimpleProduct(BaseModel):
     images: Optional[Images] = None
     attributes: Optional[List[AttributeItem]] = None
 
-
 class Promotion(BaseModel):
     why_buy: Optional[List[str]] = None
-
 
 class FavieProductReview(BaseModel):
     f_review_id: Optional[str] = None
@@ -215,7 +192,6 @@ class FavieProductReview(BaseModel):
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None
 
-
 class StandardAttributes(BaseModel):
     is_used: Optional[bool] = None
     is_bundle: Optional[bool] = None
@@ -234,13 +210,11 @@ class StandardAttributes(BaseModel):
     platform_choice: Optional[PlatformChoice] = None
     last_month_sell_amount: Optional[int] = None
 
-
 class Delivery(BaseModel):
     fulfilled_by_platform: Optional[bool] = None
     countdown: Optional[str] = None
     comments: Optional[str] = None
     price: Optional[DeliveryPrice] = None
-
 
 class ReviewSummary(BaseModel):
     link: Optional[str] = None
@@ -256,7 +230,6 @@ class ReviewSummary(BaseModel):
     top_critical: Optional[str] = None
     f_updates_at: Optional[str] = None
 
-
 class Offer(BaseModel):
     price: Optional[Price] = None
     minimum_order_quantity: Optional[int] = None
@@ -269,7 +242,6 @@ class Offer(BaseModel):
     position: Optional[int] = None
     buybox_winner: Optional[bool] = None
     offer_sku_id: Optional[str] = None
-
 
 class FavieProductDetail(BaseModel):
     f_sku_id: Optional[str] = None
@@ -316,3 +288,4 @@ class FavieProductDetail(BaseModel):
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None
     f_meta: Optional[MetaInfo] = None
+
