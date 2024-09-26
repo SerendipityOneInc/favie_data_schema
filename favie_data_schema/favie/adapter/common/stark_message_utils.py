@@ -10,7 +10,11 @@ class StarkMessageUtils:
     @staticmethod
     def get_parse_time(message: StarkMessage):
         try:
-            return str(int(CommonUtils.datetime_string_to_timestamp(message.update_time)))
+            parse_time = CommonUtils.datetime_string_to_timestamp(message.update_time)
+            if parse_time:
+                return str(int(parse_time))
+            else:
+                return str(int(datetime.now().timestamp()))
         except Exception:
             logging.exception("get_parse_time error: %s", message.model_dump_json(exclude_none=True))
             return str(int(datetime.now().timestamp()))
