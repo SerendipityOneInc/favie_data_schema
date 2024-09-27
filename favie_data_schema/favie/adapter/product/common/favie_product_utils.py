@@ -125,33 +125,35 @@ class FavieProductUtils:
             "BRL": "R$",
             "MXN": "$",
         }
+        try:
+            # 创建正则表达式模式，优先匹配货币代码
+            codes = "|".join(currency_info.keys())
+            symbols = "|".join(re.escape(sym) for sym in set(currency_info.values()))
+            pattern = rf"\b({codes})\s*([\d.,]+)\s*|\s*([\d.,]+)\s*({codes})\b|\s*({symbols})\s*([\d.,]+)\s*|\s*([\d.,]+)\s*({symbols})\s*"
 
-        # 创建正则表达式模式，优先匹配货币代码
-        codes = "|".join(currency_info.keys())
-        symbols = "|".join(re.escape(sym) for sym in set(currency_info.values()))
-        pattern = rf"\b({codes})\s*([\d.,]+)\s*|\s*([\d.,]+)\s*({codes})\b|\s*({symbols})\s*([\d.,]+)\s*|\s*([\d.,]+)\s*({symbols})\s*"
+            match = re.search(pattern, text, re.IGNORECASE)
 
-        match = re.search(pattern, text, re.IGNORECASE)
+            if match:
+                groups = match.groups()
+                if groups[0]:  # 货币代码在前
+                    code, amount_str = groups[0], groups[1]
+                elif groups[3]:  # 货币代码在后
+                    code, amount_str = groups[3], groups[2]
+                elif groups[4]:  # 货币符号在前
+                    symbol, amount_str = groups[4], groups[5]
+                    code = next((code for code, sym in currency_info.items() if sym == symbol), None)
+                elif groups[7]:  # 货币符号在后
+                    symbol, amount_str = groups[7], groups[6]
+                    code = next((code for code, sym in currency_info.items() if sym == symbol), None)
+                else:
+                    return None, None
 
-        if match:
-            groups = match.groups()
-            if groups[0]:  # 货币代码在前
-                code, amount_str = groups[0], groups[1]
-            elif groups[3]:  # 货币代码在后
-                code, amount_str = groups[3], groups[2]
-            elif groups[4]:  # 货币符号在前
-                symbol, amount_str = groups[4], groups[5]
-                code = next((code for code, sym in currency_info.items() if sym == symbol), None)
-            elif groups[7]:  # 货币符号在后
-                symbol, amount_str = groups[7], groups[6]
-                code = next((code for code, sym in currency_info.items() if sym == symbol), None)
+                # 处理金额中的逗号和点
+                amount_str = amount_str.replace(",", "")
+                amount = float(amount_str)
+
+                return code.upper() if code else None, amount
             else:
                 return None, None
-
-            # 处理金额中的逗号和点
-            amount_str = amount_str.replace(",", "")
-            amount = float(amount_str)
-
-            return code.upper() if code else None, amount
-        else:
+        except Exception:
             return None, None

@@ -43,6 +43,10 @@ class TestExtractCurrencyAndAmount(unittest.TestCase):
     def test_currency_code_and_symbol(self):
         self.assertEqual(FavieProductUtils.extract_currency_and_amount(r"USD \$100"), ("USD", 100.0))
 
+    def test_currency_code_and_symble_bug(self):
+        text = r"SponsoredSponsored You’re seeing this ad based on the product’s relevance to your search query.Leave ad feedback  Rabenda 12 Pcs Rug Tape, Non Slip Rug Pads Grippers for Hardwood Floors and Tiles, Reusable Carpet Tape for Area Rugs, Double-Sided Adhesive Rug Stickers Keep Corners Flat"
+        self.assertEqual(FavieProductUtils.extract_currency_and_amount(text), (None, None))
+
 
 if __name__ == "__main__":
     unittest.main()
