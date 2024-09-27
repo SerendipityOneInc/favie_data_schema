@@ -1344,7 +1344,23 @@
                       "default": null
                     },
                     {
+                      "name": "five_percentage",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
                       "name": "four_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "four_percentage",
                       "type": [
                         "null",
                         "int"
@@ -1360,6 +1376,14 @@
                       "default": null
                     },
                     {
+                      "name": "three_percentage",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
                       "name": "two_star",
                       "type": [
                         "null",
@@ -1368,7 +1392,23 @@
                       "default": null
                     },
                     {
+                      "name": "two_percentage",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
                       "name": "one_star",
+                      "type": [
+                        "null",
+                        "int"
+                      ],
+                      "default": null
+                    },
+                    {
+                      "name": "one_percentage",
                       "type": [
                         "null",
                         "int"

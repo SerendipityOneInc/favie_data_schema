@@ -2,7 +2,11 @@ import re
 
 from favie_data_common.common.common_utils import CommonUtils
 
-from favie_data_schema.favie.data.interface.product.favie_product import FavieProductDetail, FavieProductReview
+from favie_data_schema.favie.data.interface.product.favie_product import (
+    FavieProductDetail,
+    FavieProductReview,
+    ReviewSummary,
+)
 
 
 class FavieProductUtils:
@@ -57,6 +61,45 @@ class FavieProductUtils:
             return False
 
         return True
+
+    @staticmethod
+    def cal_percentage_to_review_summary(review_summary: ReviewSummary) -> ReviewSummary:
+        if review_summary is None:
+            return None
+        if review_summary.rating_breakdown is None:
+            return review_summary
+        ratings_total = sum(
+            [
+                review_summary.rating_breakdown.five_star or 0,
+                review_summary.rating_breakdown.four_star or 0,
+                review_summary.rating_breakdown.three_star or 0,
+                review_summary.rating_breakdown.two_star or 0,
+                review_summary.rating_breakdown.one_star or 0,
+            ]
+        )
+        if ratings_total > 0:
+            review_summary.rating_breakdown.five_percentage = int(
+                round((review_summary.rating_breakdown.five_star or 0) / ratings_total * 100)
+            )
+            review_summary.rating_breakdown.four_percentage = int(
+                round((review_summary.rating_breakdown.four_star or 0) / ratings_total * 100)
+            )
+            review_summary.rating_breakdown.three_percentage = int(
+                round((review_summary.rating_breakdown.three_star or 0) / ratings_total * 100)
+            )
+            review_summary.rating_breakdown.two_percentage = int(
+                round((review_summary.rating_breakdown.two_star or 0) / ratings_total * 100)
+            )
+            review_summary.rating_breakdown.one_percentage = int(
+                round((review_summary.rating_breakdown.one_star or 0) / ratings_total * 100)
+            )
+        else:
+            review_summary.rating_breakdown.five_percentage = None
+            review_summary.rating_breakdown.four_percentage = None
+            review_summary.rating_breakdown.three_percentage = None
+            review_summary.rating_breakdown.two_percentage = None
+            review_summary.rating_breakdown.one_percentage = None
+        return review_summary
 
     @staticmethod
     def extract_currency_and_amount(text):

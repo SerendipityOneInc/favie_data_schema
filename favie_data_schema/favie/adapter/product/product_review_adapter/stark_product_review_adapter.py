@@ -22,6 +22,8 @@ from favie_data_schema.favie.data.interface.product.favie_product import (
     FavieProductReview,
     FavieProductReviewSummary,
     MetaInfo,
+    RatingBreakdown,
+    ReviewSummary,
 )
 
 
@@ -124,6 +126,29 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
         ]
 
     @staticmethod
+    def favie_review_summary_to_defail_review_summary(
+        favie_review_summary: FavieProductReviewSummary,
+    ) -> Optional[ReviewSummary]:
+        if favie_review_summary is None:
+            return None
+        review_summary = ReviewSummary()
+        review_summary.link = favie_review_summary.link
+        review_summary.rating = favie_review_summary.rating
+        review_summary.ratings_total = favie_review_summary.ratings_total
+        review_summary.ratings_total_filtered = favie_review_summary.ratings_total_filtered
+        review_summary.rating_breakdown = RatingBreakdown(
+            five_star=favie_review_summary.five_star,
+            four_star=favie_review_summary.four_star,
+            three_star=favie_review_summary.three_star,
+            two_star=favie_review_summary.two_star,
+            one_star=favie_review_summary.one_star,
+        )
+        review_summary.reviews_total = favie_review_summary.reviews_total
+        review_summary.reviews_total_filtered = favie_review_summary.reviews_total_filtered
+        review_summary.f_updates_at = favie_review_summary.f_meta.parses_at
+        return FavieProductUtils.cal_percentage_to_review_summary(review_summary)
+
+    @staticmethod
     def __crawl_review_message_check(stark_review_message: StarkProductReviewMessage) -> bool:
         if stark_review_message is None:
             return False
@@ -188,6 +213,19 @@ def test_stark_review_to_product_review_summary():
         print(favie_review_summary.model_dump_json(exclude_none=True))
 
 
+def test_favie_review_summary_to_product_review_summary():
+    amazon_message = read_object(
+        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_product_review_message.json",
+        StarkProductReviewMessage,
+    )
+    favie_review_summary = StarkProductReviewAdapter.stark_review_to_favie_review_summary(amazon_message)
+    if favie_review_summary is not None:
+        product_review_summary = StarkProductReviewAdapter.favie_review_summary_to_defail_review_summary(
+            favie_review_summary
+        )
+        print(product_review_summary.model_dump_json(exclude_none=True))
+
+
 def test_stark_review_to_product_review():
     amazon_message = read_object(
         "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_product_review_message.json",
@@ -201,6 +239,7 @@ def test_stark_review_to_product_review():
 
 
 if __name__ == "__main__":
-    test_stark_review_to_product_review()
+    # test_stark_review_to_product_review()
     # test_stark_detail_to_product_review()
     # test_stark_review_to_product_review_summary()
+    test_favie_review_summary_to_product_review_summary()

@@ -6,6 +6,7 @@ from favie_data_schema.favie.data.interface.product.favie_product import (
     FavieProductDetail,
     FavieProductReview,
     FavieProductReviewSummary,
+    ReviewSummary,
 )
 
 
@@ -38,4 +39,10 @@ class FavieProductReviewAdapter:
     def stark_review_to_favie_reviews(
         crawler_review_message: RainforestProductReview,
     ) -> Optional[List[FavieProductReview]]:
+        pass
+
+    @staticmethod
+    def favie_review_summary_to_defail_review_summary(
+        favie_review_summary: FavieProductReviewSummary,
+    ) -> Optional[ReviewSummary]:
         pass

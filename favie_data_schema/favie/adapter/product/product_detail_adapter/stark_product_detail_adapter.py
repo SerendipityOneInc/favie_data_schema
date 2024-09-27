@@ -51,6 +51,7 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
             top_reviews=top_reviews if CommonUtils.list_len(top_reviews) > 0 else None,
             f_updates_at=str(int(datetime.now().timestamp())),
         )
+        review_summary = FavieProductUtils.cal_percentage_to_review_summary(review_summary)
         return (
             review_summary
             if CommonUtils.any_not_none(
