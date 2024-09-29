@@ -144,10 +144,15 @@ class ReturnPolicy(BaseModel):
 
 class RatingBreakdown(BaseModel):
     five_star: Optional[int] = None
+    five_percentage: Optional[int] = None
     four_star: Optional[int] = None
+    four_percentage: Optional[int] = None
     three_star: Optional[int] = None
+    three_percentage: Optional[int] = None
     two_star: Optional[int] = None
+    two_percentage: Optional[int] = None
     one_star: Optional[int] = None
+    one_percentage: Optional[int] = None
 
 class SimpleProduct(BaseModel):
     f_sku_id: Optional[str] = None

@@ -2,7 +2,11 @@ import re
 
 from favie_data_common.common.common_utils import CommonUtils
 
-from favie_data_schema.favie.data.interface.product.favie_product import FavieProductDetail, FavieProductReview
+from favie_data_schema.favie.data.interface.product.favie_product import (
+    FavieProductDetail,
+    FavieProductReview,
+    ReviewSummary,
+)
 
 
 class FavieProductUtils:
@@ -59,6 +63,45 @@ class FavieProductUtils:
         return True
 
     @staticmethod
+    def cal_percentage_to_review_summary(review_summary: ReviewSummary) -> ReviewSummary:
+        if review_summary is None:
+            return None
+        if review_summary.rating_breakdown is None:
+            return review_summary
+        ratings_total = sum(
+            [
+                review_summary.rating_breakdown.five_star or 0,
+                review_summary.rating_breakdown.four_star or 0,
+                review_summary.rating_breakdown.three_star or 0,
+                review_summary.rating_breakdown.two_star or 0,
+                review_summary.rating_breakdown.one_star or 0,
+            ]
+        )
+        if ratings_total > 0:
+            review_summary.rating_breakdown.five_percentage = int(
+                round((review_summary.rating_breakdown.five_star or 0) / ratings_total * 100)
+            )
+            review_summary.rating_breakdown.four_percentage = int(
+                round((review_summary.rating_breakdown.four_star or 0) / ratings_total * 100)
+            )
+            review_summary.rating_breakdown.three_percentage = int(
+                round((review_summary.rating_breakdown.three_star or 0) / ratings_total * 100)
+            )
+            review_summary.rating_breakdown.two_percentage = int(
+                round((review_summary.rating_breakdown.two_star or 0) / ratings_total * 100)
+            )
+            review_summary.rating_breakdown.one_percentage = int(
+                round((review_summary.rating_breakdown.one_star or 0) / ratings_total * 100)
+            )
+        else:
+            review_summary.rating_breakdown.five_percentage = None
+            review_summary.rating_breakdown.four_percentage = None
+            review_summary.rating_breakdown.three_percentage = None
+            review_summary.rating_breakdown.two_percentage = None
+            review_summary.rating_breakdown.one_percentage = None
+        return review_summary
+
+    @staticmethod
     def extract_currency_and_amount(text):
         currency_info = {
             "USD": "$",
@@ -82,33 +125,35 @@ class FavieProductUtils:
             "BRL": "R$",
             "MXN": "$",
         }
+        try:
+            # 创建正则表达式模式，优先匹配货币代码
+            codes = "|".join(currency_info.keys())
+            symbols = "|".join(re.escape(sym) for sym in set(currency_info.values()))
+            pattern = rf"\b({codes})\s*([\d.,]+)\s*|\s*([\d.,]+)\s*({codes})\b|\s*({symbols})\s*([\d.,]+)\s*|\s*([\d.,]+)\s*({symbols})\s*"
 
-        # 创建正则表达式模式，优先匹配货币代码
-        codes = "|".join(currency_info.keys())
-        symbols = "|".join(re.escape(sym) for sym in set(currency_info.values()))
-        pattern = rf"\b({codes})\s*([\d.,]+)\s*|\s*([\d.,]+)\s*({codes})\b|\s*({symbols})\s*([\d.,]+)\s*|\s*([\d.,]+)\s*({symbols})\s*"
+            match = re.search(pattern, text, re.IGNORECASE)
 
-        match = re.search(pattern, text, re.IGNORECASE)
+            if match:
+                groups = match.groups()
+                if groups[0]:  # 货币代码在前
+                    code, amount_str = groups[0], groups[1]
+                elif groups[3]:  # 货币代码在后
+                    code, amount_str = groups[3], groups[2]
+                elif groups[4]:  # 货币符号在前
+                    symbol, amount_str = groups[4], groups[5]
+                    code = next((code for code, sym in currency_info.items() if sym == symbol), None)
+                elif groups[7]:  # 货币符号在后
+                    symbol, amount_str = groups[7], groups[6]
+                    code = next((code for code, sym in currency_info.items() if sym == symbol), None)
+                else:
+                    return None, None
 
-        if match:
-            groups = match.groups()
-            if groups[0]:  # 货币代码在前
-                code, amount_str = groups[0], groups[1]
-            elif groups[3]:  # 货币代码在后
-                code, amount_str = groups[3], groups[2]
-            elif groups[4]:  # 货币符号在前
-                symbol, amount_str = groups[4], groups[5]
-                code = next((code for code, sym in currency_info.items() if sym == symbol), None)
-            elif groups[7]:  # 货币符号在后
-                symbol, amount_str = groups[7], groups[6]
-                code = next((code for code, sym in currency_info.items() if sym == symbol), None)
+                # 处理金额中的逗号和点
+                amount_str = amount_str.replace(",", "")
+                amount = float(amount_str)
+
+                return code.upper() if code else None, amount
             else:
                 return None, None
-
-            # 处理金额中的逗号和点
-            amount_str = amount_str.replace(",", "")
-            amount = float(amount_str)
-
-            return code.upper() if code else None, amount
-        else:
+        except Exception:
             return None, None

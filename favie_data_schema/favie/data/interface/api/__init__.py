@@ -1,4 +1,4 @@
-from crawler import (
+from .crawler import (
     CrawlerDataRequest,
     CrawlerDataResponse,
     CrawlerProductDataRequest,
