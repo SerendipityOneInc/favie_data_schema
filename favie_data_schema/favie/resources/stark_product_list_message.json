@@ -1,595 +1,581 @@
 {
     "host": "www.amazon.com",
-    "content_type": "other",
-    "source": 3,
+    "product_id": null,
     "parser_name": "RainforestStandardV2ProductListParser",
+    "title": null,
+    "category_id": "3778591",
+    "source": 3,
     "raw_result": "",
-    "create_time": "2024-09-26T14:44:50.508943+00:00",
-    "update_time": "2024-09-26T14:44:50.508948+00:00",
     "crawl_result": {
         "product_list": [
             {
                 "position": 1,
-                "title": "ZONGOOL 16 PCS Rug Tape, Reusable Washable Grippers for Rugs, Double Sided Non-Slip Rug Pads for Hardwood Floors, Rug Stoppers to Prevent Sliding, White",
-                "asin": "B08B1DJR6X",
-                "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MTc5MjI0MjI3ODI1MjczOjE3MjczNjE4Nzk6c3BfYXRmX2Jyb3dzZToyMDAwMzkwMjMwMDc4OTg6OjA6Og&url=%2FZONGOOL-Grippers-Washable-Non-Slip-Parallelogram%2Fdp%2FB08B1DJR6X%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8%26dib_tag%3Dse%26qid%3D1727361879%26s%3Dfurniture%26sr%3D1-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGZfYnJvd3Nl%26psc%3D1",
+                "title": "Nose Hair Trimmer, Painless Ear and Nose Hair Trimmer for Men Women Cordless Waterproof Nose Hair Remover Dual Edge Blades Easy Cleansing Eyebrow Trimming Tool",
+                "asin": "B0BZP5M3KJ",
+                "link": "https://www.amazon.com/DELIFO-Painless-Cordless-Waterproof-Cleansing/dp/B0BZP5M3KJ/ref=sr_1_3217?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3217",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/81DRD1J0OpL._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 21804,
+                "image": "https://m.media-amazon.com/images/I/51KDZr0Kp3L._AC_UL320_.jpg",
+                "rating": 4,
+                "ratings_total": 536,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 11.27,
+                        "value": 5.99,
                         "currency": "USD",
-                        "raw": "$11.27",
-                        "name": "Limited time deal",
-                        "is_primary": true
+                        "raw": "$5.99",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
                     },
                     {
                         "symbol": "$",
-                        "value": 19.09,
+                        "value": 7.99,
                         "currency": "USD",
-                        "raw": "$19.09",
-                        "name": "Limited time deal",
-                        "is_rrp": true
+                        "raw": "$7.99",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 11.27,
+                    "value": 5.99,
                     "currency": "USD",
-                    "raw": "$11.27",
-                    "name": "Limited time deal",
-                    "is_primary": true
-                }
+                    "raw": "$5.99",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             },
             {
                 "position": 2,
-                "title": "Gorilla Grip Felt and Natural Rubber Stay in Place Slip Resistant Rug Pad, 1/8” Thick, 2x8 FT Protective Padding for Under Area Rugs, Cushioned Gripper Pads, Carpet Runners, Hardwood Floors Protection",
-                "asin": "B07TFKDQVP",
-                "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MTc5MjI0MjI3ODI1MjczOjE3MjczNjE4Nzk6c3BfYXRmX2Jyb3dzZTozMDAwNTMzOTg5NjkyMDI6OjA6Og&url=%2FGorilla-Grip-Original-Underside-Hardwood%2Fdp%2FB07TFKDQVP%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8%26dib_tag%3Dse%26qid%3D1727361879%26s%3Dfurniture%26sr%3D1-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGZfYnJvd3Nl%26psc%3D1",
+                "title": "Duke Cannon Big Bourbon Beard Balm - 2 Pack",
+                "asin": "B0C9V245M8",
+                "link": "https://www.amazon.com/Duke-Cannon-Beard-Balm-Barrel/dp/B0C9V245M8/ref=sr_1_3218?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3218",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/81P5dZpa3LL._AC_UL320_.jpg",
+                "image": "https://m.media-amazon.com/images/I/71lxNC94MqL._AC_UL320_.jpg",
                 "rating": 4.5,
-                "ratings_total": 5510,
+                "ratings_total": 4,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 30.99,
+                        "value": 31.49,
                         "currency": "USD",
-                        "raw": "$30.99",
+                        "raw": "$31.49",
                         "name": "Primary",
-                        "is_primary": true
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
                     },
                     {
                         "symbol": "$",
-                        "value": 39.99,
+                        "value": 34.99,
                         "currency": "USD",
-                        "raw": "$39.99",
+                        "raw": "$34.99",
                         "name": "Original",
-                        "is_rrp": true
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 30.99,
+                    "value": 31.49,
                     "currency": "USD",
-                    "raw": "$30.99",
+                    "raw": "$31.49",
                     "name": "Primary",
-                    "is_primary": true
-                }
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             },
             {
                 "position": 3,
-                "title": "Non Slip Rug Pad Gripper - 5x7 Feet 1/4” Extra Thick Felt Under Rug for Area Rugs and Hardwood Floors,Super Cushioned Non Skid Carpet Padding",
-                "asin": "B09YGTPK7C",
-                "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MTc5MjI0MjI3ODI1MjczOjE3MjczNjE4Nzk6c3BfYXRmX2Jyb3dzZToyMDAxNDE4NzI5NzA2OTg6OjA6Og&url=%2FNon-Slip-Rug-Pad-Gripper%2Fdp%2FB09YGTPK7C%2Fref%3Dsr_1_3_sspa%3Fdib%3DeyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8%26dib_tag%3Dse%26qid%3D1727361879%26s%3Dfurniture%26sr%3D1-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGZfYnJvd3Nl%26psc%3D1",
+                "title": "The Art of Shaving Bergamot & Neroli 2 in 1 After-Shave Balm & Daily Moisturizer for Men \u2013 Provides 8 hours of Restorative Hydration \u2013 Clinically Tested for Sensitive Skin \u2013 3.3 oz",
+                "asin": "B07C57V57P",
+                "link": "https://www.amazon.com/Art-Shaving-Bergamot-Neroli-After-Shave/dp/B07C57V57P/ref=sr_1_3219?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3219",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/81F+PcWfnQL._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 910,
+                "image": "https://m.media-amazon.com/images/I/61nucT4ftTL._AC_UL320_.jpg",
+                "rating": 4.7,
+                "ratings_total": 343,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 38.98,
+                        "value": 45,
                         "currency": "USD",
-                        "raw": "$38.98",
-                        "name": "Limited time deal",
-                        "is_primary": true
+                        "raw": "$45.00",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
                     },
                     {
                         "symbol": "$",
-                        "value": 49.99,
+                        "value": 50,
                         "currency": "USD",
-                        "raw": "$49.99",
-                        "name": "Limited time deal",
-                        "is_rrp": true
+                        "raw": "$50.00",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 38.98,
+                    "value": 45,
                     "currency": "USD",
-                    "raw": "$38.98",
-                    "name": "Limited time deal",
-                    "is_primary": true
-                }
+                    "raw": "$45.00",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             },
             {
                 "position": 4,
-                "title": "Rabenda 12 Pcs Rug Tape, Non Slip Rug Pads Grippers for Hardwood Floors and Tiles, Reusable Carpet Tape for Area Rugs, Double-Sided Adhesive Rug Stickers Keep Corners Flat (Black)",
-                "asin": "B092VC7VK2",
-                "link": "https://www.amazon.com/Gripper-Grippers-Hardwood-Floors-Reusable/dp/B092VC7VK2/ref=sr_1_4?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-4",
+                "title": "Uncle Jimmy Beard Growth Oil with Biotin | Natural Beard Care for Thicker, Fuller Healthier Beard | Men's Facial Hair Treatment for Grooming | Increases Thickness and Volume 2 Fl Oz",
+                "asin": "B073R4ZH52",
+                "link": "https://www.amazon.com/Uncle-Jimmy-Beard-Growth-Oil/dp/B073R4ZH52/ref=sr_1_3220?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3220",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/7144hjLKYSL._AC_UL320_.jpg",
-                "rating": 4.3,
-                "ratings_total": 29194,
+                "image": "https://m.media-amazon.com/images/I/61VuHC2MbDL._AC_UL320_.jpg",
+                "rating": 4.5,
+                "ratings_total": 505,
                 "prices": [
                     {
-                        "raw": "Rabenda 12 Pcs Rug Tape, Non Slip Rug Pads Grippers for Hardwood Floors and Tiles, Reusable Carpet Tape for Area Rugs, Double-Sided Adhesive Rug Stickers Keep Corners Flat",
-                        "name": "$11.99"
+                        "symbol": "$",
+                        "value": 12.2,
+                        "currency": "USD",
+                        "raw": "$12.20",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
                     },
                     {
                         "symbol": "$",
-                        "value": 9.97,
+                        "value": 13.92,
                         "currency": "USD",
-                        "raw": "Join Prime to buy this item at $9.97",
-                        "name": "$11.99",
-                        "asin": "B092VC7VK2"
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 11.99,
-                        "currency": "USD",
-                        "raw": "$11.99"
+                        "raw": "$13.92",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
-                    "raw": "Rabenda 12 Pcs Rug Tape, Non Slip Rug Pads Grippers for Hardwood Floors and Tiles, Reusable Carpet Tape for Area Rugs, Double-Sided Adhesive Rug Stickers Keep Corners Flat",
-                    "name": "$11.99"
-                }
+                    "symbol": "$",
+                    "value": 12.2,
+                    "currency": "USD",
+                    "raw": "$12.20",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             },
             {
                 "position": 5,
-                "title": "Home Techpro Rug Pad Gripper, Washable Grippers for Rug, “Vacuum TECH” - New Materials to Non Slip Rug Pads for Hardwood Floors, Under Rug Carpet Tape : Keep Your Rug in Place & Make Corner Flat",
-                "asin": "B07BYCHMVY",
-                "link": "https://www.amazon.com/Home-Techpro-Non-Slip-Washable-Materials/dp/B07BYCHMVY/ref=sr_1_5?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-5",
+                "title": "MANSCAPED\u00ae Dome Soother Men\u2019s Head Aftershave Lotion \u2013 Infused with Aloe & Colloidal Oats for Soothing & Hydrating Scalp Skin, Quick Absorbing & Dries Clear Relieving Post-Shave Discomfort, 4 fl. Oz.",
+                "asin": "B0D9ZYWDGR",
+                "link": "https://www.amazon.com/MANSCAPED%C2%AE-Dome-Soother-Aftershave-Lotion/dp/B0D9ZYWDGR/ref=sr_1_3221?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3221",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/71IG+b3y1LL._AC_UL320_.jpg",
+                "image": "https://m.media-amazon.com/images/I/61gOqKMGMzL._AC_UL320_.jpg",
                 "rating": 4.1,
-                "ratings_total": 72183,
+                "ratings_total": 20,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 9.99,
+                        "value": 14.99,
                         "currency": "USD",
-                        "raw": "$9.99",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
+                        "raw": "$14.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0D9ZYWDGR"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 14.99,
+                    "currency": "USD",
+                    "raw": "$14.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0D9ZYWDGR"
+                },
+                "rrp": null
+            },
+            {
+                "position": 6,
+                "title": "Badass Beard Care Oil For Men - The Ladies Man Scent, 1 oz - All Natural Ingredients, Keeps Beard and Mustache Full, Soft and Healthy",
+                "asin": "B00PQ5P1NK",
+                "link": "https://www.amazon.com/Badass-Beard-Care-Oil-Men/dp/B00PQ5P1NK/ref=sr_1_3222?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3222",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/61Hqbawf5dL._AC_UL320_.jpg",
+                "rating": 4.6,
+                "ratings_total": 2581,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 17.99,
+                        "currency": "USD",
+                        "raw": "$17.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B00PQ5P1NK"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 17.99,
+                    "currency": "USD",
+                    "raw": "$17.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B00PQ5P1NK"
+                },
+                "rrp": null
+            },
+            {
+                "position": 7,
+                "title": "Claev Beard Balm (2 oz), 100% Top-Grade Natural Beard Conditioning & Styling Balm, Designed for Rugged, Active, or Outdoorsy Men, Includes Shea Butter, Vegan Beeswax, Cedarwood Oil, is a US Company",
+                "asin": "B08FSS6FJF",
+                "link": "https://www.amazon.com/Natural-Conditioning-Styling-Cedarwood-Claev/dp/B08FSS6FJF/ref=sr_1_3223?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3223",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/813kYBCUv6L._AC_UL320_.jpg",
+                "rating": 4,
+                "ratings_total": 259,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 5.49,
+                        "currency": "USD",
+                        "raw": "$5.49",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B08FSS6FJF"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 5.49,
+                    "currency": "USD",
+                    "raw": "$5.49",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B08FSS6FJF"
+                },
+                "rrp": null
+            },
+            {
+                "position": 8,
+                "title": "Beard Brush, 100% Real Wild Boar Bristle Walnut Wood Beard & Mustache Comb Brush for Men\u2019s Beard Grooming and Care, Gift for Men to Straighten and Promote Beard Growth",
+                "asin": "B0D83GR9Q8",
+                "link": "https://www.amazon.com/Bristle-Mustache-Grooming-Straighten-Promote/dp/B0D83GR9Q8/ref=sr_1_3224?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3224",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/71+PwIj2LqL._AC_UL320_.jpg",
+                "rating": 4.5,
+                "ratings_total": 2,
+                "prices": [
                     {
                         "symbol": "$",
                         "value": 15.99,
                         "currency": "USD",
                         "raw": "$15.99",
-                        "name": "Original",
-                        "is_rrp": true
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0D83GR9Q8"
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 9.99,
+                    "value": 15.99,
                     "currency": "USD",
-                    "raw": "$9.99",
-                    "name": "Primary",
-                    "is_primary": true
-                }
-            },
-            {
-                "position": 6,
-                "title": "OLANLY Bathroom Rugs Mat 30x20, Extra Soft and Absorbent Microfiber Bath Rugs, Non-Slip Plush Shaggy Bath Carpet, Machine Wash Dry, Bath Mat for Bathroom Floor, Tub and Shower, Grey",
-                "asin": "B0CBP8CL71",
-                "link": "https://www.amazon.com/OLANLY-Bathroom-Absorbent-Microfiber-Non-Slip/dp/B0CBP8CL71/ref=sr_1_6?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-6",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/81rd6KVToCL._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 40092,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 9.98,
-                        "currency": "USD",
-                        "raw": "$9.98",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 18.98,
-                        "currency": "USD",
-                        "raw": "$18.98",
-                        "name": "Original",
-                        "is_rrp": true
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 9.98,
-                    "currency": "USD",
-                    "raw": "$9.98",
-                    "name": "Primary",
-                    "is_primary": true
-                }
-            },
-            {
-                "position": 7,
-                "title": "ZONGOOL 12 PCS Rug Tape, Reusable Washable Grippers for Rugs, Double Sided Non-Slip Rug Pads for Hardwood Floors, Rug Stoppers to Prevent Sliding, White",
-                "asin": "B08B12BFK2",
-                "link": "https://www.amazon.com/ZONGOOL-Grippers-Washable-Non-Slip-Parallelogram/dp/B08B12BFK2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-7",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/81DA4lS7wBL._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 21804,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 7.95,
-                        "currency": "USD",
-                        "raw": "$7.95",
-                        "name": "Limited time deal",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 14.99,
-                        "currency": "USD",
-                        "raw": "$14.99",
-                        "name": "Limited time deal",
-                        "is_rrp": true
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 7.95,
-                    "currency": "USD",
-                    "raw": "$7.95",
-                    "name": "Limited time deal",
-                    "is_primary": true
-                }
-            },
-            {
-                "position": 8,
-                "title": "Carpet Tape Double Sided - Rug Tape Grippers for Hardwood Floors and Area Rugs - Carpet Binding Tape Strong Adhesive and Removable, Heavy Duty Stickers Grip Tape, Residue Free (2 Inch / 12 Yards)",
-                "asin": "B08M63DCJW",
-                "link": "https://www.amazon.com/Carpet-Tape-Double-Sided-Removable/dp/B08M63DCJW/ref=sr_1_8?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-8",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/81kz3puLD8L._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 12007,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 9.96,
-                        "currency": "USD",
-                        "raw": "$9.96",
-                        "name": "Limited time deal",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 16.59,
-                        "currency": "USD",
-                        "raw": "$16.59",
-                        "name": "Limited time deal",
-                        "is_rrp": true
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 9.96,
-                    "currency": "USD",
-                    "raw": "$9.96",
-                    "name": "Limited time deal",
-                    "is_primary": true
-                }
+                    "raw": "$15.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0D83GR9Q8"
+                },
+                "rrp": null
             },
             {
                 "position": 9,
-                "title": "OLANLY Bathroom Rugs 30x20, Extra Soft Absorbent Chenille Bath Rugs, Rubber Backing Quick Dry, Machine Washable Bath Mats for Bathroom Floor, Tub and Shower, Home Decor Accessories, Grey",
-                "asin": "B0CFGYFCYL",
-                "link": "https://www.amazon.com/OLANLY-Bathroom-Absorbent-Chenille-Non-Slip/dp/B0CFGYFCYL/ref=sr_1_9?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-9",
+                "title": "Beard Kit,Beard Grooming Kit w/Beard Wash/Shampoo,2 Packs Beard Oil,Beard Balm,Beard Wash,Brush,Comb,Scissor,Storage Bag,E-Book,Beard Care & Trimming Kit Gifts for Men Him",
+                "asin": "B07C5J72MH",
+                "link": "https://www.amazon.com/Grooming-Unscented-Scissors-Storage-GoldWorld/dp/B07C5J72MH/ref=sr_1_3225?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3225",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/91qCL3ywLNL._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 2557,
+                "image": "https://m.media-amazon.com/images/I/81ZUr9BCS5L._AC_UL320_.jpg",
+                "rating": 4.6,
+                "ratings_total": 13433,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 9.99,
+                        "value": 16.91,
                         "currency": "USD",
-                        "raw": "$9.99",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 14.98,
-                        "currency": "USD",
-                        "raw": "$14.98",
-                        "name": "Original",
-                        "is_rrp": true
+                        "raw": "$16.91",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B07C5J72MH"
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 9.99,
+                    "value": 16.91,
                     "currency": "USD",
-                    "raw": "$9.99",
-                    "name": "Primary",
-                    "is_primary": true
-                }
+                    "raw": "$16.91",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B07C5J72MH"
+                },
+                "rrp": null
             },
             {
                 "position": 10,
-                "title": "Home Techpro 12 PCS Gripper for Rug for Hardwood Floors, Double Sided Reusable Under Rug Carpet Tape Stickers, Rug Anti Slip Grips for Area Rugs, Non Slip Rug Pads",
-                "asin": "B0C8HW226V",
-                "link": "https://www.amazon.com/Home-Techpro-Rug-Hardwood-Reusable/dp/B0C8HW226V/ref=sr_1_10?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-10",
+                "title": "GiGi Hard Wax Beads, Golden Honee All Purpose Hair Removal Wax, no strip needed, 32 oz",
+                "asin": "B07BYRZTX6",
+                "link": "https://www.amazon.com/GiGi-Golden-Purpose-Removal-needed/dp/B07BYRZTX6/ref=sr_1_3226?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3226",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/71nc7+woxbL._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 4152,
+                "image": "https://m.media-amazon.com/images/I/610WBLo48nL._AC_UL320_.jpg",
+                "rating": 4.5,
+                "ratings_total": 204,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 9.99,
+                        "value": 26.75,
                         "currency": "USD",
-                        "raw": "$9.99",
+                        "raw": "$26.75",
                         "name": "Primary",
-                        "is_primary": true
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
                     },
                     {
                         "symbol": "$",
-                        "value": 11.99,
+                        "value": 32.95,
                         "currency": "USD",
-                        "raw": "$11.99",
+                        "raw": "$32.95",
                         "name": "Original",
-                        "is_rrp": true
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 9.99,
+                    "value": 26.75,
                     "currency": "USD",
-                    "raw": "$9.99",
+                    "raw": "$26.75",
                     "name": "Primary",
-                    "is_primary": true
-                }
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             },
             {
                 "position": 11,
-                "title": "Gorilla Grip 8 Pack Rug Gripper Pads, Keep Area Rugs Corners from Curling and Bunching, Reusable Dual-Sided Flexible Sticky Pad, Grips Floor Underlayment, Hold Carpet in Place on Hardwood Floors",
-                "asin": "B0815BLNX1",
-                "link": "https://www.amazon.com/Gorilla-Grip-Premium-Grippers-Reusable/dp/B0815BLNX1/ref=sr_1_11?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-11",
+                "title": "L'Occitane Men's Cade Shaving Soap , 1.28 Ounce (Pack of 1)",
+                "asin": "B001G60EGC",
+                "link": "https://www.amazon.com/LOccitane-Shaving-Comfortable-Smooth-Shave/dp/B001G60EGC/ref=sr_1_3227?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3227",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/71N0cVJdCqL._AC_UL320_.jpg",
-                "rating": 4.5,
-                "ratings_total": 23805,
+                "image": "https://m.media-amazon.com/images/I/413ZMeq+YrL._AC_UL320_.jpg",
+                "rating": 4.4,
+                "ratings_total": 186,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 13.99,
+                        "value": 15,
                         "currency": "USD",
-                        "raw": "$13.99",
-                        "asin": "B0815BLNX1"
+                        "raw": "$15.00",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B001G60EGC"
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 13.99,
+                    "value": 15,
                     "currency": "USD",
-                    "raw": "$13.99",
-                    "asin": "B0815BLNX1"
-                }
+                    "raw": "$15.00",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B001G60EGC"
+                },
+                "rrp": null
             },
             {
                 "position": 12,
-                "title": "Gorilla Grip Bath Rug Mat 24x17, Thick Soft Absorbent Chenille, Rubber Backing Quick Dry Microfiber Mats, Machine Washable Rugs for Shower Floor, Bathroom Runner Bathmat Accessories Decor, Grey",
-                "asin": "B07FPQZG6V",
-                "link": "https://www.amazon.com/Gorilla-Grip-Original-Chenille-Absorbent/dp/B07FPQZG6V/ref=sr_1_12?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-12",
+                "title": "15V Power Cord Fit for Philips Norelco HQ8505 Series 3000 4000 5000 7000 9000 Shaver Charger Supply AC Adapter",
+                "asin": "B0D1PDLGJX",
+                "link": "https://www.amazon.com/Philips-Norelco-HQ8505-Charger-Adapter/dp/B0D1PDLGJX/ref=sr_1_3228?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3228",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/91RzUPx1mkL._AC_UL320_.jpg",
-                "rating": 4.3,
-                "ratings_total": 71621,
+                "image": "https://m.media-amazon.com/images/I/51ZrjRnoSNL._AC_UL320_.jpg",
+                "rating": null,
+                "ratings_total": null,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 9.99,
+                        "value": 5.66,
                         "currency": "USD",
-                        "raw": "$9.99",
-                        "asin": "B07FPQZG6V"
+                        "raw": "$5.66",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 8.99,
+                        "currency": "USD",
+                        "raw": "$8.99",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 9.99,
+                    "value": 5.66,
                     "currency": "USD",
-                    "raw": "$9.99",
-                    "asin": "B07FPQZG6V"
-                }
+                    "raw": "$5.66",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             },
             {
                 "position": 13,
-                "title": "Rabenda 12 Pcs Rug Tape, Non Slip Rug Pads Grippers for Hardwood Floors and Tiles, Reusable Carpet Tape for Area Rugs, Double-Sided Adhesive Rug Stickers Keep Corners Flat (Black)",
-                "asin": "B092VC7VK2",
-                "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MTc5MjI0MjI3ODI1MjczOjE3MjczNjE4Nzk6c3BfbXRmX2Jyb3dzZToyMDAwNzQwOTkwNDMzNzE6OjA6Og&url=%2FGripper-Grippers-Hardwood-Floors-Reusable%2Fdp%2FB092VC7VK2%2Fref%3Dsr_1_13_sspa%3Fdib%3DeyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8%26dib_tag%3Dse%26qid%3D1727361879%26s%3Dfurniture%26sr%3D1-13-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGZfYnJvd3Nl%26psc%3D1",
+                "title": "Philips Norelco Genuine OneBlade Replacement Blades, 3 Count, QP230/80",
+                "asin": "B09FNW8TVT",
+                "link": "https://www.amazon.com/PHILIPS-QP230-80-Replacement-blade/dp/B09FNW8TVT/ref=sr_1_3229?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3229",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/7144hjLKYSL._AC_UL320_.jpg",
-                "rating": 4.3,
-                "ratings_total": 29194,
+                "image": "https://m.media-amazon.com/images/I/71cbd6nqlhL._AC_UL320_.jpg",
+                "rating": 4.4,
+                "ratings_total": 23,
                 "prices": [
                     {
-                        "raw": "SponsoredSponsored You’re seeing this ad based on the product’s relevance to your search query.Leave ad feedback  Rabenda 12 Pcs Rug Tape, Non Slip Rug Pads Grippers for Hardwood Floors and Tiles, Reusable Carpet Tape for Area Rugs, Double-Sided Adhesive Rug Stickers Keep Corners Flat"
-                    },
-                    {
                         "symbol": "$",
-                        "value": 9.97,
+                        "value": 34.99,
                         "currency": "USD",
-                        "raw": "Join Prime to buy this item at $9.97",
-                        "name": "$11.99"
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 11.99,
-                        "currency": "USD",
-                        "raw": "$11.99"
+                        "raw": "$34.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B09FNW8TVT"
                     }
                 ],
                 "price": {
-                    "raw": "SponsoredSponsored You’re seeing this ad based on the product’s relevance to your search query.Leave ad feedback  Rabenda 12 Pcs Rug Tape, Non Slip Rug Pads Grippers for Hardwood Floors and Tiles, Reusable Carpet Tape for Area Rugs, Double-Sided Adhesive Rug Stickers Keep Corners Flat"
-                }
+                    "symbol": "$",
+                    "value": 34.99,
+                    "currency": "USD",
+                    "raw": "$34.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B09FNW8TVT"
+                },
+                "rrp": null
             },
             {
                 "position": 14,
-                "title": "12PCS Non Slip Rug Grippers, Rug Pads Grippers, Rug Tape Anti Slip Carpet Pads Rug Corner Gripper for Hardwood Floors/Tile/Mats/Keep Area Rugs Flat and Easily Peel Off (Black)",
-                "asin": "B09LXV7KSN",
-                "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MTc5MjI0MjI3ODI1MjczOjE3MjczNjE4Nzk6c3BfbXRmX2Jyb3dzZToyMDAwMzY2Mzg0MzExOTg6OjA6Og&url=%2FMSXCSE-Grippers-Carpet-Gripper-Hardwood%2Fdp%2FB09LXV7KSN%2Fref%3Dsr_1_14_sspa%3Fdib%3DeyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8%26dib_tag%3Dse%26qid%3D1727361879%26s%3Dfurniture%26sr%3D1-14-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGZfYnJvd3Nl%26psc%3D1",
+                "title": "Schick Hydro Silk Women's Depilatory Cream for Body and Bikini Area",
+                "asin": "B0BPDYJX45",
+                "link": "https://www.amazon.com/Schick-Hydro-Silk-Removal-Depilatory/dp/B0BPDYJX45/ref=sr_1_3230?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&rdc=1&s=beauty&sr=1-3230",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/81FScuvj64L._AC_UL320_.jpg",
-                "rating": 4.2,
-                "ratings_total": 1279,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 6.99,
-                        "currency": "USD",
-                        "raw": "$6.99",
-                        "asin": "B09LXV7KSN"
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 6.99,
-                    "currency": "USD",
-                    "raw": "$6.99",
-                    "asin": "B09LXV7KSN"
-                }
-            },
-            {
-                "position": 15,
-                "title": "Superior Indoor Area Rug Pad, Non-Slip, Non-Skid, Floor Protector, Hardwood and Tile Floor Padding, Furniture Protector Pad, Carpet Gripper Mat, Felt and Rubber Rug Grip, Lima Collection, 2' 7\" x 10'",
-                "asin": "B0CP48B5RV",
-                "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MTc5MjI0MjI3ODI1MjczOjE3MjczNjE4Nzk6c3BfbXRmX2Jyb3dzZTozMDAxMzQ3ODI4MzQzMDI6OjA6Og&url=%2FSuperior-Non-Slip-Protector-Furniture-Collection%2Fdp%2FB0CP48B5RV%2Fref%3Dsr_1_15_sspa%3Fdib%3DeyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8%26dib_tag%3Dse%26qid%3D1727361879%26s%3Dfurniture%26sr%3D1-15-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGZfYnJvd3Nl%26psc%3D1",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/817UJEwtq+L._AC_UL320_.jpg",
-                "rating": 4.5,
-                "ratings_total": 11,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 33.3,
-                        "currency": "USD",
-                        "raw": "$33.30",
-                        "asin": "B0CP48B5RV"
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 33.3,
-                    "currency": "USD",
-                    "raw": "$33.30",
-                    "asin": "B0CP48B5RV"
-                }
-            },
-            {
-                "position": 16,
-                "title": "Colorxy Memory Foam Bath Mat 30x20, Ultra Soft and Absorbent Bathroom Rugs, Non-Slip, Machine Wash Dry, Thick Bath Rug Carpet for Bathroom Floor, Sink and Shower, Dark Grey",
-                "asin": "B0CN427959",
-                "link": "https://www.amazon.com/Colorxy-Absorbent-Bathroom-Non-Slip-Machine/dp/B0CN427959/ref=sr_1_16?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-16",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/91vTmj5qf3L._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 604,
+                "image": "https://m.media-amazon.com/images/I/71uikxP9OXL._AC_UL320_.jpg",
+                "rating": 3.7,
+                "ratings_total": 148,
                 "prices": [
                     {
                         "symbol": "$",
@@ -597,130 +583,9 @@
                         "currency": "USD",
                         "raw": "$9.99",
                         "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 14.99,
-                        "currency": "USD",
-                        "raw": "$14.99",
-                        "name": "Original",
-                        "is_rrp": true
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 9.99,
-                    "currency": "USD",
-                    "raw": "$9.99",
-                    "name": "Primary",
-                    "is_primary": true
-                }
-            },
-            {
-                "position": 17,
-                "title": "Veken Rug Gripper Pad for Hardwood Floors, Non Slip Thick Area Rug Pads for Tile Floor, Under 2x3 Carpet Anti Skid Mat, Keep Your Rug Safe in Place",
-                "asin": "B07ZSWRKZY",
-                "link": "https://www.amazon.com/Veken-Non-Slip-Gripper-Surface-Floors/dp/B07ZSWRKZY/ref=sr_1_17?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-17",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/81qfsI1KveL._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 48937,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 9.99,
-                        "currency": "USD",
-                        "raw": "$9.99",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 11.99,
-                        "currency": "USD",
-                        "raw": "$11.99",
-                        "name": "Original",
-                        "is_rrp": true
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 9.99,
-                    "currency": "USD",
-                    "raw": "$9.99",
-                    "name": "Primary",
-                    "is_primary": true
-                }
-            },
-            {
-                "position": 18,
-                "title": "Buganda Memory Foam Bath Mat Rug, 24\" x 16\", Ultra Soft and Non-Slip Bathroom Rugs, Water Absorbent and Machine Washable Bath Rug for Bathroom, Shower, and Tub, Black",
-                "asin": "B07MDY6PHC",
-                "link": "https://www.amazon.com/Buganda-Non-Slip-Bathroom-Absorbent-Washable/dp/B07MDY6PHC/ref=sr_1_18?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-18",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/711C0JypeVL._AC_UL320_.jpg",
-                "rating": 4.4,
-                "ratings_total": 17311,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 9.49,
-                        "currency": "USD",
-                        "raw": "$9.49",
-                        "name": "Limited time deal",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 11.86,
-                        "currency": "USD",
-                        "raw": "$11.86",
-                        "name": "Limited time deal",
-                        "is_rrp": true
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 9.49,
-                    "currency": "USD",
-                    "raw": "$9.49",
-                    "name": "Limited time deal",
-                    "is_primary": true
-                }
-            },
-            {
-                "position": 19,
-                "title": "Smiry Luxury Chenille Bath Rug 30''x20'', Extra Soft and Absorbent Shaggy Bathroom Mat Rugs, Machine Washable, Non-Slip Plush Carpet Runner for Tub, Shower, and Bath Room, Black",
-                "asin": "B07TTB1YTH",
-                "link": "https://www.amazon.com/Chenille-Absorbent-Bathroom-Washable-Non-Slip/dp/B07TTB1YTH/ref=sr_1_19?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-19",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/913zP84KMOL._AC_UL320_.jpg",
-                "rating": 4.5,
-                "ratings_total": 18850,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 9.99,
-                        "currency": "USD",
-                        "raw": "$9.99",
-                        "name": "Primary",
-                        "is_primary": true
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
                     },
                     {
                         "symbol": "$",
@@ -728,7 +593,9 @@
                         "currency": "USD",
                         "raw": "$12.99",
                         "name": "Original",
-                        "is_rrp": true
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
@@ -737,39 +604,436 @@
                     "currency": "USD",
                     "raw": "$9.99",
                     "name": "Primary",
-                    "is_primary": true
-                }
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
+            },
+            {
+                "position": 15,
+                "title": "Nose Hair Scissors, Safety Rounded Tip Small Scissors for Eyebrow, Nose Hair, Beard, Ear Hair, Stainless Steel Eyebrow Scissors, Professional Facial Hair Trimming Scissors for Men & Women(Silver)",
+                "asin": "B0BJTDTS7Y",
+                "link": "https://www.amazon.com/Nose-Hair-Scissors-Stainless-Professional/dp/B0BJTDTS7Y/ref=sr_1_3231?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3231",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/6171TSLtejL._AC_UL320_.jpg",
+                "rating": 4.2,
+                "ratings_total": 156,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 3.99,
+                        "currency": "USD",
+                        "raw": "$3.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0BJTDTS7Y"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 3.99,
+                    "currency": "USD",
+                    "raw": "$3.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0BJTDTS7Y"
+                },
+                "rrp": null
+            },
+            {
+                "position": 16,
+                "title": "Parker Safety Razor, The SOLOEDGE Single Edge Safety Razor With 100 Blades, Now with a Magnetic Head for Easy Blade Loading, Delivers a Super Smooth & Comfortable Shave",
+                "asin": "B0CTMNT5HC",
+                "link": "https://www.amazon.com/Parker-SoloEdge-Safety-Razor-Platinum/dp/B0CTMNT5HC/ref=sr_1_3232?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3232",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/71seVz3nMYL._AC_UL320_.jpg",
+                "rating": 4.2,
+                "ratings_total": 56,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 37.99,
+                        "currency": "USD",
+                        "raw": "$37.99",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 43.99,
+                        "currency": "USD",
+                        "raw": "$43.99",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 37.99,
+                    "currency": "USD",
+                    "raw": "$37.99",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
+            },
+            {
+                "position": 17,
+                "title": "Harry's Post Shave Mist, Alcohol-Free Formula made with Aloe, Eucalyputus, and Tea Tree, 3.4 Fl. Oz, Pack of 2",
+                "asin": "B08NWV6G4C",
+                "link": "https://www.amazon.com/Harrys-After-Shave-Mist-Green/dp/B08NWV6G4C/ref=sr_1_3233?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3233",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/51G1bt-bnaL._AC_UL320_.jpg",
+                "rating": 4.5,
+                "ratings_total": 343,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 25.99,
+                        "currency": "USD",
+                        "raw": "$25.99",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 39.99,
+                        "currency": "USD",
+                        "raw": "$39.99",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 25.99,
+                    "currency": "USD",
+                    "raw": "$25.99",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
+            },
+            {
+                "position": 18,
+                "title": "Hair Remover Mitten - All-Natural, Painless & Chemical Free - Full Body Hair Removal - Slows & Lessens Regrowth - Exfoliates Skin (3 Mittens Per Box, Pack of 4)",
+                "asin": "B001ET7LUS",
+                "link": "https://www.amazon.com/Hair-Off-Mitten-remover-mittens/dp/B001ET7LUS/ref=sr_1_3234?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3234",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/810u7OZZRgS._AC_UL320_.jpg",
+                "rating": 3.7,
+                "ratings_total": 430,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 25.89,
+                        "currency": "USD",
+                        "raw": "$25.89",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B001ET7LUS"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 25.89,
+                    "currency": "USD",
+                    "raw": "$25.89",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B001ET7LUS"
+                },
+                "rrp": null
+            },
+            {
+                "position": 19,
+                "title": "AmazonCommercial Slant Tip Tweezer - Professional Stainless Steel Tweezer for Effective Hair Removal, Ideal for Daily Beauty Regimen, with Travel Case, Black, 1-Pack",
+                "asin": "B08JDSW1X2",
+                "link": "https://www.amazon.com/AmazonCommercial-Professional-Stainless-Tweezer-Tweezers/dp/B08JDSW1X2/ref=sr_1_3235?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3235",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/61QrOrFK9ML._AC_UL320_.jpg",
+                "rating": 4.3,
+                "ratings_total": 1620,
+                "prices": null,
+                "price": null,
+                "rrp": null
             },
             {
                 "position": 20,
-                "title": "Yimobra Memory Foam Bath Mat Rug, 24 x 17 Inches, Comfortable, Soft, Super Water Absorption, Machine Wash, Non-Slip, Thick, Easier to Dry for Bathroom Floor Rugs, Gray",
-                "asin": "B07VX6GH88",
-                "link": "https://www.amazon.com/Yimobra-Comfortable-Absorption-Non-Slip-Bathroom/dp/B07VX6GH88/ref=sr_1_20?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-20",
+                "title": "Personna hair shaper blades 12 boxes 60 blades plus 12 free BP8800P",
+                "asin": "B074V2C6FB",
+                "link": "https://www.amazon.com/Personna-shaper-blades-boxes-BP8800P/dp/B074V2C6FB/ref=sr_1_3236?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3236",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/71HB3vPlu6L._AC_UL320_.jpg",
+                "image": "https://m.media-amazon.com/images/I/51WJDxiPF6L._AC_UL320_.jpg",
+                "rating": 4.8,
+                "ratings_total": 433,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 37.08,
+                        "currency": "USD",
+                        "raw": "$37.08",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 42.99,
+                        "currency": "USD",
+                        "raw": "$42.99",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 37.08,
+                    "currency": "USD",
+                    "raw": "$37.08",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
+            },
+            {
+                "position": 21,
+                "title": "uijino Bikini Trimmer Charger Compatible with OLOV Electric Trimmer Charger, OLOV Charger OLOV Trimmer Charger for Bikini Trimmer for Women Electric Groin Hair Trimmer, 3.3ft Power Cord",
+                "asin": "B0DD7Y38BP",
+                "link": "https://www.amazon.com/uijino-Trimmer-Charger-Compatible-Electric/dp/B0DD7Y38BP/ref=sr_1_3237?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3237",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/61SOox1g9BL._AC_UL320_.jpg",
+                "rating": null,
+                "ratings_total": null,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 6.99,
+                        "currency": "USD",
+                        "raw": "$6.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0DD7Y38BP"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 6.99,
+                    "currency": "USD",
+                    "raw": "$6.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0DD7Y38BP"
+                },
+                "rrp": null
+            },
+            {
+                "position": 22,
+                "title": "The Art of Shaving The Art Of Shaving Beard Balm Conditioner For Stubble To Hydrate Skin And Hair Ounce",
+                "asin": "B0758LZJLF",
+                "link": "https://www.amazon.com/Art-Shaving-Beard-Stubble-Balm/dp/B0758LZJLF/ref=sr_1_3238?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3238",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/41RJ3Kh25PL._AC_UL320_.jpg",
+                "rating": 4.6,
+                "ratings_total": 498,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 36.18,
+                        "currency": "USD",
+                        "raw": "$36.18",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 40,
+                        "currency": "USD",
+                        "raw": "$40.00",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 36.18,
+                    "currency": "USD",
+                    "raw": "$36.18",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
+            },
+            {
+                "position": 23,
+                "title": "Suavecito Beard Wash Set Cleansing and Conditioning Beard Kit For Men (8 oz. each)",
+                "asin": "B07GBF7PPP",
+                "link": "https://www.amazon.com/Suavecito-Beard-Wash-Cleansing-Conditioning/dp/B07GBF7PPP/ref=sr_1_3239?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3239",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/61Fm3n+MSCL._AC_UL320_.jpg",
+                "rating": 4.6,
+                "ratings_total": 343,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 24.99,
+                        "currency": "USD",
+                        "raw": "$24.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B07GBF7PPP"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 24.99,
+                    "currency": "USD",
+                    "raw": "$24.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B07GBF7PPP"
+                },
+                "rrp": null
+            },
+            {
+                "position": 24,
+                "title": "Bikini Trimmer for Women, 3 in 1 Electric Razors for Women, IPX7 Waterproof Wet Dry Body Shaver Pubic Hair Trimmer Facial Hair Remover with Ceramic Blade USB Recharge Dock Gift for Women",
+                "asin": "B0DDJR2139",
+                "link": "https://www.amazon.com/tiovara-Trimmer-Electric-Waterproof-Recharge/dp/B0DDJR2139/ref=sr_1_3240?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3240",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/61BDxS426EL._AC_UL320_.jpg",
+                "rating": null,
+                "ratings_total": null,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 69.99,
+                        "currency": "USD",
+                        "raw": "$69.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0DDJR2139"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 69.99,
+                    "currency": "USD",
+                    "raw": "$69.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0DDJR2139"
+                },
+                "rrp": null
+            },
+            {
+                "position": 25,
+                "title": "5\" Beard & Mustache trimming Scissors for Men, 2 comb & Travel carrying Pouch, Hand forged with Bevel edge For precision, Mustache kit for men, Extremely Sharp Scissors",
+                "asin": "B0CBNN3QCP",
+                "link": "https://www.amazon.com/BROSTACHE-Mustache-trimming-precision-Extremely/dp/B0CBNN3QCP/ref=sr_1_3241?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3241",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/51MZp-F57PL._AC_UL320_.jpg",
                 "rating": 4.5,
-                "ratings_total": 47968,
+                "ratings_total": 72,
                 "prices": [
                     {
                         "symbol": "$",
                         "value": 9.99,
                         "currency": "USD",
                         "raw": "$9.99",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 26.99,
-                        "currency": "USD",
-                        "raw": "$26.99",
-                        "name": "Original",
-                        "is_rrp": true
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0CBNN3QCP"
                     }
                 ],
                 "price": {
@@ -777,31 +1041,113 @@
                     "value": 9.99,
                     "currency": "USD",
                     "raw": "$9.99",
-                    "name": "Primary",
-                    "is_primary": true
-                }
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0CBNN3QCP"
+                },
+                "rrp": null
             },
             {
-                "position": 21,
-                "title": "Stone Bath Mat Diatomaceous Earth Bath Mat Non-Slip Super Absorbent Stone Bath Mats for Bathroom Quick Drying Diatomite Stone Shower Mat Large Natural Easy to Clean(23.6×15.4\" Gray)",
-                "asin": "B0C4FFYZ4P",
-                "link": "https://www.amazon.com/Veeloim-Diatomaceous-Absorbent-Diatomite-23-6%C3%9715-4/dp/B0C4FFYZ4P/ref=sr_1_21?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-21",
+                "position": 26,
+                "title": "Clipper Guards Set Fits for Most Wahl Clippers and Babyliss FX870, Color Coded Clipper Guides Replacement - 1/16\" to 3/16\", 4 Piece Set",
+                "asin": "B0CT38NGR8",
+                "link": "https://www.amazon.com/Clipper-Guards-Clippers-Babyliss-Replacement/dp/B0CT38NGR8/ref=sr_1_3242?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3242",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/61CZ5g1PGUL._AC_UL320_.jpg",
+                "image": "https://m.media-amazon.com/images/I/61StFymXA+L._AC_UL320_.jpg",
+                "rating": 4.3,
+                "ratings_total": 34,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 6.99,
+                        "currency": "USD",
+                        "raw": "$6.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0CT38NGR8"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 6.99,
+                    "currency": "USD",
+                    "raw": "$6.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0CT38NGR8"
+                },
+                "rrp": null
+            },
+            {
+                "position": 27,
+                "title": "Boobowl Hard Travel Case for Hair Clippers, Hair Cutting Barber Supplies Organizer Bag, Trimmer Storage Holder for Ufree/for Wahl/for Philips Norelco/for Andis Men Razor Guard Grooming Kits -Black",
+                "asin": "B0D5LMNSD3",
+                "link": "https://www.amazon.com/Boobowl-Clippers-Supplies-Organizer-Grooming/dp/B0D5LMNSD3/ref=sr_1_3243?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3243",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/71CtaEWJTkL._AC_UL320_.jpg",
+                "rating": 4.3,
+                "ratings_total": 11,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 25.99,
+                        "currency": "USD",
+                        "raw": "$25.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0D5LMNSD3"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 25.99,
+                    "currency": "USD",
+                    "raw": "$25.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0D5LMNSD3"
+                },
+                "rrp": null
+            },
+            {
+                "position": 28,
+                "title": "2PCS Shaver Peplacement Head for Remington Balder Pro Peplacement Head for Model XR7000 Shaver",
+                "asin": "B0CWTKH5DQ",
+                "link": "https://www.amazon.com/Shaver-Peplacement-Remington-Balder-XR7000/dp/B0CWTKH5DQ/ref=sr_1_3244?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3244",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/71gKA+ZLBEL._AC_UL320_.jpg",
                 "rating": 4.5,
-                "ratings_total": 1511,
+                "ratings_total": 50,
                 "prices": [
                     {
                         "symbol": "$",
                         "value": 39.99,
                         "currency": "USD",
                         "raw": "$39.99",
-                        "asin": "B0C4FFYZ4P"
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0CWTKH5DQ"
                     }
                 ],
                 "price": {
@@ -809,198 +1155,227 @@
                     "value": 39.99,
                     "currency": "USD",
                     "raw": "$39.99",
-                    "asin": "B0C4FFYZ4P"
-                }
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0CWTKH5DQ"
+                },
+                "rrp": null
             },
             {
-                "position": 22,
-                "title": "Yimobra Bathroom Rug Mat, 24'' x 17'', Luxury Chenille Shaggy Bath Rugs, Extra Soft & Thick, Absorbent Water, Non-Slip, Machine Washable, Bath Mats for Bath Floor,Tub and Shower, Gray",
-                "asin": "B07VV33FSV",
-                "link": "https://www.amazon.com/Yimobra-Original-Absorbent-Non-Slip-Machine-Washable/dp/B07VV33FSV/ref=sr_1_22?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-22",
+                "position": 29,
+                "title": "ONEUPIN 6PCS Eyebrow Trimmer Set Stainless Steel Curved Eyebrow Razor Eyebrow Scissors With Comb, Beauty Tool for Beginners Suitable for Any Skin Type Hair Removal Accessories for Men Women",
+                "asin": "B0BN5Z237N",
+                "link": "https://www.amazon.com/Eyebrow-Trimmer-Stainless-Beginners-Accessories/dp/B0BN5Z237N/ref=sr_1_3245?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3245",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/81L04Vp0mhL._AC_UL320_.jpg",
-                "rating": 4.6,
-                "ratings_total": 42066,
+                "image": "https://m.media-amazon.com/images/I/71PENp+BZbL._AC_UL320_.jpg",
+                "rating": 3.9,
+                "ratings_total": 440,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 9.99,
+                        "value": 8.98,
                         "currency": "USD",
-                        "raw": "$9.99",
-                        "asin": "B07VV33FSV"
+                        "raw": "$8.98",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0BN5Z237N"
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 9.99,
+                    "value": 8.98,
                     "currency": "USD",
-                    "raw": "$9.99",
-                    "asin": "B07VV33FSV"
-                }
+                    "raw": "$8.98",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0BN5Z237N"
+                },
+                "rrp": null
             },
             {
-                "position": 23,
-                "title": "Mohawk Home 8' x 10' Non Slip Rug Pad Gripper 1/4 Thick Dual Surface Felt + Rubber Gripper - Safe for All Floors, Brown",
-                "asin": "B007T58QPU",
-                "link": "https://www.amazon.com/Mohawk-Home-Surface-Hardwood-Surfaces/dp/B007T58QPU/ref=sr_1_23?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-23",
+                "position": 30,
+                "title": "Series 3 32B Replacement Shaver Head for Braun, Foil & Cutter Razor Replacement Head, Compatible with Braun 301S, 310S, 320S, 330S, 340S, 360S, 3000S, 3010S, 3020S, 30S, 3040, 350CC, 370CC, 3050CC",
+                "asin": "B0CZTXJWC4",
+                "link": "https://www.amazon.com/Replacement-Shaver-Cutter-Compatible-3050CC/dp/B0CZTXJWC4/ref=sr_1_3246?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3246",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/91XVZ4zm5wL._AC_UL320_.jpg",
-                "rating": 4.5,
-                "ratings_total": 31385,
+                "image": "https://m.media-amazon.com/images/I/71ia2-31DPL._AC_UL320_.jpg",
+                "rating": 4.3,
+                "ratings_total": 55,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 53.99,
+                        "value": 8.99,
                         "currency": "USD",
-                        "raw": "$53.99",
-                        "asin": "B007T58QPU"
+                        "raw": "$8.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0CZTXJWC4"
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 53.99,
+                    "value": 8.99,
                     "currency": "USD",
-                    "raw": "$53.99",
-                    "asin": "B007T58QPU"
-                }
+                    "raw": "$8.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0CZTXJWC4"
+                },
+                "rrp": null
             },
             {
-                "position": 24,
-                "title": "Utopia Towels Cotton Banded Rug Bath Mats, [Not a Bathroom Rug] 21x34 Inches, 100% Ring Spun Cotton - Highly Absorbent and Machine Washable Shower Bathroom Floor Towel, White, 2 Pack",
-                "asin": "B009SZ2P7E",
-                "link": "https://www.amazon.com/Utopia-Towels-21-Inch-34-Inch-Washable/dp/B009SZ2P7E/ref=sr_1_24?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-24",
+                "position": 31,
+                "title": "5 Rolls Barber Neck Paper Strips Band Disposable Haircutting Stretchy Barber Neck Tissue Wrap for Salon Haircut Spa Massage",
+                "asin": "B0CMQCLS2F",
+                "link": "https://www.amazon.com/SenseYo-Disposable-Haircutting-Stretchy-Haircut/dp/B0CMQCLS2F/ref=sr_1_3247?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3247",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/91FUcQAyUoL._AC_UL320_.jpg",
-                "rating": 4.6,
-                "ratings_total": 29729,
+                "image": "https://m.media-amazon.com/images/I/618xJpP6BXL._AC_UL320_.jpg",
+                "rating": 4.4,
+                "ratings_total": 19,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 20.99,
+                        "value": 9.89,
                         "currency": "USD",
-                        "raw": "$20.99",
+                        "raw": "$9.89",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0CMQCLS2F"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 9.89,
+                    "currency": "USD",
+                    "raw": "$9.89",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0CMQCLS2F"
+                },
+                "rrp": null
+            },
+            {
+                "position": 32,
+                "title": "BRL140 Replacement Head Compatible with Philips SatinShave Advanced Women's Electric Shaver BRL140 BRL130 Wet and Dry Ladyshave Replacement Foil and Blade Philips Trimmer Razor Foil and Cutter (Pink)",
+                "asin": "B09R4VBFPJ",
+                "link": "https://www.amazon.com/BRL140-Replacement-SatinShave-BRL130-Ladyshave/dp/B09R4VBFPJ/ref=sr_1_3248?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3248",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/61YyLPTKDOL._AC_UL320_.jpg",
+                "rating": 4.6,
+                "ratings_total": 296,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 21.99,
+                        "currency": "USD",
+                        "raw": "$21.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B09R4VBFPJ"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 21.99,
+                    "currency": "USD",
+                    "raw": "$21.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B09R4VBFPJ"
+                },
+                "rrp": null
+            },
+            {
+                "position": 33,
+                "title": "Tweezerman Fashion Color Slant Tweezer, Geranium, 1 Count",
+                "asin": "B007BMP726",
+                "link": "https://www.amazon.com/Tweezerman-Fashion-Color-Slant-Tweezer/dp/B007BMP726/ref=sr_1_3249?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3249",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/51BSN1JETML._AC_UL320_.jpg",
+                "rating": 4.6,
+                "ratings_total": 1216,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 21.98,
+                        "currency": "USD",
+                        "raw": "$21.98",
                         "name": "Primary",
-                        "is_primary": true
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
                     },
                     {
                         "symbol": "$",
-                        "value": 28.99,
+                        "value": 24,
                         "currency": "USD",
-                        "raw": "$28.99",
+                        "raw": "$24.00",
                         "name": "Original",
-                        "is_rrp": true
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 20.99,
+                    "value": 21.98,
                     "currency": "USD",
-                    "raw": "$20.99",
+                    "raw": "$21.98",
                     "name": "Primary",
-                    "is_primary": true
-                }
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             },
             {
-                "position": 25,
-                "title": "SONORO KATE Rugs, Ultra Absorbent & Non-Slip Memory Foam, Machine Washable, Soft Velvet Bath Mats, Easier to Dry for Bathroom Floor (17\"×24\", Dark Grey)",
-                "asin": "B0B1YGJYNL",
-                "link": "https://www.amazon.com/SONORO-KATE-Bathroom-Absorbent-Mats%EF%BC%8CEasier/dp/B0B1YGJYNL/ref=sr_1_25?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-25",
+                "position": 34,
+                "title": "Eyebrow Razor, S.T. Friends 10Pcs Face Razor for Women Exfoliating Dermaplaning Tool, Dermaplane Razor Peach Fuzz Removal, Eyebrow Shaper Trimmer Facial Shaver Help Exfoliate and Smooth the Skin",
+                "asin": "B0BY8JFK4G",
+                "link": "https://www.amazon.com/S-T-Friends-Exfoliating-Dermaplaning-Dermaplane/dp/B0BY8JFK4G/ref=sr_1_3250?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3250",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/61nk8AJlCcL._AC_UL320_.jpg",
-                "rating": 4.2,
-                "ratings_total": 3885,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 9.99,
-                        "currency": "USD",
-                        "raw": "$9.99",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 10.99,
-                        "currency": "USD",
-                        "raw": "$10.99",
-                        "name": "Original",
-                        "is_rrp": true
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 9.99,
-                    "currency": "USD",
-                    "raw": "$9.99",
-                    "name": "Primary",
-                    "is_primary": true
-                }
-            },
-            {
-                "position": 26,
-                "title": "Gorilla Grip Extra Strong Rug Pad Gripper, Grips Keep Area Rugs Safe and in Place, Thick, Slip and Skid Resistant Pads for Hard Floors Under Carpet Mat Cushion and Hardwood Floor Protection 2x3 FT",
-                "asin": "B01C52YCU4",
-                "link": "https://www.amazon.com/Gorilla-Grip-Original-Available-Protection/dp/B01C52YCU4/ref=sr_1_26?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-26",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/71TVnfWE72L._AC_UL320_.jpg",
-                "rating": 4.3,
-                "ratings_total": 47958,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 9.79,
-                        "currency": "USD",
-                        "raw": "$9.79",
-                        "asin": "B01C52YCU4"
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 9.79,
-                    "currency": "USD",
-                    "raw": "$9.79",
-                    "asin": "B01C52YCU4"
-                }
-            },
-            {
-                "position": 27,
-                "title": "OLANLY Memory Foam Bath Mat Rug 24x16, Ultra Soft Non Slip and Absorbent Bathroom Rug, Machine Wash Dry, Comfortable, Thick Bath Rug Carpet for Bathroom Floor, Tub and Shower, Black",
-                "asin": "B099FJJYYC",
-                "link": "https://www.amazon.com/Olanly-Absorbent-Bathroom-Machine-Comfortable/dp/B099FJJYYC/ref=sr_1_27?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-27",
-                "categories": [
-                    {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
-                    }
-                ],
-                "image": "https://m.media-amazon.com/images/I/81VA0VVfchL._AC_UL320_.jpg",
-                "rating": 4.3,
-                "ratings_total": 12850,
+                "image": "https://m.media-amazon.com/images/I/61OOs6wHF-L._AC_UL320_.jpg",
+                "rating": 4.4,
+                "ratings_total": 135,
                 "prices": [
                     {
                         "symbol": "$",
@@ -1008,15 +1383,19 @@
                         "currency": "USD",
                         "raw": "$7.99",
                         "name": "Primary",
-                        "is_primary": true
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
                     },
                     {
                         "symbol": "$",
-                        "value": 9.99,
+                        "value": 9.59,
                         "currency": "USD",
-                        "raw": "$9.99",
+                        "raw": "$9.59",
                         "name": "Original",
-                        "is_rrp": true
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
@@ -1025,80 +1404,246 @@
                     "currency": "USD",
                     "raw": "$7.99",
                     "name": "Primary",
-                    "is_primary": true
-                }
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             },
             {
-                "position": 28,
-                "title": "MontVoo-Bath Mat Rug-Rubber Non Slip Quick Dry Super Absorbent Thin Bathroom Rugs Fit Under Door-Washable Bathroom Floor Mats-Shower Rug for in Front of Bathtub Shower Room Sink",
-                "asin": "B09CTQF92M",
-                "link": "https://www.amazon.com/MontVoo-Bath-Rug-Rubber-Absorbent-Door-Washable-Mats-Shower/dp/B09CTQF92M/ref=sr_1_28?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-28",
+                "position": 35,
+                "title": "Replacement for MANSCAPED Charging Dock Compatible with MANSCAPED Lawn Mower 3.0/2.0 Electric Groin Hair Trimmer The Weed Whacker Nose and Ear Hair Trimmer Adapter Power Cord",
+                "asin": "B09Y8L91DK",
+                "link": "https://www.amazon.com/Replacement-MANSCAPED-Charging-Adapter-Electric/dp/B09Y8L91DK/ref=sr_1_3251?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3251",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/81TLPqlCm9L._AC_UL320_.jpg",
-                "rating": 4.2,
-                "ratings_total": 8062,
+                "image": "https://m.media-amazon.com/images/I/61-cWRFG20L._AC_UL320_.jpg",
+                "rating": 4.6,
+                "ratings_total": 126,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 17.79,
+                        "value": 18.99,
                         "currency": "USD",
-                        "raw": "$17.79",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 22.99,
-                        "currency": "USD",
-                        "raw": "$22.99",
-                        "name": "Original",
-                        "is_rrp": true
+                        "raw": "$18.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B09Y8L91DK"
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 17.79,
+                    "value": 18.99,
                     "currency": "USD",
-                    "raw": "$17.79",
-                    "name": "Primary",
-                    "is_primary": true
-                }
+                    "raw": "$18.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B09Y8L91DK"
+                },
+                "rrp": null
             },
             {
-                "position": 29,
-                "title": "Smiry Memory Foam Bath Mat 30\" x 20\", Extra Soft Absorbent Bathroom Rugs Non Slip Bath Rug Runner for Shower Bathroom Floors, Black",
-                "asin": "B08THC32JN",
-                "link": "https://www.amazon.com/Smiry-Memory-Absorbent-Bathroom-Runner/dp/B08THC32JN/ref=sr_1_29?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-29",
+                "position": 36,
+                "title": "Epilady Esthetic Compact Facial Epilator | for Women Hair Removal Remover Face w/ Cleaning Brush, Case Peach Fuzz",
+                "asin": "B002P8N7T6",
+                "link": "https://www.amazon.com/Epilady-Esthetic-Delicate-Facial-Epilator/dp/B002P8N7T6/ref=sr_1_3252?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3252",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/81Z3n6CnXSL._AC_UL320_.jpg",
+                "image": "https://m.media-amazon.com/images/I/61UT33lZ8GL._AC_UL320_.jpg",
+                "rating": 3.1,
+                "ratings_total": 1123,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 27.99,
+                        "currency": "USD",
+                        "raw": "$27.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B002P8N7T6"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 27.99,
+                    "currency": "USD",
+                    "raw": "$27.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B002P8N7T6"
+                },
+                "rrp": null
+            },
+            {
+                "position": 37,
+                "title": "Brut Classic Scent After Shave 5 Ounce (145ml) (3 Pack)",
+                "asin": "B00GMOT8UQ",
+                "link": "https://www.amazon.com/Brut-Classic-Scent-After-Shave/dp/B00GMOT8UQ/ref=sr_1_3253?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3253",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/51j1upSxoQL._AC_UL320_.jpg",
+                "rating": 4.6,
+                "ratings_total": 503,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 19,
+                        "currency": "USD",
+                        "raw": "$19.00",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 27.2,
+                        "currency": "USD",
+                        "raw": "$27.20",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 19,
+                    "currency": "USD",
+                    "raw": "$19.00",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
+            },
+            {
+                "position": 38,
+                "title": "Tweezers for Women Facial Hair, Professional Stainless Steel Tweezer Set with 30X Magnifying Mirror for Precise Removal of Eyebrows, Facial Hair and Ingrown Hair, Travel Tweezers Set 6 Pcs",
+                "asin": "B0CTC5TXSN",
+                "link": "https://www.amazon.com/MIYADIVA-Professional-Set-Magnifying-Mirror/dp/B0CTC5TXSN/ref=sr_1_3254?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3254",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/814jPcKMLBL._AC_UL320_.jpg",
+                "rating": 4.3,
+                "ratings_total": 67,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 8.99,
+                        "currency": "USD",
+                        "raw": "$8.99",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 9.99,
+                        "currency": "USD",
+                        "raw": "$9.99",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 8.99,
+                    "currency": "USD",
+                    "raw": "$8.99",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
+            },
+            {
+                "position": 39,
+                "title": "Level 3 Straight Razor Holder - Excellent Grip and Control - Precision Shaving Control - Level Three Straight Razor Holder",
+                "asin": "B08VDMTZ4P",
+                "link": "https://www.amazon.com/Level-Straight-Razor-Holder-Black/dp/B08VDMTZ4P/ref=sr_1_3255?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3255",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/31VJWuQ-IWL._AC_UL320_.jpg",
                 "rating": 4.2,
-                "ratings_total": 7113,
+                "ratings_total": 623,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 8.59,
+                        "currency": "USD",
+                        "raw": "$8.59",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B08VDMTZ4P"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 8.59,
+                    "currency": "USD",
+                    "raw": "$8.59",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B08VDMTZ4P"
+                },
+                "rrp": null
+            },
+            {
+                "position": 40,
+                "title": "AhfuLife Stainless Steel Hair & Beard Comb, Multifunctional Folding EDC Pocket Comb with Bottle Opener, Anti-Static Hair & Beard Care Comb, Presented in Gift Box",
+                "asin": "B089W7TLJ5",
+                "link": "https://www.amazon.com/AhfuLife-Stainless-Multifunctional-Folding-Keychain/dp/B089W7TLJ5/ref=sr_1_3256?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3256",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/61kDGaf+67L._AC_UL320_.jpg",
+                "rating": 4.3,
+                "ratings_total": 1141,
                 "prices": [
                     {
                         "symbol": "$",
                         "value": 9.99,
                         "currency": "USD",
                         "raw": "$9.99",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 16.99,
-                        "currency": "USD",
-                        "raw": "$16.99",
-                        "name": "Original",
-                        "is_rrp": true
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B089W7TLJ5"
                     }
                 ],
                 "price": {
@@ -1106,164 +1651,363 @@
                     "value": 9.99,
                     "currency": "USD",
                     "raw": "$9.99",
-                    "name": "Primary",
-                    "is_primary": true
-                }
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B089W7TLJ5"
+                },
+                "rrp": null
             },
             {
-                "position": 30,
-                "title": "Ophanie Area Rugs for Bedroom Living Room, Grey Fluffy Fuzzy Shag Shaggy Carpet Soft Plush Furry Bedside Rug, Indoor Floor Rug for Kids Girls Boys Home Decor Aesthetic, Dorm Nursery Gray",
-                "asin": "B0852WLH7M",
-                "link": "https://www.amazon.com/Ophanie-Fluffy-Non-Slip-Bedroom-Nursery/dp/B0852WLH7M/ref=sr_1_30?dib=eyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8&dib_tag=se&qid=1727361879&s=furniture&sr=1-30",
+                "position": 41,
+                "title": "Japanese KAI Razor for Women's Face Eyebrow Shaving Care Beauty-M from Japan\u300010 Razors inclued",
+                "asin": "B00WJI8J0O",
+                "link": "https://www.amazon.com/Japanese-Eyebrow-Shaving-Beauty-M-inclued/dp/B00WJI8J0O/ref=sr_1_3257?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3257",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/81KiYQpFF-L._AC_UL320_.jpg",
-                "rating": 4.3,
-                "ratings_total": 25631,
+                "image": "https://m.media-amazon.com/images/I/61l-rMJyxzL._AC_UL320_.jpg",
+                "rating": 4.6,
+                "ratings_total": 119,
                 "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 6,
+                        "currency": "USD",
+                        "raw": "$6.00",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B00WJI8J0O"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 6,
+                    "currency": "USD",
+                    "raw": "$6.00",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B00WJI8J0O"
+                },
+                "rrp": null
+            },
+            {
+                "position": 42,
+                "title": "Electric Razors Shavers for Women, Bikini Trimmer 5 in 1 Electric Shaver Razor for Women Wet/Dry Face Razors for Face Nose Eyebrow Arms Armpit Legs Pubic Area Painless Facial Hair Removal for Women",
+                "asin": "B0D3236F35",
+                "link": "https://www.amazon.com/Electric-Shavers-Trimmer-Eyebrow-Painless/dp/B0D3236F35/ref=sr_1_3258?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3258",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/7164f8OGx4L._AC_UL320_.jpg",
+                "rating": 4.2,
+                "ratings_total": 49,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 20.47,
+                        "currency": "USD",
+                        "raw": "$20.47",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 29.88,
+                        "currency": "USD",
+                        "raw": "$29.88",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 20.47,
+                    "currency": "USD",
+                    "raw": "$20.47",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
+            },
+            {
+                "position": 43,
+                "title": "Sejoy Electric Razor for Men, Mens Electric Shavers, Rechargeable Electric Razor Shaving Machines, with Pop-up Trimmer, 1 Hour Fast Charging, 3D Floating Head, LCD Power Indicator",
+                "asin": "B0BHWYPXF4",
+                "link": "https://www.amazon.com/Electric-Rechargeable-Machines-Charging-Indicator/dp/B0BHWYPXF4/ref=sr_1_3259?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3259",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/71-40qXaeIL._AC_UL320_.jpg",
+                "rating": 4.2,
+                "ratings_total": 1322,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 16.99,
+                        "currency": "USD",
+                        "raw": "$16.99",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 19.99,
+                        "currency": "USD",
+                        "raw": "$19.99",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 16.99,
+                    "currency": "USD",
+                    "raw": "$16.99",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
+            },
+            {
+                "position": 44,
+                "title": "Beard Balm - Rocky Mountain Barber - 100% Natural - Premium Wax Blend with Cedarwood Scent, Nutrient Rich Bees Wax, Jojoba, Tea Tree, Coconut Oil",
+                "asin": "B01F0MCBJ0",
+                "link": "https://www.amazon.com/Beard-Balm-Mountain-Cedarwood-Nutrient/dp/B01F0MCBJ0/ref=sr_1_3260?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3260",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/81WjMVqZ2bL._AC_UL320_.jpg",
+                "rating": 4.4,
+                "ratings_total": 3493,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 13.99,
+                        "currency": "USD",
+                        "raw": "$13.99",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B01F0MCBJ0"
+                    }
+                ],
+                "price": {
+                    "symbol": "$",
+                    "value": 13.99,
+                    "currency": "USD",
+                    "raw": "$13.99",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B01F0MCBJ0"
+                },
+                "rrp": null
+            },
+            {
+                "position": 45,
+                "title": "BIC EasyRinse Anti-Clogging, Refillable Men's Razors for Summer With 4 Blades, 1 Handle and 9 Refill Razor Cartridges Razor Kit",
+                "asin": "B0CNKTZ5V8",
+                "link": "https://www.amazon.com/BIC-EasyRinse-Anti-Clogging-Refillable-Cartridges/dp/B0CNKTZ5V8/ref=sr_1_3261?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&rdc=1&s=beauty&sr=1-3261",
+                "categories": [
+                    {
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
+                    }
+                ],
+                "image": "https://m.media-amazon.com/images/I/81Klu+wtboL._AC_UL320_.jpg",
+                "rating": 4.4,
+                "ratings_total": 232,
+                "prices": [
+                    {
+                        "symbol": "$",
+                        "value": 16.92,
+                        "currency": "USD",
+                        "raw": "$16.92",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
                     {
                         "symbol": "$",
                         "value": 24.99,
                         "currency": "USD",
                         "raw": "$24.99",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 31.99,
-                        "currency": "USD",
-                        "raw": "$31.99",
                         "name": "Original",
-                        "is_rrp": true
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 24.99,
+                    "value": 16.92,
                     "currency": "USD",
-                    "raw": "$24.99",
+                    "raw": "$16.92",
                     "name": "Primary",
-                    "is_primary": true
-                }
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             },
             {
-                "position": 31,
-                "title": "Non Slip Rug Pad 2x3 Feet, 4/25\" Thick Felt Cushioned Rubber Rug Gripper Pad for Hardwood, Laminate, Stone, Tile, Wood, Vinyl Floors & Carpet, Anti Skid Under Area Rug Pads",
-                "asin": "B07V1V56RM",
-                "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MTc5MjI0MjI3ODI1MjczOjE3MjczNjE4Nzk6c3BfYnRmX2Jyb3dzZTozMDAxNTI0Nzc5MTU2MDI6OjA6Og&url=%2FCushioned-Rubber-Gripper-Hardwood-Laminate%2Fdp%2FB07V1V56RM%2Fref%3Dsr_1_31_sspa%3Fdib%3DeyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8%26dib_tag%3Dse%26qid%3D1727361879%26s%3Dfurniture%26sr%3D1-31-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGZfYnJvd3Nl%26psc%3D1",
+                "position": 46,
+                "title": "Fur Shave Cream: Moisturizing Shave Cream Soothes Skin and Reduces Bumps and Irritation - 5 OZ",
+                "asin": "B086H1FSWF",
+                "link": "https://www.amazon.com/Fur-Shave-Cream/dp/B086H1FSWF/ref=sr_1_3262?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3262",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/81FUE9GwQQL._AC_UL320_.jpg",
-                "rating": 4.5,
-                "ratings_total": 1797,
+                "image": "https://m.media-amazon.com/images/I/51hSi7gYnLL._AC_UL320_.jpg",
+                "rating": 4.1,
+                "ratings_total": 51,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 15.99,
+                        "value": 32,
                         "currency": "USD",
-                        "raw": "$15.99",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 17.99,
-                        "currency": "USD",
-                        "raw": "$17.99",
-                        "name": "Original",
-                        "is_rrp": true
+                        "raw": "$32.00",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B086H1FSWF"
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 15.99,
+                    "value": 32,
                     "currency": "USD",
-                    "raw": "$15.99",
-                    "name": "Primary",
-                    "is_primary": true
-                }
+                    "raw": "$32.00",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B086H1FSWF"
+                },
+                "rrp": null
             },
             {
-                "position": 32,
-                "title": "Premium Felt Rug Pad 5x7 Feet, Thick Rug Pads for Hardwood Floors, Laminate, Vinyl, Stone, Carpet & Tile, Under Rug Padding",
-                "asin": "B085KVGWDB",
-                "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MTc5MjI0MjI3ODI1MjczOjE3MjczNjE4Nzk6c3BfYnRmX2Jyb3dzZToyMDAwODY0Mzc5ODc2ODE6OjA6Og&url=%2FMAYSHINE-Basics-Available-Hardwood-Surfaces%2Fdp%2FB085KVGWDB%2Fref%3Dsr_1_32_sspa%3Fdib%3DeyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8%26dib_tag%3Dse%26qid%3D1727361879%26s%3Dfurniture%26sr%3D1-32-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGZfYnJvd3Nl%26psc%3D1",
+                "position": 47,
+                "title": "Eyebrow Razor, Eyebrow Kit, Multipurpose Exfoliating Dermaplaning Tool Face Razors for Women Girl, Eyebrow Grooming Set (11 in 1)",
+                "asin": "B0B5NDPJT8",
+                "link": "https://www.amazon.com/Eyebrow-Multipurpose-Exfoliating-Dermaplaning-Grooming/dp/B0B5NDPJT8/ref=sr_1_3263?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3263",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/812Icd50XCL._AC_UL320_.jpg",
-                "rating": 4.2,
-                "ratings_total": 511,
+                "image": "https://m.media-amazon.com/images/I/61HtPwvyzsL._AC_UL320_.jpg",
+                "rating": 4.1,
+                "ratings_total": 30,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 29.99,
+                        "value": 4.97,
                         "currency": "USD",
-                        "raw": "$29.99",
-                        "name": "Primary",
-                        "is_primary": true
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 33.99,
-                        "currency": "USD",
-                        "raw": "$33.99",
-                        "name": "Original",
-                        "is_rrp": true
+                        "raw": "$4.97",
+                        "name": null,
+                        "is_primary": null,
+                        "is_rrp": null,
+                        "asin": "B0B5NDPJT8"
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 29.99,
+                    "value": 4.97,
                     "currency": "USD",
-                    "raw": "$29.99",
-                    "name": "Primary",
-                    "is_primary": true
-                }
+                    "raw": "$4.97",
+                    "name": null,
+                    "is_primary": null,
+                    "is_rrp": null,
+                    "asin": "B0B5NDPJT8"
+                },
+                "rrp": null
             },
             {
-                "position": 33,
-                "title": "Superior Indoor Area Rug Pad, Non-Slip, Non-Skid, Floor Protector, Hardwood, Tile Floor Padding, Furniture Gripper, Slide Stopper, Felt and Rubber Rug Grip, with Coating, Lynn Collection, 12' x 18'",
-                "asin": "B0CP47YDSQ",
-                "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MTc5MjI0MjI3ODI1MjczOjE3MjczNjE4Nzk6c3BfYnRmX2Jyb3dzZTozMDAxMzQ3ODI4MzU1MDI6OjA6Og&url=%2FSuperior-Non-Slip-Protector-Furniture-Collection%2Fdp%2FB0CP47YDSQ%2Fref%3Dsr_1_33_sspa%3Fdib%3DeyJ2IjoiMSJ9.6AuZHGd1L4BORh3Pbi83jnSSZLIeUeXzwUbVP_0tX-5ACx8vSmG_xdQ2tDJ0LYg8zyhEcANs3DAYiVs7vLMTV6GbBfh-xnwS4Ov59xFt0vOJ2Jak-7tUbrpfEC_BGrpVcS2eE1UpRB55DFjdb0iPbFcY6uImTqYvnT4OvK-9IvU-JFDq2uX7D2F6otU5FpFidnc5OqzFKYoDtSkVducwJrTubgcalCMKmXKLRRqSQ2CK87nrMkdaoE_F5THcClfzOfe5Z5x3LToN8wKm5YLDrB2wkfaRDPckxWBECFw7wGI.aR6GYvc0qkWzgsRAjRaFdiOkKsVXC5vi7Xz7RN0Y5u8%26dib_tag%3Dse%26qid%3D1727361879%26s%3Dfurniture%26sr%3D1-33-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGZfYnJvd3Nl%26psc%3D1",
+                "position": 48,
+                "title": "Skin Bracer Original After Shave 7 FL OZ (Pack of 2)",
+                "asin": "B000Q71HYK",
+                "link": "https://www.amazon.com/Skin-Bracer-Original-After-Shave/dp/B000Q71HYK/ref=sr_1_3264?dib=eyJ2IjoiMSJ9.23w964V3yHB6b7qy9RkSDRetCXVqkZC8qkXETEfzJ1_22GW5SgOh2Nr8Milea3p_5D9BR_EpLpirDX7k43xlEtz5CaGFVU0YuQjXW2frvBTZIOsrYaV0jAp_ehbWyZilfAnn5ZeUJOqNVC7vB1F_XUA9H9U9F-wApUARseeafNM8oLM9VQApTC4oa7DAaMxB29_kILqMFkbnRT8WJwJBYSHWmkPRgkCnE7ZHY1EB28RBit9yME4f9fPcjNvsbMZ6jJOBR9UklT3USmqaoGRzxr1WfVv8ifUg50cqJLo8Nnw.e7pYyHMbTCDC6lvhXwkK5E0OX5isTb4RvuGLxcPnwsE&dib_tag=se&qid=1727389353&s=beauty&sr=1-3264",
                 "categories": [
                     {
-                        "name": "Rugs, Pads & Protectors",
-                        "id": "21487702011"
+                        "name": "Shaving & Hair Removal Products",
+                        "id": "3778591"
                     }
                 ],
-                "image": "https://m.media-amazon.com/images/I/91xrdSGCCVL._AC_UL320_.jpg",
-                "rating": 3.7,
-                "ratings_total": 6,
+                "image": "https://m.media-amazon.com/images/I/61uzKUQ+qWL._AC_UL320_.jpg",
+                "rating": 4.7,
+                "ratings_total": 155,
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 205.68,
+                        "value": 17.19,
                         "currency": "USD",
-                        "raw": "$205.68",
-                        "asin": "B0CP47YDSQ"
+                        "raw": "$17.19",
+                        "name": "Primary",
+                        "is_primary": true,
+                        "is_rrp": null,
+                        "asin": null
+                    },
+                    {
+                        "symbol": "$",
+                        "value": 19.12,
+                        "currency": "USD",
+                        "raw": "$19.12",
+                        "name": "Original",
+                        "is_primary": null,
+                        "is_rrp": true,
+                        "asin": null
                     }
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 205.68,
+                    "value": 17.19,
                     "currency": "USD",
-                    "raw": "$205.68",
-                    "asin": "B0CP47YDSQ"
-                }
+                    "raw": "$17.19",
+                    "name": "Primary",
+                    "is_primary": true,
+                    "is_rrp": null,
+                    "asin": null
+                },
+                "rrp": null
             }
-        ]
-    }
+        ],
+        "deal_list": null
+    },
+    "task_id": 45875,
+    "page": 68,
+    "create_time": "2024-09-26T22:22:42.095353+00:00",
+    "update_time": "2024-09-26T22:22:42.095359+00:00",
+    "_id": "d8b52e307c5511ef9586764be6a7042a"
 }
