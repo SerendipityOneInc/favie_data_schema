@@ -1,4 +1,5 @@
 import re
+from typing import Dict, Optional
 
 from favie_data_common.common.common_utils import CommonUtils
 
@@ -63,42 +64,44 @@ class FavieProductUtils:
         return True
 
     @staticmethod
-    def cal_percentage_to_review_summary(review_summary: ReviewSummary) -> ReviewSummary:
-        if review_summary is None:
-            return None
-        if review_summary.rating_breakdown is None:
+    def cal_percentage_to_review_summary(review_summary: Optional[ReviewSummary]) -> Optional[ReviewSummary]:
+        """
+        Calculate percentage for each star rating in the review summary.
+
+        :param review_summary: The review summary object containing rating breakdown.
+        :return: Updated review summary with calculated percentages, or None if input is None.
+        """
+        if review_summary is None or review_summary.rating_breakdown is None:
             return review_summary
-        ratings_total = sum(
-            [
-                review_summary.rating_breakdown.five_star or 0,
-                review_summary.rating_breakdown.four_star or 0,
-                review_summary.rating_breakdown.three_star or 0,
-                review_summary.rating_breakdown.two_star or 0,
-                review_summary.rating_breakdown.one_star or 0,
-            ]
-        )
+
+        rb = review_summary.rating_breakdown
+        star_counts: Dict[str, int] = {
+            "five": rb.five_star or 0,
+            "four": rb.four_star or 0,
+            "three": rb.three_star or 0,
+            "two": rb.two_star or 0,
+            "one": rb.one_star or 0,
+        }
+
+        ratings_total = sum(star_counts.values())
+
         if ratings_total > 0:
-            review_summary.rating_breakdown.five_percentage = int(
-                round((review_summary.rating_breakdown.five_star or 0) / ratings_total * 100)
-            )
-            review_summary.rating_breakdown.four_percentage = int(
-                round((review_summary.rating_breakdown.four_star or 0) / ratings_total * 100)
-            )
-            review_summary.rating_breakdown.three_percentage = int(
-                round((review_summary.rating_breakdown.three_star or 0) / ratings_total * 100)
-            )
-            review_summary.rating_breakdown.two_percentage = int(
-                round((review_summary.rating_breakdown.two_star or 0) / ratings_total * 100)
-            )
-            review_summary.rating_breakdown.one_percentage = int(
-                round((review_summary.rating_breakdown.one_star or 0) / ratings_total * 100)
-            )
+            percentages = {star: int(round(count / ratings_total * 100)) for star, count in star_counts.items()}
+
+            # Adjust to ensure sum is 100%
+            diff = 100 - sum(percentages.values())
+            if diff != 0:
+                max_star = max(star_counts, key=star_counts.get)
+                percentages[max_star] += diff
+
+            rb.five_percentage = percentages["five"]
+            rb.four_percentage = percentages["four"]
+            rb.three_percentage = percentages["three"]
+            rb.two_percentage = percentages["two"]
+            rb.one_percentage = percentages["one"]
         else:
-            review_summary.rating_breakdown.five_percentage = None
-            review_summary.rating_breakdown.four_percentage = None
-            review_summary.rating_breakdown.three_percentage = None
-            review_summary.rating_breakdown.two_percentage = None
-            review_summary.rating_breakdown.one_percentage = None
+            rb.five_percentage = rb.four_percentage = rb.three_percentage = rb.two_percentage = rb.one_percentage = None
+
         return review_summary
 
     @staticmethod

@@ -87,6 +87,23 @@ class TestReviewSummaryCalculations(unittest.TestCase):
         self.assertEqual(result.rating_breakdown.two_percentage, 0)
         self.assertEqual(result.rating_breakdown.one_percentage, 1)
 
+    def test_rounding_percent_total_not_equal_100(self):
+        review_summary = ReviewSummary()
+        review_summary.rating_breakdown = RatingBreakdown()
+        review_summary.rating_breakdown.five_star = 201
+        review_summary.rating_breakdown.four_star = 23
+        review_summary.rating_breakdown.three_star = 13
+        review_summary.rating_breakdown.two_star = 10
+        review_summary.rating_breakdown.one_star = 15
+
+        result = self.cal_percentage(review_summary)
+
+        self.assertEqual(result.rating_breakdown.five_percentage, 76)
+        self.assertEqual(result.rating_breakdown.four_percentage, 9)
+        self.assertEqual(result.rating_breakdown.three_percentage, 5)
+        self.assertEqual(result.rating_breakdown.two_percentage, 4)
+        self.assertEqual(result.rating_breakdown.one_percentage, 6)
+
 
 if __name__ == "__main__":
     unittest.main()
