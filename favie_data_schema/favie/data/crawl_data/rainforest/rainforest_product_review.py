@@ -109,7 +109,7 @@ class Reviews(BaseModel):
     asin: Optional[str] = None
     body_html: Optional[str] = None
     link: Optional[str] = None
-    stark_tags: Optional[List[int]] = None
+    stark_tag: Optional[int] = None
     images: Optional[List[str]] = None
     attributes: Optional[List[AttributeItem]] = None
     rating: Optional[int] = None
