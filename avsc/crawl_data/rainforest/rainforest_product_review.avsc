@@ -504,6 +504,17 @@
                                 "default": null
                             },
                             {
+                                "name": "stark_tags",
+                                "type": [
+                                    "null",
+                                    {
+                                        "type": "array",
+                                        "items": "long"
+                                    }
+                                ],
+                                "default": null
+                            },
+                            {
                                 "name": "images",
                                 "type": [
                                     "null",
