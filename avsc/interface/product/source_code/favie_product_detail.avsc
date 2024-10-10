@@ -9,6 +9,7 @@
     { "name": "site", "type": ["null", "string"], "default": null },
     { "name": "sku_id", "type": ["null", "string"], "default": null },
     { "name": "spu_id", "type": ["null", "string"], "default": null },
+    { "name": "request_spu_id", "type": ["null", "string"], "default": null },
     { "name": "title", "type": ["null", "string"], "default": null },
     { "name": "link", "type": ["null", "string"], "default": null },
     { "name": "spu_title", "type": ["null", "string"], "default": null },
@@ -91,6 +92,9 @@
     { "name": "promotion","type": ["null","favie.data.interface.product.Promotion"],"default": null },
     { "name": "f_updates_at", "type": ["null", "string"], "default": null },
     { "name": "f_creates_at", "type": ["null", "string"], "default": null },
-    { "name": "f_meta", "type": ["null", "favie.data.interface.product.MetaInfo"], "default": null }
+    { "name": "f_meta", "type": ["null", "favie.data.interface.product.MetaInfo"], "default": null },
+    { "name": "shop_id","type":["null","string"],"default":null},
+    { "name": "shop_name","type":["null","string"],"default":null},
+    { "name": "shop_site","type":["null","string"],"default":null}
   ]
 }
