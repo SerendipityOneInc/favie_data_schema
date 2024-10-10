@@ -152,6 +152,52 @@
                             "default": null
                         },
                         {
+                            "name": "stark_shop",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "record",
+                                    "namespace": "RainforestProductDetail.product",
+                                    "name": "StarkShop",
+                                    "fields": [
+                                        {
+                                            "name": "name",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "id",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        },
+                                        {
+                                            "name": "host",
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ],
+                                            "default": null
+                                        }
+                                    ]
+                                }
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "stark_link_in_shop",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
                             "name": "variants",
                             "type": [
                                 "null",
