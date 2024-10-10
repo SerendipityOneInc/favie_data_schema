@@ -504,13 +504,10 @@
                                 "default": null
                             },
                             {
-                                "name": "stark_tags",
+                                "name": "stark_tag",
                                 "type": [
                                     "null",
-                                    {
-                                        "type": "array",
-                                        "items": "long"
-                                    }
+                                    "long"
                                 ],
                                 "default": null
                             },
