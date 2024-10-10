@@ -1,0 +1,49 @@
+{
+  "namespace": "favie.data.interface.product",
+  "type": "record",
+  "name": "FavieCategoriesPredictResponse",
+  "fields": [
+    {
+      "name": "ids",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": "string"
+          }
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "categories",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": "string"
+          }
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "scores",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": "string"
+          }
+        }
+      ],
+      "default": null
+    }
+  ]
+}

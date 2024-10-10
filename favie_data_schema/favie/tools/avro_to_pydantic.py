@@ -2,8 +2,9 @@ import argparse
 import json
 import logging
 import os
+from pathlib import Path
 from typing import ForwardRef, List, Optional, Union, get_args, get_origin
-from favie_data_common.common.common_utils import CommonUtils
+
 from pydantic import BaseModel, Field
 
 
@@ -26,9 +27,7 @@ def parse_avro_type(avro_type, known_types):
         if avro_type["type"] == "array":
             return List[parse_avro_type(avro_type["items"], known_types)]
         elif avro_type["type"] == "record":
-            full_name = f"{avro_type.get('namespace', '')}.{avro_type['name']}".strip(
-                "."
-            )
+            full_name = f"{avro_type.get('namespace', '')}.{avro_type['name']}".strip(".")
             return known_types.get(full_name, full_name)
     elif isinstance(avro_type, str) and avro_type in known_types:
         return known_types[avro_type]
@@ -43,38 +42,25 @@ def build_dependency_graph(schema, dependencies, known_types):
         for field in schema["fields"]:
             field_type = field["type"]
             if isinstance(field_type, dict) and field_type.get("type") == "record":
-                dep_full_name = (
-                    f"{field_type.get('namespace', '')}.{field_type['name']}".strip(".")
-                )
+                dep_full_name = f"{field_type.get('namespace', '')}.{field_type['name']}".strip(".")
                 dependencies[full_name].add(dep_full_name)
                 build_dependency_graph(field_type, dependencies, known_types)
             elif isinstance(field_type, list):
                 for t in field_type:
                     if isinstance(t, dict) and t.get("type") == "record":
-                        dep_full_name = f"{t.get('namespace', '')}.{t['name']}".strip(
-                            "."
-                        )
+                        dep_full_name = f"{t.get('namespace', '')}.{t['name']}".strip(".")
                         dependencies[full_name].add(dep_full_name)
                         build_dependency_graph(t, dependencies, known_types)
                     elif isinstance(t, dict) and t.get("type") == "array":
                         item_type = t["items"]
-                        if (
-                            isinstance(item_type, dict)
-                            and item_type.get("type") == "record"
-                        ):
-                            dep_full_name = f"{item_type.get('namespace', '')}.{item_type['name']}".strip(
-                                "."
-                            )
+                        if isinstance(item_type, dict) and item_type.get("type") == "record":
+                            dep_full_name = f"{item_type.get('namespace', '')}.{item_type['name']}".strip(".")
                             dependencies[full_name].add(dep_full_name)
                             build_dependency_graph(item_type, dependencies, known_types)
             elif isinstance(field_type, dict) and field_type.get("type") == "array":
                 item_type = field_type["items"]
                 if isinstance(item_type, dict) and item_type.get("type") == "record":
-                    dep_full_name = (
-                        f"{item_type.get('namespace', '')}.{item_type['name']}".strip(
-                            "."
-                        )
-                    )
+                    dep_full_name = f"{item_type.get('namespace', '')}.{item_type['name']}".strip(".")
                     dependencies[full_name].add(dep_full_name)
                     build_dependency_graph(item_type, dependencies, known_types)
 
@@ -96,8 +82,7 @@ def topological_sort(dependencies):
     return sorted_list
 
 
-def avro_to_pydantic(avro_schema,models,known_types):
-
+def avro_to_pydantic(avro_schema, models, known_types):
     def parse_record(name, namespace, fields):
         try:
             class_attrs = {}
@@ -121,10 +106,7 @@ def avro_to_pydantic(avro_schema,models,known_types):
         if isinstance(schema, dict) and schema.get("type") == "record":
             parse_record(schema["name"], schema.get("namespace", ""), schema["fields"])
             for field in schema["fields"]:
-                if (
-                    isinstance(field["type"], dict)
-                    and field["type"].get("type") == "record"
-                ):
+                if isinstance(field["type"], dict) and field["type"].get("type") == "record":
                     parse_schema(field["type"])
                 elif isinstance(field["type"], list):
                     for t in field["type"]:
@@ -132,20 +114,11 @@ def avro_to_pydantic(avro_schema,models,known_types):
                             parse_schema(t)
                         elif isinstance(t, dict) and t.get("type") == "array":
                             item_type = t["items"]
-                            if (
-                                isinstance(item_type, dict)
-                                and item_type.get("type") == "record"
-                            ):
+                            if isinstance(item_type, dict) and item_type.get("type") == "record":
                                 parse_schema(item_type)
-                elif (
-                    isinstance(field["type"], dict)
-                    and field["type"].get("type") == "array"
-                ):
+                elif isinstance(field["type"], dict) and field["type"].get("type") == "array":
                     item_type = field["type"]["items"]
-                    if (
-                        isinstance(item_type, dict)
-                        and item_type.get("type") == "record"
-                    ):
+                    if isinstance(item_type, dict) and item_type.get("type") == "record":
                         parse_schema(item_type)
 
     parse_schema(avro_schema)
@@ -158,21 +131,24 @@ def is_type_of_list(data_type: type):
 
 
 # 获取pydantic类型字符串
-def get_pydantic_type_str(optional_type,with_optional:bool=False):
+def get_pydantic_type_str(optional_type, with_optional: bool = False):
     if hasattr(optional_type, "__origin__") and optional_type.__origin__ is Union:
         args = optional_type.__args__
         native_types = [arg for arg in args if arg is not type(None)]
         if native_types:
             native_type = native_types[0]
             if is_type_of_list(native_type):
-                return get_pydantic_type_str(native_type,True)
+                return get_pydantic_type_str(native_type, True)
             else:
                 pydantic_type = get_native_type_str(native_types[0]).split(".")[-1]
                 return f"Optional[{pydantic_type}]"
 
     if is_type_of_list(optional_type):
         item_type = get_args(optional_type)[0]
-        pydantic_type = get_native_type_str(item_type).split(".")[-1]
+        if is_type_of_list(item_type):
+            pydantic_type = get_pydantic_type_str(item_type)
+        else:
+            pydantic_type = get_native_type_str(item_type).split(".")[-1]
         return f"Optional[List[{pydantic_type}]]" if with_optional else f"List[{pydantic_type}]"
 
     return optional_type
@@ -180,20 +156,19 @@ def get_pydantic_type_str(optional_type,with_optional:bool=False):
 
 # 获取原生类型字符串
 def get_native_type_str(native_type):
-    return (
-        native_type.__forward_arg__
-        if isinstance(native_type, ForwardRef)
-        else native_type.__name__
-    )
-    
+    return native_type.__forward_arg__ if isinstance(native_type, ForwardRef) else native_type.__name__
+
+
 def read_schema(file_path):
-    """ 读取单个 Avro schema 文件 """
+    """读取单个 Avro schema 文件"""
     with open(file_path, "r") as f:
         return json.load(f)
-    
+
+
 def main():
     parser = argparse.ArgumentParser(description="Avro to pydantic with references.")
-    parser.add_argument("--avsc", type=str, required=True, help="avro schema file.")
+    parser.add_argument("--avsc", type=str, required=False, help="avro schema file.")
+    parser.add_argument("--avsc-dir", type=str, required=False, help="avro schema dir.")
     parser.add_argument(
         "--output-file",
         type=str,
@@ -205,16 +180,17 @@ def main():
 
     # with open(f"{args.avsc}", "r") as f:
     #     avro_schema = json.load(f)
-    avsc_files = args.avsc.split(",")
-    
+    avsc_files = args.avsc.split(",") if args.avsc else []
+    dir_files = [f.resolve() for f in Path(args.avsc_dir).iterdir() if f.is_file()] if args.avsc_dir else []
+
     # Step 1: Build dependency graph
     dependencies = {}
     known_types = {}
     models = {}
     # known_types = {}
-    for avsc_file in avsc_files:
+    for avsc_file in avsc_files + dir_files:
         avro_schema = read_schema(avsc_file)
-        avro_to_pydantic(avro_schema,models,known_types)
+        avro_to_pydantic(avro_schema, models, known_types)
         build_dependency_graph(avro_schema, dependencies, known_types)
 
     # Step 2: Topological sort to determine the order of class definitions
