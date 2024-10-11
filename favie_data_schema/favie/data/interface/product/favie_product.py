@@ -10,7 +10,8 @@ class MetaInfo(BaseModel):
     data_type: Optional[str] = None
     f_categories_update_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
-    f_categories_map_success: Optional[bool] = None
+    f_categories_map_type: Optional[int] = None
+    f_categories_map_version: Optional[int] = None
     source_1_updates_at: Optional[str] = None
     source_2_updates_at: Optional[str] = None
     source_3_updates_at: Optional[str] = None

@@ -225,10 +225,18 @@
               "default": null
             },
             {
-              "name": "f_categories_map_success",
+              "name": "f_categories_map_type",
               "type": [
                 "null",
-                "bool"
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_categories_map_version",
+              "type": [
+                "null",
+                "int"
               ],
               "default": null
             },
