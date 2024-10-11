@@ -223,6 +223,8 @@ class FavieProductReview(BaseModel):
     position: Optional[int] = None
     helpful_votes: Optional[int] = None
     unhelpful_votes: Optional[int] = None
+    stark_tag: Optional[int] = None
+    stark_tags: Optional[List[int]] = None
     f_meta: Optional[MetaInfo] = None
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None

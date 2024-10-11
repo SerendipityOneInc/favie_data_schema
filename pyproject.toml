@@ -24,8 +24,6 @@ line_length = 120
 name = "favie-data-schema"
 
 version = "v0.0.62-alpha.1"
-
-
 description = "Favie Data Schema"
 authors = ["allenz-srp <allenz@srp.one>"]
 readme = "README.md"

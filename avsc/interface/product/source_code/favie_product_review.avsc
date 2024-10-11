@@ -28,6 +28,8 @@
     {"name": "position", "type": ["null", "int"], "default": null},
     {"name": "helpful_votes", "type": ["null", "int"], "default": null},
     {"name": "unhelpful_votes", "type": ["null", "int"], "default": null},
+    {"name": "stark_tag", "type": ["null", "int"], "default": null},
+    {"name": "stark_tags", "type": ["null", {"type": "array", "items": "int"}], "default": null},
     {"name": "f_meta", "type": ["null", "favie.data.interface.product.MetaInfo"], "default": null },
     {"name": "f_updates_at", "type": ["null", "string"], "default": null},
     {"name": "f_creates_at", "type": ["null", "string"], "default": null}

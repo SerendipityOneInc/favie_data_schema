@@ -210,6 +210,25 @@
       "default": null
     },
     {
+      "name": "stark_tag",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "stark_tags",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "int"
+        }
+      ],
+      "default": null
+    },
+    {
       "name": "f_meta",
       "type": [
         "null",

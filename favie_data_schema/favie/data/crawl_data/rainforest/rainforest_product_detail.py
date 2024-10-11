@@ -27,6 +27,12 @@ class RequestParameters(BaseModel):
     url: Optional[str] = None
 
 
+class StarkShop(BaseModel):
+    name: Optional[str] = None
+    id: Optional[str] = None
+    host: Optional[str] = None
+
+
 class Specifications(BaseModel):
     name: Optional[str] = None
     value: Optional[str] = None
@@ -264,6 +270,8 @@ class Attributes(BaseModel):
 class Product(BaseModel):
     title: Optional[str] = None
     title_excluding_variant_name: Optional[str] = None
+    stark_shop: Optional[StarkShop] = None
+    stark_link_in_shop: Optional[str] = None
     variants: Optional[List[Variants]] = None
     keywords: Optional[str] = None
     keywords_list: Optional[List[str]] = None

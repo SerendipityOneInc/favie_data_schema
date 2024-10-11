@@ -187,6 +187,7 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
         favie_review.images = review.images
         favie_review.videos = None
         favie_review.position = review.position
+        favie_review.stark_tag = review.stark_tag
         favie_review.f_meta = meta
         return favie_review
 
