@@ -297,4 +297,5 @@ class FavieProductDetail(BaseModel):
     shop_id: Optional[str] = None
     shop_name: Optional[str] = None
     shop_site: Optional[str] = None
+    link_in_shop: Optional[str] = None
 

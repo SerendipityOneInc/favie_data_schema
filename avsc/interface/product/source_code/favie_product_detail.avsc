@@ -95,6 +95,7 @@
     { "name": "f_meta", "type": ["null", "favie.data.interface.product.MetaInfo"], "default": null },
     { "name": "shop_id","type":["null","string"],"default":null},
     { "name": "shop_name","type":["null","string"],"default":null},
-    { "name": "shop_site","type":["null","string"],"default":null}
+    { "name": "shop_site","type":["null","string"],"default":null},
+    { "name": "link_in_shop","type":["null","string"],"default":null}
   ]
 }

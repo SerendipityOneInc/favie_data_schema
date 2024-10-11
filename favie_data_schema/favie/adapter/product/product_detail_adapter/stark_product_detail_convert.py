@@ -78,6 +78,11 @@ class StarkProductDetailConvert:
             parses_at=parse_time,
         )
         favie_product.f_status = FavieProductDetailStatus.SKU_NORMAL.name
+        favie_product.shop_id=crawl_result.product.stark_shop.id
+        favie_product.shop_name=crawl_result.product.stark_shop.name
+        favie_product.shop_site=crawl_result.product.stark_shop.host
+        favie_product.link_in_shop=crawl_result.product.stark_link_in_shop
+        favie_product.request_spu_id=stark_detail_message.product_id
         return favie_product
 
     @staticmethod
