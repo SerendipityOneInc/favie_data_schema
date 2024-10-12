@@ -9,6 +9,6 @@ favie_data_schema/favie/adapter/.DS_Store
 favie_data_schema/favie/adapter/product/.DS_Store
 
 # 忽略 VSCode 的临时文件
-.vscode/launch copy.json
-.vscode/launch.json
 
+
+.idea/*
