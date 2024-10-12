@@ -81,7 +81,7 @@ class StarkProductDetailConvert:
         favie_product.shop_id= crawl_result.product.stark_shop.id if crawl_result.product.stark_shop else None
         favie_product.shop_name=crawl_result.product.stark_shop.name if crawl_result.product.stark_shop else None
         favie_product.shop_site=crawl_result.product.stark_shop.host if crawl_result.product.stark_shop else None
-        favie_product.link_in_shop=crawl_result.product.stark_link_in_shop
+        favie_product.link_in_shop=StarkMessageUtils.get_domain_by_url(crawl_result.product.stark_link_in_shop)
         favie_product.request_spu_id=stark_detail_message.product_id
         return favie_product
 
