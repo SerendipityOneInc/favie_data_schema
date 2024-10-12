@@ -27,6 +27,9 @@ class StarkMessageUtils:
             return StarkMessageUtils.get_domain_by_url(message.url)
     @staticmethod
     def get_domain_by_url(url: str)->str|None:
-        return CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(url))
+        if url is not None:
+            return CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(url))
+        else:
+            return None
     
     
