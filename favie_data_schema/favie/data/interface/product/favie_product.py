@@ -291,11 +291,16 @@ class FavieProductDetail(BaseModel):
     site: Optional[str] = None
     sku_id: Optional[str] = None
     spu_id: Optional[str] = None
+    request_spu_id: Optional[str] = None
     title: Optional[str] = None
     link: Optional[str] = None
     spu_title: Optional[str] = None
     sub_title: Optional[str] = None
     sub_title_link: Optional[str] = None
+    shop_id: Optional[str] = None
+    shop_name: Optional[str] = None
+    shop_site: Optional[str] = None
+    link_in_shop: Optional[str] = None
     description: Optional[str] = None
     description_external_link: Optional[str] = None
     rich_product_description: Optional[str] = None

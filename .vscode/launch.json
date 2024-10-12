@@ -1,3 +1,4 @@
+
 {
     // 使用 IntelliSense 了解相关属性。 
     // 悬停以查看现有属性的描述。
@@ -5,7 +6,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python 调试程序: 包含参数的当前文件",
+            "name": "Python 调试程序: 当前文件",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
@@ -13,7 +14,8 @@
             "args": [
                 "--avsc=avsc/interface/product/source_code/favie_product_categories_predict_response.avsc",
                 "--output-file=favie_data_schema/favie/data/interface/product/favie_product_new.py"
-            ]
+            ],
+            "justMyCode": false  // 添加这一行
         }
     ]
 }

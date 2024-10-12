@@ -16,7 +16,7 @@ class TestExtractCurrencyAndAmount(unittest.TestCase):
     def test_currency_symbol_after_amount(self):
         self.assertEqual(FavieProductUtils.extract_currency_and_amount("200¥"), ("JPY", 200.0))
 
-    def test_currency_symbol_after_amount(self):
+    def test_currency_symbol_after_amount01(self):
         self.assertEqual(FavieProductUtils.extract_currency_and_amount("CNY 200¥"), ("CNY", 200.0))
 
     def test_amount_with_comma(self):

@@ -45,6 +45,14 @@
       "default": null
     },
     {
+      "name": "request_spu_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "title",
       "type": [
         "null",
@@ -78,6 +86,38 @@
     },
     {
       "name": "sub_title_link",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shop_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shop_name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shop_site",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "link_in_shop",
       "type": [
         "null",
         "string"

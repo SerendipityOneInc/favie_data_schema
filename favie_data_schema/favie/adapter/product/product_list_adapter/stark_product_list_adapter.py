@@ -135,6 +135,6 @@ if __name__ == "__main__":
     )
     adapter = StarkProductListAdapter()
     product_list = adapter.stark_list_to_favie_details(stark_product_list_message)
-    if product_list:
-        for product in product_list:
-            print(product.model_dump_json(exclude_none=True))
+    #if product_list:
+    #    for product in product_list:
+    #        print(product.model_dump_json(exclude_none=True))
