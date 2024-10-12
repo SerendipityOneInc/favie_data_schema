@@ -254,6 +254,7 @@ class FavieProductDetail(BaseModel):
     site: Optional[str] = None
     sku_id: Optional[str] = None
     spu_id: Optional[str] = None
+    request_spu_id: Optional[str] = None
     title: Optional[str] = None
     link: Optional[str] = None
     spu_title: Optional[str] = None
@@ -293,4 +294,8 @@ class FavieProductDetail(BaseModel):
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None
     f_meta: Optional[MetaInfo] = None
+    shop_id: Optional[str] = None
+    shop_name: Optional[str] = None
+    shop_site: Optional[str] = None
+    link_in_shop: Optional[str] = None
 
