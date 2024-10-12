@@ -1,768 +1,709 @@
 {
-    "url": "https://www.amazon.com/dp/B00008UA3H",
-    "host": "www.amazon.com",
-    "product_id": "B00008UA3H",
-    "product_title": "Nordic Ware Procast, Classic Scone, Graphite Scottish Scone and Cornbread Pan",
-    "source": 3,
-    "parser_name": "AmazonProductDetailRFParser",
-    "create_time": "2024-08-29T10:17:21.164257",
-    "update_time": "2024-08-29T10:17:21.164262",
-    "crawl_result": {
-        "request_info": {
-            "success": true,
-            "credits_used": 4,
-            "credits_remaining": 96,
-            "credits_used_this_request": 1
-        },
-        "request_parameters": {
-            "type": "product",
-            "amazon_domain": "amazon.com",
-            "asin": "B073JYC4XM"
-        },
-        "request_metadata": {
-            "created_at": "2024-07-15T10:18:47.317Z",
-            "processed_at": "2024-07-15T10:19:01.858Z",
-            "total_time_taken": 14.54,
-            "amazon_url": "https://www.amazon.com/dp/B073JYC4XM?th=1&psc=1"
-        },
-        "product": {
-            "title": "[Older Version] SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-128G-GN6MA",
-            "search_alias": {
-                "title": "Electronics",
-                "value": "electronics"
-            },
-           "stark_shop":{"name":"jerry","id":"123","host":"https://www.amazon.com/dp/B073JYC4XM?th=1&psc=1"},
-            "keywords": "[Older,Version],SanDisk,128GB,Ultra,MicroSDXC,UHS-I,Memory,Card,with,Adapter,100MB/s,C10,U1,Full,HD,A1,Micro,SD,Card,SDSQUAR-128G-GN6MA",
-            "keywords_list": [
-                "[Older",
-                "Version]",
-                "SanDisk",
-                "128GB",
-                "Ultra",
-                "MicroSDXC",
-                "UHS-I",
-                "Memory",
-                "Card",
-                "with",
-                "Adapter",
-                "100MB/s",
-                "Full",
-                "Micro",
-                "Card",
-                "SDSQUAR-128G-GN6MA"
-            ],
-            "asin": "B073JYC4XM",
-            "link": "https://www.amazon.com/SanDisk-128GB-microSDXC-Memory-Adapter/dp/B073JYC4XM",
-            "brand": "SanDisk",
-            "protection_plans": [
-                {
-                    "asin": "B00VF4JT6G",
-                    "title": "2-year Photo and Data Recovery Plan",
-                    "price": {
-                        "symbol": "$",
-                        "value": 2.99,
-                        "currency": "USD",
-                        "raw": "$2.99"
-                    }
-                },
-                {
-                    "asin": "B011WVM2B0",
-                    "title": "3-year Photo and Data Recovery Plan",
-                    "price": {
-                        "symbol": "$",
-                        "value": 3.99,
-                        "currency": "USD",
-                        "raw": "$3.99"
-                    }
-                }
-            ],
-            "categories": [
-                {
-                    "name": "Electronics",
-                    "link": "https://www.amazon.com/electronics-store/b/ref=dp_bc_aui_C_1?ie=UTF8&node=172282",
-                    "category_id": "172282"
-                },
-                {
-                    "name": "Computers & Accessories",
-                    "link": "https://www.amazon.com/computer-pc-hardware-accessories-add-ons/b/ref=dp_bc_aui_C_2?ie=UTF8&node=541966",
-                    "category_id": "541966"
-                },
-                {
-                    "name": "Computer Accessories & Peripherals",
-                    "link": "https://www.amazon.com/Computer-Accessories-Supplies/b/ref=dp_bc_aui_C_3?ie=UTF8&node=172456",
-                    "category_id": "172456"
-                },
-                {
-                    "name": "Memory Cards",
-                    "link": "https://www.amazon.com/Memory-Cards-Computer-Add-Ons-Computers/b/ref=dp_bc_aui_C_4?ie=UTF8&node=516866",
-                    "category_id": "516866"
-                },
-                {
-                    "name": "Micro SD Cards",
-                    "link": "https://www.amazon.com/Micro-SD-Memory-Cards/b/ref=dp_bc_aui_C_5?ie=UTF8&node=3015433011",
-                    "category_id": "3015433011"
-                }
-            ],
-            "categories_flat": "Electronics > Computers & Accessories > Computer Accessories & Peripherals > Memory Cards > Micro SD Cards",
-            "sub_title": {
-                "text": "Visit the SanDisk Store",
-                "link": "https://www.amazon.com/stores/SanDisk/page/CD971F4B-EE23-4EA1-96E3-567678AC9C0A?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto"
-            },
-            "marketplace_id": "ATVPDKIKX0DER",
-            "rating": 4.7,
-            "rating_breakdown": {
-                "five_star": {
-                    "percentage": 84,
-                    "count": 184156
-                },
-                "four_star": {
-                    "percentage": 11,
-                    "count": 24115
-                },
-                "three_star": {
-                    "percentage": 3,
-                    "count": 6577
-                },
-                "two_star": {
-                    "percentage": 1,
-                    "count": 2192
-                },
-                "one_star": {
-                    "percentage": 2,
-                    "count": 4384
-                }
-            },
-            "ratings_total": 219234,
-            "main_image": {
-                "link": "https://m.media-amazon.com/images/I/51l5HURpwpL.jpg"
-            },
-            "images": [
-                {
-                    "link": "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg",
-                    "variant": "MAIN"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/61A5yvLX7FL._AC_SL1200_.jpg",
-                    "variant": "PT01"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/61qghmaHKXL._AC_SL1200_.jpg",
-                    "variant": "PT02"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/61TALLEpDlL._AC_SL1200_.jpg",
-                    "variant": "PT03"
-                }
-            ],
-            "images_count": 4,
-            "images_flat": "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg,https://m.media-amazon.com/images/I/61A5yvLX7FL._AC_SL1200_.jpg,https://m.media-amazon.com/images/I/61qghmaHKXL._AC_SL1200_.jpg,https://m.media-amazon.com/images/I/61TALLEpDlL._AC_SL1200_.jpg",
-            "videos": [
-                {
-                    "duration_seconds": 34,
-                    "width": 854,
-                    "height": 480,
-                    "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/5c1181fe-7c83-4436-a466-0021e84ef18e/default.jobtemplate.mp4.480.mp4",
-                    "thumbnail": "https://m.media-amazon.com/images/I/51hoTKyxlxL.SX522_.jpg",
-                    "is_hero_video": false,
-                    "variant": "MAIN",
-                    "group_id": "IB_G1",
-                    "group_type": "videos_for_this_product",
-                    "title": "SanDisk Ultra microSD Memory Card"
-                },
-                {
-                    "duration_seconds": 109,
-                    "width": 1920,
-                    "height": 1080,
-                    "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/12fbb4ec-2e93-42fa-b1d5-db97febf200d/default.jobtemplate.hls.m3u8",
-                    "thumbnail": "https://m.media-amazon.com/images/I/B1svx8b87xL.SX522_.png",
-                    "is_hero_video": false,
-                    "variant": "MAIN",
-                    "group_id": "IB_G2",
-                    "group_type": "related_videos",
-                    "title": "SanDisk Ultra MicroSDXC Card - REVIEW"
-                },
-                {
-                    "duration_seconds": 81,
-                    "width": 1920,
-                    "height": 1080,
-                    "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a425c4c7-541d-4402-aad6-72a832e98d47/default.jobtemplate.hls.m3u8",
-                    "thumbnail": "https://m.media-amazon.com/images/I/51aTW0KrjgL.SX522_.jpg",
-                    "is_hero_video": false,
-                    "variant": "MAIN",
-                    "group_id": "IB_G2",
-                    "group_type": "related_videos",
-                    "title": "Will it Work With a Nintendo Switch??"
-                },
-                {
-                    "duration_seconds": 130,
-                    "width": 1920,
-                    "height": 1080,
-                    "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/8136ab6c-39e0-467d-a3ab-12a360443197/default.jobtemplate.hls.m3u8",
-                    "thumbnail": "https://m.media-amazon.com/images/I/41Mk1uvyhVL.SX522_.jpg",
-                    "is_hero_video": false,
-                    "variant": "MAIN",
-                    "group_id": "IB_G2",
-                    "group_type": "related_videos",
-                    "title": "SanDisk 128GB Ultra Plus Micro SDXC UHS-I Card Unboxing"
-                },
-                {
-                    "duration_seconds": 35,
-                    "width": 1920,
-                    "height": 1080,
-                    "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/e980376f-c42c-4b0e-bff9-086d50a31695/default.jobtemplate.hls.m3u8",
-                    "thumbnail": "https://m.media-amazon.com/images/I/41AKnW4PBoL.SX522_.jpg",
-                    "is_hero_video": false,
-                    "variant": "MAIN",
-                    "group_id": "IB_G2",
-                    "group_type": "related_videos",
-                    "title": "The card doesn't corrupt"
-                },
-                {
-                    "duration_seconds": 35,
-                    "width": 1920,
-                    "height": 1080,
-                    "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/80aa3d89-8c16-4c86-9e97-1e540c728d04/default.jobtemplate.hls.m3u8",
-                    "thumbnail": "https://m.media-amazon.com/images/I/81YOnaQSeJL.SX522_.jpg",
-                    "is_hero_video": false,
-                    "variant": "MAIN",
-                    "group_id": "IB_G2",
-                    "group_type": "related_videos",
-                    "title": "Fascinating Features of SanDisk Ultra MicroSDXC"
-                }
-            ],
-            "videos_count": 6,
-            "videos_flat": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/5c1181fe-7c83-4436-a466-0021e84ef18e/default.jobtemplate.mp4.480.mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/12fbb4ec-2e93-42fa-b1d5-db97febf200d/default.jobtemplate.hls.m3u8,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a425c4c7-541d-4402-aad6-72a832e98d47/default.jobtemplate.hls.m3u8,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/8136ab6c-39e0-467d-a3ab-12a360443197/default.jobtemplate.hls.m3u8,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/e980376f-c42c-4b0e-bff9-086d50a31695/default.jobtemplate.hls.m3u8,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/80aa3d89-8c16-4c86-9e97-1e540c728d04/default.jobtemplate.hls.m3u8",
-            "is_bundle": false,
-            "feature_bullets": [
-                "Ideal for Android Smartphones and Tablets. Certified to work with Chromebooks. (This product has been certified to meet Google’s compatibility standards. Chromebook and the “Works with Chromebook” badge are trademarks of Google LLC.)",
-                "Capacities up to 512GB (1GB=1,000,000,000 bytes. Actual user storage less) to store even more hours of Full HD video (Approximations; results and Full HD (1920x1080) video support may vary based on host device, file attributes and other factors.)",
-                "Up to 100MB/s transfer read speed (Based on internal testing; Performance may be lower depending on host device, interface, usage conditions and other factors.) lets you move up to 1000 photos in a minute (Based on 4.1GB transfer of photos (Average file 3.5MB) with USB 3.0 reader. Results may vary based on host device, file attributes and other factors.)",
-                "Load apps faster with A1-rated performance (A1 performance is 1500 read IOPS, 500 write IOPS. Based on internal testing. Results may vary based on host device, app type and other factors.)",
-                "Class 10 for Full HD video recording and playback (Full HD (1920x1080) video support may vary based upon host device, file attributes, and other factors.)",
-                "SanDisk Memory Zone app for easy file management (Download and Installation Required)",
-                "Order with your Alexa enabled device. Just ask \"Alexa, order SanDisk microSD.\""
-            ],
-            "feature_bullets_count": 7,
-            "feature_bullets_flat": "Order with your Alexa enabled device. Just ask \"Alexa, order SanDisk microSD.\". SanDisk Memory Zone app for easy file management (Download and Installation Required). Class 10 for Full HD video recording and playback (Full HD (1920x1080) video support may vary based upon host device, file attributes, and other factors.). Load apps faster with A1-rated performance (A1 performance is 1500 read IOPS, 500 write IOPS. Based on internal testing. Results may vary based on host device, app type and other factors.). Up to 100MB/s transfer read speed (Based on internal testing; Performance may be lower depending on host device, interface, usage conditions and other factors.) lets you move up to 1000 photos in a minute (Based on 4.1GB transfer of photos (Average file 3.5MB) with USB 3.0 reader. Results may vary based on host device, file attributes and other factors.). Capacities up to 512GB (1GB=1,000,000,000 bytes. Actual user storage less) to store even more hours of Full HD video (Approximations; results and Full HD (1920x1080) video support may vary based on host device, file attributes and other factors.). Ideal for Android Smartphones and Tablets. Certified to work with Chromebooks. (This product has been certified to meet Google’s compatibility standards. Chromebook and the “Works with Chromebook” badge are trademarks of Google LLC.).",
-            "attributes": [
-                {
-                    "name": "Brand",
-                    "value": "SanDisk"
-                },
-                {
-                    "name": "Model Name",
-                    "value": "SanDisk Ultra 128GB microSDXC UHS-I card with Adapter - SDSQUAR-128G-GN6MA"
-                },
-                {
-                    "name": "Flash Memory Type",
-                    "value": "Micro SD"
-                },
-                {
-                    "name": "Memory Storage Capacity",
-                    "value": "128 GB"
-                },
-                {
-                    "name": "Compatible Devices",
-                    "value": "Tablet, Smartphone"
-                }
-            ],
-            "top_reviews": [
-                {
-                    "id": "R19RWJPJUDYK5A",
-                    "title": "Fast enough, reliable and good value.",
-                    "body": "I use these in a Raspberry Pi for the OS and storage. I'm running Linux and a website that is a Digital Library. Mostly \"read\" and some writes. They have performed well in harsh conditions (remote areas in Africa) with frequent use. So far 2-3 years seems to be their life span for this applicationRead more",
-                    "asin": "B073JYC4XM",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I use these in a Raspberry Pi for the OS and storage. I'm running Linux and a website that is a Digital Library. Mostly \"read\" and some writes. They have performed well in harsh conditions (remote areas in Africa) with frequent use. So far 2-3 years seems to be their life span for this application</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R19RWJPJUDYK5A?ASIN=B073JYC4XM",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on April 9, 2024",
-                        "utc": "2024-04-09T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Manning Sutton",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AGD2NK2T2RFXITPVZQBEUAPFGKVQ",
-                        "id": "AGD2NK2T2RFXITPVZQBEUAPFGKVQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "RYODKC0ARMJKD",
-                    "title": "Great product and very helpful seller",
-                    "body": "Didn't work at first but thanks to the helpful seller I/we figured out it wasy setting on my phone 😊😜☺️Thank you so much for your help 😀Read more",
-                    "asin": "B073JYC4XM",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Didn't work at first but thanks to the helpful seller I/we figured out it wasy setting on my phone 😊😜☺️Thank you so much for your help 😀</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/RYODKC0ARMJKD?ASIN=B073JYC4XM",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on July 1, 2024",
-                        "utc": "2024-07-01T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Patches",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AHJZAENF5CLNL5KY46SIDXPKW6GA",
-                        "id": "AHJZAENF5CLNL5KY46SIDXPKW6GA",
-                        "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/2cf7d118-990e-45f6-93ea-af3649fd2bb0._CR109,0,281,281_SX48_.jpg"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R33ZA9DFGMH2JH",
-                    "title": "Easy setup",
-                    "body": "Works right away no issues holds all my music for my mp3 playersRead more",
-                    "asin": "B073JYC4XM",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Works right away no issues holds all my music for my mp3 players</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R33ZA9DFGMH2JH?ASIN=B073JYC4XM",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on May 22, 2024",
-                        "utc": "2024-05-22T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Stephen",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AHFDCAUPRXVZSLHVVJLVOSUJX3EA",
-                        "id": "AHFDCAUPRXVZSLHVVJLVOSUJX3EA"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R61K28N99GPE0",
-                    "title": "Excellent for Videos!",
-                    "body": "Image quality is good, storage lots of it, durable & easy to install. Highly recommend to all!Read more",
-                    "asin": "B073JYC4XM",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Image quality is good, storage lots of it, durable &amp; easy to install. Highly recommend to all!</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R61K28N99GPE0?ASIN=B073JYC4XM",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on May 15, 2024",
-                        "utc": "2024-05-15T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Dolphinluvr",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AGRFNTZCQBOMRFO2YXI3FFZDWB5Q",
-                        "id": "AGRFNTZCQBOMRFO2YXI3FFZDWB5Q",
-                        "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/3410cdc3-3754-42fd-9df1-ade1f46613de._CR0,0.0,333,333_SX48_.jpg"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R2ABAMS4OJV6YR",
-                    "title": "It's a SD card",
-                    "body": "Does what you'd imagine. It's real, works as intended.Read more",
-                    "asin": "B073JYC4XM",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Does what you'd imagine. It's real, works as intended.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R2ABAMS4OJV6YR?ASIN=B073JYC4XM",
-                    "rating": 4,
-                    "date": {
-                        "raw": "Reviewed in the United States on July 1, 2024",
-                        "utc": "2024-07-01T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Alex J.",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AEYWVHUCCW25ERUHAH6S4XOTZF4Q",
-                        "id": "AEYWVHUCCW25ERUHAH6S4XOTZF4Q"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R1Y2WM5F6GZKP8",
-                    "title": "Performed well",
-                    "body": "Still going...loaded with pictures! No problemsRead more",
-                    "asin": "B073JYC4XM",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Still going...loaded with pictures! No problems</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R1Y2WM5F6GZKP8?ASIN=B073JYC4XM",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on May 29, 2024",
-                        "utc": "2024-05-29T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "RedBaron",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AFDQCIPKFPOHLZN25UX3QC6KSKOQ",
-                        "id": "AFDQCIPKFPOHLZN25UX3QC6KSKOQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R1ZTM29NMF8VH",
-                    "title": "Great Value",
-                    "body": "Good price for the amount of storage on the card.Read more",
-                    "asin": "B073JYC4XM",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Good price for the amount of storage on the card.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R1ZTM29NMF8VH?ASIN=B073JYC4XM",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on June 10, 2024",
-                        "utc": "2024-06-10T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Patrick W McCartney",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AEGFQZ3FPBL6QTORJA2IL3TLQXNQ",
-                        "id": "AEGFQZ3FPBL6QTORJA2IL3TLQXNQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R3H9CA84GBV9CJ",
-                    "title": "Worked great",
-                    "body": "These worked great for my kids cameras!Read more",
-                    "asin": "B073JYC4XM",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>These worked great for my kids cameras!</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R3H9CA84GBV9CJ?ASIN=B073JYC4XM",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on May 8, 2024",
-                        "utc": "2024-05-08T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Dolores Griffith",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AFFDZAQ6G6VISJ3YV5BZTYJUH7LQ",
-                        "id": "AFFDZAQ6G6VISJ3YV5BZTYJUH7LQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R1ZYWXRFT6T7Z7",
-                    "title": "Cartao original.",
-                    "body": "O cartao é original, testei ele com programa específico. Velocidade, escrita e leitura perfeitos. Recomendo.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">           <span class=\"cr-original-review-content\">O cartao é original, testei ele com programa específico. Velocidade, escrita e leitura perfeitos. Recomendo.</span><span class=\"cr-translated-review-content aok-hidden\"></span>     </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in Brazil on June 21, 2024",
-                        "utc": "2024-06-21T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "luiz alberto giombelli simoni",
-                        "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/8da2d373-3996-45d3-9354-69d79820c1ba._CR187,0,1125,1125_SX48_.jpg"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": 4,
-                    "review_country": "br",
-                    "is_global_review": true
-                },
-                {
-                    "id": "R1E34RW8BW766A",
-                    "title": "Memory Card",
-                    "body": "In the digital age, the need for reliable and expansive storage solutions is ever-growing. The SanDisk Ultra 128 GB microSDXC Memory Card stands out as a superior choice for those in need of a versatile and robust storage device. Accompanied by an SD adapter and boasting A1 app performance, this memory card promises a seamless experience for users.  Firstly, the storage capacity of 128 GB is ample for most users, allowing for the storage of thousands of high-resolution images and several hours of video footage. This makes it an excellent choice for photographers, videographers, and anyone looking to expand the storage of their smartphone or tablet.  The A1 app performance rating indicates that this memory card is optimized for apps, ensuring faster loading and in-app performance. This is particularly beneficial for mobile gamers and those who use productivity apps that require quick access to data.  The transfer speeds of up to 100 MB/s are noteworthy, as they allow for quick and efficient file transfers. This speed is sufficient for transferring large files without significant wait times, which is a huge plus for professionals who need to manage their files swiftly.  The inclusion of an SD adapter adds to the versatility of this memory card. It enables users to easily transfer files between devices that use SD cards and those that use microSD cards, such as cameras, laptops, and desktop computers.  Durability is another strong suit of the SanDisk Ultra 128 GB microSDXC Memory Card. It is designed to withstand harsh conditions, being waterproof, temperature-proof, shockproof, and x-ray-proof. This resilience makes it an ideal companion for adventurers and travelers who may encounter extreme environments.  Overall, the SanDisk Ultra 128 GB microSDXC Memory Card + SD Adapter with A1 App Performance Up to 100 MB/s is a top-tier choice for anyone in need of a high-performance, durable, and versatile storage solution. It delivers on its promises and provides excellent value for its price point, earning it a well-deserved five-star rating.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>In the digital age, the need for reliable and expansive storage solutions is ever-growing. The SanDisk Ultra 128 GB microSDXC Memory Card stands out as a superior choice for those in need of a versatile and robust storage device. Accompanied by an SD adapter and boasting A1 app performance, this memory card promises a seamless experience for users.<br><br>Firstly, the storage capacity of 128 GB is ample for most users, allowing for the storage of thousands of high-resolution images and several hours of video footage. This makes it an excellent choice for photographers, videographers, and anyone looking to expand the storage of their smartphone or tablet.<br><br>The A1 app performance rating indicates that this memory card is optimized for apps, ensuring faster loading and in-app performance. This is particularly beneficial for mobile gamers and those who use productivity apps that require quick access to data.<br><br>The transfer speeds of up to 100 MB/s are noteworthy, as they allow for quick and efficient file transfers. This speed is sufficient for transferring large files without significant wait times, which is a huge plus for professionals who need to manage their files swiftly.<br><br>The inclusion of an SD adapter adds to the versatility of this memory card. It enables users to easily transfer files between devices that use SD cards and those that use microSD cards, such as cameras, laptops, and desktop computers.<br><br>Durability is another strong suit of the SanDisk Ultra 128 GB microSDXC Memory Card. It is designed to withstand harsh conditions, being waterproof, temperature-proof, shockproof, and x-ray-proof. This resilience makes it an ideal companion for adventurers and travelers who may encounter extreme environments.<br><br>Overall, the SanDisk Ultra 128 GB microSDXC Memory Card + SD Adapter with A1 App Performance Up to 100 MB/s is a top-tier choice for anyone in need of a high-performance, durable, and versatile storage solution. It delivers on its promises and provides excellent value for its price point, earning it a well-deserved five-star rating.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United Kingdom on June 11, 2024",
-                        "utc": "2024-06-11T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "ie"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "gb",
-                    "is_global_review": true
-                },
-                {
-                    "id": "R1OX3V1MKJZ14M",
-                    "title": "Fonctionne bien",
-                    "body": "Carte memoire de bonne qualiteRead more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">           <span class=\"cr-original-review-content\">Carte memoire de bonne qualite</span><span class=\"cr-translated-review-content aok-hidden\"></span>     </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in Belgium on November 29, 2023",
-                        "utc": "2023-11-29T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "XA"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "us",
-                    "is_global_review": true
-                },
-                {
-                    "id": "R8S78HXYK4D6E",
-                    "title": "Ideal para la Switch.",
-                    "body": "Una tarjeta de gran capacidad y muy fiable.  Suele estar muy bien de precio. Compré la de 200 gigas a finales de 2017 para usarla en la Switch, y un año después he comprado la de 128.  La tarjeta viene en formato exFat, aunque para usar en la Switch conviene formatearla en Fat32, no porque sea mejor sistema (que no lo es), sino porque la implementación del exFat en la Switch es bastante malo, y es más habitual que se produzca corrupción de datos que en Fat32, sobre todo si usas homebrew.  La corrupción de datos no es nada grave, pero sí muy molesta, y puede obligarte a reinstalar un juego, o puede hacerte perder las partidas salvadas. Esto, repito, en caso de usar homebrew. Con un uso normal y apagando la consola antes de insertar o retirar la tarjeta, no hay problemas.  Por si estáis interesados en formatear la tarjeta en Fat32, Windows no permite hacerlo en tarjetas tan grandes, así que tendréis que usar la aplicación \"guiformat\".  Espero que os sirva de ayuda.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">           <span class=\"cr-original-review-content\">Una tarjeta de gran capacidad y muy fiable.<br><br>Suele estar muy bien de precio. Compré la de 200 gigas a finales de 2017 para usarla en la Switch, y un año después he comprado la de 128.<br><br>La tarjeta viene en formato exFat, aunque para usar en la Switch conviene formatearla en Fat32, no porque sea mejor sistema (que no lo es), sino porque la implementación del exFat en la Switch es bastante malo, y es más habitual que se produzca corrupción de datos que en Fat32, sobre todo si usas homebrew.<br><br>La corrupción de datos no es nada grave, pero sí muy molesta, y puede obligarte a reinstalar un juego, o puede hacerte perder las partidas salvadas. Esto, repito, en caso de usar homebrew. Con un uso normal y apagando la consola antes de insertar o retirar la tarjeta, no hay problemas.<br><br>Por si estáis interesados en formatear la tarjeta en Fat32, Windows no permite hacerlo en tarjetas tan grandes, así que tendréis que usar la aplicación \"guiformat\".<br><br>Espero que os sirva de ayuda.</span><span class=\"cr-translated-review-content aok-hidden\"></span>     </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in Spain on December 11, 2018",
-                        "utc": "2018-12-11T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "jedeitor"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": 389,
-                    "review_country": "es",
-                    "is_global_review": true
-                },
-                {
-                    "id": "R2UVVKPNI27CJ6",
-                    "title": "安くて👌",
-                    "body": "安くて購入しやすいです。Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">           <span class=\"cr-original-review-content\">安くて購入しやすいです。</span><span class=\"cr-translated-review-content aok-hidden\"></span>     </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in Japan on August 9, 2023",
-                        "utc": "2023-08-09T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": ":    💬   ⌒     ゆーな   。",
-                        "image": "https://images-fe.ssl-images-amazon.com/images/S/amazon-avatars-global/3c9de3aa-85d8-4aa3-bad4-54cbaff0e5ec._CR1,0,350,350_SX48_.jpg"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "review_country": "jp",
-                    "is_global_review": true
-                }
-            ],
-            "buybox_winner": {
-                "maximum_order_quantity": {
-                    "value": 30,
-                    "hard_maximum": true
-                },
-                "new_offers_count": 10,
-                "new_offers_from": {
-                    "symbol": "$",
-                    "value": 14.24,
-                    "currency": "USD",
-                    "raw": "$14.24"
-                },
-                "is_prime": true,
-                "is_prime_exclusive_deal": false,
-                "is_amazon_fresh": false,
-                "condition": {
-                    "is_new": true
-                },
-                "availability": {
-                    "type": "in_stock",
-                    "raw": "In Stock",
-                    "dispatch_days": 1
-                },
-                "fulfillment": {
-                    "type": "2p",
-                    "standard_delivery": {
-                        "date": "Saturday, July 20",
-                        "name": "FREE"
-                    },
-                    "fastest_delivery": {
-                        "date": "Wednesday, July 17",
-                        "name": "Or fastest delivery Wednesday, July 17. Order within 18 hrs 41 mins"
-                    },
-                    "is_sold_by_amazon": false,
-                    "is_fulfilled_by_amazon": true,
-                    "is_fulfilled_by_third_party": false,
-                    "is_sold_by_third_party": true,
-                    "third_party_seller": {
-                        "name": "First Choice Online",
-                        "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A35BKAA6VXTYCT&asin=B073JYC4XM&ref_=dp_merchant_link&isAmazonFulfilled=1",
-                        "id": "A35BKAA6VXTYCT"
-                    }
-                },
-                "price": {
-                    "symbol": "$",
-                    "value": 14.35,
-                    "currency": "USD",
-                    "raw": "$14.35"
-                },
-                "shipping": {
-                    "raw": "FREE"
-                }
-            },
-            "specifications": [
-                {
-                    "name": "Brand",
-                    "value": "SanDisk"
-                },
-                {
-                    "name": "Model Name",
-                    "value": "SanDisk Ultra 128GB microSDXC UHS-I card with Adapter - SDSQUAR-128G-GN6MA"
-                },
-                {
-                    "name": "Flash Memory Type",
-                    "value": "Micro SD"
-                },
-                {
-                    "name": "Memory Storage Capacity",
-                    "value": "128 GB"
-                },
-                {
-                    "name": "Compatible Devices",
-                    "value": "Tablet, Smartphone"
-                }
-            ],
-            "specifications_flat": "Compatible Devices: Tablet, Smartphone. Memory Storage Capacity: 128 GB. Flash Memory Type: Micro SD. Model Name: SanDisk Ultra 128GB microSDXC UHS-I card with Adapter - SDSQUAR-128G-GN6MA. Brand: SanDisk."
-        },
-        "brand_store": {
-            "id": "CD971F4B-EE23-4EA1-96E3-567678AC9C0A",
-            "link": "https://www.amazon.com/stores/SanDisk/page/CD971F4B-EE23-4EA1-96E3-567678AC9C0A"
-        },
-        "newer_model": {
-            "title": "SanDisk 128GB Ultra microSDXC UHS-I Memory Card with Adapter - Up to 140MB/s, C10, U1, Full HD, A1, MicroSD Card - SDSQUAB-128G-GN6MA [New Version]",
-            "asin": "B0B7NTY2S6",
-            "link": "https://www.amazon.com/SanDisk-128GB-microSDXC-Memory-Adapter-dp-B0B7NTY2S6/dp/B0B7NTY2S6/ref=dp_ob_image_ce",
-            "image": "https://m.media-amazon.com/images/I/71HMMAm+TlL._SR75,75_.jpg",
-            "rating": 4.5,
-            "ratings_total": 153826,
-            "price": {
-                "raw": "$14.99Only 5 left in stock - order soon."
-            }
-        },
-        "frequently_bought_together": {
-            "total_price": {
-                "symbol": "$",
-                "value": 121.34,
-                "currency": "USD",
-                "raw": "$121.34"
-            },
-            "products": [
-                {
-                    "asin": "B073JYC4XM",
-                    "title": "[Older Version] SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-128G-GN6MA",
-                    "link": "https://www.amazon.com/dp/B073JYC4XM",
-                    "image": "https://images-na.ssl-images-amazon.com/images/I/51l5HURpwpL._AC_UL116_SR116,116_.jpg",
-                    "price": {
-                        "symbol": "$",
-                        "value": 14.24,
-                        "currency": "USD",
-                        "raw": "$14.24"
-                    }
-                },
-                {
-                    "asin": "B07N3FC7N3",
-                    "title": "Tascam DR-05X Stereo Handheld Audio Recorder/USB Interface",
-                    "link": "https://www.amazon.com/dp/B07N3FC7N3",
-                    "image": "https://images-na.ssl-images-amazon.com/images/I/71YJMdcOg4L._AC_UL116_SR116,116_.jpg",
-                    "price": {
-                        "symbol": "$",
-                        "value": 89,
-                        "currency": "USD",
-                        "raw": "$89.00"
-                    }
-                },
-                {
-                    "asin": "B01MG7NPHP",
-                    "title": "Hard CASE fits TASCAM DR-05X / DR-05 (Version 2/1) Portable Digital Recorder. - includes Mesh Pocket for Accessories. by Caseling",
-                    "link": "https://www.amazon.com/dp/B01MG7NPHP",
-                    "image": "https://images-na.ssl-images-amazon.com/images/I/912njtHfkBL._AC_UL116_SR116,116_.jpg",
-                    "price": {
-                        "symbol": "$",
-                        "value": 17.99,
-                        "currency": "USD",
-                        "raw": "$17.99"
-                    }
-                }
-            ]
-        },
-        "also_bought": [
-            {
-                "title": "SanDisk Ultra 128GB SDXC UHS-I Memory Card up to 80MB/s (SDSDUNC-128G-GN6IN), Black",
-                "asin": "B0143IISD0",
-                "link": "https://www.amazon.com/SanDisk-Memory-Standard-Packaging-SDSDUNC-128G-GN6IN/dp/B0143IISD0/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_1/135-1585618-3349225?pd_rd_w=tY3En&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=KMSPZ05ET9NQ4CAK903P&pd_rd_wg=rNxuG&pd_rd_r=f7404220-1dbf-4139-9e44-0145eb6c891b&pd_rd_i=B0143IISD0&psc=1",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/8194p4lS-3L._AC_UL165_SR165,165_.jpg",
-                "rating": 4.7,
-                "ratings_total": 117309,
-                "price": {
-                    "symbol": "$",
-                    "value": 16.51,
-                    "currency": "USD",
-                    "raw": "$16.51"
-                }
-            },
-            {
-                "title": "SanDisk 128GB High Endurance Video MicroSDXC Card with Adapter for Dash Cam and Home Monitoring systems - C10, U3, V30, 4K UH",
-                "asin": "B07NY23WBG",
-                "link": "https://www.amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_2/135-1585618-3349225?pd_rd_w=tY3En&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=KMSPZ05ET9NQ4CAK903P&pd_rd_wg=rNxuG&pd_rd_r=f7404220-1dbf-4139-9e44-0145eb6c891b&pd_rd_i=B07NY23WBG&psc=1",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/71Yhk7-bl9L._AC_UL165_SR165,165_.jpg",
-                "rating": 4.7,
-                "ratings_total": 28548,
-                "price": {
-                    "symbol": "$",
-                    "value": 16.95,
-                    "currency": "USD",
-                    "raw": "$16.95"
-                }
-            },
-            {
-                "title": "SanDisk Ultra SDSQUNS-128G-GN6MN 128GB 80MB/s UHS-I Class 10 microSDXC Card",
-                "asin": "B07HHD7C7T",
-                "link": "https://www.amazon.com/SanDisk-Ultra-SDSQUNS-128G-GN6MN-128GB-microSDXC/dp/B07HHD7C7T/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_3/135-1585618-3349225?pd_rd_w=tY3En&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=KMSPZ05ET9NQ4CAK903P&pd_rd_wg=rNxuG&pd_rd_r=f7404220-1dbf-4139-9e44-0145eb6c891b&pd_rd_i=B07HHD7C7T&psc=1",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/51B00IVUMIL._AC_UL165_SR165,165_.jpg",
-                "rating": 4.7,
-                "ratings_total": 39586,
-                "price": {
-                    "symbol": "$",
-                    "value": 14.1,
-                    "currency": "USD",
-                    "raw": "$14.10"
-                }
-            },
-            {
-                "title": "SanDisk 64GB X2 (128GB) MicroSDXC Ultra Uhs-1 Memory Card",
-                "asin": "B07XDCZ9J3",
-                "link": "https://www.amazon.com/SanDisk-128GB-MicroSDXC-Ultra-Memory/dp/B07XDCZ9J3/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_4/135-1585618-3349225?pd_rd_w=tY3En&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=KMSPZ05ET9NQ4CAK903P&pd_rd_wg=rNxuG&pd_rd_r=f7404220-1dbf-4139-9e44-0145eb6c891b&pd_rd_i=B07XDCZ9J3&psc=1",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/61eUgiKiEDL._AC_UL165_SR165,165_.jpg",
-                "rating": 4.7,
-                "ratings_total": 11387,
-                "price": {
-                    "symbol": "$",
-                    "value": 15.64,
-                    "currency": "USD",
-                    "raw": "$15.64"
-                }
-            },
-            {
-                "title": "SanDisk 128GB Extreme PRO® microSD™ UHS-I Card with Adapter C10, U3, V30, A2, 200MB/s Read 90MB/s Write SDSQXCD-128G-GN6MA",
-                "asin": "B09X7DNF6G",
-                "link": "https://www.amazon.com/SanDisk-Extreme-microSDTM-Adapter-SDSQXCD-128G-GN6MA/dp/B09X7DNF6G/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_5/135-1585618-3349225?pd_rd_w=tY3En&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=KMSPZ05ET9NQ4CAK903P&pd_rd_wg=rNxuG&pd_rd_r=f7404220-1dbf-4139-9e44-0145eb6c891b&pd_rd_i=B09X7DNF6G&psc=1",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/61o8OmUS-iL._AC_UL165_SR165,165_.jpg",
-                "rating": 4.7,
-                "ratings_total": 9832,
-                "price": {
-                    "symbol": "$",
-                    "value": 19.31,
-                    "currency": "USD",
-                    "raw": "$19.31"
-                }
-            },
-            {
-                "title": "SanDisk Mobile Class4 MicroSDHC Flash Memory Card- SDSDQM-B35A with Adapter 16GB",
-                "asin": "B004ZIENBA",
-                "link": "https://www.amazon.com/SanDisk-Mobile-MicroSDHC-SDSDQM-B35A-Adapter/dp/B004ZIENBA/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_6/135-1585618-3349225?pd_rd_w=tY3En&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=KMSPZ05ET9NQ4CAK903P&pd_rd_wg=rNxuG&pd_rd_r=f7404220-1dbf-4139-9e44-0145eb6c891b&pd_rd_i=B004ZIENBA&psc=1",
-                "image": "https://images-na.ssl-images-amazon.com/images/I/61CqlNh4BBL._AC_UL165_SR165,165_.jpg",
-                "rating": 4.6,
-                "ratings_total": 22896,
-                "price": {
-                    "symbol": "$",
-                    "value": 6.96,
-                    "currency": "USD",
-                    "raw": "$6.96"
-                }
-            }
-        ]
-    }
+	"url": "https://www.amazon.com/dp/B008BUKO6G",
+	"host": "www.amazon.com",
+	"product_id": "B008BUKO6G",
+	"product_title": "Calphalon Premium Nonstick Baking Pans Set of 2, 12 x 17 inch, Silverware, Heavy Gauge Steel Core 2-pc Baking Sheet",
+	"source": 3,
+	"parser_name": "AmazonProductDetailRFParser",
+	"raw_result": "",
+	"crawl_result": {
+		"request_info": {
+			"success": true,
+			"credits_used": 16448000,
+			"credits_remaining": 3552000
+		},
+		"request_metadata": {
+			"id": null,
+			"created_at": "2024-10-12T04:07:58.601Z",
+			"processed_at": "2024-10-12T04:08:04.972Z",
+			"total_time_taken": 6.37,
+			"amazon_url": "https://www.amazon.com/dp/B008BUKO6G?th=1&psc=1"
+		},
+		"request_parameters": {
+			"type": "product",
+			"url": null
+		},
+		"product": {
+			"title": "Calphalon Premium Nonstick Baking Pans Set of 2, 12 x 17 inch, Silverware, Heavy Gauge Steel Core 2-pc Baking Sheet",
+			"title_excluding_variant_name": "Calphalon Premium Nonstick Baking Pans Set of 2, 12 x 17 inch, Silverware, Heavy Gauge Steel Core",
+            "stark_shop":{"name":"jerry","id":"123","host":"https://shop.app/products/7239920189485"},
+
+			"stark_link_in_shop": null,
+
+			"variants": [
+				{
+					"asin": "B008BUKO6G",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Size",
+							"value": "2-pc"
+						},
+						{
+							"name": "Style",
+							"value": "Baking Sheet"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B008BUKO6G?th=1&psc=1",
+					"price": {
+						"symbol": "$",
+						"currency": "USD",
+						"value": 35.56,
+						"raw": "$35.56"
+					}
+				},
+				{
+					"asin": "B008BULETC",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Size",
+							"value": "1-pc"
+						},
+						{
+							"name": "Style",
+							"value": "Baking Sheet"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B008BULETC?th=1&psc=1",
+					"price": null
+				}
+			],
+			"keywords": "Calphalon,Premium,Nonstick,Baking,Pans,Set,of,2,12,x,17,inch,Silverware,Heavy,Gauge,Steel,Core,2-pc,Baking,Sheet",
+			"keywords_list": [
+				"Calphalon",
+				"Premium",
+				"Nonstick",
+				"Baking",
+				"Pans",
+				"inch",
+				"Silverware",
+				"Heavy",
+				"Gauge",
+				"Steel",
+				"Core",
+				"2-pc",
+				"Baking",
+				"Sheet"
+			],
+			"link": "https://www.amazon.com/Calphalon-Nonstick-Bakeware-Baking-2-Piece/dp/B008BUKO6G",
+			"asin": "B008BUKO6G",
+			"parent_asin": "B01HH749HS",
+			"description": "Designed using heavy gauge steel core, this set of two Calphalon baking pans ensures evenly heated and perfectly browned cookies, cakes, and more. Its interior has interlocking nonstick layers, offering up to 2X better release than Calphalon Classic Bakeware, leading to long-lasting, high-performance usage. Raised edges on this baking sheet facilitate a no-spill baking experience, making it versatile for everything from cookies to sheet cakes. Finish your baking session with an easy cleanup, thanks to its dishwasher-safe properties and excellent reliability backed by Calphalon's full lifetime warranty.",
+			"categories": [
+				{
+					"name": "Home & Kitchen",
+					"link": "https://www.amazon.com/home-garden-kitchen-furniture-bedding/b/ref=dp_bc_aui_C_1?ie=UTF8&node=1055398",
+					"category_id": "1055398"
+				},
+				{
+					"name": "Kitchen & Dining",
+					"link": "https://www.amazon.com/kitchen-dining/b/ref=dp_bc_aui_C_2?ie=UTF8&node=284507",
+					"category_id": "284507"
+				},
+				{
+					"name": "Bakeware",
+					"link": "https://www.amazon.com/bakeware/b/ref=dp_bc_aui_C_3?ie=UTF8&node=289668",
+					"category_id": "289668"
+				},
+				{
+					"name": "Baking & Cookie Sheets",
+					"link": "https://www.amazon.com/baking-cookie-sheets/b/ref=dp_bc_aui_C_4?ie=UTF8&node=289674",
+					"category_id": "289674"
+				}
+			],
+			"bestsellers_rank": [
+				{
+					"category": "Kitchen & Dining",
+					"rank": 7609,
+					"link": "https://www.amazon.com/gp/bestsellers/kitchen/ref=pd_zg_ts_kitchen"
+				},
+				{
+					"category": "Baking & Cookie Sheets",
+					"rank": 49,
+					"link": "https://www.amazon.com/gp/bestsellers/kitchen/289674/ref=pd_zg_hrsr_kitchen"
+				}
+			],
+			"summarization_attributes": null,
+			"amazons_choice": {
+				"keywords": "",
+				"link": null
+			},
+			"recent_sales": "1K+ bought in past month",
+			"climate_pledge_friendly": null,
+			"kindle_unlimited": null,
+			"has_coupon": null,
+			"coupon_text": null,
+			"promotions": null,
+			"brand": "Calphalon",
+			"weight": "4.34 pounds",
+			"shipping_weight": null,
+			"first_available": {
+				"raw": "August 30, 2012",
+				"utc": "2012-08-30T00:00:00.000Z"
+			},
+			"delivery_message": null,
+			"dimensions": "17\"L x 12\"W x 1.5\"H",
+			"sub_title": {
+				"text": "Visit the Calphalon Store",
+				"link": "https://www.amazon.com/stores/Calphalon/page/C9831A10-D05D-48D2-82C6-9C921CB566A9?ref_=ast_bln"
+			},
+			"rating": 4.5,
+			"rating_breakdown": {
+				"five_star": {
+					"percentage": 77,
+					"count": 3293
+				},
+				"four_star": {
+					"percentage": 10,
+					"count": 427
+				},
+				"three_star": {
+					"percentage": 5,
+					"count": 213
+				},
+				"two_star": {
+					"percentage": 3,
+					"count": 128
+				},
+				"one_star": {
+					"percentage": 5,
+					"count": 213
+				}
+			},
+			"ratings_total": 4277,
+			"reviews_total": null,
+			"top_reviews": [
+				{
+					"id": "R1J9PEMYK510XZ",
+					"title": "Phenomenal baking sheets!",
+					"body": "This pair of Calphalon Baking Sheets are nothing short of phenomenal!!  I purchased these because I inadvertently ruined a different brands pair of sheets we had for many years because I am a moron. LOL I cooked something on it and some substance baked into and stained the sheet. Because I am an absolute genius, I used an SOS/Brillo type of pad on a non-stick item when other, less harsh methods weren't working to clean it. You get the picture.  These are great and my wife won't let me clean them. I totally understand why.  She has baked a variety of items on these sheets and she barely needs a spatula to remove what she has cooked. She could remove the items by hand if they weren't so hot. They are wonderful sheets with easy removal of what you are going to bake or cook on them. They clean easily and look great. They are very durable and a perfect size for whatever you are going to use them for.  While these are more expensive than other brands and sheets these are 100% worth the money. I definitely recommend purchasing these as you won't be disappointed. Unless you clean them with an SOS or Brillo type of pad. If you do, please know I can make room in my doghouse for you. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>This pair of Calphalon Baking Sheets are nothing short of phenomenal!!<br><br>I purchased these because I inadvertently ruined a different brands pair of sheets we had for many years because I am a moron. LOL I cooked something on it and some substance baked into and stained the sheet. Because I am an absolute genius, I used an SOS/Brillo type of pad on a non-stick item when other, less harsh methods weren't working to clean it. You get the picture.<br><br>These are great and my wife won't let me clean them. I totally understand why.<br><br>She has baked a variety of items on these sheets and she barely needs a spatula to remove what she has cooked. She could remove the items by hand if they weren't so hot. They are wonderful sheets with easy removal of what you are going to bake or cook on them. They clean easily and look great. They are very durable and a perfect size for whatever you are going to use them for.<br><br>While these are more expensive than other brands and sheets these are 100% worth the money. I definitely recommend purchasing these as you won't be disappointed. Unless you clean them with an SOS or Brillo type of pad. If you do, please know I can make room in my doghouse for you.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R1J9PEMYK510XZ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B008BUKO6G",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on November 7, 2023",
+						"utc": "2023-11-07T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Danny R.",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AFBOS3TFW4NKMDXVWPVNGOZ4VA7A/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AFBOS3TFW4NKMDXVWPVNGOZ4VA7A"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": 17,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R1SC7O819Q0B5",
+					"title": "Frugal, Scratch-cooking, Mama review",
+					"body": "I'll first say I gave it five stars for the three months of durability it has endured. A LOT. These two pans quickly became my two favorite pans. I know some of you can relate to the anxiety of having to replace a beloved, but retired, piece of essential daily routine. I was nervous to replace my pans sight unseen, but I would order two more without hesitation. I did give it a less than perfect score for sturdiness, because it doesn't handle being off balanced very well. For instance, chopped sweet potatoes on one side and halved brussel sprouts on the other, do not do well split down the middle. When the pan gets hot and it's not balanced, it will warp. It will also warp if it's too heavy and you don't properly support it out of the oven, haha. (that was definitely user error, but maybe not a issue on a sturdier pan) I rarely mix and match my veggies when baking, so it's rarely an issue for me. LOVE LOVE LOVE these pans!! Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I'll first say I gave it five stars for the three months of durability it has endured. A LOT. These two pans quickly became my two favorite pans. I know some of you can relate to the anxiety of having to replace a beloved, but retired, piece of essential daily routine. I was nervous to replace my pans sight unseen, but I would order two more without hesitation. I did give it a less than perfect score for sturdiness, because it doesn't handle being off balanced very well. For instance, chopped sweet potatoes on one side and halved brussel sprouts on the other, do not do well split down the middle. When the pan gets hot and it's not balanced, it will warp. It will also warp if it's too heavy and you don't properly support it out of the oven, haha. (that was definitely user error, but maybe not a issue on a sturdier pan) I rarely mix and match my veggies when baking, so it's rarely an issue for me. LOVE LOVE LOVE these pans!!<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R1SC7O819Q0B5/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B008BUKO6G",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on March 30, 2020",
+						"utc": "2020-03-30T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Ally Troyer",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AHNE7MIH2LOSBZSQIEPJOKYKDYGA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AHNE7MIH2LOSBZSQIEPJOKYKDYGA"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": 9,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R3E0XY24RZL9TE",
+					"title": "Good quality",
+					"body": "Working great. Nice improvement from my previous cookware Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Working great. Nice improvement from my previous cookware<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R3E0XY24RZL9TE/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B008BUKO6G",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on August 18, 2024",
+						"utc": "2024-08-18T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Troy Gustin",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AHTYSQVL4NPWSMK55XYDVRZY42PQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AHTYSQVL4NPWSMK55XYDVRZY42PQ"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R29SKK718AE8BG",
+					"title": "Try these!",
+					"body": "Love the baking sheets! Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Love the baking sheets!<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R29SKK718AE8BG/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B008BUKO6G",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on September 3, 2024",
+						"utc": "2024-09-03T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "susan mussotto",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AEKBAAYJT7TTGR7AAD4D2HA3GWMQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AEKBAAYJT7TTGR7AAD4D2HA3GWMQ"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "RHPDPHBNE9RHW",
+					"title": "Flimsier than expected",
+					"body": "I got these pans to replace a pan that I wrecked by putting it on the grill. The new pans are a little flimsier than my 15-year-old pans that have stood the test of time. I am sure it will be fine, it’s still a Calphalon.  Update: Definitely not as sturdy as my 15 yo pans. The old ones weigh 3.25# and the new ones 1.9# They warp/twist in the oven on high heat. I will keep my eyes open for a heavier version. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I got these pans to replace a pan that I wrecked by putting it on the grill. The new pans are a little flimsier than my 15-year-old pans that have stood the test of time. I am sure it will be fine, it’s still a Calphalon.<br><br>Update: Definitely not as sturdy as my 15 yo pans. The old ones weigh 3.25# and the new ones 1.9# They warp/twist in the oven on high heat. I will keep my eyes open for a heavier version.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/RHPDPHBNE9RHW/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B008BUKO6G",
+					"rating": 4,
+					"date": {
+						"raw": "Reviewed in the United States on August 27, 2024",
+						"utc": "2024-08-27T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Rabbit Rabbit",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AGITBTSEB5G4GQZQPQK7MA4UU3VQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AGITBTSEB5G4GQZQPQK7MA4UU3VQ"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R1EVD2AJMT94OZ",
+					"title": "Very nice cookie sheets!",
+					"body": "Heavy, sturdy cookie sheets. Nice non-stick surface. Great quality that I have come to expect from Caphalon. Arrived quickly. No issues at all. If I had one complaint it would be the rolled edge that leaves a gap for water to collect when washing. It's difficult to find cookie sheets that don't have a better design than this. Inevitably it will rust in this area and rusty water will run out during washing. Other than that I am very happy with my purchase. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Heavy, sturdy cookie sheets. Nice non-stick surface. Great quality that I have come to expect from Caphalon. Arrived quickly. No issues at all. If I had one complaint it would be the rolled edge that leaves a gap for water to collect when washing. It's difficult to find cookie sheets that don't have a better design than this. Inevitably it will rust in this area and rusty water will run out during washing. Other than that I am very happy with my purchase.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R1EVD2AJMT94OZ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B008BUKO6G",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on November 21, 2022",
+						"utc": "2022-11-21T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Mama H",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AFA5LCP62IW4HAJHQURL2UE5DPNA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AFA5LCP62IW4HAJHQURL2UE5DPNA"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": 7,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R2CDFGV0RZAI15",
+					"title": "OUR COOKIE MONSTERS APPROVE",
+					"body": "Sturdy ● Easy to clean. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Sturdy ● Easy to clean.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R2CDFGV0RZAI15/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B008BUKO6G",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on June 29, 2024",
+						"utc": "2024-06-29T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "G G",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AFXY6CZOKEQYV5DUYJ5BV2BKFYMA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AFXY6CZOKEQYV5DUYJ5BV2BKFYMA"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R2OOBWLYEV8WXB",
+					"title": "GOOD AND SOLID!",
+					"body": "Yes, they cost more, but you are getting what you paid for- lovely, heavy baking pans. No warp, no flex. A++! Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Yes, they cost more, but you are getting what you paid for- lovely, heavy baking pans. No warp, no flex. A++!<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R2OOBWLYEV8WXB/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B008BUKO6G",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on December 31, 2023",
+						"utc": "2023-12-31T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Amy S P",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AG27EG2L3YFVJEZX3SIGRC46TLLA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AG27EG2L3YFVJEZX3SIGRC46TLLA"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "RM69ETVWNO1DZ",
+					"title": "These baking sheets are fantastic. They warp a little in the oven but ...",
+					"body": "These baking sheets are fantastic. They warp a little in the oven but \"pop\" back flat as they cool down. Easy to clean, but they're a little too large the stand up on their side in my dishwasher so I've been doing it by hand in the sink.  They're also a perfect fit for AmazonBasics Silicone Baking Mat - 2 Pack, which I bought at the same time. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>These baking sheets are fantastic. They warp a little in the oven but \"pop\" back flat as they cool down. Easy to clean, but they're a little too large the stand up on their side in my dishwasher so I've been doing it by hand in the sink.<br><br>They're also a perfect fit for <a data-hook=\"product-link-linked\" href=\"/dp/B00V5IM0EU\">AmazonBasics Silicone Baking Mat - 2 Pack</a>, which I bought at the same time.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in Canada on July 23, 2017",
+						"utc": "2017-07-23T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "G. Young",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "ca",
+					"is_global_review": true
+				},
+				{
+					"id": "R2KP6LW7NCTFEW",
+					"title": "Great baking trays",
+					"body": "Before I decided to purchase these baking trays I did some measurements to my new macaroon silicone mats and kitchen oven. I am glad I did it because these trays fit perfectly for my 2x silicone mats (11.6”x16.5”purchased also from Amazon), and inside my 60cm oven (as per photos). I haven’t used trays yet but they are look great and good quality. I couldn’t be happier with these purchase. Now I can start baking using my new kitchen tools:-) Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Before I decided to purchase these baking trays I did some measurements to my new macaroon silicone mats and kitchen oven. I am glad I did it because these trays fit perfectly for my 2x silicone mats (11.6”x16.5”purchased also from Amazon), and inside my 60cm oven (as per photos). I haven’t used trays yet but they are look great and good quality. I couldn’t be happier with these purchase. Now I can start baking using my new kitchen tools:-)<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in Australia on June 15, 2021",
+						"utc": "2021-06-15T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Miryam",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "au",
+					"is_global_review": true
+				},
+				{
+					"id": "R1OLR1Z41WQ4Z7",
+					"title": "after using in the dishwasher",
+					"body": "Every time so far when cleaned in the dishwasher, the water that collects under the rolled edge of the perimeter is brown when the tray is turned over to allow the excess water to flow out. I believe this is rust, so each time after washing I have to make sure and dry with a paper towel. At this point, it is not certain how long the trays will last due to the rust..... Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Every time so far when cleaned in the dishwasher, the water that collects under the rolled edge of the perimeter is brown when the tray is turned over to allow the excess water to flow out. I believe this is rust, so each time after washing I have to make sure and dry with a paper towel. At this point, it is not certain how long the trays will last due to the rust.....<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 3,
+					"date": {
+						"raw": "Reviewed in Singapore on July 6, 2020",
+						"utc": "2020-07-06T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "GTY",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": true
+				},
+				{
+					"id": "R15428OCD5IFVF",
+					"title": "Excelent purchase",
+					"body": "excellent set still warp with high temp changes but not nearly as much as other pans, high lip and the non bake silicone mats fit perfectly in these Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>excellent set still warp with high temp changes but not nearly as much as other pans, high lip and the non bake silicone mats fit perfectly in these<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in Canada on December 22, 2016",
+						"utc": "2016-12-22T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Cameron",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "ca",
+					"is_global_review": true
+				},
+				{
+					"id": "R1TJKZSRFU48R",
+					"title": "ease of cleaning",
+					"body": "best multi-purpose cook sheet i have ever owned Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>best multi-purpose cook sheet i have ever owned<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in Canada on March 16, 2022",
+						"utc": "2022-03-16T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Cherry Provencal",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "ca",
+					"is_global_review": true
+				}
+			],
+			"main_image": {
+				"link": "https://m.media-amazon.com/images/I/71+bk2u3+0L.jpg"
+			},
+			"images": [
+				{
+					"link": "https://m.media-amazon.com/images/I/71+bk2u3+0L._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/91l4BWyHdML._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/91lZ-IAmTJL._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/91zBaWMjM7L._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/71MSbn9G4xL._AC_SL1500_.jpg"
+				}
+			],
+			"videos": null,
+			"is_bundle": false,
+			"feature_bullets": [
+				"Interlocking Nonstick Layers: Ensuring high performance release and easier cleanup",
+				"Heavy Gauge Steel Core: Promote even heating and prevent warping",
+				"Versatile Size: Includes two 12x17 inch baking sheets perfect for a variety of baked goods",
+				"Raised Edges: Enable no-spill baking for everything from cookies to sheet cakes",
+				"High-Performance Release: Up to 2X better than Calphalon Classic Bakeware",
+				"Dishwasher Safe: Hassle-free and convenient cleaning",
+				"Lifetime Warranty: Protected by Calphalon's full lifetime warranty for assured quality"
+			],
+			"important_information": null,
+			"buybox_winner": {
+				"minimum_order_quantity": null,
+				"offer_id": "MVHZfgwPtTzX5H5dbIjFi/c7CtZs2cqN/7Q10r+hLvRXO17sXA5zydWYovF6EWOYizSUm6wDVDPRzF0XyM1uuD+ICHq7QjK67DOSHg7tBxFzE37gtALmCkN/4mRzV+17qjegG1vRYEZ0f9W7b4mcwBmCtPwoJV7B/eFtopG+Eb1L+JhOLa/hBPhCkxlo2Cfm",
+				"is_prime": true,
+				"is_prime_exclusive_deal": false,
+				"availability": {
+					"type": "in_stock",
+					"raw": "In Stock",
+					"dispatch_days": 1
+				},
+				"fulfillment": {
+					"type": "1p",
+					"is_sold_by_amazon": true,
+					"is_fulfilled_by_amazon": true,
+					"is_fulfilled_by_third_party": false,
+					"is_sold_by_third_party": false,
+					"third_party_seller": null
+				},
+				"deal": null,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 35.56,
+					"raw": "$35.56"
+				},
+				"rrp": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 48.99,
+					"raw": "$48.99"
+				},
+				"new_offers_count": null,
+				"new_offers_from": null,
+				"used_offers_count": null,
+				"used_offers_from": null,
+				"mixed_offers_count": 6,
+				"mixed_offers_from": {
+					"symbol": "$",
+					"value": 30.66,
+					"currency": "USD",
+					"raw": "$30.66"
+				}
+			},
+			"more_buying_choices": null,
+			"specifications": [
+				{
+					"name": "Color",
+					"value": "Silver"
+				},
+				{
+					"name": "Material",
+					"value": "Steel"
+				},
+				{
+					"name": "Size",
+					"value": "2-pc"
+				},
+				{
+					"name": "Brand",
+					"value": "Calphalon"
+				},
+				{
+					"name": "Product Dimensions",
+					"value": "17\"L x 12\"W x 1.5\"H"
+				},
+				{
+					"name": "Is Dishwasher Safe",
+					"value": "Yes"
+				},
+				{
+					"name": "Global Trade Identification Number",
+					"value": "00016853055449, 10016853055446"
+				},
+				{
+					"name": "Number of Pieces",
+					"value": "1"
+				},
+				{
+					"name": "UPC",
+					"value": "016853055449"
+				},
+				{
+					"name": "Item Weight",
+					"value": "4.34 pounds"
+				},
+				{
+					"name": "Manufacturer",
+					"value": "Calphalon"
+				},
+				{
+					"name": "ASIN",
+					"value": "B008BUKO6G"
+				},
+				{
+					"name": "Country of Origin",
+					"value": "China"
+				},
+				{
+					"name": "Item model number",
+					"value": "1826034"
+				},
+				{
+					"name": "Customer Reviews",
+					"value": "4.5 4.5 out of 5 stars       4,277 ratings          4.5 out of 5 stars"
+				},
+				{
+					"name": "Best Sellers Rank",
+					"value": "#7,609 in Kitchen & Dining (See Top 100 in Kitchen & Dining) #49 in Baking & Cookie Sheets"
+				},
+				{
+					"name": "Is Discontinued By Manufacturer",
+					"value": "No"
+				},
+				{
+					"name": "Date First Available",
+					"value": "August 30, 2012"
+				}
+			],
+			"services": null,
+			"attributes": [
+				{
+					"name": "Color",
+					"value": "Silver"
+				},
+				{
+					"name": "Material",
+					"value": "Steel"
+				},
+				{
+					"name": "Size",
+					"value": "2-pc"
+				},
+				{
+					"name": "Brand",
+					"value": "Calphalon"
+				},
+				{
+					"name": "Product Dimensions",
+					"value": "17\"L x 12\"W x 1.5\"H"
+				},
+				{
+					"name": "Is Dishwasher Safe",
+					"value": "Yes"
+				},
+				{
+					"name": "Global Trade Identification Number",
+					"value": "00016853055449, 10016853055446"
+				},
+				{
+					"name": "Number of Pieces",
+					"value": "1"
+				},
+				{
+					"name": "UPC",
+					"value": "016853055449"
+				}
+			]
+		},
+		"frequently_bought_together": {
+			"total_price": {
+				"symbol": "$",
+				"value": 58.54,
+				"currency": "USD",
+				"raw": "$58.54"
+			},
+			"products": [
+				{
+					"asin": "B008BUKO6G",
+					"title": "Calphalon Premium Nonstick Baking Pans Set of 2, 12 x 17 inch, Silverware, Heavy Gauge Steel Core",
+					"link": "https://www.amazon.com/dp/B008BUKO6G",
+					"price": {
+						"symbol": "$",
+						"currency": "USD",
+						"value": 30.66,
+						"raw": "$30.66"
+					}
+				},
+				{
+					"asin": "B0725GYNG6",
+					"title": "Amazon Basics Silicone, Non-Stick, Food Safe Baking Mat, Pack of 2, New Beige/Gray, Rectangular, 16.5\" x 11.6\"",
+					"link": "https://www.amazon.com/dp/B0725GYNG6",
+					"price": {
+						"symbol": "$",
+						"currency": "USD",
+						"value": 12.99,
+						"raw": "$12.99"
+					}
+				},
+				{
+					"asin": "B09ZXW32CK",
+					"title": "Cooling Rack for Baking 2-Pack, 16x10 Inches Baking Rack, Thick Wire Cookie Rack for Cooking, Roasting, Grilling, Drying, Oven Safe, Fits Half Sheet Pan, Silver",
+					"link": "https://www.amazon.com/dp/B09ZXW32CK",
+					"price": {
+						"symbol": "$",
+						"currency": "USD",
+						"value": 9.99,
+						"raw": "$9.99"
+					}
+				}
+			]
+		},
+		"also_viewed": null,
+		"bundles": null,
+		"bundle_contents": null,
+		"sponsored_products": null,
+		"shop_by_look": null
+	},
+	"mission": "refresh deal products",
+	"task_id": 259898,
+	"create_time": "2024-10-12T04:08:05.131084+00:00",
+	"update_time": "2024-10-12T04:08:05.131089+00:00",
+	"_id": "9522f71e884f11ef80f5ae3e353825d6"
+
 }
