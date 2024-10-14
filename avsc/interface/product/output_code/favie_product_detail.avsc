@@ -45,7 +45,7 @@
       "default": null
     },
     {
-      "name": "request_spu_id",
+      "name": "request_sku_id",
       "type": [
         "null",
         "string"

@@ -9,7 +9,7 @@
     { "name": "site", "type": ["null", "string"], "default": null },
     { "name": "sku_id", "type": ["null", "string"], "default": null },
     { "name": "spu_id", "type": ["null", "string"], "default": null },
-    { "name": "request_spu_id", "type": ["null", "string"], "default": null },
+    { "name": "request_sku_id", "type": ["null", "string"], "default": null },
     { "name": "title", "type": ["null", "string"], "default": null },
     { "name": "link", "type": ["null", "string"], "default": null },
     { "name": "spu_title", "type": ["null", "string"], "default": null },
