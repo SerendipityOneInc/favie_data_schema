@@ -303,6 +303,14 @@
               "default": null
             },
             {
+              "name": "f_categories_predict_score",
+              "type": [
+                "null",
+                "float"
+              ],
+              "default": null
+            },
+            {
               "name": "source_1_updates_at",
               "type": [
                 "null",

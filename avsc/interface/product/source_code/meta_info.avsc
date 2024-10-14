@@ -12,6 +12,7 @@
     { "name": "f_images_crawl_send_at", "type": ["null", "string"], "default": null },
     { "name": "f_categories_map_type", "type": ["null", "int"], "default": null },
     { "name": "f_categories_map_version", "type": ["null", "int"], "default": null },
+    { "name": "f_categories_predict_score", "type": ["null", "float"], "default": null },
     { "name": "source_1_updates_at","type":["null","string"],"default":null},
     { "name": "source_2_updates_at","type":["null","string"],"default":null},
     { "name": "source_3_updates_at","type":["null","string"],"default":null},
