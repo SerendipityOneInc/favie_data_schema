@@ -38,6 +38,7 @@ class CrawlerProductDataRequest(BaseModel):
     """Crawler product data request model."""
 
     product_id: Optional[str] = None
+    favie_product_id: Optional[str] = None
 
 
 class CrawlerProductDataResponse(BaseModel):
