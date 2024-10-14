@@ -23,7 +23,7 @@ line_length = 120
 [tool.poetry]
 name = "favie-data-schema"
 
-version = "v0.0.64"
+version = "v0.0.65"
 
 
 description = "Favie Data Schema"
