@@ -1,0 +1,926 @@
+{
+	"url": "https://www.amazon.com/dp/B0BBMQH6DS",
+	"host": "www.amazon.com",
+	"product_id": "B0BBMQH6DS",
+	"product_title": "STRELLALAB Glucosamine Treats for Dogs - Joint Supplement w/Omega-3 Fish Oil - Chondroitin, MSM - Advanced Mobility Chews - Joint Pain Relief - Hip & Joint Care - Peanut Butter Flavor - 120 Ct Peanut Butter 120 Treats (Pack of 1)",
+	"source": 3,
+	"parser_name": "AmazonProductDetailRFParser",
+	"raw_result": "",
+	"crawl_result": {
+		"request_info": {
+			"success": true,
+			"credits_used": 18385014,
+			"credits_remaining": 1614986
+		},
+		"request_metadata": {
+			"id": null,
+			"created_at": "2024-10-14T06:00:40.683Z",
+			"processed_at": "2024-10-14T06:00:52.029Z",
+			"total_time_taken": 11.35,
+			"amazon_url": "https://www.amazon.com/dp/B0BBMQH6DS?th=1&psc=1"
+		},
+		"request_parameters": {
+			"type": "product",
+			"url": null
+		},
+		"product": {
+			"title": "STRELLALAB Glucosamine Treats for Dogs - Joint Supplement w/Omega-3 Fish Oil - Chondroitin, MSM - Advanced Mobility Chews - Joint Pain Relief - Hip & Joint Care - Peanut Butter Flavor - 120 Ct Peanut Butter 120 Treats (Pack of 1)",
+			"title_excluding_variant_name": "STRELLALAB Glucosamine Treats for Dogs - Joint Supplement w/Omega-3 Fish Oil - Chondroitin, MSM - Advanced Mobility Chews - Joint Pain Relief - Hip & Joint Care - Peanut Butter Flavor - 120 Ct",
+			"stark_shop": null,
+			"stark_link_in_shop": null,
+			"variants": [
+				{
+					"asin": "B0B9SRRHP7",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Flavor Name",
+							"value": "Bacon"
+						},
+						{
+							"name": "Size",
+							"value": "LargeDogs (Value Pack) (240 Ct)"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B0B9SRRHP7?th=1&psc=1",
+					"price": null
+				},
+				{
+					"asin": "B0BQ3X856M",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Flavor Name",
+							"value": "Chicken"
+						},
+						{
+							"name": "Size",
+							"value": "LargeDogs (Value Pack) (360 Ct)"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B0BQ3X856M?th=1&psc=1",
+					"price": null
+				},
+				{
+					"asin": "B0868QMB4C",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Flavor Name",
+							"value": "Chicken"
+						},
+						{
+							"name": "Size",
+							"value": "120 Treats (Pack of 1)"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B0868QMB4C?th=1&psc=1",
+					"price": null
+				},
+				{
+					"asin": "B09ZLHPGKL",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Flavor Name",
+							"value": "Bacon"
+						},
+						{
+							"name": "Size",
+							"value": "120 Treats (Pack of 1)"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B09ZLHPGKL?th=1&psc=1",
+					"price": null
+				},
+				{
+					"asin": "B0BBMQH6DS",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Flavor Name",
+							"value": "Peanut Butter"
+						},
+						{
+							"name": "Size",
+							"value": "120 Treats (Pack of 1)"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B0BBMQH6DS?th=1&psc=1",
+					"price": null
+				},
+				{
+					"asin": "B0BFXHBJF9",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Flavor Name",
+							"value": "Advanced Mobility - Lamb"
+						},
+						{
+							"name": "Size",
+							"value": "120 Treats (Hemp+Glucosamine)"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B0BFXHBJF9?th=1&psc=1",
+					"price": null
+				},
+				{
+					"asin": "B096XD7WG1",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Flavor Name",
+							"value": "Chicken"
+						},
+						{
+							"name": "Size",
+							"value": "LargeDogs (Value Pack) (240 Ct)"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B096XD7WG1?th=1&psc=1",
+					"price": null
+				},
+				{
+					"asin": "B0981DYLXJ",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Flavor Name",
+							"value": "Chicken"
+						},
+						{
+							"name": "Size",
+							"value": "180 Treats (Pack of 1)"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B0981DYLXJ?th=1&psc=1",
+					"price": null
+				},
+				{
+					"asin": "B0BLP2K37D",
+					"text": null,
+					"dimensions": [
+						{
+							"name": "Flavor Name",
+							"value": "Peanut Butter"
+						},
+						{
+							"name": "Size",
+							"value": "LargeDogs (Value Pack) (240 Ct)"
+						}
+					],
+					"link": "https://www.amazon.com/dp/B0BLP2K37D?th=1&psc=1",
+					"price": null
+				}
+			],
+			"keywords": "STRELLALAB,Glucosamine,Treats,for,Dogs,Joint,Supplement,w/Omega-3,Fish,Oil,Chondroitin,MSM,Advanced,Mobility,Chews,Joint,Pain,Relief,Hip,&,Joint,Care,Peanut,Butter,Flavor,120,Ct,Peanut,Butter,120,Treats,(Pack,of,1)",
+			"keywords_list": [
+				"STRELLALAB",
+				"Glucosamine",
+				"Treats",
+				"Dogs",
+				"Joint",
+				"Supplement",
+				"w/Omega-3",
+				"Fish",
+				"Chondroitin",
+				"Advanced",
+				"Mobility",
+				"Chews",
+				"Joint",
+				"Pain",
+				"Relief",
+				"Joint",
+				"Care",
+				"Peanut",
+				"Butter",
+				"Flavor",
+				"Peanut",
+				"Butter",
+				"Treats",
+				"(Pack"
+			],
+			"link": "https://www.amazon.com/STRELLALAB-Glucosamine-Treats-Dogs-Chondroitin/dp/B0BBMQH6DS",
+			"asin": "B0BBMQH6DS",
+			"parent_asin": "B0D5BHWDK6",
+			"description": null,
+			"categories": [
+				{
+					"name": "Pet Supplies",
+					"link": "https://www.amazon.com/pet-shops-dogs-cats-hamsters-kittens/b/ref=dp_bc_aui_C_1?ie=UTF8&node=2619533011",
+					"category_id": "2619533011"
+				},
+				{
+					"name": "Dogs",
+					"link": "https://www.amazon.com/dogs-supplies-training-beds-collars-grooming/b/ref=dp_bc_aui_C_2?ie=UTF8&node=2975312011",
+					"category_id": "2975312011"
+				},
+				{
+					"name": "Health Supplies",
+					"link": "https://www.amazon.com/dogs-glucosamine-pet-meds-flea-treatment/b/ref=dp_bc_aui_C_3?ie=UTF8&node=2975377011",
+					"category_id": "2975377011"
+				},
+				{
+					"name": "Hip & Joint Care",
+					"link": "https://www.amazon.com/dog-bone-joint-health-supplements/b/ref=dp_bc_aui_C_4?ie=UTF8&node=3024218011",
+					"category_id": "3024218011"
+				}
+			],
+			"bestsellers_rank": [
+				{
+					"category": "Pet Supplies",
+					"rank": 474,
+					"link": "https://www.amazon.com/gp/bestsellers/pet-supplies/ref=pd_zg_ts_pet-supplies"
+				},
+				{
+					"category": "Dog Hip & Joint Care",
+					"rank": 8,
+					"link": "https://www.amazon.com/gp/bestsellers/pet-supplies/3024218011/ref=pd_zg_hrsr_pet-supplies"
+				}
+			],
+			"summarization_attributes": null,
+			"amazons_choice": {
+				"keywords": "",
+				"link": null
+			},
+			"recent_sales": "1K+ bought in past month",
+			"climate_pledge_friendly": null,
+			"kindle_unlimited": null,
+			"has_coupon": true,
+			"coupon_text": "Save 15%: Coupon available when you select .  |",
+			"promotions": null,
+			"brand": "STRELLALAB",
+			"weight": "0.34 Kilograms",
+			"shipping_weight": null,
+			"first_available": {
+				"raw": "August 23, 2022",
+				"utc": "2022-08-23T00:00:00.000Z"
+			},
+			"delivery_message": null,
+			"dimensions": null,
+			"sub_title": {
+				"text": "Visit the STRELLALAB Store",
+				"link": "https://www.amazon.com/stores/STRELLALAB/page/C894CAE9-658A-4216-ACD9-2B50B87FC733?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto"
+			},
+			"rating": 4.4,
+			"rating_breakdown": {
+				"five_star": {
+					"percentage": 68,
+					"count": 6735
+				},
+				"four_star": {
+					"percentage": 16,
+					"count": 1584
+				},
+				"three_star": {
+					"percentage": 8,
+					"count": 792
+				},
+				"two_star": {
+					"percentage": 3,
+					"count": 297
+				},
+				"one_star": {
+					"percentage": 6,
+					"count": 594
+				}
+			},
+			"ratings_total": 9905,
+			"reviews_total": null,
+			"top_reviews": [
+				{
+					"id": "R2223EPWUH3UG6",
+					"title": "Fabulous !!",
+					"body": "I have to say this product is amazing !! I have been using Pawfy for a few months and still did not see much improvement for my 16 year old dogs .... so I thought I would try this one and I am so glad I did ! They have been taking this product for a couple of weeks or so and WOW ! One of my dogs kept falling and both were having huge problems trying to get up ... and neither of them were able to run anymore ... I could see they were in pain and my heart went out to them... I knew I had to try something else ... This product is truly fabulous and works so well so it is worth the price to see them doing so well . I am looking forward to more improvement over time ! Buy this product you will not be disappointed ! PS. They love the bacon and peanut butter ! Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I have to say this product is amazing !! I have been using Pawfy for a few months and still did not see much improvement for my 16 year old dogs .... so I thought I would try this one and I am so glad I did ! They have been taking this product for a couple of weeks or so and WOW ! One of my dogs kept falling and both were having huge problems trying to get up ... and neither of them were able to run anymore ... I could see they were in pain and my heart went out to them... I knew I had to try something else ... This product is truly fabulous and works so well so it is worth the price to see them doing so well . I am looking forward to more improvement over time ! Buy this product you will not be disappointed ! PS. They love the bacon and peanut butter !<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R2223EPWUH3UG6/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0BBMQH6DS",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on September 7, 2024",
+						"utc": "2024-09-07T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "mcbeth",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AE7MUOEUULHQRMPMI7LHWJCIQ2DA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AE7MUOEUULHQRMPMI7LHWJCIQ2DA"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": 6,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "ROFM0AFMUT4WG",
+					"title": "Awesome product",
+					"body": "Our 17 year old Shepard loves them. I see an improvement in just one week. Thank you for the quick delivery Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Our 17 year old Shepard loves them. I see an improvement in just one week. Thank you for the quick delivery<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/ROFM0AFMUT4WG/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0BBMQH6DS",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on October 6, 2024",
+						"utc": "2024-10-06T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Skinny",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AFWWBIKSQT7YKXDPRF5HJQHVOPHQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AFWWBIKSQT7YKXDPRF5HJQHVOPHQ"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R20WB6TIAVQSSE",
+					"title": "Seems to help but my dog doesn’t like the flavor.",
+					"body": "These seem to be helping my dog’s mobility, but she doesn’t care for the taste at all. I have to bribe her with other treats to get her to take these. For the price & how they seem to be helping her mobility, will definitely buy these again. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>These seem to be helping my dog’s mobility, but she doesn’t care for the taste at all. I have to bribe her with other treats to get her to take these. For the price &amp; how they seem to be helping her mobility, will definitely buy these again.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R20WB6TIAVQSSE/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0BBMQH6DS",
+					"rating": 4,
+					"date": {
+						"raw": "Reviewed in the United States on September 27, 2024",
+						"utc": "2024-09-27T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Barbara Edwards",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AGEGNAYSZMZU7KITIZLOCET5GTTA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AGEGNAYSZMZU7KITIZLOCET5GTTA"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R3OTDF1Q0R12J5",
+					"title": "Dog loves them",
+					"body": "Seem to work. They do have a strong smell. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Seem to work. They do have a strong smell.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R3OTDF1Q0R12J5/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0BBMQH6DS",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on September 9, 2024",
+						"utc": "2024-09-09T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Sack Peterson",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AGT5KEKZLW2TGP27ZUGXWXSPAQMA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AGT5KEKZLW2TGP27ZUGXWXSPAQMA"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R30LD3GX9PCB57",
+					"title": "At least she eats it.",
+					"body": "This is the first Gluclosamine product that my dogs will eat and aren't pills to be shoved down their throats. I just add it to their dinner, some I crumble in, some I just break into it, some go in whole. They eat it.  The MSM is a pain reliever so it's important that it is in there. I actually add another product that is just MSM to add to my old girls food along with an anti inflammatory and aspirin. I can't say how much this really helps on it's own.  I have been feeding these ingredients to my dogs for years but THIS ONE is painless FOR ME. They simply eat it!  I have been buying the bacon flavor but I just ordered the chicken to shake things up a bit. I'm happy. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>This is the first Gluclosamine product that my dogs will eat and aren't pills to be shoved down their throats. I just add it to their dinner, some I crumble in, some I just break into it, some go in whole. They eat it.<br><br>The MSM is a pain reliever so it's important that it is in there. I actually add another product that is just MSM to add to my old girls food along with an anti inflammatory and aspirin. I can't say how much this really helps on it's own.<br><br>I have been feeding these ingredients to my dogs for years but THIS ONE is painless FOR ME. They simply eat it!<br><br>I have been buying the bacon flavor but I just ordered the chicken to shake things up a bit. I'm happy.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R30LD3GX9PCB57/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0BBMQH6DS",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on August 27, 2024",
+						"utc": "2024-08-27T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Maggie Joyner",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AFVQM4KU6VMHJOBIO6E35OVENKBQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AFVQM4KU6VMHJOBIO6E35OVENKBQ"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": 3,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "RV4TIHBZ3YKX9",
+					"title": "Dog picky",
+					"body": "Our dog wouldn’t eat. I have to break up and put in food. They do crumble easily Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Our dog wouldn’t eat. I have to break up and put in food. They do crumble easily<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/RV4TIHBZ3YKX9/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0BBMQH6DS",
+					"rating": 3,
+					"date": {
+						"raw": "Reviewed in the United States on September 14, 2024",
+						"utc": "2024-09-14T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Catherine G",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AFGI4UO2DCS5JQFTVKMKWHIBD55Q/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AFGI4UO2DCS5JQFTVKMKWHIBD55Q"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R2QOKO04XLAOLY",
+					"title": "Seems to be working",
+					"body": "My dog finish one pack already and seems to be working for him. He’s a 6 year old GSD with hip dysplasia. He doesn’t show any discomfort and walks fine. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>My dog finish one pack already and seems to be working for him. He’s a 6 year old GSD with hip dysplasia. He doesn’t show any discomfort and walks fine.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R2QOKO04XLAOLY/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0BBMQH6DS",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on September 29, 2024",
+						"utc": "2024-09-29T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Teresa",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AGIH75J6PQE64VBIWFBXEPIV2I2Q/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AGIH75J6PQE64VBIWFBXEPIV2I2Q"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R2BOIE5CVZ7QB",
+					"title": "Dog vitamins",
+					"body": "My 15-year-old Bichon was having problems with her joints and I ordered this product within a week. She had her energy and the extra bounce in your step and was able to walk better. Great product will definitely keep buying. Thank you. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>My 15-year-old Bichon was having problems with her joints and I ordered this product within a week. She had her energy and the extra bounce in your step and was able to walk better. Great product will definitely keep buying. Thank you.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": "https://www.amazon.com/gp/customer-reviews/R2BOIE5CVZ7QB/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0BBMQH6DS",
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in the United States on September 28, 2024",
+						"utc": "2024-09-28T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "janelle g.",
+						"link": "https://www.amazon.com/gp/profile/amzn1.account.AF3ID7DGMVTRUM5BSCEPCYBRHIMQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+						"id": "AF3ID7DGMVTRUM5BSCEPCYBRHIMQ"
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "us",
+					"is_global_review": false
+				},
+				{
+					"id": "R2JJB2AZT0Q66S",
+					"title": "Saved our senior dog!",
+					"body": "Honestly, I'm not connected to this company at all they didn't sponsor us or send anything free  I'll continue to buy these for Miko until he passes (which hopefully isn't any time soon)  So long story short, Miko couldn't walk properly for a few days and I just kept putting it off putting it off until it got worse, my girlfriend was so upset with his state that we ended up taking him into an emergency vet for the cost of around $450 Canadian  He got x rays medication and a few other things saying he was very Ill, enlarged liver, heart, his body was swollen and pressing on his spine causing him to not walk but the worst part he couldnt pee... So by not being able to pee it caused him massive issues the vet said possibly put him down  I thought about this for a long time, it's safe for us to take when we are older to help with joint pain  I personally started taking glucosamine chondroitin and I looked into it for Miko  Well I just want to thank the company who makes this formula because it has quite seriously changed our senior dogs life!!!!  Miko thinks he is a puppy, no joke cimbing up stairs, jumping onto the couch. He tried to jump into my suv  He literally gets excited in the morning to take his pills  I get up to pee, take Miko pee and say Miko time for your pills and he gets excited to eat them, massive tip they smell so absolutely terrible but I tried the peanut butter ones this time and it's much more tolerable lol  So thank you again for the help and I'll continue to purchase these pills for Miko indefinitely Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Honestly, I'm not connected to this company at all they didn't sponsor us or send anything free<br><br>I'll continue to buy these for Miko until he passes (which hopefully isn't any time soon)<br><br>So long story short, Miko couldn't walk properly for a few days and I just kept putting it off putting it off until it got worse, my girlfriend was so upset with his state that we ended up taking him into an emergency vet for the cost of around $450 Canadian<br><br>He got x rays medication and a few other things saying he was very Ill, enlarged liver, heart, his body was swollen and pressing on his spine causing him to not walk but the worst part he couldnt pee...<br>So by not being able to pee it caused him massive issues the vet said possibly put him down<br><br>I thought about this for a long time, it's safe for us to take when we are older to help with joint pain<br><br>I personally started taking glucosamine chondroitin and I looked into it for Miko<br><br>Well I just want to thank the company who makes this formula because it has quite seriously changed our senior dogs life!!!!<br><br>Miko thinks he is a puppy, no joke cimbing up stairs, jumping onto the couch. He tried to jump into my suv<br><br>He literally gets excited in the morning to take his pills<br><br>I get up to pee, take Miko pee and say Miko time for your pills and he gets excited to eat them, massive tip they smell so absolutely terrible but I tried the peanut butter ones this time and it's much more tolerable lol<br><br>So thank you again for the help and I'll continue to purchase these pills for Miko indefinitely<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in Canada on August 27, 2023",
+						"utc": "2023-08-27T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Jacob",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "ca",
+					"is_global_review": true
+				},
+				{
+					"id": "RW61BEBDHJXJB",
+					"title": "seem to be doing the job.",
+					"body": "a hit at our house - our dog didn't like the powder versions from the pet store. he gobbles this up no problem. they do however smell really bad. smells a bit like dead mouse to me but as long as the pooch likes them and his arthritis is managed I will adjust. We keep them in the bottle in a ziplock bag which helps. also am trying to keep them in fridge to see if that reduces the smell. I recommend unless you can't get past the smell. price is fair considering how many are in the tub. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>a hit at our house - our dog didn't like the powder versions from the pet store. he gobbles this up no problem. they do however smell really bad. smells a bit like dead mouse to me but as long as the pooch likes them and his arthritis is managed I will adjust. We keep them in the bottle in a ziplock bag which helps. also am trying to keep them in fridge to see if that reduces the smell. I recommend unless you can't get past the smell. price is fair considering how many are in the tub.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 4,
+					"date": {
+						"raw": "Reviewed in Canada on May 10, 2024",
+						"utc": "2024-05-10T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Airdrian",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "ca",
+					"is_global_review": true
+				},
+				{
+					"id": "R2SESQED6QRI5R",
+					"title": "It works wonders!",
+					"body": "I am absolutely thrilled to share my experience with the Glucosamine for Dogs Hip & Joint Supplement. Let me start by saying that this product has been nothing short of a lifesaver for my beloved canine companion. My dog, a lively Labrador named Max, was starting to show signs of joint discomfort and reduced mobility as he entered his senior years. Seeing him struggle to climb stairs and even go for his usual walks was heart-wrenching.  Enter the Glucosamine for Dogs supplement – a true game-changer in Max's life! From the very first day, I noticed a significant difference in his demeanor. The 120 chews were an absolute delight for him – he gobbled them up as if they were the tastiest treats on the planet. This made daily administration a breeze, which was a huge relief for both Max and me.  But what truly matters is the impact this supplement has had on Max's well-being. The blend of glucosamine, chondroitin, MSM, and turmeric proved to be a magical combination. Gradually, Max's energy levels started to rise, and he was able to tackle his daily activities with newfound vigor. The stiffness that once marred his movements began to fade away, and he was back to bounding up the stairs and playing fetch like he used to in his younger days.  One of the standout features of this supplement is its natural approach to joint pain relief. As a responsible dog owner, I'm always conscious of the ingredients that go into my furry friend's body. The fact that this supplement utilizes the power of natural ingredients like turmeric for its anti-inflammatory benefits was a big selling point for me. Knowing that I was providing Max with a holistic solution rather than relying on harsh pharmaceuticals was incredibly reassuring.  I can't emphasize enough how much this supplement has improved Max's quality of life. He's not just a dog; he's a cherished member of my family, and seeing him thrive once again fills my heart with joy. The Glucosamine for Dogs Hip & Joint Supplement has exceeded my expectations in every way – from its effectiveness to its ease of use and natural approach. It's a product I wholeheartedly recommend to any dog owner who wants to see their furry friend live their best life, no matter their age.  In conclusion, if you're seeking a solution to your dog's joint discomfort, reduced mobility, or even just looking to enhance their overall well-being, this supplement is the answer. Max's transformation speaks volumes about its efficacy, and I'm immensely grateful to have found a product that has brought back the pep in his step. Thank you, Glucosamine for Dogs, for giving me the gift of a happier and healthier furry friend! Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I am absolutely thrilled to share my experience with the Glucosamine for Dogs Hip &amp; Joint Supplement. Let me start by saying that this product has been nothing short of a lifesaver for my beloved canine companion. My dog, a lively Labrador named Max, was starting to show signs of joint discomfort and reduced mobility as he entered his senior years. Seeing him struggle to climb stairs and even go for his usual walks was heart-wrenching.<br><br>Enter the Glucosamine for Dogs supplement – a true game-changer in Max's life! From the very first day, I noticed a significant difference in his demeanor. The 120 chews were an absolute delight for him – he gobbled them up as if they were the tastiest treats on the planet. This made daily administration a breeze, which was a huge relief for both Max and me.<br><br>But what truly matters is the impact this supplement has had on Max's well-being. The blend of glucosamine, chondroitin, MSM, and turmeric proved to be a magical combination. Gradually, Max's energy levels started to rise, and he was able to tackle his daily activities with newfound vigor. The stiffness that once marred his movements began to fade away, and he was back to bounding up the stairs and playing fetch like he used to in his younger days.<br><br>One of the standout features of this supplement is its natural approach to joint pain relief. As a responsible dog owner, I'm always conscious of the ingredients that go into my furry friend's body. The fact that this supplement utilizes the power of natural ingredients like turmeric for its anti-inflammatory benefits was a big selling point for me. Knowing that I was providing Max with a holistic solution rather than relying on harsh pharmaceuticals was incredibly reassuring.<br><br>I can't emphasize enough how much this supplement has improved Max's quality of life. He's not just a dog; he's a cherished member of my family, and seeing him thrive once again fills my heart with joy. The Glucosamine for Dogs Hip &amp; Joint Supplement has exceeded my expectations in every way – from its effectiveness to its ease of use and natural approach. It's a product I wholeheartedly recommend to any dog owner who wants to see their furry friend live their best life, no matter their age.<br><br>In conclusion, if you're seeking a solution to your dog's joint discomfort, reduced mobility, or even just looking to enhance their overall well-being, this supplement is the answer. Max's transformation speaks volumes about its efficacy, and I'm immensely grateful to have found a product that has brought back the pep in his step. Thank you, Glucosamine for Dogs, for giving me the gift of a happier and healthier furry friend!<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in Canada on August 15, 2023",
+						"utc": "2023-08-15T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Sparky",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "ca",
+					"is_global_review": true
+				},
+				{
+					"id": "R1YRGYWQH759H7",
+					"title": "My dog doesn’t like it",
+					"body": "My experience was marred by my dog’s unwillingness to eat the chews willingly. This could be a great product if your dog is not a picky eater, but for those with finicky pets, it might require some creativity to ensure they take it.  I hope this feedback is helpful for pet owners considering this supplement. It’s definitely worth trying, but be prepared to find ways to entice your pet to consume it.  Feel free to adjust this review to better fit your specific experiences and observations. Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>My experience was marred by my dog’s unwillingness to eat the chews willingly. This could be a great product if your dog is not a picky eater, but for those with finicky pets, it might require some creativity to ensure they take it.<br><br>I hope this feedback is helpful for pet owners considering this supplement. It’s definitely worth trying, but be prepared to find ways to entice your pet to consume it.<br><br>Feel free to adjust this review to better fit your specific experiences and observations.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 3,
+					"date": {
+						"raw": "Reviewed in Canada on June 22, 2024",
+						"utc": "2024-06-22T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "Stephen",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "ca",
+					"is_global_review": true
+				},
+				{
+					"id": "R2SVP32GMAQFQ2",
+					"title": "Highly recommend",
+					"body": "We have been using with our 7 yr old now for two years and she has been seemingly pain free and no further back degeneration noted by repeat X rays Read more",
+					"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>We have been using with our 7 yr old now for two years and she has been seemingly pain free and no further back degeneration noted by repeat X rays<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+					"link": null,
+					"rating": 5,
+					"date": {
+						"raw": "Reviewed in Canada on October 3, 2024",
+						"utc": "2024-10-03T00:00:00.000Z"
+					},
+					"profile": {
+						"name": "M. Aldred",
+						"link": null,
+						"id": null
+					},
+					"vine_program": false,
+					"verified_purchase": true,
+					"helpful_votes": null,
+					"review_country": "ca",
+					"is_global_review": true
+				}
+			],
+			"main_image": {
+				"link": "https://m.media-amazon.com/images/I/91G0dYp0mEL.jpg"
+			},
+			"images": [
+				{
+					"link": "https://m.media-amazon.com/images/I/91G0dYp0mEL._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/81wmEF1o2uL._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/81+BljsQfUL._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/71Otlje9LSL._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/71Yx2qqX5pL._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/71Uet87Qm2L._AC_SL1500_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/81l5rs42M2L._AC_SL1500_.jpg"
+				}
+			],
+			"videos": null,
+			"is_bundle": false,
+			"feature_bullets": [
+				"Mobility Boost: Support your pet's health with our joint supplement for dogs, packed with natural, advanced ingredients to enhance their active lifestyle and promote smooth, joyful movements every day.",
+				"American Quality Assurance: Our glucosamine for dogs is proudly made in the USA, ensuring top-quality care for your pets with 24/7 customer support. Rescue your puppy's joints with our delicious bites!",
+				"Joint Health for All: Ideal for every size, our dog joint supplement for large breed is just 2 grams, making it also perfect for small and medium pups, of all ages from adult to senior, older doggies.",
+				"Vet-Approved Blend: This hip and joint supplement dogs love is full of glucosamine, chondroitin, MSM sulfate & vitamins for nutritional support that extends beyond typical dog treats. Ensure good mobility with our tasty hip and joint chews for dogs.",
+				"Pain Relief Aid: Our glucosamine chondroitin for dogs formula provides max anti-inflammatory relief from joint pain in every chew. Provide consistent joint health support for your puppy with our nutritious chewables.",
+				"Deliciously Healthy Chews: No more hassle with pills, tablets, or capsules; our dog hip and joint supplement is a soft, tasty, chewable treat every doggie loves, providing complete and advance care in every tasty bite.",
+				"Proven Excellence: For years, our dog glucosamine and chondroitin supplement for large dog has been advancing canine wellness. Leading as one of the best hips & joints supplements to help with joint pain relief and extend active years for old paws.",
+				"Lasting Joint Care: Regular use of our joint support supplement for dogs ensures enduring bone strength & joint health for your pup. Plus, these dog glucosamine chews offer an extra boost to your furry buddy's daily routine."
+			],
+			"important_information": {
+				"sections": [
+					{
+						"title": "Ingredients",
+						"body": "Glucosamine, Chondroitin, MSM. Omega-3, Yucca. Vitamin C, Vitamin E"
+					},
+					{
+						"title": "Directions",
+						"body": "Serve daily based on the dog's weight: up to 10lbs - 1 chews, 11-39lbs - 2chews, 40-79lbs - 3 chews, over 80lbs - 4chews"
+					},
+					{
+						"title": "Legal Disclaimer",
+						"body": "Up to 5% of the pets may not respond to the formula."
+					}
+				]
+			},
+			"buybox_winner": {
+				"minimum_order_quantity": null,
+				"offer_id": null,
+				"is_prime": true,
+				"is_prime_exclusive_deal": false,
+				"availability": {
+					"type": "in_stock",
+					"raw": "In Stock",
+					"dispatch_days": 1
+				},
+				"fulfillment": {
+					"type": "2p",
+					"is_sold_by_amazon": false,
+					"is_fulfilled_by_amazon": true,
+					"is_fulfilled_by_third_party": false,
+					"is_sold_by_third_party": true,
+					"third_party_seller": {
+						"name": "StrellaLAB LLC",
+						"link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=AT9FBXI2SVJ6I&asin=B0BBMQH6DS&ref_=dp_merchant_link&isAmazonFulfilled=1"
+					}
+				},
+				"deal": null,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 24.8,
+					"raw": "$24.80"
+				},
+				"rrp": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 33.0,
+					"raw": "$33.00"
+				},
+				"new_offers_count": 2,
+				"new_offers_from": {
+					"symbol": "$",
+					"value": 24.8,
+					"currency": "USD",
+					"raw": "$24.80"
+				},
+				"used_offers_count": null,
+				"used_offers_from": null,
+				"mixed_offers_count": null,
+				"mixed_offers_from": null
+			},
+			"more_buying_choices": null,
+			"specifications": [
+				{
+					"name": "Item Weight",
+					"value": "12 ounces"
+				},
+				{
+					"name": "Manufacturer",
+					"value": "STRELLALAB"
+				},
+				{
+					"name": "ASIN",
+					"value": "B0BBMQH6DS"
+				},
+				{
+					"name": "Country of Origin",
+					"value": "USA"
+				},
+				{
+					"name": "Item model number",
+					"value": "SL63GBPB"
+				},
+				{
+					"name": "Customer Reviews",
+					"value": "4.4 4.4 out of 5 stars       9,905 ratings          4.4 out of 5 stars"
+				},
+				{
+					"name": "Date First Available",
+					"value": "August 23, 2022"
+				},
+				{
+					"name": "Item Package Dimensions L x W x H",
+					"value": "4.41 x 3.66 x 3.66 inches"
+				},
+				{
+					"name": "Item Weight",
+					"value": "0.34 Kilograms"
+				},
+				{
+					"name": "Brand Name",
+					"value": "STRELLALAB"
+				},
+				{
+					"name": "Target Audience Keyword",
+					"value": "dogs"
+				},
+				{
+					"name": "Directions",
+					"value": "Serve daily based on the dog's weight: up to 10lbs - 1 chews, 11-39lbs - 2chews, 40-79lbs - 3 chews, over 80lbs - 4chews"
+				},
+				{
+					"name": "Warranty Description",
+					"value": "We offer a 90-Day Satisfaction Guarantee for our pet supplements. If you're not completely satisfied, let us know within 90 days for a full refund, no questions asked. Your satisfaction is our top priority!"
+				},
+				{
+					"name": "Color",
+					"value": "green"
+				},
+				{
+					"name": "Size",
+					"value": "120 Treats (Pack of 1)"
+				},
+				{
+					"name": "Material",
+					"value": "Other"
+				},
+				{
+					"name": "Age Range Description",
+					"value": "All Lifestage"
+				},
+				{
+					"name": "Care Instructions",
+					"value": "Keep in a Dry Place"
+				},
+				{
+					"name": "Breed Recommendation",
+					"value": "All Breeds"
+				},
+				{
+					"name": "Specific Uses for Product",
+					"value": "Heart, Stomach, Skin, Joints, Coat"
+				},
+				{
+					"name": "Package Dimensions",
+					"value": "4.41 x 3.66 x 3.66 inches; 11.99 ounces"
+				},
+				{
+					"name": "Best Sellers Rank",
+					"value": "See Top 100 in Pet Supplies"
+				}
+			],
+			"services": null,
+			"attributes": null
+		},
+		"frequently_bought_together": null,
+		"also_viewed": null,
+		"bundles": null,
+		"bundle_contents": null,
+		"sponsored_products": [
+			{
+				"title": "Senior Advanced Glucosamine Chondroitin Joint Supplement for Dogs - Hip & Joint Pain Relief Pills - Large & Small Breed - Hip Joint Chews Canine Joint Health - Chews Older Dogs - Chicken Flavor-120Ct",
+				"link": "https://www.amazon.com/dp/B0C8JM9TNY",
+				"image": "https://m.media-amazon.com/images/I/516g6o33t6L._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.5,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 31.9,
+					"raw": "$31.90"
+				}
+			},
+			{
+				"title": "Bernie's Healthy HIPS - Daily Dog Hip and Joint Supplement - 90 Soft Chews - Reduce Pain, Encourage Mobility, Slow Damage, Repair and Rebuild HIPS and Joint Tissues",
+				"link": "https://www.amazon.com/dp/B0C43VWFFB",
+				"image": "https://m.media-amazon.com/images/I/51fzEF0Mz9L._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.5,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 27.99,
+					"raw": "$27.99"
+				}
+			},
+			{
+				"title": "Plus, Mobility, Hip, and Joint Supplement for Dogs, Green-Lipped Mussels and Krill ...",
+				"link": "https://www.amazon.com/dp/B0CNBCMC7F",
+				"image": "https://m.media-amazon.com/images/I/418q-gtfwsL._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.5,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 55.99,
+					"raw": "$55.99"
+				}
+			},
+			{
+				"title": "Hemp Hip and Joint Supplement for Dogs - Glucosamine for Dogs - 170 Dog Joint Pain Relief Treats - Chondroitin, MSM, Hemp Oil - Advanced Dog Joint Supplement Health - Mobility Support Chews",
+				"link": "https://www.amazon.com/dp/B09WW447F7",
+				"image": "https://m.media-amazon.com/images/I/51tIMHuxvKL._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.5,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 25.89,
+					"raw": "$25.89"
+				}
+			},
+			{
+				"title": "STRELLALAB Glucosamine Treats for Dogs - Joint Supplement w/Omega-3 Fish Oil - Chondroitin, MSM - Advanced Mobility Chews - Joint Pain Relief - Hip & Joint Care - Bacon Flavor - 180 Ct - Made in USA",
+				"link": "https://www.amazon.com/dp/B0BB8996MM",
+				"image": "https://m.media-amazon.com/images/I/51Q8qrO9jFL._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.5,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 31.86,
+					"raw": "$31.86"
+				}
+			},
+			{
+				"title": "Glucosamine for Dogs - Hip and Joint Supplement for Dogs - 180 Chews - Glucosamine ...",
+				"link": "https://www.amazon.com/dp/B0CNGG6WKG",
+				"image": "https://m.media-amazon.com/images/I/51Yknmvo5nL._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.5,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 20.95,
+					"raw": "$20.95"
+				}
+			},
+			{
+				"title": "Dog Hip and Joint Supplement, 60 Soft Chews with Glucosamine, Chondroitin, MSM & Green-Lipped Mussel, Supports Mobility & Joint Health - Vet-Formulated Glucosamine for Dogs Small & Large Breeds",
+				"link": "https://www.amazon.com/dp/B0DCHNV6JY",
+				"image": "https://m.media-amazon.com/images/I/41Z96WJ+B-L._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.5,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 27.99,
+					"raw": "$27.99"
+				}
+			},
+			{
+				"title": "Glucosamine for Dogs - Hip and Joint Supplement for Dogs - 170 Ct - Glucosamine Chondroitin for Dogs Chews - Dog Joint Pain Relief with MSM - Advanced Dog Joint Supplement Health - Mobility Support",
+				"link": "https://www.amazon.com/dp/B0CTYMXY3K",
+				"image": "https://m.media-amazon.com/images/I/51u7pOoA6NL._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.5,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 21.97,
+					"raw": "$21.97"
+				}
+			},
+			{
+				"title": "Canine Keeps Glucosamine for Dogs - Dog Hip and Joint Supplement - Glucosamine, Chondroitin, MSM, Green Lipped Mussel & Collagen for Joint Pain & Inflammation - Dog Joint Support Treats - 90 Ct.",
+				"link": "https://www.amazon.com/dp/B0BSR4YHH5",
+				"image": "https://m.media-amazon.com/images/I/51F0NAoz9rL._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.0,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 34.95,
+					"raw": "$34.95"
+				}
+			},
+			{
+				"title": "TS Joint Supplement Vet Formulated Pain & Inflammation Relief Treats Hip Dysplasia ...",
+				"link": "https://www.amazon.com/dp/B004OA5ZJ8",
+				"image": "https://m.media-amazon.com/images/I/41HCtu-DwyL._AC_UF480,480_SR480,480_.jpg",
+				"rating": 4.5,
+				"ratings_total": null,
+				"is_prime": true,
+				"price": {
+					"symbol": "$",
+					"currency": "USD",
+					"value": 38.99,
+					"raw": "$38.99"
+				}
+			}
+		],
+		"shop_by_look": null
+	},
+	"mission": "refresh deal products",
+	"task_id": 317027,
+	"create_time": "2024-10-14T06:00:52.202865+00:00",
+	"update_time": "2024-10-14T06:00:52.202871+00:00",
+	"_id": "ab2b709289f111efb8c4d6f816d28e33"
+}
