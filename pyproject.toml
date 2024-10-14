@@ -25,7 +25,6 @@ name = "favie-data-schema"
 
 version = "v0.0.65"
 
-
 description = "Favie Data Schema"
 authors = ["allenz-srp <allenz@srp.one>"]
 readme = "README.md"

@@ -21,6 +21,7 @@ class StarkMessage(BaseModel):
     raw_result: Optional[str] = None
     create_time: Optional[str] = None
     update_time: Optional[str] = None
+    mission: Optional[str] = None
 
 
 class StarkProductDetailMessage(StarkMessage):

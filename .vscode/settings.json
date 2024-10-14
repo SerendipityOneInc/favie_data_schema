@@ -1,0 +1,12 @@
+{
+    //setting.json此文件为vscode单元测试配置文件,全局或工作区设置文件，能够配置各种与编辑器、扩展和编程语言相关的设置。
+    
+    //设置测试框架为 unittest
+    "python.testing.unittestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",                    // 详细输出测试结果
+        "-s", "./test",           // 指定测试文件夹为 `test`
+        "-p", "*_test.py"         // 匹配所有以 `_test.py` 结尾的测试文件
+    ],
+    "python.testing.pytestEnabled": false
+}
