@@ -6,13 +6,13 @@ from favie_data_common.common.common_utils import CommonUtils
 from lxml import html
 
 from favie_data_schema.favie.adapter.common.html_utils import HtmlUtils
-from favie_data_schema.favie.adapter.common.stark_enum import StarkProductDataType
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage
 from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
 from favie_data_schema.favie.adapter.product.common.currency import CurrencyConverter
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
+from favie_data_schema.favie.data.interface.common.favie_enum import ProductDataType
 from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.interface.product.product_enum import FavieProductDetailStatus
 
@@ -74,15 +74,19 @@ class StarkProductDetailConvert:
         favie_product.f_meta = MetaInfo(
             source_type=str(stark_detail_message.source),
             parser_name=f"{stark_detail_message.parser_name}-adapter",
-            data_type=str(StarkProductDataType.PRODUCT_DETAIL.value),
+            data_type=str(ProductDataType.PRODUCT_DETAIL_CRAWLER.value),
             parses_at=parse_time,
         )
         favie_product.f_status = FavieProductDetailStatus.SKU_NORMAL.name
-        favie_product.shop_id= crawl_result.product.stark_shop.id if crawl_result.product.stark_shop else None
-        favie_product.shop_name=crawl_result.product.stark_shop.name if crawl_result.product.stark_shop else None
-        favie_product.shop_site=StarkMessageUtils.get_domain_by_url(crawl_result.product.stark_shop.host) if crawl_result.product.stark_shop else  None
-        favie_product.link_in_shop=crawl_result.product.stark_link_in_shop
-        favie_product.request_spu_id=stark_detail_message.product_id
+        favie_product.shop_id = crawl_result.product.stark_shop.id if crawl_result.product.stark_shop else None
+        favie_product.shop_name = crawl_result.product.stark_shop.name if crawl_result.product.stark_shop else None
+        favie_product.shop_site = (
+            StarkMessageUtils.get_domain_by_url(crawl_result.product.stark_shop.host)
+            if crawl_result.product.stark_shop
+            else None
+        )
+        favie_product.link_in_shop = crawl_result.product.stark_link_in_shop
+        favie_product.request_sku_id = stark_detail_message.product_id
         return favie_product
 
     @staticmethod

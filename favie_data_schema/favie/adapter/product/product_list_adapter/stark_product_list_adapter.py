@@ -1,6 +1,5 @@
 from favie_data_common.common.common_utils import CommonUtils
 
-from favie_data_schema.favie.adapter.common.stark_enum import StarkProductDataType
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductListMessage
 from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
 from favie_data_schema.favie.adapter.product.common.currency import CurrencyConverter
@@ -10,6 +9,7 @@ from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import Price as StarkPrice
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import ProductListItem
+from favie_data_schema.favie.data.interface.common.favie_enum import ProductDataType
 from favie_data_schema.favie.data.interface.product.favie_product import *
 
 
@@ -38,7 +38,7 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
             favie_product.f_meta = MetaInfo(
                 source_type=Source.SPIDER,
                 parser_name=message.parser_name,
-                data_type=str(StarkProductDataType.PRODUCT_LIST.value),
+                data_type=str(ProductDataType.PRODUCT_LIST_CRAWLER.value),
                 parses_at=parse_time,
             )
             favie_product_list.append(favie_product)
@@ -135,6 +135,6 @@ if __name__ == "__main__":
     )
     adapter = StarkProductListAdapter()
     product_list = adapter.stark_list_to_favie_details(stark_product_list_message)
-    #if product_list:
+    # if product_list:
     #    for product in product_list:
     #        print(product.model_dump_json(exclude_none=True))

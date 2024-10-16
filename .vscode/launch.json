@@ -7,12 +7,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python 调试程序: 当前文件",// 该调试配置的名称，显示在调试菜单中
-            "type": "debugpy",// 指定调试类型，这里是针对 Python 的调试器 "debugpy"
-            "request": "launch",// "launch" 表示启动调试器来运行文件。还有一种 "attach" 模式，用于附加到已经运行的程序进行调试
-            "program": "${file}",// 该配置指定要调试的 Python 文件。${file} 表示当前打开的文件
-            "console": "integratedTerminal", // 调试时输出会显示在 VSCode 的集成终端中
-            "justMyCode": false // 这一项表示是否只调试用户自己的代码。设置为 `false` 时，会调试所有代码，包括依赖的库代码
+            "name": "Python 调试程序: 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--avsc=avsc/interface/product/source_code/favie_product_categories_predict_response.avsc",
+                "--output-file=favie_data_schema/favie/data/interface/product/favie_product_new.py"
+            ],
+            "justMyCode": false  // 添加这一行
         }
     ]
 }

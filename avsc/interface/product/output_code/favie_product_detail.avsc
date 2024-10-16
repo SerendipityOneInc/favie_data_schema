@@ -45,7 +45,7 @@
       "default": null
     },
     {
-      "name": "request_spu_id",
+      "name": "request_sku_id",
       "type": [
         "null",
         "string"
@@ -86,6 +86,38 @@
     },
     {
       "name": "sub_title_link",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shop_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shop_name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shop_site",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "link_in_shop",
       "type": [
         "null",
         "string"
@@ -1678,10 +1710,26 @@
               "default": null
             },
             {
-              "name": "f_categories_map_success",
+              "name": "f_categories_map_type",
               "type": [
                 "null",
-                "bool"
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_categories_map_version",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_categories_predict_score",
+              "type": [
+                "null",
+                "float"
               ],
               "default": null
             },
@@ -1727,38 +1775,6 @@
             }
           ]
         }
-      ],
-      "default": null
-    },
-    {
-      "name": "shop_id",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "shop_name",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "shop_site",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "link_in_shop",
-      "type": [
-        "null",
-        "string"
       ],
       "default": null
     }

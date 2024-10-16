@@ -8,7 +8,9 @@ class MetaInfo(BaseModel):
     data_type: Optional[str] = None
     f_categories_update_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
-    f_categories_map_success: Optional[bool] = None
+    f_categories_map_type: Optional[int] = None
+    f_categories_map_version: Optional[int] = None
+    f_categories_predict_score: Optional[float] = None
     source_1_updates_at: Optional[str] = None
     source_2_updates_at: Optional[str] = None
     source_3_updates_at: Optional[str] = None
@@ -167,6 +169,11 @@ class SimpleProduct(BaseModel):
 class Promotion(BaseModel):
     why_buy: Optional[List[str]] = None
 
+class FavieCategoriesPredictResponse(BaseModel):
+    ids: Optional[List[List[str]]] = None
+    categories: Optional[List[List[str]]] = None
+    scores: Optional[List[List[float]]] = None
+
 class FavieProductReview(BaseModel):
     f_review_id: Optional[str] = None
     f_spu_id: Optional[str] = None
@@ -193,6 +200,8 @@ class FavieProductReview(BaseModel):
     position: Optional[int] = None
     helpful_votes: Optional[int] = None
     unhelpful_votes: Optional[int] = None
+    stark_tag: Optional[int] = None
+    stark_tags: Optional[List[int]] = None
     f_meta: Optional[MetaInfo] = None
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None
@@ -254,12 +263,16 @@ class FavieProductDetail(BaseModel):
     site: Optional[str] = None
     sku_id: Optional[str] = None
     spu_id: Optional[str] = None
-    request_spu_id: Optional[str] = None
+    request_sku_id: Optional[str] = None
     title: Optional[str] = None
     link: Optional[str] = None
     spu_title: Optional[str] = None
     sub_title: Optional[str] = None
     sub_title_link: Optional[str] = None
+    shop_id: Optional[str] = None
+    shop_name: Optional[str] = None
+    shop_site: Optional[str] = None
+    link_in_shop: Optional[str] = None
     description: Optional[str] = None
     description_external_link: Optional[str] = None
     rich_product_description: Optional[str] = None
@@ -294,8 +307,4 @@ class FavieProductDetail(BaseModel):
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None
     f_meta: Optional[MetaInfo] = None
-    shop_id: Optional[str] = None
-    shop_name: Optional[str] = None
-    shop_site: Optional[str] = None
-    link_in_shop: Optional[str] = None
 
