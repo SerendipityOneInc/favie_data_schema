@@ -66,11 +66,21 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
         if product is None:
             return None
         rating_breakdown = RatingBreakdown(
-            five_star=product.rating_breakdown.five_star.count if product.rating_breakdown else None,
-            four_star=product.rating_breakdown.four_star.count if product.rating_breakdown else None,
-            three_star=product.rating_breakdown.three_star.count if product.rating_breakdown else None,
-            two_star=product.rating_breakdown.two_star.count if product.rating_breakdown else None,
-            one_star=product.rating_breakdown.one_star.count if product.rating_breakdown else None,
+            five_star=product.rating_breakdown.five_star.count
+            if product.rating_breakdown and product.rating_breakdown.five_star
+            else None,
+            four_star=product.rating_breakdown.four_star.count
+            if product.rating_breakdown and product.rating_breakdown.four_star
+            else None,
+            three_star=product.rating_breakdown.three_star.count
+            if product.rating_breakdown and product.rating_breakdown.three_star
+            else None,
+            two_star=product.rating_breakdown.two_star.count
+            if product.rating_breakdown and product.rating_breakdown.two_star
+            else None,
+            one_star=product.rating_breakdown.one_star.count
+            if product.rating_breakdown and product.rating_breakdown.one_star
+            else None,
         )
         return (
             rating_breakdown
