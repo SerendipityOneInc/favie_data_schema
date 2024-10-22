@@ -240,7 +240,7 @@ def test_stark_review_to_product_review():
 
 
 if __name__ == "__main__":
-    # test_stark_review_to_product_review()
+    test_stark_review_to_product_review()
     # test_stark_detail_to_product_review()
     # test_stark_review_to_product_review_summary()
-    test_favie_review_summary_to_product_review_summary()
+    # test_favie_review_summary_to_product_review_summary()

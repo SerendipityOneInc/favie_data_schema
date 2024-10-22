@@ -1,346 +1,261 @@
 {
-    "url": "https://api.rainforestapi.com/request?api_key=7C0324A46D2644F6AF26ABA9E6F3F602&type=reviews&amazon_domain=amazon.com&asin=B07XJ7XWLW&review_stars=all_critical&sort_by=most_helpful&page=9",
-    "host": "www.amazon.com",
-    "product_id": "B07XJ7XWLW",
-    "product_title": "CeraVe Anti Aging Retinol Serum | Cream Serum for Smoothing Fine Lines and Skin Brightening | With Retinol, Hyaluronic Acid, Niacinamide, and Ceramides | 1 Ounce",
-    "parser_name": "AmazonProductReviewRFParser",
-    "source": 3,
-    "raw_result": "",
-    "crawl_result": {
-        "request_info": {
-            "success": true,
-            "credits_used": 12182548,
-            "credits_used_this_request": 1,
-            "credits_remaining": 7817452,
-            "credits_reset_at": "2024-10-01T23:00:48.000Z"
-        },
-        "request_parameters": {
-            "amazon_domain": "amazon.com",
-            "asin": "B07XJ7XWLW",
-            "type": "reviews"
-        },
-        "request_metadata": {
-            "created_at": "2024-09-26T06:32:04.855Z",
-            "processed_at": "2024-09-26T06:32:10.018Z",
-            "total_time_taken": 5.16,
-            "amazon_url": "https://www.amazon.com/product-reviews/B07XJ7XWLW/?pageNumber=9&sortBy=helpful&filterByStar=critical"
-        },
-        "product": {
-            "title": "CeraVe Anti Aging Retinol Serum | Cream Serum for Smoothing Fine Lines and Skin Brightening | With Retinol, Hyaluronic Acid, Niacinamide, and Ceramides | 1 Ounce",
-            "link": "https://www.amazon.com/CeraVe-Retinol-Smoothing-Brightening-Fragrance/dp/B07XJ7XWLW/ref=cm_cr_arp_d_product_top?ie=UTF8",
-            "sub_title": {
-                "text": "CeraVe",
-                "link": "https://www.amazon.com/stores/CeraVe/page/0CA2A9B7-7695-43AF-98D9-FB55761E0796?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto"
-            },
-            "image": "https://m.media-amazon.com/images/I/41NLZaGIIvL._AC_US60_SCLZZZZZZZ__.jpg",
-            "parent_asin": null,
-            "asin": "B07XJ7XWLW"
-        },
-        "summary": {
-            "rating": 4.6,
-            "ratings_total": 22948,
-            "ratings_total_filtered": 2318,
-            "reviews_total_filtered": 321,
-            "reviews_total": 321,
-            "rating_breakdown": {
-                "five_star": {
-                    "percentage": 75,
-                    "count": 17211
-                },
-                "four_star": {
-                    "percentage": 15,
-                    "count": 3442
-                },
-                "three_star": {
-                    "percentage": 6,
-                    "count": 1376
-                },
-                "two_star": {
-                    "percentage": 2,
-                    "count": 458
-                },
-                "one_star": {
-                    "percentage": 2,
-                    "count": 458
-                }
-            }
-        },
-        "reviews": [
-            {
-                "id": "R3EOIKWIH8UKA9",
-                "title": "Yuck",
-                "body": "Initially bought for my husband then tried it myself. This product was not good for my skin. It is also owned by L’Oréal who invests in Israel and operates a factory in occupied Palestine.",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>Initially bought for my husband then tried it myself. This product was not good for my skin. It is also owned by L’Oréal who invests in Israel and operates a factory in occupied Palestine.</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/R3EOIKWIH8UKA9/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 1,
-                "date": {
-                    "raw": "Reviewed in the United States on May 17, 2024",
-                    "utc": "2024-05-17T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "Reena A.",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AHB32FS72LVDO3L2BT7LBPDZSCGQ/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AHB32FS72LVDO3L2BT7LBPDZSCGQ",
-                    "image": null
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 1,
-                "helpful_votes": 6
-            },
-            {
-                "id": "R2NCWW7YXT3CO4",
-                "title": "Sticky",
-                "body": "I find this serum too sticky for me. Not soaking in well. It may work very well but was put off by its texture so didn't keep using",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>I find this serum too sticky for me. Not soaking in well. It may work very well but was put off by its texture so didn't keep using</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/R2NCWW7YXT3CO4/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 3,
-                "date": {
-                    "raw": "Reviewed in the United States on March 26, 2022",
-                    "utc": "2022-03-26T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "Karen M.",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AGB5GNRQPP3UAGRDC2MNVYVB575Q/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AGB5GNRQPP3UAGRDC2MNVYVB575Q",
-                    "image": null
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 2,
-                "helpful_votes": null
-            },
-            {
-                "id": "R3F65EMBYSMP5H",
-                "title": "Will make your hair fallout",
-                "body": "I used this product for a couple months. Towards the end I noticed skin irritation around my eyebrow area and under my nose on my mustache area. This product resulted in the irritation of my skin (red, inflamed and itchy skin) and resulted in the loss of many hair follicles -- creating bald patches. Don't use this product, or at least test it on your arm for a while before using on your face. I know a lot of people have had success but not me, I must be allergic to it. If it I could give it a negative 10 I would!",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>I used this product for a couple months. Towards the end I noticed skin irritation around my eyebrow area and under my nose on my mustache area. This product resulted in the irritation of my skin (red, inflamed and itchy skin) and resulted in the loss of many hair follicles -- creating bald patches. Don't use this product, or at least test it on your arm for a while before using on your face. I know a lot of people have had success but not me, I must be allergic to it. If it I could give it a negative 10 I would!</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/R3F65EMBYSMP5H/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 1,
-                "date": {
-                    "raw": "Reviewed in the United States on June 19, 2023",
-                    "utc": "2023-06-19T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "El Dude",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AEQPYWL27AZUASX6CL3HTSKG5H4A/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AEQPYWL27AZUASX6CL3HTSKG5H4A",
-                    "image": null
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 3,
-                "helpful_votes": 4
-            },
-            {
-                "id": "RTP86NFER2TWQ",
-                "title": "Not Sure it Works?",
-                "body": "I used the entire container and saw no results. Maybe I have to use 2 containers? Anyway switched to Neutrogena Retinol as suggested by a dermatologist and am seeing results already.",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>I used the entire container and saw no results. Maybe I have to use 2 containers? Anyway switched to Neutrogena Retinol as suggested by a dermatologist and am seeing results already.</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/RTP86NFER2TWQ/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 1,
-                "date": {
-                    "raw": "Reviewed in the United States on April 3, 2024",
-                    "utc": "2024-04-03T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "MaryKate",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AGVBAGVDQKXA7QXV5XQGQPJ4RYAQ/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AGVBAGVDQKXA7QXV5XQGQPJ4RYAQ",
-                    "image": null
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 4,
-                "helpful_votes": 4
-            },
-            {
-                "id": "R1TX4WPQB2KFH0",
-                "title": "Totally DRYING",
-                "body": "I didn't realize that retinol really dries out your skin! The skin under my eyes got red and looked MORE wrinkly after using this. Also, if you do use retinol, make sure you use a good sunscreen during the day, because it will make your skin far more susceptible to sunburn.  I can't use this stuff. Not sure how it helps with aging skin if it dries it out.",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>I didn't realize that retinol really dries out your skin! The skin under my eyes got red and looked MORE wrinkly after using this. Also, if you do use retinol, make sure you use a good sunscreen during the day, because it will make your skin far more susceptible to sunburn.<br><br>I can't use this stuff. Not sure how it helps with aging skin if it dries it out.</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/R1TX4WPQB2KFH0/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 1,
-                "date": {
-                    "raw": "Reviewed in the United States on December 4, 2023",
-                    "utc": "2023-12-04T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "Nor'Easter",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AG2TUMWK5PWALNIDBR535CBZKNQA/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AG2TUMWK5PWALNIDBR535CBZKNQA",
-                    "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/e9fd450a-a74a-48fc-afaf-95781ac15c7c._CR62,0,375,375_SX48_.jpg"
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 5,
-                "helpful_votes": 8
-            },
-            {
-                "id": "R1FP7861R89EAN",
-                "title": "Different formula from the white pump packaging",
-                "body": "I just repurchased this serum and it came with the new purple top pump whereas my previous bottle came with an all-white top pump. I had a horrible reaction to this new one, but I can't find anywhere online saying they changed the ingredients. I ended up with hives from head-to-toe, swollen eyelids, swollen hands, and in the ER for a steroid shot. If they did reformulate, CeraVe really should have put that on the packaging or at the very least on their website.",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>I just repurchased this serum and it came with the new purple top pump whereas my previous bottle came with an all-white top pump. I had a horrible reaction to this new one, but I can't find anywhere online saying they changed the ingredients. I ended up with hives from head-to-toe, swollen eyelids, swollen hands, and in the ER for a steroid shot. If they did reformulate, CeraVe really should have put that on the packaging or at the very least on their website.</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/R1FP7861R89EAN/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 2,
-                "date": {
-                    "raw": "Reviewed in the United States on January 19, 2022",
-                    "utc": "2022-01-19T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "Emily Edwards",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AED6OM6IZ3XMP6UY5YSF72XXSDZQ/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AED6OM6IZ3XMP6UY5YSF72XXSDZQ",
-                    "image": null
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 6,
-                "helpful_votes": 2
-            },
-            {
-                "id": "R20XRSYT7GQMRB",
-                "title": "Not worth the hype",
-                "body": "Residual product hardness on pump",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>Residual product hardness on pump</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/R20XRSYT7GQMRB/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 3,
-                "date": {
-                    "raw": "Reviewed in the United States on September 12, 2022",
-                    "utc": "2022-09-12T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "julnoelle",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AHYERZFPSZX5ZTQ73HDLIUPUAWZA/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AHYERZFPSZX5ZTQ73HDLIUPUAWZA",
-                    "image": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/d82745a6-87db-4c48-94d4-6c0066601d3d._CR0,0,375,375_SX48_.jpg"
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 7,
-                "helpful_votes": null
-            },
-            {
-                "id": "R3ICUD3DK8GVPD",
-                "title": "Doesn't moisturizer enough.",
-                "body": "Do not 🚫 like",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>Do not 🚫 like</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/R3ICUD3DK8GVPD/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 3,
-                "date": {
-                    "raw": "Reviewed in the United States on January 14, 2023",
-                    "utc": "2023-01-14T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "Annie Lindsey",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AGLZQYCXJCOS5W7DXC7LWDUMCZNA/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AGLZQYCXJCOS5W7DXC7LWDUMCZNA",
-                    "image": null
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 8,
-                "helpful_votes": null
-            },
-            {
-                "id": "R291862H7RXWTF",
-                "title": "Made my skin dry",
-                "body": "My usual CeraVe hyaluronic acid serum was sold out, so I tried this one. For anti-aging, it is supposed to be moisturizing, but this left my skin flaky and dry. I plan to return this.",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>My usual CeraVe hyaluronic acid serum was sold out, so I tried this one. For anti-aging, it is supposed to be moisturizing, but this left my skin flaky and dry. I plan to return this.</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/R291862H7RXWTF/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 2,
-                "date": {
-                    "raw": "Reviewed in the United States on April 30, 2023",
-                    "utc": "2023-04-30T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "KDubs322",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AGT6SJH6PGROQ4NRQM5P6NXURWAA/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AGT6SJH6PGROQ4NRQM5P6NXURWAA",
-                    "image": null
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 9,
-                "helpful_votes": null
-            },
-            {
-                "id": "R3NXMSJS54YYVO",
-                "title": "Be cautious when trying this product...",
-                "body": "Be cautious when trying this product. If your skin reacts like mine did, stop trying it! I was incredibly excited about this product because it contained “retinal” and the price was very affordable. However when trying this product on before bed, I woke up the next morning to cracked peeling skin. A review i read said this was normal for it to peel and the directions say it’s safe to use every night. I continued to use for 2 more nights. It was very harsh and damaging to my skin. I stoped using completely because my skin was hurting, irritating, broken out and patchy. I’m not the type to have sensitive skin. I would consider myself to have more dry skin than oily but i have never had my skin react like it did when trying this product. I have tan skin, it’s going to take me months to recover from the scars this has caused me.",
-                "asin": "B07XJ7XWLW",
-                "body_html": "<span>Be cautious when trying this product. If your skin reacts like mine did, stop trying it!<br>I was incredibly excited about this product because it contained “retinal” and the price was very affordable. However when trying this product on before bed, I woke up the next morning to cracked peeling skin. A review i read said this was normal for it to peel and the directions say it’s safe to use every night. I continued to use for 2 more nights. It was very harsh and damaging to my skin. I stoped using completely because my skin was hurting, irritating, broken out and patchy. I’m not the type to have sensitive skin. I would consider myself to have more dry skin than oily but i have never had my skin react like it did when trying this product. I have tan skin, it’s going to take me months to recover from the scars this has caused me.</span>",
-                "link": "https://www.amazon.com/gp/customer-reviews/R3NXMSJS54YYVO/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=B07XJ7XWLW",
-                "images": null,
-                "rating": 1,
-                "date": {
-                    "raw": "Reviewed in the United States on May 16, 2020",
-                    "utc": "2020-05-16T00:00:00.000Z"
-                },
-                "profile": {
-                    "name": "Caro",
-                    "link": "https://www.amazon.com/gp/profile/amzn1.account.AHTWY6DJAUBDGUEOC3PI5SVOIQQQ/ref=cm_cr_arp_d_gw_btm?ie=UTF8",
-                    "id": "AHTWY6DJAUBDGUEOC3PI5SVOIQQQ",
-                    "image": null
-                },
-                "vine_program": false,
-                "verified_purchase": true,
-                "review_country": "us",
-                "is_global_review": false,
-                "position": 10,
-                "helpful_votes": 24
-            }
-        ],
-        "pagination": {
-            "ratings_total_filtered": 2318,
-            "reviews_total_filtered": 321,
-            "reviews_total": 321,
-            "total_results": 321,
-            "total_pages": 33,
-            "message": null,
-            "current_page": 9,
-            "start": 81,
-            "end": 90
-        }
-    },
-    "task_id": 11423,
-    "create_time": "2024-09-26T06:32:10.071395+00:00",
-    "update_time": "2024-09-26T06:32:10.071400+00:00",
-    "_id": "0f7bfbfe7bd111ef9d4a76104d81ef57"
+	"url": "https://shop.app/web/api/graphql",
+	"host": "shop.app",
+	"product_id": "7325041066164",
+	"product_title": null,
+	"parser_name": "ShopProductReviewParser",
+	"source": 1,
+	"raw_result": "",
+	"crawl_result": {
+		"request_info": {
+			"success": true,
+			"credits_used": 0,
+			"credits_remaining": 0
+		},
+		"request_parameters": {
+			"asin": "7325041066164",
+			"type": "reviews"
+		},
+		"request_metadata": {
+			"created_at": "2024-10-16T09:39:24.348489",
+			"processed_at": "2024-10-16T09:39:24.348501"
+		},
+		"product": {
+			"parent_asin": "7325041066164"
+		},
+		"reviews": [
+			{
+				"id": "119361845",
+				"title": "I love alo because they",
+				"body": "I love alo because they always have such high quality and soft fabric. I love the neutral color. I do not even feel like I am wearing a bra!",
+				"rating": 5,
+				"date": {
+					"raw": "2024-02-16T13:37:03Z",
+					"utc": "2024-02-16T13:37:03Z"
+				},
+				"profile": {
+					"id": "28617900",
+					"name": "Alexa"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "132592565",
+				"title": "Great bra!",
+				"body": "Cute and comfortable. Love it!",
+				"rating": 5,
+				"date": {
+					"raw": "2024-04-09T00:05:16Z",
+					"utc": "2024-04-09T00:05:16Z"
+				},
+				"profile": {
+					"id": "149729392",
+					"name": "Amy"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "113353624",
+				"title": null,
+				"body": "Very supportive & great for working out!",
+				"rating": 5,
+				"date": {
+					"raw": "2024-01-20T18:39:03Z",
+					"utc": "2024-01-20T18:39:03Z"
+				},
+				"profile": {
+					"id": "1580830",
+					"name": "Danielle"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "47021104",
+				"title": "Soft, comfortable and would be",
+				"body": "Soft, comfortable and would be nice if there were more available sizes in the other colors. I noticed shortages in sizes in many items and this is one of them.",
+				"rating": 5,
+				"date": {
+					"raw": "2023-11-02T11:19:33Z",
+					"utc": "2023-11-02T11:19:33Z"
+				},
+				"profile": {
+					"id": "27818671",
+					"name": "Hanan"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "63972556",
+				"title": "Love this! Feel sexy even",
+				"body": "Love this! Feel sexy even in a sports bra!",
+				"rating": 5,
+				"date": {
+					"raw": "2023-12-08T19:37:28Z",
+					"utc": "2023-12-08T19:37:28Z"
+				},
+				"profile": {
+					"id": "31878331",
+					"name": "Alanna"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41658126",
+				"title": "Great quality",
+				"body": "Great quality",
+				"rating": 5,
+				"date": {
+					"raw": "2023-08-30T21:59:49Z",
+					"utc": "2023-08-30T21:59:49Z"
+				},
+				"profile": {
+					"id": "28193504",
+					"name": "Alma"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41633044",
+				"title": "So soft and so worth it!",
+				"body": "So SOFT! I wear a Medium in the Wild Thing bra and the medium in this was too small. But I got a Large and I’m glad I did! It is SO soft and very supportive. I love this bra! 32DDD, size 28 in jeans",
+				"rating": 5,
+				"date": {
+					"raw": "2023-05-22T02:49:16Z",
+					"utc": "2023-05-22T02:49:16Z"
+				},
+				"profile": {
+					"id": "28183717",
+					"name": "Rebecca"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41658128",
+				"title": "Beautiful",
+				"body": "Beautiful, good support but it's a literal bra, no longer than a regular sport bra compared to other Alo tops. Fabric is really soft. True to size.",
+				"rating": 5,
+				"date": {
+					"raw": "2023-05-10T04:13:12Z",
+					"utc": "2023-05-10T04:13:12Z"
+				},
+				"profile": {
+					"id": "28109846",
+					"name": "Sinay"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41816096",
+				"title": "The fabric is very buttery",
+				"body": "The fabric is very buttery smooth! It truly feels like second skin, and the bonus is, you look great while getting in a workout. It’s a win-win-win!",
+				"rating": 5,
+				"date": {
+					"raw": "2023-05-08T03:20:01Z",
+					"utc": "2023-05-08T03:20:01Z"
+				},
+				"profile": {
+					"id": "28303888",
+					"name": "Khayla"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41801316",
+				"title": "Favorite!",
+				"body": "I’m obsessed with this bra! Fits so well, runs true to size and I absolutely love the ribbed fabric. Taupe color is gorgeous.",
+				"rating": 5,
+				"date": {
+					"raw": "2023-04-02T19:58:20Z",
+					"utc": "2023-04-02T19:58:20Z"
+				},
+				"profile": {
+					"id": "28085294",
+					"name": "Laura"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41818392",
+				"title": "Beautiful bra for low impact",
+				"body": "Incredible feel and quality! Fit absolutely perfect, I am a 32B and got a small. Will be repurchasing in other colors!!",
+				"rating": 5,
+				"date": {
+					"raw": "2023-03-30T23:03:12Z",
+					"utc": "2023-03-30T23:03:12Z"
+				},
+				"profile": {
+					"id": "28176011",
+					"name": "Britta"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41801330",
+				"title": "holds great",
+				"body": "holds great",
+				"rating": 5,
+				"date": {
+					"raw": "2023-05-16T09:07:14Z",
+					"utc": "2023-05-16T09:07:14Z"
+				},
+				"profile": {
+					"id": "28295663",
+					"name": "Adi"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41647603",
+				"title": "Perfect fit - simply beautiful",
+				"body": "Perfect fit - simply beautiful I wear a 75B-C and size M fits like a second skin",
+				"rating": 5,
+				"date": {
+					"raw": "2023-04-11T16:27:14Z",
+					"utc": "2023-04-11T16:27:14Z"
+				},
+				"profile": {
+					"id": "28161259",
+					"name": "Veronika"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41801311",
+				"title": "Runs a bit bigger",
+				"body": "Runs a bit bigger",
+				"rating": 5,
+				"date": {
+					"raw": "2023-05-08T11:51:48Z",
+					"utc": "2023-05-08T11:51:48Z"
+				},
+				"profile": {
+					"id": "28202402",
+					"name": "Karin"
+				},
+				"helpful_votes": 0
+			},
+			{
+				"id": "41647599",
+				"title": "Great Product",
+				"body": "Perfect fit",
+				"rating": 5,
+				"date": {
+					"raw": "2023-05-08T21:37:51Z",
+					"utc": "2023-05-08T21:37:51Z"
+				},
+				"profile": {
+					"id": "28194266",
+					"name": "Adi"
+				},
+				"helpful_votes": 0
+			}
+		],
+		"pagination": {
+			"total_results": 24
+		}
+	},
+	"task_id": 2288870,
+	"create_time": null,
+	"update_time": null,
+	"_id": "8764d6148ba211ef99b67ae6cf1db28f"
 }
