@@ -165,7 +165,7 @@ files = [
 
 [[package]]
 name = "favie-data-common"
-version = "v0.0.3"
+version = "v0.0.4-alpha.0"
 description = ""
 optional = false
 python-versions = "^3.10"
@@ -183,8 +183,8 @@ tldextract = "5.1.2"
 [package.source]
 type = "git"
 url = "https://github.com/SerendipityOneInc/favie-data-common.git"
-reference = "v0.0.3"
-resolved_reference = "e95ba6cc935344e0f95cb16b696dbe1fd60e7d24"
+reference = "v0.0.4-alpha.0"
+resolved_reference = "63b18dacc012cfe3a65099c92c170a5bd9589f95"
 
 [[package]]
 name = "filelock"
@@ -745,4 +745,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "21050111223d89911d77ec64ea41b66c326ba703879308cb3600efc417db197e"
+content-hash = "1892635a940498a7ab308a9176a2abeca88141cd5c7f0327c2ab82a9563cfb70"
