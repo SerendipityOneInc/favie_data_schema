@@ -1,5 +1,7 @@
-from typing import List, Optional
-from pydantic import BaseModel, Field
+from typing import Optional
+
+from pydantic import BaseModel
+
 
 class FavieMediaImage(BaseModel):
     f_url: Optional[str] = None
@@ -13,6 +15,6 @@ class FavieMediaImage(BaseModel):
     category: Optional[str] = None
     source_type: Optional[int] = None
     source_id: Optional[str] = None
+    error: Optional[str] = None
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None
-

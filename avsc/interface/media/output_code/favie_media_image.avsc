@@ -92,6 +92,14 @@
       "default": null
     },
     {
+      "name": "error",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "f_updates_at",
       "type": [
         "null",
