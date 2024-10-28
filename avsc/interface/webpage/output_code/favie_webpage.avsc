@@ -185,6 +185,17 @@
       "default": null
     },
     {
+      "name": "f_images",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "favie.data.interface.webpage.ImageData"
+        }
+      ],
+      "default": null
+    },
+    {
       "name": "videos",
       "type": [
         "null",
@@ -213,6 +224,17 @@
               }
             ]
           }
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "f_videos",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "favie.data.interface.webpage.VideoData"
         }
       ],
       "default": null
