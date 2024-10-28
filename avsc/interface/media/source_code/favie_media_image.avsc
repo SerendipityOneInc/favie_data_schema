@@ -15,6 +15,7 @@
     {"name": "source_type", "type": ["null", "int"], "default": null},
     {"name": "source_id", "type": ["null", "string"], "default": null},
     {"name": "error", "type": ["null", "string"], "default": null},
+    {"name": "error_code", "type": ["null", "string"], "default": null},
     {"name": "f_updates_at", "type": ["null", "string"], "default": null},
     {"name": "f_creates_at", "type": ["null", "string"], "default": null}
   ]
