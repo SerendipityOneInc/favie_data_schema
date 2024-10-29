@@ -6,6 +6,7 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
     RainforestProductDetail,
     TopReviews,
 )
+from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
 from favie_data_schema.favie.data.interface.product.favie_product import *
 
 
@@ -52,7 +53,10 @@ class StarkProductReviewConvert:
         favie_review.images = None
         favie_review.videos = None
         favie_review.f_meta = MetaInfo(
-            source_type=str(source), parser_name=f"{parser_name}-adapter", parses_at=parse_time
+            source_type=str(source),
+            parser_name=f"{parser_name}-adapter",
+            parses_at=parse_time,
+            data_type=str(MessageDataType.PRODUCT_REVIEW_CRAWLER.value),
         )
         return favie_review
 

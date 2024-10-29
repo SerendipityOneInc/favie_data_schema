@@ -5,6 +5,7 @@ from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMess
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.adapter.webpage.common.favie_webpage_adapter import FavieWebpageAdapter
 from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import ParsedWebPageContent
+from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
 from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage, ImageData, MetaInfo
 
 
@@ -40,6 +41,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
             source_type=str(webpage_message.source),
             parser_name=webpage_message.spider,
             parses_at=StarkMessageUtils.get_parse_time(webpage_message),
+            data_type=str(MessageDataType.WEBPAGE_CONTENT_CRAWLER.value),
         )
         return webpage
 
