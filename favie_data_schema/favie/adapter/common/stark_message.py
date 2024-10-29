@@ -5,6 +5,7 @@ from pydantic import BaseModel
 from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import CrawlerResult
 from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import ContentType
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import StarkProductList
+from favie_data_schema.favie.data.crawl_data.crawler.stark_webpage import WebpageItem
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import RainforestProductReview
 
@@ -38,3 +39,6 @@ class StarkProductListMessage(StarkMessage):
 
 class StarkWebpageMessage(StarkMessage):
     crawl_result: Optional[CrawlerResult] = None
+
+class StarkNewWebpageMessage(StarkMessage):
+    crawl_result: Optional[WebpageItem] = None
