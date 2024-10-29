@@ -16,4 +16,5 @@ class WebpageItem(BaseModel):
     author: Optional[str] = None
     tags: Optional[List[str]] = None
     page_type: Optional[str] = None
+    images: Optional[List[WebpageImage]] = None
     create_time: Optional[str] = None
