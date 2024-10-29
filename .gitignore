@@ -12,3 +12,4 @@ favie_data_schema/favie/adapter/product/.DS_Store
 
 
 .idea/*
+.venv/*
