@@ -9,10 +9,13 @@ class FavieSourceType(IntEnum):
     AD = 4
 
 
-class ProductDataType(IntEnum):
+class MessageDataType(IntEnum):
     UNKNOWN = 0
     PRODUCT_DETAIL_CRAWLER = 1
     PRODUCT_LIST_CRAWLER = 2
     PRODUCT_REVIEW_CRAWLER = 3
     PRODUCT_CATEGORY_PREDICT = 4
     PRODUCT_IMAGE_CRAWLER = 5
+    PRODUCT_REVIEW_IMAGE_CRAWLER = 6
+    WEBPAGE_CRAWLER = 7
+    WEBPAGE_IMAGE_CRAWLER = 8
