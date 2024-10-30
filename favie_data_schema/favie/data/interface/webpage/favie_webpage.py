@@ -1,17 +1,24 @@
 from typing import List, Optional
-from pydantic import BaseModel, Field
+
+from pydantic import BaseModel
+
 
 class ImageData(BaseModel):
     url: Optional[str] = None
     desc: Optional[str] = None
+    width: Optional[int] = None
+    height: Optional[int] = None
+
 
 class VideoData(BaseModel):
     url: Optional[str] = None
     desc: Optional[str] = None
 
+
 class ReferenceData(BaseModel):
     url: Optional[str] = None
     desc: Optional[str] = None
+
 
 class MetaInfo(BaseModel):
     source_type: Optional[str] = None
@@ -22,6 +29,7 @@ class MetaInfo(BaseModel):
     source_3_updates_at: Optional[str] = None
     source_4_updates_at: Optional[str] = None
     source_5_updates_at: Optional[str] = None
+
 
 class FavieWebpage(BaseModel):
     md5_id: Optional[str] = None
@@ -53,4 +61,3 @@ class FavieWebpage(BaseModel):
     f_meta: Optional[MetaInfo] = None
     create_time: Optional[str] = None
     update_time: Optional[str] = None
-

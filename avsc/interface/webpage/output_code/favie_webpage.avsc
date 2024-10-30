@@ -177,6 +177,22 @@
                   "string"
                 ],
                 "default": null
+              },
+              {
+                "name": "width",
+                "type": [
+                  "null",
+                  "int"
+                ],
+                "default": null
+              },
+              {
+                "name": "height",
+                "type": [
+                  "null",
+                  "int"
+                ],
+                "default": null
               }
             ]
           }
