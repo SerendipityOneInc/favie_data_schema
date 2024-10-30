@@ -68,7 +68,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
         webpage.title = webpage_message.crawl_result.title
         webpage.description = webpage_message.crawl_result.description
         webpage.author = webpage_message.crawl_result.author
-        webpage.keywords = webpage_message.crawl_result.tags
+        webpage.keywords = webpage_message.crawl_result.keywords
         webpage.robots = None
         webpage.content = None
         webpage.content_type = webpage_message.content_type
