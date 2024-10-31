@@ -410,6 +410,14 @@
                 "string"
               ],
               "default": null
+            },
+            {
+              "name": "data_type",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
             }
           ]
         }
