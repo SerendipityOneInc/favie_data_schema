@@ -402,6 +402,14 @@
                 "string"
               ],
               "default": null
+            },
+            {
+              "name": "f_images_crawl_send_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
             }
           ]
         }
