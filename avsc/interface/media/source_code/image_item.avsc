@@ -6,6 +6,8 @@
     {"name": "category", "type": ["null", "string"], "default": null},
     {"name": "site", "type": ["null", "string"], "default": null},
     {"name": "url", "type": ["null", "string"], "default": null},
-    {"name": "text", "type": ["null", "string"], "default": null}
+    {"name": "text", "type": ["null", "string"], "default": null},
+    {"name": "width", "type": ["null", "int"], "default": null},
+    {"name": "height", "type": ["null", "int"], "default": null}
   ]
 }
