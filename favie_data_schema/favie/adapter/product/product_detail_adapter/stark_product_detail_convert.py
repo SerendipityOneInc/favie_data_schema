@@ -33,7 +33,7 @@ class StarkProductDetailConvert:
         favie_product.site = StarkMessageUtils.get_domain(stark_detail_message)
         favie_product.title = crawl_result.product.title
         favie_product.link = crawl_result.product.link
-        favie_product.spu_title = crawl_result.product.title_excluding_variant_name
+        # favie_product.spu_title = crawl_result.product.title_excluding_variant_name
         favie_product.sub_title = (
             crawl_result.product.sub_title.text if crawl_result.product.sub_title is not None else None
         )
@@ -55,15 +55,15 @@ class StarkProductDetailConvert:
         favie_product.feature_bullets = crawl_result.product.feature_bullets
         favie_product.attributes = StarkProductDetailConvert.get_attributes(crawl_result)
         favie_product.specifications = StarkProductDetailConvert.get_specifications(crawl_result)
-        favie_product.standard_attributes = StarkProductDetailConvert.get_standard_attributes(stark_detail_message)
-        favie_product.offers = None
+        favie_product.extended_info = StarkProductDetailConvert.get_extended_info(stark_detail_message)
+        # favie_product.offers = None
         favie_product.seller = StarkProductDetailConvert.get_seller(crawl_result)
         favie_product.inventory = None
         favie_product.keywords = crawl_result.product.keywords
-        favie_product.search_alias = None
+        # favie_product.search_alias = None
         favie_product.deal = StarkProductDetailConvert.get_deal(crawl_result, parse_time)
-        favie_product.shipping = None
-        favie_product.fulfillment = None
+        # favie_product.shipping = None
+        # favie_product.fulfillment = None
         favie_product.returns_policy = None
         favie_product.f_sku_id = FavieProductUtils.gen_f_sku_id(favie_product)
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
@@ -178,28 +178,28 @@ class StarkProductDetailConvert:
         return None
 
     @staticmethod
-    def get_standard_attributes(message: StarkProductDetailMessage):
+    def get_extended_info(message: StarkProductDetailMessage):
         try:
-            standard_attributes = StandardAttributes()
+            extended_info = ExtendedInfo()
             if message.source == Source.SPIDER.value:
-                standard_attributes.last_month_sell_amount = StarkProductDetailConvert.get_last_month_sell_amount(
+                extended_info.last_month_sell_amount = StarkProductDetailConvert.get_last_month_sell_amount(
                     message.raw_result
                 )
-            standard_attributes.is_bundle = message.crawl_result.product.is_bundle
-            standard_attributes.has_coupon = message.crawl_result.product.has_coupon
-            standard_attributes.coupon_text = message.crawl_result.product.coupon_text
-            standard_attributes.platform_choice = StarkProductDetailConvert.get_platform_choice(message.crawl_result)
+            extended_info.is_bundle = message.crawl_result.product.is_bundle
+            extended_info.has_coupon = message.crawl_result.product.has_coupon
+            extended_info.coupon_text = message.crawl_result.product.coupon_text
+            extended_info.platform_choice = StarkProductDetailConvert.get_platform_choice(message.crawl_result)
 
             if message.crawl_result.product.buybox_winner is not None:
                 if message.crawl_result.product.buybox_winner.fulfillment is not None:
-                    standard_attributes.is_marketplace_item = (
+                    extended_info.is_marketplace_item = (
                         message.crawl_result.product.buybox_winner.fulfillment.is_sold_by_third_party
                     )
-                standard_attributes.is_member = message.crawl_result.product.buybox_winner.is_prime
-                standard_attributes.is_member_exclusive_deal = (
-                    message.crawl_result.product.buybox_winner.is_prime_exclusive_deal
-                )
-            return standard_attributes
+                # extended_info.is_member = message.crawl_result.product.buybox_winner.is_prime
+                # extended_info.is_member_exclusive_deal = (
+                #     message.crawl_result.product.buybox_winner.is_prime_exclusive_deal
+                # )
+            return extended_info
         except Exception:
             logging.warning("get_standard_attributes error: %s-%s", message.product_id, message.host)
             return None
