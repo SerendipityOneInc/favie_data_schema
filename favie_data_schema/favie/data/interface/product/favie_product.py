@@ -166,7 +166,7 @@ class SimpleProduct(BaseModel):
     link: Optional[str] = None
     price: Optional[Price] = None
     images: Optional[Images] = None
-    demisions: Optional[List[AttributeItem]] = None
+    dimensions: Optional[List[AttributeItem]] = None
 
 
 class Promotion(BaseModel):

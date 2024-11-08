@@ -1,7 +1,5 @@
 from typing import List, Optional
-
-from pydantic import BaseModel
-
+from pydantic import BaseModel, Field
 
 class ImageItem(BaseModel):
     category: Optional[str] = None
@@ -10,7 +8,6 @@ class ImageItem(BaseModel):
     text: Optional[str] = None
     width: Optional[int] = None
     height: Optional[int] = None
-
 
 class MetaInfo(BaseModel):
     source_type: Optional[str] = None
@@ -28,12 +25,10 @@ class MetaInfo(BaseModel):
     source_4_updates_at: Optional[str] = None
     source_5_updates_at: Optional[str] = None
 
-
 class FavieImageCrawlResponse(BaseModel):
     source_type: Optional[int] = None
     source_id: Optional[str] = None
     images: Optional[List[ImageItem]] = None
-
 
 class FavieImageCrawlRequest(BaseModel):
     source_type: Optional[int] = None
@@ -41,3 +36,4 @@ class FavieImageCrawlRequest(BaseModel):
     images: Optional[List[ImageItem]] = None
     force: Optional[bool] = None
     meta_info: Optional[MetaInfo] = None
+
