@@ -65,7 +65,6 @@ class StarkProductDetailConvert:
         favie_product.shipping = None
         favie_product.fulfillment = None
         favie_product.returns_policy = None
-        favie_product.variants = None
         favie_product.f_sku_id = FavieProductUtils.gen_f_sku_id(favie_product)
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
         favie_product.promotion = StarkProductDetailConvert.get_promotion(crawl_result)
@@ -115,7 +114,7 @@ class StarkProductDetailConvert:
             variants = [
                 SimpleProduct(
                     sku_id=x.asin,
-                    title=None,  # variants 的schema定义有误，缺少title字段，多了一个text字段
+                    title=x.text,  # variants 的schema定义有误，缺少title字段，多了一个text字段
                     link=x.link,
                     price=StarkProductDetailConvert.convert_price(x.price, parse_time),
                 )
@@ -202,7 +201,7 @@ class StarkProductDetailConvert:
                 )
             return standard_attributes
         except Exception:
-            logging.warn("get_standard_attributes error: %s-%s", message.product_id, message.host)
+            logging.warning("get_standard_attributes error: %s-%s", message.product_id, message.host)
             return None
 
     @staticmethod
