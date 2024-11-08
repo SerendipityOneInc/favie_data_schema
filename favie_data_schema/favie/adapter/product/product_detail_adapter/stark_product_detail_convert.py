@@ -12,7 +12,7 @@ from favie_data_schema.favie.adapter.product.common.currency import CurrencyConv
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
-from favie_data_schema.favie.data.interface.common.favie_enum import ProductDataType
+from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
 from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.interface.product.product_enum import FavieProductDetailStatus
 
@@ -65,7 +65,6 @@ class StarkProductDetailConvert:
         favie_product.shipping = None
         favie_product.fulfillment = None
         favie_product.returns_policy = None
-        favie_product.variants = None
         favie_product.f_sku_id = FavieProductUtils.gen_f_sku_id(favie_product)
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
         favie_product.promotion = StarkProductDetailConvert.get_promotion(crawl_result)
@@ -74,7 +73,7 @@ class StarkProductDetailConvert:
         favie_product.f_meta = MetaInfo(
             source_type=str(stark_detail_message.source),
             parser_name=f"{stark_detail_message.parser_name}-adapter",
-            data_type=str(ProductDataType.PRODUCT_DETAIL_CRAWLER.value),
+            data_type=str(MessageDataType.PRODUCT_DETAIL_CRAWLER.value),
             parses_at=parse_time,
         )
         favie_product.f_status = FavieProductDetailStatus.SKU_NORMAL.name
@@ -115,7 +114,7 @@ class StarkProductDetailConvert:
             variants = [
                 SimpleProduct(
                     sku_id=x.asin,
-                    title=None,  # variants 的schema定义有误，缺少title字段，多了一个text字段
+                    title=x.text,  # variants 的schema定义有误，缺少title字段，多了一个text字段
                     link=x.link,
                     price=StarkProductDetailConvert.convert_price(x.price, parse_time),
                 )
@@ -202,7 +201,7 @@ class StarkProductDetailConvert:
                 )
             return standard_attributes
         except Exception:
-            logging.warn("get_standard_attributes error: %s-%s", message.product_id, message.host)
+            logging.warning("get_standard_attributes error: %s-%s", message.product_id, message.host)
             return None
 
     @staticmethod

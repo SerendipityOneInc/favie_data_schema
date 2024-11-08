@@ -10,6 +10,9 @@ class StarkMessageUtils:
     @staticmethod
     def get_parse_time(message: StarkMessage):
         try:
+            if not message.update_time:
+                return str(int(datetime.now().timestamp()))
+
             parse_time = CommonUtils.datetime_string_to_timestamp(message.update_time)
             if parse_time:
                 return str(int(parse_time))
@@ -25,11 +28,10 @@ class StarkMessageUtils:
             return StarkMessageUtils.get_domain_by_url(message.host)
         elif message.url:
             return StarkMessageUtils.get_domain_by_url(message.url)
+
     @staticmethod
-    def get_domain_by_url(url: str)->str|None:
+    def get_domain_by_url(url: str) -> str | None:
         if url is not None:
             return CommonUtils.host_trip_www(CommonUtils.get_full_subdomain(url))
         else:
             return None
-    
-    

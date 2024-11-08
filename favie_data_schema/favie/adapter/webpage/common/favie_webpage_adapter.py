@@ -1,10 +1,10 @@
-from favie_data_schema.favie.adapter.common.stark_message import StarkWebpageMessage
+from favie_data_schema.favie.adapter.common.stark_message import StarkNewWebpageMessage, StarkWebpageMessage
 from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage
 
 
 class FavieWebpageAdapter:
     @staticmethod
-    def stark_webpage_to_favie_webpage(webpage_message: StarkWebpageMessage) -> FavieWebpage:
+    def stark_webpage_to_favie_webpage(webpage_message: StarkWebpageMessage | StarkNewWebpageMessage) -> FavieWebpage:
         # TODO: implement
         pass
 
@@ -26,6 +26,19 @@ class FavieWebpageAdapter:
             return False
 
         if webpage_message.crawl_result.webpage.parsed_webpage_content is None:
+            return False
+
+        return True
+
+    @staticmethod
+    def _message_check_new(webpage_message: StarkNewWebpageMessage) -> bool:
+        if webpage_message is None:
+            return False
+
+        if webpage_message.crawl_result is None:
+            return False
+
+        if webpage_message.crawl_result.url is None:
             return False
 
         return True

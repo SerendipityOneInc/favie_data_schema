@@ -95,7 +95,29 @@
       "default": null
     },
     {
+      "name": "f_images",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
       "name": "videos",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "f_videos",
       "type": [
         "null",
         {

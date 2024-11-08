@@ -13,6 +13,8 @@ class FavieMediaImage(BaseModel):
     category: Optional[str] = None
     source_type: Optional[int] = None
     source_id: Optional[str] = None
+    error: Optional[str] = None
+    error_code: Optional[str] = None
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None
 

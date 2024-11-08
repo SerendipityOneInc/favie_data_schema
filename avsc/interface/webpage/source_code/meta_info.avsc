@@ -11,6 +11,8 @@
     { "name": "source_2_updates_at","type":["null","string"],"default":null},
     { "name": "source_3_updates_at","type":["null","string"],"default":null},
     { "name": "source_4_updates_at","type":["null","string"],"default":null},
-    { "name": "source_5_updates_at","type":["null","string"],"default":null}
+    { "name": "source_5_updates_at","type":["null","string"],"default":null},
+    { "name": "f_images_crawl_send_at","type":["null","string"],"default":null},
+    { "name": "data_type", "type": ["null", "string"], "default": null }
   ]
 }

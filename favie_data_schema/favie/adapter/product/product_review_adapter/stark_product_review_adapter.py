@@ -18,6 +18,7 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_revie
     RatingBreakdown as RFRatingBreakdown,
 )
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import Reviews, Summary
+from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
 from favie_data_schema.favie.data.interface.product.favie_product import (
     FavieProductReview,
     FavieProductReviewSummary,
@@ -112,6 +113,7 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
             source_type=str(stark_review_message.source),
             parser_name=f"{stark_review_message.parser_name}-adapter",
             parses_at=StarkMessageUtils.get_parse_time(stark_review_message),
+            data_type=str(MessageDataType.PRODUCT_REVIEW_CRAWLER.value),
         )
         return [
             StarkProductReviewAdapter.__convert_review(

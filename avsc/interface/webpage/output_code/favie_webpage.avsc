@@ -177,9 +177,36 @@
                   "string"
                 ],
                 "default": null
+              },
+              {
+                "name": "width",
+                "type": [
+                  "null",
+                  "int"
+                ],
+                "default": null
+              },
+              {
+                "name": "height",
+                "type": [
+                  "null",
+                  "int"
+                ],
+                "default": null
               }
             ]
           }
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "f_images",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "favie.data.interface.webpage.ImageData"
         }
       ],
       "default": null
@@ -213,6 +240,17 @@
               }
             ]
           }
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "f_videos",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "favie.data.interface.webpage.VideoData"
         }
       ],
       "default": null
@@ -359,6 +397,22 @@
             },
             {
               "name": "source_5_updates_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "f_images_crawl_send_at",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "data_type",
               "type": [
                 "null",
                 "string"

@@ -186,7 +186,9 @@ class FavieProductReview(BaseModel):
     body_html: Optional[str] = None
     link: Optional[str] = None
     images: Optional[List[str]] = None
+    f_images: Optional[List[str]] = None
     videos: Optional[List[str]] = None
+    f_videos: Optional[List[str]] = None
     rating: Optional[float] = None
     date_raw: Optional[str] = None
     date_utc: Optional[str] = None

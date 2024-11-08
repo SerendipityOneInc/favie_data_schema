@@ -4,6 +4,8 @@
   "namespace": "favie.data.interface.webpage",
   "fields": [
     {"name": "url", "type": ["null","string"],"default":null},
-    {"name": "desc", "type": ["null","string"],"default":null}
+    {"name": "desc", "type": ["null","string"],"default":null},
+    {"name": "width", "type": ["null","int"],"default":null},
+    {"name": "height", "type": ["null","int"],"default":null}
   ]
 }

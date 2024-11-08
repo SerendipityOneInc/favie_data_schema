@@ -1,0 +1,59 @@
+{
+	"url": "https://www.instagram.com/p/DBvdN_7sc0H/",
+	"source": 4,
+	"content_type": "webpage",
+	"spider": "InstagramPostListParser",
+	"parser_name": "InstagramPostListParser",
+	"crawl_result": {
+		"url": "https://www.instagram.com/p/DBvdN_7sc0H/",
+		"host": "www.instagram.com",
+		"title": "Photo by Karolina’s Photography | Wroclaw photographer on October 30, 2024. Mungkin gambar 1 orang, janggut, blazer dan turtleneck.",
+		"description": "model : @dula_kiongozi \n#fashion #fashionstyle #magazine #highfashion #cityphotography #wroclaw #wroclawphotographer #wroclawphoto #cityvibes #cityfashion #streetwear #fashionphotography #sony #sonyalpha #sonyphotography #streetphotographer  #prism #prismacolor #prismlights #rainbow #prismphotography",
+		"author": "Karolina’s Photography | Wroclaw photographer",
+		"tags": [
+			"#fashion",
+			"#fashionstyle",
+			"#magazine",
+			"#highfashion",
+			"#cityphotography",
+			"#wroclaw",
+			"#wroclawphotographer",
+			"#wroclawphoto",
+			"#cityvibes",
+			"#cityfashion",
+			"#streetwear",
+			"#fashionphotography",
+			"#sony",
+			"#sonyalpha",
+			"#sonyphotography",
+			"#streetphotographer",
+			"#prism",
+			"#prismacolor",
+			"#prismlights",
+			"#rainbow",
+			"#prismphotography"
+		],
+		"page_type": "album",
+		"images": [
+			{
+				"url": "https://scontent-hel3-1.cdninstagram.com/v/t51.29350-15/464968716_477921451253142_8592703147318293757_n.jpg?se=7&stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_cat=106&_nc_ohc=bE4OJ6xu_VUQ7kNvgFiChyK&_nc_gid=3ea77a9ae4d84c2a902fe03dc0df761c&edm=AMKDjl4BAAAA&ccb=7-5&ig_cache_key=MzQ5MDEzNjczMzczMzA0NzI2MA%3D%3D.3-ccb7-5&oh=00_AYAbZpgH92C6xn0SR5IxNIdWcEd0NLno_gDhlsxF6SZsow&oe=6727AAC7&_nc_sid=472314",
+				"desc": null,
+				"width": 1440,
+				"height": 1440
+			},
+			{
+				"url": "https://scontent-hel3-1.cdninstagram.com/v/t51.29350-15/465010094_576762204919255_4774929589883198282_n.jpg?se=7&stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=CTTSdDPRzXcQ7kNvgHv5O1t&_nc_gid=3ea77a9ae4d84c2a902fe03dc0df761c&edm=AMKDjl4BAAAA&ccb=7-5&ig_cache_key=MzQ5MDEzNjczMzczMjkzOTI4Ng%3D%3D.3-ccb7-5&oh=00_AYDrkfMjGsTXkgnt-LNSvFCsXTXfXlo1Dk-RlZmeFu_MWQ&oe=6727B8FC&_nc_sid=472314",
+				"desc": null,
+				"width": 1440,
+				"height": 1440
+			}
+		],
+		"create_time": "2024-10-30 08:25:44"
+	},
+	"raw_result": "",
+	"mission": null,
+	"task_id": null,
+	"create_time": null,
+	"update_time": null,
+	"_id": "505218a296b111ef97b6a6ab9398ad2d"
+}

@@ -6,6 +6,8 @@ class ImageItem(BaseModel):
     site: Optional[str] = None
     url: Optional[str] = None
     text: Optional[str] = None
+    width: Optional[int] = None
+    height: Optional[int] = None
 
 class MetaInfo(BaseModel):
     source_type: Optional[str] = None
