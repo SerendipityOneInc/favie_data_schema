@@ -1593,7 +1593,7 @@
                 "default": null
               },
               {
-                "name": "dimensions",
+                "name": "attributes",
                 "type": [
                   "null",
                   {

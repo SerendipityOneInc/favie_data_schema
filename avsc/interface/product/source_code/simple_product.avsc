@@ -16,7 +16,7 @@
       "default": null
     },
     {
-      "name": "dimensions",
+      "name": "attributes",
       "type": ["null", { "type": "array","items": "favie.data.interface.product.AttributeItem"}],
       "default": null
     }
