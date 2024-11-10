@@ -311,7 +311,7 @@ class StarkProductDetailConvert:
                 if rainforest_product_detail.product.images is not None
                 else None,
             )
-            return images if images.main_image is not None or CommonUtils.list_len(images.image_list) > 0 else None
+            return images if images.main_image is not None or CommonUtils.list_len(images.images) > 0 else None
         return None
 
     @staticmethod
