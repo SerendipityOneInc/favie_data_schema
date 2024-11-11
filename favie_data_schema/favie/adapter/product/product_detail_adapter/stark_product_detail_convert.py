@@ -256,9 +256,13 @@ class StarkProductDetailConvert:
     @staticmethod
     def valid_attributes(items):
         return (
-            HashableAttributeItem(name=x.name, value=x.value)
-            for x in items
-            if CommonUtils.all_not_none(x.name, x.value)
+            (
+                HashableAttributeItem(name=x.name, value=x.value)
+                for x in items
+                if CommonUtils.all_not_none(x.name, x.value)
+            )
+            if items
+            else iter(())
         )
 
     @staticmethod
