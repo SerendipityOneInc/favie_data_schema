@@ -655,6 +655,14 @@
       "default": null
     },
     {
+      "name": "standard_attributes",
+      "type": [
+        "null",
+        "favie.data.interface.product.ExtendedInfo"
+      ],
+      "default": null
+    },
+    {
       "name": "best_seller_rank",
       "type": [
         "null",

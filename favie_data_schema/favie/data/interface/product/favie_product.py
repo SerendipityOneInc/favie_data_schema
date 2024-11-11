@@ -271,6 +271,7 @@ class FavieProductDetail(BaseModel):
     attributes: Optional[List[AttributeItem]] = None
     specifications: Optional[List[AttributeItem]] = None
     extended_info: Optional[ExtendedInfo] = None
+    standard_attributes: Optional[ExtendedInfo] = None
     best_seller_rank: Optional[List[SellerRank]] = None
     seller: Optional[Seller] = None
     inventory: Optional[Inventory] = None

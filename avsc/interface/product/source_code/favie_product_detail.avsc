@@ -77,6 +77,7 @@
       "default": null
     },
     {"name": "extended_info","type": ["null","favie.data.interface.product.ExtendedInfo"],"default": null},
+    {"name": "standard_attributes","type": ["null","favie.data.interface.product.ExtendedInfo"],"default": null},
     {"name":"best_seller_rank","type": ["null",{"type": "array","items": "favie.data.interface.product.SellerRank"}],"default": null},
     { "name": "seller", "type": ["null", "favie.data.interface.product.Seller"],"default": null},
     { "name": "inventory","type": ["null","favie.data.interface.product.Inventory"],"default": null},
