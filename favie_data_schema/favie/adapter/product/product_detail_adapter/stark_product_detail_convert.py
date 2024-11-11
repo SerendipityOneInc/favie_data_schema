@@ -11,7 +11,10 @@ from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMess
 from favie_data_schema.favie.adapter.product.common.currency import CurrencyConverter
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
-from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
+from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import (
+    RainforestProductDetail,
+    Variants,
+)
 from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
 from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.interface.product.product_enum import FavieProductDetailStatus
@@ -126,7 +129,7 @@ class StarkProductDetailConvert:
                     sku_id=x.asin,
                     title=x.text,
                     link=x.link,
-                    dimensions=StarkProductDetailConvert.valid_attributes(x.dimensions),
+                    dimensions=StarkProductDetailConvert.get_dimensions(x),
                     price=StarkProductDetailConvert.convert_price(x.price, parse_time),
                 )
                 for x in rainforest_product_detail.product.variants
@@ -264,6 +267,11 @@ class StarkProductDetailConvert:
         specs = set(StarkProductDetailConvert.valid_attributes(product.specifications))
         specs.update(StarkProductDetailConvert.valid_attributes(product.attributes))
         return list(specs) if specs else None
+
+    @staticmethod
+    def get_dimensions(variants: Variants):
+        demissions = set(StarkProductDetailConvert.valid_attributes(variants.dimensions))
+        return list(demissions) if demissions else None
 
     @staticmethod
     def get_attributes(rainforest_product_detail: RainforestProductDetail):
