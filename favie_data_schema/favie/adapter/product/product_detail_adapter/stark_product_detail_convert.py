@@ -124,8 +124,9 @@ class StarkProductDetailConvert:
             variants = [
                 SimpleProduct(
                     sku_id=x.asin,
-                    title=x.text,  # variants 的schema定义有误，缺少title字段，多了一个text字段
+                    title=x.text,
                     link=x.link,
+                    dimensions=StarkProductDetailConvert.valid_attributes(x.dimensions),
                     price=StarkProductDetailConvert.convert_price(x.price, parse_time),
                 )
                 for x in rainforest_product_detail.product.variants
