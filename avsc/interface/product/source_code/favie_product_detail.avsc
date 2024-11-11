@@ -28,6 +28,11 @@
       "type": ["null", {"type": "array","items": "favie.data.interface.product.Price"}],
       "default": null
     },
+    {
+      "name": "historical_prices",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.Price"}],
+      "default": null
+    },
     { "name": "f_status", "type": ["null", "string"], "default": null },
     { "name": "images","type": ["null","favie.data.interface.product.Images"],"default": null},
     { "name": "f_images","type": ["null","favie.data.interface.product.Images"],"default": null},

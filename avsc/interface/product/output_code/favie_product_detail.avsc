@@ -231,6 +231,17 @@
       "default": null
     },
     {
+      "name": "historical_prices",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "favie.data.interface.product.Price"
+        }
+      ],
+      "default": null
+    },
+    {
       "name": "f_status",
       "type": [
         "null",
