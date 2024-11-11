@@ -17,6 +17,14 @@ from favie_data_schema.favie.data.interface.product.favie_product import *
 from favie_data_schema.favie.data.interface.product.product_enum import FavieProductDetailStatus
 
 
+class HashableAttributeItem(AttributeItem):
+    def __hash__(self):
+        return hash(self.name)
+
+    def __eq__(self, other):
+        return self.name == other.name
+
+
 class StarkProductDetailConvert:
     @staticmethod
     def convert_to_favie_product(stark_detail_message: StarkProductDetailMessage) -> FavieProductDetail:
@@ -43,8 +51,10 @@ class StarkProductDetailConvert:
         favie_product.description = crawl_result.product.description
         favie_product.description_external_link = None
         favie_product.rich_product_description = None
-        favie_product.price = StarkProductDetailConvert.get_price(crawl_result, parse_time)
-        favie_product.rrp = StarkProductDetailConvert.get_rrp(crawl_result, parse_time)
+        price = StarkProductDetailConvert.get_price(crawl_result, parse_time)
+        favie_product.price = price
+        rrp = StarkProductDetailConvert.get_rrp(crawl_result, parse_time)
+        favie_product.rrp = rrp if rrp else price
         favie_product.images = StarkProductDetailConvert.get_images(crawl_result)
         favie_product.f_images = None
         favie_product.videos = StarkProductDetailConvert.get_videos(crawl_result)
@@ -240,26 +250,25 @@ class StarkProductDetailConvert:
             return None
 
     @staticmethod
+    def valid_attributes(items):
+        return (
+            HashableAttributeItem(name=x.name, value=x.value)
+            for x in items
+            if CommonUtils.all_not_none(x.name, x.value)
+        )
+
+    @staticmethod
     def get_specifications(rainforest_product_detail: RainforestProductDetail):
-        if CommonUtils.list_len(rainforest_product_detail.product.specifications) > 0:
-            specifications = [
-                AttributeItem(name=x.name, value=x.value)
-                for x in rainforest_product_detail.product.specifications
-                if CommonUtils.all_not_none(x.name, x.value)
-            ]
-            return specifications if CommonUtils.list_len(specifications) > 0 else None
-        return None
+        product = rainforest_product_detail.product
+        specs = set(StarkProductDetailConvert.valid_attributes(product.specifications))
+        specs.update(StarkProductDetailConvert.valid_attributes(product.attributes))
+        return list(specs) if specs else None
 
     @staticmethod
     def get_attributes(rainforest_product_detail: RainforestProductDetail):
-        if CommonUtils.list_len(rainforest_product_detail.product.attributes) > 0:
-            attributes = [
-                AttributeItem(name=x.name, value=x.value)
-                for x in rainforest_product_detail.product.attributes
-                if CommonUtils.all_not_none(x.name, x.value)
-            ]
-            return attributes if CommonUtils.list_len(attributes) > 0 else None
-        return None
+        product = rainforest_product_detail.product
+        attributes = set(StarkProductDetailConvert.valid_attributes(product.attributes))
+        return list(attributes) if attributes else None
 
     @staticmethod
     def get_brand(rainforest_product_detail: RainforestProductDetail):
