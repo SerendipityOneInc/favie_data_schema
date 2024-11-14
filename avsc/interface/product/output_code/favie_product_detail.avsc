@@ -410,6 +410,17 @@
       "default": null
     },
     {
+      "name": "f_videos",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "favie.data.interface.product.Video"
+        }
+      ],
+      "default": null
+    },
+    {
       "name": "f_brand",
       "type": [
         "null",
