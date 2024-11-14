@@ -47,6 +47,8 @@ class Price(BaseModel):
     value: Optional[int] = None
     currency: Optional[str] = None
     updates_at: Optional[str] = None
+    source_type: Optional[str] = None
+    parser_name: Optional[str] = None
 
 class Images(BaseModel):
     main_image: Optional[str] = None
@@ -77,11 +79,10 @@ class PlatformChoice(BaseModel):
     keywords: Optional[str] = None
     link: Optional[str] = None
 
-class DeliveryPrice(BaseModel):
-    raw: Optional[str] = None
-    currency: Optional[str] = None
-    value: Optional[int] = None
-    is_free: Optional[bool] = None
+class SellerRank(BaseModel):
+    category: Optional[str] = None
+    rank: Optional[int] = None
+    link: Optional[str] = None
 
 class Seller(BaseModel):
     name: Optional[str] = None
@@ -91,19 +92,10 @@ class Seller(BaseModel):
     ratings_total: Optional[int] = None
     postive_feedback_percent: Optional[float] = None
 
-class SellerRank(BaseModel):
-    category: Optional[str] = None
-    rank: Optional[int] = None
-    link: Optional[str] = None
-
 class Inventory(BaseModel):
     status: Optional[str] = None
     quantity_available: Optional[int] = None
     quantity_sold: Optional[int] = None
-
-class SearchAliasItem(BaseModel):
-    title: Optional[str] = None
-    value: Optional[str] = None
 
 class Deal(BaseModel):
     deal_id: Optional[str] = None
@@ -122,22 +114,6 @@ class Deal(BaseModel):
     free_shipping: Optional[bool] = None
     is_map: Optional[bool] = None
     description: Optional[str] = None
-
-class Shipping(BaseModel):
-    price: Optional[DeliveryPrice] = None
-    service: Optional[str] = None
-    ships_to: Optional[str] = None
-    location: Optional[str] = None
-    state: Optional[str] = None
-    city: Optional[str] = None
-    zipcode: Optional[str] = None
-    store_id: Optional[str] = None
-    delivery_estimate: Optional[str] = None
-
-class Fulfillment(BaseModel):
-    pickup: Optional[bool] = None
-    delivery_from_store: Optional[bool] = None
-    shipping: Optional[bool] = None
 
 class ReturnPolicy(BaseModel):
     returns_accepted: Optional[bool] = None
@@ -164,7 +140,7 @@ class SimpleProduct(BaseModel):
     link: Optional[str] = None
     price: Optional[Price] = None
     images: Optional[Images] = None
-    attributes: Optional[List[AttributeItem]] = None
+    dimensions: Optional[List[AttributeItem]] = None
 
 class Promotion(BaseModel):
     why_buy: Optional[List[str]] = None
@@ -208,12 +184,10 @@ class FavieProductReview(BaseModel):
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None
 
-class StandardAttributes(BaseModel):
+class ExtendedInfo(BaseModel):
     is_used: Optional[bool] = None
     is_bundle: Optional[bool] = None
     is_auction: Optional[bool] = None
-    is_member: Optional[bool] = None
-    is_member_exclusive_deal: Optional[bool] = None
     has_coupon: Optional[bool] = None
     coupon_text: Optional[str] = None
     is_preorder: Optional[bool] = None
@@ -225,12 +199,6 @@ class StandardAttributes(BaseModel):
     product_model_number: Optional[str] = None
     platform_choice: Optional[PlatformChoice] = None
     last_month_sell_amount: Optional[int] = None
-
-class Delivery(BaseModel):
-    fulfilled_by_platform: Optional[bool] = None
-    countdown: Optional[str] = None
-    comments: Optional[str] = None
-    price: Optional[DeliveryPrice] = None
 
 class ReviewSummary(BaseModel):
     link: Optional[str] = None
@@ -246,19 +214,6 @@ class ReviewSummary(BaseModel):
     top_critical: Optional[str] = None
     f_updates_at: Optional[str] = None
 
-class Offer(BaseModel):
-    price: Optional[Price] = None
-    minimum_order_quantity: Optional[int] = None
-    maximum_order_quantity: Optional[int] = None
-    standard_attributes: Optional[StandardAttributes] = None
-    delivery: Optional[Delivery] = None
-    seller: Optional[Seller] = None
-    offer_id: Optional[str] = None
-    is_member: Optional[bool] = None
-    position: Optional[int] = None
-    buybox_winner: Optional[bool] = None
-    offer_sku_id: Optional[str] = None
-
 class FavieProductDetail(BaseModel):
     f_sku_id: Optional[str] = None
     f_spu_id: Optional[str] = None
@@ -268,7 +223,6 @@ class FavieProductDetail(BaseModel):
     request_sku_id: Optional[str] = None
     title: Optional[str] = None
     link: Optional[str] = None
-    spu_title: Optional[str] = None
     sub_title: Optional[str] = None
     sub_title_link: Optional[str] = None
     shop_id: Optional[str] = None
@@ -280,6 +234,7 @@ class FavieProductDetail(BaseModel):
     rich_product_description: Optional[str] = None
     price: Optional[Price] = None
     rrp: Optional[Price] = None
+    f_historical_prices: Optional[List[Price]] = None
     historical_prices: Optional[List[Price]] = None
     f_status: Optional[str] = None
     images: Optional[Images] = None
@@ -287,21 +242,19 @@ class FavieProductDetail(BaseModel):
     f_categories: Optional[List[CategoryItem]] = None
     categories: Optional[List[CategoryItem]] = None
     videos: Optional[List[Video]] = None
+    f_videos: Optional[List[Video]] = None
     f_brand: Optional[Brand] = None
     brand: Optional[Brand] = None
     feature_bullets: Optional[List[str]] = None
     attributes: Optional[List[AttributeItem]] = None
     specifications: Optional[List[AttributeItem]] = None
-    standard_attributes: Optional[StandardAttributes] = None
-    offers: Optional[List[Offer]] = None
+    extended_info: Optional[ExtendedInfo] = None
+    standard_attributes: Optional[ExtendedInfo] = None
     best_seller_rank: Optional[List[SellerRank]] = None
     seller: Optional[Seller] = None
     inventory: Optional[Inventory] = None
     keywords: Optional[str] = None
-    search_alias: Optional[SearchAliasItem] = None
     deal: Optional[Deal] = None
-    shipping: Optional[Shipping] = None
-    fulfillment: Optional[Fulfillment] = None
     returns_policy: Optional[ReturnPolicy] = None
     review_summary: Optional[ReviewSummary] = None
     variants: Optional[List[SimpleProduct]] = None

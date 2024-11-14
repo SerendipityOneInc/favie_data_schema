@@ -543,6 +543,10 @@
 					"value": "Silver"
 				},
 				{
+					"name": "Color",
+					"value": "Red"
+				},
+				{
 					"name": "Material",
 					"value": "Steel"
 				},
@@ -615,7 +619,7 @@
 			"attributes": [
 				{
 					"name": "Color",
-					"value": "Silver"
+					"value": "black"
 				},
 				{
 					"name": "Material",

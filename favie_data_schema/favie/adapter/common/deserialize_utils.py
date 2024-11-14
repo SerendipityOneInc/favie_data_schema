@@ -9,6 +9,8 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_revie
 
 
 class DeserializeUtils:
+    new_webpage_parser_names = ["InstagramPostListParser", "ContentPWParser"]
+
     @staticmethod
     def deserialize_rainforest_product_review(data: str) -> RainforestProductReview:
         try:
@@ -38,7 +40,7 @@ class DeserializeUtils:
             if not message_dict:
                 return None
             parser_name = message_dict.get("parser_name")
-            if "InstagramPostListParser" == parser_name:
+            if parser_name in DeserializeUtils.new_webpage_parser_names:
                 return StarkNewWebpageMessage(**message_dict)
             else:
                 return StarkWebpageMessage(**message_dict)

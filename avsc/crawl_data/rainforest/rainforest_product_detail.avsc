@@ -228,7 +228,6 @@
                                                 "name": "dimensions",
                                                 "type": [
                                                     "null",
-                                                    "string",
                                                     {
                                                         "type": "array",
                                                         "items": {

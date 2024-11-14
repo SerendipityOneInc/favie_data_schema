@@ -97,7 +97,7 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
 
 def main():
     amazon_message = read_object(
-        "/Users/maruzhao/Documents/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_product_detail_message.json",
+        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/bug.json",
         StarkProductDetailMessage,
     )
     favie_product: FavieProductDetail = StarkProductDetailAdapter.stark_detail_to_favie_detail(amazon_message)

@@ -8,6 +8,8 @@
     { "name": "upper_value", "type": ["null", "long"], "default": null },
     { "name": "value", "type": ["null", "long"], "default": null },
     { "name": "currency", "type": ["null", "string"], "default": null },
-    { "name": "updates_at", "type": ["null", "string"], "default": null }
+    { "name": "updates_at", "type": ["null", "string"], "default": null },
+    { "name": "source_type", "type": ["null", "string"], "default": null },
+    { "name": "parser_name", "type": ["null", "string"], "default": null }
   ]
 }

@@ -12,7 +12,6 @@
     { "name": "request_sku_id", "type": ["null", "string"], "default": null },
     { "name": "title", "type": ["null", "string"], "default": null },
     { "name": "link", "type": ["null", "string"], "default": null },
-    { "name": "spu_title", "type": ["null", "string"], "default": null },
     { "name": "sub_title", "type": ["null", "string"], "default": null },
     { "name": "sub_title_link", "type": ["null", "string"], "default": null },
     { "name": "shop_id","type":["null","string"],"default":null},
@@ -24,6 +23,11 @@
     { "name": "rich_product_description", "type": ["null", "string"], "default": null },
     { "name": "price","type": ["null", "favie.data.interface.product.Price"],"default": null},
     { "name": "rrp","type": ["null", "favie.data.interface.product.Price"],"default": null},
+    {
+      "name": "f_historical_prices",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.Price"}],
+      "default": null
+    },
     {
       "name": "historical_prices",
       "type": ["null", {"type": "array","items": "favie.data.interface.product.Price"}],
@@ -44,6 +48,11 @@
     },
     {
       "name": "videos",
+      "type": ["null", {"type": "array","items": "favie.data.interface.product.Video"}],
+      "default": null
+    },
+    {
+      "name": "f_videos",
       "type": ["null", {"type": "array","items": "favie.data.interface.product.Video"}],
       "default": null
     },
@@ -72,20 +81,13 @@
       "type": ["null", {"type": "array","items": "favie.data.interface.product.AttributeItem"}],
       "default": null
     },
-    {"name": "standard_attributes","type": ["null","favie.data.interface.product.StandardAttributes"],"default": null},
-    {
-      "name": "offers",
-      "type": ["null", {"type": "array","items": "favie.data.interface.product.Offer"}],
-      "default": null
-    },
+    {"name": "extended_info","type": ["null","favie.data.interface.product.ExtendedInfo"],"default": null},
+    {"name": "standard_attributes","type": ["null","favie.data.interface.product.ExtendedInfo"],"default": null},
     {"name":"best_seller_rank","type": ["null",{"type": "array","items": "favie.data.interface.product.SellerRank"}],"default": null},
     { "name": "seller", "type": ["null", "favie.data.interface.product.Seller"],"default": null},
     { "name": "inventory","type": ["null","favie.data.interface.product.Inventory"],"default": null},
     { "name": "keywords", "type": ["null", "string"], "default": null },
-    { "name": "search_alias","type": ["null","favie.data.interface.product.SearchAliasItem"],"default": null},
     { "name": "deal","type": ["null","favie.data.interface.product.Deal"],"default": null},
-    { "name": "shipping","type": ["null","favie.data.interface.product.Shipping"],"default": null},
-    {"name": "fulfillment","type": ["null", "favie.data.interface.product.Fulfillment"],"default": null},
     {"name": "returns_policy","type": ["null", "favie.data.interface.product.ReturnPolicy"],"default": null},
     {"name": "review_summary","type": ["null", "favie.data.interface.product.ReviewSummary"],"default": null},
     {
