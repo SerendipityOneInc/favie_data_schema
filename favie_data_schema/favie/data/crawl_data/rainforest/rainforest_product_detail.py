@@ -48,7 +48,7 @@ class Price(BaseModel):
 class Variants(BaseModel):
     asin: Optional[str] = None
     text: Optional[str] = None
-    dimensions: Optional[Union[str,List[Specifications]]] = None
+    dimensions: Optional[List[Specifications]] = None
     link: Optional[str] = None
     price: Optional[Price] = None
 
