@@ -25,7 +25,16 @@
     { "name": "rrp","type": ["null", "favie.data.interface.product.Price"],"default": null},
     {
       "name": "f_historical_prices",
-      "type": ["null", {"type": "array","items": "favie.data.interface.product.Price"}],
+      "type": [
+        "null", 
+        {
+          "type": "map", 
+          "values": {
+            "type": "array", 
+            "items": "favie.data.interface.product.Price"
+          }
+        }
+      ],
       "default": null
     },
     {

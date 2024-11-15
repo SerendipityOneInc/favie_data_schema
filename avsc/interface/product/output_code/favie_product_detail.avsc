@@ -224,8 +224,11 @@
       "type": [
         "null",
         {
-          "type": "array",
-          "items": "favie.data.interface.product.Price"
+          "type": "map",
+          "values": {
+            "type": "array",
+            "items": "favie.data.interface.product.Price"
+          }
         }
       ],
       "default": null
