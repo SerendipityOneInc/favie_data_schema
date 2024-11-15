@@ -1,22 +1,17 @@
-from typing import List, Optional
-
-from pydantic import BaseModel
-
+from typing import List, Optional, Dict
+from pydantic import BaseModel, Field
 
 class Category(BaseModel):
     name: Optional[str] = None
     id: Optional[str] = None
 
-
 class Bestseller(BaseModel):
     link: Optional[str] = None
     category: Optional[str] = None
 
-
 class Deal(BaseModel):
     link: Optional[str] = None
     badge_text: Optional[str] = None
-
 
 class Price(BaseModel):
     symbol: Optional[str] = None
@@ -26,7 +21,6 @@ class Price(BaseModel):
     name: Optional[str] = None
     is_primary: Optional[bool] = None
     is_rrp: Optional[bool] = None
-
 
 class AmazonListCrawlResult(BaseModel):
     position: Optional[int] = None
@@ -43,3 +37,4 @@ class AmazonListCrawlResult(BaseModel):
     ratings_total: Optional[int] = None
     prices: Optional[List[Price]] = None
     price: Optional[Price] = None
+
