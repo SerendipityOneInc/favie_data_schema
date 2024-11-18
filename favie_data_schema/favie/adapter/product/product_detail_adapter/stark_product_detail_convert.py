@@ -209,10 +209,6 @@ class StarkProductDetailConvert:
                     extended_info.is_marketplace_item = (
                         message.crawl_result.product.buybox_winner.fulfillment.is_sold_by_third_party
                     )
-                # extended_info.is_member = message.crawl_result.product.buybox_winner.is_prime
-                # extended_info.is_member_exclusive_deal = (
-                #     message.crawl_result.product.buybox_winner.is_prime_exclusive_deal
-                # )
             return extended_info
         except Exception:
             logging.warning("get_standard_attributes error: %s-%s", message.product_id, message.host)
