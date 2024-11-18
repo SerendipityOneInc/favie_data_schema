@@ -3,7 +3,7 @@ import json
 import logging
 import os
 from pathlib import Path
-from typing import Dict, ForwardRef, List, Optional, Union, get_args, get_origin
+from typing import ForwardRef, List, Optional, Union, get_args, get_origin
 
 from pydantic import BaseModel, Field
 
@@ -26,9 +26,6 @@ def parse_avro_type(avro_type, known_types):
     elif isinstance(avro_type, dict):
         if avro_type["type"] == "array":
             return List[parse_avro_type(avro_type["items"], known_types)]
-        elif avro_type["type"] == "map":
-            # 支持 map 类型
-            return Dict[str, parse_avro_type(avro_type["values"], known_types)]
         elif avro_type["type"] == "record":
             full_name = f"{avro_type.get('namespace', '')}.{avro_type['name']}".strip(".")
             return known_types.get(full_name, full_name)
@@ -127,19 +124,13 @@ def avro_to_pydantic(avro_schema, models, known_types):
     parse_schema(avro_schema)
 
 
-# 判断类型是否是 List
+# 判断类型是否是List
 def is_type_of_list(data_type: type):
     origin_type = get_origin(data_type)
     return origin_type == list or origin_type == List
 
 
-# 判断类型是否是 Dict（map 类型）
-def is_type_of_dict(data_type: type):
-    origin_type = get_origin(data_type)
-    return origin_type == dict or origin_type == Dict
-
-
-# 获取 Pydantic 类型字符串
+# 获取pydantic类型字符串
 def get_pydantic_type_str(optional_type, with_optional: bool = False):
     if hasattr(optional_type, "__origin__") and optional_type.__origin__ is Union:
         args = optional_type.__args__
@@ -147,8 +138,6 @@ def get_pydantic_type_str(optional_type, with_optional: bool = False):
         if native_types:
             native_type = native_types[0]
             if is_type_of_list(native_type):
-                return get_pydantic_type_str(native_type, True)
-            elif is_type_of_dict(native_type):  # 处理 Dict (map) 类型
                 return get_pydantic_type_str(native_type, True)
             else:
                 pydantic_type = get_native_type_str(native_types[0]).split(".")[-1]
@@ -161,16 +150,6 @@ def get_pydantic_type_str(optional_type, with_optional: bool = False):
         else:
             pydantic_type = get_native_type_str(item_type).split(".")[-1]
         return f"Optional[List[{pydantic_type}]]" if with_optional else f"List[{pydantic_type}]"
-
-    if is_type_of_dict(optional_type):
-        key_type, value_type = get_args(optional_type)
-        key_type_str = get_native_type_str(key_type).split(".")[-1]
-        value_type_str = get_pydantic_type_str(value_type)
-        return (
-            f"Optional[Dict[{key_type_str}, {value_type_str}]]"
-            if with_optional
-            else f"Dict[{key_type_str}, {value_type_str}]"
-        )
 
     return optional_type
 
@@ -187,9 +166,9 @@ def read_schema(file_path):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Avro to Pydantic with references.")
-    parser.add_argument("--avsc", type=str, required=False, help="Avro schema file.")
-    parser.add_argument("--avsc-dir", type=str, required=False, help="Avro schema directory.")
+    parser = argparse.ArgumentParser(description="Avro to pydantic with references.")
+    parser.add_argument("--avsc", type=str, required=False, help="avro schema file.")
+    parser.add_argument("--avsc-dir", type=str, required=False, help="avro schema dir.")
     parser.add_argument(
         "--output-file",
         type=str,
@@ -199,6 +178,8 @@ def main():
 
     args = parser.parse_args()
 
+    # with open(f"{args.avsc}", "r") as f:
+    #     avro_schema = json.load(f)
     avsc_files = args.avsc.split(",") if args.avsc else []
     dir_files = [f.resolve() for f in Path(args.avsc_dir).iterdir() if f.is_file()] if args.avsc_dir else []
 
@@ -206,7 +187,7 @@ def main():
     dependencies = {}
     known_types = {}
     models = {}
-
+    # known_types = {}
     for avsc_file in avsc_files + dir_files:
         avro_schema = read_schema(avsc_file)
         avro_to_pydantic(avro_schema, models, known_types)
@@ -216,9 +197,10 @@ def main():
     sorted_classes = topological_sort(dependencies)
 
     # Step 3: Parse schema and generate models
+
     os.makedirs(os.path.dirname(args.output_file), exist_ok=True)
     with open(f"{args.output_file}", "w") as f:
-        f.write("from typing import List, Optional, Dict\n")
+        f.write("from typing import List, Optional\n")
         f.write("from pydantic import BaseModel, Field\n\n")
 
         # Write class definitions in sorted order

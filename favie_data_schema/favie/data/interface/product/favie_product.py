@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Dict
 from pydantic import BaseModel, Field
 
 class MetaInfo(BaseModel):
@@ -234,8 +234,8 @@ class FavieProductDetail(BaseModel):
     rich_product_description: Optional[str] = None
     price: Optional[Price] = None
     rrp: Optional[Price] = None
-    f_historical_prices: Optional[List[Price]] = None
-    historical_prices: Optional[List[Price]] = None
+    f_historical_prices: Optional[Dict[str, List[Price]]] = None
+    historical_prices: Optional[Dict[str, List[Price]]] = None
     f_tags: Optional[List[str]] = None
     f_status: Optional[str] = None
     images: Optional[Images] = None
