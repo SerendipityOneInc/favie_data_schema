@@ -28,12 +28,9 @@
       "type": [
         "null", 
         {
-          "type": "map", 
-          "values": {
             "type": "array", 
             "items": "favie.data.interface.product.Price"
-          }
-        }
+        }  
       ],
       "default": null
     },
@@ -41,11 +38,8 @@
       "name": "historical_prices",
       "type": ["null",         
         {
-          "type": "map", 
-          "values": {
             "type": "array", 
             "items": "favie.data.interface.product.Price"
-          }
         }],
       "default": null
     },
