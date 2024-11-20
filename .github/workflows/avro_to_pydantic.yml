@@ -16,34 +16,34 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.10'
+      # - name: Set up Python
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: '3.10'
 
-      - name: Install pydantic-avro
-        run: pip install lxml python-dateutil pydantic-avro jq poetry git+https://github.com/SerendipityOneInc/favie-data-common@0.0.1
+      # - name: Install pydantic-avro
+      #   run: pip install lxml python-dateutil pydantic-avro jq poetry git+https://github.com/SerendipityOneInc/favie-data-common@0.0.1
       
-      - name: Install dependencies
-        run: |
-          poetry update
+      # - name: Install dependencies
+      #   run: |
+      #     poetry update
       
-      - name: Generate Pydantic models
-        run: |
-          for file in $(find avsc/crawl_data -name '*.avsc'); do
-            model_name=$(basename "$file" .avsc)
-            namespace_dir=$(jq -r '.namespace' "$file" | tr '.' '/')
-            mkdir -p "$namespace_dir"
-            pydantic-avro avro_to_pydantic --asvc "$file" --output "favie_data_schema/${namespace_dir}/${model_name}.py"
-          done
+      # - name: Generate Pydantic models
+      #   run: |
+      #     for file in $(find avsc/crawl_data -name '*.avsc'); do
+      #       model_name=$(basename "$file" .avsc)
+      #       namespace_dir=$(jq -r '.namespace' "$file" | tr '.' '/')
+      #       mkdir -p "$namespace_dir"
+      #       pydantic-avro avro_to_pydantic --asvc "$file" --output "favie_data_schema/${namespace_dir}/${model_name}.py"
+      #     done
       
-      - name: Generate Product models
-        run: |
-          sh convert.sh
+      # - name: Generate Product models
+      #   run: |
+      #     sh convert.sh
       
-      - name: Commit and Push Generated Models
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Auto-generate Pydantic models from AVSC"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}
+      # - name: Commit and Push Generated Models
+      #   uses: stefanzweifel/git-auto-commit-action@v4
+      #   with:
+      #     commit_message: "Auto-generate Pydantic models from AVSC"
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}

@@ -44,6 +44,36 @@
       "default": null
     },
     {
+      "name": "f_images_tags",
+      "type": ["null",
+        {
+          "type": "map",  
+          "values": {
+            "type": "map", 
+            "values": {
+              "type": "string"  
+            }
+          }
+        }
+      ],
+      "default": null
+    }, 
+    {
+      "name": "f_images_bg_remove",
+      "type": ["null",
+        {
+          "type": "map",  
+          "values": {
+            "type": "map", 
+            "values": {
+              "type": "string"  
+            }
+          }
+        }
+      ],
+      "default": null
+    },      
+    {
       "name": "f_tags",
       "type": ["null", {"type": "array","items": "string"}],
       "default": null
