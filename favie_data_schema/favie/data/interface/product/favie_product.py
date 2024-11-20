@@ -1,4 +1,4 @@
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional
 
 from pydantic import BaseModel
 
@@ -259,8 +259,8 @@ class FavieProductDetail(BaseModel):
     rrp: Optional[Price] = None
     f_historical_prices: Optional[List[Price]] = None
     historical_prices: Optional[List[Price]] = None
-    f_images_tags: Optional[Dict[str, Dict[str, any]]] = None
-    f_images_bg_remove: Optional[Dict[str, Dict[str, any]]] = None
+    f_images_tags: Optional[Dict[str, Dict[str, Any]]] = None
+    f_images_bg_remove: Optional[Dict[str, Dict[str, Any]]] = None
     f_tags: Optional[List[str]] = None
     f_status: Optional[str] = None
     images: Optional[Images] = None
