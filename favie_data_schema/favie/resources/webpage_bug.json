@@ -5,6 +5,7 @@
 	"product_title": null,
 	"content_type": "webpage",
 	"source": 4,
+	"version": "1.0",
 	"parser_name": "ContentPWParser",
 	"spider": "ContentPWParser",
 	"raw_result": "",
