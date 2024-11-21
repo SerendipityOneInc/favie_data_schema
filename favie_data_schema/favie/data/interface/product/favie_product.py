@@ -165,6 +165,7 @@ class FavieProductReviewSummary(BaseModel):
     top_reviews: Optional[List[str]] = None
     top_favourable: Optional[str] = None
     top_critical: Optional[str] = None
+    f_status: Optional[str] = None
     f_updates_at: Optional[str] = None
     f_meta: Optional[MetaInfo] = None
     f_creates_at: Optional[str] = None
@@ -200,6 +201,7 @@ class FavieProductReview(BaseModel):
     unhelpful_votes: Optional[int] = None
     stark_tag: Optional[int] = None
     stark_tags: Optional[List[int]] = None
+    f_status: Optional[str] = None
     f_meta: Optional[MetaInfo] = None
     f_updates_at: Optional[str] = None
     f_creates_at: Optional[str] = None

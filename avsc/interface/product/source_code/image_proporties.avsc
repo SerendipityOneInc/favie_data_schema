@@ -1,0 +1,16 @@
+{
+  "namespace": "favie.data.interface.product",
+  "type": "record",
+  "name": "ImageProperties",
+  "doc": "Schema for representing image properties",
+  "fields": [
+    {"name": "is_white",         "type": ["null", "boolean"], "default": null},
+    {"name": "is_detail",        "type": ["null", "boolean"], "default": null},
+    {"name": "is_table",         "type": ["null", "boolean"], "default": null},
+    {"name": "is_overlap",       "type": ["null", "boolean"], "default": null},
+    {"name": "has_person",       "type": ["null", "boolean"], "default": null},
+    {"name": "image_bg_remove",  "type": ["null", "string"], "default": null},
+    {"name": "width",            "type": ["null", "int"], "default": null},
+    {"name": "height",           "type": ["null", "int"], "default": null}
+  ]
+}

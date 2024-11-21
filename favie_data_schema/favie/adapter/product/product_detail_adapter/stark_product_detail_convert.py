@@ -17,7 +17,6 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
 )
 from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
 from favie_data_schema.favie.data.interface.product.favie_product import *
-from favie_data_schema.favie.data.interface.product.product_enum import FavieProductDetailStatus
 
 
 class HashableAttributeItem(AttributeItem):
@@ -89,7 +88,6 @@ class StarkProductDetailConvert:
             data_type=str(MessageDataType.PRODUCT_DETAIL_CRAWLER.value),
             parses_at=parse_time,
         )
-        favie_product.f_status = FavieProductDetailStatus.SKU_NORMAL.name
         favie_product.shop_id = crawl_result.product.stark_shop.id if crawl_result.product.stark_shop else None
         favie_product.shop_name = crawl_result.product.stark_shop.name if crawl_result.product.stark_shop else None
         favie_product.shop_site = (

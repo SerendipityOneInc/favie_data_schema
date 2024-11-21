@@ -231,7 +231,7 @@ def test_favie_review_summary_to_product_review_summary():
 
 def test_stark_review_to_product_review():
     amazon_message = read_object(
-        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_product_review_message.json",
+        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/review_bug.json",
         StarkProductReviewMessage,
     )
     favie_reviews = StarkProductReviewAdapter.stark_review_to_favie_reviews(amazon_message)
