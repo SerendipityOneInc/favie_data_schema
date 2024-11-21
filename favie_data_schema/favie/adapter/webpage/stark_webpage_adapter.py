@@ -16,7 +16,7 @@ from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWe
 class StarkWebpageAdapter(FavieWebpageAdapter):
     @staticmethod
     def stark_webpage_to_favie_webpage(webpage_message: StarkWebpageMessage | StarkNewWebpageMessage) -> FavieWebpage:
-        if webpage_message.parser_name == "InstagramPostListParser":
+        if webpage_message.parser_name in DeserializeUtils.new_webpage_parser_names:
             return StarkWebpageAdapter.convert_webpage_new(webpage_message)
         else:
             return StarkWebpageAdapter.convert_webpage(webpage_message)
@@ -109,7 +109,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
 
 if __name__ == "__main__":
     webpage_message_str = read_file(
-        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_webpage_message_new.json"
+        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/webpage_bug.json"
     )
     webpage_message = DeserializeUtils.deserialize_webpage_message(webpage_message_str)
     webpage = StarkWebpageAdapter.stark_webpage_to_favie_webpage(webpage_message)
