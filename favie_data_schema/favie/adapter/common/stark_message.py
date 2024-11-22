@@ -23,6 +23,7 @@ class StarkMessage(BaseModel):
     create_time: Optional[str] = None
     update_time: Optional[str] = None
     mission: Optional[str] = None
+    version: Optional[str] = None
 
 
 class StarkProductDetailMessage(StarkMessage):

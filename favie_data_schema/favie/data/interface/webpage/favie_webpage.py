@@ -20,6 +20,15 @@ class ReferenceData(BaseModel):
     desc: Optional[str] = None
 
 
+class ProductData(BaseModel):
+    url: Optional[str] = None
+    title: Optional[str] = None
+    description: Optional[str] = None
+    price: Optional[str] = None
+    images: Optional[List[ImageData]] = None
+    videos: Optional[List[VideoData]] = None
+
+
 class MetaInfo(BaseModel):
     source_type: Optional[str] = None
     parser_name: Optional[str] = None
@@ -56,11 +65,13 @@ class FavieWebpage(BaseModel):
     videos: Optional[List[VideoData]] = None
     f_videos: Optional[List[VideoData]] = None
     references: Optional[List[ReferenceData]] = None
+    products: Optional[List[ProductData]] = None
     json_lds: Optional[List[str]] = None
     open_graphs: Optional[List[str]] = None
     twitter_cards: Optional[List[str]] = None
     page_type: Optional[str] = None
     f_status: Optional[str] = None
+    ext_data: Optional[str] = None
     f_meta: Optional[MetaInfo] = None
     create_time: Optional[str] = None
     update_time: Optional[str] = None

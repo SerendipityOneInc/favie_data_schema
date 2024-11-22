@@ -8,18 +8,20 @@ from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMess
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 from favie_data_schema.favie.adapter.webpage.common.favie_webpage_adapter import FavieWebpageAdapter
 from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import ParsedWebPageContent
-from favie_data_schema.favie.data.crawl_data.crawler.stark_webpage import WebpageImage
+from favie_data_schema.favie.data.crawl_data.crawler.stark_webpage import WebpageImage, WebpageVideo, WebpageProduct, WebpageReference
 from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
-from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage, ImageData, MetaInfo
+from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage, ImageData, VideoData, ProductData, ReferenceData, MetaInfo
 
 
 class StarkWebpageAdapter(FavieWebpageAdapter):
     @staticmethod
-    def stark_webpage_to_favie_webpage(webpage_message: StarkWebpageMessage | StarkNewWebpageMessage) -> FavieWebpage:
-        if webpage_message.parser_name == "InstagramPostListParser":
+    def stark_webpage_to_favie_webpage(webpage_message) -> FavieWebpage:
+        if isinstance(webpage_message, StarkNewWebpageMessage):
             return StarkWebpageAdapter.convert_webpage_new(webpage_message)
-        else:
+        elif isinstance(webpage_message, StarkWebpageMessage):
             return StarkWebpageAdapter.convert_webpage(webpage_message)
+        else:
+            return None
 
     @staticmethod
     def convert_webpage(webpage_message: StarkWebpageMessage) -> FavieWebpage:
@@ -63,24 +65,26 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
         webpage = FavieWebpage()
         webpage.md5_id = CommonUtils.md5_hash(webpage_message.crawl_result.url)
         webpage.url = webpage_message.crawl_result.url
-        webpage.favicon = None
-        webpage.language = None
+        webpage.favicon = webpage_message.crawl_result.favicon
+        webpage.language = webpage_message.crawl_result.language
         webpage.title = webpage_message.crawl_result.title
         webpage.description = webpage_message.crawl_result.description
         webpage.author = webpage_message.crawl_result.author
         webpage.keywords = webpage_message.crawl_result.keywords
-        webpage.robots = None
-        webpage.content = None
+        webpage.robots = webpage_message.crawl_result.robots
+        webpage.content = webpage_message.crawl_result.content
         webpage.content_type = webpage_message.content_type
-        webpage.excerpt = None
-        webpage.comments = None
-        webpage.subtitles = None
+        webpage.excerpt = webpage_message.crawl_result.excerpt
+        webpage.comments = webpage_message.crawl_result.comments
+        webpage.subtitles = webpage_message.crawl_result.subtitles
         webpage.images = StarkWebpageAdapter.__get_images_new(webpage_message.crawl_result.images)
-        webpage.videos = None
-        webpage.references = None
-        webpage.json_lds = None
-        webpage.open_graphs = None
-        webpage.twitter_cards = None
+        webpage.videos = StarkWebpageAdapter.__get_videos_new(webpage_message.crawl_result.videos)
+        webpage.references = StarkWebpageAdapter.__get_references_new(webpage_message.crawl_result.references)
+        webpage.json_lds = webpage_message.crawl_result.json_lds
+        webpage.open_graphs = webpage_message.crawl_result.open_graphs
+        webpage.twitter_cards = webpage_message.crawl_result.twitter_cards
+        webpage.products = StarkWebpageAdapter.__get_products_new(webpage_message.crawl_result.products)
+        webpage.ext_data = webpage_message.crawl_result.ext_data
         webpage.page_type = webpage_message.crawl_result.page_type
         webpage.f_meta = MetaInfo(
             source_type=str(webpage_message.source),
@@ -105,11 +109,47 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
             if images
             else None
         )
+    
+    @staticmethod
+    def __get_videos_new(videos: List[WebpageVideo]):
+        return (
+            [
+                VideoData(url=video.url, desc=video.desc)
+                for video in videos
+                if video
+            ]
+            if videos
+            else None
+        )
+    
+    @staticmethod
+    def __get_products_new(products: List[WebpageProduct]):
+        return (
+            [
+                ProductData(url=product.url, title=product.title, description=product.description, price=product.price, images=StarkWebpageAdapter.__get_images_new(product.images), videos=StarkWebpageAdapter.__get_videos_new(product.videos))
+                for product in products
+                if product
+            ]
+            if products
+            else None
+        )
+    
+    @staticmethod
+    def __get_references_new(references: List[WebpageReference]):
+        return (
+            [
+                ReferenceData(url=reference.url, desc=reference.desc)
+                for reference in references
+                if reference
+            ]
+            if references
+            else None
+        )
 
 
 if __name__ == "__main__":
     webpage_message_str = read_file(
-        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_webpage_message_new.json"
+        "./favie_data_schema/favie/resources/webpage_bug.json"
     )
     webpage_message = DeserializeUtils.deserialize_webpage_message(webpage_message_str)
     webpage = StarkWebpageAdapter.stark_webpage_to_favie_webpage(webpage_message)
