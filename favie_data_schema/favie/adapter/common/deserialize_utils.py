@@ -10,6 +10,7 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_revie
 
 class DeserializeUtils:
     new_webpage_parser_names = ["InstagramPostListParser", "ContentPWParser"]
+    new_webpage_version = "1.0"
 
     @staticmethod
     def deserialize_rainforest_product_review(data: str) -> RainforestProductReview:
@@ -39,8 +40,8 @@ class DeserializeUtils:
             message_dict = json.loads(data)
             if not message_dict:
                 return None
-            parser_name = message_dict.get("parser_name")
-            if parser_name in DeserializeUtils.new_webpage_parser_names:
+            version = message_dict.get("version")
+            if version and version == DeserializeUtils.new_webpage_version:
                 return StarkNewWebpageMessage(**message_dict)
             else:
                 return StarkWebpageMessage(**message_dict)
