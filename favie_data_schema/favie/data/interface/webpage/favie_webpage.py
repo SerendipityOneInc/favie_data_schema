@@ -40,7 +40,7 @@ class MetaInfo(BaseModel):
     source_5_updates_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
     data_type: Optional[str] = None
-    fail_messages: Optional[str] = None
+    fail_messages: Optional[dict[str, str]] = None
 
 
 class FavieWebpage(BaseModel):
