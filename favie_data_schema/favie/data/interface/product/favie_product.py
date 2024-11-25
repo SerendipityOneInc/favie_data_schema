@@ -18,7 +18,8 @@ class MetaInfo(BaseModel):
     source_3_updates_at: Optional[str] = None
     source_4_updates_at: Optional[str] = None
     source_5_updates_at: Optional[str] = None
-    fail_messages: Optional[dict[str, str]] = None
+    err_code: Optional[str] = None
+    err_messages: Optional[List[str]] = None
 
 
 class FavieCategoriesPredictResponse(BaseModel):
