@@ -262,6 +262,7 @@ class FavieProductDetail(BaseModel):
     f_images_tags: Optional[Dict[str, Dict[str, Any]]] = None
     f_images_bg_remove: Optional[Dict[str, Dict[str, Any]]] = None
     f_tags: Optional[List[str]] = None
+    f_cate_tags: Optional[str] = None
     f_status: Optional[str] = None
     images: Optional[Images] = None
     f_images: Optional[Images] = None
