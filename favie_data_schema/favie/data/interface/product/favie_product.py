@@ -18,7 +18,7 @@ class MetaInfo(BaseModel):
     source_3_updates_at: Optional[str] = None
     source_4_updates_at: Optional[str] = None
     source_5_updates_at: Optional[str] = None
-    err_code: Optional[str] = None
+    err_code: Optional[int] = None
     err_messages: Optional[List[str]] = None
 
 

@@ -40,7 +40,7 @@ class MetaInfo(BaseModel):
     source_5_updates_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
     data_type: Optional[str] = None
-    err_code: Optional[str] = None
+    err_code: Optional[int] = None
     err_messages: Optional[List[str]] = None
 
 
