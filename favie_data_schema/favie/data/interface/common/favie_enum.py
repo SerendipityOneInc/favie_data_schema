@@ -25,6 +25,7 @@ class MessageDataType(IntEnum):
 class FavieDataStatus(IntEnum):
     NORMAL = 0
     DELETED = 1
+    INTERCEPTED = 2
 
 
 class CategoriesMapType(IntEnum):
