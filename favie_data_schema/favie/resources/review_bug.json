@@ -1,0 +1,60 @@
+{
+	"url": "https://api.rainforestapi.com/request?api_key=7C0324A46D2644F6AF26ABA9E6F3F602&type=reviews_v2&amazon_domain=amazon.com&asin=B0BC942Q5J",
+	"host": "www.amazon.com",
+	"product_id": "B0BC942Q5J",
+	"product_title": null,
+	"parser_name": "AmazonProductReviewRFParser",
+	"source": 3,
+	"raw_result": "",
+	"crawl_result": {
+		"request_info": {
+			"success": true,
+			"credits_used": 2578223,
+			"credits_used_this_request": 1,
+			"credits_remaining": 0,
+			"credits_reset_at": "2024-12-01T20:50:52.000Z"
+		},
+		"request_parameters": {
+			"amazon_domain": "amazon.com",
+			"asin": "B0BC942Q5J",
+			"type": "reviews_v2"
+		},
+		"request_metadata": {
+			"created_at": "2024-11-20T10:33:07.020Z",
+			"processed_at": "2024-11-20T10:33:07.699Z",
+			"total_time_taken": 0.68,
+			"amazon_url": "https://www.amazon.com/"
+		},
+		"product": {
+			"asin": "B0BC942Q5J"
+		},
+		"summary": null,
+		"reviews": [
+			{
+				"id": "RP5NDUJ5M703",
+				"title": "Looks nice and impress guests with tv hidden inside mirror.",
+				"body": "Overall good looking mirror. It is heavy and very sturdy. Tv is actually a tablet behind the mirror. Works as expected. Has decent range of apps loaded. Support for WiFi and hdmi etc is good.I reduced one star because the display started flickering hopelessly after a few months. This after not much use being in bathroom.However, the support was very responsive. Although the support team is in mainland China, they communicated on WhatsApp and email to resolve the issue and promptly shipped replacement power supply. Thanks for good support!Cons-The display could be brighter. It is good when bathroom lights are dimmed. Perhaps this is expected with any tv.The soft floating switch icon on display usually disappears and has to be turned on using menu in tablet. If not using the mirror lights, this is non-issue.",
+				"asin": "B0BC942Q5J",
+				"body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">\n\n\n\n\n\n\n\n  \n  \n    <span>Overall good looking mirror. It is heavy and very sturdy. Tv is actually a tablet behind the mirror. Works as expected. Has decent range of apps loaded. Support for WiFi and hdmi etc is good.<br><br>I reduced one star because the display started flickering hopelessly after a few months. This after not much use being in bathroom.<br>However, the support was very responsive. Although the support team is in mainland China, they communicated on WhatsApp and email to resolve the issue and promptly shipped replacement power supply. Thanks for good support!<br><br>Cons-<br>The display could be brighter. It is good when bathroom lights are dimmed. Perhaps this is expected with any tv.<br>The soft floating switch icon on display usually disappears and has to be turned on using menu in tablet. If not using the mirror lights, this is non-issue.</span>\n  \n</div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+				"link": "https://amazon.com/gp/customer-reviews/RP5NDUJ5M703/ref=cm_cr_othr_d_rvw_ttl?ie=UTF8&ASIN=B0BC942Q5J",
+				"stark_tag": null,
+				"images": null,
+				"attributes": null,
+				"rating": 4,
+				"date": null,
+				"profile": null,
+				"vine_program": null,
+				"verified_purchase": true,
+				"review_country": null,
+				"is_global_review": null,
+				"position": null,
+				"helpful_votes": null
+			}
+		],
+		"pagination": null
+	},
+	"task_id": 26560,
+	"create_time": "2024-11-20T10:33:07.752028+00:00",
+	"update_time": "2024-11-20T10:33:07.752032+00:00",
+	"_id": "d5959dfca72a11efa5c63ef18a66de37"
+}

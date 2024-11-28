@@ -19,3 +19,15 @@ class MessageDataType(IntEnum):
     PRODUCT_REVIEW_IMAGE_CRAWLER = 6
     WEBPAGE_CONTENT_CRAWLER = 7
     WEBPAGE_IMAGE_CRAWLER = 8
+    DATA_DELETE_MARK = 9
+
+
+class FavieDataStatus(IntEnum):
+    NORMAL = 0
+    DELETED = 1
+    INTERCEPTED = 2
+
+
+class CategoriesMapType(IntEnum):
+    MAP = 0
+    PREDICT = 1

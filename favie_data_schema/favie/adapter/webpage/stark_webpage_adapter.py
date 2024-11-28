@@ -8,9 +8,21 @@ from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMess
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 from favie_data_schema.favie.adapter.webpage.common.favie_webpage_adapter import FavieWebpageAdapter
 from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import ParsedWebPageContent
-from favie_data_schema.favie.data.crawl_data.crawler.stark_webpage import WebpageImage, WebpageVideo, WebpageProduct, WebpageReference
+from favie_data_schema.favie.data.crawl_data.crawler.stark_webpage import (
+    WebpageImage,
+    WebpageProduct,
+    WebpageReference,
+    WebpageVideo,
+)
 from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
-from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage, ImageData, VideoData, ProductData, ReferenceData, MetaInfo
+from favie_data_schema.favie.data.interface.webpage.favie_webpage import (
+    FavieWebpage,
+    ImageData,
+    MetaInfo,
+    ProductData,
+    ReferenceData,
+    VideoData,
+)
 
 
 class StarkWebpageAdapter(FavieWebpageAdapter):
@@ -109,48 +121,41 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
             if images
             else None
         )
-    
+
     @staticmethod
     def __get_videos_new(videos: List[WebpageVideo]):
-        return (
-            [
-                VideoData(url=video.url, desc=video.desc)
-                for video in videos
-                if video
-            ]
-            if videos
-            else None
-        )
-    
+        return [VideoData(url=video.url, desc=video.desc) for video in videos if video] if videos else None
+
     @staticmethod
     def __get_products_new(products: List[WebpageProduct]):
         return (
             [
-                ProductData(url=product.url, title=product.title, description=product.description, price=product.price, images=StarkWebpageAdapter.__get_images_new(product.images), videos=StarkWebpageAdapter.__get_videos_new(product.videos))
+                ProductData(
+                    url=product.url,
+                    title=product.title,
+                    description=product.description,
+                    price=product.price,
+                    images=StarkWebpageAdapter.__get_images_new(product.images),
+                    videos=StarkWebpageAdapter.__get_videos_new(product.videos),
+                )
                 for product in products
                 if product
             ]
             if products
             else None
         )
-    
+
     @staticmethod
     def __get_references_new(references: List[WebpageReference]):
         return (
-            [
-                ReferenceData(url=reference.url, desc=reference.desc)
-                for reference in references
-                if reference
-            ]
+            [ReferenceData(url=reference.url, desc=reference.desc) for reference in references if reference]
             if references
             else None
         )
 
 
 if __name__ == "__main__":
-    webpage_message_str = read_file(
-        "./favie_data_schema/favie/resources/webpage_bug.json"
-    )
+    webpage_message_str = read_file("./favie_data_schema/favie/resources/webpage_bug.json")
     webpage_message = DeserializeUtils.deserialize_webpage_message(webpage_message_str)
     webpage = StarkWebpageAdapter.stark_webpage_to_favie_webpage(webpage_message)
     if webpage:
