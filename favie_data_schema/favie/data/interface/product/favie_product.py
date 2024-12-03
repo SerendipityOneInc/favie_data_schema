@@ -2,7 +2,8 @@ from typing import Any, Dict, List, Optional
 
 from pydantic import BaseModel
 
-from favie_data_schema.favie.data.interface.common.favie_model import FavieTag, ImageItem, MetaInfo
+from favie_data_schema.favie.data.interface.common.favie_model import FavieTag, MetaInfo
+from favie_data_schema.favie.data.interface.media.favie_image_crawl import FavieImageItem
 
 
 class FavieCategoriesPredictResponse(BaseModel):
@@ -169,7 +170,7 @@ class FavieProductReview(BaseModel):
     link: Optional[str] = None
     images: Optional[List[str]] = None
     f_images: Optional[List[str]] = None
-    f_image_list: Optional[List[ImageItem]] = None
+    f_image_list: Optional[List[FavieImageItem]] = None
     f_system_tags: Optional[List[FavieTag]] = None
     videos: Optional[List[str]] = None
     f_videos: Optional[List[str]] = None
@@ -256,7 +257,7 @@ class FavieProductDetail(BaseModel):
     f_status: Optional[str] = None
     images: Optional[Images] = None
     f_images: Optional[Images] = None
-    f_image_list: Optional[List[ImageItem]] = None
+    f_image_list: Optional[List[FavieImageItem]] = None
     f_categories: Optional[List[CategoryItem]] = None
     categories: Optional[List[CategoryItem]] = None
     videos: Optional[List[Video]] = None

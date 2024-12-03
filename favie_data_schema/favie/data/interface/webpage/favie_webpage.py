@@ -2,7 +2,8 @@ from typing import List, Optional
 
 from pydantic import BaseModel
 
-from favie_data_schema.favie.data.interface.common.favie_model import FavieTag, ImageItem, MetaInfo
+from favie_data_schema.favie.data.interface.common.favie_model import FavieTag, MetaInfo
+from favie_data_schema.favie.data.interface.media.favie_image_crawl import FavieImageItem
 
 
 class ImageData(BaseModel):
@@ -51,7 +52,7 @@ class FavieWebpage(BaseModel):
     subtitles: Optional[List[str]] = None
     images: Optional[List[ImageData]] = None
     f_images: Optional[List[ImageData]] = None
-    f_image_list: Optional[List[ImageItem]] = None
+    f_image_list: Optional[List[FavieImageItem]] = None
     videos: Optional[List[VideoData]] = None
     f_videos: Optional[List[VideoData]] = None
     f_system_tags: Optional[List[FavieTag]] = None
