@@ -2,6 +2,8 @@ from typing import List, Optional
 
 from pydantic import BaseModel
 
+from favie_data_schema.favie.data.interface.common.favie_model import FavieTag, ImageItem, MetaInfo
+
 
 class ImageData(BaseModel):
     url: Optional[str] = None
@@ -29,21 +31,6 @@ class ProductData(BaseModel):
     videos: Optional[List[VideoData]] = None
 
 
-class MetaInfo(BaseModel):
-    source_type: Optional[str] = None
-    parser_name: Optional[str] = None
-    parses_at: Optional[str] = None
-    source_1_updates_at: Optional[str] = None
-    source_2_updates_at: Optional[str] = None
-    source_3_updates_at: Optional[str] = None
-    source_4_updates_at: Optional[str] = None
-    source_5_updates_at: Optional[str] = None
-    f_images_crawl_send_at: Optional[str] = None
-    data_type: Optional[str] = None
-    err_code: Optional[int] = None
-    err_messages: Optional[List[str]] = None
-
-
 class FavieWebpage(BaseModel):
     md5_id: Optional[str] = None
     url: Optional[str] = None
@@ -64,8 +51,10 @@ class FavieWebpage(BaseModel):
     subtitles: Optional[List[str]] = None
     images: Optional[List[ImageData]] = None
     f_images: Optional[List[ImageData]] = None
+    f_image_list: Optional[List[ImageItem]] = None
     videos: Optional[List[VideoData]] = None
     f_videos: Optional[List[VideoData]] = None
+    f_system_tags: Optional[List[FavieTag]] = None
     references: Optional[List[ReferenceData]] = None
     products: Optional[List[ProductData]] = None
     json_lds: Optional[List[str]] = None
