@@ -15,6 +15,7 @@ class FavieMediaImage(BaseModel):
     width: Optional[int] = None
     height: Optional[int] = None
     size: Optional[int] = None
+    size_type: Optional[str] = None
     category: Optional[str] = None
     source_type: Optional[int] = None
     source_id: Optional[str] = None

@@ -20,6 +20,7 @@ class FavieImageItem(BaseModel):
     width: Optional[int] = None
     height: Optional[int] = None
     size: Optional[int] = None
+    size_type: Optional[str] = None
     status: Optional[int] = None
 
 
