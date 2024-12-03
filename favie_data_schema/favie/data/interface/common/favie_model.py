@@ -8,6 +8,18 @@ class FavieTag(BaseModel):
     tag_name: Optional[str] = None
 
 
+class FavieImageItem(BaseModel):
+    link: Optional[str] = None
+    f_link: Optional[str] = None
+    format: Optional[str] = None
+    category: Optional[str] = None
+    width: Optional[int] = None
+    height: Optional[int] = None
+    size: Optional[int] = None
+    size_type: Optional[str] = None
+    status: Optional[int] = None
+
+
 class MetaInfo(BaseModel):
     source_type: Optional[str] = None
     parser_name: Optional[str] = None

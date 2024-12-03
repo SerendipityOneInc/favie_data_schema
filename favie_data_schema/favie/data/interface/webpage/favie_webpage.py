@@ -2,8 +2,7 @@ from typing import List, Optional
 
 from pydantic import BaseModel
 
-from favie_data_schema.favie.data.interface.common.favie_model import FavieTag, MetaInfo
-from favie_data_schema.favie.data.interface.media.favie_image_crawl import FavieImageItem
+from favie_data_schema.favie.data.interface.common.favie_model import FavieImageItem, FavieTag, MetaInfo
 
 
 class ImageData(BaseModel):

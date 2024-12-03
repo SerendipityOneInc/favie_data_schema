@@ -2,7 +2,7 @@ from typing import List, Optional
 
 from pydantic import BaseModel
 
-from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
+from favie_data_schema.favie.data.interface.common.favie_model import FavieImageItem, MetaInfo
 
 
 class RequestImageItem(BaseModel):
@@ -10,18 +10,6 @@ class RequestImageItem(BaseModel):
     site: Optional[str] = None
     link: Optional[str] = None
     text: Optional[str] = None
-
-
-class FavieImageItem(BaseModel):
-    link: Optional[str] = None
-    f_link: Optional[str] = None
-    format: Optional[str] = None
-    category: Optional[str] = None
-    width: Optional[int] = None
-    height: Optional[int] = None
-    size: Optional[int] = None
-    size_type: Optional[str] = None
-    status: Optional[int] = None
 
 
 class FavieImageCrawlResponse(BaseModel):
