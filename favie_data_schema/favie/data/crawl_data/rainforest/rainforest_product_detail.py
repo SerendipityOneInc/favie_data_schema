@@ -120,12 +120,19 @@ class Profile(BaseModel):
     id: Optional[str] = None
 
 
+class Attributes(BaseModel):
+    name: Optional[str] = None
+    value: Optional[str] = None
+
+
 class TopReviews(BaseModel):
     id: Optional[str] = None
     title: Optional[str] = None
     body: Optional[str] = None
     body_html: Optional[str] = None
     link: Optional[str] = None
+    stark_images: Optional[List[str]] = None
+    stark_attributes: Optional[List[Attributes]] = None
     rating: Optional[int] = None
     date: Optional[Date] = None
     profile: Optional[Profile] = None
@@ -260,11 +267,6 @@ class Services(BaseModel):
     title: Optional[str] = None
     price: Optional[Price] = None
     whats_included: Optional[List[str]] = None
-
-
-class Attributes(BaseModel):
-    name: Optional[str] = None
-    value: Optional[str] = None
 
 
 class Product(BaseModel):
