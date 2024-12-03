@@ -50,7 +50,13 @@ class StarkProductReviewConvert:
         favie_review.rating = review.rating
         favie_review.date_raw = review.date.raw if review.date is not None else None
         favie_review.date_utc = review.date.utc if review.date is not None else None
-        favie_review.images = None
+        favie_review.images = review.stark_images if review.stark_images is not None else None
+        if review.stark_attributes is not None:
+            favie_review.attributes = [
+                AttributeItem(name=x.name, value=x.value) for x in review.stark_attributes
+            ]
+        else:
+            favie_review.attributes = None
         favie_review.videos = None
         favie_review.f_meta = MetaInfo(
             source_type=str(source),

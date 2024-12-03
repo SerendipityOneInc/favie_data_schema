@@ -201,6 +201,7 @@ class FavieProductReview(BaseModel):
     position: Optional[int] = None
     helpful_votes: Optional[int] = None
     unhelpful_votes: Optional[int] = None
+    attributes: Optional[List[AttributeItem]] = None
     stark_tag: Optional[int] = None
     stark_tags: Optional[List[int]] = None
     f_status: Optional[str] = None
