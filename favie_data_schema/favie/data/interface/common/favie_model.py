@@ -25,14 +25,3 @@ class MetaInfo(BaseModel):
     source_5_updates_at: Optional[str] = None
     err_code: Optional[int] = None
     err_messages: Optional[List[str]] = None
-
-
-class ImageItem(BaseModel):
-    link: Optional[str] = None
-    f_link: Optional[str] = None
-    format: Optional[str] = None
-    is_main: Optional[bool] = None
-    width: Optional[int] = None
-    height: Optional[int] = None
-    size: Optional[int] = None
-    status: Optional[int] = None
