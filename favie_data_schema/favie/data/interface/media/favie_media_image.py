@@ -9,7 +9,7 @@ class FavieMediaImage(BaseModel):
     url: Optional[str] = None
     format: Optional[str] = None
     text: Optional[str] = None
-    mode: Optional[str] = None
+    color_mode: Optional[str] = None
     exif: Optional[Dict] = None
     frames: Optional[int] = None
     width: Optional[int] = None
