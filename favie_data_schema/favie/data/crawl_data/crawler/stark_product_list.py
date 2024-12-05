@@ -13,6 +13,10 @@ class Bestseller(BaseModel):
     category: Optional[str] = None
 
 
+class Images(BaseModel):
+    link: Optional[str] = None
+
+
 class Price(BaseModel):
     symbol: Optional[str] = None
     value: Optional[float] = None
@@ -49,6 +53,7 @@ class ProductListItem(BaseModel):
     link: Optional[str] = None
     categories: Optional[List[Category]] = None
     image: Optional[str] = None
+    images: Optional[List[Images]] = None
     rating: Optional[float] = None
     ratings_total: Optional[int] = None
     prices: Optional[List[Price]] = None  # only support rf api
