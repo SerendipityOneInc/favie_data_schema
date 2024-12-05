@@ -40,6 +40,7 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
                 parser_name=message.parser_name,
                 data_type=str(MessageDataType.PRODUCT_LIST_CRAWLER.value),
                 parses_at=parse_time,
+                app_key=message.app_key,
             )
             favie_product_list.append(favie_product)
         return favie_product_list if CommonUtils.list_len(favie_product_list) > 0 else None

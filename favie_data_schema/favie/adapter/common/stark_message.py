@@ -24,6 +24,7 @@ class StarkMessage(BaseModel):
     update_time: Optional[str] = None
     mission: Optional[str] = None
     version: Optional[str] = None
+    app_key: Optional[str] = None
 
 
 class StarkProductDetailMessage(StarkMessage):
@@ -40,6 +41,7 @@ class StarkProductListMessage(StarkMessage):
 
 class StarkWebpageMessage(StarkMessage):
     crawl_result: Optional[CrawlerResult] = None
+
 
 class StarkNewWebpageMessage(StarkMessage):
     crawl_result: Optional[WebpageItem] = None

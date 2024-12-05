@@ -26,6 +26,7 @@ class MetaInfo(BaseModel):
     parser_name: Optional[str] = None
     parses_at: Optional[str] = None
     data_type: Optional[str] = None
+    app_key: Optional[str] = None
     f_categories_update_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
     f_categories_map_type: Optional[int] = None

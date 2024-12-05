@@ -1,11 +1,6 @@
+from typing import List, Optional, Union
 
-from datetime import date, datetime, time
-from decimal import Decimal
-from enum import Enum
-from typing import List, Optional, Dict, Union
-from uuid import UUID
-
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 
 class RequestInfo(BaseModel):
@@ -292,9 +287,9 @@ class Product(BaseModel):
     brand: Optional[str] = None
     weight: Optional[str] = None
     shipping_weight: Optional[str] = None
-    first_available: Optional[Union[str,FirstAvailable]] = None
+    first_available: Optional[Union[str, FirstAvailable]] = None
     delivery_message: Optional[str] = None
-    dimensions: Optional[Union[str,List[Specifications]]] = None
+    dimensions: Optional[Union[str, List[Specifications]]] = None
     sub_title: Optional[SubTitle] = None
     rating: Optional[float] = None
     rating_breakdown: Optional[RatingBreakdown] = None

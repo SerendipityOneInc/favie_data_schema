@@ -87,6 +87,7 @@ class StarkProductDetailConvert:
             parser_name=f"{stark_detail_message.parser_name}-adapter",
             data_type=str(MessageDataType.PRODUCT_DETAIL_CRAWLER.value),
             parses_at=parse_time,
+            app_key=stark_detail_message.app_key,
         )
         favie_product.shop_id = crawl_result.product.stark_shop.id if crawl_result.product.stark_shop else None
         favie_product.shop_name = crawl_result.product.stark_shop.name if crawl_result.product.stark_shop else None

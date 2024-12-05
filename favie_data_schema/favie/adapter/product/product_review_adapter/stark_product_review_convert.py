@@ -20,7 +20,11 @@ class StarkProductReviewConvert:
         favie_reviews: List[FavieProductReview] = (
             [
                 StarkProductReviewConvert.__convert_to_favie_review(
-                    x, stark_detail_message.source, stark_detail_message.parser_name, parse_time
+                    x,
+                    stark_detail_message.source,
+                    stark_detail_message.parser_name,
+                    parse_time,
+                    stark_detail_message.app_key,
                 )
                 for x in reviews
                 if x is not None
@@ -30,7 +34,9 @@ class StarkProductReviewConvert:
         )
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
 
-    def __convert_to_favie_review(review: TopReviews, source, parser_name: str, parse_time: str) -> FavieProductReview:
+    def __convert_to_favie_review(
+        review: TopReviews, source, parser_name: str, parse_time: str, app_key: str
+    ) -> FavieProductReview:
         if review is None:
             return None
         favie_review = FavieProductReview()
@@ -57,6 +63,7 @@ class StarkProductReviewConvert:
             parser_name=f"{parser_name}-adapter",
             parses_at=parse_time,
             data_type=str(MessageDataType.PRODUCT_REVIEW_CRAWLER.value),
+            app_key=app_key,
         )
         return favie_review
 

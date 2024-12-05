@@ -19,6 +19,7 @@ class Price(BaseModel):
     updates_at: Optional[str] = None
     source_type: Optional[str] = None
     parser_name: Optional[str] = None
+    app_key: Optional[str] = None
 
 
 class Images(BaseModel):
