@@ -1,7 +1,7 @@
 import base64
 import unittest
 
-from favie_data_schema.api.data.product import *
+from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
 from favie_data_schema.favie.utils.log_util import compress_and_encode_html, decode_and_decompress_html, is_encoded_html
 from tests.read_json_util import read_object
 

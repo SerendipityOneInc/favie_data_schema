@@ -1,7 +1,7 @@
 import unittest
 
-from favie_data_schema.api.data.product import *
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
+from favie_data_schema.favie.data.interface.product.favie_product import RatingBreakdown, ReviewSummary
 
 
 class TestReviewSummaryCalculations(unittest.TestCase):

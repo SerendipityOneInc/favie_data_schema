@@ -4,8 +4,10 @@ from typing import List, Optional
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from favie_data_schema.api.data.product import *
 from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import ContentType
+from favie_data_schema.favie.data.interface.product.favie_product import ReviewSummary
+from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
+from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage
 
 
