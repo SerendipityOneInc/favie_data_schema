@@ -276,7 +276,6 @@ class StarkProductDetailConvert:
     def get_specifications(rainforest_product_detail: RainforestProductDetail):
         product = rainforest_product_detail.product
         specs = set(StarkProductDetailConvert.valid_attributes(product.specifications))
-        specs.update(StarkProductDetailConvert.valid_attributes(product.attributes))
         return list(specs) if specs else None
 
     @staticmethod
