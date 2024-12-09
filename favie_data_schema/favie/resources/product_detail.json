@@ -1,0 +1,60 @@
+{
+	"f_sku_id": "37438498668700-shop.app",
+	"f_spu_id": "6105975881884-shop.app",
+	"site": "shop.app",
+	"sku_id": "37438498668700",
+	"spu_id": "6105975881884",
+	"request_sku_id": "37438498668700",
+	"title": "Canvas Prints",
+	"link": "https://shop.app/products/6105975881884?variant=37438498668700",
+	"shop_id": "8n72am1feq",
+	"shop_name": "Ananse Creations",
+	"shop_site": "anansecreations.com",
+	"link_in_shop": "https://anansecreations.com/products/canvas-prints-2-b9d9fd51-ea28-46c1-bef6-7df30d037a7c",
+	"description": "",
+	"price": {
+		"value": 0,
+		"currency": "USD",
+		"updates_at": "1732678204",
+		"source_type": "1",
+		"parser_name": "ShopProductDetailParser"
+	},
+	"rrp": {
+		"value": 6000,
+		"currency": "USD",
+		"updates_at": "1732678204",
+		"source_type": "1",
+		"parser_name": "ShopProductDetailParser"
+	},
+	"f_historical_prices": {"USD":[
+		{
+			"value": 6000,
+			"currency": "USD",
+			"updates_at": "1732678204",
+			"source_type": "1",
+			"parser_name": "ShopProductDetailParser"
+		}
+	]},
+	"f_status": "0",
+	"images": {
+		"main_image": "https://cdn.shopify.com/s/files/1/0493/5965/0972/products/e3c44012dfb64dbab6b4e8574c3ae818.png?v=1610139187&format=webp",
+		"images": []
+	},
+	"extended_info": {},
+	"variants": [
+		{
+			"sku_id": "37438498668700",
+			"link": "https://shop.app/products/6105975881884?variant=37438498668700"
+		}
+	],
+	"f_updates_at": "1732678229",
+	"f_creates_at": "1732678229",
+	"f_meta": {
+		"source_type": "1",
+		"parser_name": "ShopProductDetailParser-adapter",
+		"parses_at": "1732678204",
+		"data_type": "1",
+		"f_images_crawl_send_at": "1732678229",
+		"source_1_updates_at": "1732678229"
+	}
+}

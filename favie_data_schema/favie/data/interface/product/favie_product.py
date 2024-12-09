@@ -1,3 +1,4 @@
+import logging
 from typing import Any, Dict, List, Optional
 
 from favie_data_common.common.pydantic_utils import PydanticUtils
@@ -228,374 +229,349 @@ class ReviewSummary(BaseModel):
     f_updates_at: Optional[str] = None
 
 
+class HistoricalPricesDeserializer:
+    @staticmethod
+    def deserialize(value: str):
+        try:
+            if not value:
+                return None
+            return PydanticUtils.deserialize_data(List[Price], value)
+
+        except Exception:
+            try:
+                prices = PydanticUtils.deserialize_data(dict[str, List[Price]], value)
+                return HistoricalPricesDeserializer.group_to_list(prices)
+            except Exception as e:
+                logging.exception("Deserialize HistoricalPrices failed: %s", e)
+                return None
+
+    @staticmethod
+    def group_to_list(prices: Dict[str, List[Price]]):
+        if not prices:  # 如果 prices 是空的，返回 None
+            return None
+
+        result = []  # 创建一个空列表用于存放所有的 Price 对象
+        for price_list in prices.values():  # 遍历字典中的每个 value（每个 value 是一个 Price 列表）
+            for price in price_list:  # 遍历当前 Price 列表中的每个 Price 对象
+                result.append(price)  # 将它追加到结果列表中
+        return result
+
+
 class FavieProductDetail(BaseModel):
     f_sku_id: Optional[str] = None
 
     @field_validator("f_sku_id", mode="before")
     def validate_f_sku_id(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_sku_id")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     f_spu_id: Optional[str] = None
 
     @field_validator("f_spu_id", mode="before")
     def validate_f_spu_id(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_spu_id")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     site: Optional[str] = None
 
     @field_validator("site", mode="before")
     def validate_site(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "site")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     sku_id: Optional[str] = None
 
     @field_validator("sku_id", mode="before")
     def validate_sku_id(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "sku_id")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     spu_id: Optional[str] = None
 
     @field_validator("spu_id", mode="before")
     def validate_spu_id(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "spu_id")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     request_sku_id: Optional[str] = None
 
     @field_validator("request_sku_id", mode="before")
     def validate_request_sku_id(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "request_sku_id")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     title: Optional[str] = None
 
     @field_validator("title", mode="before")
     def validate_title(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "title")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     link: Optional[str] = None
 
     @field_validator("link", mode="before")
     def validate_link(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "link")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     sub_title: Optional[str] = None
 
     @field_validator("sub_title", mode="before")
     def validate_sub_title(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "sub_title")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     sub_title_link: Optional[str] = None
 
     @field_validator("sub_title_link", mode="before")
     def validate_sub_title_link(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "sub_title_link")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     shop_id: Optional[str] = None
 
     @field_validator("shop_id", mode="before")
     def validate_shop_id(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "shop_id")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     shop_name: Optional[str] = None
 
     @field_validator("shop_name", mode="before")
     def validate_shop_name(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "shop_name")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     shop_site: Optional[str] = None
 
     @field_validator("shop_site", mode="before")
     def validate_shop_site(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "shop_site")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     link_in_shop: Optional[str] = None
 
     @field_validator("link_in_shop", mode="before")
     def validate_link_in_shop(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "link_in_shop")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     description: Optional[str] = None
 
     @field_validator("description", mode="before")
     def validate_description(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "description")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     description_external_link: Optional[str] = None
 
     @field_validator("description_external_link", mode="before")
     def validate_description_external_link(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "description_external_link")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     rich_product_description: Optional[str] = None
 
     @field_validator("rich_product_description", mode="before")
     def validate_rich_product_description(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "rich_product_description")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     price: Optional[Price] = None
 
     @field_validator("price", mode="before")
     def validate_price(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "price")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Price, value)
 
     rrp: Optional[Price] = None
 
     @field_validator("rrp", mode="before")
     def validate_rrp(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "rrp")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Price, value)
 
     f_historical_prices: Optional[List[Price]] = None
 
     @field_validator("f_historical_prices", mode="before")
     def validate_f_historical_prices(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_historical_prices")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return HistoricalPricesDeserializer.deserialize(value)
 
     historical_prices: Optional[List[Price]] = None
 
     @field_validator("historical_prices", mode="before")
     def validate_historical_prices(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "historical_prices")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return HistoricalPricesDeserializer.deserialize(value)
 
     f_images_tags: Optional[Dict[str, Dict[str, Any]]] = None
 
     @field_validator("f_images_tags", mode="before")
     def validate_f_images_tags(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_images_tags")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Dict[str, Dict[str, Any]], value)
 
     f_images_bg_remove: Optional[Dict[str, Dict[str, Any]]] = None
 
     @field_validator("f_images_bg_remove", mode="before")
     def validate_f_images_bg_remove(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_images_bg_remove")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Dict[str, Dict[str, Any]], value)
 
     f_tags: Optional[List[str]] = None
 
     @field_validator("f_tags", mode="before")
     def validate_f_tags(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_tags")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[str], value)
 
     f_system_tags: Optional[List[FavieTag]] = None
 
     @field_validator("f_system_tags", mode="before")
     def validate_f_system_tags(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_system_tags")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[FavieTag], value)
 
     f_cate_tags: Optional[str] = None
 
     @field_validator("f_cate_tags", mode="before")
     def validate_f_cate_tags(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_cate_tags")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     f_status: Optional[str] = None
 
     @field_validator("f_status", mode="before")
     def validate_f_status(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_status")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     images: Optional[Images] = None
 
     @field_validator("images", mode="before")
     def validate_images(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "images")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Images, value)
 
     f_images: Optional[Images] = None
 
     @field_validator("f_images", mode="before")
     def validate_f_images(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_images")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Images, value)
 
     f_image_list: Optional[List[FavieImageItem]] = None
 
     @field_validator("f_image_list", mode="before")
     def validate_f_image_list(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_image_list")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[FavieImageItem], value)
 
     f_categories: Optional[List[CategoryItem]] = None
 
     @field_validator("f_categories", mode="before")
     def validate_f_categories(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_categories")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[CategoryItem], value)
 
     categories: Optional[List[CategoryItem]] = None
 
     @field_validator("categories", mode="before")
     def validate_categories(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "categories")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[CategoryItem], value)
 
     videos: Optional[List[Video]] = None
 
     @field_validator("videos", mode="before")
     def validate_videos(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "videos")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[Video], value)
 
     f_videos: Optional[List[Video]] = None
 
     @field_validator("f_videos", mode="before")
     def validate_f_videos(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_videos")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[Video], value)
 
     f_brand: Optional[Brand] = None
 
     @field_validator("f_brand", mode="before")
     def validate_f_brand(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_brand")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Brand, value)
 
     brand: Optional[Brand] = None
 
     @field_validator("brand", mode="before")
     def validate_brand(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "brand")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Brand, value)
 
     feature_bullets: Optional[List[str]] = None
 
     @field_validator("feature_bullets", mode="before")
     def validate_feature_bullets(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "feature_bullets")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[str], value)
 
     attributes: Optional[List[AttributeItem]] = None
 
     @field_validator("attributes", mode="before")
     def validate_attributes(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "attributes")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[AttributeItem], value)
 
     specifications: Optional[List[AttributeItem]] = None
 
     @field_validator("specifications", mode="before")
     def validate_specifications(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "specifications")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[AttributeItem], value)
 
     extended_info: Optional[ExtendedInfo] = None
 
     @field_validator("extended_info", mode="before")
     def validate_extended_info(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "extended_info")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(ExtendedInfo, value)
 
     standard_attributes: Optional[ExtendedInfo] = None
 
     @field_validator("standard_attributes", mode="before")
     def validate_standard_attributes(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "standard_attributes")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(ExtendedInfo, value)
 
     best_seller_rank: Optional[List[SellerRank]] = None
 
     @field_validator("best_seller_rank", mode="before")
     def validate_best_seller_rank(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "best_seller_rank")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[SellerRank], value)
 
     seller: Optional[Seller] = None
 
     @field_validator("seller", mode="before")
     def validate_seller(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "seller")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Seller, value)
 
     inventory: Optional[Inventory] = None
 
     @field_validator("inventory", mode="before")
     def validate_inventory(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "inventory")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Inventory, value)
 
     keywords: Optional[str] = None
 
     @field_validator("keywords", mode="before")
     def validate_keywords(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "keywords")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     deal: Optional[Deal] = None
 
     @field_validator("deal", mode="before")
     def validate_deal(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "deal")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Deal, value)
 
     returns_policy: Optional[ReturnPolicy] = None
 
     @field_validator("returns_policy", mode="before")
     def validate_returns_policy(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "returns_policy")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(ReturnPolicy, value)
 
     review_summary: Optional[ReviewSummary] = None
 
     @field_validator("review_summary", mode="before")
     def validate_review_summary(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "review_summary")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(ReviewSummary, value)
 
     variants: Optional[List[SimpleProduct]] = None
 
     @field_validator("variants", mode="before")
     def validate_variants(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "variants")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(List[SimpleProduct], value)
 
     promotion: Optional[Promotion] = None
 
     @field_validator("promotion", mode="before")
     def validate_promotion(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "promotion")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(Promotion, value)
 
     f_updates_at: Optional[str] = None
 
     @field_validator("f_updates_at", mode="before")
     def validate_f_updates_at(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_updates_at")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     f_creates_at: Optional[str] = None
 
     @field_validator("f_creates_at", mode="before")
     def validate_f_creates_at(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_creates_at")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(str, value)
 
     f_meta: Optional[MetaInfo] = None
 
     @field_validator("f_meta", mode="before")
     def validate_f_meta(cls, value):
-        expected_type = PydanticUtils.get_native_field_type(cls, "f_meta")
-        return PydanticUtils.deserialize_data(expected_type, value)
+        return PydanticUtils.deserialize_data(MetaInfo, value)
