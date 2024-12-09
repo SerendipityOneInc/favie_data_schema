@@ -1,3 +1,5 @@
+from typing import List
+
 from favie_data_common.common.common_utils import CommonUtils
 
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage
@@ -7,7 +9,8 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
     TopReviews,
 )
 from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
-from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
+from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
 
 class StarkProductReviewConvert:

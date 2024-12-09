@@ -1,3 +1,5 @@
+from typing import List, Optional
+
 from favie_data_common.common.common_utils import CommonUtils
 
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductListMessage
@@ -10,7 +12,9 @@ from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import Price as StarkPrice
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import ProductListItem
 from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
-from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
+from favie_data_schema.favie.data.interface.product.favie_product import Images, Price, ReviewSummary
+from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
 
 
 class StarkProductListAdapter(FavieProductDetailAdapter):

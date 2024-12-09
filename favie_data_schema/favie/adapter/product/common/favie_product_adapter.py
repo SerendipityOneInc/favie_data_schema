@@ -1,13 +1,8 @@
 from typing import List, Optional
 
+from favie_data_schema.api.data.product import *
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage, StarkProductListMessage
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import RainforestProductReview
-from favie_data_schema.favie.data.interface.product.favie_product import (
-    FavieProductDetail,
-    FavieProductReview,
-    FavieProductReviewSummary,
-    ReviewSummary,
-)
 
 
 class FavieProductDetailAdapter:

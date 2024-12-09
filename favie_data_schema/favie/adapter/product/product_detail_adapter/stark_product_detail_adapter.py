@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import Optional
 
 from favie_data_common.common.common_utils import CommonUtils
 
@@ -14,7 +15,8 @@ from favie_data_schema.favie.adapter.product.product_review_adapter.stark_produc
 )
 from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import RainforestProductDetail
-from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.interface.product.favie_product import RatingBreakdown, ReviewSummary
+from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
 
 
 class StarkProductDetailAdapter(FavieProductDetailAdapter):

@@ -19,13 +19,10 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_revie
 )
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import Reviews, Summary
 from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
-from favie_data_schema.favie.data.interface.product.favie_product import (
-    FavieProductReview,
-    FavieProductReviewSummary,
-    MetaInfo,
-    RatingBreakdown,
-    ReviewSummary,
-)
+from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
+from favie_data_schema.favie.data.interface.product.favie_product import RatingBreakdown, ReviewSummary
+from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
+from favie_data_schema.favie.data.interface.product.favie_product_review_summary import FavieProductReviewSummary
 
 
 class StarkProductReviewAdapter(FavieProductReviewAdapter):
