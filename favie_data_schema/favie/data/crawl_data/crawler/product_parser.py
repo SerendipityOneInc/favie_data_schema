@@ -28,4 +28,5 @@ class CrawledOutput(BaseModel):
     parser_name: str
     source: Source
     original_url: str
+    asin: str
     create_time: str
