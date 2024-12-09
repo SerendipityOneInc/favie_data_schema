@@ -1,4 +1,3 @@
-
 from typing import List, Optional
 from pydantic import BaseModel
 
@@ -15,6 +14,7 @@ class WebpageVideo(BaseModel):
 class WebpageProduct(BaseModel):
     url: Optional[str] = None
     title: Optional[str] = None
+    subhead: Optional[str] = None
     description: Optional[str] = None
     price: Optional[str] = None
     images: Optional[List[WebpageImage]] = None

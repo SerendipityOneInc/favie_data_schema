@@ -24,7 +24,6 @@ from favie_data_schema.favie.data.interface.product.favie_product import RatingB
 from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 from favie_data_schema.favie.data.interface.product.favie_product_review_summary import FavieProductReviewSummary
 
-
 class StarkProductReviewAdapter(FavieProductReviewAdapter):
     @staticmethod
     def stark_detail_to_favie_reviews(
@@ -184,6 +183,12 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
         favie_review.date_raw = review.date.raw if review.date is not None else None
         favie_review.date_utc = review.date.utc if review.date is not None else None
         favie_review.images = review.images
+        if review.attributes is not None:
+            favie_review.attributes = [
+                FavieAttributeItem(name=x.name, value=x.value) for x in review.attributes
+            ]
+        else:
+            favie_review.attributes = None
         favie_review.videos = None
         favie_review.position = review.position
         favie_review.stark_tag = review.stark_tag
