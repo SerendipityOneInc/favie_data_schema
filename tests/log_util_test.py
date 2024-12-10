@@ -1,11 +1,9 @@
 import base64
 import unittest
 
-from favie_data_schema.favie.utils.log_util import (
-    compress_and_encode_html,
-    decode_and_decompress_html,
-    is_encoded_html,
-)
+from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
+from favie_data_schema.favie.utils.log_util import compress_and_encode_html, decode_and_decompress_html, is_encoded_html
+from tests.read_json_util import read_object
 
 
 class TestHtmlEncoding(unittest.TestCase):
@@ -41,6 +39,14 @@ class TestHtmlEncoding(unittest.TestCase):
         # 测试有效的Base64但无效的gzip数据
         valid_base64_invalid_gzip = base64.b64encode(b"invalid gzip data").decode("utf-8")
         self.assertFalse(is_encoded_html(valid_base64_invalid_gzip))
+
+    def test_favie_product_detail(self):
+        product = read_object(
+            "favie_data_schema/favie/resources/product_detail.json",
+            FavieProductDetail,
+        )
+        if product:
+            print(product.model_dump_json(exclude_none=True))
 
 
 if __name__ == "__main__":

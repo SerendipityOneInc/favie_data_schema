@@ -4,12 +4,12 @@ from typing import List, Optional
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import (
-    ContentType,
-)
-
-from favie_data_schema.favie.data.interface.product.favie_product import FavieProductDetail, FavieProductReview, ReviewSummary
+from favie_data_schema.favie.data.crawl_data.crawler.favie_spider_data import ContentType
+from favie_data_schema.favie.data.interface.product.favie_product import ReviewSummary
+from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
+from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 from favie_data_schema.favie.data.interface.webpage.favie_webpage import FavieWebpage
+
 
 class CrawlerStatus(Enum):
     """每个资源的状态"""
@@ -47,16 +47,20 @@ class CrawlerProductDataResponse(BaseModel):
     status: CrawlerStatus
     data: Optional[FavieProductDetail] = None
 
+
 class CrawlerProductReviewData(BaseModel):
     """Crawler product review data model."""
+
     review_summary: Optional[ReviewSummary] = None
     reviews: Optional[list[FavieProductReview]] = None
+
 
 class CrawlerProductReviewDataResponse(BaseModel):
     """Crawler product review data response model."""
 
     status: CrawlerStatus
     data: Optional[CrawlerProductReviewData] = None
+
 
 class MainImage(BaseModel):
     """

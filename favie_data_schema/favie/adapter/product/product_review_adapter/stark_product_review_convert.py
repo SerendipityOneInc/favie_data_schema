@@ -1,3 +1,5 @@
+from typing import List
+
 from favie_data_common.common.common_utils import CommonUtils
 
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage
@@ -7,7 +9,8 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
     TopReviews,
 )
 from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
-from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
+from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
 
 class StarkProductReviewConvert:
@@ -20,7 +23,11 @@ class StarkProductReviewConvert:
         favie_reviews: List[FavieProductReview] = (
             [
                 StarkProductReviewConvert.__convert_to_favie_review(
-                    x, stark_detail_message.source, stark_detail_message.parser_name, parse_time
+                    x,
+                    stark_detail_message.source,
+                    stark_detail_message.parser_name,
+                    parse_time,
+                    stark_detail_message.app_key,
                 )
                 for x in reviews
                 if x is not None
@@ -30,7 +37,9 @@ class StarkProductReviewConvert:
         )
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
 
-    def __convert_to_favie_review(review: TopReviews, source, parser_name: str, parse_time: str) -> FavieProductReview:
+    def __convert_to_favie_review(
+        review: TopReviews, source, parser_name: str, parse_time: str, app_key: str
+    ) -> FavieProductReview:
         if review is None:
             return None
         favie_review = FavieProductReview()
@@ -63,6 +72,7 @@ class StarkProductReviewConvert:
             parser_name=f"{parser_name}-adapter",
             parses_at=parse_time,
             data_type=str(MessageDataType.PRODUCT_REVIEW_CRAWLER.value),
+            app_key=app_key,
         )
         return favie_review
 

@@ -28,6 +28,13 @@ class FavieDataStatus(IntEnum):
     INTERCEPTED = 2
 
 
+class FavieImageStatus(IntEnum):
+    NORMAL = 0
+    DELETED = 1
+    DOWNLOAD_FAILED = 2
+    TOO_SMALL = 3
+
+
 class CategoriesMapType(IntEnum):
     MAP = 0
     PREDICT = 1

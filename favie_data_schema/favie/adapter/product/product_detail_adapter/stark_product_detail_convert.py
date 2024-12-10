@@ -16,7 +16,23 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
     Variants,
 )
 from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
-from favie_data_schema.favie.data.interface.product.favie_product import *
+from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
+from favie_data_schema.favie.data.interface.product.favie_product import (
+    AttributeItem,
+    Brand,
+    CategoryItem,
+    Deal,
+    ExtendedInfo,
+    Images,
+    PlatformChoice,
+    Price,
+    Promotion,
+    Seller,
+    SellerRank,
+    SimpleProduct,
+    Video,
+)
+from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
 
 
 class HashableAttributeItem(AttributeItem):
@@ -87,6 +103,7 @@ class StarkProductDetailConvert:
             parser_name=f"{stark_detail_message.parser_name}-adapter",
             data_type=str(MessageDataType.PRODUCT_DETAIL_CRAWLER.value),
             parses_at=parse_time,
+            app_key=stark_detail_message.app_key,
         )
         favie_product.shop_id = crawl_result.product.stark_shop.id if crawl_result.product.stark_shop else None
         favie_product.shop_name = crawl_result.product.stark_shop.name if crawl_result.product.stark_shop else None
@@ -275,7 +292,6 @@ class StarkProductDetailConvert:
     def get_specifications(rainforest_product_detail: RainforestProductDetail):
         product = rainforest_product_detail.product
         specs = set(StarkProductDetailConvert.valid_attributes(product.specifications))
-        specs.update(StarkProductDetailConvert.valid_attributes(product.attributes))
         return list(specs) if specs else None
 
     @staticmethod

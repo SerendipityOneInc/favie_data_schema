@@ -1,25 +1,6 @@
-from typing import Any, Dict, List, Optional
+from typing import List, Optional
 
 from pydantic import BaseModel
-
-
-class MetaInfo(BaseModel):
-    source_type: Optional[str] = None
-    parser_name: Optional[str] = None
-    parses_at: Optional[str] = None
-    data_type: Optional[str] = None
-    f_categories_update_at: Optional[str] = None
-    f_images_crawl_send_at: Optional[str] = None
-    f_categories_map_type: Optional[int] = None
-    f_categories_map_version: Optional[int] = None
-    f_categories_predict_score: Optional[float] = None
-    source_1_updates_at: Optional[str] = None
-    source_2_updates_at: Optional[str] = None
-    source_3_updates_at: Optional[str] = None
-    source_4_updates_at: Optional[str] = None
-    source_5_updates_at: Optional[str] = None
-    err_code: Optional[int] = None
-    err_messages: Optional[List[str]] = None
 
 
 class FavieCategoriesPredictResponse(BaseModel):
@@ -36,6 +17,7 @@ class Price(BaseModel):
     updates_at: Optional[str] = None
     source_type: Optional[str] = None
     parser_name: Optional[str] = None
+    app_key: Optional[str] = None
 
 
 class Images(BaseModel):
@@ -147,69 +129,6 @@ class Promotion(BaseModel):
     why_buy: Optional[List[str]] = None
 
 
-class FavieProductReviewSummary(BaseModel):
-    f_spu_id: Optional[str] = None
-    link: Optional[str] = None
-    site: Optional[str] = None
-    spu_id: Optional[str] = None
-    sku_id: Optional[str] = None
-    rating: Optional[float] = None
-    ratings_total: Optional[int] = None
-    ratings_total_filtered: Optional[int] = None
-    five_star: Optional[int] = None
-    four_star: Optional[int] = None
-    three_star: Optional[int] = None
-    two_star: Optional[int] = None
-    one_star: Optional[int] = None
-    recommended_percentage: Optional[float] = None
-    reviews_total: Optional[int] = None
-    reviews_total_filtered: Optional[int] = None
-    top_reviews: Optional[List[str]] = None
-    top_favourable: Optional[str] = None
-    top_critical: Optional[str] = None
-    f_status: Optional[str] = None
-    f_updates_at: Optional[str] = None
-    f_meta: Optional[MetaInfo] = None
-    f_creates_at: Optional[str] = None
-
-
-class FavieProductReview(BaseModel):
-    f_review_id: Optional[str] = None
-    f_spu_id: Optional[str] = None
-    site: Optional[str] = None
-    spu_id: Optional[str] = None
-    sku_id: Optional[str] = None
-    review_id: Optional[str] = None
-    title: Optional[str] = None
-    body: Optional[str] = None
-    body_html: Optional[str] = None
-    link: Optional[str] = None
-    images: Optional[List[str]] = None
-    f_images: Optional[List[str]] = None
-    videos: Optional[List[str]] = None
-    f_videos: Optional[List[str]] = None
-    rating: Optional[float] = None
-    date_raw: Optional[str] = None
-    date_utc: Optional[str] = None
-    author_name: Optional[str] = None
-    author_id: Optional[str] = None
-    author_url: Optional[str] = None
-    vine_program: Optional[bool] = None
-    verified_purchase: Optional[bool] = None
-    review_country: Optional[str] = None
-    is_global_review: Optional[bool] = None
-    position: Optional[int] = None
-    helpful_votes: Optional[int] = None
-    unhelpful_votes: Optional[int] = None
-    attributes: Optional[List[AttributeItem]] = None
-    stark_tag: Optional[int] = None
-    stark_tags: Optional[List[int]] = None
-    f_status: Optional[str] = None
-    f_meta: Optional[MetaInfo] = None
-    f_updates_at: Optional[str] = None
-    f_creates_at: Optional[str] = None
-
-
 class ExtendedInfo(BaseModel):
     is_used: Optional[bool] = None
     is_bundle: Optional[bool] = None
@@ -240,57 +159,3 @@ class ReviewSummary(BaseModel):
     top_favourable: Optional[str] = None
     top_critical: Optional[str] = None
     f_updates_at: Optional[str] = None
-
-
-class FavieProductDetail(BaseModel):
-    f_sku_id: Optional[str] = None
-    f_spu_id: Optional[str] = None
-    site: Optional[str] = None
-    sku_id: Optional[str] = None
-    spu_id: Optional[str] = None
-    request_sku_id: Optional[str] = None
-    title: Optional[str] = None
-    link: Optional[str] = None
-    sub_title: Optional[str] = None
-    sub_title_link: Optional[str] = None
-    shop_id: Optional[str] = None
-    shop_name: Optional[str] = None
-    shop_site: Optional[str] = None
-    link_in_shop: Optional[str] = None
-    description: Optional[str] = None
-    description_external_link: Optional[str] = None
-    rich_product_description: Optional[str] = None
-    price: Optional[Price] = None
-    rrp: Optional[Price] = None
-    f_historical_prices: Optional[List[Price]] = None
-    historical_prices: Optional[List[Price]] = None
-    f_images_tags: Optional[Dict[str, Dict[str, Any]]] = None
-    f_images_bg_remove: Optional[Dict[str, Dict[str, Any]]] = None
-    f_tags: Optional[List[str]] = None
-    f_cate_tags: Optional[str] = None
-    f_status: Optional[str] = None
-    images: Optional[Images] = None
-    f_images: Optional[Images] = None
-    f_categories: Optional[List[CategoryItem]] = None
-    categories: Optional[List[CategoryItem]] = None
-    videos: Optional[List[Video]] = None
-    f_videos: Optional[List[Video]] = None
-    f_brand: Optional[Brand] = None
-    brand: Optional[Brand] = None
-    feature_bullets: Optional[List[str]] = None
-    attributes: Optional[List[AttributeItem]] = None
-    specifications: Optional[List[AttributeItem]] = None
-    extended_info: Optional[ExtendedInfo] = None
-    standard_attributes: Optional[ExtendedInfo] = None
-    best_seller_rank: Optional[List[SellerRank]] = None
-    seller: Optional[Seller] = None
-    inventory: Optional[Inventory] = None
-    keywords: Optional[str] = None
-    deal: Optional[Deal] = None
-    returns_policy: Optional[ReturnPolicy] = None
-    review_summary: Optional[ReviewSummary] = None
-    variants: Optional[List[SimpleProduct]] = None
-    promotion: Optional[Promotion] = None
-    f_updates_at: Optional[str] = None
-    f_creates_at: Optional[str] = None
-    f_meta: Optional[MetaInfo] = None

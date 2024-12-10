@@ -67,6 +67,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
             parser_name=webpage_message.spider,
             parses_at=StarkMessageUtils.get_parse_time(webpage_message),
             data_type=str(MessageDataType.WEBPAGE_CONTENT_CRAWLER.value),
+            app_key=webpage_message.app_key,
         )
         return webpage
 
@@ -103,6 +104,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
             parser_name=webpage_message.spider,
             parses_at=StarkMessageUtils.get_parse_time(webpage_message),
             data_type=str(MessageDataType.WEBPAGE_CONTENT_CRAWLER.value),
+            app_key=webpage_message.app_key,
         )
         return webpage
 
