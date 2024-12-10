@@ -42,7 +42,7 @@ class TestHtmlEncoding(unittest.TestCase):
 
     def test_favie_product_detail(self):
         product = read_object(
-            "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/product_detail.py",
+            "favie_data_schema/favie/resources/product_detail.json",
             FavieProductDetail,
         )
         if product:
