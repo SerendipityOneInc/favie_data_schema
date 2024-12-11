@@ -15,7 +15,7 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
     RainforestProductDetail,
     Variants,
 )
-from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
+from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, MessageDataType
 from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
 from favie_data_schema.favie.data.interface.product.favie_product import (
     AttributeItem,
@@ -114,6 +114,7 @@ class StarkProductDetailConvert:
         )
         favie_product.link_in_shop = crawl_result.product.stark_link_in_shop
         favie_product.request_sku_id = stark_detail_message.product_id
+        favie_product.f_status = str(FavieDataStatus.NORMAL.value)
         return favie_product
 
     @staticmethod

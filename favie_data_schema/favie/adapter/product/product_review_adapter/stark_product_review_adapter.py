@@ -18,11 +18,12 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_revie
     RatingBreakdown as RFRatingBreakdown,
 )
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import Reviews, Summary
-from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
+from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, MessageDataType
 from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
-from favie_data_schema.favie.data.interface.product.favie_product import RatingBreakdown, ReviewSummary
+from favie_data_schema.favie.data.interface.product.favie_product import AttributeItem, RatingBreakdown, ReviewSummary
 from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 from favie_data_schema.favie.data.interface.product.favie_product_review_summary import FavieProductReviewSummary
+
 
 class StarkProductReviewAdapter(FavieProductReviewAdapter):
     @staticmethod
@@ -184,15 +185,14 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
         favie_review.date_utc = review.date.utc if review.date is not None else None
         favie_review.images = review.images
         if review.attributes is not None:
-            favie_review.attributes = [
-                FavieAttributeItem(name=x.name, value=x.value) for x in review.attributes
-            ]
+            favie_review.attributes = [AttributeItem(name=x.name, value=x.value) for x in review.attributes]
         else:
             favie_review.attributes = None
         favie_review.videos = None
         favie_review.position = review.position
         favie_review.stark_tag = review.stark_tag
         favie_review.f_meta = meta
+        favie_review.f_status = str(FavieDataStatus.NORMAL.value)
         return favie_review
 
 

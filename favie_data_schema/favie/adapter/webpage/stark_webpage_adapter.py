@@ -14,7 +14,7 @@ from favie_data_schema.favie.data.crawl_data.crawler.stark_webpage import (
     WebpageReference,
     WebpageVideo,
 )
-from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
+from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, MessageDataType
 from favie_data_schema.favie.data.interface.webpage.favie_webpage import (
     FavieWebpage,
     ImageData,
@@ -69,6 +69,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
             data_type=str(MessageDataType.WEBPAGE_CONTENT_CRAWLER.value),
             app_key=webpage_message.app_key,
         )
+        webpage.f_status = str(FavieDataStatus.NORMAL.value)
         return webpage
 
     @staticmethod
@@ -106,6 +107,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
             data_type=str(MessageDataType.WEBPAGE_CONTENT_CRAWLER.value),
             app_key=webpage_message.app_key,
         )
+        webpage.f_status = str(FavieDataStatus.NORMAL.value)
         return webpage
 
     @staticmethod
