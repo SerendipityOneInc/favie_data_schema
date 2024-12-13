@@ -22,38 +22,8 @@
                 "image": "https://m.media-amazon.com/images/I/51KDZr0Kp3L._AC_UL320_.jpg",
                 "rating": 4,
                 "ratings_total": 536,
-                "prices": [
-                    {
-                        "symbol": "$",
-                        "value": 5.99,
-                        "currency": "USD",
-                        "raw": "$5.99",
-                        "name": "Primary",
-                        "is_primary": true,
-                        "is_rrp": null,
-                        "asin": null
-                    },
-                    {
-                        "symbol": "$",
-                        "value": 7.99,
-                        "currency": "USD",
-                        "raw": "$7.99",
-                        "name": "Original",
-                        "is_primary": null,
-                        "is_rrp": true,
-                        "asin": null
-                    }
-                ],
-                "price": {
-                    "symbol": "$",
-                    "value": 5.99,
-                    "currency": "USD",
-                    "raw": "$5.99",
-                    "name": "Primary",
-                    "is_primary": true,
-                    "is_rrp": null,
-                    "asin": null
-                },
+                "prices": [],
+                "price": null,
                 "rrp": null
             },
             {

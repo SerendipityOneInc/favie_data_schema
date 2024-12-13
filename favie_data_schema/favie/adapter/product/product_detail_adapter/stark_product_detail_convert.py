@@ -152,6 +152,7 @@ class StarkProductDetailConvert:
                         source_type=stark_detail_message.source,
                         parser_name=stark_detail_message.parser_name,
                         parse_time=parse_time,
+                        app_key=stark_detail_message.app_key,
                     ),
                 )
                 for x in rainforest_product_detail.product.variants
@@ -161,7 +162,7 @@ class StarkProductDetailConvert:
         return None
 
     @staticmethod
-    def convert_price(*, rainforest_price, source_type, parser_name, parse_time) -> Price:
+    def convert_price(*, rainforest_price, source_type, parser_name, parse_time, app_key) -> Price:
         if rainforest_price is None:
             return None
         currency_converter = CurrencyConverter(rainforest_price.currency, rainforest_price.value)
@@ -171,6 +172,7 @@ class StarkProductDetailConvert:
             parser_name=parser_name,
             source_type=str(source_type) if source_type else None,
             updates_at=parse_time,
+            app_key=app_key,
         )
         return price if CommonUtils.all_not_none(price.currency, price.value) else None
 
@@ -186,6 +188,7 @@ class StarkProductDetailConvert:
                 source_type=stark_detail_message.source,
                 parser_name=stark_detail_message.parser_name,
                 parse_time=parse_time,
+                app_key=stark_detail_message.app_key,
             )
             if was_price is None:
                 return None
@@ -330,14 +333,24 @@ class StarkProductDetailConvert:
     @staticmethod
     def get_price(stark_detail_message: StarkProductDetailMessage, parse_time: str):
         rainforest_product_detail = stark_detail_message.crawl_result
+        price = None
         if rainforest_product_detail.product.buybox_winner is not None:
-            return StarkProductDetailConvert.convert_price(
+            price = StarkProductDetailConvert.convert_price(
                 rainforest_price=rainforest_product_detail.product.buybox_winner.price,
                 source_type=stark_detail_message.source,
                 parser_name=stark_detail_message.parser_name,
                 parse_time=parse_time,
+                app_key=stark_detail_message.app_key,
             )
-        return None
+        if price is None:
+            price = Price(
+                value=-100,
+                parser_name=stark_detail_message.parser_name,
+                source_type=str(stark_detail_message.source) if stark_detail_message.source else None,
+                updates_at=parse_time,
+                app_key=stark_detail_message.app_key,
+            )
+        return price
 
     @staticmethod
     def get_rrp(stark_detail_message: StarkProductDetailMessage, parse_time: str):
@@ -348,6 +361,7 @@ class StarkProductDetailConvert:
                 source_type=stark_detail_message.source,
                 parser_name=stark_detail_message.parser_name,
                 parse_time=parse_time,
+                app_key=stark_detail_message.app_key,
             )
         return None
 
