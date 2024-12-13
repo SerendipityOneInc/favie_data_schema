@@ -1,466 +1,182 @@
 {
-    "url": "https://www.amazon.com/dp/B094Q2RFNT",
-    "host": "www.amazon.com",
-    "product_id": "B094Q2RFNT",
-    "product_title": "Backup Camera RCA Video Cable, Car Reverse Rear View Camera Video Cable with Detection Wire (19.69FT / 6M),AV Extension Cable with RCA Video Female to Female Coupler and Power Cable",
-    "source": 1,
-    "parser_name": "AmazonProductDetailParser",
-    "crawl_result": {
-        "request_info": null,
-        "request_metadata": null,
-        "request_parameters": null,
-        "product": {
-            "title": "Backup Camera RCA Video Cable, Car Reverse Rear View Camera Video Cable with Detection Wire (19.69FT / 6M),AV Extension Cable with RCA Video Female to Female Coupler and Power Cable",
-            "title_excluding_variant_name": null,
-            "variants": [
-                {
-                    "asin": "B09WR5GTC3",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "size_name",
-                            "value": "32.8FT / 10M"
-                        }
-                    ],
-                    "link": null,
-                    "price": null
-                },
-                {
-                    "asin": "B0BYZ3X5QZ",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "size_name",
-                            "value": "49.2FT / 15M"
-                        }
-                    ],
-                    "link": null,
-                    "price": null
-                },
-                {
-                    "asin": "B0BYZ44DML",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "size_name",
-                            "value": "65.6FT / 20M"
-                        }
-                    ],
-                    "link": null,
-                    "price": null
-                },
-                {
-                    "asin": "B094Q2RFNT",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "size_name",
-                            "value": "19.69FT / 6M"
-                        }
-                    ],
-                    "link": null,
-                    "price": null
-                }
-            ],
-            "keywords": "Backup,Camera,RCA,Video,Cable,,Car,Reverse,Rear,View,Camera,Video,Cable,with,Detection,Wire,(19.69FT,/,6M),AV,Extension,Cable,with,RCA,Video,Female,to,Female,Coupler,and,Power,Cable",
-            "keywords_list": [
-                "Backup",
-                "Camera",
-                "RCA",
-                "Video",
-                "Cable",
-                "",
-                "Car",
-                "Reverse",
-                "Rear",
-                "View",
-                "Camera",
-                "Video",
-                "Cable",
-                "with",
-                "Detection",
-                "Wire",
-                "(19.69FT",
-                "/",
-                "6M)",
-                "AV",
-                "Extension",
-                "Cable",
-                "with",
-                "RCA",
-                "Video",
-                "Female",
-                "to",
-                "Female",
-                "Coupler",
-                "and",
-                "Power",
-                "Cable"
-            ],
-            "link": "https://www.amazon.com/dp/B094Q2RFNT",
-            "asin": "B094Q2RFNT",
-            "parent_asin": "B09WR31PV3",
-            "description": null,
-            "categories": [
-                {
-                    "name": "Electronics",
-                    "link": "/b?node=172282",
-                    "category_id": "172282"
-                },
-                {
-                    "name": "Television & Video",
-                    "link": "/b?node=1266092011",
-                    "category_id": "1266092011"
-                },
-                {
-                    "name": "Accessories",
-                    "link": "/b?node=3230976011",
-                    "category_id": "3230976011"
-                },
-                {
-                    "name": "Cables",
-                    "link": "/b?node=464418",
-                    "category_id": "464418"
-                },
-                {
-                    "name": "RCA",
-                    "link": "/b?node=597546",
-                    "category_id": "597546"
-                }
-            ],
-            "bestsellers_rank": null,
-            "summarization_attributes": null,
-            "amazons_choice": {
-                "keywords": "",
-                "link": null
-            },
-            "climate_pledge_friendly": null,
-            "kindle_unlimited": null,
-            "has_coupon": null,
-            "coupon_text": null,
-            "promotions": null,
-            "brand": "QDiShi",
-            "weight": "",
-            "shipping_weight": null,
-            "first_available": "2024-08-29 10:17:21",
-            "delivery_message": null,
-            "dimensions": "",
-            "sub_title": {
-                "text": "Brand: QDiShi",
-                "link": "/QDiShi/b/ref=bl_dp_s_web_118953751011?ie=UTF8&node=118953751011&field-lbr_brands_browse-bin=QDiShi"
-            },
-            "rating": 4.5,
-            "ratings_total": 283,
-            "reviews_total": null,
-            "top_reviews": [
-                {
-                    "id": "R98KNLEXSS7X6",
-                    "title": "Works",
-                    "body": "Works as expected\n  \nRead more",
-                    "body_html": "<div id=\"R98KNLEXSS7X6\" data-hook=\"review\" class=\"a-section review aok-relative\"><div id=\"R98KNLEXSS7X6-review-card\" class=\"a-row a-spacing-none\"><div id=\"customer_review-R98KNLEXSS7X6\" class=\"a-section celwidget\"><div data-hook=\"genome-widget\" class=\"a-row a-spacing-mini\"><a href=\"/gp/profile/amzn1.account.AGNZI3QVMBHUECLCXQ6A4EHFSZSQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8\" class=\"a-profile\" data-a-size=\"small\"><div aria-hidden=\"true\" class=\"a-profile-avatar-wrapper\"><div class=\"a-profile-avatar\"><img src=\"https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif\" class=\"a-lazy-loaded\" data-src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/><noscript><img src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/></noscript></div></div><div class=\"a-profile-content\"><span class=\"a-profile-name\">Timothy T.</span></div></a></div><div class=\"a-row\"><a data-hook=\"review-title\" class=\"a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold\" href=\"/gp/customer-reviews/R98KNLEXSS7X6/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&amp;ASIN=B094Q2RFNT\"><i data-hook=\"review-star-rating\" class=\"a-icon a-icon-star a-star-5 review-rating\"><span class=\"a-icon-alt\">5.0 out of 5 stars</span></i><span class=\"a-letter-space\"/>\n\n\n\n\n\n\n\n  \n  \n    <span>Works</span>\n  \n</a></div><span data-hook=\"review-date\" class=\"a-size-base a-color-secondary review-date\">Reviewed in the United States on February 22, 2024</span><div class=\"a-row a-spacing-mini review-data review-format-strip\"><span data-hook=\"format-strip-linkless\" class=\"a-color-secondary\">Size: 19.69FT / 6M</span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><a class=\"a-link-normal\" target=\"_blank\" rel=\"noopener\" href=\"/gp/help/customer/display.html/ref=cm_cr_dp_d_rvw_avp?nodeId=G75XTB7MBMBTXP6W\"><span data-hook=\"avp-badge-linkless\" class=\"a-size-mini a-color-state a-text-bold\">Verified Purchase</span></a></div><div class=\"a-row a-spacing-small review-data\"><span data-hook=\"review-body\" class=\"a-size-base review-text\"><div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">\n\n\n\n\n\n\n\n  \n  \n    <span>Works as expected</span>\n  \n</div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"/><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"/><span class=\"a-expander-prompt\">Read more</span></a></div></div></span></div><div data-hook=\"review-comments\" class=\"a-row review-comments cr-vote-action-bar\"><span class=\"cr-vote\" data-hook=\"review-voting-widget\">\n  <!-- Components for Reactions C -->\n    <div class=\"cr-helpful-button aok-float-left\">\n          <span class=\"a-button a-button-base\"><span class=\"a-button-inner\"><a href=\"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB094Q2RFNT%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhFg1m2WE6vUVw%252FcWJnouVp8fDnar%252BlAXgvvhc2%252BBl9ynAAAAAGbQSqIAAAAB%26reviewId%3DR98KNLEXSS7X6%23R98KNLEXSS7X6&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;marketPlaceId=ATVPDKIKX0DER&amp;language=en&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\" data-hook=\"vote-helpful-button\" class=\"a-button-text\"><div class=\"cr-helpful-text\">\n              Helpful</div>\n          </a></span></span></div>\n      </span><span class=\"cr-footer-line-height\">\n        <span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><span class=\"a-declarative\" data-action=\"reviews:report-abusive-review-modal-button\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:report-abusive-review-modal-button\" data-reviews:report-abusive-review-modal-button=\"{&quot;closeButton&quot;:&quot;true&quot;,&quot;name&quot;:&quot;report-abusive-review-modal-popover-R98KNLEXSS7X6&quot;,&quot;width&quot;:&quot;350&quot;,&quot;header&quot;:&quot;Report this review&quot;,&quot;url&quot;:&quot;/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hFg1m2WE6vUVw%2FcWJnouVp8fDnar%2BlAXgvvhc2%2BBl9ynAAAAAGbQSqIAAAAB&amp;reviewId=R98KNLEXSS7X6&quot;}\" id=\"report-abusive-review-modal-popover-R98KNLEXSS7X6\"><a class=\"a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal\" href=\"/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hFg1m2WE6vUVw%2FcWJnouVp8fDnar%2BlAXgvvhc2%2BBl9ynAAAAAGbQSqIAAAAB&amp;reviewId=R98KNLEXSS7X6\">Report</a></span></span></span>\n  </div></div></div></div>",
-                    "link": "/gp/customer-reviews/R98KNLEXSS7X6?ASIN=B094Q2RFNT",
-                    "rating": 5,
-                    "date": {
-                        "raw": "February 22, 2024",
-                        "utc": "2024-02-22T00:00:00Z"
-                    },
-                    "profile": {
-                        "name": "Timothy T.",
-                        "link": "/gp/profile/amzn1.account.AGNZI3QVMBHUECLCXQ6A4EHFSZSQ",
-                        "id": "AGNZI3QVMBHUECLCXQ6A4EHFSZSQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "United States",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R37MA0U4UZ3DNA",
-                    "title": "Nice",
-                    "body": "Just what i wanted thanks\n  \nRead more",
-                    "body_html": "<div id=\"R37MA0U4UZ3DNA\" data-hook=\"review\" class=\"a-section review aok-relative\"><div id=\"R37MA0U4UZ3DNA-review-card\" class=\"a-row a-spacing-none\"><div id=\"customer_review-R37MA0U4UZ3DNA\" class=\"a-section celwidget\"><div data-hook=\"genome-widget\" class=\"a-row a-spacing-mini\"><a href=\"/gp/profile/amzn1.account.AHEM4FFG3C2I576ZLZNN6GY42BGA/ref=cm_cr_dp_d_gw_tr?ie=UTF8\" class=\"a-profile\" data-a-size=\"small\"><div aria-hidden=\"true\" class=\"a-profile-avatar-wrapper\"><div class=\"a-profile-avatar\"><img src=\"https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif\" class=\"a-lazy-loaded\" data-src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/><noscript><img src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/></noscript></div></div><div class=\"a-profile-content\"><span class=\"a-profile-name\">Superstar &#9996; </span></div></a></div><div class=\"a-row\"><a data-hook=\"review-title\" class=\"a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold\" href=\"/gp/customer-reviews/R37MA0U4UZ3DNA/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&amp;ASIN=B094Q2RFNT\"><i data-hook=\"review-star-rating\" class=\"a-icon a-icon-star a-star-5 review-rating\"><span class=\"a-icon-alt\">5.0 out of 5 stars</span></i><span class=\"a-letter-space\"/>\n\n\n\n\n\n\n\n  \n  \n    <span>Nice</span>\n  \n</a></div><span data-hook=\"review-date\" class=\"a-size-base a-color-secondary review-date\">Reviewed in the United States on January 4, 2024</span><div class=\"a-row a-spacing-mini review-data review-format-strip\"><span data-hook=\"format-strip-linkless\" class=\"a-color-secondary\">Size: 19.69FT / 6M</span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><a class=\"a-link-normal\" target=\"_blank\" rel=\"noopener\" href=\"/gp/help/customer/display.html/ref=cm_cr_dp_d_rvw_avp?nodeId=G75XTB7MBMBTXP6W\"><span data-hook=\"avp-badge-linkless\" class=\"a-size-mini a-color-state a-text-bold\">Verified Purchase</span></a></div><div class=\"a-row a-spacing-small review-data\"><span data-hook=\"review-body\" class=\"a-size-base review-text\"><div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">\n\n\n\n\n\n\n\n  \n  \n    <span>Just what i wanted thanks</span>\n  \n</div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"/><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"/><span class=\"a-expander-prompt\">Read more</span></a></div></div></span></div><div data-hook=\"review-comments\" class=\"a-row review-comments cr-vote-action-bar\"><span class=\"cr-vote\" data-hook=\"review-voting-widget\">\n  <!-- Components for Reactions C -->\n    <div class=\"cr-helpful-button aok-float-left\">\n          <span class=\"a-button a-button-base\"><span class=\"a-button-inner\"><a href=\"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB094Q2RFNT%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhMZt8LZDw9oEczxDhv6b0xdv1b62KqjW92orMOj4gcbyAAAAAGbQSqIAAAAB%26reviewId%3DR37MA0U4UZ3DNA%23R37MA0U4UZ3DNA&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;marketPlaceId=ATVPDKIKX0DER&amp;language=en&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\" data-hook=\"vote-helpful-button\" class=\"a-button-text\"><div class=\"cr-helpful-text\">\n              Helpful</div>\n          </a></span></span></div>\n      </span><span class=\"cr-footer-line-height\">\n        <span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><span class=\"a-declarative\" data-action=\"reviews:report-abusive-review-modal-button\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:report-abusive-review-modal-button\" data-reviews:report-abusive-review-modal-button=\"{&quot;closeButton&quot;:&quot;true&quot;,&quot;name&quot;:&quot;report-abusive-review-modal-popover-R37MA0U4UZ3DNA&quot;,&quot;width&quot;:&quot;350&quot;,&quot;header&quot;:&quot;Report this review&quot;,&quot;url&quot;:&quot;/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hMZt8LZDw9oEczxDhv6b0xdv1b62KqjW92orMOj4gcbyAAAAAGbQSqIAAAAB&amp;reviewId=R37MA0U4UZ3DNA&quot;}\" id=\"report-abusive-review-modal-popover-R37MA0U4UZ3DNA\"><a class=\"a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal\" href=\"/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hMZt8LZDw9oEczxDhv6b0xdv1b62KqjW92orMOj4gcbyAAAAAGbQSqIAAAAB&amp;reviewId=R37MA0U4UZ3DNA\">Report</a></span></span></span>\n  </div></div></div></div>",
-                    "link": "/gp/customer-reviews/R37MA0U4UZ3DNA?ASIN=B094Q2RFNT",
-                    "rating": 5,
-                    "date": {
-                        "raw": "January 4, 2024",
-                        "utc": "2024-01-04T00:00:00Z"
-                    },
-                    "profile": {
-                        "name": "Superstar \u270c",
-                        "link": "/gp/profile/amzn1.account.AHEM4FFG3C2I576ZLZNN6GY42BGA",
-                        "id": "AHEM4FFG3C2I576ZLZNN6GY42BGA"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "United States",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R29D7KMOF75C57",
-                    "title": "Lleg\u00f3 en buenas condiciones",
-                    "body": "Es perfecto para lo que se necesitaba\n  \n  \nRead more",
-                    "body_html": "<div id=\"R29D7KMOF75C57\" data-hook=\"review\" class=\"a-section review aok-relative\"><span class=\"cr-translated-review-content\">\n    <span class=\"cr-single-review-loading aok-hidden\">\n      <span class=\"reviews-loading\"/>\n    </span>\n  </span>\n<div id=\"R29D7KMOF75C57-review-card\" class=\"a-row a-spacing-none\"><div id=\"customer_review-R29D7KMOF75C57\" class=\"a-section celwidget\"><div data-hook=\"genome-widget\" class=\"a-row a-spacing-mini\"><a href=\"/gp/profile/amzn1.account.AGL2TZ6UQK6TJDABLAXWKSXTAQPA/ref=cm_cr_dp_d_gw_tr?ie=UTF8\" class=\"a-profile\" data-a-size=\"small\"><div aria-hidden=\"true\" class=\"a-profile-avatar-wrapper\"><div class=\"a-profile-avatar\"><img src=\"https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif\" class=\"a-lazy-loaded\" data-src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/><noscript><img src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/></noscript></div></div><div class=\"a-profile-content\"><span class=\"a-profile-name\">Amazon Customer</span></div></a></div><div class=\"a-row\"><a data-hook=\"review-title\" class=\"a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold\" href=\"/gp/customer-reviews/R29D7KMOF75C57/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&amp;ASIN=B094Q2RFNT\"><i data-hook=\"review-star-rating\" class=\"a-icon a-icon-star a-star-5 review-rating\"><span class=\"a-icon-alt\">5.0 out of 5 stars</span></i><span class=\"a-letter-space\"/>\n\n\n\n\n\n\n\n  \n    <span class=\"cr-original-review-content\">Lleg&#243; en buenas condiciones</span><span class=\"cr-translated-review-content aok-hidden\"/>\n  \n  \n</a></div><span data-hook=\"review-date\" class=\"a-size-base a-color-secondary review-date\">Reviewed in the United States on August 25, 2023</span><div class=\"a-row a-spacing-mini review-data review-format-strip\"><span data-hook=\"format-strip-linkless\" class=\"a-color-secondary\">Size: 19.69FT / 6M</span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><a class=\"a-link-normal\" target=\"_blank\" rel=\"noopener\" href=\"/gp/help/customer/display.html/ref=cm_cr_dp_d_rvw_avp?nodeId=G75XTB7MBMBTXP6W\"><span data-hook=\"avp-badge-linkless\" class=\"a-size-mini a-color-state a-text-bold\">Verified Purchase</span></a></div><div class=\"a-row a-spacing-small review-data\"><span data-hook=\"review-body\" class=\"a-size-base review-text\"><div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">\n\n\n\n\n\n\n\n  \n    <span class=\"cr-original-review-content\">Es perfecto para lo que se necesitaba</span><span class=\"cr-translated-review-content aok-hidden\"/>\n  \n  \n</div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"/><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"/><span class=\"a-expander-prompt\">Read more</span></a></div></div></span></div><div data-hook=\"review-comments\" class=\"a-row review-comments cr-vote-action-bar\"><span class=\"cr-vote\" data-hook=\"review-voting-widget\">\n  <!-- Components for Reactions C -->\n    <div class=\"cr-helpful-button aok-float-left\">\n          <span class=\"a-button a-button-base\"><span class=\"a-button-inner\"><a href=\"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB094Q2RFNT%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhC%252BWN1BbvrkUvCPWZmQiiOPAK8TsRC18UPTDVhkgC%252BG2AAAAAGbQSqIAAAAB%26reviewId%3DR29D7KMOF75C57%23R29D7KMOF75C57&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;marketPlaceId=ATVPDKIKX0DER&amp;language=en&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\" data-hook=\"vote-helpful-button\" class=\"a-button-text\"><div class=\"cr-helpful-text\">\n              Helpful</div>\n          </a></span></span></div>\n      </span><span class=\"cr-footer-line-height\">\n        <span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><span class=\"a-declarative\" data-action=\"reviews:report-abusive-review-modal-button\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:report-abusive-review-modal-button\" data-reviews:report-abusive-review-modal-button=\"{&quot;closeButton&quot;:&quot;true&quot;,&quot;name&quot;:&quot;report-abusive-review-modal-popover-R29D7KMOF75C57&quot;,&quot;width&quot;:&quot;350&quot;,&quot;header&quot;:&quot;Report this review&quot;,&quot;url&quot;:&quot;/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hC%2BWN1BbvrkUvCPWZmQiiOPAK8TsRC18UPTDVhkgC%2BG2AAAAAGbQSqIAAAAB&amp;reviewId=R29D7KMOF75C57&quot;}\" id=\"report-abusive-review-modal-popover-R29D7KMOF75C57\"><a class=\"a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal\" href=\"/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hC%2BWN1BbvrkUvCPWZmQiiOPAK8TsRC18UPTDVhkgC%2BG2AAAAAGbQSqIAAAAB&amp;reviewId=R29D7KMOF75C57\">Report</a></span></span></span>\n  <div id=\"cr-single-translate\" class=\"a-section a-spacing-none a-spacing-top-small cr-translate-this-review-section\"><span class=\"a-declarative\" data-action=\"reviews:ajax-post\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:ajax-post\" data-reviews:ajax-post=\"{&quot;indicatorSelector&quot;:&quot;#R29D7KMOF75C57 .cr-single-review-loading&quot;,&quot;params&quot;:{&quot;isSingleReview&quot;:&quot;true&quot;,&quot;reviews&quot;:&quot;[{\\&quot;id\\&quot;:\\&quot;R29D7KMOF75C57\\&quot;,\\&quot;version\\&quot;:2,\\&quot;locale\\&quot;:{\\&quot;language\\&quot;:\\&quot;es\\&quot;,\\&quot;country\\&quot;:\\&quot;US\\&quot;},\\&quot;marketplaceId\\&quot;:\\&quot;ATVPDKIKX0DER\\&quot;}]&quot;,&quot;csrf&quot;:&quot;hDEi0UUov5YPwNYCY4NXlDde0e7Pyd5YWvXBcEzZJl/MAAAAAGbQSqIAAAAB&quot;,&quot;asin&quot;:&quot;B094Q2RFNT&quot;,&quot;selectorPrefix&quot;:&quot;.cr-widget-FocalReviews&quot;},&quot;url&quot;:&quot;/hz/reviews-render/ajax/reviews/augment/ref=cm_cr_dp_d_trn_s_tr&quot;}\"><a data-hook=\"cr-translate-this-review-link\" class=\"a-size-base a-link-normal\" href=\"#customerReviews\">Translate review to English</a></span></div></div></div></div></div>",
-                    "link": "/gp/customer-reviews/R29D7KMOF75C57?ASIN=B094Q2RFNT",
-                    "rating": 5,
-                    "date": {
-                        "raw": "August 25, 2023",
-                        "utc": "2023-08-25T00:00:00Z"
-                    },
-                    "profile": {
-                        "name": "Amazon Customer",
-                        "link": "/gp/profile/amzn1.account.AGL2TZ6UQK6TJDABLAXWKSXTAQPA",
-                        "id": "AGL2TZ6UQK6TJDABLAXWKSXTAQPA"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "United States",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R2MIU43EO851AK",
-                    "title": "In overall. Camera worked for a while and leds turn on and not picture",
-                    "body": "For my tacoma\n  \nRead more",
-                    "body_html": "<div id=\"R2MIU43EO851AK\" data-hook=\"review\" class=\"a-section review aok-relative\"><div id=\"R2MIU43EO851AK-review-card\" class=\"a-row a-spacing-none\"><div id=\"customer_review-R2MIU43EO851AK\" class=\"a-section celwidget\"><div data-hook=\"genome-widget\" class=\"a-row a-spacing-mini\"><a href=\"/gp/profile/amzn1.account.AGEH6ZNNLXXQI65KPYGQ7YIFENSQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8\" class=\"a-profile\" data-a-size=\"small\"><div aria-hidden=\"true\" class=\"a-profile-avatar-wrapper\"><div class=\"a-profile-avatar\"><img src=\"https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif\" class=\"a-lazy-loaded\" data-src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/><noscript><img src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/></noscript></div></div><div class=\"a-profile-content\"><span class=\"a-profile-name\">Carlos Alvarado</span></div></a></div><div class=\"a-row\"><a data-hook=\"review-title\" class=\"a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold\" href=\"/gp/customer-reviews/R2MIU43EO851AK/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&amp;ASIN=B094Q2RFNT\"><i data-hook=\"review-star-rating\" class=\"a-icon a-icon-star a-star-4 review-rating\"><span class=\"a-icon-alt\">4.0 out of 5 stars</span></i><span class=\"a-letter-space\"/>\n\n\n\n\n\n\n\n  \n  \n    <span>In overall. Camera worked for a while and leds turn on and not picture</span>\n  \n</a></div><span data-hook=\"review-date\" class=\"a-size-base a-color-secondary review-date\">Reviewed in the United States on August 13, 2022</span><div class=\"a-row a-spacing-mini review-data review-format-strip\"><span data-hook=\"format-strip-linkless\" class=\"a-color-secondary\">Size: 19.69FT / 6M</span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><a class=\"a-link-normal\" target=\"_blank\" rel=\"noopener\" href=\"/gp/help/customer/display.html/ref=cm_cr_dp_d_rvw_avp?nodeId=G75XTB7MBMBTXP6W\"><span data-hook=\"avp-badge-linkless\" class=\"a-size-mini a-color-state a-text-bold\">Verified Purchase</span></a></div><div class=\"a-row a-spacing-small review-data\"><span data-hook=\"review-body\" class=\"a-size-base review-text\"><div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">\n\n\n\n\n\n\n\n  \n  \n    <span>For my tacoma</span>\n  \n</div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"/><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"/><span class=\"a-expander-prompt\">Read more</span></a></div></div></span></div><div data-hook=\"review-comments\" class=\"a-row review-comments cr-vote-action-bar\"><span class=\"cr-vote\" data-hook=\"review-voting-widget\">\n  <!-- Components for Reactions C -->\n    <div class=\"cr-helpful-button aok-float-left\">\n          <span class=\"a-button a-button-base\"><span class=\"a-button-inner\"><a href=\"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB094Q2RFNT%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhAZi6OxNxHBkO8UmyP4W9hk5WiAPuXaIxUHADuhtWOQaAAAAAGbQSqIAAAAB%26reviewId%3DR2MIU43EO851AK%23R2MIU43EO851AK&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;marketPlaceId=ATVPDKIKX0DER&amp;language=en&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\" data-hook=\"vote-helpful-button\" class=\"a-button-text\"><div class=\"cr-helpful-text\">\n              Helpful</div>\n          </a></span></span></div>\n      </span><span class=\"cr-footer-line-height\">\n        <span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><span class=\"a-declarative\" data-action=\"reviews:report-abusive-review-modal-button\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:report-abusive-review-modal-button\" data-reviews:report-abusive-review-modal-button=\"{&quot;closeButton&quot;:&quot;true&quot;,&quot;name&quot;:&quot;report-abusive-review-modal-popover-R2MIU43EO851AK&quot;,&quot;width&quot;:&quot;350&quot;,&quot;header&quot;:&quot;Report this review&quot;,&quot;url&quot;:&quot;/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hAZi6OxNxHBkO8UmyP4W9hk5WiAPuXaIxUHADuhtWOQaAAAAAGbQSqIAAAAB&amp;reviewId=R2MIU43EO851AK&quot;}\" id=\"report-abusive-review-modal-popover-R2MIU43EO851AK\"><a class=\"a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal\" href=\"/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hAZi6OxNxHBkO8UmyP4W9hk5WiAPuXaIxUHADuhtWOQaAAAAAGbQSqIAAAAB&amp;reviewId=R2MIU43EO851AK\">Report</a></span></span></span>\n  </div></div></div></div>",
-                    "link": "/gp/customer-reviews/R2MIU43EO851AK?ASIN=B094Q2RFNT",
-                    "rating": 4,
-                    "date": {
-                        "raw": "August 13, 2022",
-                        "utc": "2022-08-13T00:00:00Z"
-                    },
-                    "profile": {
-                        "name": "Carlos Alvarado",
-                        "link": "/gp/profile/amzn1.account.AGEH6ZNNLXXQI65KPYGQ7YIFENSQ",
-                        "id": "AGEH6ZNNLXXQI65KPYGQ7YIFENSQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "United States",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R3OU00AGGIUP7F",
-                    "title": "Ok",
-                    "body": "Ok\n  \nRead more",
-                    "body_html": "<div id=\"R3OU00AGGIUP7F\" data-hook=\"review\" class=\"a-section review aok-relative\"><div id=\"R3OU00AGGIUP7F-review-card\" class=\"a-row a-spacing-none\"><div id=\"customer_review-R3OU00AGGIUP7F\" class=\"a-section celwidget\"><div data-hook=\"genome-widget\" class=\"a-row a-spacing-mini\"><a href=\"/gp/profile/amzn1.account.AFXFVAD65HSVBLZ2B3WPY733XA2A/ref=cm_cr_dp_d_gw_tr?ie=UTF8\" class=\"a-profile\" data-a-size=\"small\"><div aria-hidden=\"true\" class=\"a-profile-avatar-wrapper\"><div class=\"a-profile-avatar\"><img src=\"https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif\" class=\"a-lazy-loaded\" data-src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/1f70e815-a4c8-4ebd-bb17-b1b66a9a5b00._CR62,0,375,375_SX48_.jpg\"/><noscript><img src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/1f70e815-a4c8-4ebd-bb17-b1b66a9a5b00._CR62,0,375,375_SX48_.jpg\"/></noscript></div></div><div class=\"a-profile-content\"><span class=\"a-profile-name\">SoCalTeam</span></div></a></div><div class=\"a-row\"><a data-hook=\"review-title\" class=\"a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold\" href=\"/gp/customer-reviews/R3OU00AGGIUP7F/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&amp;ASIN=B094Q2RFNT\"><i data-hook=\"review-star-rating\" class=\"a-icon a-icon-star a-star-5 review-rating\"><span class=\"a-icon-alt\">5.0 out of 5 stars</span></i><span class=\"a-letter-space\"/>\n\n\n\n\n\n\n\n  \n  \n    <span>Ok</span>\n  \n</a></div><span data-hook=\"review-date\" class=\"a-size-base a-color-secondary review-date\">Reviewed in the United States on August 18, 2023</span><div class=\"a-row a-spacing-mini review-data review-format-strip\"><span data-hook=\"format-strip-linkless\" class=\"a-color-secondary\">Size: 19.69FT / 6M</span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><a class=\"a-link-normal\" target=\"_blank\" rel=\"noopener\" href=\"/gp/help/customer/display.html/ref=cm_cr_dp_d_rvw_avp?nodeId=G75XTB7MBMBTXP6W\"><span data-hook=\"avp-badge-linkless\" class=\"a-size-mini a-color-state a-text-bold\">Verified Purchase</span></a></div><div class=\"a-row a-spacing-small review-data\"><span data-hook=\"review-body\" class=\"a-size-base review-text\"><div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">\n\n\n\n\n\n\n\n  \n  \n    <span>Ok</span>\n  \n</div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"/><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"/><span class=\"a-expander-prompt\">Read more</span></a></div></div></span></div><div data-hook=\"review-comments\" class=\"a-row review-comments cr-vote-action-bar\"><span class=\"cr-vote\" data-hook=\"review-voting-widget\">\n  <!-- Components for Reactions C -->\n    <div class=\"cr-helpful-button aok-float-left\">\n          <span class=\"a-button a-button-base\"><span class=\"a-button-inner\"><a href=\"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB094Q2RFNT%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhLCF9sOfdz%252BhWvfkVe3GfrxmtnlyQyTAivbgTBLaLdRlAAAAAGbQSqIAAAAB%26reviewId%3DR3OU00AGGIUP7F%23R3OU00AGGIUP7F&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;marketPlaceId=ATVPDKIKX0DER&amp;language=en&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\" data-hook=\"vote-helpful-button\" class=\"a-button-text\"><div class=\"cr-helpful-text\">\n              Helpful</div>\n          </a></span></span></div>\n      </span><span class=\"cr-footer-line-height\">\n        <span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><span class=\"a-declarative\" data-action=\"reviews:report-abusive-review-modal-button\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:report-abusive-review-modal-button\" data-reviews:report-abusive-review-modal-button=\"{&quot;closeButton&quot;:&quot;true&quot;,&quot;name&quot;:&quot;report-abusive-review-modal-popover-R3OU00AGGIUP7F&quot;,&quot;width&quot;:&quot;350&quot;,&quot;header&quot;:&quot;Report this review&quot;,&quot;url&quot;:&quot;/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hLCF9sOfdz%2BhWvfkVe3GfrxmtnlyQyTAivbgTBLaLdRlAAAAAGbQSqIAAAAB&amp;reviewId=R3OU00AGGIUP7F&quot;}\" id=\"report-abusive-review-modal-popover-R3OU00AGGIUP7F\"><a class=\"a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal\" href=\"/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hLCF9sOfdz%2BhWvfkVe3GfrxmtnlyQyTAivbgTBLaLdRlAAAAAGbQSqIAAAAB&amp;reviewId=R3OU00AGGIUP7F\">Report</a></span></span></span>\n  </div></div></div></div>",
-                    "link": "/gp/customer-reviews/R3OU00AGGIUP7F?ASIN=B094Q2RFNT",
-                    "rating": 5,
-                    "date": {
-                        "raw": "August 18, 2023",
-                        "utc": "2023-08-18T00:00:00Z"
-                    },
-                    "profile": {
-                        "name": "SoCalTeam",
-                        "link": "/gp/profile/amzn1.account.AFXFVAD65HSVBLZ2B3WPY733XA2A",
-                        "id": "AFXFVAD65HSVBLZ2B3WPY733XA2A"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "United States",
-                    "is_global_review": false
-                },
-                {
-                    "id": "RJGA2OUV6FVRG",
-                    "title": "Great price",
-                    "body": "Great price and it came very quick I would highly recommend it\n  \nRead more",
-                    "body_html": "<div id=\"RJGA2OUV6FVRG\" data-hook=\"review\" class=\"a-section review aok-relative\"><div id=\"RJGA2OUV6FVRG-review-card\" class=\"a-row a-spacing-none\"><div id=\"customer_review-RJGA2OUV6FVRG\" class=\"a-section celwidget\"><div data-hook=\"genome-widget\" class=\"a-row a-spacing-mini\"><a href=\"/gp/profile/amzn1.account.AHGMKI322RSX6CVDMNB4R37AFONQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8\" class=\"a-profile\" data-a-size=\"small\"><div aria-hidden=\"true\" class=\"a-profile-avatar-wrapper\"><div class=\"a-profile-avatar\"><img src=\"https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif\" class=\"a-lazy-loaded\" data-src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/><noscript><img src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/></noscript></div></div><div class=\"a-profile-content\"><span class=\"a-profile-name\">Amazon Customer</span></div></a></div><div class=\"a-row\"><a data-hook=\"review-title\" class=\"a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold\" href=\"/gp/customer-reviews/RJGA2OUV6FVRG/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&amp;ASIN=B094Q2RFNT\"><i data-hook=\"review-star-rating\" class=\"a-icon a-icon-star a-star-5 review-rating\"><span class=\"a-icon-alt\">5.0 out of 5 stars</span></i><span class=\"a-letter-space\"/>\n\n\n\n\n\n\n\n  \n  \n    <span>Great price</span>\n  \n</a></div><span data-hook=\"review-date\" class=\"a-size-base a-color-secondary review-date\">Reviewed in the United States on April 9, 2023</span><div class=\"a-row a-spacing-mini review-data review-format-strip\"><span data-hook=\"format-strip-linkless\" class=\"a-color-secondary\">Size: 19.69FT / 6M</span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><a class=\"a-link-normal\" target=\"_blank\" rel=\"noopener\" href=\"/gp/help/customer/display.html/ref=cm_cr_dp_d_rvw_avp?nodeId=G75XTB7MBMBTXP6W\"><span data-hook=\"avp-badge-linkless\" class=\"a-size-mini a-color-state a-text-bold\">Verified Purchase</span></a></div><div class=\"a-row a-spacing-small review-data\"><span data-hook=\"review-body\" class=\"a-size-base review-text\"><div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">\n\n\n\n\n\n\n\n  \n  \n    <span>Great price and it came very quick I would highly recommend it</span>\n  \n</div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"/><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"/><span class=\"a-expander-prompt\">Read more</span></a></div></div></span></div><div data-hook=\"review-comments\" class=\"a-row review-comments cr-vote-action-bar\"><span class=\"cr-vote\" data-hook=\"review-voting-widget\">\n  <!-- Components for Reactions C -->\n    <div class=\"cr-helpful-button aok-float-left\">\n          <span class=\"a-button a-button-base\"><span class=\"a-button-inner\"><a href=\"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB094Q2RFNT%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhHyerYLvU%252BeV3MleuWKuRfDp6xbepiqbArIvo9N0RCRTAAAAAGbQSqIAAAAB%26reviewId%3DRJGA2OUV6FVRG%23RJGA2OUV6FVRG&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;marketPlaceId=ATVPDKIKX0DER&amp;language=en&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\" data-hook=\"vote-helpful-button\" class=\"a-button-text\"><div class=\"cr-helpful-text\">\n              Helpful</div>\n          </a></span></span></div>\n      </span><span class=\"cr-footer-line-height\">\n        <span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><span class=\"a-declarative\" data-action=\"reviews:report-abusive-review-modal-button\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:report-abusive-review-modal-button\" data-reviews:report-abusive-review-modal-button=\"{&quot;closeButton&quot;:&quot;true&quot;,&quot;name&quot;:&quot;report-abusive-review-modal-popover-RJGA2OUV6FVRG&quot;,&quot;width&quot;:&quot;350&quot;,&quot;header&quot;:&quot;Report this review&quot;,&quot;url&quot;:&quot;/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hHyerYLvU%2BeV3MleuWKuRfDp6xbepiqbArIvo9N0RCRTAAAAAGbQSqIAAAAB&amp;reviewId=RJGA2OUV6FVRG&quot;}\" id=\"report-abusive-review-modal-popover-RJGA2OUV6FVRG\"><a class=\"a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal\" href=\"/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hHyerYLvU%2BeV3MleuWKuRfDp6xbepiqbArIvo9N0RCRTAAAAAGbQSqIAAAAB&amp;reviewId=RJGA2OUV6FVRG\">Report</a></span></span></span>\n  </div></div></div></div>",
-                    "link": "/gp/customer-reviews/RJGA2OUV6FVRG?ASIN=B094Q2RFNT",
-                    "rating": 5,
-                    "date": {
-                        "raw": "April 9, 2023",
-                        "utc": "2023-04-09T00:00:00Z"
-                    },
-                    "profile": {
-                        "name": "Amazon Customer",
-                        "link": "/gp/profile/amzn1.account.AHGMKI322RSX6CVDMNB4R37AFONQ",
-                        "id": "AHGMKI322RSX6CVDMNB4R37AFONQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "United States",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R1PEQYARC48AKJ",
-                    "title": "No me funciona",
-                    "body": "No tiene la calidad que buscaba, bueno al precio no pod\u00eda pedir m\u00e1s.\n  \n  \nRead more",
-                    "body_html": "<div id=\"R1PEQYARC48AKJ\" data-hook=\"review\" class=\"a-section review aok-relative\"><span class=\"cr-translated-review-content\">\n    <span class=\"cr-single-review-loading aok-hidden\">\n      <span class=\"reviews-loading\"/>\n    </span>\n  </span>\n<div id=\"R1PEQYARC48AKJ-review-card\" class=\"a-row a-spacing-none\"><div id=\"customer_review-R1PEQYARC48AKJ\" class=\"a-section celwidget\"><div data-hook=\"genome-widget\" class=\"a-row a-spacing-mini\"><a href=\"/gp/profile/amzn1.account.AH2U6KVJE6SVJW7TZVL6IQJEAOIQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8\" class=\"a-profile\" data-a-size=\"small\"><div aria-hidden=\"true\" class=\"a-profile-avatar-wrapper\"><div class=\"a-profile-avatar\"><img src=\"https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif\" class=\"a-lazy-loaded\" data-src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/><noscript><img src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/></noscript></div></div><div class=\"a-profile-content\"><span class=\"a-profile-name\">Cesar E. Navarro</span></div></a></div><div class=\"a-row\"><a data-hook=\"review-title\" class=\"a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold\" href=\"/gp/customer-reviews/R1PEQYARC48AKJ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&amp;ASIN=B094Q2RFNT\"><i data-hook=\"review-star-rating\" class=\"a-icon a-icon-star a-star-3 review-rating\"><span class=\"a-icon-alt\">3.0 out of 5 stars</span></i><span class=\"a-letter-space\"/>\n\n\n\n\n\n\n\n  \n    <span class=\"cr-original-review-content\">No me funciona</span><span class=\"cr-translated-review-content aok-hidden\"/>\n  \n  \n</a></div><span data-hook=\"review-date\" class=\"a-size-base a-color-secondary review-date\">Reviewed in the United States on May 26, 2024</span><div class=\"a-row a-spacing-mini review-data review-format-strip\"><span data-hook=\"format-strip-linkless\" class=\"a-color-secondary\">Size: 19.69FT / 6M</span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><a class=\"a-link-normal\" target=\"_blank\" rel=\"noopener\" href=\"/gp/help/customer/display.html/ref=cm_cr_dp_d_rvw_avp?nodeId=G75XTB7MBMBTXP6W\"><span data-hook=\"avp-badge-linkless\" class=\"a-size-mini a-color-state a-text-bold\">Verified Purchase</span></a></div><div class=\"a-row a-spacing-small review-data\"><span data-hook=\"review-body\" class=\"a-size-base review-text\"><div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">\n\n\n\n\n\n\n\n  \n    <span class=\"cr-original-review-content\">No tiene la calidad que buscaba, bueno al precio no pod&#237;a pedir m&#225;s.</span><span class=\"cr-translated-review-content aok-hidden\"/>\n  \n  \n</div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"/><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"/><span class=\"a-expander-prompt\">Read more</span></a></div></div></span></div><div data-hook=\"review-comments\" class=\"a-row review-comments cr-vote-action-bar\"><span class=\"cr-vote\" data-hook=\"review-voting-widget\">\n  <!-- Components for Reactions C -->\n    <div class=\"cr-helpful-button aok-float-left\">\n          <span class=\"a-button a-button-base\"><span class=\"a-button-inner\"><a href=\"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB094Q2RFNT%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhGNGzxSBYnIx46HSApcHb6EoODipEEmCg9PPBqPR7LslAAAAAGbQSqIAAAAB%26reviewId%3DR1PEQYARC48AKJ%23R1PEQYARC48AKJ&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;marketPlaceId=ATVPDKIKX0DER&amp;language=en&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\" data-hook=\"vote-helpful-button\" class=\"a-button-text\"><div class=\"cr-helpful-text\">\n              Helpful</div>\n          </a></span></span></div>\n      </span><span class=\"cr-footer-line-height\">\n        <span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><span class=\"a-declarative\" data-action=\"reviews:report-abusive-review-modal-button\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:report-abusive-review-modal-button\" data-reviews:report-abusive-review-modal-button=\"{&quot;closeButton&quot;:&quot;true&quot;,&quot;name&quot;:&quot;report-abusive-review-modal-popover-R1PEQYARC48AKJ&quot;,&quot;width&quot;:&quot;350&quot;,&quot;header&quot;:&quot;Report this review&quot;,&quot;url&quot;:&quot;/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hGNGzxSBYnIx46HSApcHb6EoODipEEmCg9PPBqPR7LslAAAAAGbQSqIAAAAB&amp;reviewId=R1PEQYARC48AKJ&quot;}\" id=\"report-abusive-review-modal-popover-R1PEQYARC48AKJ\"><a class=\"a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal\" href=\"/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hGNGzxSBYnIx46HSApcHb6EoODipEEmCg9PPBqPR7LslAAAAAGbQSqIAAAAB&amp;reviewId=R1PEQYARC48AKJ\">Report</a></span></span></span>\n  <div id=\"cr-single-translate\" class=\"a-section a-spacing-none a-spacing-top-small cr-translate-this-review-section\"><span class=\"a-declarative\" data-action=\"reviews:ajax-post\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:ajax-post\" data-reviews:ajax-post=\"{&quot;indicatorSelector&quot;:&quot;#R1PEQYARC48AKJ .cr-single-review-loading&quot;,&quot;params&quot;:{&quot;isSingleReview&quot;:&quot;true&quot;,&quot;reviews&quot;:&quot;[{\\&quot;id\\&quot;:\\&quot;R1PEQYARC48AKJ\\&quot;,\\&quot;version\\&quot;:2,\\&quot;locale\\&quot;:{\\&quot;language\\&quot;:\\&quot;es\\&quot;,\\&quot;country\\&quot;:\\&quot;US\\&quot;},\\&quot;marketplaceId\\&quot;:\\&quot;ATVPDKIKX0DER\\&quot;}]&quot;,&quot;csrf&quot;:&quot;hHUOT08VrxVTvu2bAQG0mwnQFvmen8thmVdtHxhbSxb7AAAAAGbQSqIAAAAB&quot;,&quot;asin&quot;:&quot;B094Q2RFNT&quot;,&quot;selectorPrefix&quot;:&quot;.cr-widget-FocalReviews&quot;},&quot;url&quot;:&quot;/hz/reviews-render/ajax/reviews/augment/ref=cm_cr_dp_d_trn_s_tr&quot;}\"><a data-hook=\"cr-translate-this-review-link\" class=\"a-size-base a-link-normal\" href=\"#customerReviews\">Translate review to English</a></span></div></div></div></div></div>",
-                    "link": "/gp/customer-reviews/R1PEQYARC48AKJ?ASIN=B094Q2RFNT",
-                    "rating": 3,
-                    "date": {
-                        "raw": "May 26, 2024",
-                        "utc": "2024-05-26T00:00:00Z"
-                    },
-                    "profile": {
-                        "name": "Cesar E. Navarro",
-                        "link": "/gp/profile/amzn1.account.AH2U6KVJE6SVJW7TZVL6IQJEAOIQ",
-                        "id": "AH2U6KVJE6SVJW7TZVL6IQJEAOIQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "United States",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R10Q677FS1J8QM",
-                    "title": "So these didn't work for me but it's just because my cameras are not made for rca",
-                    "body": "The taco bell dog was pretty cool \ud83d\ude05\n  \nRead more",
-                    "body_html": "<div id=\"R10Q677FS1J8QM\" data-hook=\"review\" class=\"a-section review aok-relative\"><div id=\"R10Q677FS1J8QM-review-card\" class=\"a-row a-spacing-none\"><div id=\"customer_review-R10Q677FS1J8QM\" class=\"a-section celwidget\"><div data-hook=\"genome-widget\" class=\"a-row a-spacing-mini\"><a href=\"/gp/profile/amzn1.account.AEWKSHIYCUHYHGDJBVWLTD6ST7KA/ref=cm_cr_dp_d_gw_tr?ie=UTF8\" class=\"a-profile\" data-a-size=\"small\"><div aria-hidden=\"true\" class=\"a-profile-avatar-wrapper\"><div class=\"a-profile-avatar\"><img src=\"https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif\" class=\"a-lazy-loaded\" data-src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/><noscript><img src=\"https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png\"/></noscript></div></div><div class=\"a-profile-content\"><span class=\"a-profile-name\">darrell adam mchan</span></div></a></div><div class=\"a-row\"><a data-hook=\"review-title\" class=\"a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold\" href=\"/gp/customer-reviews/R10Q677FS1J8QM/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&amp;ASIN=B094Q2RFNT\"><i data-hook=\"review-star-rating\" class=\"a-icon a-icon-star a-star-5 review-rating\"><span class=\"a-icon-alt\">5.0 out of 5 stars</span></i><span class=\"a-letter-space\"/>\n\n\n\n\n\n\n\n  \n  \n    <span>So these didn't work for me but it's just because my cameras are not made for rca</span>\n  \n</a></div><span data-hook=\"review-date\" class=\"a-size-base a-color-secondary review-date\">Reviewed in the United States on April 23, 2022</span><div class=\"a-row a-spacing-mini review-data review-format-strip\"><span data-hook=\"format-strip-linkless\" class=\"a-color-secondary\">Size: 19.69FT / 6M</span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><a class=\"a-link-normal\" target=\"_blank\" rel=\"noopener\" href=\"/gp/help/customer/display.html/ref=cm_cr_dp_d_rvw_avp?nodeId=G75XTB7MBMBTXP6W\"><span data-hook=\"avp-badge-linkless\" class=\"a-size-mini a-color-state a-text-bold\">Verified Purchase</span></a></div><div class=\"a-row a-spacing-small review-data\"><span data-hook=\"review-body\" class=\"a-size-base review-text\"><div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">\n\n\n\n\n\n\n\n  \n  \n    <span>The taco bell dog was pretty cool &#128517;</span>\n  \n</div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"/><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"/><span class=\"a-expander-prompt\">Read more</span></a></div></div></span></div><div data-hook=\"review-comments\" class=\"a-row review-comments cr-vote-action-bar\"><span class=\"cr-vote\" data-hook=\"review-voting-widget\">\n  <!-- Components for Reactions C -->\n    <div class=\"cr-helpful-button aok-float-left\">\n          <span class=\"a-button a-button-base\"><span class=\"a-button-inner\"><a href=\"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB094Q2RFNT%2Fref%3Dcm_cr_dp_d_vote_lft%3Fie%3DUTF8%26csrfT%3DhGEh4wLVNyyfp9qqca7nvYjb%252BS6DFjcCXkhGwgaKpkEEAAAAAGbQSqIAAAAB%26reviewId%3DR10Q677FS1J8QM%23R10Q677FS1J8QM&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;marketPlaceId=ATVPDKIKX0DER&amp;language=en&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\" data-hook=\"vote-helpful-button\" class=\"a-button-text\"><div class=\"cr-helpful-text\">\n              Helpful</div>\n          </a></span></span></div>\n      </span><span class=\"cr-footer-line-height\">\n        <span><i class=\"a-icon a-icon-text-separator\" role=\"img\" aria-label=\"|\"/><span class=\"a-declarative\" data-action=\"reviews:report-abusive-review-modal-button\" data-csa-c-type=\"widget\" data-csa-c-func-deps=\"aui-da-reviews:report-abusive-review-modal-button\" data-reviews:report-abusive-review-modal-button=\"{&quot;closeButton&quot;:&quot;true&quot;,&quot;name&quot;:&quot;report-abusive-review-modal-popover-R10Q677FS1J8QM&quot;,&quot;width&quot;:&quot;350&quot;,&quot;header&quot;:&quot;Report this review&quot;,&quot;url&quot;:&quot;/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hGEh4wLVNyyfp9qqca7nvYjb%2BS6DFjcCXkhGwgaKpkEEAAAAAGbQSqIAAAAB&amp;reviewId=R10Q677FS1J8QM&quot;}\" id=\"report-abusive-review-modal-popover-R10Q677FS1J8QM\"><a class=\"a-size-base a-link-normal a-color-secondary report-abuse-link a-text-normal\" href=\"/hz/reviews-render/report-review?ie=UTF8&amp;ref=cm_cr_dp_d_report&amp;csrfT=hGEh4wLVNyyfp9qqca7nvYjb%2BS6DFjcCXkhGwgaKpkEEAAAAAGbQSqIAAAAB&amp;reviewId=R10Q677FS1J8QM\">Report</a></span></span></span>\n  </div></div></div></div>",
-                    "link": "/gp/customer-reviews/R10Q677FS1J8QM?ASIN=B094Q2RFNT",
-                    "rating": 5,
-                    "date": {
-                        "raw": "April 23, 2022",
-                        "utc": "2022-04-23T00:00:00Z"
-                    },
-                    "profile": {
-                        "name": "darrell adam mchan",
-                        "link": "/gp/profile/amzn1.account.AEWKSHIYCUHYHGDJBVWLTD6ST7KA",
-                        "id": "AEWKSHIYCUHYHGDJBVWLTD6ST7KA"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "United States",
-                    "is_global_review": false
-                }
-            ],
-            "main_image": {
-                "link": "https://m.media-amazon.com/images/I/71-ceWPAEeS._SL1500_.jpg"
-            },
-            "images": [
-                {
-                    "link": "https://m.media-amazon.com/images/I/71-ceWPAEeS._SL1500_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/711qWnqRRrS._SL1500_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/71LqBv3jEWS._SL1500_.jpg"
-                }
-            ],
-            "videos": null,
-            "is_bundle": null,
-            "feature_bullets": [
-                "The RCA cable coming with backup camera is 19.5ft, if you want to install the rear camera on a large vehicle such as SUV RV Pickup Truck, a longer RCA extension cable is required.",
-                "RCA Video Cable Compatible with Professional CCTV / surveillance camera, front / rear view camera, DVD Dash, Head Unit, car stereo, parking monitor display, TV box with yellow RCA connector, and so on.",
-                "RCA Video Cable Weatherproof for outdoor use,100% shielded offering superb protection against EMI/ RFI interference.",
-                "RCA Video Cable Comes with RCA Video Female to Female Coupler and Power Cable."
-            ],
-            "important_information": null,
-            "buybox_winner": {
-                "minimum_order_quantity": null,
-                "offer_id": "pyZoLeO%2F3OjAcOe9DN%2FtJnbI8qIsAoNwUuQu3QoOa0PckgSSxuUomVXahXWm94kx7pistJE7o5emH48GP29asuaU1WNeGOziEZIHho%2BUu%2F5T0epnQJzl%2FTbb7apxh%2FUuAzXrHjHbt9832N%2B27jvCfQpm66yJkK4hWIphCmT4CCdQ5BrkuypseAC5sgfhZAbC",
-                "is_prime": false,
-                "is_prime_exclusive_deal": false,
-                "availability": {
-                    "type": "",
-                    "raw": "",
-                    "dispatch_days": 0
-                },
-                "fulfillment": {
-                    "type": "3p",
-                    "is_sold_by_amazon": false,
-                    "is_fulfilled_by_amazon": true,
-                    "is_fulfilled_by_third_party": false,
-                    "is_sold_by_third_party": true,
-                    "third_party_seller": {
-                        "name": "QDiShi",
-                        "link": "/sp?seller=A2LK0M5TO8I000"
-                    }
-                },
-                "deal": null,
-                "price": {
-                    "symbol": "$",
-                    "currency": "USD",
-                    "value": 0,
-                    "raw": "$0.00"
-                },
-                "rrp": null,
-                "new_offers_count": null,
-                "new_offers_from": null,
-                "used_offers_count": null,
-                "used_offers_from": null,
-                "mixed_offers_count": 0,
-                "mixed_offers_from": {
-                    "symbol": null,
-                    "value": null,
-                    "currency": null,
-                    "raw": null
-                }
-            },
-            "more_buying_choices": null,
-            "specifications": [
-                {
-                    "name": "Brand",
-                    "value": "QDiShi"
-                },
-                {
-                    "name": "Connector Type",
-                    "value": "RCA"
-                },
-                {
-                    "name": "Cable Type",
-                    "value": "Composite"
-                },
-                {
-                    "name": "Compatible Devices",
-                    "value": "Monitor, Television, DVD Player"
-                },
-                {
-                    "name": "Special Feature",
-                    "value": "Weatherproof"
-                }
-            ],
-            "services": null,
-            "attributes": [
-                {
-                    "name": "Brand",
-                    "value": "QDiShi"
-                },
-                {
-                    "name": "Connector Type",
-                    "value": "RCA"
-                },
-                {
-                    "name": "Cable Type",
-                    "value": "Composite"
-                },
-                {
-                    "name": "Compatible Devices",
-                    "value": "Monitor, Television, DVD Player"
-                },
-                {
-                    "name": "Special Feature",
-                    "value": "Weatherproof"
-                }
-            ]
-        },
-        "frequently_bought_together": {
-            "total_price": {
-                "symbol": null,
-                "value": 0,
-                "currency": null,
-                "raw": "$0"
-            },
-            "products": [
-
-            ]
-        },
-        "also_viewed": null,
-        "bundles": null,
-        "bundle_contents": null,
-        "sponsored_products": null,
-        "shop_by_look": null
-    },
-    "mission": "task for traversing special categories",
-    "task_id": 17098114,
-    "create_time": "2024-08-29T10:17:21.164257",
-    "update_time": "2024-08-29T10:17:21.164262",
-    "_id": "e1b14aea65ef11efa0ef6271c80f2935"
+	"url": "https://www.amazon.com/dp/B0D5XLP9HZ",
+	"host": "www.amazon.com",
+	"product_id": "B0D5XLP9HZ",
+	"product_title": "Tummy Control Sailor Wide Leg Trouser, High Waisted Straight Leg Jeans, Denim Pants with Pocket, Women's Casual Jeans (White Regular,XL)",
+	"source": 1,
+	"parser_name": "AmazonProductDetailParser",
+	"raw_result": "",
+	"crawl_result": {
+		"request_info": null,
+		"request_metadata": null,
+		"request_parameters": null,
+		"product": {
+			"title": "Tummy Control Sailor Wide Leg Trouser, High Waisted Straight Leg Jeans, Denim Pants with Pocket, Women's Casual Jeans (White Regular,XL)",
+			"title_excluding_variant_name": null,
+			"stark_shop": null,
+			"stark_link_in_shop": null,
+			"variants": [],
+			"keywords": "Tummy,Control,Sailor,Wide,Leg,Trouser,,High,Waisted,Straight,Leg,Jeans,,Denim,Pants,with,Pocket,,Women's,Casual,Jeans,(White,Regular,XL)",
+			"keywords_list": [
+				"Tummy",
+				"Control",
+				"Sailor",
+				"Wide",
+				"Leg",
+				"Trouser",
+				"",
+				"High",
+				"Waisted",
+				"Straight",
+				"Leg",
+				"Jeans",
+				"",
+				"Denim",
+				"Pants",
+				"with",
+				"Pocket",
+				"",
+				"Women's",
+				"Casual",
+				"Jeans",
+				"(White",
+				"Regular",
+				"XL)"
+			],
+			"link": "https://www.amazon.com/dp/B0D5XLP9HZ",
+			"asin": "B0D5XLP9HZ",
+			"parent_asin": "B0D5XLP9HZ",
+			"description": null,
+			"categories": [
+				{
+					"name": "Clothing, Shoes & Jewelry",
+					"link": "/b?node=7141123011",
+					"category_id": "7141123011"
+				},
+				{
+					"name": "Women",
+					"link": "/b?node=7147440011",
+					"category_id": "7147440011"
+				},
+				{
+					"name": "Clothing",
+					"link": "/b?node=1040660",
+					"category_id": "1040660"
+				},
+				{
+					"name": "Jeans",
+					"link": "/b?node=1048188",
+					"category_id": "1048188"
+				}
+			],
+			"bestsellers_rank": null,
+			"summarization_attributes": null,
+			"amazons_choice": {
+				"keywords": "",
+				"link": null
+			},
+			"recent_sales": null,
+			"climate_pledge_friendly": null,
+			"kindle_unlimited": null,
+			"has_coupon": null,
+			"coupon_text": null,
+			"promotions": null,
+			"brand": "NATETOY",
+			"weight": "",
+			"shipping_weight": null,
+			"first_available": "2024-07-28 00:00:00",
+			"delivery_message": null,
+			"dimensions": "",
+			"sub_title": {
+				"text": "Brand: NATETOY",
+				"link": "/s/ref=bl_sl_s_ap_web_7141123011?ie=UTF8&node=7141123011&field-brandtextbin=NATETOY"
+			},
+			"rating": -1.0,
+			"rating_breakdown": null,
+			"ratings_total": -1,
+			"reviews_total": null,
+			"top_reviews": [],
+			"main_image": {
+				"link": "https://m.media-amazon.com/images/I/31Y2aT6fX9L._AC_.jpg"
+			},
+			"images": [
+				{
+					"link": "https://m.media-amazon.com/images/I/31Y2aT6fX9L._AC_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/51zN0MV7tnL._AC_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/41KLTInUKLL._AC_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/31kz+EqVfEL._AC_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/41BAwnGiK6L._AC_.jpg"
+				},
+				{
+					"link": "https://m.media-amazon.com/images/I/41ATljuWdhL._AC_.jpg"
+				}
+			],
+			"videos": null,
+			"is_bundle": null,
+			"feature_bullets": null,
+			"important_information": null,
+			"buybox_winner": {
+				"minimum_order_quantity": null,
+				"offer_id": "",
+				"is_prime": false,
+				"is_prime_exclusive_deal": false,
+				"availability": null,
+				"fulfillment": {
+					"type": "3p",
+					"is_sold_by_amazon": false,
+					"is_fulfilled_by_amazon": false,
+					"is_fulfilled_by_third_party": true,
+					"is_sold_by_third_party": true,
+					"third_party_seller": {
+						"name": "",
+						"link": "/sp?seller="
+					}
+				},
+				"deal": null,
+				"rrp": null,
+				"new_offers_count": null,
+				"new_offers_from": null,
+				"used_offers_count": null,
+				"used_offers_from": null,
+				"mixed_offers_count": 0,
+				"mixed_offers_from": {
+					"symbol": null,
+					"value": null,
+					"currency": null,
+					"raw": null
+				}
+			},
+			"more_buying_choices": null,
+			"specifications": null,
+			"services": null,
+			"attributes": []
+		},
+		"frequently_bought_together": {
+			"total_price": {
+				"symbol": null,
+				"value": 0.0,
+				"currency": null,
+				"raw": "$0"
+			},
+			"products": []
+		},
+		"also_viewed": null,
+		"bundles": null,
+		"bundle_contents": null,
+		"sponsored_products": null,
+		"shop_by_look": null
+	},
+	"mission": "called by online",
+	"task_id": 3122442,
+	"create_time": "2024-12-09T06:31:09.920391+00:00",
+	"update_time": "2024-12-09T06:31:09.920397+00:00",
+	"_id": "2e1ff94cb5f711ef981dfac8aff9d870"
 }

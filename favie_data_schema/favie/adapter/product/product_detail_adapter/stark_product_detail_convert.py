@@ -72,7 +72,7 @@ class StarkProductDetailConvert:
         price = StarkProductDetailConvert.get_price(stark_detail_message, parse_time)
         favie_product.price = price
         rrp = StarkProductDetailConvert.get_rrp(stark_detail_message, parse_time)
-        favie_product.rrp = rrp if rrp else price
+        favie_product.rrp = rrp if rrp else price if price.value > 0 else None
         favie_product.images = StarkProductDetailConvert.get_images(crawl_result)
         favie_product.f_images = None
         favie_product.videos = StarkProductDetailConvert.get_videos(crawl_result)
