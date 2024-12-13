@@ -4,6 +4,7 @@ from favie_data_common.common.pydantic_utils import PydanticUtils
 from pydantic import BaseModel, field_validator
 
 from favie_data_schema.favie.data.interface.common.favie_model import FavieImageItem, FavieTag, MetaInfo
+from favie_data_schema.favie.data.interface.product.favie_product import AttributeItem
 
 
 class FavieProductReview(BaseModel):
@@ -168,6 +169,12 @@ class FavieProductReview(BaseModel):
     @field_validator("position", mode="before")
     def validate_position(cls, value):
         return PydanticUtils.deserialize_data(int, value)
+
+    attributes: Optional[List[AttributeItem]] = None
+
+    @field_validator("attributes", mode="before")
+    def validate_attributes(cls, value):
+        return PydanticUtils.deserialize_data(List[AttributeItem], value)
 
     helpful_votes: Optional[int] = None
 

@@ -19,7 +19,7 @@ class MessageDataType(IntEnum):
     PRODUCT_REVIEW_IMAGE_CRAWLER = 6
     WEBPAGE_CONTENT_CRAWLER = 7
     WEBPAGE_IMAGE_CRAWLER = 8
-    DATA_DELETE_MARK = 9
+    DATA_CLEANING = 9
 
 
 class FavieDataStatus(IntEnum):

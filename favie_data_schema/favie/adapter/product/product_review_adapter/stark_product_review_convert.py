@@ -4,12 +4,10 @@ from favie_data_common.common.common_utils import CommonUtils
 
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage
 from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
-from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import (
-    RainforestProductDetail,
-    TopReviews,
-)
-from favie_data_schema.favie.data.interface.common.favie_enum import MessageDataType
+from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import TopReviews
+from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, MessageDataType
 from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
+from favie_data_schema.favie.data.interface.product.favie_product import AttributeItem
 from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 
 
@@ -61,9 +59,7 @@ class StarkProductReviewConvert:
         favie_review.date_utc = review.date.utc if review.date is not None else None
         favie_review.images = review.stark_images if review.stark_images is not None else None
         if review.stark_attributes is not None:
-            favie_review.attributes = [
-                AttributeItem(name=x.name, value=x.value) for x in review.stark_attributes
-            ]
+            favie_review.attributes = [AttributeItem(name=x.name, value=x.value) for x in review.stark_attributes]
         else:
             favie_review.attributes = None
         favie_review.videos = None
@@ -74,10 +70,11 @@ class StarkProductReviewConvert:
             data_type=str(MessageDataType.PRODUCT_REVIEW_CRAWLER.value),
             app_key=app_key,
         )
+        favie_review.f_status = str(FavieDataStatus.NORMAL.value)
         return favie_review
 
     @staticmethod
-    def __check(stark_detail_message: RainforestProductDetail):
+    def __check(stark_detail_message: StarkProductDetailMessage):
         if stark_detail_message is None:
             return False
         if stark_detail_message.crawl_result is None:

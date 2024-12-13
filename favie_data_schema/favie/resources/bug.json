@@ -503,12 +503,7 @@
                     "third_party_seller": null
                 },
                 "deal": null,
-                "price": {
-                    "symbol": "$",
-                    "currency": "USD",
-                    "value": 32.12,
-                    "raw": "$32.12"
-                },
+           
                 "rrp": {
                     "symbol": "$",
                     "currency": "USD",
