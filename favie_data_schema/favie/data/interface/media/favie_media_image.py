@@ -1,4 +1,3 @@
-import logging
 from typing import Dict, Optional
 
 from favie_data_common.common.pydantic_utils import PydanticUtils
@@ -49,7 +48,6 @@ class FavieMediaImage(BaseModel):
         try:
             return PydanticUtils.deserialize_data(Dict[str, str], value)
         except Exception:
-            logging.exception(f"Failed to deserialize exif data: {value}")
             return None
 
     frames: Optional[int] = None
