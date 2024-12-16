@@ -1,3 +1,4 @@
+import logging
 from typing import Dict, Optional
 
 from favie_data_common.common.pydantic_utils import PydanticUtils
@@ -41,11 +42,15 @@ class FavieMediaImage(BaseModel):
     def validate_color_mode(cls, value):
         return PydanticUtils.deserialize_data(str, value)
 
-    exif: Optional[Dict] = None
+    exif: Optional[Dict[str, str]] = None
 
     @field_validator("exif", mode="before")
     def validate_exif(cls, value):
-        return PydanticUtils.deserialize_data(Dict, value)
+        try:
+            return PydanticUtils.deserialize_data(Dict[str, str], value)
+        except Exception:
+            logging.exception(f"Failed to deserialize exif data: {value}")
+            return None
 
     frames: Optional[int] = None
 
@@ -118,3 +123,8 @@ class FavieMediaImage(BaseModel):
     @field_validator("f_creates_at", mode="before")
     def validate_f_creates_at(cls, value):
         return PydanticUtils.deserialize_data(str, value)
+
+
+if __name__ == "__main__":
+    image = FavieMediaImage(exif={123: 122})
+    print(image.model_dump_json(exclude_none=True))
