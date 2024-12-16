@@ -32,7 +32,7 @@ readme = "README.md"
 python = ">=3.10,<3.13"
 pydantic = "2.6.4"
 pydantic-settings = "2.2.1"
-favie-data-common = {git = "https://github.com/SerendipityOneInc/favie-data-common.git", rev="v0.0.9"}
+favie-data-common = {git = "https://github.com/SerendipityOneInc/favie-data-common.git", rev="v0.0.8"}
 
 [build-system]
 requires = ["poetry-core"]
