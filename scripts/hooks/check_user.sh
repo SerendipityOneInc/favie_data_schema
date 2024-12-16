@@ -6,6 +6,7 @@ if ! command -v gh &> /dev/null; then
   exit 1
 fi
 
+
 # 获取当前 GitHub 用户信息
 USER_INFO=$(gh api user)
 
