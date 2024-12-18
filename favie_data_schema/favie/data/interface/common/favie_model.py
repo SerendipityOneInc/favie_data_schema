@@ -24,6 +24,7 @@ class FavieImageItem(BaseModel):
 class MetaInfo(BaseModel):
     source_type: Optional[str] = None
     parser_name: Optional[str] = None
+    first_parser_name: Optional[str] = None
     parses_at: Optional[str] = None
     data_type: Optional[str] = None
     app_key: Optional[str] = None
