@@ -89,7 +89,9 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
         webpage.author = webpage_message.crawl_result.author
         webpage.keywords = webpage_message.crawl_result.keywords
         webpage.robots = webpage_message.crawl_result.robots
-        webpage.content = webpage_message.crawl_result.content
+        content = webpage_message.crawl_result.content
+        webpage.content = content
+        webpage.f_fingerprint = Simhash(content).value if content else None
         webpage.content_type = webpage_message.content_type
         webpage.excerpt = webpage_message.crawl_result.excerpt
         webpage.comments = webpage_message.crawl_result.comments
