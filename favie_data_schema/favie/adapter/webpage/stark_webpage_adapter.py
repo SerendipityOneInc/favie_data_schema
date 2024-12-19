@@ -1,6 +1,7 @@
 from typing import List
 
 from favie_data_common.common.common_utils import CommonUtils
+from simhash import Simhash
 
 from favie_data_schema.favie.adapter.common.deserialize_utils import DeserializeUtils
 from favie_data_schema.favie.adapter.common.stark_message import StarkNewWebpageMessage, StarkWebpageMessage
@@ -50,7 +51,9 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
         webpage.author = webpage_message.crawl_result.webpage.parsed_webpage_content.author
         webpage.keywords = None
         webpage.robots = None
-        webpage.content = webpage_message.crawl_result.webpage.parsed_webpage_content.text
+        content = webpage_message.crawl_result.webpage.parsed_webpage_content.text
+        webpage.content = content
+        webpage.f_fingerprint = Simhash(content).value if content else None
         webpage.content_type = webpage_message.content_type
         webpage.excerpt = webpage_message.crawl_result.webpage.parsed_webpage_content.excerpt
         webpage.comments = None
