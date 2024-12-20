@@ -2,6 +2,8 @@ from typing import List, Optional
 
 from pydantic import BaseModel
 
+from favie_data_schema.favie.data.interface.common.favie_model import FavieImageItem, FavieTag
+
 
 class FavieCategoriesPredictResponse(BaseModel):
     ids: Optional[List[List[str]]] = None
@@ -159,3 +161,64 @@ class ReviewSummary(BaseModel):
     top_favourable: Optional[str] = None
     top_critical: Optional[str] = None
     f_updates_at: Optional[str] = None
+
+
+class BaseInfo(BaseModel):
+    request_sku_id: Optional[str] = None
+    sku_id: Optional[str] = None
+    spu_id: Optional[str] = None
+    site: Optional[str] = None
+    title: Optional[str] = None
+    sub_title: Optional[str] = None
+    sub_title_link: Optional[str] = None
+    link: Optional[str] = None
+    brand: Optional[Brand] = None
+    f_brand: Optional[Brand] = None
+    keywords: Optional[str] = None
+    categories: Optional[List[CategoryItem]] = None
+    f_categories: Optional[List[CategoryItem]] = None
+    shop_id: Optional[str] = None
+    shop_name: Optional[str] = None
+    shop_site: Optional[str] = None
+    link_in_shop: Optional[str] = None
+    f_tags: Optional[List[str]] = None
+    f_system_tags: Optional[List[FavieTag]] = None
+    f_status: Optional[str] = None
+    f_updates_at: Optional[str] = None
+    f_creates_at: Optional[str] = None
+
+
+class AttrInfo(BaseModel):
+    extended_info: Optional[ExtendedInfo] = None
+    specifications: Optional[List[AttributeItem]] = None
+    attributes: Optional[List[AttributeItem]] = None
+
+
+class DescInfo(BaseModel):
+    description: Optional[str] = None
+    description_external_link: Optional[str] = None
+    rich_product_description: Optional[str] = None
+    feature_bullets: Optional[List[str]] = None
+
+
+class MediaInfo(BaseModel):
+    f_videos: Optional[List[Video]] = None
+    f_image_list: Optional[List[FavieImageItem]] = None
+    f_images: Optional[Images] = None
+    videos: Optional[List[Video]] = None
+    images: Optional[Images] = None
+
+
+class PriceInfo(BaseModel):
+    price: Optional[Price] = None
+    rrp: Optional[Price] = None
+
+
+class SaleInfo(BaseModel):
+    seller: Optional[Seller] = None
+    returns_policy: Optional[ReturnPolicy] = None
+    inventory: Optional[Inventory] = None
+    deal: Optional[Deal] = None
+    best_seller_rank: Optional[SellerRank] = None
+    promotion: Optional[Promotion] = None
+    review_summary: Optional[ReviewSummary] = None
