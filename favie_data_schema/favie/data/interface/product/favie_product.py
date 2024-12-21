@@ -219,6 +219,6 @@ class SaleInfo(BaseModel):
     returns_policy: Optional[ReturnPolicy] = None
     inventory: Optional[Inventory] = None
     deal: Optional[Deal] = None
-    best_seller_rank: Optional[SellerRank] = None
+    best_seller_rank: Optional[List[SellerRank]] = None
     promotion: Optional[Promotion] = None
     review_summary: Optional[ReviewSummary] = None
