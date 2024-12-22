@@ -11,7 +11,7 @@ from favie_data_schema.favie.data.interface.product.favie_product_review import 
 class FavieProductUtils:
     @staticmethod
     def gen_f_sku_id(product: FavieProductDetail):
-        if product is None:
+        if not product:
             return None
         return FavieProductUtils.gen_f_id(id=product.sku_id, site=product.site)
 
@@ -19,7 +19,7 @@ class FavieProductUtils:
     def gen_f_spu_id(product: FavieProductDetail):
         if product is None:
             return None
-        spu_id = product.spu_id if product.spu_id is not None else product.sku_id
+        spu_id = product.spu_id if product.spu_id else product.sku_id
         return FavieProductUtils.gen_f_id(id=spu_id, site=product.site)
 
     @staticmethod
@@ -35,9 +35,7 @@ class FavieProductUtils:
 
     @staticmethod
     def gen_f_id(*, id: str, site: str):
-        if CommonUtils.any_none(id, site):
-            return None
-        return f"{id}-{site}"
+        return f"{id}-{site}" if id and site else None
 
     # @staticmethod
     # def get_product_price(product):
