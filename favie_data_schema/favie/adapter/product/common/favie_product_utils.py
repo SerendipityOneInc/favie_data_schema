@@ -39,27 +39,27 @@ class FavieProductUtils:
             return None
         return f"{id}-{site}"
 
-    @staticmethod
-    def get_product_price(product):
-        return product.get("product_price")
+    # @staticmethod
+    # def get_product_price(product):
+    #     return product.get("product_price")
 
-    @staticmethod
-    def get_product_image_url(product):
-        return product.get("product_image_url")
+    # @staticmethod
+    # def get_product_image_url(product):
+    #     return product.get("product_image_url")
 
-    @staticmethod
-    def get_product_url(product):
-        return product.get("product_url")
+    # @staticmethod
+    # def get_product_url(product):
+    #     return product.get("product_url")
 
-    @staticmethod
-    def check_product(product: FavieProductDetail):
-        if product is None:
-            return False
+    # @staticmethod
+    # def check_product(product: FavieProductDetail):
+    #     if product is None:
+    #         return False
 
-        if product.f_sku_id is None and (product.sku_id is None or product.site is None):
-            return False
+    #     if (product.link is None or product.f_sku_id is None) and (product.sku_id is None or product.site is None):
+    #         return False
 
-        return True
+    #     return True
 
     @staticmethod
     def cal_percentage_to_review_summary(review_summary: Optional[ReviewSummary]) -> Optional[ReviewSummary]:
