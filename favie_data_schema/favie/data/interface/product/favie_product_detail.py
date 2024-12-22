@@ -25,6 +25,13 @@ from favie_data_schema.favie.data.interface.product.favie_product_deserializer i
 
 
 class FavieProductDetail(BaseModel):
+    # 用作数据库的主键
+    id: Optional[str] = None
+
+    @field_validator("id", mode="before")
+    def validate_id(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
+
     f_sku_id: Optional[str] = None
 
     @field_validator("f_sku_id", mode="before")
