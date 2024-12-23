@@ -7,7 +7,7 @@ class FavieSourceType(IntEnum):
     PRODUCT_REVIEW = 2
     WEB_PAGE = 3
     PRODUCT_DETAIL_BASE = 4
-    AD = 4
+    AD = 5
 
 
 class MessageDataType(IntEnum):
