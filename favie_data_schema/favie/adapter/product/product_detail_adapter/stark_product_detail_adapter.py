@@ -107,4 +107,5 @@ def main():
 
 
 if __name__ == "__main__":
+    # product = read_object("favie_data_schema/favie/resources/product_detail.json", FavieProductDetail)
     main()

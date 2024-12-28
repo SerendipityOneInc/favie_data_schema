@@ -313,7 +313,7 @@ class FavieProductDetail(BaseModel):
     def validate_review_summary(cls, value):
         return PydanticUtils.deserialize_data(ReviewSummary, value)
 
-    variants: Optional[List[SimpleProduct]] = None
+    variants: Optional[str] = None
 
     @field_validator("variants", mode="before")
     def validate_variants(cls, value):
