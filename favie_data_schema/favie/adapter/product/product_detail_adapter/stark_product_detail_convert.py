@@ -164,9 +164,9 @@ class StarkProductDetailConvert:
 
     @staticmethod
     def get_variants_str(stark_detail_message: StarkProductDetailMessage, parse_time: str):
-        rainforest_product_detail = stark_detail_message.crawl_result
-        if rainforest_product_detail.product.variants:
-            return CommonUtils.serialize(rainforest_product_detail.product.variants)
+        variants = StarkProductDetailConvert.get_variants(stark_detail_message, parse_time)
+        if variants is not None:
+            return CommonUtils.serialize(variants)
         else:
             return None
 
