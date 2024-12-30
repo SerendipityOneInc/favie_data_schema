@@ -1,5 +1,6 @@
 from typing import Any, Dict, List, Optional
 
+from favie_data_common.common.common_utils import CommonUtils
 from favie_data_common.common.pydantic_utils import PydanticUtils
 from pydantic import BaseModel, field_validator
 
@@ -317,7 +318,10 @@ class FavieProductDetail(BaseModel):
 
     @field_validator("variants", mode="before")
     def validate_variants(cls, value):
-        return PydanticUtils.deserialize_data(str, value)
+        if isinstance(value, str):
+            return value
+        else:
+            return CommonUtils.serialize(value)
 
     promotion: Optional[Promotion] = None
 

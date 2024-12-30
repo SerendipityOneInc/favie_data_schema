@@ -1,42 +1,123 @@
 {
-    "f_sku_id": "B0CV4RM752-amazon.com",
-    "f_spu_id": "B0CV4V63YN-amazon.com",
-    "site": "amazon.com",
-    "sku_id": "B0CV4RM752",
-    "spu_id": "B0CV4V63YN",
-    "request_sku_id": "B0CV4RM752",
-    "title": "JEsilunmaMY Men's Double-Breasted Plaid Suit Vest Slim Fit Vintage Tweed Waistcoat Vest Business Formal Dress Tuxedo Vest Dark Grey Medium",
-    "link": "https://www.amazon.com/JEsilunmaMY-Double-Breasted-Vintage-Waistcoat-Business/dp/B0CV4V63YN",
-    "sub_title": "Brand: JEsilunmaMY",
-    "sub_title_link": "/JEsilunmaMY/b/ref=bl_sl_s_ap_web_118519688011?ie=UTF8&node=118519688011&field-lbr_brands_browse-bin=JEsilunmaMY",
-    "description": "\ud83d\udd36 ITEM SPECIFICS:\u25c6 Item: Suit Jackets & Tuxedos.\u25c6 Style: Casual, Business\u25c6 Fit Type: Slim Fit\u25c6 Elasticity: No elasticity\u25c6 Care Instruction: Dry Clean Recommended If Conditions Permit,If You Have To Hand Wash It,Please Keep the Water Temperature Below 40 Degrees and Wash Gently.\u25c6 Suit Jacket/Blazer Type: Solid/one button/one chest pocket with trim/notch lapel/slim fit style.\u25c6 Pants Type: Flat front/zipper fly/adjustable waist band.\u25c6 Occasion: Wedding, Prom, Party, Business, Dating, Dinner.\ud83c\udf88Men's Business Suit Sets\ud83c\udf88\u2b55 Shoulder DetailThis beautiful suit is made by 3D manual tailoring. Every detail reflects quality.\u2b55 Delicate ButtonsButtons are hand stitched, strong and durable, not easy to fall off.\u2b55 Inside PocketInside pockets are not only elegant but also practical.\u2b55 Lining of PantsBeautiful lining inside the pants. High quality craftsmanship to ensure best durability.\u26a0\ufe0fNote :\u2714 Our jackets are Slim Fit. So If You want to loose fit, You Had Better Order One Step Bigger Size than Your Original Size.\u2714 The actual color may be slightly different from the image caused by different brightness of various monitors and brightness.",
-    "price": "{\"value\":1511,\"currency\":\"USD\",\"updates_at\":\"1735161691\",\"source_type\":\"1\",\"parser_name\":\"AmazonProductDetailParser\"}",
-    "f_historical_prices": "[{\"value\":1511,\"currency\":\"USD\",\"updates_at\":\"1727824244\"}]",
-    "rrp": "{\"value\":1511,\"currency\":\"USD\",\"updates_at\":\"1735161691\",\"source_type\":\"1\",\"parser_name\":\"AmazonProductDetailParser\"}",
-    "images": "{\"main_image\":\"https://m.media-amazon.com/images/I/712FkFFC6AL._AC_SL1500_.jpg\",\"images\":[\"https://m.media-amazon.com/images/I/712FkFFC6AL._AC_SL1500_.jpg\",\"https://m.media-amazon.com/images/I/716Kav4XrEL._AC_SL1500_.jpg\",\"https://m.media-amazon.com/images/I/71WY26XORGL._AC_SL1500_.jpg\",\"https://m.media-amazon.com/images/I/71qh1LymYWL._AC_SL1500_.jpg\",\"https://m.media-amazon.com/images/I/81D7PH+2dxL._AC_SL1500_.jpg\"]}",
-    "f_images": "{\"main_image\":\"https://img.favie.yesy.online/e5/c3/99/c3/15/04/e0/e0/07/28/42/b7/f8/5a/3f/36.jpeg\",\"images\":[\"https://img.favie.yesy.online/7e/87/e2/3b/89/51/c8/20/e1/d8/86/14/30/33/20/e4.jpeg\",\"https://img.favie.yesy.online/0b/5a/ed/86/c6/99/39/16/2e/0a/79/44/2e/7d/1a/66.jpeg\",\"https://img.favie.yesy.online/8f/b8/dd/a2/68/a6/b9/16/57/35/9f/b3/ac/9a/f6/c2.jpeg\",\"https://img.favie.yesy.online/96/7f/c7/a3/40/1b/3b/1c/5e/c1/52/2d/c3/e1/a8/8b.jpeg\",\"https://img.favie.yesy.online/e5/c3/99/c3/15/04/e0/e0/07/28/42/b7/f8/5a/3f/36.jpeg\"]}",
-    "categories": "[{\"name\":\"Clothing, Shoes & Jewelry\",\"id\":\"7141123011\"},{\"name\":\"Men\",\"id\":\"7147441011\"},{\"name\":\"Clothing\",\"id\":\"1040658\"},{\"name\":\"Suits & Sport Coats\",\"id\":\"1045684\"},{\"name\":\"Vests\",\"id\":\"2476515011\"}]",
-    "f_categories": "[{\"name\":\"Clothing, Shoes & Jewelry\",\"id\":\"7141124011\"},{\"name\":\"Men\",\"id\":\"7147441011\"},{\"name\":\"Clothing\",\"id\":\"1040658\"},{\"name\":\"Suits & Sport Coats\",\"id\":\"1045684\"},{\"name\":\"Vests\",\"id\":\"2476515011\"}]",
-    "brand": "{\"name\":\"JEsilunmaMY\"}",
-    "keywords": "JEsilunmaMY,Men's,Double-Breasted,Plaid,Suit,Vest,Slim,Fit,Vintage,Tweed,Waistcoat,Vest,Business,Formal,Dress,Tuxedo,Vest",
-    "feature_bullets": "[\"\\uD83D\\uDC54\u3010Material\u3011: This mens blazer is made of cotton polyester blended, comfortable, wrinkle-resistant and durable, which make you looks more stylish and radiant. Men's 3 Piece Suits is a good choice to show your gentlemanly demeanor.\",\"\u2728\u3010Feature\u3011: This tuxedo suit with full shoulder design and slim cut with 3D draping. Blazer: Single Breasted closure,Slim Fit Style,1 chest pocket with white trim,two side flap pockets,inside pockets; Vests: Four Button,V-Neck,Smooth Back,Sleeveless; Pants:Flat Front,Zipper Button closure.\",\"\\uD83C\\uDF0A\u3010Care Instruction\u3011: Dry Clean Recommended If Conditions Permit,If You Have To Hand Wash It,Please Keep the Water Temperature Below 40 Degrees and Wash Gently.Steam Ironing,Hang the Suit on the Hangers When You Are Not Wearing Them.\",\"\\uD83C\\uDFCC\ufe0f\u3010Occasion\u3011: This tuxedo suit is suitable for many occasions: Wedding/Party/Business/Graduation/Date/Working/Meeting/Prom/Dinner.This formal suit is essential in an elegant gentleman wardrobe.\",\"\\uD83D\\uDCA5\u3010Size\u3011: Our size is Asian size, not Amazon size or US size. Our size is too small, it is recommended to buy 1-2 size larger or refer to the size chart parameters in the picture area to choose the appropriate size. The size table unit is CM, it is recommended to convert it into inches: 1 inch = 2.54CM.\"]",
-    "attributes": "[{\"name\":\"Color\",\"value\":\"Dark Grey\"},{\"name\":\"Size\",\"value\":\"Medium\"}]",
-    "specifications": "[{\"name\":\"Color\",\"value\":\"Dark Grey\"},{\"name\":\"Size\",\"value\":\"Medium\"}]",
-    "extended_info": "{\"is_marketplace_item\":true,\"platform_choice\":{\"keywords\":\"\"}}",
-    "best_seller_rank": "[{\"category\":\"Clothing, Shoes & Jewelry\",\"rank\":12379278,\"link\":\"/gp/bestsellers/fashion/ref=pd_zg_ts_fashion\"},{\"category\":\"Men's Suit Vests\",\"rank\":4973,\"link\":\"/gp/bestsellers/fashion/2476515011/ref=pd_zg_hrsr_fashion\"}]",
-    "review_summary": "{\"rating\":-1.0,\"ratings_total\":-1,\"f_updates_at\":\"1726145656\"}",
-    "variants": "[{\"sku_id\":\"B0CV4SJMJB\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Coffee\"},{\"name\":\"size_name\",\"value\":\"XX-Large\"}]},{\"sku_id\":\"B0CV4T8337\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Dark Grey\"},{\"name\":\"size_name\",\"value\":\"XX-Large\"}]},{\"sku_id\":\"B0CV4S579L\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Army Green\"},{\"name\":\"size_name\",\"value\":\"XX-Large\"}]},{\"sku_id\":\"B0CV4TZ27S\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Dark Grey\"},{\"name\":\"size_name\",\"value\":\"Small\"}]},{\"sku_id\":\"B0CV4GWFG5\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Army Green\"},{\"name\":\"size_name\",\"value\":\"Medium\"}]},{\"sku_id\":\"B0CV4SLS8K\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Army Green\"},{\"name\":\"size_name\",\"value\":\"Large\"}]},{\"sku_id\":\"B0CV4RN3CG\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Army Green\"},{\"name\":\"size_name\",\"value\":\"X-Large\"}]},{\"sku_id\":\"B0CV4V5JJN\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Coffee\"},{\"name\":\"size_name\",\"value\":\"Small\"}]},{\"sku_id\":\"B0CV4RM752\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Dark Grey\"},{\"name\":\"size_name\",\"value\":\"Medium\"}]},{\"sku_id\":\"B0CV4TZQK5\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Dark Grey\"},{\"name\":\"size_name\",\"value\":\"X-Large\"}]},{\"sku_id\":\"B0CV4SF98R\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Army Green\"},{\"name\":\"size_name\",\"value\":\"Small\"}]},{\"sku_id\":\"B0CV4TNYH9\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Coffee\"},{\"name\":\"size_name\",\"value\":\"X-Large\"}]},{\"sku_id\":\"B0CV4RSD6P\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Coffee\"},{\"name\":\"size_name\",\"value\":\"Large\"}]},{\"sku_id\":\"B0CV4SDWC4\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Coffee\"},{\"name\":\"size_name\",\"value\":\"Medium\"}]},{\"sku_id\":\"B0CV4R4VPK\",\"dimensions\":[{\"name\":\"color_name\",\"value\":\"Dark Grey\"},{\"name\":\"size_name\",\"value\":\"Large\"}]}]",
-    "f_meta": {
-        "source_type": "1",
-        "parser_name": "copy_from_product",
-        "data_type": "9",
-        "parses_at": "1735201001",
-        "f_categories_update_at": "1733028029",
-        "f_categories_map_type": "0",
-        "f_categories_map_version": "1"
-    },
-    "f_updates_at": "1735161710",
-    "f_creates_at": "1726145657",
-    "f_image_list": "[{\"link\":\"https://m.media-amazon.com/images/I/716Kav4XrEL._AC_SL1500_.jpg\",\"f_link\":\"https://img.favie.yesy.online/7e/87/e2/3b/89/51/c8/20/e1/d8/86/14/30/33/20/e4.jpeg\",\"format\":\"JPEG\",\"category\":\"other\",\"width\":1179,\"height\":1500,\"size\":167328,\"size_type\":\"720p\",\"status\":200},{\"link\":\"https://m.media-amazon.com/images/I/71WY26XORGL._AC_SL1500_.jpg\",\"f_link\":\"https://img.favie.yesy.online/0b/5a/ed/86/c6/99/39/16/2e/0a/79/44/2e/7d/1a/66.jpeg\",\"format\":\"JPEG\",\"category\":\"other\",\"width\":1500,\"height\":1304,\"size\":136410,\"size_type\":\"720p\",\"status\":200},{\"link\":\"https://m.media-amazon.com/images/I/71qh1LymYWL._AC_SL1500_.jpg\",\"f_link\":\"https://img.favie.yesy.online/8f/b8/dd/a2/68/a6/b9/16/57/35/9f/b3/ac/9a/f6/c2.jpeg\",\"format\":\"JPEG\",\"category\":\"other\",\"width\":1295,\"height\":1500,\"size\":122726,\"size_type\":\"720p\",\"status\":200},{\"link\":\"https://m.media-amazon.com/images/I/81D7PH+2dxL._AC_SL1500_.jpg\",\"f_link\":\"https://img.favie.yesy.online/96/7f/c7/a3/40/1b/3b/1c/5e/c1/52/2d/c3/e1/a8/8b.jpeg\",\"format\":\"JPEG\",\"category\":\"other\",\"width\":1500,\"height\":1328,\"size\":178642,\"size_type\":\"720p\",\"status\":200},{\"link\":\"https://m.media-amazon.com/images/I/712FkFFC6AL._AC_SL1500_.jpg\",\"f_link\":\"https://img.favie.yesy.online/e5/c3/99/c3/15/04/e0/e0/07/28/42/b7/f8/5a/3f/36.jpeg\",\"format\":\"JPEG\",\"category\":\"main\",\"width\":1135,\"height\":1500,\"size\":163974,\"size_type\":\"720p\",\"status\":200}]",
-    "f_status": "0"
+	"f_sku_id": "B0CT5877CC-amazon.com",
+	"f_spu_id": "B0D1T84Z5T-amazon.com",
+	"site": "amazon.com",
+	"sku_id": "B0CT5877CC",
+	"spu_id": "B0D1T84Z5T",
+	"request_sku_id": "B0CT5877CC",
+	"title": "2 Piece Casual Outfits Set for Women Pleated Wide Leg Pants Long Sleeve Button Down Y2K Shirt Lounge Streetwear Suit Lake Blue Medium",
+	"link": "https://www.amazon.com/FIOPHY-Casual-Outfits-Pleated-Streetwear/dp/B0D1T84Z5T",
+	"sub_title": "Visit the FIOPHY Store",
+	"sub_title_link": "/stores/FIOPHY/page/1976FD81-6DBD-48E8-8711-CB6273422D0A?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto",
+	"price": {
+		"value": 3699,
+		"currency": "USD",
+		"updates_at": "1734589909",
+		"source_type": "1",
+		"parser_name": "AmazonProductDetailParser"
+	},
+	"rrp": {
+		"value": 3699,
+		"currency": "USD",
+		"updates_at": "1734589909",
+		"source_type": "1",
+		"parser_name": "AmazonProductDetailParser"
+	},
+	"f_status": "0",
+	"images": {
+		"main_image": "https://m.media-amazon.com/images/I/61u75UQW7xL._AC_SL1500_.jpg",
+		"images": [
+			"https://m.media-amazon.com/images/I/61u75UQW7xL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/61HrsvgIBqL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71xhinQc7wL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/61MTq4XP43L._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71kevGk2F8L._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/8134z-NAA2L._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/812IVQfP9NL._AC_SL1500_.jpg"
+		]
+	},
+	"brand": {
+		"name": "FIOPHY"
+	},
+	"feature_bullets": [
+		"COMFY & FASHIONABLE: 95% Polyester / 5% Elastane. Our Women's Summer Two Piece Casual Track Outfits Y2K Streetwear Set is super soft, lightweight, skin-friendly, stretchy, comfortable, durable, and breathable. The cute two-piece matching sets for women are perfect for Summer, Spring, Fall, and Winter. Oversized and vintage, aesthetic clothes.",
+		"UNIQUE PLEATED DESIGN: Go for a groovy look and feel with this oversized, solid-color tracksuit 2-piece set for women. This two-piece outfit for women flowy pants set includes a baggy long sleeve, label collar, V neck, pleated, slit hem, and button-down blouse top and the matching loose fit wide-leg pant with elastic high waist for an easy and relaxed fit. Its stylish design makes this tracksuit easy to dress up or down, depending on the occasion.",
+		"VACATION OUTFITS PLISSE SET FOR WOMEN: 2 pieces tracksuit set suitable for Casual Daily Wear/ Night Out/ Office/ Going Out Outfits/ Beach/ Street/ Park/ Concert/ Travel/ Leisure/ Camping / Airport/ Homeworking/ Vacation/ Dating/ Tourism/ Shopping/ Party/ Bar/ Outdoor Activity/ Sport/ Morning Run/ Club Revel/ Music Festival/ Fashion Show/ Birthday/ Honeymoon/ Resort/ Pajamas. The plisse set will keep you comfortable all day long and is a must-have for your wardrobe!",
+		"EASY MATCH: The brunch outfits 2024 can be paired with your T shirt, vest, sweater, crop top, tank shirt, hat, handbags, and fashion items, such as sneakers and a crossbody bag to create a casual look or heels and jewelry to make you elegant and glamorous. This suit set can also be paired with a denim jacket or blazer for a chic look. It's easy to mix and match with other pieces in your summer wardrobe.",
+		"SUGGESTIONS: S/ M/ L/ XL. Before ordering, please carefully read the Size Chart we provided in the pictures. Package Includes 1x long sleeve button-up shirt, 1x cozy wide leg bottom. Machine wash this 2 piece outfit set with similar colors in laundry bag/ Cold water washing/ Do not bleach/ Do not dry clean/ Low-temperature drying. Feel free to contact us if you have any issues!"
+	],
+	"attributes": [
+		{
+			"name": "Color",
+			"value": "Lake Blue"
+		},
+		{
+			"name": "Size",
+			"value": "Medium"
+		}
+	],
+	"specifications": [
+		{
+			"name": "Color",
+			"value": "Lake Blue"
+		},
+		{
+			"name": "Size",
+			"value": "Medium"
+		}
+	],
+	"extended_info": {
+		"is_marketplace_item": true,
+		"platform_choice": {
+			"keywords": ""
+		}
+	},
+	"best_seller_rank": [
+		{
+			"category": "Clothing, Shoes & Jewelry",
+			"rank": 1409433,
+			"link": "/gp/bestsellers/fashion/ref=pd_zg_ts_fashion"
+		},
+		{
+			"category": "Women's Pajama Sets",
+			"rank": 9163,
+			"link": "/gp/bestsellers/fashion/1044894/ref=pd_zg_hrsr_fashion"
+		}
+	],
+	"keywords": "2,Piece,Casual,Outfits,Set,for,Women,Pleated,Wide,Leg,Pants,Long,Sleeve,Button,Down,Y2K,Shirt,Lounge,Streetwear,Suit",
+	"review_summary": {
+		"link": "https://www.amazon.com/product-reviews/B0CT5877CC",
+		"rating": 3.8,
+		"ratings_total": 13,
+		"rating_breakdown": {
+			"five_star": 4,
+			"five_percentage": 37,
+			"four_star": 3,
+			"four_percentage": 27,
+			"three_star": 2,
+			"three_percentage": 18,
+			"two_star": 2,
+			"two_percentage": 18,
+			"one_star": 0,
+			"one_percentage": 0
+		},
+		"top_reviews": [
+			"RVFODY0O3OHEV-amazon.com",
+			"R3BPXW9ATYTR72-amazon.com",
+			"RUEOLPNNRQ0MM-amazon.com",
+			"R25UVKVRFF64FC-amazon.com",
+			"R3QVWD1A1FIT8I-amazon.com",
+			"R34ESJG5DE95ZI-amazon.com",
+			"RPGWSJXYNNHVJ-amazon.com",
+			"R3Q3P7S8P4HDBB-amazon.com"
+		],
+		"f_updates_at": "1735539557"
+	},
+	"variants": "[{\"asin\":\"B0CT58QJ4D\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Green\"}]},{\"asin\":\"B0CT7VTXKF\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Small\"},{\"name\":\"color_name\",\"value\":\"Light Blue\"}]},{\"asin\":\"B0CT4WV1VD\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Large\"},{\"name\":\"color_name\",\"value\":\"Orange\"}]},{\"asin\":\"B0CT54W4S4\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Small\"},{\"name\":\"color_name\",\"value\":\"Orange\"}]},{\"asin\":\"B0CT5Q8TVS\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Medium\"},{\"name\":\"color_name\",\"value\":\"Green\"}]},{\"asin\":\"B0CT54QZ7N\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Large\"},{\"name\":\"color_name\",\"value\":\"Lake Blue\"}]},{\"asin\":\"B0CT55CXNP\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Medium\"},{\"name\":\"color_name\",\"value\":\"Orange\"}]},{\"asin\":\"B0CT7KS51M\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Light Blue\"}]},{\"asin\":\"B0CT5QF1MZ\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Small\"},{\"name\":\"color_name\",\"value\":\"Lake Blue\"}]},{\"asin\":\"B0CT5DJQGZ\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Black\"}]},{\"asin\":\"B0CT5QVRLJ\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Lake Blue\"}]},{\"asin\":\"B0CT56VY4Z\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Orange\"}]},{\"asin\":\"B0CT5TXFNM\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Small\"},{\"name\":\"color_name\",\"value\":\"Green\"}]},{\"asin\":\"B0CT5G4THC\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Large\"},{\"name\":\"color_name\",\"value\":\"Green\"}]},{\"asin\":\"B0CT54PDXR\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Large\"},{\"name\":\"color_name\",\"value\":\"Black\"}]},{\"asin\":\"B0CT5877CC\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Medium\"},{\"name\":\"color_name\",\"value\":\"Lake Blue\"}]}]",
+	"f_meta": {
+		"source_type": "1",
+		"parser_name": "AmazonProductDetailParser-adapter",
+		"parses_at": "1734589909",
+		"data_type": "1"
+	}
 }
