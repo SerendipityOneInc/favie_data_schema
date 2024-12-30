@@ -100,7 +100,7 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
 
 def main():
     amazon_message = read_object(
-        "favie_data_schema/favie/resources/stark_product_detail_bug.json",
+        "favie_data_schema/favie/resources/stark_product_detail_message.json",
         StarkProductDetailMessage,
     )
     favie_product: FavieProductDetail = StarkProductDetailAdapter.stark_detail_to_favie_detail(amazon_message)
@@ -109,9 +109,9 @@ def main():
 
 if __name__ == "__main__":
     start_time = int(datetime.now().timestamp() * 1000)
-    product: BaseModel = read_object("favie_data_schema/favie/resources/product_detail.json", FavieProductDetail)
+    product: BaseModel = read_object("favie_data_schema/favie/resources/bug.json", FavieProductDetail)
     print(int(datetime.now().timestamp() * 1000) - start_time)
-    # print(product.model_dump_json(exclude_none=True) if product else None)
+    print(product.model_dump_json(exclude_none=True) if product else None)
     # main()
 
     # json_string = "[{\"name\":\"Clothing, Shoes & Jewelry\",\"id\":\"7141123011\"},{\"name\":\"Men\",\"id\":\"7147441011\"},{\"name\":\"Clothing\",\"id\":\"1040658\"},{\"name\":\"Suits & Sport Coats\",\"id\":\"1045684\"},{\"name\":\"Vests\",\"id\":\"2476515011\"}]"

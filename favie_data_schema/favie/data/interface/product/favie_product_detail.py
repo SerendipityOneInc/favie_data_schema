@@ -1,6 +1,5 @@
 from typing import Any, Dict, List, Optional
 
-from favie_data_common.common.common_utils import CommonUtils
 from favie_data_common.common.pydantic_utils import PydanticUtils
 from pydantic import BaseModel, field_validator
 
@@ -19,6 +18,7 @@ from favie_data_schema.favie.data.interface.product.favie_product import (
     ReviewSummary,
     Seller,
     SellerRank,
+    SimpleProduct,
     Video,
 )
 from favie_data_schema.favie.data.interface.product.favie_product_deserializer import HistoricalPricesDeserializer
@@ -313,15 +313,17 @@ class FavieProductDetail(BaseModel):
     def validate_review_summary(cls, value):
         return PydanticUtils.deserialize_data(ReviewSummary, value)
 
-    # variants: Optional[List[SimpleProduct]] = None
-    variants: Optional[str] = None
+    variants: Optional[List[SimpleProduct]] = None
 
     @field_validator("variants", mode="before")
     def validate_variants(cls, value):
-        if isinstance(value, str):
-            return value
-        else:
-            return CommonUtils.serialize(value)
+        return PydanticUtils.deserialize_data(List[SimpleProduct], value)
+
+    variants_str: Optional[str] = None
+
+    @field_validator("variants_str", mode="before")
+    def validate_variants_str(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
 
     promotion: Optional[Promotion] = None
 

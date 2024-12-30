@@ -29,6 +29,7 @@ from favie_data_schema.favie.data.interface.product.favie_product import (
     Promotion,
     Seller,
     SellerRank,
+    SimpleProduct,
     Video,
 )
 from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
@@ -96,7 +97,8 @@ class StarkProductDetailConvert:
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
         favie_product.promotion = StarkProductDetailConvert.get_promotion(crawl_result)
         favie_product.best_seller_rank = StarkProductDetailConvert.get_best_seller_rank(crawl_result)
-        favie_product.variants = StarkProductDetailConvert.get_variants(stark_detail_message, parse_time)
+        favie_product.variants = None
+        favie_product.variants_str = StarkProductDetailConvert.get_variants_str(stark_detail_message, parse_time)
         favie_product.f_meta = MetaInfo(
             source_type=str(stark_detail_message.source),
             parser_name=f"{stark_detail_message.parser_name}-adapter",
@@ -139,30 +141,34 @@ class StarkProductDetailConvert:
     @staticmethod
     def get_variants(stark_detail_message: StarkProductDetailMessage, parse_time: str):
         rainforest_product_detail = stark_detail_message.crawl_result
+        if CommonUtils.list_len(rainforest_product_detail.product.variants) > 0:
+            variants = [
+                SimpleProduct(
+                    sku_id=x.asin,
+                    title=x.text,
+                    link=x.link,
+                    dimensions=StarkProductDetailConvert.get_dimensions(x),
+                    price=StarkProductDetailConvert.convert_price(
+                        rainforest_price=x.price,
+                        source_type=stark_detail_message.source,
+                        parser_name=stark_detail_message.parser_name,
+                        parse_time=parse_time,
+                        app_key=stark_detail_message.app_key,
+                    ),
+                )
+                for x in rainforest_product_detail.product.variants
+                if x.asin is not None
+            ]
+            return variants if CommonUtils.list_len(variants) > 0 else None
+        return None
+
+    @staticmethod
+    def get_variants_str(stark_detail_message: StarkProductDetailMessage, parse_time: str):
+        rainforest_product_detail = stark_detail_message.crawl_result
         if rainforest_product_detail.product.variants:
             return CommonUtils.serialize(rainforest_product_detail.product.variants)
         else:
             return None
-        # if CommonUtils.list_len(rainforest_product_detail.product.variants) > 0:
-        #     variants = [
-        #         SimpleProduct(
-        #             sku_id=x.asin,
-        #             title=x.text,
-        #             link=x.link,
-        #             dimensions=StarkProductDetailConvert.get_dimensions(x),
-        #             price=StarkProductDetailConvert.convert_price(
-        #                 rainforest_price=x.price,
-        #                 source_type=stark_detail_message.source,
-        #                 parser_name=stark_detail_message.parser_name,
-        #                 parse_time=parse_time,
-        #                 app_key=stark_detail_message.app_key,
-        #             ),
-        #         )
-        #         for x in rainforest_product_detail.product.variants
-        #         if x.asin is not None
-        #     ]
-        #     return variants if CommonUtils.list_len(variants) > 0 else None
-        # return None
 
     @staticmethod
     def convert_price(*, rainforest_price, source_type, parser_name, parse_time, app_key) -> Price:
