@@ -2,6 +2,7 @@ from datetime import datetime
 from typing import Optional
 
 from favie_data_common.common.common_utils import CommonUtils
+from pydantic import BaseModel
 
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductDetailAdapter
@@ -99,7 +100,7 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
 
 def main():
     amazon_message = read_object(
-        "favie_data_schema/favie/resources/stark_product_detail_bug.json",
+        "favie_data_schema/favie/resources/stark_product_detail_message.json",
         StarkProductDetailMessage,
     )
     favie_product: FavieProductDetail = StarkProductDetailAdapter.stark_detail_to_favie_detail(amazon_message)
@@ -107,4 +108,11 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    start_time = int(datetime.now().timestamp() * 1000)
+    product: BaseModel = read_object("favie_data_schema/favie/resources/bug.json", FavieProductDetail)
+    print(int(datetime.now().timestamp() * 1000) - start_time)
+    print(product.model_dump_json(exclude_none=True) if product else None)
+    # main()
+
+    # json_string = "[{\"name\":\"Clothing, Shoes & Jewelry\",\"id\":\"7141123011\"},{\"name\":\"Men\",\"id\":\"7147441011\"},{\"name\":\"Clothing\",\"id\":\"1040658\"},{\"name\":\"Suits & Sport Coats\",\"id\":\"1045684\"},{\"name\":\"Vests\",\"id\":\"2476515011\"}]"
+    # print(repr(json_string))

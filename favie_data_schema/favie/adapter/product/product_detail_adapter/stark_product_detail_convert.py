@@ -97,7 +97,8 @@ class StarkProductDetailConvert:
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
         favie_product.promotion = StarkProductDetailConvert.get_promotion(crawl_result)
         favie_product.best_seller_rank = StarkProductDetailConvert.get_best_seller_rank(crawl_result)
-        favie_product.variants = StarkProductDetailConvert.get_variants(stark_detail_message, parse_time)
+        # favie_product.variants = StarkProductDetailConvert.get_variants(stark_detail_message, parse_time)
+        favie_product.variants_str = StarkProductDetailConvert.get_variants_str(stark_detail_message, parse_time)
         favie_product.f_meta = MetaInfo(
             source_type=str(stark_detail_message.source),
             parser_name=f"{stark_detail_message.parser_name}-adapter",
@@ -160,6 +161,14 @@ class StarkProductDetailConvert:
             ]
             return variants if CommonUtils.list_len(variants) > 0 else None
         return None
+
+    @staticmethod
+    def get_variants_str(stark_detail_message: StarkProductDetailMessage, parse_time: str):
+        variants = StarkProductDetailConvert.get_variants(stark_detail_message, parse_time)
+        if variants is not None:
+            return CommonUtils.serialize(variants)
+        else:
+            return None
 
     @staticmethod
     def convert_price(*, rainforest_price, source_type, parser_name, parse_time, app_key) -> Price:

@@ -1,720 +1,123 @@
 {
-    "url": "https://www.amazon.com/dp/B00008UA3H",
-    "host": "www.amazon.com",
-    "product_id": "B00008UA3H",
-    "product_title": "Nordic Ware Procast, Classic Scone, Graphite Scottish Scone and Cornbread Pan",
-    "source": 3,
-    "parser_name": "AmazonProductDetailRFParser",
-    "crawl_result": {
-        "request_info": {
-            "success": true,
-            "credits_used": 2559041,
-            "credits_remaining": 17440959
-        },
-        "request_metadata": {
-            "id": null,
-            "created_at": "2024-08-07T05:58:36.534Z",
-            "processed_at": "2024-08-07T05:58:44.157Z",
-            "total_time_taken": 7.62,
-            "amazon_url": "https://www.amazon.com/dp/B00008UA3H?th=1&psc=1"
-        },
-        "request_parameters": {
-            "type": "product",
-            "url": null
-        },
-        "product": {
-            "title": "Nordic Ware Procast, Classic Scone, Graphite Scottish Scone and Cornbread Pan",
-            "title_excluding_variant_name": "Nordic Ware Procast, Classic Scone, Graphite",
-            "variants": [
-                {
-                    "asin": "B0D5XQKDKQ",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Style",
-                            "value": "Mini-Scone Pan + Ware Procast"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B0D5XQKDKQ?th=1&psc=1",
-                    "price": {
-                        "symbol": "$",
-                        "currency": "USD",
-                        "value": 71.4,
-                        "raw": "$71.40"
-                    }
-                },
-                {
-                    "asin": "B00080QK92",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Style",
-                            "value": "Mini-Scone Pan"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B00080QK92?th=1&psc=1",
-                    "price": {
-                        "symbol": "$",
-                        "currency": "USD",
-                        "value": 40.0,
-                        "raw": "$40.00"
-                    }
-                },
-                {
-                    "asin": "B00008UA3H",
-                    "text": null,
-                    "dimensions": [
-                        {
-                            "name": "Style",
-                            "value": "Scottish Scone and Cornbread Pan"
-                        }
-                    ],
-                    "link": "https://www.amazon.com/dp/B00008UA3H?th=1&psc=1",
-                    "price": {
-                        "symbol": "$",
-                        "currency": "USD",
-                        "value": 32.12,
-                        "raw": "$32.12"
-                    }
-                }
-            ],
-            "keywords": "Nordic,Ware,Procast,Classic,Scone,Graphite",
-            "keywords_list": [
-                "Nordic",
-                "Ware",
-                "Procast",
-                "Classic",
-                "Scone",
-                "Graphite"
-            ],
-            "link": "https://www.amazon.com/Nordic-Ware-Scottish-Scone-Cornbread/dp/B00008UA3H",
-            "asin": "B00008UA3H",
-            "parent_asin": "B0CQS9PDHH",
-            "description": "Nordic Ware genuine Bundt® pans are made of durable cast aluminum to achieve the most crisp, intricate cake detail possible. Cast aluminum’s superior heat conductivity ensures controlled, even browning of cakes and treats. Premium silicone nonstick is made without PFAS and PTFE for healthy baking and ensures effortless release and cleanup. Oven safe to 400 degrees Fahrenheit. A great pan for making full-sized scones, biscuits, and hearty cornbread. Pan exterior is 9.7 inch diameter, 1.2 inches in height and measures 10.6 inches handle to handle. The pan capacity holds 4.5 cups within 8 cavities. Each cavity measurements are shown in the dimensional drawing image. Mixes and recipes may vary. Fill the pan no more than 3/4 full to avoid overflow. Proudly American Made since 1946, our heirloom-quality pieces are made to withstand a lifetime of use in your home kitchen.",
-            "categories": [
-                {
-                    "name": "Home & Kitchen",
-                    "link": "https://www.amazon.com/home-garden-kitchen-furniture-bedding/b/ref=dp_bc_aui_C_1?ie=UTF8&node=1055398",
-                    "category_id": "1055398"
-                },
-                {
-                    "name": "Kitchen & Dining",
-                    "link": "https://www.amazon.com/kitchen-dining/b/ref=dp_bc_aui_C_2?ie=UTF8&node=284507",
-                    "category_id": "284507"
-                },
-                {
-                    "name": "Bakeware",
-                    "link": "https://www.amazon.com/bakeware/b/ref=dp_bc_aui_C_3?ie=UTF8&node=289668",
-                    "category_id": "289668"
-                },
-                {
-                    "name": "Cake Pans",
-                    "link": "https://www.amazon.com/cake-pans/b/ref=dp_bc_aui_C_4?ie=UTF8&node=289679",
-                    "category_id": "289679"
-                },
-                {
-                    "name": "Bundt Pans",
-                    "link": "https://www.amazon.com/Bundt-Pans/b/ref=dp_bc_aui_C_5?ie=UTF8&node=3736951",
-                    "category_id": "3736951"
-                }
-            ],
-            "bestsellers_rank": [
-                {
-                    "category": "Kitchen & Dining",
-                    "rank": 20400,
-                    "link": "https://www.amazon.com/gp/bestsellers/kitchen/ref=pd_zg_ts_kitchen"
-                },
-                {
-                    "category": "Bundt Pans",
-                    "rank": 14,
-                    "link": "https://www.amazon.com/gp/bestsellers/kitchen/3736951/ref=pd_zg_hrsr_kitchen"
-                }
-            ],
-            "summarization_attributes": null,
-            "amazons_choice": {
-                "keywords": "in Bundt Pans by Nordic Ware",
-                "link": null
-            },
-            "climate_pledge_friendly": null,
-            "kindle_unlimited": null,
-            "has_coupon": null,
-            "coupon_text": null,
-            "promotions": null,
-            "brand": "Nordic Ware",
-            "weight": "1.5 pounds",
-            "shipping_weight": null,
-            "first_available": null,
-            "delivery_message": null,
-            "dimensions": "9.75\"D x 10.69\"W x 1.2\"H",
-            "sub_title": {
-                "text": "Visit the Nordic Ware Store",
-                "link": "https://www.amazon.com/stores/NordicWare/page/D1E66A58-BE2A-40DC-B57D-7591B083CEA6?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto"
-            },
-            "rating": 4.8,
-            "ratings_total": 2396,
-            "reviews_total": null,
-            "top_reviews": [
-                {
-                    "id": "R1B6Q9KJJOSVD5",
-                    "title": "Great Pan",
-                    "body": "Great and easy to use. Plus you get uniform sizes and shapes when making scones or cornbread. It is a nice addition to my baking pans collection.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Great and easy to use. Plus you get uniform sizes and shapes when making scones or cornbread. It is a nice addition to my baking pans collection.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R1B6Q9KJJOSVD5/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B00008UA3H",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on July 29, 2024",
-                        "utc": "2024-07-29T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Barbara",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AETRQIQDU5NS2JBI34HBKRD6ZR5A/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
-                        "id": "AETRQIQDU5NS2JBI34HBKRD6ZR5A"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R2APHJ2CAK90BO",
-                    "title": "Truly Non-Stick",
-                    "body": "I was previously cutting scones into triangles and baking them on a sheet - but they'd spread during cooking and I'd interrupt the baking every 5-10 minutes to try and reshape them with a spatula; they still spread on the sheet. Finally decided to buy one of these pans, even though they're pricey. I can honestly say I love this pan! I recently bought a second one so I can make double batches of scones - they don't last long in our house ;) I don't grease or flour them at all - and the scones fall right out when they're done baking - and they're perfectly shaped & cook evenly! I've made about a dozen batches and they're still just as non-stick as they were when they were new. We prefer slightly drier/denser scones so my recipe doesn't yield a sticky dough; perhaps people who have issues with sticking are using a stickier dough...? I don't know but I think the pans are wonderful. Haven't made cornbread yet - but would be interesting to try. Clean up is super easy - I just use warm water and my fingers, with a touch of mild dish soap then wipe dry. Since nothing sticks to them, it takes very little effort to clean them after use. Nordic Ware has a new fan :)Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I was previously cutting scones into triangles and baking them on a sheet - but they'd spread during cooking and I'd interrupt the baking every 5-10 minutes to try and reshape them with a spatula; they still spread on the sheet. Finally decided to buy one of these pans, even though they're pricey. I can honestly say I love this pan! I recently bought a second one so I can make double batches of scones - they don't last long in our house ;) I don't grease or flour them at all - and the scones fall right out when they're done baking - and they're perfectly shaped &amp; cook evenly! I've made about a dozen batches and they're still just as non-stick as they were when they were new. We prefer slightly drier/denser scones so my recipe doesn't yield a sticky dough; perhaps people who have issues with sticking are using a stickier dough...? I don't know but I think the pans are wonderful. Haven't made cornbread yet - but would be interesting to try. Clean up is super easy - I just use warm water and my fingers, with a touch of mild dish soap then wipe dry. Since nothing sticks to them, it takes very little effort to clean them after use. Nordic Ware has a new fan :)</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R2APHJ2CAK90BO/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B00008UA3H",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on November 7, 2020",
-                        "utc": "2020-11-07T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "JG in CO",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AFCTHLEGDNQU7676J2PXS6CBDOEQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
-                        "id": "AFCTHLEGDNQU7676J2PXS6CBDOEQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": 28,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "RQH8ZX7GUGUMH",
-                    "title": "Terrific pan",
-                    "body": "I ordered this product when we started baking scones. I did not want to shape them by hand. This pan allows them to all be uniform in size and shape, which makes them easiedr to bake. The instructions say to use Pam with Flour, and this helps the pan release the scones without breaking and with little residue left. A quick soak in soap and water and the sturdy pan is good as new with just a little pass with a plastic scrungee or sponge to get into the corners to make sure it is clean (fingers work, too). This is no heavy scrubbing needed. I would recommend this and I am thinking of getting the mini-scone version of this same pan so I can make more scones (16) instead of just 8, as we are eating these so often that the three of us go through all of them in less than a week.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I ordered this product when we started baking scones. I did not want to shape them by hand. This pan allows them to all be uniform in size and shape, which makes them easiedr to bake. The instructions say to use Pam with Flour, and this helps the pan release the scones without breaking and with little residue left. A quick soak in soap and water and the sturdy pan is good as new with just a little pass with a plastic scrungee or sponge to get into the corners to make sure it is clean (fingers work, too). This is no heavy scrubbing needed. I would recommend this and I am thinking of getting the mini-scone version of this same pan so I can make more scones (16) instead of just 8, as we are eating these so often that the three of us go through all of them in less than a week.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/RQH8ZX7GUGUMH/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B00008UA3H",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on March 16, 2023",
-                        "utc": "2023-03-16T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Deborah Graham",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AE4DKEBL5LIY45BIVB4QTCT56ZKA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
-                        "id": "AE4DKEBL5LIY45BIVB4QTCT56ZKA"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": 6,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R1P5HUG4K4ZC9H",
-                    "title": "Great Gift",
-                    "body": "Had one our own and gave this one as a gift. Heavy and well built. The person loved the gift.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Had one our own and gave this one as a gift. Heavy and well built. The person loved the gift.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R1P5HUG4K4ZC9H/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B00008UA3H",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on March 18, 2024",
-                        "utc": "2024-03-18T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Kindle Customer",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AGXUT4VSTBTJ3O4TMFLGHUSBATCQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
-                        "id": "AGXUT4VSTBTJ3O4TMFLGHUSBATCQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R2CU43VD2441KJ",
-                    "title": "Great Pan!",
-                    "body": "I received the pan the day after I ordered it, which was wonderful because I was excited about making scones for the 1st time. Although I read reviews that scones pop out easily from this pan without any prepping of the pan, I greased the pan as recommended by the instructions that came with the pan. I made blueberry scones, and a pan of breakfast of scones. Both types of scones slid nicely out of the pan. I learned a nice tip: if the recipe calls for butter, put the butter in the freezer while combining the dry ingredients, and then grate the butter before adding to the dry ingredients. I used a pastry cutter to incorporate the butter into the dry ingredients. So easy. It prevents overworking the dough and it resulted in light and absolutely delicious scones. I’ve never had better scones!Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I received the pan the day after I ordered it, which was wonderful because I was excited about making scones for the 1st time. Although I read reviews that scones pop out easily from this pan without any prepping of the pan, I greased the pan as recommended by the instructions that came with the pan. I made blueberry scones, and a pan of breakfast of scones. Both types of scones slid nicely out of the pan. I learned a nice tip: if the recipe calls for butter, put the butter in the freezer while combining the dry ingredients, and then grate the butter before adding to the dry ingredients. I used a pastry cutter to incorporate the butter into the dry ingredients. So easy. It prevents overworking the dough and it resulted in light and absolutely delicious scones. I’ve never had better scones!</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R2CU43VD2441KJ/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B00008UA3H",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on March 25, 2022",
-                        "utc": "2022-03-25T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "chilly flamingo",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AHZMR5JKTIUDXKFR3W5WCL7DOSSA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
-                        "id": "AHZMR5JKTIUDXKFR3W5WCL7DOSSA"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": 15,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R2QAZLGPQPYGZH",
-                    "title": "Sturdy",
-                    "body": "Fairly study pan. I do a LOT of baking. I returned this item because I felt the cost did not support its use.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Fairly study pan. I do a LOT of baking. I returned this item because I felt the cost did not support its use.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/R2QAZLGPQPYGZH/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B00008UA3H",
-                    "rating": 4,
-                    "date": {
-                        "raw": "Reviewed in the United States on November 28, 2023",
-                        "utc": "2023-11-28T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Traveler",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AGLHXE5NHD7JFDWS4U77KNIWT4PQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
-                        "id": "AGLHXE5NHD7JFDWS4U77KNIWT4PQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "RZ06S4FWEBSYR",
-                    "title": "Easy to clean",
-                    "body": "I am very happy with the ease of cleaning after cooking scones.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I am very happy with the ease of cleaning after cooking scones.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/RZ06S4FWEBSYR/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B00008UA3H",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on June 10, 2024",
-                        "utc": "2024-06-10T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "frank piekos",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AHGXBVE5N4FQ6U2JFDMYP6MQ3BVQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
-                        "id": "AHGXBVE5N4FQ6U2JFDMYP6MQ3BVQ"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "ROS7VGED72GH",
-                    "title": "Makes great traditional sized scones",
-                    "body": "This was my first foray into making scones and the recipe seemed to make a relatively wet dough. It was a bit challenging to place the dough in the scone pan but it produced excellent results. I'm thinking that perhaps it wasn't really a necessary purchase but now that I have it, it's time to make many more scone varieties.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>This was my first foray into making scones and the recipe seemed to make a relatively wet dough. It was a bit challenging to place the dough in the scone pan but it produced excellent results. I'm thinking that perhaps it wasn't really a necessary purchase but now that I have it, it's time to make many more scone varieties.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": "https://www.amazon.com/gp/customer-reviews/ROS7VGED72GH/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B00008UA3H",
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United States on May 17, 2024",
-                        "utc": "2024-05-17T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "B. Hanley",
-                        "link": "https://www.amazon.com/gp/profile/amzn1.account.AHFYQA5IOST2ZC7CVPWUI5S7345Q/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
-                        "id": "AHFYQA5IOST2ZC7CVPWUI5S7345Q"
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "us",
-                    "is_global_review": false
-                },
-                {
-                    "id": "R2QTWIEY051A1S",
-                    "title": "Great Product",
-                    "body": "This is the easiest way to bake the perfect scones. the scones never stick to the pan and simply fall right out.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>This is the easiest way to bake the perfect scones. the scones never stick to the pan and simply fall right out.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": null,
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in Canada on January 4, 2024",
-                        "utc": "2024-01-04T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Terry",
-                        "link": null,
-                        "id": null
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "ca",
-                    "is_global_review": true
-                },
-                {
-                    "id": "RJG3PR7T9L48W",
-                    "title": "Cumple fantásticamente con su cometido",
-                    "body": "La calidad de Nordic Ware no está a discusión. Punto. Solo te aconsejo reflexionar si realmente necesitas un molde para scones (aunque también sirve para polenta y cornbread). Si tu respuesta es sí, ríndete y llévatelo. Si tu respuesta es no, ¿qué haces leyendo esta reseña?Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">           <span class=\"cr-original-review-content\">La calidad de Nordic Ware no está a discusión. Punto. Solo te aconsejo reflexionar si realmente necesitas un molde para scones (aunque también sirve para polenta y cornbread). Si tu respuesta es sí, ríndete y llévatelo. Si tu respuesta es no, ¿qué haces leyendo esta reseña?</span><span class=\"cr-translated-review-content aok-hidden\"></span>     </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": null,
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in Mexico on February 27, 2021",
-                        "utc": "2021-02-27T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Enrique Popoca",
-                        "link": null,
-                        "id": null
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "mx",
-                    "is_global_review": true
-                },
-                {
-                    "id": "R2QF6AS2AIJ766",
-                    "title": "Great for corn bread",
-                    "body": "Very sturdy, it cooks corn bread perfect as I've just started making it from an American recipeRead more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Very sturdy, it cooks corn bread perfect as I've just started making it from an American recipe</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": null,
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in the United Kingdom on August 14, 2021",
-                        "utc": "2021-08-14T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Sylvia",
-                        "link": null,
-                        "id": null
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "gb",
-                    "is_global_review": true
-                },
-                {
-                    "id": "RYOZU5B2TCFV7",
-                    "title": "It’s a great pan…BUT…",
-                    "body": "I love the Nordic Ware ranges and have tons of items. Recent orders have not been satisfactory though. I’ve had 3 items arrive in the last 2 months that look like they are factory seconds. Amazon have been great a replacing, but I get the feeling that quality control is not what it was.Read more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I love the Nordic Ware ranges and have tons of items. Recent orders have not been satisfactory though. I’ve had 3 items arrive in the last 2 months that look like they are factory seconds. Amazon have been great a replacing, but I get the feeling that quality control is not what it was.</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": null,
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in Australia on October 13, 2023",
-                        "utc": "2023-10-13T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "hells",
-                        "link": null,
-                        "id": null
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "au",
-                    "is_global_review": true
-                },
-                {
-                    "id": "RCNBFIPPXTBXW",
-                    "title": "Great!",
-                    "body": "Good buy! Easy to use & cleanRead more",
-                    "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Good buy! Easy to use &amp; clean</span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
-                    "link": null,
-                    "rating": 5,
-                    "date": {
-                        "raw": "Reviewed in Singapore on August 19, 2021",
-                        "utc": "2021-08-19T00:00:00.000Z"
-                    },
-                    "profile": {
-                        "name": "Junk",
-                        "link": null,
-                        "id": null
-                    },
-                    "vine_program": false,
-                    "verified_purchase": true,
-                    "helpful_votes": null,
-                    "review_country": "us",
-                    "is_global_review": true
-                }
-            ],
-            "main_image": {
-                "link": "https://m.media-amazon.com/images/I/71AxMR1Sf5L.jpg"
-            },
-            "images": [
-                {
-                    "link": "https://m.media-amazon.com/images/I/71AxMR1Sf5L._AC_SL1500_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/81WGw9kQNYL._AC_SL1500_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/8135n9kCmlL._AC_SL1500_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/91dF4i93jmL._AC_SL1500_.jpg"
-                },
-                {
-                    "link": "https://m.media-amazon.com/images/I/41JReyOO7yL._AC_.jpg"
-                }
-            ],
-            "videos": [
-                {
-                    "duration_seconds": 74,
-                    "width": 854,
-                    "height": 480,
-                    "url": null,
-                    "thumbnail": "https://m.media-amazon.com/images/I/513oGrk0Z+L.SX522_.jpg",
-                    "is_hero_video": false,
-                    "variant": "MAIN",
-                    "title": "How to Clean a Bundt",
-                    "group_id": "IB_G1",
-                    "group_type": "videos_for_this_product"
-                }
-            ],
-            "is_bundle": false,
-            "feature_bullets": [
-                "Genuine Bundt pans are made of durable cast aluminum to achieve the most crisp, intricate cake detail possible",
-                "Cast aluminum’s superior heat conductivity ensures controlled, even browning of cakes and treats",
-                "Premium silicone nonstick is made without PFAS and PTFE for healthy baking and ensures effortless release and cleanup",
-                "Proudly American Made since 1946, our heirloom-quality pieces are made to withstand a lifetime of use in your home kitchen",
-                "Pan exterior is 9.7 inch diameter, 1.2 inches in height and measures 10.6 inches handle to handle. The pan capacity holds 4.5 cups within 8 cavities. Each cavity measurements are shown in the dimensional drawing image."
-            ],
-            "important_information": null,
-            "buybox_winner": {
-                "minimum_order_quantity": null,
-                "offer_id": null,
-                "is_prime": true,
-                "is_prime_exclusive_deal": false,
-                "availability": {
-                    "type": "in_stock",
-                    "raw": "In Stock",
-                    "dispatch_days": 1
-                },
-                "fulfillment": {
-                    "type": "1p",
-                    "is_sold_by_amazon": true,
-                    "is_fulfilled_by_amazon": true,
-                    "is_fulfilled_by_third_party": false,
-                    "is_sold_by_third_party": false,
-                    "third_party_seller": null
-                },
-                "deal": null,
-           
-                "rrp": {
-                    "symbol": "$",
-                    "currency": "USD",
-                    "value": 40.0,
-                    "raw": "$40.00"
-                },
-                "new_offers_count": null,
-                "new_offers_from": null,
-                "used_offers_count": null,
-                "used_offers_from": null,
-                "mixed_offers_count": null,
-                "mixed_offers_from": null
-            },
-            "more_buying_choices": null,
-            "specifications": [
-                {
-                    "name": "Material",
-                    "value": "Aluminum"
-                },
-                {
-                    "name": "Brand",
-                    "value": "Nordic Ware"
-                },
-                {
-                    "name": "Color",
-                    "value": "black"
-                },
-                {
-                    "name": "Shape",
-                    "value": "Round"
-                },
-                {
-                    "name": "Special Feature",
-                    "value": "Oven Safe"
-                },
-                {
-                    "name": "Product Dimensions",
-                    "value": "9.75\"D x 10.69\"W x 1.2\"H"
-                },
-                {
-                    "name": "Capacity",
-                    "value": "4.5 Cups"
-                },
-                {
-                    "name": "Specific Uses For Product",
-                    "value": "Oven-safe"
-                },
-                {
-                    "name": "Occasion",
-                    "value": "Housewarming"
-                },
-                {
-                    "name": "Included Components",
-                    "value": "scone pan"
-                },
-                {
-                    "name": "Product Care Instructions",
-                    "value": "Hand Wash"
-                },
-                {
-                    "name": "Item Weight",
-                    "value": "1.5 Pounds"
-                },
-                {
-                    "name": "Is Oven Safe",
-                    "value": "Yes"
-                },
-                {
-                    "name": "Upper Temperature Rating",
-                    "value": "400 Degrees Fahrenheit"
-                },
-                {
-                    "name": "Is Dishwasher Safe",
-                    "value": "No"
-                },
-                {
-                    "name": "Global Trade Identification Number",
-                    "value": "00011172016409"
-                },
-                {
-                    "name": "Manufacturer",
-                    "value": "Nordic Ware"
-                },
-                {
-                    "name": "Size",
-                    "value": "Classic Scone"
-                },
-                {
-                    "name": "UPC",
-                    "value": "756635760924 885226625196 013314963473 804067204605 863190165924 703570112622 846830073964 936711572362 350242992893 809394444250 011172016409 111720164092 798527427201"
-                },
-                {
-                    "name": "Item Weight",
-                    "value": "1.5 pounds"
-                },
-                {
-                    "name": "ASIN",
-                    "value": "B00008UA3H"
-                },
-                {
-                    "name": "Country of Origin",
-                    "value": "USA"
-                },
-                {
-                    "name": "Item model number",
-                    "value": "01640"
-                },
-                {
-                    "name": "Customer Reviews",
-                    "value": "4.8 4.8 out of 5 stars       2,396 ratings          4.8 out of 5 stars"
-                },
-                {
-                    "name": "Best Sellers Rank",
-                    "value": "#20,400 in Kitchen & Dining (See Top 100 in Kitchen & Dining) #14 in Bundt Pans"
-                },
-                {
-                    "name": "Is Discontinued By Manufacturer",
-                    "value": "No"
-                },
-                {
-                    "name": "Mildew-resistant",
-                    "value": "Cast Aluminum"
-                },
-                {
-                    "name": "Assembly required",
-                    "value": "No"
-                },
-                {
-                    "name": "Number of pieces",
-                    "value": "1"
-                },
-                {
-                    "name": "Warranty Description",
-                    "value": "1 yr"
-                },
-                {
-                    "name": "Batteries required",
-                    "value": "No"
-                }
-            ],
-            "services": null,
-            "attributes": [
-                {
-                    "name": "Material",
-                    "value": "Aluminum"
-                },
-                {
-                    "name": "Brand",
-                    "value": "Nordic Ware"
-                },
-                {
-                    "name": "Color",
-                    "value": "black"
-                },
-                {
-                    "name": "Shape",
-                    "value": "Round"
-                },
-                {
-                    "name": "Special Feature",
-                    "value": "Oven Safe"
-                }
-            ]
-        },
-        "frequently_bought_together": {
-            "total_price": {
-                "symbol": "$",
-                "value": 78.2,
-                "currency": "USD",
-                "raw": "$78.20"
-            },
-            "products": [
-                {
-                    "asin": "B00008UA3H",
-                    "title": "Nordic Ware Procast, Classic Scone, Graphite",
-                    "link": "https://www.amazon.com/dp/B00008UA3H",
-                    "price": {
-                        "symbol": "$",
-                        "currency": "USD",
-                        "value": 24.58,
-                        "raw": "$24.58"
-                    }
-                },
-                {
-                    "asin": "B01JGRDMLQ",
-                    "title": "Sticky Fingers Scone Mix Variety Pack of 4 (Original, Wild Blueberry, Tart Cherry, and Lemon Poppy Seed) 15 Oz. Each",
-                    "link": "https://www.amazon.com/dp/B01JGRDMLQ",
-                    "price": {
-                        "symbol": "$",
-                        "currency": "USD",
-                        "value": 39.99,
-                        "raw": "$39.99"
-                    }
-                },
-                {
-                    "asin": "B01A4HXIJ8",
-                    "title": "Garvey's Downton Abbey best Of British Traditional Organic Scone Mix, 9 Ounce (Pack of 1)",
-                    "link": "https://www.amazon.com/dp/B01A4HXIJ8",
-                    "price": {
-                        "symbol": "$",
-                        "currency": "USD",
-                        "value": 6.09,
-                        "raw": "$6.09"
-                    }
-                }
-            ]
-        },
-        "also_viewed": null,
-        "bundles": null,
-        "bundle_contents": null,
-        "sponsored_products": null,
-        "shop_by_look": null
-    }
+	"f_sku_id": "B0CT5877CC-amazon.com",
+	"f_spu_id": "B0D1T84Z5T-amazon.com",
+	"site": "amazon.com",
+	"sku_id": "B0CT5877CC",
+	"spu_id": "B0D1T84Z5T",
+	"request_sku_id": "B0CT5877CC",
+	"title": "2 Piece Casual Outfits Set for Women Pleated Wide Leg Pants Long Sleeve Button Down Y2K Shirt Lounge Streetwear Suit Lake Blue Medium",
+	"link": "https://www.amazon.com/FIOPHY-Casual-Outfits-Pleated-Streetwear/dp/B0D1T84Z5T",
+	"sub_title": "Visit the FIOPHY Store",
+	"sub_title_link": "/stores/FIOPHY/page/1976FD81-6DBD-48E8-8711-CB6273422D0A?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto",
+	"price": {
+		"value": 3699,
+		"currency": "USD",
+		"updates_at": "1734589909",
+		"source_type": "1",
+		"parser_name": "AmazonProductDetailParser"
+	},
+	"rrp": {
+		"value": 3699,
+		"currency": "USD",
+		"updates_at": "1734589909",
+		"source_type": "1",
+		"parser_name": "AmazonProductDetailParser"
+	},
+	"f_status": "0",
+	"images": {
+		"main_image": "https://m.media-amazon.com/images/I/61u75UQW7xL._AC_SL1500_.jpg",
+		"images": [
+			"https://m.media-amazon.com/images/I/61u75UQW7xL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/61HrsvgIBqL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71xhinQc7wL._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/61MTq4XP43L._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/71kevGk2F8L._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/8134z-NAA2L._AC_SL1500_.jpg",
+			"https://m.media-amazon.com/images/I/812IVQfP9NL._AC_SL1500_.jpg"
+		]
+	},
+	"brand": {
+		"name": "FIOPHY"
+	},
+	"feature_bullets": [
+		"COMFY & FASHIONABLE: 95% Polyester / 5% Elastane. Our Women's Summer Two Piece Casual Track Outfits Y2K Streetwear Set is super soft, lightweight, skin-friendly, stretchy, comfortable, durable, and breathable. The cute two-piece matching sets for women are perfect for Summer, Spring, Fall, and Winter. Oversized and vintage, aesthetic clothes.",
+		"UNIQUE PLEATED DESIGN: Go for a groovy look and feel with this oversized, solid-color tracksuit 2-piece set for women. This two-piece outfit for women flowy pants set includes a baggy long sleeve, label collar, V neck, pleated, slit hem, and button-down blouse top and the matching loose fit wide-leg pant with elastic high waist for an easy and relaxed fit. Its stylish design makes this tracksuit easy to dress up or down, depending on the occasion.",
+		"VACATION OUTFITS PLISSE SET FOR WOMEN: 2 pieces tracksuit set suitable for Casual Daily Wear/ Night Out/ Office/ Going Out Outfits/ Beach/ Street/ Park/ Concert/ Travel/ Leisure/ Camping / Airport/ Homeworking/ Vacation/ Dating/ Tourism/ Shopping/ Party/ Bar/ Outdoor Activity/ Sport/ Morning Run/ Club Revel/ Music Festival/ Fashion Show/ Birthday/ Honeymoon/ Resort/ Pajamas. The plisse set will keep you comfortable all day long and is a must-have for your wardrobe!",
+		"EASY MATCH: The brunch outfits 2024 can be paired with your T shirt, vest, sweater, crop top, tank shirt, hat, handbags, and fashion items, such as sneakers and a crossbody bag to create a casual look or heels and jewelry to make you elegant and glamorous. This suit set can also be paired with a denim jacket or blazer for a chic look. It's easy to mix and match with other pieces in your summer wardrobe.",
+		"SUGGESTIONS: S/ M/ L/ XL. Before ordering, please carefully read the Size Chart we provided in the pictures. Package Includes 1x long sleeve button-up shirt, 1x cozy wide leg bottom. Machine wash this 2 piece outfit set with similar colors in laundry bag/ Cold water washing/ Do not bleach/ Do not dry clean/ Low-temperature drying. Feel free to contact us if you have any issues!"
+	],
+	"attributes": [
+		{
+			"name": "Color",
+			"value": "Lake Blue"
+		},
+		{
+			"name": "Size",
+			"value": "Medium"
+		}
+	],
+	"specifications": [
+		{
+			"name": "Color",
+			"value": "Lake Blue"
+		},
+		{
+			"name": "Size",
+			"value": "Medium"
+		}
+	],
+	"extended_info": {
+		"is_marketplace_item": true,
+		"platform_choice": {
+			"keywords": ""
+		}
+	},
+	"best_seller_rank": [
+		{
+			"category": "Clothing, Shoes & Jewelry",
+			"rank": 1409433,
+			"link": "/gp/bestsellers/fashion/ref=pd_zg_ts_fashion"
+		},
+		{
+			"category": "Women's Pajama Sets",
+			"rank": 9163,
+			"link": "/gp/bestsellers/fashion/1044894/ref=pd_zg_hrsr_fashion"
+		}
+	],
+	"keywords": "2,Piece,Casual,Outfits,Set,for,Women,Pleated,Wide,Leg,Pants,Long,Sleeve,Button,Down,Y2K,Shirt,Lounge,Streetwear,Suit",
+	"review_summary": {
+		"link": "https://www.amazon.com/product-reviews/B0CT5877CC",
+		"rating": 3.8,
+		"ratings_total": 13,
+		"rating_breakdown": {
+			"five_star": 4,
+			"five_percentage": 37,
+			"four_star": 3,
+			"four_percentage": 27,
+			"three_star": 2,
+			"three_percentage": 18,
+			"two_star": 2,
+			"two_percentage": 18,
+			"one_star": 0,
+			"one_percentage": 0
+		},
+		"top_reviews": [
+			"RVFODY0O3OHEV-amazon.com",
+			"R3BPXW9ATYTR72-amazon.com",
+			"RUEOLPNNRQ0MM-amazon.com",
+			"R25UVKVRFF64FC-amazon.com",
+			"R3QVWD1A1FIT8I-amazon.com",
+			"R34ESJG5DE95ZI-amazon.com",
+			"RPGWSJXYNNHVJ-amazon.com",
+			"R3Q3P7S8P4HDBB-amazon.com"
+		],
+		"f_updates_at": "1735539557"
+	},
+	"variants": "[{\"asin\":\"B0CT58QJ4D\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Green\"}]},{\"asin\":\"B0CT7VTXKF\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Small\"},{\"name\":\"color_name\",\"value\":\"Light Blue\"}]},{\"asin\":\"B0CT4WV1VD\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Large\"},{\"name\":\"color_name\",\"value\":\"Orange\"}]},{\"asin\":\"B0CT54W4S4\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Small\"},{\"name\":\"color_name\",\"value\":\"Orange\"}]},{\"asin\":\"B0CT5Q8TVS\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Medium\"},{\"name\":\"color_name\",\"value\":\"Green\"}]},{\"asin\":\"B0CT54QZ7N\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Large\"},{\"name\":\"color_name\",\"value\":\"Lake Blue\"}]},{\"asin\":\"B0CT55CXNP\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Medium\"},{\"name\":\"color_name\",\"value\":\"Orange\"}]},{\"asin\":\"B0CT7KS51M\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Light Blue\"}]},{\"asin\":\"B0CT5QF1MZ\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Small\"},{\"name\":\"color_name\",\"value\":\"Lake Blue\"}]},{\"asin\":\"B0CT5DJQGZ\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Black\"}]},{\"asin\":\"B0CT5QVRLJ\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Lake Blue\"}]},{\"asin\":\"B0CT56VY4Z\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"X-Large\"},{\"name\":\"color_name\",\"value\":\"Orange\"}]},{\"asin\":\"B0CT5TXFNM\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Small\"},{\"name\":\"color_name\",\"value\":\"Green\"}]},{\"asin\":\"B0CT5G4THC\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Large\"},{\"name\":\"color_name\",\"value\":\"Green\"}]},{\"asin\":\"B0CT54PDXR\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Large\"},{\"name\":\"color_name\",\"value\":\"Black\"}]},{\"asin\":\"B0CT5877CC\",\"dimensions\":[{\"name\":\"size_name\",\"value\":\"Medium\"},{\"name\":\"color_name\",\"value\":\"Lake Blue\"}]}]",
+	"f_meta": {
+		"source_type": "1",
+		"parser_name": "AmazonProductDetailParser-adapter",
+		"parses_at": "1734589909",
+		"data_type": "1"
+	}
 }

@@ -319,6 +319,12 @@ class FavieProductDetail(BaseModel):
     def validate_variants(cls, value):
         return PydanticUtils.deserialize_data(List[SimpleProduct], value)
 
+    variants_str: Optional[str] = None
+
+    @field_validator("variants_str", mode="before")
+    def validate_variants_str(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
+
     promotion: Optional[Promotion] = None
 
     @field_validator("promotion", mode="before")

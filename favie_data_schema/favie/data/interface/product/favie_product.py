@@ -222,3 +222,4 @@ class SaleInfo(BaseModel):
     best_seller_rank: Optional[List[SellerRank]] = None
     promotion: Optional[Promotion] = None
     review_summary: Optional[ReviewSummary] = None
+    f_historical_prices: Optional[List[Price]] = None
