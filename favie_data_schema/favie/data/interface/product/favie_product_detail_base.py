@@ -1,4 +1,4 @@
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
 
 from favie_data_common.common.pydantic_utils import PydanticUtils
 from pydantic import BaseModel, field_validator
@@ -11,7 +11,6 @@ from favie_data_schema.favie.data.interface.product.favie_product import (
     MediaInfo,
     PriceInfo,
     SaleInfo,
-    SimpleProduct,
 )
 
 
@@ -52,11 +51,11 @@ class FavieProductDetailBase(BaseModel):
     def validate_sale_info(cls, value):
         return PydanticUtils.deserialize_data(SaleInfo, value)
 
-    variants: Optional[List[SimpleProduct]] = None
+    variants_str: Optional[str] = None
 
-    @field_validator("variants", mode="before")
-    def validate_variants(cls, value):
-        return PydanticUtils.deserialize_data(SimpleProduct, value)
+    @field_validator("variants_str", mode="before")
+    def validate_variants_str(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
 
     raw_data: Optional[str] = None
 
