@@ -165,6 +165,8 @@ class ReviewSummary(BaseModel):
 
 class BaseInfo(BaseModel):
     request_sku_id: Optional[str] = None
+    f_sku_id: Optional[str] = None
+    f_spu_id: Optional[str] = None
     sku_id: Optional[str] = None
     spu_id: Optional[str] = None
     site: Optional[str] = None
