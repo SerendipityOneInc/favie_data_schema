@@ -16,6 +16,7 @@ class ImageData(BaseModel):
 class VideoData(BaseModel):
     url: Optional[str] = None
     desc: Optional[str] = None
+    duration: Optional[int] = None
 
 
 class ReferenceData(BaseModel):
@@ -30,6 +31,25 @@ class ProductData(BaseModel):
     price: Optional[str] = None
     images: Optional[List[ImageData]] = None
     videos: Optional[List[VideoData]] = None
+
+
+class WebpageAuthor(BaseModel):
+    user_name: Optional[str] = None
+    display_name: Optional[str] = None
+    description: Optional[str] = None
+    link: Optional[str] = None
+    type: Optional[str] = None
+    image_url: Optional[str] = None
+    posts_count: Optional[int] = None
+    followers_count: Optional[int] = None
+    following_count: Optional[int] = None
+
+
+class ReviewSummary(BaseModel):
+    upvotes_count: Optional[int] = None
+    downvotes_count: Optional[int] = None
+    views_count: Optional[int] = None
+    comments_total: Optional[int] = None
 
 
 class FavieWebpage(BaseModel):
@@ -93,6 +113,12 @@ class FavieWebpage(BaseModel):
     def validate_author(cls, value):
         return PydanticUtils.deserialize_data(str, value)
 
+    author_v1: Optional[WebpageAuthor] = None
+
+    @field_validator("author_v1", mode="before")
+    def validate_author_v1(cls, value):
+        return PydanticUtils.deserialize_data(WebpageAuthor, value)
+
     keywords: Optional[List[str]] = None
 
     @field_validator("keywords", mode="before")
@@ -134,6 +160,12 @@ class FavieWebpage(BaseModel):
     @field_validator("subtitles", mode="before")
     def validate_subtitles(cls, value):
         return PydanticUtils.deserialize_data(List[str], value)
+
+    review_summary: Optional[ReviewSummary] = None
+
+    @field_validator("review_summary", mode="before")
+    def validate_review_summary(cls, value):
+        return PydanticUtils.deserialize_data(ReviewSummary, value)
 
     images: Optional[List[ImageData]] = None
 
