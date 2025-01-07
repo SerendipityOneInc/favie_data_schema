@@ -323,7 +323,10 @@ class FavieProductDetail(BaseModel):
 
     @field_validator("variants", mode="before")
     def validate_variants(cls, value):
-        return PydanticUtils.deserialize_data(List[SimpleProduct], value)
+        try:
+            return PydanticUtils.deserialize_data(List[SimpleProduct], value)
+        except Exception:
+            return None
 
     variants_str: Optional[str] = None
 
