@@ -172,6 +172,7 @@ class BaseInfo(BaseModel):
     sub_title: Optional[str] = None
     sub_title_link: Optional[str] = None
     link: Optional[str] = None
+    sku_link: Optional[str] = None
     brand: Optional[Brand] = None
     f_brand: Optional[Brand] = None
     keywords: Optional[str] = None

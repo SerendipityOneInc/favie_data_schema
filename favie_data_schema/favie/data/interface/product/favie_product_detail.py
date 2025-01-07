@@ -73,6 +73,12 @@ class FavieProductDetail(BaseModel):
     def validate_link(cls, value):
         return PydanticUtils.deserialize_data(str, value)
 
+    sku_link: Optional[str] = None
+
+    @field_validator("sku_link", mode="before")
+    def validate_sku_link(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
+
     sub_title: Optional[str] = None
 
     @field_validator("sub_title", mode="before")

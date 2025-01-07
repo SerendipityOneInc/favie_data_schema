@@ -273,6 +273,7 @@ class Product(BaseModel):
     keywords: Optional[str] = None
     keywords_list: Optional[List[str]] = None
     link: Optional[str] = None
+    stark_sku_link: Optional[str] = None
     asin: Optional[str] = None
     parent_asin: Optional[str] = None
     description: Optional[str] = None
