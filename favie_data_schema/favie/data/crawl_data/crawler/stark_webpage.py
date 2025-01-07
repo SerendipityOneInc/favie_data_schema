@@ -10,6 +10,7 @@ class WebpageImage(BaseModel):
 class WebpageVideo(BaseModel):
     url: Optional[str] = None
     desc: Optional[str] = None
+    duration: Optional[int] = None
 
 class WebpageProduct(BaseModel):
     url: Optional[str] = None
@@ -24,6 +25,17 @@ class WebpageReference(BaseModel):
     url: Optional[str] = None
     desc: Optional[str] = None
 
+class WebpageAuthor(BaseModel):
+    user_name: Optional[str] = None
+    display_name: Optional[str] = None
+    description: Optional[str] = None
+    link: Optional[str] = None
+    type: Optional[str] = None
+    image_url: Optional[str] = None
+    posts_count: Optional[int] = None
+    followers_count: Optional[int] = None
+    following_count: Optional[int] = None
+
 class WebpageItem(BaseModel):
     url: Optional[str] = None
     host: Optional[str] = None
@@ -32,7 +44,8 @@ class WebpageItem(BaseModel):
     language: Optional[str] = None
     title: Optional[str] = None
     description: Optional[str] = None
-    author: Optional[str] = None
+    author: Optional[str] = None  # [need to be deleted]
+    author_v1: Optional[WebpageAuthor] = None
     keywords: Optional[List[str]] = None
     robots: Optional[List[str]] = None
     content: Optional[str] = None # text content of the webpage
@@ -40,6 +53,10 @@ class WebpageItem(BaseModel):
     excerpt: Optional[str] = None
     comments: Optional[List[str]] = None
     subtitles: Optional[List[str]] = None
+    upvotes_count: Optional[int] = None
+    downvotes_count: Optional[int] = None
+    views_count: Optional[int] = None
+    comments_total: Optional[int] = None
     images: Optional[List[WebpageImage]] = None
     videos: Optional[List[WebpageVideo]] = None
     references: Optional[List[WebpageReference]] = None
@@ -48,5 +65,5 @@ class WebpageItem(BaseModel):
     open_graphs: Optional[List[str]] = None
     twitter_cards: Optional[List[str]] = None
     page_type: Optional[str] = None
-    ext_data: Optional[str] = None
+    ext_data: Optional[str] = None  #extra data for the webpage, such as chapters, markdown, etc.
     create_time: Optional[str] = None
