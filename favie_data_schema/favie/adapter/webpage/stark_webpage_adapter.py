@@ -23,6 +23,8 @@ from favie_data_schema.favie.data.interface.webpage.favie_webpage import (
     ProductData,
     ReferenceData,
     VideoData,
+    WebpageAuthor,
+    WebpageReviewSummary,
 )
 
 
@@ -87,6 +89,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
         webpage.title = webpage_message.crawl_result.title
         webpage.description = webpage_message.crawl_result.description
         webpage.author = webpage_message.crawl_result.author
+        webpage.author_v1 = StarkWebpageAdapter.__get_author(webpage_message)
         webpage.keywords = webpage_message.crawl_result.keywords
         webpage.robots = webpage_message.crawl_result.robots
         content = webpage_message.crawl_result.content
@@ -96,6 +99,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
         webpage.excerpt = webpage_message.crawl_result.excerpt
         webpage.comments = webpage_message.crawl_result.comments
         webpage.subtitles = webpage_message.crawl_result.subtitles
+        webpage.review_summary = StarkWebpageAdapter.__get_review_summary(webpage_message)
         webpage.images = StarkWebpageAdapter.__get_images_new(webpage_message.crawl_result.images)
         webpage.videos = StarkWebpageAdapter.__get_videos_new(webpage_message.crawl_result.videos)
         webpage.references = StarkWebpageAdapter.__get_references_new(webpage_message.crawl_result.references)
@@ -113,7 +117,22 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
             app_key=webpage_message.app_key,
         )
         webpage.f_status = str(FavieDataStatus.NORMAL.value)
+        webpage.webpage_create_time = webpage_message.crawl_result.create_time
         return webpage
+
+    @staticmethod
+    def __get_review_summary(webpage_message: StarkNewWebpageMessage) -> WebpageReviewSummary:
+        return WebpageReviewSummary(
+            upvotes_count=webpage_message.crawl_result.upvotes_count,
+            downvotes_count=webpage_message.crawl_result.downvotes_count,
+            views_count=webpage_message.crawl_result.views_count,
+            comments_total=webpage_message.crawl_result.comments_total,
+        )
+
+    @staticmethod
+    def __get_author(webpage_message: StarkNewWebpageMessage) -> WebpageAuthor:
+        auther_v1 = webpage_message.crawl_result.author_v1
+        return WebpageAuthor(**auther_v1.model_dump())
 
     @staticmethod
     def __get_images(webpage_content: ParsedWebPageContent) -> list[ImageData] | None:

@@ -45,7 +45,7 @@ class WebpageAuthor(BaseModel):
     following_count: Optional[int] = None
 
 
-class ReviewSummary(BaseModel):
+class WebpageReviewSummary(BaseModel):
     upvotes_count: Optional[int] = None
     downvotes_count: Optional[int] = None
     views_count: Optional[int] = None
@@ -161,11 +161,11 @@ class FavieWebpage(BaseModel):
     def validate_subtitles(cls, value):
         return PydanticUtils.deserialize_data(List[str], value)
 
-    review_summary: Optional[ReviewSummary] = None
+    review_summary: Optional[WebpageReviewSummary] = None
 
     @field_validator("review_summary", mode="before")
     def validate_review_summary(cls, value):
-        return PydanticUtils.deserialize_data(ReviewSummary, value)
+        return PydanticUtils.deserialize_data(WebpageReviewSummary, value)
 
     images: Optional[List[ImageData]] = None
 
@@ -256,6 +256,12 @@ class FavieWebpage(BaseModel):
     @field_validator("f_meta", mode="before")
     def validate_f_meta(cls, value):
         return PydanticUtils.deserialize_data(MetaInfo, value)
+
+    webpage_create_time: Optional[str] = None
+
+    @field_validator("webpage_create_time", mode="before")
+    def validate_webpage_create_time(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
 
     create_time: Optional[str] = None
 
