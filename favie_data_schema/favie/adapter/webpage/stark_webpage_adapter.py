@@ -122,17 +122,26 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
 
     @staticmethod
     def __get_review_summary(webpage_message: StarkNewWebpageMessage) -> WebpageReviewSummary:
-        return WebpageReviewSummary(
-            upvotes_count=webpage_message.crawl_result.upvotes_count,
-            downvotes_count=webpage_message.crawl_result.downvotes_count,
-            views_count=webpage_message.crawl_result.views_count,
-            comments_total=webpage_message.crawl_result.comments_total,
+        return (
+            WebpageReviewSummary(
+                upvotes_count=webpage_message.crawl_result.upvotes_count,
+                downvotes_count=webpage_message.crawl_result.downvotes_count,
+                views_count=webpage_message.crawl_result.views_count,
+                comments_total=webpage_message.crawl_result.comments_total,
+            )
+            if CommonUtils.any_not_none(
+                webpage_message.crawl_result.upvotes_count,
+                webpage_message.crawl_result.downvotes_count,
+                webpage_message.crawl_result.views_count,
+                webpage_message.crawl_result.comments_total,
+            )
+            else None
         )
 
     @staticmethod
     def __get_author(webpage_message: StarkNewWebpageMessage) -> WebpageAuthor:
         auther_v1 = webpage_message.crawl_result.author_v1
-        return WebpageAuthor(**auther_v1.model_dump())
+        return WebpageAuthor(**auther_v1.model_dump()) if auther_v1 else None
 
     @staticmethod
     def __get_images(webpage_content: ParsedWebPageContent) -> list[ImageData] | None:
