@@ -11,6 +11,7 @@ class FavieTag(BaseModel):
 class FavieImageItem(BaseModel):
     link: Optional[str] = None
     f_link: Optional[str] = None
+    md5: Optional[str] = None
     desc: Optional[str] = None
     format: Optional[str] = None
     category: Optional[str] = None
