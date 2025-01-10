@@ -23,6 +23,12 @@ class FavieMediaImage(BaseModel):
     def validate_url(cls, value):
         return PydanticUtils.deserialize_data(str, value)
 
+    md5: Optional[str] = None
+
+    @field_validator("md5", mode="before")
+    def validate_md5(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
+
     format: Optional[str] = None
 
     @field_validator("format", mode="before")
