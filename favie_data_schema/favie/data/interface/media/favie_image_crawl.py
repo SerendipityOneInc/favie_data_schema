@@ -10,6 +10,7 @@ class RequestImageItem(BaseModel):
     site: Optional[str] = None
     link: Optional[str] = None
     text: Optional[str] = None
+    position: Optional[int] = None
 
 
 class FavieImageCrawlResponse(BaseModel):
