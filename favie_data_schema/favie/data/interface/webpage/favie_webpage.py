@@ -45,6 +45,23 @@ class WebpageAuthor(BaseModel):
     following_count: Optional[int] = None
 
 
+class WebpageSubtitleChunk(BaseModel):
+    start_time: Optional[int] = None  # in milliseconds
+    end_time: Optional[int] = None  # in milliseconds
+    text: Optional[str] = None
+
+
+class WebpageComment(BaseModel):
+    text: Optional[str] = None
+    images: Optional[list[ImageData]] = None
+    videos: Optional[list[VideoData]] = None
+    author: Optional[WebpageAuthor] = None
+    created_at: Optional[str] = None  # in ISO format
+    upvotes_count: Optional[int] = None
+    downvotes_count: Optional[int] = None
+    comments: Optional[List["WebpageComment"]] = None
+
+
 class WebpageReviewSummary(BaseModel):
     upvotes_count: Optional[int] = None
     downvotes_count: Optional[int] = None
@@ -155,11 +172,23 @@ class FavieWebpage(BaseModel):
     def validate_comments(cls, value):
         return PydanticUtils.deserialize_data(List[str], value)
 
+    comments_v1: Optional[List[WebpageComment]] = None
+
+    @field_validator("comments_v1", mode="before")
+    def validate_comments_v1(cls, value):
+        return PydanticUtils.deserialize_data(List[WebpageComment], value)
+
     subtitles: Optional[List[str]] = None
 
     @field_validator("subtitles", mode="before")
     def validate_subtitles(cls, value):
         return PydanticUtils.deserialize_data(List[str], value)
+
+    subtitles_v1: Optional[List[WebpageSubtitleChunk]] = None
+
+    @field_validator("subtitles_v1", mode="before")
+    def validate_subtitles_v1(cls, value):
+        return PydanticUtils.deserialize_data(List[WebpageSubtitleChunk], value)
 
     review_summary: Optional[WebpageReviewSummary] = None
 
