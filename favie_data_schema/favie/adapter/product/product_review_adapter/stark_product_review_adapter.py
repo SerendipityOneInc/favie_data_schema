@@ -2,6 +2,7 @@ from typing import List, Optional
 
 from favie_data_common.common.common_utils import CommonUtils
 
+from favie_data_schema.favie.adapter.common.image_url_rewriter.image_url_rewriter_proxy import ImageUrlRewriterProxy
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage, StarkProductReviewMessage
 from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductReviewAdapter
@@ -26,11 +27,15 @@ from favie_data_schema.favie.data.interface.product.favie_product_review_summary
 
 
 class StarkProductReviewAdapter(FavieProductReviewAdapter):
-    @staticmethod
+    def __init__(self):
+        self.product_review_convert = StarkProductReviewConvert()
+        self.image_rewriter = ImageUrlRewriterProxy(rewrite_size=640)
+
     def stark_detail_to_favie_reviews(
+        self,
         stark_detail_message: StarkProductDetailMessage,
     ) -> Optional[List[FavieProductReview]]:
-        favie_reviews = StarkProductReviewConvert.convert_to_favie_review(stark_detail_message)
+        favie_reviews = self.product_review_convert.convert_to_favie_review(stark_detail_message)
         if favie_reviews is None:
             return None
 
@@ -48,11 +53,11 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
 
         return favie_reviews if CommonUtils.list_len(favie_reviews) > 0 else None
 
-    @staticmethod
     def stark_review_to_favie_review_summary(
+        self,
         stark_review_message: StarkProductReviewMessage,
     ) -> Optional[FavieProductReviewSummary]:
-        if not StarkProductReviewAdapter.__crawl_review_message_check(stark_review_message):
+        if not self.__crawl_review_message_check(stark_review_message):
             return None
         crawl_result = stark_review_message.crawl_result
         if crawl_result.summary is None:
@@ -97,11 +102,11 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
 
         return favie_review_summary
 
-    @staticmethod
     def stark_review_to_favie_reviews(
+        self,
         stark_review_message: StarkProductReviewMessage,
     ) -> Optional[List[FavieProductReview]]:
-        if not StarkProductReviewAdapter.__crawl_review_message_check(stark_review_message):
+        if not self.__crawl_review_message_check(stark_review_message):
             return None
         crawl_result = stark_review_message.crawl_result
         if CommonUtils.is_empty(crawl_result.reviews):
@@ -112,10 +117,11 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
             parses_at=StarkMessageUtils.get_parse_time(stark_review_message),
             data_type=str(MessageDataType.PRODUCT_REVIEW_CRAWLER.value),
         )
+        source_site = StarkMessageUtils.get_domain(stark_review_message)
         return [
-            StarkProductReviewAdapter.__convert_review(
+            self.__convert_review(
                 review=review,
-                site=StarkMessageUtils.get_domain(stark_review_message),
+                site=source_site,
                 spu_id=crawl_result.product.parent_asin,
                 sku_id=crawl_result.product.asin,
                 meta=meta,
@@ -124,8 +130,8 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
             if review is not None
         ]
 
-    @staticmethod
     def favie_review_summary_to_defail_review_summary(
+        self,
         favie_review_summary: FavieProductReviewSummary,
     ) -> Optional[ReviewSummary]:
         if favie_review_summary is None:
@@ -147,8 +153,7 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
         review_summary.f_updates_at = favie_review_summary.f_meta.parses_at
         return FavieProductUtils.cal_percentage_to_review_summary(review_summary)
 
-    @staticmethod
-    def __crawl_review_message_check(stark_review_message: StarkProductReviewMessage) -> bool:
+    def __crawl_review_message_check(self, stark_review_message: StarkProductReviewMessage) -> bool:
         if stark_review_message is None:
             return False
         if stark_review_message.crawl_result is None:
@@ -161,7 +166,7 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
             return False
         return True
 
-    def __convert_review(*, review: Reviews, site, spu_id, sku_id, meta) -> FavieProductReview:
+    def __convert_review(self, *, review: Reviews, site, spu_id, sku_id, meta) -> FavieProductReview:
         favie_review = FavieProductReview()
         favie_review.site = site
         favie_review.spu_id = spu_id
@@ -183,7 +188,9 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
         favie_review.rating = review.rating
         favie_review.date_raw = review.date.raw if review.date is not None else None
         favie_review.date_utc = review.date.utc if review.date is not None else None
-        favie_review.images = review.images
+        favie_review.images = (
+            [self.image_rewriter.rewrite(image) for image in review.images if image] if review.images else None
+        )
         if review.attributes is not None:
             favie_review.attributes = [AttributeItem(name=x.name, value=x.value) for x in review.attributes]
         else:
@@ -197,11 +204,12 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
 
 
 def test_stark_detail_to_product_review():
+    adpater = StarkProductReviewAdapter()
     amazon_message = read_object(
         "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_product_detail_message.json",
         StarkProductDetailMessage,
     )
-    favie_reviews = StarkProductReviewAdapter.stark_detail_to_favie_reviews(amazon_message)
+    favie_reviews = adpater.stark_detail_to_favie_reviews(amazon_message)
     if favie_reviews is None:
         return None
     for favie_review in favie_reviews:
@@ -209,34 +217,38 @@ def test_stark_detail_to_product_review():
 
 
 def test_stark_review_to_product_review_summary():
+    adpater = StarkProductReviewAdapter()
+
     amazon_message = read_object(
         "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_product_review_message.json",
         StarkProductReviewMessage,
     )
-    favie_review_summary = StarkProductReviewAdapter.stark_review_to_favie_review_summary(amazon_message)
+    favie_review_summary = adpater.stark_review_to_favie_review_summary(amazon_message)
     if favie_review_summary is not None:
         print(favie_review_summary.model_dump_json(exclude_none=True))
 
 
 def test_favie_review_summary_to_product_review_summary():
+    adpater = StarkProductReviewAdapter()
+
     amazon_message = read_object(
         "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/stark_product_review_message.json",
         StarkProductReviewMessage,
     )
-    favie_review_summary = StarkProductReviewAdapter.stark_review_to_favie_review_summary(amazon_message)
+    favie_review_summary = adpater.stark_review_to_favie_review_summary(amazon_message)
     if favie_review_summary is not None:
-        product_review_summary = StarkProductReviewAdapter.favie_review_summary_to_defail_review_summary(
-            favie_review_summary
-        )
+        product_review_summary = adpater.favie_review_summary_to_defail_review_summary(favie_review_summary)
         print(product_review_summary.model_dump_json(exclude_none=True))
 
 
 def test_stark_review_to_product_review():
+    adpater = StarkProductReviewAdapter()
+
     amazon_message = read_object(
         "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/review_bug.json",
         StarkProductReviewMessage,
     )
-    favie_reviews = StarkProductReviewAdapter.stark_review_to_favie_reviews(amazon_message)
+    favie_reviews = adpater.stark_review_to_favie_reviews(amazon_message)
     if favie_reviews is None:
         return None
     for favie_review in favie_reviews:
@@ -245,6 +257,6 @@ def test_stark_review_to_product_review():
 
 if __name__ == "__main__":
     test_stark_review_to_product_review()
-    # test_stark_detail_to_product_review()
-    # test_stark_review_to_product_review_summary()
-    # test_favie_review_summary_to_product_review_summary()
+    test_stark_detail_to_product_review()
+    test_stark_review_to_product_review_summary()
+    test_favie_review_summary_to_product_review_summary()
