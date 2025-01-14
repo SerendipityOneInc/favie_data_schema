@@ -24,7 +24,9 @@ from favie_data_schema.favie.data.interface.webpage.favie_webpage import (
     ReferenceData,
     VideoData,
     WebpageAuthor,
+    WebpageComment,
     WebpageReviewSummary,
+    WebpageSubtitleChunk,
 )
 
 
@@ -109,6 +111,8 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
         webpage.products = StarkWebpageAdapter.__get_products_new(webpage_message.crawl_result.products)
         webpage.ext_data = webpage_message.crawl_result.ext_data
         webpage.page_type = webpage_message.crawl_result.page_type
+        webpage.comments_v1 = StarkWebpageAdapter.__get_comments(webpage_message)
+        webpage.subtitles_v1 = StarkWebpageAdapter.__get_subtitles(webpage_message)
         webpage.f_meta = MetaInfo(
             source_type=str(webpage_message.source),
             parser_name=webpage_message.spider,
@@ -119,6 +123,22 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
         webpage.f_status = str(FavieDataStatus.NORMAL.value)
         webpage.webpage_create_time = webpage_message.crawl_result.create_time
         return webpage
+
+    @staticmethod
+    def __get_comments(webpage_message: StarkNewWebpageMessage) -> list[str] | None:
+        return (
+            WebpageComment(**(webpage_message.crawl_result.comments_v1.model_dump()))
+            if webpage_message.crawl_result.comments_v1
+            else None
+        )
+
+    @staticmethod
+    def __get_subtitles(webpage_message: StarkNewWebpageMessage) -> list[str] | None:
+        return (
+            WebpageSubtitleChunk(**(webpage_message.crawl_result.subtitles_v1.model_dump()))
+            if webpage_message.crawl_result.subtitles_v1
+            else None
+        )
 
     @staticmethod
     def __get_review_summary(webpage_message: StarkNewWebpageMessage) -> WebpageReviewSummary:
