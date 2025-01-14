@@ -36,6 +36,21 @@ class WebpageAuthor(BaseModel):
     followers_count: Optional[int] = None
     following_count: Optional[int] = None
 
+class WebpageSubtitleChunk(BaseModel):
+    start_time: Optional[float] = None # in seconds
+    end_time: Optional[float] = None # in seconds
+    text: Optional[str] = None
+
+class WebpageComment(BaseModel):
+    text: Optional[str] = None
+    images: Optional[list[WebpageImage]] = None
+    videos: Optional[list[WebpageVideo]] = None
+    author: Optional[WebpageAuthor] = None
+    created_at: Optional[str] = None # in ISO format
+    upvotes_count: Optional[int] = None
+    downvotes_count: Optional[int] = None
+    comments: Optional[List["WebpageComment"]] = None
+
 class WebpageItem(BaseModel):
     url: Optional[str] = None
     host: Optional[str] = None
@@ -52,7 +67,8 @@ class WebpageItem(BaseModel):
     content_type: Optional[str] = None
     excerpt: Optional[str] = None
     comments: Optional[List[str]] = None
-    subtitles: Optional[List[str]] = None
+    subtitles: Optional[List[str]] = None  # [need to be deleted]
+    subtitles_v1: Optional[List[WebpageSubtitleChunk]] = None
     upvotes_count: Optional[int] = None
     downvotes_count: Optional[int] = None
     views_count: Optional[int] = None
