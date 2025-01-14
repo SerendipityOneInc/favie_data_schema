@@ -37,8 +37,8 @@ class WebpageAuthor(BaseModel):
     following_count: Optional[int] = None
 
 class WebpageSubtitleChunk(BaseModel):
-    start_time: Optional[float] = None # in seconds
-    end_time: Optional[float] = None # in seconds
+    start_time: Optional[int] = None # in milliseconds
+    end_time: Optional[int] = None # in milliseconds
     text: Optional[str] = None
 
 class WebpageComment(BaseModel):
@@ -67,6 +67,7 @@ class WebpageItem(BaseModel):
     content_type: Optional[str] = None
     excerpt: Optional[str] = None
     comments: Optional[List[str]] = None
+    comments_v1: Optional[List[WebpageComment]] = None
     subtitles: Optional[List[str]] = None  # [need to be deleted]
     subtitles_v1: Optional[List[WebpageSubtitleChunk]] = None
     upvotes_count: Optional[int] = None
