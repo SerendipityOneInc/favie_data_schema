@@ -189,7 +189,7 @@ class StarkProductReviewAdapter(FavieProductReviewAdapter):
         favie_review.date_raw = review.date.raw if review.date is not None else None
         favie_review.date_utc = review.date.utc if review.date is not None else None
         favie_review.images = (
-            [self.image_rewriter.rewrite(image) for image in review.images if image] if review.images else None
+            [self.image_rewriter.rewrite(site, image) for image in review.images if image] if review.images else None
         )
         if review.attributes is not None:
             favie_review.attributes = [AttributeItem(name=x.name, value=x.value) for x in review.attributes]
