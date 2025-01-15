@@ -1,59 +1,590 @@
 {
-	"url": "https://www.instagram.com/p/DBvdN_7sc0H/",
-	"source": 4,
-	"content_type": "webpage",
-	"spider": "InstagramPostListParser",
-	"parser_name": "InstagramPostListParser",
-	"crawl_result": {
-		"url": "https://www.instagram.com/p/DBvdN_7sc0H/",
-		"host": "www.instagram.com",
-		"title": "Photo by Karolina’s Photography | Wroclaw photographer on October 30, 2024. Mungkin gambar 1 orang, janggut, blazer dan turtleneck.",
-		"description": "model : @dula_kiongozi \n#fashion #fashionstyle #magazine #highfashion #cityphotography #wroclaw #wroclawphotographer #wroclawphoto #cityvibes #cityfashion #streetwear #fashionphotography #sony #sonyalpha #sonyphotography #streetphotographer  #prism #prismacolor #prismlights #rainbow #prismphotography",
-		"author": "Karolina’s Photography | Wroclaw photographer",
-		"tags": [
-			"#fashion",
-			"#fashionstyle",
-			"#magazine",
-			"#highfashion",
-			"#cityphotography",
-			"#wroclaw",
-			"#wroclawphotographer",
-			"#wroclawphoto",
-			"#cityvibes",
-			"#cityfashion",
-			"#streetwear",
-			"#fashionphotography",
-			"#sony",
-			"#sonyalpha",
-			"#sonyphotography",
-			"#streetphotographer",
-			"#prism",
-			"#prismacolor",
-			"#prismlights",
-			"#rainbow",
-			"#prismphotography"
-		],
-		"page_type": "album",
-		"images": [
-			{
-				"url": "https://scontent-hel3-1.cdninstagram.com/v/t51.29350-15/464968716_477921451253142_8592703147318293757_n.jpg?se=7&stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_cat=106&_nc_ohc=bE4OJ6xu_VUQ7kNvgFiChyK&_nc_gid=3ea77a9ae4d84c2a902fe03dc0df761c&edm=AMKDjl4BAAAA&ccb=7-5&ig_cache_key=MzQ5MDEzNjczMzczMzA0NzI2MA%3D%3D.3-ccb7-5&oh=00_AYAbZpgH92C6xn0SR5IxNIdWcEd0NLno_gDhlsxF6SZsow&oe=6727AAC7&_nc_sid=472314",
-				"desc": null,
-				"width": 1440,
-				"height": 1440
-			},
-			{
-				"url": "https://scontent-hel3-1.cdninstagram.com/v/t51.29350-15/465010094_576762204919255_4774929589883198282_n.jpg?se=7&stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=CTTSdDPRzXcQ7kNvgHv5O1t&_nc_gid=3ea77a9ae4d84c2a902fe03dc0df761c&edm=AMKDjl4BAAAA&ccb=7-5&ig_cache_key=MzQ5MDEzNjczMzczMjkzOTI4Ng%3D%3D.3-ccb7-5&oh=00_AYDrkfMjGsTXkgnt-LNSvFCsXTXfXlo1Dk-RlZmeFu_MWQ&oe=6727B8FC&_nc_sid=472314",
-				"desc": null,
-				"width": 1440,
-				"height": 1440
-			}
-		],
-		"create_time": "2024-10-30 08:25:44"
-	},
-	"raw_result": "",
-	"mission": null,
-	"task_id": null,
-	"create_time": null,
-	"update_time": null,
-	"_id": "505218a296b111ef97b6a6ab9398ad2d"
+    "url": "https://www.youtube.com/watch?v=zgygEUDs3Jg",
+    "content_type": "webpage",
+    "source": 4,
+    "parser_name": "ContentYTTParser",
+    "spider": "ContentYTTParser",
+    "raw_result": "",
+    "create_time": "2025-01-15 06:24:00 UTC+0000",
+    "update_time": "2025-01-15 06:24:00 UTC+0000",
+    "version": "1.0",
+    "crawl_result": {
+        "url": "https://www.youtube.com/watch?v=zgygEUDs3Jg",
+        "host": "www.youtube.com",
+        "domain": "www.youtube.com",
+        "title": "Review JBL Xtreme 2 - Altavoz Bluetooth Portatil",
+        "description": "unboxing y descripcion de las caracteristicas del mejor altavoz portatil que he probado, el JBL Xtreme 2 tiene una potencia increible\n\npodeis comprarlo aqui: https://amzn.to/3GysBGI\n\nprotege tus criptomonedas con trezor: https://affil.trezor.io/aff_c?offer_i...\n\npodeis probar descript gratis aqui: https://www.descript.com/?lmref=wwpqzA\n\nhe creado un patreon para quien quiera apoyar al canal y de paso tener contenido exclusivo: https://www.patreon.com/user?u=84811513\n\naqui teneis un listado de los productos de los que hago review y donde comprarlos: https://tobiblackout.systeme.io/devaser\n\nteneis un mes gratuito de audible utilizando este link: https://www.amazon.es/hz/audible/mlp/...\n\nteneis disponibles en kindle varios capitulos de la serie Postventa, donde cuento mis aventuras en el servicio postventa de mi trabajo de hace unos años. \nNo son obras de arte y es posible que mi sentido del humor no sea el mismo que el vuestro, pero espero que os gusten\n\nPodeis disfrutar de 1 mes gratis de kindle unlimited entrando aqui: https://www.amazon.es/kindle-dbs/hz/s...\n\nCuando terminen los 30 días de prueba gratuita, la suscripción tendrá un precio de 9,99 euros al mes y podeis daros de baja en cualquier momento.\n\ncapitulo 1 Lo tipico de cada dia https://amzn.to/3F3gJu6\ncapitulo 2 La Lista                        https://amzn.to/3F2x6HC\ncapitulo 3 El Pendrive                  https://amzn.to/3F2wuSg\ncapitulo 4 Plei Esteison               https://amzn.to/3H8exn1\n\nsi quereis hacer intros y animaciones muy facilmente, podeis probar con videobolt\nteneis un 10% de descuento con este link http://www.videobolt.net/devaser\n\naqui podeis modificar vuestro mando de ps4, ps5 o xbox: https://extremerate.com?sca_ref=2796715.lXVAwvmTMU\n\nmaterial que utilizo en mis videos:\nprograma de edicion de audio: https://www.descript.com/?lmref=wwpqzA\ntripode vanguard: https://amzn.to/3lep4Uk\nmicrofono de solapa boya: https://amzn.to/3FQOyiy\nmicrofono de sobremesa shure mv7 : https://amzn.to/3vC99EN\nlampara estrella: https://amzn.to/3xvYMBO\nluz portatil: https://amzn.to/32ujNl2\nbase giratoria: https://amzn.to/3CYt956\nsoporte movil economico: https://amzn.to/314KOLD\nsoporte para camara de accion: https://amzn.to/31brdcy\ndifusor: https://amzn.to/3FSTvrb\ncamara sony zv-e10: https://amzn.to/3daQSVv\nobjetivo 50mm f/1.8: https://amzn.to/3DYLro8\ngimbal: https://amzn.to/3redvAo\n\ntodos los links de esta lista son afiliados. esto significa que yo me llevo una pequeña comision de cada venta, pero para vosotros el precio es el mismo. esta es una forma de apoyar al canal\n\nPara celebrar el mes de la concienciacion de las vpn, al contratar el plan de 2 años de NordVPN, teneis un 63% de descuento, ademas de 3 meses gratis de forma automatica\ntan solo teneis que entrar aqui: https://go.nordvpn.net/aff_c?offer_id...\n\npodeis seguirme en twitch @devaser\npodeis seguirme en twitter @DeVaSeR\npodeis seguirme en instagram @devaserphoto\npodeis seguirme en tiktok @devaser_review_shorts\n\ncontacto para colaboraciones: tobiblackout@hotmail.com\n\nMusic: TheFatRat - Monody (feat. Laura Brehm)     • TheFatRat - Monody (feat. Laura Brehm)  ",
+        "author_v1": {
+            "display_name": "DeVaSeR Reviews",
+            "image_url": "https://yt3.ggpht.com/0f27KWxCOzfsSnDoN4ls4oC9P_fjjYIG0_1CvJS6FoZdGW_8DYHiDURdF4K-xBNAJf2d_rwa=s88-c-k-c0x00ffffff-no-rj",
+            "followers_count": 289000
+        },
+        "subtitles_v1": [
+            {
+                "start_time": 3410,
+                "end_time": 5630,
+                "text": "hola a todos bienvenidos a mi canal de"
+            },
+            {
+                "start_time": 5630,
+                "end_time": 8269,
+                "text": "nuevo en este vídeo traigo posiblemente"
+            },
+            {
+                "start_time": 8269,
+                "end_time": 10010,
+                "text": "el mejor altavoz bluetooth portátil del"
+            },
+            {
+                "start_time": 10010,
+                "end_time": 12950,
+                "text": "momento el jb el stream 2 tiene una"
+            },
+            {
+                "start_time": 12950,
+                "end_time": 14650,
+                "text": "potencia y una calidad de impresionantes"
+            },
+            {
+                "start_time": 14650,
+                "end_time": 17450,
+                "text": "en la caja viene incluido un cargador de"
+            },
+            {
+                "start_time": 17450,
+                "end_time": 20420,
+                "text": "19 voltios y 3 amperios y una cinta pues"
+            },
+            {
+                "start_time": 20420,
+                "end_time": 21949,
+                "text": "si queremos colgarlo al hombro que"
+            },
+            {
+                "start_time": 21949,
+                "end_time": 24980,
+                "text": "además incluyen abrebotellas el diseño"
+            },
+            {
+                "start_time": 24980,
+                "end_time": 26929,
+                "text": "es muy similar al modelo anterior tiene"
+            },
+            {
+                "start_time": 26929,
+                "end_time": 28310,
+                "text": "forma de huevo alargado y está"
+            },
+            {
+                "start_time": 28310,
+                "end_time": 31070,
+                "text": "totalmente recubierto de tela lo único"
+            },
+            {
+                "start_time": 31070,
+                "end_time": 32780,
+                "text": "que han cambiado son los enganches para"
+            },
+            {
+                "start_time": 32780,
+                "end_time": 35180,
+                "text": "la cinta y las patas de goma tanto las"
+            },
+            {
+                "start_time": 35180,
+                "end_time": 37250,
+                "text": "de abajo como las de los laterales pues"
+            },
+            {
+                "start_time": 37250,
+                "end_time": 39320,
+                "text": "si queremos ponerlo de pie ahora hay más"
+            },
+            {
+                "start_time": 39320,
+                "end_time": 40879,
+                "text": "hueco para que puedan salir los graves"
+            },
+            {
+                "start_time": 40879,
+                "end_time": 44180,
+                "text": "cuando está de pie mide 28 8 centímetros"
+            },
+            {
+                "start_time": 44180,
+                "end_time": 46969,
+                "text": "de largo por 13,6 de alto y 13,2 de"
+            },
+            {
+                "start_time": 46969,
+                "end_time": 50870,
+                "text": "profundo y pesa 2 kilos 400 gramos está"
+            },
+            {
+                "start_time": 50870,
+                "end_time": 54170,
+                "text": "disponible en negro azul verde rojo y"
+            },
+            {
+                "start_time": 54170,
+                "end_time": 55530,
+                "text": "camuflaje"
+            },
+            {
+                "start_time": 55530,
+                "end_time": 57690,
+                "text": "es resistente al agua con certificación"
+            },
+            {
+                "start_time": 57690,
+                "end_time": 60899,
+                "text": "y px 7 pues la parte superior lleva el"
+            },
+            {
+                "start_time": 60899,
+                "end_time": 62789,
+                "text": "botón para emparejar el bluetooth los de"
+            },
+            {
+                "start_time": 62789,
+                "end_time": 64680,
+                "text": "subir y bajar el volumen el botón de"
+            },
+            {
+                "start_time": 64680,
+                "end_time": 67049,
+                "text": "encendido el botón jb le conecta y el"
+            },
+            {
+                "start_time": 67049,
+                "end_time": 69390,
+                "text": "botón play pausa por la parte trasera"
+            },
+            {
+                "start_time": 69390,
+                "end_time": 71700,
+                "text": "debajo de una tapa de goma lleva una"
+            },
+            {
+                "start_time": 71700,
+                "end_time": 73740,
+                "text": "entrada de jack auxiliar un micro usb"
+            },
+            {
+                "start_time": 73740,
+                "end_time": 75930,
+                "text": "para servicio un usb para cargar"
+            },
+            {
+                "start_time": 75930,
+                "end_time": 79170,
+                "text": "dispositivos y la toma de corriente a"
+            },
+            {
+                "start_time": 79170,
+                "end_time": 80670,
+                "text": "través de auxiliar podemos conectar"
+            },
+            {
+                "start_time": 80670,
+                "end_time": 82229,
+                "text": "cualquier aparato por cable como un"
+            },
+            {
+                "start_time": 82229,
+                "end_time": 84470,
+                "text": "audio cast o un ordenador portátil"
+            },
+            {
+                "start_time": 84470,
+                "end_time": 87299,
+                "text": "utiliza la versión 4.2 de bluetooth y se"
+            },
+            {
+                "start_time": 87299,
+                "end_time": 88800,
+                "text": "pueden conectar hasta dos dispositivos"
+            },
+            {
+                "start_time": 88800,
+                "end_time": 90270,
+                "text": "al mismo tiempo para ir enviando la"
+            },
+            {
+                "start_time": 90270,
+                "end_time": 92789,
+                "text": "música además podemos emparejar más de"
+            },
+            {
+                "start_time": 92789,
+                "end_time": 94409,
+                "text": "100 altavoces con la tecnología"
+            },
+            {
+                "start_time": 94409,
+                "end_time": 97170,
+                "text": "jbl connect plus tiene micrófono por si"
+            },
+            {
+                "start_time": 97170,
+                "end_time": 98970,
+                "text": "queremos usarlo de manos libres o para"
+            },
+            {
+                "start_time": 98970,
+                "end_time": 100679,
+                "text": "hacer búsquedas de voz de siri y google"
+            },
+            {
+                "start_time": 100679,
+                "end_time": 103020,
+                "text": "now lleva una batería de 10.000"
+            },
+            {
+                "start_time": 103020,
+                "end_time": 104819,
+                "text": "miliamperios que puede durar hasta 15"
+            },
+            {
+                "start_time": 104819,
+                "end_time": 106770,
+                "text": "horas a volumen medio si lo ponemos al"
+            },
+            {
+                "start_time": 106770,
+                "end_time": 108720,
+                "text": "máximo dura mucho menos"
+            },
+            {
+                "start_time": 108720,
+                "end_time": 110850,
+                "text": "por la parte inferior lleva 5 leds que"
+            },
+            {
+                "start_time": 110850,
+                "end_time": 112740,
+                "text": "nos indican el estado de la batería que"
+            },
+            {
+                "start_time": 112740,
+                "end_time": 114030,
+                "text": "hubiera estado mejor que los pusieran"
+            },
+            {
+                "start_time": 114030,
+                "end_time": 115650,
+                "text": "donde están los botones ya que ahí abajo"
+            },
+            {
+                "start_time": 115650,
+                "end_time": 117520,
+                "text": "no se ven prácticamente"
+            },
+            {
+                "start_time": 117520,
+                "end_time": 119380,
+                "text": "a través del usb de la parte trasera"
+            },
+            {
+                "start_time": 119380,
+                "end_time": 121060,
+                "text": "podemos conectar cualquier aparato por"
+            },
+            {
+                "start_time": 121060,
+                "end_time": 123609,
+                "text": "cable para cargarlo el usb saca 5"
+            },
+            {
+                "start_time": 123609,
+                "end_time": 126789,
+                "text": "voltios y 2,1 amperios tiene modo de"
+            },
+            {
+                "start_time": 126789,
+                "end_time": 128349,
+                "text": "ahorro de energía y si estamos 15"
+            },
+            {
+                "start_time": 128349,
+                "end_time": 130530,
+                "text": "minutos sin enviarle audio se apaga solo"
+            },
+            {
+                "start_time": 130530,
+                "end_time": 132970,
+                "text": "este modelo viene con dos bolsas de 7"
+            },
+            {
+                "start_time": 132970,
+                "end_time": 134470,
+                "text": "centímetros y dos tweeters de 2"
+            },
+            {
+                "start_time": 134470,
+                "end_time": 136510,
+                "text": "centímetros por la parte frontal más 2"
+            },
+            {
+                "start_time": 136510,
+                "end_time": 138280,
+                "text": "radiadores pasivos por los laterales que"
+            },
+            {
+                "start_time": 138280,
+                "end_time": 141220,
+                "text": "proporcionan 40 vatios rms si lo"
+            },
+            {
+                "start_time": 141220,
+                "end_time": 143110,
+                "text": "utilizamos con batería baja un poco la"
+            },
+            {
+                "start_time": 143110,
+                "end_time": 144760,
+                "text": "potencia aunque no indica en cuanto en"
+            },
+            {
+                "start_time": 144760,
+                "end_time": 147489,
+                "text": "la web de jbl la potencia de este"
+            },
+            {
+                "start_time": 147489,
+                "end_time": 148989,
+                "text": "altavoz no se puede comparar a ninguno"
+            },
+            {
+                "start_time": 148989,
+                "end_time": 151000,
+                "text": "de su tamaño incluso otros modelos que"
+            },
+            {
+                "start_time": 151000,
+                "end_time": 152950,
+                "text": "también tienen 40 vatios no alcanza ni"
+            },
+            {
+                "start_time": 152950,
+                "end_time": 154450,
+                "text": "de lejos el mismo volumen ni la potencia"
+            },
+            {
+                "start_time": 154450,
+                "end_time": 157060,
+                "text": "de los graves que tiene este la claridad"
+            },
+            {
+                "start_time": 157060,
+                "end_time": 158890,
+                "text": "de las voces es fantástica y el altavoz"
+            },
+            {
+                "start_time": 158890,
+                "end_time": 160680,
+                "text": "no distorsiona nada al máximo volumen"
+            },
+            {
+                "start_time": 160680,
+                "end_time": 162819,
+                "text": "ahora os dejo con una prueba de sonido"
+            },
+            {
+                "start_time": 162819,
+                "end_time": 164170,
+                "text": "no va a ser lo mismo que tenerlo"
+            },
+            {
+                "start_time": 164170,
+                "end_time": 167730,
+                "text": "adelante pero si os hacéis una idea"
+            },
+            {
+                "start_time": 175730,
+                "end_time": 178980,
+                "text": "[Música]"
+            },
+            {
+                "start_time": 202250,
+                "end_time": 204340,
+                "text": "sí"
+            },
+            {
+                "start_time": 205810,
+                "end_time": 210620,
+                "text": "[Música]"
+            },
+            {
+                "start_time": 210620,
+                "end_time": 214219,
+                "text": "[Aplausos]"
+            },
+            {
+                "start_time": 214850,
+                "end_time": 219410,
+                "text": "16 hay una mamá"
+            },
+            {
+                "start_time": 234130,
+                "end_time": 236050,
+                "text": "en vivo"
+            },
+            {
+                "start_time": 236050,
+                "end_time": 239119,
+                "text": "[Música]"
+            },
+            {
+                "start_time": 243310,
+                "end_time": 246300,
+                "text": "una vez"
+            },
+            {
+                "start_time": 248220,
+                "end_time": 250730,
+                "text": "m"
+            },
+            {
+                "start_time": 262740,
+                "end_time": 265630,
+                "text": "[Música]"
+            },
+            {
+                "start_time": 265630,
+                "end_time": 268540,
+                "text": "en definitiva 299 euros cuesta tener el"
+            },
+            {
+                "start_time": 268540,
+                "end_time": 270520,
+                "text": "mejor altavoz portátil del mercado la"
+            },
+            {
+                "start_time": 270520,
+                "end_time": 272080,
+                "text": "calidad y potencia de este modelo no"
+            },
+            {
+                "start_time": 272080,
+                "end_time": 274840,
+                "text": "tienen rival en aparatos de su tamaño a"
+            },
+            {
+                "start_time": 274840,
+                "end_time": 276280,
+                "text": "favor tiene sobre todo la potencia que"
+            },
+            {
+                "start_time": 276280,
+                "end_time": 278260,
+                "text": "alcanza con unos graves increíbles para"
+            },
+            {
+                "start_time": 278260,
+                "end_time": 280270,
+                "text": "un altavoz de este tamaño además la"
+            },
+            {
+                "start_time": 280270,
+                "end_time": 282310,
+                "text": "calidad es excelente con unos agudos y"
+            },
+            {
+                "start_time": 282310,
+                "end_time": 283930,
+                "text": "medios super claros incluso a máximo"
+            },
+            {
+                "start_time": 283930,
+                "end_time": 286030,
+                "text": "volumen también que la duración de"
+            },
+            {
+                "start_time": 286030,
+                "end_time": 287590,
+                "text": "batería es fantástica y nos permite"
+            },
+            {
+                "start_time": 287590,
+                "end_time": 290470,
+                "text": "cargar otros dispositivos en contra que"
+            },
+            {
+                "start_time": 290470,
+                "end_time": 292420,
+                "text": "el usb no sea reproductor algo que no me"
+            },
+            {
+                "start_time": 292420,
+                "end_time": 294640,
+                "text": "cansaré de decir y que baje la potencia"
+            },
+            {
+                "start_time": 294640,
+                "end_time": 296710,
+                "text": "cuando lo usamos con batería está claro"
+            },
+            {
+                "start_time": 296710,
+                "end_time": 298060,
+                "text": "que esto es para alargar la vida de la"
+            },
+            {
+                "start_time": 298060,
+                "end_time": 299830,
+                "text": "batería pero deberían indicarlo en la"
+            },
+            {
+                "start_time": 299830,
+                "end_time": 302680,
+                "text": "web para que la gente lo sepa abajo voy"
+            },
+            {
+                "start_time": 302680,
+                "end_time": 304090,
+                "text": "a dejar el link a la web de jb les del"
+            },
+            {
+                "start_time": 304090,
+                "end_time": 305380,
+                "text": "modelo por si queréis ver las"
+            },
+            {
+                "start_time": 305380,
+                "end_time": 307330,
+                "text": "características y si os ha gustado el"
+            },
+            {
+                "start_time": 307330,
+                "end_time": 308950,
+                "text": "vídeo podéis suscribiros al canal que es"
+            },
+            {
+                "start_time": 308950,
+                "end_time": 311530,
+                "text": "gratis yo de momento me despido nos"
+            },
+            {
+                "start_time": 311530,
+                "end_time": 313510,
+                "text": "vemos en el siguiente vídeo un saludo a"
+            },
+            {
+                "start_time": 313510,
+                "end_time": 316860,
+                "text": "todos hasta luego"
+            }
+        ],
+        "upvotes_count": 1600,
+        "views_count": 213148,
+        "comments_total": 268,
+        "videos": [
+            {
+                "url": "https://www.youtube.com/watch?v=zgygEUDs3Jg"
+            }
+        ],
+        "ext_data": "{\"chapters\": []}",
+        "create_time": "Dec 22, 2018"
+    }
 }

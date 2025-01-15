@@ -127,7 +127,11 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
     @staticmethod
     def __get_comments(webpage_message: StarkNewWebpageMessage) -> list[str] | None:
         return (
-            WebpageComment(**(webpage_message.crawl_result.comments_v1.model_dump()))
+            (
+                WebpageComment(**(comment.model_dump()))
+                for comment in webpage_message.crawl_result.comments_v1
+                if comment
+            )
             if webpage_message.crawl_result.comments_v1
             else None
         )
@@ -135,7 +139,11 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
     @staticmethod
     def __get_subtitles(webpage_message: StarkNewWebpageMessage) -> list[str] | None:
         return (
-            WebpageSubtitleChunk(**(webpage_message.crawl_result.subtitles_v1.model_dump()))
+            [
+                WebpageSubtitleChunk(**(subtitle.model_dump()))
+                for subtitle in webpage_message.crawl_result.subtitles_v1
+                if subtitle
+            ]
             if webpage_message.crawl_result.subtitles_v1
             else None
         )
@@ -212,7 +220,7 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
 
 
 if __name__ == "__main__":
-    webpage_message_str = read_file("./favie_data_schema/favie/resources/webpage_bug.json")
+    webpage_message_str = read_file("./favie_data_schema/favie/resources/stark_webpage_message_new.json")
     webpage_message = DeserializeUtils.deserialize_webpage_message(webpage_message_str)
     webpage = StarkWebpageAdapter.stark_webpage_to_favie_webpage(webpage_message)
     if webpage:
