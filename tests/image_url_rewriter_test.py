@@ -21,6 +21,18 @@ class TestStarkMessageMission(unittest.TestCase):
             "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX640_.png",
         )
 
+        old_url = "https://m.media-amazon.com/images/I/71Vf6Fwdz9L._AC_SL88_.jpg"
+        new_url = rewriter.rewrite("amazon.com", old_url)
+        self.assertEqual(new_url, "https://m.media-amazon.com/images/I/71Vf6Fwdz9L._AC_SL640_.jpg")
+
+        old_url = "https://m.media-amazon.com/images/I/81tELyzGMfL._SL1500_.jpg"
+        new_url = rewriter.rewrite("amazon.com", old_url)
+        self.assertEqual(new_url, "https://m.media-amazon.com/images/I/81tELyzGMfL._SL1500_.jpg")
+
+        old_url = "https://m.media-amazon.com/images/I/81tELyzGMfL._SL15_.jpg"
+        new_url = rewriter.rewrite("amazon.com", old_url)
+        self.assertEqual(new_url, "https://m.media-amazon.com/images/I/81tELyzGMfL._SL640_.jpg")
+
     def test_not_amazon_rewrite(self):
         rewriter = ImageUrlRewriterProxy()
         old_url = "https://m.media-amazon.com/images/I/81G8btUlZVL._SY88.jpg"
