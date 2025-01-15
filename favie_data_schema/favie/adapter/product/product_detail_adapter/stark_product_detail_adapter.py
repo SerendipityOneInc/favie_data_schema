@@ -21,12 +21,16 @@ from favie_data_schema.favie.data.interface.product.favie_product_detail import 
 
 
 class StarkProductDetailAdapter(FavieProductDetailAdapter):
-    @staticmethod
-    def stark_detail_to_favie_detail(stark_detail_message: StarkProductDetailMessage) -> Optional[FavieProductDetail]:
+    def __init__(self):
+        self.review_adapter = StarkProductReviewAdapter()
+
+    def stark_detail_to_favie_detail(
+        self, stark_detail_message: StarkProductDetailMessage
+    ) -> Optional[FavieProductDetail]:
         favie_product = StarkProductDetailConvert.convert_to_favie_product(stark_detail_message)
         if favie_product is None:
             return None
-        favie_reviews = StarkProductReviewAdapter.stark_detail_to_favie_reviews(stark_detail_message)
+        favie_reviews = self.review_adapter.stark_detail_to_favie_reviews(stark_detail_message)
 
         favie_product.f_sku_id = FavieProductUtils.gen_f_sku_id(favie_product)
         favie_product.f_spu_id = FavieProductUtils.gen_f_spu_id(favie_product)
@@ -34,14 +38,13 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
             [x.f_review_id for x in favie_reviews if x is not None] if CommonUtils.list_len(favie_reviews) > 0 else None
         )
         review_summary_link = ReviewSummaryGeneratorProxy.gen_url(favie_product.site, favie_product.sku_id)
-        favie_product.review_summary = StarkProductDetailAdapter.get_review_summary(
+        favie_product.review_summary = self.get_review_summary(
             stark_detail_message.crawl_result, top_review_ids, review_summary_link
         )
 
         return favie_product
 
-    @staticmethod
-    def get_review_summary(rainforest_product_detail: RainforestProductDetail, top_reviews: list[str], link: str):
+    def get_review_summary(self, rainforest_product_detail: RainforestProductDetail, top_reviews: list[str], link: str):
         product = rainforest_product_detail.product if rainforest_product_detail is not None else None
         if product is None:
             return None
@@ -49,7 +52,7 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
             link=link,
             rating=product.rating,
             ratings_total=product.ratings_total,
-            rating_breakdown=StarkProductDetailAdapter.get_rating_breakdown(rainforest_product_detail),
+            rating_breakdown=self.get_rating_breakdown(rainforest_product_detail),
             reviews_total=product.reviews_total,
             top_reviews=top_reviews if CommonUtils.list_len(top_reviews) > 0 else None,
             f_updates_at=str(int(datetime.now().timestamp())),
@@ -63,8 +66,7 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
             else None
         )
 
-    @staticmethod
-    def get_rating_breakdown(rainforest_product_detail: RainforestProductDetail):
+    def get_rating_breakdown(self, rainforest_product_detail: RainforestProductDetail):
         product = rainforest_product_detail.product if rainforest_product_detail is not None else None
         if product is None:
             return None
@@ -103,7 +105,8 @@ def main():
         "favie_data_schema/favie/resources/stark_product_detail_message.json",
         StarkProductDetailMessage,
     )
-    favie_product: FavieProductDetail = StarkProductDetailAdapter.stark_detail_to_favie_detail(amazon_message)
+    product_adapter = StarkProductDetailAdapter()
+    favie_product: FavieProductDetail = product_adapter.stark_detail_to_favie_detail(amazon_message)
     print(favie_product.model_dump_json(exclude_none=True) if favie_product else None)
 
 
