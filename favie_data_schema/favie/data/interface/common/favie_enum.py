@@ -42,4 +42,4 @@ class CategoriesMapType(IntEnum):
 
 
 class DataAction(Enum):
-    DELETE_FIELD = "delete_field"
+    DELETE_FIELDS = "delete_fields"
