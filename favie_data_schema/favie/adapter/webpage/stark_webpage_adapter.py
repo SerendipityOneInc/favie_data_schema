@@ -127,11 +127,11 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
     @staticmethod
     def __get_comments(webpage_message: StarkNewWebpageMessage) -> list[str] | None:
         return (
-            (
+            [
                 WebpageComment(**(comment.model_dump()))
                 for comment in webpage_message.crawl_result.comments_v1
                 if comment
-            )
+            ]
             if webpage_message.crawl_result.comments_v1
             else None
         )
