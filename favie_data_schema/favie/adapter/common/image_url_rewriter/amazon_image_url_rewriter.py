@@ -36,7 +36,7 @@ class AmazoneImageUrlRewriter(ImageUrlRewriter):
         match = re.search(r"_SX(\d+)_", image_url)
         if match:
             number = int(match.group(1))
-            if number < 640:
+            if number < self.rewrite_size:
                 modified_url = image_url.replace(f"_SX{number}_", f"_SX{self.rewrite_size}_")
                 return modified_url
 
@@ -46,7 +46,7 @@ class AmazoneImageUrlRewriter(ImageUrlRewriter):
         if match:
             # 提取数字部分
             number = int(match.group(1))
-            if number < 640:
+            if number < self.rewrite_size:
                 # 构建新的字符串
                 modified_url = image_url.replace(f"_SY{number}", f"_SY{self.rewrite_size}")
                 return modified_url
@@ -58,7 +58,11 @@ class AmazoneImageUrlRewriter(ImageUrlRewriter):
         if match:
             # 提取数字部分
             number = int(match.group(1))
-            if number < 640:
+            if number < self.rewrite_size:
                 # 构建新的字符串
                 modified_url = image_url.replace(f"_SL{number}_", f"_SL{self.rewrite_size}_")
                 return modified_url
+
+    # def __match_all(self,image_url):
+    #     pattern = r"_(SX|SY|SL)\d+"
+    #     return re.sub(pattern, r"_\1640", image_url)
