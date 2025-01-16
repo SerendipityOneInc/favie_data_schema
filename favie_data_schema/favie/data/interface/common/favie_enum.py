@@ -44,7 +44,3 @@ class CategoriesMapType(IntEnum):
 class DataAction(Enum):
     DELETE_FIELDS = "delete_fields"
     RECRAWL_IMAGES = "recrawl_images"
-
-
-class DataVersion(IntEnum):
-    V1 = 1  # 第一个版本，之前version为None，此版本升级主要是为了更新图片位置信息
