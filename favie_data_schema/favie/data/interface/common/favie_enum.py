@@ -1,4 +1,4 @@
-from enum import IntEnum
+from enum import Enum, IntEnum
 
 
 class FavieSourceType(IntEnum):
@@ -39,3 +39,8 @@ class FavieImageStatus(IntEnum):
 class CategoriesMapType(IntEnum):
     MAP = 0
     PREDICT = 1
+
+
+class DataAction(Enum):
+    DELETE_FIELDS = "delete_fields"
+    RECRAWL_IMAGES = "recrawl_images"
