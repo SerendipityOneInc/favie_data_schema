@@ -2,6 +2,8 @@ from typing import Any, List, Optional
 
 from pydantic import BaseModel
 
+from favie_data_schema.favie.data.interface.common.favie_enum import DataVersion
+
 
 class FavieTag(BaseModel):
     biz_name: Optional[str] = None
@@ -35,7 +37,7 @@ class MetaInfo(BaseModel):
     parses_at: Optional[str] = None
     data_type: Optional[str] = None
     app_key: Optional[str] = None
-    version: Optional[str] = None
+    version: Optional[int] = DataVersion.V1.value
     actions: Optional[List[FavieDataAction]] = None
     f_categories_update_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
