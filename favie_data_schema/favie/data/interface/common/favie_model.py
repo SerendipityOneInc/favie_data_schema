@@ -1,6 +1,7 @@
 from typing import Any, List, Optional
 
-from pydantic import BaseModel
+from favie_data_common.common.pydantic_utils import PydanticUtils
+from pydantic import BaseModel, validator
 
 
 class FavieTag(BaseModel):
@@ -36,7 +37,13 @@ class MetaInfo(BaseModel):
     data_type: Optional[str] = None
     app_key: Optional[str] = None
     version: Optional[str] = None
+
     actions: Optional[List[FavieDataAction]] = None
+
+    @validator("actions", pre=True)
+    def actions_validator(cls, value):
+        return PydanticUtils.deserialize_data(List[FavieDataAction], value)
+
     f_categories_update_at: Optional[str] = None
     f_images_crawl_send_at: Optional[str] = None
     f_categories_map_type: Optional[int] = None
