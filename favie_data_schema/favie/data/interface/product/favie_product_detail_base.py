@@ -75,11 +75,11 @@ class FavieProductDetailBase(BaseModel):
     def validate_f_images_bg_remove(cls, value):
         return PydanticUtils.deserialize_data(Dict[str, Dict[str, Any]], value)
 
-    f_cate_tags: Optional[str] = None
+    # f_cate_tags: Optional[str] = None
 
-    @field_validator("f_cate_tags", mode="before")
-    def validate_f_cate_tags(cls, value):
-        return PydanticUtils.deserialize_data(str, value)
+    # @field_validator("f_cate_tags", mode="before")
+    # def validate_f_cate_tags(cls, value):
+    #     return PydanticUtils.deserialize_data(str, value)
 
     f_meta: Optional[MetaInfo] = None
 
