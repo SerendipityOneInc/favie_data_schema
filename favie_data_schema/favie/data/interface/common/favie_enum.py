@@ -21,6 +21,7 @@ class MessageDataType(IntEnum):
     WEBPAGE_CONTENT_CRAWLER = 7
     WEBPAGE_IMAGE_CRAWLER = 8
     DATA_CLEANING = 9
+    DATA_DELETE = 10
 
 
 class FavieDataStatus(IntEnum):

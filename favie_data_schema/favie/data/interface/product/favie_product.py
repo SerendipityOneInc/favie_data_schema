@@ -180,7 +180,7 @@ class BaseInfo(BaseModel):
     keywords: Optional[str] = None
     categories: Optional[List[CategoryItem]] = None
     f_categories: Optional[List[CategoryItem]] = None
-    f_cate_tags: Optional[str] = None
+    # f_cate_tags: Optional[str] = None
     shop_id: Optional[str] = None
     shop_name: Optional[str] = None
     shop_site: Optional[str] = None
