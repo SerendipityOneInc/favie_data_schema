@@ -163,6 +163,12 @@ class ReviewSummary(BaseModel):
     f_updates_at: Optional[str] = None
 
 
+class InventoryStatus(BaseModel):
+    has_inventory: Optional[bool] = None
+    no_inventory_starts_at: Optional[str] = None
+    updates_at: Optional[str] = None
+
+
 class BaseInfo(BaseModel):
     request_sku_id: Optional[str] = None
     f_sku_id: Optional[str] = None
@@ -185,6 +191,7 @@ class BaseInfo(BaseModel):
     shop_name: Optional[str] = None
     shop_site: Optional[str] = None
     link_in_shop: Optional[str] = None
+    f_inventory_status: Optional[InventoryStatus] = None
     f_tags: Optional[List[str]] = None
     f_system_tags: Optional[List[FavieTag]] = None
     f_status: Optional[str] = None
