@@ -303,3 +303,27 @@ class FavieWebpage(BaseModel):
     @field_validator("update_time", mode="before")
     def validate_update_time(cls, value):
         return PydanticUtils.deserialize_data(str, value)
+
+    upvotes_count: Optional[int] = None
+
+    @field_validator("upvotes_count", mode="before")
+    def validate_upvotes_count(cls, value):
+        return PydanticUtils.deserialize_data(int, value)
+
+    downvotes_count: Optional[int] = None
+
+    @field_validator("downvotes_count", mode="before")
+    def validate_downvotes_count(cls, value):
+        return PydanticUtils.deserialize_data(int, value)
+
+    views_count: Optional[int] = None
+
+    @field_validator("views_count", mode="before")
+    def validate_views_count(cls, value):
+        return PydanticUtils.deserialize_data(int, value)
+
+    comments_total: Optional[int] = None
+
+    @field_validator("comments_total", mode="before")
+    def validate_comments_total(cls, value):
+        return PydanticUtils.deserialize_data(int, value)
