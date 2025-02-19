@@ -515,8 +515,8 @@
 				"price": {
 					"symbol": "$",
 					"currency": "USD",
-					"value": 35.56,
-					"raw": "$35.56"
+					"value": 0,
+					"raw": "$0.00"
 				},
 				"rrp": {
 					"symbol": "$",

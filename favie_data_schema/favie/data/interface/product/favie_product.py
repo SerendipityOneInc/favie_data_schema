@@ -164,8 +164,8 @@ class ReviewSummary(BaseModel):
 
 
 class InventoryStatus(BaseModel):
-    has_inventory: Optional[bool] = None
-    no_inventory_starts_at: Optional[str] = None
+    in_stock: Optional[bool] = None
+    not_stock_starts_at: Optional[str] = None
     updates_at: Optional[str] = None
 
 

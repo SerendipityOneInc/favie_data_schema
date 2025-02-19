@@ -24,6 +24,7 @@ from favie_data_schema.favie.data.interface.product.favie_product import (
     Deal,
     ExtendedInfo,
     Images,
+    InventoryStatus,
     PlatformChoice,
     Price,
     Promotion,
@@ -73,6 +74,7 @@ class StarkProductDetailConvert:
         favie_product.price = price
         rrp = StarkProductDetailConvert.get_rrp(stark_detail_message, parse_time)
         favie_product.rrp = rrp if rrp else price if price.value > 0 else None
+        favie_product.f_inventory_status = InventoryStatus(in_stock=True if price else False)
         favie_product.images = StarkProductDetailConvert.get_images(crawl_result)
         favie_product.f_images = None
         favie_product.videos = StarkProductDetailConvert.get_videos(crawl_result)
@@ -183,7 +185,7 @@ class StarkProductDetailConvert:
             updates_at=parse_time,
             app_key=app_key,
         )
-        return price if CommonUtils.all_not_none(price.currency, price.value) else None
+        return price if CommonUtils.all_not_none(price.currency, price.value) and price.value >= 0 else None
 
     @staticmethod
     def get_deal(stark_detail_message: StarkProductDetailMessage, parse_time: str):
@@ -349,14 +351,6 @@ class StarkProductDetailConvert:
                 source_type=stark_detail_message.source,
                 parser_name=stark_detail_message.parser_name,
                 parse_time=parse_time,
-                app_key=stark_detail_message.app_key,
-            )
-        if price is None:
-            price = Price(
-                value=-100,
-                parser_name=stark_detail_message.parser_name,
-                source_type=str(stark_detail_message.source) if stark_detail_message.source else None,
-                updates_at=parse_time,
                 app_key=stark_detail_message.app_key,
             )
         return price

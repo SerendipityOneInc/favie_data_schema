@@ -43,7 +43,7 @@
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 31.49,
+                        "value": -31.49,
                         "currency": "USD",
                         "raw": "$31.49",
                         "name": "Primary",
@@ -53,7 +53,7 @@
                     },
                     {
                         "symbol": "$",
-                        "value": 34.99,
+                        "value": -34.99,
                         "currency": "USD",
                         "raw": "$34.99",
                         "name": "Original",
@@ -64,7 +64,7 @@
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 31.49,
+                    "value": -31.49,
                     "currency": "USD",
                     "raw": "$31.49",
                     "name": "Primary",
@@ -91,9 +91,9 @@
                 "prices": [
                     {
                         "symbol": "$",
-                        "value": 45,
+                        "value": 0,
                         "currency": "USD",
-                        "raw": "$45.00",
+                        "raw": "$0.00",
                         "name": "Primary",
                         "is_primary": true,
                         "is_rrp": null,
@@ -101,9 +101,9 @@
                     },
                     {
                         "symbol": "$",
-                        "value": 50,
+                        "value": 0,
                         "currency": "USD",
-                        "raw": "$50.00",
+                        "raw": "$0.00",
                         "name": "Original",
                         "is_primary": null,
                         "is_rrp": true,
@@ -112,9 +112,9 @@
                 ],
                 "price": {
                     "symbol": "$",
-                    "value": 45,
+                    "value": 0,
                     "currency": "USD",
-                    "raw": "$45.00",
+                    "raw": "$0.00",
                     "name": "Primary",
                     "is_primary": true,
                     "is_rrp": null,
