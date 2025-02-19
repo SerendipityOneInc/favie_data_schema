@@ -122,6 +122,10 @@ class StarkWebpageAdapter(FavieWebpageAdapter):
         )
         webpage.f_status = str(FavieDataStatus.NORMAL.value)
         webpage.webpage_create_time = webpage_message.crawl_result.create_time
+        webpage.upvotes_count = webpage_message.crawl_result.upvotes_count
+        webpage.downvotes_count = webpage_message.crawl_result.downvotes_count
+        webpage.views_count = webpage_message.crawl_result.views_count
+        webpage.comments_total = webpage_message.crawl_result.comments_total
         return webpage
 
     @staticmethod
