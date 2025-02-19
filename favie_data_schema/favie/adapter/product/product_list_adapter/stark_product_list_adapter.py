@@ -50,7 +50,7 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
                 source=message.source,
                 parser_name=message.parser_name,
             )
-            favie_product.f_inventory_status = InventoryStatus(in_stock=True if price else False)
+            favie_product.f_inventory_status = InventoryStatus(in_stock=True if price else False, updates_at=parse_time)
             favie_product.images = StarkProductListAdapter.get_images(stark_product_item)
             favie_product.review_summary = StarkProductListAdapter.get_review_summary(stark_product_item)
             favie_product.f_meta = MetaInfo(
