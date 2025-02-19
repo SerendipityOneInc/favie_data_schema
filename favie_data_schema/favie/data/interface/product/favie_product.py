@@ -73,9 +73,11 @@ class Seller(BaseModel):
 
 
 class Inventory(BaseModel):
-    status: Optional[str] = None
+    in_stock: Optional[bool] = None
     quantity_available: Optional[int] = None
     quantity_sold: Optional[int] = None
+    out_of_stock_starts_at: Optional[str] = None
+    updates_at: Optional[str] = None
 
 
 class Deal(BaseModel):
@@ -163,12 +165,6 @@ class ReviewSummary(BaseModel):
     f_updates_at: Optional[str] = None
 
 
-class InventoryStatus(BaseModel):
-    in_stock: Optional[bool] = None
-    not_stock_starts_at: Optional[str] = None
-    updates_at: Optional[str] = None
-
-
 class BaseInfo(BaseModel):
     request_sku_id: Optional[str] = None
     f_sku_id: Optional[str] = None
@@ -191,7 +187,6 @@ class BaseInfo(BaseModel):
     shop_name: Optional[str] = None
     shop_site: Optional[str] = None
     link_in_shop: Optional[str] = None
-    f_inventory_status: Optional[InventoryStatus] = None
     f_tags: Optional[List[str]] = None
     f_system_tags: Optional[List[FavieTag]] = None
     f_status: Optional[str] = None

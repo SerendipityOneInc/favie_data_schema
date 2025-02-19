@@ -12,7 +12,6 @@ from favie_data_schema.favie.data.interface.product.favie_product import (
     ExtendedInfo,
     Images,
     Inventory,
-    InventoryStatus,
     Price,
     Promotion,
     ReturnPolicy,
@@ -193,12 +192,6 @@ class FavieProductDetail(BaseModel):
     @field_validator("f_status", mode="before")
     def validate_f_status(cls, value):
         return PydanticUtils.deserialize_data(str, value)
-
-    f_inventory_status: Optional[InventoryStatus] = None
-
-    @field_validator("f_inventory_status", mode="before")
-    def validate_f_inventory_status(cls, value):
-        return PydanticUtils.deserialize_data(InventoryStatus, value)
 
     images: Optional[Images] = None
 

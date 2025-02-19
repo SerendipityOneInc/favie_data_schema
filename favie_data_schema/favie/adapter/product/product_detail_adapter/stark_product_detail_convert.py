@@ -24,7 +24,7 @@ from favie_data_schema.favie.data.interface.product.favie_product import (
     Deal,
     ExtendedInfo,
     Images,
-    InventoryStatus,
+    Inventory,
     PlatformChoice,
     Price,
     Promotion,
@@ -74,7 +74,6 @@ class StarkProductDetailConvert:
         favie_product.price = price
         rrp = StarkProductDetailConvert.get_rrp(stark_detail_message, parse_time)
         favie_product.rrp = rrp if rrp else price
-        favie_product.f_inventory_status = InventoryStatus(in_stock=True if price else False, updates_at=parse_time)
         favie_product.images = StarkProductDetailConvert.get_images(crawl_result)
         favie_product.f_images = None
         favie_product.videos = StarkProductDetailConvert.get_videos(crawl_result)
@@ -88,7 +87,7 @@ class StarkProductDetailConvert:
         favie_product.extended_info = StarkProductDetailConvert.get_extended_info(stark_detail_message)
         # favie_product.offers = None
         favie_product.seller = StarkProductDetailConvert.get_seller(crawl_result)
-        favie_product.inventory = None
+        favie_product.inventory = Inventory(in_stock=True if price else False, updates_at=parse_time)
         favie_product.keywords = crawl_result.product.keywords
         # favie_product.search_alias = None
         favie_product.deal = StarkProductDetailConvert.get_deal(stark_detail_message, parse_time)
