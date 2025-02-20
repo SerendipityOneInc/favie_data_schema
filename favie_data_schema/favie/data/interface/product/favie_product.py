@@ -76,7 +76,7 @@ class Inventory(BaseModel):
     in_stock: Optional[bool] = None
     quantity_available: Optional[int] = None
     quantity_sold: Optional[int] = None
-    out_of_stock_starts_at: Optional[str] = None
+    out_of_stock_at: Optional[str] = None
     updates_at: Optional[str] = None
 
 
