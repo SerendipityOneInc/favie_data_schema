@@ -22,7 +22,7 @@ line_length = 120
 
 [tool.poetry]
 name = "favie-data-schema"
-version = "v0.0.105-alpha.1"
+version = "v0.0.105-alpha.2"
 
 description = "Favie Data Schema"
 authors = ["allenz-srp <allenz@srp.one>"]
@@ -33,7 +33,7 @@ python = ">=3.10,<3.13"
 pydantic = "2.6.4"
 pydantic-settings = "2.2.1"
 simhash = "2.1.2"
-favie-data-common = {git = "https://github.com/SerendipityOneInc/favie-data-common.git", rev="v0.0.15-alpha.1"}
+favie-data-common = {git = "https://github.com/SerendipityOneInc/favie-data-common.git", rev="v0.0.15-alpha.2"}
 
 [build-system]
 requires = ["poetry-core"]
