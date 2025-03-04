@@ -126,7 +126,7 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
                 app_key=app_key,
                 source=source,
             )
-            return favie_price if favie_price else None
+            return favie_price
 
     @staticmethod
     def get_rrp(
