@@ -76,6 +76,8 @@ class Inventory(BaseModel):
     status: Optional[str] = None
     quantity_available: Optional[int] = None
     quantity_sold: Optional[int] = None
+    out_of_stock_at: Optional[str] = None
+    updates_at: Optional[str] = None
 
 
 class Deal(BaseModel):

@@ -11,9 +11,9 @@ from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import Price as StarkPrice
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import ProductListItem
-from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, MessageDataType
+from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, InventoryStatus, MessageDataType
 from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
-from favie_data_schema.favie.data.interface.product.favie_product import Images, Price, ReviewSummary
+from favie_data_schema.favie.data.interface.product.favie_product import Images, Inventory, Price, ReviewSummary
 from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
 
 
@@ -35,19 +35,23 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
             favie_product.site = StarkMessageUtils.get_domain(message)
             favie_product.title = stark_product_item.title
             favie_product.link = stark_product_item.link
-            favie_product.price = StarkProductListAdapter.get_price(
+            price = StarkProductListAdapter.get_price(
                 stark_product_item=stark_product_item,
                 parse_time=parse_time,
                 app_key=message.app_key,
                 source=message.source,
                 parser_name=message.parser_name,
             )
+            favie_product.price = price
             favie_product.rrp = StarkProductListAdapter.get_rrp(
                 stark_product_item=stark_product_item,
                 parse_time=parse_time,
                 app_key=message.app_key,
                 source=message.source,
                 parser_name=message.parser_name,
+            )
+            favie_product.inventory = Inventory(
+                status=InventoryStatus.IN_STOCK if price else InventoryStatus.OUT_OF_STOCK, updates_at=parse_time
             )
             favie_product.images = StarkProductListAdapter.get_images(stark_product_item)
             favie_product.review_summary = StarkProductListAdapter.get_review_summary(stark_product_item)
@@ -122,13 +126,7 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
                 app_key=app_key,
                 source=source,
             )
-            return (
-                favie_price
-                if favie_price
-                else Price(
-                    value=-100, parser_name=parser_name, source_type=str(source), updates_at=parse_time, app_key=app_key
-                )
-            )
+            return favie_price
 
     @staticmethod
     def get_rrp(
@@ -227,7 +225,7 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
             source_type=str(source),
             app_key=app_key,
         )
-        return price if CommonUtils.all_not_none(price.currency, price.value) else None
+        return price if CommonUtils.all_not_none(price.currency, price.value) and price.value >= 0 else None
 
 
 if __name__ == "__main__":

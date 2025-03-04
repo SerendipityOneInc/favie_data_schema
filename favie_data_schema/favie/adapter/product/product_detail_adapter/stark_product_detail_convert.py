@@ -15,7 +15,7 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
     RainforestProductDetail,
     Variants,
 )
-from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, MessageDataType
+from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, InventoryStatus, MessageDataType
 from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
 from favie_data_schema.favie.data.interface.product.favie_product import (
     AttributeItem,
@@ -24,6 +24,7 @@ from favie_data_schema.favie.data.interface.product.favie_product import (
     Deal,
     ExtendedInfo,
     Images,
+    Inventory,
     PlatformChoice,
     Price,
     Promotion,
@@ -72,7 +73,7 @@ class StarkProductDetailConvert:
         price = StarkProductDetailConvert.get_price(stark_detail_message, parse_time)
         favie_product.price = price
         rrp = StarkProductDetailConvert.get_rrp(stark_detail_message, parse_time)
-        favie_product.rrp = rrp if rrp else price if price.value > 0 else None
+        favie_product.rrp = rrp if rrp else price
         favie_product.images = StarkProductDetailConvert.get_images(crawl_result)
         favie_product.f_images = None
         favie_product.videos = StarkProductDetailConvert.get_videos(crawl_result)
@@ -86,7 +87,9 @@ class StarkProductDetailConvert:
         favie_product.extended_info = StarkProductDetailConvert.get_extended_info(stark_detail_message)
         # favie_product.offers = None
         favie_product.seller = StarkProductDetailConvert.get_seller(crawl_result)
-        favie_product.inventory = None
+        favie_product.inventory = Inventory(
+            status=InventoryStatus.IN_STOCK if price else InventoryStatus.OUT_OF_STOCK, updates_at=parse_time
+        )
         favie_product.keywords = crawl_result.product.keywords
         # favie_product.search_alias = None
         favie_product.deal = StarkProductDetailConvert.get_deal(stark_detail_message, parse_time)
@@ -183,7 +186,7 @@ class StarkProductDetailConvert:
             updates_at=parse_time,
             app_key=app_key,
         )
-        return price if CommonUtils.all_not_none(price.currency, price.value) else None
+        return price if CommonUtils.all_not_none(price.currency, price.value) and price.value >= 0 else None
 
     @staticmethod
     def get_deal(stark_detail_message: StarkProductDetailMessage, parse_time: str):
@@ -349,14 +352,6 @@ class StarkProductDetailConvert:
                 source_type=stark_detail_message.source,
                 parser_name=stark_detail_message.parser_name,
                 parse_time=parse_time,
-                app_key=stark_detail_message.app_key,
-            )
-        if price is None:
-            price = Price(
-                value=-100,
-                parser_name=stark_detail_message.parser_name,
-                source_type=str(stark_detail_message.source) if stark_detail_message.source else None,
-                updates_at=parse_time,
                 app_key=stark_detail_message.app_key,
             )
         return price
