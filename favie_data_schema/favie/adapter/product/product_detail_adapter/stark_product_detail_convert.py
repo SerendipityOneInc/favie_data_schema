@@ -15,7 +15,7 @@ from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detai
     RainforestProductDetail,
     Variants,
 )
-from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, MessageDataType
+from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, InventoryStatus, MessageDataType
 from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
 from favie_data_schema.favie.data.interface.product.favie_product import (
     AttributeItem,
@@ -87,7 +87,9 @@ class StarkProductDetailConvert:
         favie_product.extended_info = StarkProductDetailConvert.get_extended_info(stark_detail_message)
         # favie_product.offers = None
         favie_product.seller = StarkProductDetailConvert.get_seller(crawl_result)
-        favie_product.inventory = Inventory(in_stock=True if price else False, updates_at=parse_time)
+        favie_product.inventory = Inventory(
+            status=InventoryStatus.IN_STOCK if price else InventoryStatus.OUT_OF_STOCK, updates_at=parse_time
+        )
         favie_product.keywords = crawl_result.product.keywords
         # favie_product.search_alias = None
         favie_product.deal = StarkProductDetailConvert.get_deal(stark_detail_message, parse_time)

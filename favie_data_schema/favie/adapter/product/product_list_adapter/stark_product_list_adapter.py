@@ -11,7 +11,7 @@ from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import Price as StarkPrice
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import ProductListItem
-from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, MessageDataType
+from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataStatus, InventoryStatus, MessageDataType
 from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
 from favie_data_schema.favie.data.interface.product.favie_product import Images, Inventory, Price, ReviewSummary
 from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
@@ -50,7 +50,9 @@ class StarkProductListAdapter(FavieProductDetailAdapter):
                 source=message.source,
                 parser_name=message.parser_name,
             )
-            favie_product.inventory = Inventory(in_stock=True if price else False, updates_at=parse_time)
+            favie_product.inventory = Inventory(
+                status=InventoryStatus.IN_STOCK if price else InventoryStatus.OUT_OF_STOCK, updates_at=parse_time
+            )
             favie_product.images = StarkProductListAdapter.get_images(stark_product_item)
             favie_product.review_summary = StarkProductListAdapter.get_review_summary(stark_product_item)
             favie_product.f_meta = MetaInfo(

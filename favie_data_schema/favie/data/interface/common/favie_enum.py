@@ -45,3 +45,9 @@ class CategoriesMapType(IntEnum):
 class DataAction(Enum):
     DELETE_FIELDS = "delete_fields"
     RECRAWL_IMAGES = "recrawl_images"
+
+
+class InventoryStatus(Enum):
+    IN_STOCK = "in_stock"
+    OUT_OF_STOCK = "out_of_stock"
+    UNKNOWN = "unknown"
