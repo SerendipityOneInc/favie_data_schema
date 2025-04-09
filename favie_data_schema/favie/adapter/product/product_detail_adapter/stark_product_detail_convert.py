@@ -60,6 +60,7 @@ class StarkProductDetailConvert:
         favie_product.site = StarkMessageUtils.get_domain(stark_detail_message)
         favie_product.title = crawl_result.product.title
         favie_product.link = crawl_result.product.link
+        favie_product.sku_link = crawl_result.product.stark_sku_link
         # favie_product.spu_title = crawl_result.product.title_excluding_variant_name
         favie_product.sub_title = (
             crawl_result.product.sub_title.text if crawl_result.product.sub_title is not None else None
