@@ -3,6 +3,7 @@ from typing import Optional
 
 from favie_data_common.common.common_utils import CommonUtils
 
+from favie_data_schema.favie.adapter.common.sku_link_generator.sku_link_generater_proxy import SkuLinkGeneraterProxy
 from favie_data_schema.favie.adapter.common.stark_message import StarkProductDetailMessage
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductDetailAdapter
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
@@ -22,6 +23,7 @@ from favie_data_schema.favie.data.interface.product.favie_product_detail import 
 class StarkProductDetailAdapter(FavieProductDetailAdapter):
     def __init__(self):
         self.review_adapter = StarkProductReviewAdapter()
+        self.sku_link_generator = SkuLinkGeneraterProxy()
 
     def stark_detail_to_favie_detail(
         self, stark_detail_message: StarkProductDetailMessage
@@ -40,8 +42,13 @@ class StarkProductDetailAdapter(FavieProductDetailAdapter):
         favie_product.review_summary = self.get_review_summary(
             stark_detail_message.crawl_result, top_review_ids, review_summary_link
         )
+        self.reset_sku_link(favie_product)
 
         return favie_product
+
+    def reset_sku_link(self, favie_product: FavieProductDetail):
+        if not favie_product.sku_link:
+            favie_product.sku_link = self.sku_link_generator.gen_sku_link(favie_product.site, favie_product.sku_id)
 
     def get_review_summary(self, rainforest_product_detail: RainforestProductDetail, top_reviews: list[str], link: str):
         product = rainforest_product_detail.product if rainforest_product_detail is not None else None
