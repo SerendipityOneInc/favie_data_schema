@@ -15,8 +15,8 @@ class SkuLinkGeneraterProxy(SkuLinkGenerater):
     def gen_sku_link(self, site: str, sku_id: str) -> str:
         generator = self.router.get(site)
         if not generator:
-            self.logger.error("Invalid site: %s, expected: %s", site, self.router.keys())
             return None
+
         if not sku_id:
             self.logger.error("Invalid sku_id: %s", sku_id)
             return None
