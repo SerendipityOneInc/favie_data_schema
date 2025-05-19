@@ -22,12 +22,14 @@ class MessageDataType(IntEnum):
     WEBPAGE_IMAGE_CRAWLER = 8
     DATA_CLEANING = 9
     DATA_DELETE = 10
+    DATA_ARCHIVE = 11
 
 
 class FavieDataStatus(IntEnum):
     NORMAL = 0
     DELETED = 1
     INTERCEPTED = 2
+    ARCHIVED = 3
 
 
 class FavieImageStatus(IntEnum):
