@@ -14,6 +14,12 @@ class EventItem(BaseModel):
 
 
 class GensmoEvent(BaseModel):
+    event_id: Optional[str] = None
+
+    @field_validator("event_id", mode="before")
+    def validate_event_id(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
+
     user_id: Optional[str] = None
 
     @field_validator("user_id", mode="before")
