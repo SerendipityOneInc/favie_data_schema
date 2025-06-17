@@ -1,8 +1,7 @@
 import json
 import logging
 
-from mock_data.mock_data_read import read_file
-
+from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 from favie_data_schema.favie.data.interface.gensmo_feed.gensmo_moodboard import GemMoodboard
 
 
@@ -84,7 +83,7 @@ class GemFeedAdapter:
         获取产品ID列表
         """
         try:
-            products = feed_data.get("products", [])
+            products = json.loads(feed_data.get("products"))
             return [product.get("global_id") for product in products if product.get("global_id")]
         except KeyError as e:
             self.logger.exception(f"KeyError in get_product_ids_of_tryon: {e}")
@@ -93,13 +92,10 @@ class GemFeedAdapter:
 
 if __name__ == "__main__":
     adapter = GemFeedAdapter()
-    feed_message = read_file("/workspace/jobs/resources/moodboard_message.json")
-    moodboard = adapter.adapt(feed_message)
 
-    if moodboard:
-        print(moodboard.model_dump_json(exclude_none=True))
-
-    feed_message = read_file("/workspace/jobs/resources/tryon_message.json")
+    feed_message = read_file(
+        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/tryon_message.json"
+    )
     moodboard = adapter.adapt(feed_message)
 
     if moodboard:
