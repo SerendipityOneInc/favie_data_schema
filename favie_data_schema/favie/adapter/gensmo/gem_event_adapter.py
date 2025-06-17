@@ -5,7 +5,7 @@ from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 from favie_data_schema.favie.data.interface.gensmo_feed.gensmo_event import EventItem, GensmoEvent
 
 
-class GensmoEventAdapter:
+class GemEventAdapter:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
 
@@ -69,7 +69,7 @@ class GensmoEventAdapter:
 
 
 if __name__ == "__main__":
-    adapter = GensmoEventAdapter()
+    adapter = GemEventAdapter()
     message_str = read_file("./favie_data_schema/favie/resources/gensmo_event_message.json")
     # webpage_message = DeserializeUtils.deserialize_webpage_message(webpage_message_str)
     gensmo_event = adapter.convert_gensmo_event(message_str)
