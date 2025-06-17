@@ -104,6 +104,18 @@ class GensmoEvent(BaseModel):
     def validate_appsflyer_id(cls, value):
         return PydanticUtils.deserialize_data(str, value)
 
+    f_updates_at: Optional[str] = None
+
+    @field_validator("f_updates_at", mode="before")
+    def validate_f_updates_at(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
+
+    f_creates_at: Optional[str] = None
+
+    @field_validator("f_creates_at", mode="before")
+    def validate_f_creates_at(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
+
 
 if __name__ == "__main__":
     event = read_object("./favie_data_schema/favie/resources/gensmo_event.json", GensmoEvent)
