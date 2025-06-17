@@ -1,8 +1,9 @@
 import json
 import logging
 
-from gensmo_feed.common.gem_feed_model import GemMoodboard
 from mock_data.mock_data_read import read_file
+
+from favie_data_schema.favie.data.interface.gensmo_feed.gensmo_moodboard import GemMoodboard
 
 
 class GemFeedAdapter:
