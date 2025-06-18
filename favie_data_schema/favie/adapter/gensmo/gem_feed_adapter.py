@@ -31,6 +31,9 @@ class GemFeedAdapter:
             if feed_data is None:
                 self.logger.warning(f"feed message deserialize failed: {feed_message}")
                 return None
+            if not self.__is_feed(feed_data):
+                self.logger.warning(f"feed message is not a valid feed: {feed_data}")
+                return None
             if GemFeedAdapter.MOODBOARD == self.__get_feed_type(feed_data):
                 return self.__convert_by_moodboard(feed_data)
             else:
@@ -38,6 +41,12 @@ class GemFeedAdapter:
         except Exception as e:
             self.logger.exception(f"Error in DeserializeStarkDetailMessageFunction: content = {feed_message} {e}")
             return None
+
+    def __is_feed(self, feed_data: dict) -> bool:
+        """
+        Check if the feed_data is a valid feed.
+        """
+        return bool(feed_data and isinstance(feed_data, dict) and bool(feed_data.get("is_feed")) is True)
 
     def __get_feed_type(self, feed_data: dict) -> str:
         """
