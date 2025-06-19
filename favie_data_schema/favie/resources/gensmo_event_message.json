@@ -1,0 +1,26 @@
+{
+	"@timestamp": 1748847565.823744,
+	"gensmo_user_id": "7335198022399172608",
+	"gensmo_active_id": "FFCBA995-DDEF-4401-92D0-70C6F54AEDD0",
+	"event_version": "1.0.0",
+	"items": [
+		{
+			"item_name": "Denim Dreams on Repeat",
+			"item_id": "f5785a8c-0b28-4f0e-adcd-4467c5eb5c7a",
+			"item_category": "general_collage",
+			"index": 16
+		}
+	],
+	"pre_refer": "unknown",
+	"refer": "home",
+	"method": "true_view_trigger",
+	"gensmo_timestamp": "1748847565526930",
+	"appsflyer_id": "1748847481075-6607460",
+	"action_type": "default",
+	"gensmo_user_type": "guest",
+	"ab_info": "[22,19,4,28,14,6,23,21,30,25]",
+	"item_list_name": "ap_dual_column_feed_for_you_list",
+	"platform": "app",
+	"version": "1.10.2",
+	"gensmo_user_source_id": "6FDC60CA-7BCF-4602-85BD-8E9E8D293DFB"
+}
