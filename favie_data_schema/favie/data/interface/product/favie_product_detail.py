@@ -187,6 +187,12 @@ class FavieProductDetail(BaseModel):
     def validate_f_cate_tags(cls, value):
         return PydanticUtils.deserialize_data(str, value)
 
+    f_caption: Optional[str] = None
+
+    @field_validator("f_caption", mode="before")
+    def validate_f_caption(cls, value):
+        return PydanticUtils.deserialize_data(str, value)
+
     f_status: Optional[str] = None
 
     @field_validator("f_status", mode="before")
