@@ -1,10 +1,12 @@
 import base64
 import gzip
-from urllib.parse import urlparse
-from lxml import html
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 
-class HtmlUtils():
+from lxml import html
+
+from favie_data_schema.favie.tools.data_mock_read import read_file
+
+
+class HtmlUtils:
     @staticmethod
     def decode_and_decompress_html(encoded_html_string):
         """解码并解压缩 HTML 字符串"""
@@ -21,12 +23,12 @@ class HtmlUtils():
             return html_string
         except Exception:
             return encoded_html_string
-    
 
-         
 
 if __name__ == "__main__":
-    encoded_data = read_file('/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/encoded_html.txt')
+    encoded_data = read_file(
+        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/encoded_html.txt"
+    )
     html_content = HtmlUtils.decode_and_decompress_html(encoded_data)
     tree = html.fromstring(html_content)
     element = tree.xpath('//*[@id="social-proofing-faceout-title-tk_bought"]/span')

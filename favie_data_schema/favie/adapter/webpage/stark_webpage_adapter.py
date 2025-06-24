@@ -6,7 +6,6 @@ from simhash import Simhash
 from favie_data_schema.favie.adapter.common.deserialize_utils import DeserializeUtils
 from favie_data_schema.favie.adapter.common.stark_message import StarkNewWebpageMessage, StarkWebpageMessage
 from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMessageUtils
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 from favie_data_schema.favie.adapter.webpage.common.favie_webpage_adapter import FavieWebpageAdapter
 from favie_data_schema.favie.data.crawl_data.crawler.crawler_result import ParsedWebPageContent
 from favie_data_schema.favie.data.crawl_data.crawler.stark_webpage import (
@@ -28,6 +27,7 @@ from favie_data_schema.favie.data.interface.webpage.favie_webpage import (
     WebpageReviewSummary,
     WebpageSubtitleChunk,
 )
+from favie_data_schema.favie.tools.data_mock_read import read_file
 
 
 class StarkWebpageAdapter(FavieWebpageAdapter):

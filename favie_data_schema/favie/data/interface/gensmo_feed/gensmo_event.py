@@ -3,7 +3,7 @@ from typing import Optional
 from favie_data_common.common.pydantic_utils import PydanticUtils
 from pydantic import BaseModel, field_validator
 
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
+from favie_data_schema.favie.tools.data_mock_read import read_object
 
 
 class EventItem(BaseModel):

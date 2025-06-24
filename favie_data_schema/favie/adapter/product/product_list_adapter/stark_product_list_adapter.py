@@ -7,7 +7,6 @@ from favie_data_schema.favie.adapter.common.stark_message_utils import StarkMess
 from favie_data_schema.favie.adapter.product.common.currency import CurrencyConverter
 from favie_data_schema.favie.adapter.product.common.favie_product_adapter import FavieProductDetailAdapter
 from favie_data_schema.favie.adapter.product.common.favie_product_utils import FavieProductUtils
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.data.crawl_data.crawler.common import Source
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import Price as StarkPrice
 from favie_data_schema.favie.data.crawl_data.crawler.stark_product_list import ProductListItem
@@ -15,6 +14,7 @@ from favie_data_schema.favie.data.interface.common.favie_enum import FavieDataSt
 from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
 from favie_data_schema.favie.data.interface.product.favie_product import Images, Inventory, Price, ReviewSummary
 from favie_data_schema.favie.data.interface.product.favie_product_detail import FavieProductDetail
+from favie_data_schema.favie.tools.data_mock_read import read_object
 
 
 class StarkProductListAdapter(FavieProductDetailAdapter):

@@ -14,7 +14,6 @@ from favie_data_schema.favie.adapter.product.product_detail_adapter.stark_produc
 from favie_data_schema.favie.adapter.product.product_review_adapter.stark_product_review_convert import (
     StarkProductReviewConvert,
 )
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_object
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import (
     RatingBreakdown as RFRatingBreakdown,
 )
@@ -24,6 +23,7 @@ from favie_data_schema.favie.data.interface.common.favie_model import MetaInfo
 from favie_data_schema.favie.data.interface.product.favie_product import AttributeItem, RatingBreakdown, ReviewSummary
 from favie_data_schema.favie.data.interface.product.favie_product_review import FavieProductReview
 from favie_data_schema.favie.data.interface.product.favie_product_review_summary import FavieProductReviewSummary
+from favie_data_schema.favie.tools.data_mock_read import read_object
 
 
 class StarkProductReviewAdapter(FavieProductReviewAdapter):

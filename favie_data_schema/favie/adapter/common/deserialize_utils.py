@@ -4,8 +4,8 @@ import logging
 from favie_data_common.common.common_utils import CommonUtils
 
 from favie_data_schema.favie.adapter.common.stark_message import StarkNewWebpageMessage, StarkWebpageMessage
-from favie_data_schema.favie.adapter.tools.data_mock_read import read_file
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_review import RainforestProductReview
+from favie_data_schema.favie.tools.data_mock_read import read_file
 
 
 class DeserializeUtils:
