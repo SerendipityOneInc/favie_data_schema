@@ -61,6 +61,7 @@ class GemFeedAdapter:
         gem_feed = GemMoodboard()
         gem_feed.moodboard_id = feed_data.get("moodboard_id")
         gem_feed.moodboard_image_url = feed_data.get("image")
+        gem_feed.moodboard_query = feed_data.get("query")
         gem_feed.moodboard_type = GemFeedAdapter.MOODBOARD
         gem_feed.product_ids = self.__get_product_ids_of_moodboard(feed_data)
         return gem_feed
@@ -103,7 +104,7 @@ if __name__ == "__main__":
     adapter = GemFeedAdapter()
 
     feed_message = read_file(
-        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/tryon_message.json"
+        "/Users/pangbaohui/workspace-srp/favie_data_schema/favie_data_schema/favie/resources/moodboard_message.json"
     )
     moodboard = adapter.adapt(feed_message)
 
