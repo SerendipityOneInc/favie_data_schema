@@ -20,6 +20,7 @@ class GemMoodboard(BaseModel):
     moodboard_id: Optional[str] = None
     moodboard_image_url: Optional[str] = None
     moodboard_type: Optional[str] = None
+    moodboard_query: Optional[str] = None
     product_ids: Optional[List[str]] = None
     products: Optional[List[FavieProductDetail]] = None
     moodboard_op: Optional[str] = None
