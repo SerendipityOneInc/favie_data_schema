@@ -14,7 +14,7 @@ class Source(IntEnum):
     INTERNAL_PROCESS = 5
 
 
-class CrawlStatus(Enum):
+class SpiderCrawlStatus(Enum):
     SUCCESS         = (1, "success")            # 网页爬取成功
     DUPLICATE       = (3, "duplicate")          # 网页重复爬取
     FAILED          = (-1, "failed")            # 网页爬取失败

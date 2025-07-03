@@ -4,7 +4,7 @@ from typing import Optional
 
 from pydantic import BaseModel, Field
 
-from favie_data_schema.favie.data.crawl_data.crawler.common import Source, CrawlStatus
+from favie_data_schema.favie.data.crawl_data.crawler.common import Source, SpiderCrawlStatus
 from favie_data_schema.favie.data.crawl_data.rainforest.rainforest_product_detail import (
     RainforestProductDetail,
 )
@@ -24,7 +24,7 @@ class FavieSpiderProductData(BaseModel):
     crawl_result: Optional[
         RainforestProductDetail
     ] = None  # 商品解析结果，存储为JSON格式，遵循RainForest的数据模型
-    crawl_status: Optional[str] = None # 爬取状态 比如CrawlStatus.SUCCESS.msg
+    crawl_status: Optional[str] = None # 爬取状态 比如SpiderCrawlStatus.SUCCESS.msg
     mission: Optional[str] = None  # 业务上的任务概念
     task_id: Optional[int] = None  # 爬虫任务ID
     create_time: Optional[datetime] = Field(default_factory=lambda: datetime.now(timezone.utc))  # 爬虫写入时间，使用UTC
